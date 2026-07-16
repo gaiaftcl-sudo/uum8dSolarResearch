@@ -14,6 +14,7 @@ On **August 12, 2026** a total solar eclipse crosses Iceland and northern Spain 
 | [Science research](Eclipse-2026-Science-Research.md) | The 2026 eclipse, measured 2017/2024 ionospheric physics, storms, solar cycle |
 | [Historical corpus](Eclipse-2026-Historical-Corpus.md) | Three eclipses, three solar regimes, one frozen law — and the coupling band that bounds 2026 |
 | [Model shear](Eclipse-2026-Model-Shear.md) | The storm data that breaks naive detectors — measured, not argued |
+| [**Blind spots — five stories**](Eclipse-2026-Blind-Spots.md) | What magnitude models gloss over forever, read from ledger rows |
 | [Data archives](Eclipse-2026-Data-Archives.md) | Every public source, verified access mechanics, provenance SHAs |
 | [Game 3 architecture](Eclipse-2026-Game-3-Architecture.md) | The substrate implementation of the pair law |
 | [Benchmark results](Eclipse-2026-Benchmark-Results.md) | The sealed 2024 verdict + cold-machine reproduction runbook |
