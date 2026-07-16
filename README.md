@@ -18,6 +18,7 @@ On **August 12, 2026** a total solar eclipse crosses Iceland and northern Spain 
 | [Game 3 architecture](Eclipse-2026-Game-3-Architecture.md) | The substrate implementation of the pair law |
 | [Benchmark results](Eclipse-2026-Benchmark-Results.md) | The sealed 2024 verdict + cold-machine reproduction runbook |
 | [Prediction registry](Eclipse-2026-Prediction-Registry.md) | The falsifiable 2026 claim, verbatim, with its falsification conditions |
+| [**Success criteria**](Eclipse-2026-Success-Criteria.md) | S1–S5 decidable pass/fail, the storm contingency, and why reading the shear changes the game |
 | [Operations runbook](Eclipse-2026-Operations-Runbook.md) | Eclipse day in UT, the live loop, the T+1 resolution |
 
 ## How this stays true
