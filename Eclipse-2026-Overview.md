@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — the shadow experiment (the sky writes geometry, and geometry cannot lie)
-audience: everyone_then_engineers
-game: WIKI-ECLIPSE-2026-001
----
-
 # ☀️🌑 Eclipse 2026 — the sky writes geometry, and geometry cannot lie
 
 On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,000 kilometers long with a tip 294 kilometers wide — will drag across the Earth at supersonic speed, crossing western Iceland and northern Spain. This wiki is the complete, public, falsifiable record of an experiment that treats that moment not as a number to be measured, but as a **three-dimensional shape to be read** — with its claims sealed 27 days in advance, its data drawn only from public archives, and its verdicts computed in exact integers by a substrate whose native language is geometry.
@@ -69,9 +63,9 @@ Every data table on these pages sits between `GAIA` markers and is regenerated b
 **Ledger-borne live state:**
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:55:00 UT
+- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 20:06:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 19:55:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 20:04:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

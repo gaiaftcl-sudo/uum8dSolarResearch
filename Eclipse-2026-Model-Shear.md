@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — model shear (the storm data that breaks naive detectors)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-004
----
-
 # Model shear — the data that turns naive models into bad data
 
 A model that detects eclipses by *"TEC went down"* is wrong, and the archive proves it. Geomagnetic storms move the ionosphere harder than any eclipse — enhancements of +250% (Halloween 2003) and deep negative phases (Gannon 2024) — with **no shadow anywhere**. This page documents the shear corpus: the storm days ingested raw, paired against eclipse geometry, and presented to the frozen law. A naive detector false-positives here. The invariant must dead-cat — and whatever it actually does is recorded raw below, generated from the live crucible.
@@ -34,6 +28,8 @@ The residual exposure is honest and documented: a storm's negative phase *coinci
 ## The shear verdicts (live from the crucible)
 
 The `shear-negative` rows in the full historical table:
+
+<details><summary><b>Full historical crucible — every pair, one law</b> <i>(click to expand — generated live from the ledger)</i></summary>
 
 <!-- GAIA:BEGIN crucible-historical -->
 | Eclipse | Kind | Pair | Verdict | Projected (UT) | Depletion | Obscuration |
@@ -124,9 +120,13 @@ The `shear-negative` rows in the full historical table:
 *ONE frozen law — gate 800000 ppm, coupling 3/10 — applied to every pair. Generated live from `eclipse-fossils.jsonl` through `EclipseProjectionRunner`.*
 <!-- GAIA:END crucible-historical -->
 
+</details>
+
 ## The shear, FINISHED — the confinement discriminant
 
 The May-11 false positives above taught the second-generation layer: a shadow's depletion is **confined** to its own gate minutes and near-zero in the flanking hours; a storm floods the flanks as deep as the window. The discriminant — **excess in-window depletion** (gate-window median − ±2 h flank median, exact integers) — judged against every eclipse positive, every Gannon shear pair, and every quiet control:
+
+<details><summary><b>The full confinement + lag table</b> <i>(click to expand — generated live from the ledger)</i></summary>
 
 <!-- GAIA:BEGIN shear-discriminant -->
 | Eclipse | Kind | Station | Day | Window depletion | Flank depletion | **EXCESS** | Deepest bin (UT) | Δ from own max |
@@ -218,6 +218,8 @@ The May-11 false positives above taught the second-generation layer: a shadow's 
 
 *Excess = median depletion inside the gate window − median over the ±2 h flanks (exact integers, ledger-direct). A shadow is confined and rides its own maximum; a storm floods the flanks and pins to window edges. Generated live from the V252 ledger.*
 <!-- GAIA:END shear-discriminant -->
+
+</details>
 
 This table is what "data sheared of the models" yields: the frozen law's own false positives, turned into the measurement that rejects them — and into the storm-proof clause of the sealed [prediction extensions](Eclipse-2026-Prediction-Registry.md).
 

@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — the science research (circumstances, ionospheric response, storms, solar cycle)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-002
----
-
 # The science — August 12, 2026, and everything history says about it
 
 This page is the research foundation of the experiment: what the 2026 eclipse is, what measured ionospheric physics says a total eclipse does, what the reference storms look like, and what the solar cycle does to the noise floor. Data tables inside `GAIA` markers are generated from the substrate's own ledger.
@@ -119,9 +113,9 @@ Consequences: 2026 background TEC and day-to-day variability will resemble 2024,
 ## 6. Live context
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:55:00 UT
+- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 20:06:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 19:55:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 20:04:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — the pre-registered prediction (sealed 27 days ahead)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-008
----
-
 # The prediction registry — sealed before the sky moves
 
 On **2026-07-16**, twenty-seven days before the eclipse, the substrate sealed a falsifiable prediction of the August 12 ionospheric response to V234 (`ECLIPSE_2026_PREDICTION_PREREGISTERED`) and to a fingerprint-pinned Form. Nothing about it can change without the fingerprint saying so.
@@ -47,7 +41,7 @@ The law is **inherited, frozen, from the sealed 2024 benchmark** — gate 800,00
 
 Born from the finished shear ([Model shear](Eclipse-2026-Model-Shear.md)): second-generation claims sealed on top of the base prediction —
 
-1. **The traveling signature**: the five totality stations' depletion minima occur in a pinned ORDER with pinned gaps, each within ±300 s (one bin) of its own station's max-obscuration second — the umbra's ground track written into the ionosphere.
+1. **The traveling signature**: the five totality stations' depletion minima occur in a pinned ORDER with pinned gaps, each deepest bin riding its own station's max-obscuration second within the sealed lag window [−300, +1200] s (the bottomside delay measured −54…+1073 s across 2017/2023/2024) — the umbra's ground track written into the ionosphere.
 2. **The confinement claim (storm-proof)**: each totality station's excess in-window depletion clears a frozen threshold derived from the measured historical separation — decidable even if a G-storm hits on eclipse day, because a storm floods the flanks and a shadow cannot.
 3. **The quantified nulls**: Norwich CT and Millstone Hill sub-gate depletion bounded numerically by the measured coupling band × their obscuration — a pre-registered undetectability claim.
 

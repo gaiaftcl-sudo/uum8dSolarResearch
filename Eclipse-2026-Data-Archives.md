@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — data archives (every source, verified mechanics, provenance ledger)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-005
----
-
 # The data archives — every source, exactly how to reach it
 
 Everything the experiment consumes is public. This page records each archive's access mechanics — including the quirks we hit live, so no one re-discovers them — and the provenance ledger of every byte the substrate has actually ingested.

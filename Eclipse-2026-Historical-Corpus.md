@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — the historical corpus (three eclipses, three solar regimes, one law)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-003
----
-
 # The historical corpus — one frozen law across three solar regimes
 
 The full picture the founder asked for: every relevant historical eclipse ingested raw, quantized once, and presented to the **same frozen pair law** that is pre-registered for 2026. Nothing here is tuned per eclipse — the constants (`gate=800000ppm`, `coupling=3/10`, lower-median quiet baselines, Kp ≤ 4) were set once on the 2024 benchmark and never moved. What history shows at those constants is recorded raw, CALORIE or CURE (LAW 3).
@@ -111,6 +105,8 @@ Calculator trust: the geometry core reproduces independently published city circ
 
 ## The full crucible — every pair, one law
 
+<details><summary><b>Full historical crucible — every pair, one law</b> <i>(click to expand — generated live from the ledger)</i></summary>
+
 <!-- GAIA:BEGIN crucible-historical -->
 | Eclipse | Kind | Pair | Verdict | Projected (UT) | Depletion | Obscuration |
 |---|---|---|---|---|---|---|
@@ -199,6 +195,8 @@ Calculator trust: the geometry core reproduces independently published city circ
 
 *ONE frozen law — gate 800000 ppm, coupling 3/10 — applied to every pair. Generated live from `eclipse-fossils.jsonl` through `EclipseProjectionRunner`.*
 <!-- GAIA:END crucible-historical -->
+
+</details>
 
 ## The empirical coupling — what history lets us predict
 

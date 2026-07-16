@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — blind spots (five stories the shear tells that magnitude models cannot)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-011
----
-
 # Blind spots — five stories the shear tells that magnitude models will always miss
 
 Every story below is read directly from ledger rows in the [shear-discriminant table](Eclipse-2026-Model-Shear.md) — not argued, measured. Each names a *structural* blindness: a class of event a depletion-magnitude model glosses over not by bad luck but by construction, because a scalar cannot carry shape.
@@ -49,6 +43,8 @@ The only station under both the 2017 and 2024 totality paths. Same grid cells, s
 ---
 
 ## The live table these stories are read from
+
+<details><summary><b>The full confinement table the stories are read from</b> <i>(click to expand — generated live from the ledger)</i></summary>
 
 <!-- GAIA:BEGIN shear-discriminant -->
 | Eclipse | Kind | Station | Day | Window depletion | Flank depletion | **EXCESS** | Deepest bin (UT) | Δ from own max |
@@ -140,6 +136,8 @@ The only station under both the 2017 and 2024 totality paths. Same grid cells, s
 
 *Excess = median depletion inside the gate window − median over the ±2 h flanks (exact integers, ledger-direct). A shadow is confined and rides its own maximum; a storm floods the flanks and pins to window edges. Generated live from the V252 ledger.*
 <!-- GAIA:END shear-discriminant -->
+
+</details>
 
 ## The principle
 

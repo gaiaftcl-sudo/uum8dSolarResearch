@@ -1,14 +1,10 @@
----
-title: Eclipse 2026 — the sealed 2024 benchmark (Stage 1 verdict + reproduction runbook)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-007
----
-
 # The sealed benchmark — April 8, 2024, verdict CALORIE
 
 Stage 1 of the arc: the substrate ingested the 2024 total-eclipse archive raw and its invariant verified the measured ionospheric response against computed shadow geometry — **at the default pre-registered constants, with zero calibration**. Sealed to V234 as `ECLIPSE_C4_PROJECTION_INVARIANT | CALORIE` on 2026-07-16.
 
 ## The verdict (generated live from the corpus)
+
+<details><summary><b>The sealed 2024 verdict — all 28 pairs</b> <i>(click to expand — generated live from the ledger)</i></summary>
 
 <!-- GAIA:BEGIN crucible-benchmark -->
 | Pair | Kind | Verdict | Projected (UT) | Depletion | Obscuration |
@@ -44,6 +40,8 @@ Stage 1 of the arc: the substrate ingested the 2024 total-eclipse archive raw an
 
 *The sealed 2024 benchmark scope (eclipse day + quiet controls). Generated live from the corpus through the runner.*
 <!-- GAIA:END crucible-benchmark -->
+
+</details>
 
 What the table shows, in words:
 

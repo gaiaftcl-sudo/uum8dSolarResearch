@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — success criteria (and why reading the shear changes the game)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-010
----
-
 # Success criteria — what "the study succeeded" means, decidably
 
 Every criterion below is pinned to a sealed, fingerprint-checked Form and decided by the T+1 resolution on measured public data. Nothing here is judged by narrative; each tier passes or fails in the same rendered tables the world can read now.

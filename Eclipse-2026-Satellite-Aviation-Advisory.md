@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — satellite & aviation advisory (the only scheduled ionospheric disturbance in history)
-audience: operators_then_engineers
-game: WIKI-ECLIPSE-2026-012
----
-
 # Satellite & aviation advisory — August 12, 2026
 
 ## Why operators should care about the second sky that day
@@ -33,6 +27,37 @@ None of this is speculative: the timetable is the sealed geometry this experimen
 *Windows derive from the SEALED Besselian geometry (fingerprint-pinned); the expected band is the measured 2017/2023/2024 coupling range (309–560‰ of obscuration). 300-s bin resolution. Generated from `helio_eclipse_circumstances`.*
 <!-- GAIA:END ops-advisory -->
 
+**The day at a glance** (all times UT; core = deep-depletion window, sealed geometry):
+
+```mermaid
+gantt
+    title August 12, 2026 — the second sky's schedule (UT)
+    dateFormat HH:mm:ss
+    axisFormat %H:%M
+    section Látrabjarg
+    partial phase          :lat1, 16:43:40, 17:34:40
+    CORE depletion         :crit, latc, 17:34:40, 17:56:30
+    recovery               :lat2, 17:56:30, 18:44:55
+    section Reykjavik
+    partial phase          :rey1, 16:47:12, 17:38:02
+    CORE depletion         :crit, reyc, 17:38:02, 17:59:32
+    recovery               :rey2, 17:59:32, 18:47:38
+    section A Coruña
+    partial phase          :cor1, 17:30:56, 18:18:26
+    CORE depletion         :crit, corc, 18:18:26, 18:38:06
+    recovery               :cor2, 18:38:06, 19:21:59
+    section León
+    partial phase          :leo1, 17:32:44, 18:19:34
+    CORE depletion         :crit, leoc, 18:19:34, 18:38:54
+    recovery               :leo2, 18:38:54, 19:22:06
+    section Zaragoza
+    partial phase          :zar1, 17:34:41, 18:20:21
+    CORE depletion         :crit, zarc, 18:20:21, 18:39:11
+    recovery               :zar2, 18:39:11, 19:02:30
+    section Greatest eclipse
+    17:45:54 UT            :milestone, ge, 17:45:54, 0s
+```
+
 Reading it as an operator:
 
 - **Edge-in / edge-out windows** are where TEC changes fastest in space and time — expect the largest differential-GNSS residuals and the fastest correction updates there, not at maximum.
@@ -42,16 +67,19 @@ Reading it as an operator:
 
 ## The storm question — the part that matters most
 
-Solar Cycle 25 is at maximum; the probability of a geomagnetic storm coinciding with the eclipse is not small. Conventional practice would call that day's ionospheric data *contaminated* and unusable. This experiment pre-registered the opposite:
+> [!WARNING]
+> Solar Cycle 25 is at maximum. If SWPC est-Kp reaches **≥ 5** during 15:30–20:00 UT on eclipse day, the pre-registered storm flag raises — the timetable above still holds (a storm cannot move the Moon), and the confinement verdict below remains decidable **through** the storm.
+
+Conventional practice would call a stormy eclipse day's ionospheric data *contaminated* and unusable. This experiment pre-registered the opposite:
 
 - **A storm cannot fake, and cannot hide, the eclipse signature.** The [finished shear](Eclipse-2026-Model-Shear.md) measured both regimes in the same instrument grid: a shadow's depletion is *confined* to its own minutes and *rides its own maximum*; a storm floods the flanking hours as deeply as the window (measured at 665,000–724,000 ppm on May 11, 2024) and pins to window edges. The confinement verdict — excess in-window depletion against a frozen 50,189 ppm threshold — stays **decidable through a G5**.
 - **What that gives operators**: if August 12 turns stormy, the same public data separates "the scheduled, geometric dent" from "the storm on top of it." GNSS anomaly forensics that day do not have to throw the eclipse hours away — the two signatures are readable apart. On any *other* storm day, the same shape-read is the reason a deep TEC drop should **not** be attributed to a transient local cause: if the flanks are flooded and nothing rides a track, it is the storm, whole-sky ([Blind spots](Eclipse-2026-Blind-Spots.md), Stories 2–3).
 - **Live gate**: the experiment's watch loop reads NOAA SWPC's 1-minute estimated Kp continuously; est-Kp ≥ 5 during 15:30–20:00 UT raises the pre-registered storm flag.
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:55:00 UT
+- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 20:06:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 19:55:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 20:04:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

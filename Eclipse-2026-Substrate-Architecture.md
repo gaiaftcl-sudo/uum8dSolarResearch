@@ -1,9 +1,3 @@
----
-title: Eclipse 2026 — substrate architecture (how a shadow becomes a geometry a machine can hold)
-audience: engineers_and_auditors
-game: WIKI-ECLIPSE-2026-006
----
-
 # Substrate architecture — how a shadow becomes a geometry a machine can hold
 
 ## The born pair
