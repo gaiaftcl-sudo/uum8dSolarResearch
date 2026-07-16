@@ -113,9 +113,9 @@ Consequences: 2026 background TEC and day-to-day variability will resemble 2024,
 ## 6. Live context
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 20:06:00 UT
+- Latest SWPC estimated Kp in ledger: 0.00 at 2026-07-16 22:42:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 20:04:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 22:43:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

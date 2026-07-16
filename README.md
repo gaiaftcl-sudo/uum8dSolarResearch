@@ -32,3 +32,10 @@ Because shape cannot be counterfeited and shape-verdicts are exact, one machine 
 The generating substrate lives elsewhere; after every ingest or verdict it regenerates the marked blocks in these pages from its ledger, and a drift gate proves the wiki matches the data byte-for-byte. The prose frames; the substrate speaks its own numbers.
 
 **Resolves 2026-08-13** — the verdict, pass or fail, lands in these same tables. The historical record already publishes its own falsifiers, because a recorded failure is how this experiment learned to see.
+---
+
+## One method, many skies
+
+The eclipse was the first sky to sign its name. Five more charters are now sealed and open: rocket burns that punch ~900 km holes in the ionosphere on a manifest clock, solar flares that step the daylit hemisphere in lockstep with the GOES X-ray record, tsunamis that keep a Huygens travel-time appointment at every tide gauge, cosmic-ray dropouts that strobe ~50 neutron monitors from a single L1 shock minute, and explosions whose seismic arrival ladder no earthquake can climb. Each study runs the same recipe the eclipse proved out — a forcing with a computable clock and track, a public raw archive, a sealed adversary that mimics magnitude but not shape, and a standing future event where a frozen exact-integer law must resolve in the open.
+
+Start at the [Shear Studies — Program index](Shear-Studies-Index.md).

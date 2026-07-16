@@ -79,9 +79,9 @@ Conventional practice would call a stormy eclipse day's ionospheric data *contam
 - **Live gate**: the experiment's watch loop reads NOAA SWPC's 1-minute estimated Kp continuously; est-Kp ≥ 5 during 15:30–20:00 UT raises the pre-registered storm flag.
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 20:06:00 UT
+- Latest SWPC estimated Kp in ledger: 0.00 at 2026-07-16 22:42:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 20:04:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 22:43:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->
