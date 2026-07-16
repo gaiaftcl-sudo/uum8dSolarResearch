@@ -124,6 +124,103 @@ The `shear-negative` rows in the full historical table:
 *ONE frozen law — gate 800000 ppm, coupling 3/10 — applied to every pair. Generated live from `eclipse-fossils.jsonl` through `EclipseProjectionRunner`.*
 <!-- GAIA:END crucible-historical -->
 
+## The shear, FINISHED — the confinement discriminant
+
+The May-11 false positives above taught the second-generation layer: a shadow's depletion is **confined** to its own gate minutes and near-zero in the flanking hours; a storm floods the flanks as deep as the window. The discriminant — **excess in-window depletion** (gate-window median − ±2 h flank median, exact integers) — judged against every eclipse positive, every Gannon shear pair, and every quiet control:
+
+<!-- GAIA:BEGIN shear-discriminant -->
+| Eclipse | Kind | Station | Day | Window depletion | Flank depletion | **EXCESS** | Deepest bin (UT) | Δ from own max |
+|---|---|---|---|---|---|---|---|---|
+| 2017-08-21 | control | carbondale | 2017-07-25 | 0 ppm | 0 ppm | **0 ppm** | 18:07:30 | -835 s ✗ |
+| 2017-08-21 | control | carbondale | 2017-08-14 | 0 ppm | 0 ppm | **0 ppm** | 18:07:30 | -835 s ✗ |
+| 2017-08-21 | control | carbondale | 2017-08-28 | 42553 ppm | 77669 ppm | **-35116 ppm** | 18:12:30 | -535 s ✗ |
+| 2017-08-21 | control | casper-wy | 2017-07-25 | 0 ppm | 0 ppm | **0 ppm** | 17:27:30 | -981 s ✗ |
+| 2017-08-21 | control | casper-wy | 2017-08-14 | 0 ppm | 0 ppm | **0 ppm** | 17:27:30 | -981 s ✗ |
+| 2017-08-21 | control | casper-wy | 2017-08-28 | 64516 ppm | 75949 ppm | **-11433 ppm** | 17:52:30 | 519 s ✓ |
+| 2017-08-21 | control | columbia-sc | 2017-07-25 | 0 ppm | 0 ppm | **0 ppm** | 18:27:30 | -936 s ✗ |
+| 2017-08-21 | control | columbia-sc | 2017-08-14 | 0 ppm | 0 ppm | **0 ppm** | 18:27:30 | -936 s ✗ |
+| 2017-08-21 | control | columbia-sc | 2017-08-28 | 100917 ppm | 99099 ppm | **1818 ppm** | 18:47:30 | 264 s ✓ |
+| 2017-08-21 | control | nashville | 2017-07-25 | 0 ppm | 0 ppm | **0 ppm** | 18:12:30 | -954 s ✗ |
+| 2017-08-21 | control | nashville | 2017-08-14 | 0 ppm | 0 ppm | **0 ppm** | 18:12:30 | -954 s ✗ |
+| 2017-08-21 | control | nashville | 2017-08-28 | 31578 ppm | 67415 ppm | **-35837 ppm** | 18:27:30 | -54 s ✓ |
+| 2017-08-21 | control | salem-or | 2017-07-25 | 34090 ppm | 0 ppm | **34090 ppm** | 17:32:30 | 852 s ✓ |
+| 2017-08-21 | control | salem-or | 2017-08-14 | 0 ppm | 0 ppm | **0 ppm** | 17:07:30 | -648 s ✗ |
+| 2017-08-21 | control | salem-or | 2017-08-28 | 0 ppm | 31250 ppm | **-31250 ppm** | 17:07:30 | -648 s ✗ |
+| 2017-08-21 | eclipse | carbondale | 2017-08-21 | 477395 ppm | 162019 ppm | **315376 ppm** | 18:27:30 | 365 s ✓ |
+| 2017-08-21 | eclipse | casper-wy | 2017-08-21 | 388617 ppm | 86941 ppm | **301676 ppm** | 17:57:30 | 819 s ✓ |
+| 2017-08-21 | eclipse | columbia-sc | 2017-08-21 | 498899 ppm | 237474 ppm | **261425 ppm** | 18:47:30 | 264 s ✓ |
+| 2017-08-21 | eclipse | nashville | 2017-08-21 | 437216 ppm | 208971 ppm | **228245 ppm** | 18:27:30 | -54 s ✓ |
+| 2017-08-21 | eclipse | salem-or | 2017-08-21 | 384069 ppm | 191000 ppm | **193069 ppm** | 17:27:30 | 552 s ✓ |
+| 2023-10-14 | control | albuquerque | 2023-09-17 | 200344 ppm | 183114 ppm | **17230 ppm** | 16:37:30 | 35 s ✓ |
+| 2023-10-14 | control | albuquerque | 2023-09-30 | 0 ppm | 0 ppm | **0 ppm** | 16:27:30 | -565 s ✗ |
+| 2023-10-14 | control | albuquerque | 2023-10-02 | 32451 ppm | 17336 ppm | **15115 ppm** | 16:27:30 | -565 s ✗ |
+| 2023-10-14 | control | albuquerque | 2023-10-07 | 0 ppm | 0 ppm | **0 ppm** | 16:27:30 | -565 s ✗ |
+| 2023-10-14 | control | corpus-christi | 2023-09-17 | 258198 ppm | 223178 ppm | **35020 ppm** | 16:47:30 | -646 s ✗ |
+| 2023-10-14 | control | corpus-christi | 2023-09-30 | 0 ppm | 0 ppm | **0 ppm** | 16:47:30 | -646 s ✗ |
+| 2023-10-14 | control | corpus-christi | 2023-10-02 | 54107 ppm | 0 ppm | **54107 ppm** | 16:47:30 | -646 s ✗ |
+| 2023-10-14 | control | corpus-christi | 2023-10-07 | 0 ppm | 0 ppm | **0 ppm** | 16:47:30 | -646 s ✗ |
+| 2023-10-14 | control | eugene-or | 2023-09-17 | 71380 ppm | 80460 ppm | **-9080 ppm** | 16:17:30 | -83 s ✓ |
+| 2023-10-14 | control | eugene-or | 2023-09-30 | 0 ppm | 0 ppm | **0 ppm** | 16:12:30 | -383 s ✗ |
+| 2023-10-14 | control | eugene-or | 2023-10-02 | 33316 ppm | 31168 ppm | **2148 ppm** | 16:12:30 | -383 s ✗ |
+| 2023-10-14 | control | eugene-or | 2023-10-07 | 0 ppm | 0 ppm | **0 ppm** | 16:12:30 | -383 s ✗ |
+| 2023-10-14 | control | san-antonio | 2023-09-17 | 265203 ppm | 200956 ppm | **64247 ppm** | 16:42:30 | -706 s ✗ |
+| 2023-10-14 | control | san-antonio | 2023-09-30 | 0 ppm | 0 ppm | **0 ppm** | 16:42:30 | -706 s ✗ |
+| 2023-10-14 | control | san-antonio | 2023-10-02 | 20180 ppm | 4829 ppm | **15351 ppm** | 16:47:30 | -406 s ✗ |
+| 2023-10-14 | control | san-antonio | 2023-10-07 | 0 ppm | 0 ppm | **0 ppm** | 16:42:30 | -706 s ✗ |
+| 2023-10-14 | eclipse | albuquerque | 2023-10-14 | 322446 ppm | 152017 ppm | **170429 ppm** | 16:47:30 | 635 s ✓ |
+| 2023-10-14 | eclipse | corpus-christi | 2023-10-14 | 348812 ppm | 223811 ppm | **125001 ppm** | 17:12:30 | 854 s ✓ |
+| 2023-10-14 | eclipse | eugene-or | 2023-10-14 | 131566 ppm | 0 ppm | **131566 ppm** | 16:27:30 | 517 s ✓ |
+| 2023-10-14 | eclipse | san-antonio | 2023-10-14 | 368565 ppm | 234830 ppm | **133735 ppm** | 16:57:30 | 194 s ✓ |
+| 2024-04-08 | control | carbondale | 2024-03-12 | 28804 ppm | 32136 ppm | **-3332 ppm** | 18:47:30 | -829 s ✗ |
+| 2024-04-08 | control | carbondale | 2024-04-01 | 0 ppm | 0 ppm | **0 ppm** | 18:47:30 | -829 s ✗ |
+| 2024-04-08 | control | carbondale | 2024-04-15 | 0 ppm | 0 ppm | **0 ppm** | 18:47:30 | -829 s ✗ |
+| 2024-04-08 | control | cleveland | 2024-03-12 | 31284 ppm | 30168 ppm | **1116 ppm** | 19:02:30 | -788 s ✗ |
+| 2024-04-08 | control | cleveland | 2024-04-01 | 0 ppm | 0 ppm | **0 ppm** | 19:02:30 | -788 s ✗ |
+| 2024-04-08 | control | cleveland | 2024-04-15 | 0 ppm | 0 ppm | **0 ppm** | 19:02:30 | -788 s ✗ |
+| 2024-04-08 | control | dallas | 2024-03-12 | 73593 ppm | 55656 ppm | **17937 ppm** | 18:47:30 | 294 s ✓ |
+| 2024-04-08 | control | dallas | 2024-04-01 | 0 ppm | 0 ppm | **0 ppm** | 18:27:30 | -906 s ✗ |
+| 2024-04-08 | control | dallas | 2024-04-15 | 0 ppm | 0 ppm | **0 ppm** | 18:27:30 | -906 s ✗ |
+| 2024-04-08 | control | indianapolis | 2024-03-12 | 54195 ppm | 47430 ppm | **6765 ppm** | 19:22:30 | 873 s ✓ |
+| 2024-04-08 | control | indianapolis | 2024-04-01 | 0 ppm | 0 ppm | **0 ppm** | 18:52:30 | -927 s ✗ |
+| 2024-04-08 | control | indianapolis | 2024-04-15 | 0 ppm | 0 ppm | **0 ppm** | 18:52:30 | -927 s ✗ |
+| 2024-04-08 | control | mazatlan | 2024-03-12 | 100549 ppm | 65170 ppm | **35379 ppm** | 18:02:30 | -427 s ✗ |
+| 2024-04-08 | control | mazatlan | 2024-04-01 | 0 ppm | 0 ppm | **0 ppm** | 17:52:30 | -1027 s ✗ |
+| 2024-04-08 | control | mazatlan | 2024-04-15 | 0 ppm | 0 ppm | **0 ppm** | 17:52:30 | -1027 s ✗ |
+| 2024-04-08 | control | millstone | 2024-03-12 | 0 ppm | 0 ppm | **0 ppm** | 19:17:30 | -709 s ✗ |
+| 2024-04-08 | control | millstone | 2024-04-01 | 11608 ppm | 16518 ppm | **-4910 ppm** | 19:32:30 | 191 s ✓ |
+| 2024-04-08 | control | millstone | 2024-04-15 | 0 ppm | 0 ppm | **0 ppm** | 19:17:30 | -709 s ✗ |
+| 2024-04-08 | control | norwich | 2024-03-12 | 0 ppm | 0 ppm | **0 ppm** | 19:17:30 | -648 s ✗ |
+| 2024-04-08 | control | norwich | 2024-04-01 | 19407 ppm | 0 ppm | **19407 ppm** | 19:32:30 | 252 s ✓ |
+| 2024-04-08 | control | norwich | 2024-04-15 | 0 ppm | 0 ppm | **0 ppm** | 19:17:30 | -648 s ✗ |
+| 2024-04-08 | eclipse | carbondale | 2024-04-08 | 313114 ppm | 255571 ppm | **57543 ppm** | 19:17:30 | 971 s ✓ |
+| 2024-04-08 | eclipse | cleveland | 2024-04-08 | 400669 ppm | 330523 ppm | **70146 ppm** | 19:27:30 | 712 s ✓ |
+| 2024-04-08 | eclipse | dallas | 2024-04-08 | 280267 ppm | 194617 ppm | **85650 ppm** | 18:57:30 | 894 s ✓ |
+| 2024-04-08 | eclipse | indianapolis | 2024-04-08 | 354940 ppm | 276144 ppm | **78796 ppm** | 19:22:30 | 873 s ✓ |
+| 2024-04-08 | eclipse | mazatlan | 2024-04-08 | 272936 ppm | 174356 ppm | **98580 ppm** | 18:27:30 | 1073 s ✓ |
+| 2024-04-08 | eclipse | millstone | 2024-04-08 | 474572 ppm | 380621 ppm | **93951 ppm** | 19:42:30 | 791 s ✓ |
+| 2024-04-08 | eclipse | norwich | 2024-04-08 | 477974 ppm | 380160 ppm | **97814 ppm** | 19:37:30 | 552 s ✓ |
+| 2024-04-08 | shear-storm | carbondale | 2024-05-10 | 0 ppm | 0 ppm | **0 ppm** | 18:47:30 | -829 s ✗ |
+| 2024-04-08 | shear-storm | carbondale | 2024-05-11 | 731039 ppm | 723259 ppm | **7780 ppm** | 18:47:30 | -829 s ✗ |
+| 2024-04-08 | shear-storm | cleveland | 2024-05-10 | 0 ppm | 0 ppm | **0 ppm** | 19:02:30 | -788 s ✗ |
+| 2024-04-08 | shear-storm | cleveland | 2024-05-11 | 709141 ppm | 705195 ppm | **3946 ppm** | 19:02:30 | -788 s ✗ |
+| 2024-04-08 | shear-storm | dallas | 2024-05-10 | 0 ppm | 0 ppm | **0 ppm** | 18:27:30 | -906 s ✗ |
+| 2024-04-08 | shear-storm | dallas | 2024-05-11 | 728586 ppm | 685750 ppm | **42836 ppm** | 18:42:30 | -6 s ✓ |
+| 2024-04-08 | shear-storm | indianapolis | 2024-05-10 | 0 ppm | 0 ppm | **0 ppm** | 18:52:30 | -927 s ✗ |
+| 2024-04-08 | shear-storm | indianapolis | 2024-05-11 | 733664 ppm | 724580 ppm | **9084 ppm** | 18:52:30 | -927 s ✗ |
+| 2024-04-08 | shear-storm | mazatlan | 2024-05-10 | 0 ppm | 0 ppm | **0 ppm** | 17:52:30 | -1027 s ✗ |
+| 2024-04-08 | shear-storm | mazatlan | 2024-05-11 | 471758 ppm | 539170 ppm | **-67412 ppm** | 17:52:30 | -1027 s ✗ |
+| 2024-04-08 | shear-storm | millstone | 2024-05-10 | 0 ppm | 49585 ppm | **-49585 ppm** | 19:17:30 | -709 s ✗ |
+| 2024-04-08 | shear-storm | millstone | 2024-05-11 | 667827 ppm | 665528 ppm | **2299 ppm** | 19:17:30 | -709 s ✗ |
+| 2024-04-08 | shear-storm | norwich | 2024-05-10 | 0 ppm | 0 ppm | **0 ppm** | 19:17:30 | -648 s ✗ |
+| 2024-04-08 | shear-storm | norwich | 2024-05-11 | 687000 ppm | 684796 ppm | **2204 ppm** | 19:17:30 | -648 s ✗ |
+
+**Measured two-clause separation** (lag gate [-300, +1200] s): min eclipse excess 57543 ppm · eclipse lag failures 0 · max lag-passing non-eclipse excess 42836 ppm (shear-storm dallas 2024-05-11) — **CLEAN, gap 14707 ppm, threshold 50189 ppm**
+
+*Excess = median depletion inside the gate window − median over the ±2 h flanks (exact integers, ledger-direct). A shadow is confined and rides its own maximum; a storm floods the flanks and pins to window edges. Generated live from the V252 ledger.*
+<!-- GAIA:END shear-discriminant -->
+
+This table is what "data sheared of the models" yields: the frozen law's own false positives, turned into the measurement that rejects them — and into the storm-proof clause of the sealed [prediction extensions](Eclipse-2026-Prediction-Registry.md).
+
 ## The 2026 storm pivot (pre-registered)
 
 - On eclipse day, `eclipse-watch` reads NOAA SWPC's 1-minute estimated Kp every pass. **Est Kp ≥ 5 opens the storm gate**: the capture continues, the totality-path resolution still runs (a G-storm cannot un-total an eclipse — the geometry side is untouched), but the interpretation gains a storm annotation, the control-channel claims (Norwich/Millstone null) are weakened by storm variability, and the Gannon/Halloween archives become the parallel science channel.

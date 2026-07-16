@@ -43,6 +43,29 @@ The law is **inherited, frozen, from the sealed 2024 benchmark** — gate 800,00
 2. **Physics:** after the eclipse, a totality-path station with clean data that seals dead cat, or a declared control that projects, seals the resolution **CURE** — recorded raw, never renamed (LAW 3).
 3. **Storms:** est Kp ≥ 5 on eclipse day does NOT void the prediction (the geometry side is untouched by a storm) — the resolution still runs; the interpretation carries a storm annotation and the control-channel claims weaken accordingly (pre-registered in [Model shear](Eclipse-2026-Model-Shear.md)).
 
+## The prediction EXTENSIONS — what depletion-magnitude models never publish
+
+Born from the finished shear ([Model shear](Eclipse-2026-Model-Shear.md)): second-generation claims sealed on top of the base prediction —
+
+1. **The traveling signature**: the five totality stations' depletion minima occur in a pinned ORDER with pinned gaps, each within ±300 s (one bin) of its own station's max-obscuration second — the umbra's ground track written into the ionosphere.
+2. **The confinement claim (storm-proof)**: each totality station's excess in-window depletion clears a frozen threshold derived from the measured historical separation — decidable even if a G-storm hits on eclipse day, because a storm floods the flanks and a shadow cannot.
+3. **The quantified nulls**: Norwich CT and Millstone Hill sub-gate depletion bounded numerically by the measured coupling band × their obscuration — a pre-registered undetectability claim.
+
+<!-- GAIA:BEGIN prediction-extensions -->
+**Sealed prediction extensions** (fingerprint `b106d2926b1bf2cf`, terminal CALORIE, stamped 2026-07-16T18:54:39Z):
+
+```
+PREREGISTERED-EXTENSIONS 2026-08-12 (elements fp f9f9f8eebf7ed0cc): TRAVELING depletion-minimum order latrabjarg@63934 +192s→reykjavik@64126 +2372s→coruna@66498 +53s→leon@66551 +32s→zaragoza@66583 each deepest bin riding its own max-obscuration second within [-300,+1200]s (the bottomside delay measured −54…+1073s across 2017/2023/2024, bin-quantized)
+CONFINEMENT excess=window−flank(±7200s) median depletion ≥ threshold=50189ppm at every totality station AND < threshold at norwich+millstone (storm-proof: a storm floods the flanks and pins to window edges, a shadow cannot)
+NULLS norwich obsmax=132007 expected-depletion=40790–73923ppm → UNDETECTABLE at 300s bins
+millstone obsmax=158693 expected-depletion=49036–88868ppm → UNDETECTABLE at 300s bins
+derived-from measured historical coupling 309–560permille
+resolution=post-eclipse eclipse-shear analysis on measured 2026-08-12 vtec
+```
+
+*Rendered verbatim from the sealed Form; `invariant-verify --path …/eclipse-prediction-extensions-2026-08-12.invariant.json` re-derives it byte-for-byte from the Besselian elements.*
+<!-- GAIA:END prediction-extensions -->
+
 ## The resolution procedure (T+1, ~2026-08-13)
 
 ```bash
@@ -72,6 +95,7 @@ The verdict lands in the crucible tables on this wiki the moment the renderer ru
 |---|---|---|---|---|---|---|
 | 2024 benchmark | projection | shadow-projection | 7/7 | CALORIE | `89afd825011f060e` | 2026-07-16T16:01:47Z |
 | 2026 prediction | prediction-2026-08-12 | shadow-projection | PREREGISTERED | CALORIE | `c3e6841a206b8058` | 2026-07-16T16:02:00Z |
+| 2026 prediction extensions | prediction-extensions-2026-08-12 | shadow-projection | PREREGISTERED | CALORIE | `b106d2926b1bf2cf` | 2026-07-16T18:54:39Z |
 | historical universality | historical-universality | shadow-projection | 15/16 | CURE | `6fe49bee70289fee` | 2026-07-16T18:14:09Z |
 
 *Loaded and fingerprint-checked from `~/.gaiaftcl/franklin/invariants/` at render time.*
