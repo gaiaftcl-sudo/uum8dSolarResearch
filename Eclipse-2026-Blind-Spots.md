@@ -34,7 +34,7 @@ Same storm, same day — but Mazatlán's row reads **window 471,758 · flank 539
 
 ## Story 4 — The seasonal ghost of September 17
 
-San Antonio and Corpus Christi, control day 2023-09-17: month-scale equinox TEC decline against an October baseline faked a **27–28% "depletion"** — and the magnitude law false-positived both (the two residual control falsifiers in the sealed historical CURE). The shear rows show the tell: deepest bins at **−706 s and −383 s** — *before* the would-be maximum, pinned to the drift, with excess (64,247) that only exists because the flanks drift too.
+San Antonio and Corpus Christi, control day 2023-09-17: month-scale equinox TEC decline against an October baseline faked a **27–28% "depletion"** — and the magnitude law false-positived both (the two residual control falsifiers in the sealed historical CURE). The shear rows show the tell: deepest bins at **−706 s and −646 s** — *before* the would-be maximum, pinned to the drift, with excesses (64,247 and 35,020) that only exist because the flanks drift too.
 
 The lag gate rejects both: seasonal drift doesn't ride the Moon's timetable.
 
