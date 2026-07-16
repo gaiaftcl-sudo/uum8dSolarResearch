@@ -124,6 +124,10 @@ The `shear-negative` rows in the full historical table:
 
 ## The shear, FINISHED — the confinement discriminant
 
+![A shadow is confined; a storm floods everything](images/shadow-vs-storm.svg)
+
+![The finished shear — every station-day, one law](images/shear-separation.svg)
+
 The May-11 false positives above taught the second-generation layer: a shadow's depletion is **confined** to its own gate minutes and near-zero in the flanking hours; a storm floods the flanks as deep as the window. The discriminant — **excess in-window depletion** (gate-window median − ±2 h flank median, exact integers) — judged against every eclipse positive, every Gannon shear pair, and every quiet control:
 
 <details><summary><b>The full confinement + lag table</b> <i>(click to expand — generated live from the ledger)</i></summary>

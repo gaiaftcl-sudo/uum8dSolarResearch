@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Helvetica,Arial,sans-serif">
+<rect width="960" height="520" fill="#fff"/>
+<text x="480" y="32" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">One law, three solar regimes — the coupling history writes for 2026</text>
+<text x="480" y="54" text-anchor="middle" font-size="14" fill="#555">measured depletion as ‰ of obscuration at the projected second — 15 eclipse station-days</text>
+<rect x="80" y="124.3" width="850" height="123.6" fill="#4f46e5" opacity="0.08"/>
+<text x="924" y="140.3" text-anchor="end" font-size="12" fill="#4f46e5" font-weight="bold">2026 expectation band 309–560‰</text>
+<line x1="80" y1="252.3" x2="930" y2="252.3" stroke="#059669" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="86" y="268.3" font-size="12" fill="#059669" font-weight="bold">frozen audit line 300‰</text>
+<line x1="80" y1="400" x2="930" y2="400" stroke="#333"/>
+<text x="72" y="404.0" text-anchor="end" font-size="12" fill="#333">0</text>
+<text x="72" y="330.2" text-anchor="end" font-size="12" fill="#333">150</text>
+<text x="72" y="256.3" text-anchor="end" font-size="12" fill="#333">300</text>
+<text x="72" y="182.5" text-anchor="end" font-size="12" fill="#333">450</text>
+<text x="72" y="108.6" text-anchor="end" font-size="12" fill="#333">600</text>
+<rect x="90.8" y="159.8" width="35.1" height="240.2" rx="3" fill="#0ea5e9"/>
+<text x="108.3" y="153.8" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">488</text>
+<text transform="rotate(-42 108.3 414.0)" x="108.3" y="414.0" text-anchor="end" font-size="11" fill="#444">carbondale</text>
+<rect x="147.4" y="235.6" width="35.1" height="164.4" rx="3" fill="#0ea5e9"/>
+<text x="165.0" y="229.6" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">334</text>
+<text transform="rotate(-42 165.0 414.0)" x="165.0" y="414.0" text-anchor="end" font-size="11" fill="#444">casper-wy</text>
+<rect x="204.1" y="124.3" width="35.1" height="275.7" rx="3" fill="#0ea5e9"/>
+<text x="221.7" y="118.3" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">560</text>
+<text transform="rotate(-42 221.7 414.0)" x="221.7" y="414.0" text-anchor="end" font-size="11" fill="#444">columbia-sc</text>
+<rect x="260.8" y="159.8" width="35.1" height="240.2" rx="3" fill="#0ea5e9"/>
+<text x="278.3" y="153.8" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">488</text>
+<text transform="rotate(-42 278.3 414.0)" x="278.3" y="414.0" text-anchor="end" font-size="11" fill="#444">nashville</text>
+<rect x="317.4" y="239.0" width="35.1" height="161.0" rx="3" fill="#0ea5e9"/>
+<text x="335.0" y="233.0" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">327</text>
+<text transform="rotate(-42 335.0 414.0)" x="335.0" y="414.0" text-anchor="end" font-size="11" fill="#444">salem-or</text>
+<rect x="374.1" y="237.5" width="35.1" height="162.5" rx="3" fill="#f59e0b"/>
+<text x="391.7" y="231.5" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">330</text>
+<text transform="rotate(-42 391.7 414.0)" x="391.7" y="414.0" text-anchor="end" font-size="11" fill="#444">albuquerque</text>
+<rect x="430.8" y="206.5" width="35.1" height="193.5" rx="3" fill="#f59e0b"/>
+<text x="448.3" y="200.5" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">393</text>
+<text transform="rotate(-42 448.3 414.0)" x="448.3" y="414.0" text-anchor="end" font-size="11" fill="#444">corpus-christi</text>
+<rect x="487.4" y="204.1" width="35.1" height="195.9" rx="3" fill="#f59e0b"/>
+<text x="505.0" y="198.1" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">398</text>
+<text transform="rotate(-42 505.0 414.0)" x="505.0" y="414.0" text-anchor="end" font-size="11" fill="#444">san-antonio</text>
+<rect x="544.1" y="231.6" width="35.1" height="168.4" rx="3" fill="#4f46e5"/>
+<text x="561.7" y="225.6" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">342</text>
+<text transform="rotate(-42 561.7 414.0)" x="561.7" y="414.0" text-anchor="end" font-size="11" fill="#444">carbondale</text>
+<rect x="600.8" y="183.4" width="35.1" height="216.6" rx="3" fill="#4f46e5"/>
+<text x="618.3" y="177.4" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">440</text>
+<text transform="rotate(-42 618.3 414.0)" x="618.3" y="414.0" text-anchor="end" font-size="11" fill="#444">cleveland</text>
+<rect x="657.4" y="247.9" width="35.1" height="152.1" rx="3" fill="#4f46e5"/>
+<text x="675.0" y="241.9" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">309</text>
+<text transform="rotate(-42 675.0 414.0)" x="675.0" y="414.0" text-anchor="end" font-size="11" fill="#444">dallas</text>
+<rect x="714.1" y="223.8" width="35.1" height="176.2" rx="3" fill="#4f46e5"/>
+<text x="731.7" y="217.8" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">358</text>
+<text transform="rotate(-42 731.7 414.0)" x="731.7" y="414.0" text-anchor="end" font-size="11" fill="#444">indianapolis</text>
+<rect x="770.8" y="236.1" width="35.1" height="163.9" rx="3" fill="#4f46e5"/>
+<text x="788.3" y="230.1" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">333</text>
+<text transform="rotate(-42 788.3 414.0)" x="788.3" y="414.0" text-anchor="end" font-size="11" fill="#444">mazatlan</text>
+<rect x="827.4" y="143.0" width="35.1" height="257.0" rx="3" fill="#4f46e5"/>
+<text x="845.0" y="137.0" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">522</text>
+<text transform="rotate(-42 845.0 414.0)" x="845.0" y="414.0" text-anchor="end" font-size="11" fill="#444">millstone</text>
+<rect x="884.1" y="138.1" width="35.1" height="261.9" rx="3" fill="#4f46e5"/>
+<text x="901.7" y="132.1" text-anchor="middle" font-size="11" fill="#111" font-weight="bold">532</text>
+<text transform="rotate(-42 901.7 414.0)" x="901.7" y="414.0" text-anchor="end" font-size="11" fill="#444">norwich</text>
+<g font-size="13">
+<rect x="120" y="66" width="14" height="12" fill="#0ea5e9"/><text x="140" y="77" fill="#111">2017 total · SC24 declining</text>
+<rect x="330" y="66" width="14" height="12" fill="#f59e0b"/><text x="350" y="77" fill="#111">2023 annular · SC25 rising</text>
+<rect x="540" y="66" width="14" height="12" fill="#4f46e5"/><text x="560" y="77" fill="#111">2024 total · SC25 maximum</text>
+</g>
+<text x="480" y="505" text-anchor="middle" font-size="12" fill="#777">Every projected station across a full solar cycle sits above the frozen audit line — Carbondale appears twice (488‰ in 2017, 342‰ in 2024): the cycle modulates, the law holds.</text>
+</svg>

@@ -18,6 +18,8 @@ That is the explosive part: **shape cannot be counterfeited, and shape-verdicts 
 
 And because shape-verdicts are integers computed from public data, something new becomes possible: **one machine sealed to-the-second claims about the sky, 27 days before the sky moves, in public, in a form that survives a superstorm** — claims anyone on Earth can check against the same archives on August 13.
 
+![The experiment in 15 seconds](images/eclipse-2026-shear.gif)
+
 ## What is already sealed
 
 | Stage | The claim | Status |

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="Helvetica,Arial,sans-serif">
+<rect width="960" height="540" fill="#ffffff"/>
+<text x="480" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">August 12, 2026 — what the second sky will do, to the second</text>
+<text x="480" y="56" text-anchor="middle" font-size="14" fill="#555">sealed geometry (fp c3e6841a206b8058) · expected core depletion 30.9–56.0% of quiet TEC (measured 2017/2023/2024 coupling)</text>
+<!-- time axis 16:30 (0) → 19:30 (10800 s) mapped to x 140..900 -->
+<g font-size="12" fill="#333">
+  <line x1="140" y1="470" x2="900" y2="470" stroke="#333"/>
+  <text x="140" y="490" text-anchor="middle">16:30</text><line x1="140" y1="470" x2="140" y2="475" stroke="#333"/>
+  <text x="266" y="490" text-anchor="middle">17:00</text><line x1="266" y1="470" x2="266" y2="475" stroke="#333"/>
+  <text x="393" y="490" text-anchor="middle">17:30</text><line x1="393" y1="470" x2="393" y2="475" stroke="#333"/>
+  <text x="520" y="490" text-anchor="middle">18:00</text><line x1="520" y1="470" x2="520" y2="475" stroke="#333"/>
+  <text x="646" y="490" text-anchor="middle">18:30</text><line x1="646" y1="470" x2="646" y2="475" stroke="#333"/>
+  <text x="773" y="490" text-anchor="middle">19:00</text><line x1="773" y1="470" x2="773" y2="475" stroke="#333"/>
+  <text x="900" y="490" text-anchor="middle">19:30 UT</text><line x1="900" y1="470" x2="900" y2="475" stroke="#333"/>
+</g>
+<!-- greatest eclipse 17:45:54 → x = 140 + (4554/10800)*760 = 460.5 -->
+<line x1="460" y1="70" x2="460" y2="470" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="466" y="84" font-size="12" fill="#b45309" font-weight="bold">greatest eclipse 17:45:54</text>
+<!-- rows: y positions; x = 140+(sec-59400)/10800*760 -->
+<!-- Latrabjarg C1 60220→197.7 core 63280(gate17:34:40=63280? no: 17:34:40=63280) use given: core 17:34:40–17:56:30 → 63280..64590 ; C4 67495 -->
+<g font-size="13">
+  <!-- Látrabjarg -->
+  <text x="130" y="120" text-anchor="end" fill="#111" font-weight="bold">Látrabjarg</text>
+  <rect x="198" y="106" width="215" height="18" rx="4" fill="#a5b4fc"/>
+  <rect x="413" y="103" width="92" height="24" rx="4" fill="#dc2626"/>
+  <rect x="505" y="106" width="207" height="18" rx="4" fill="#a5b4fc"/>
+  <text x="459" y="120" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">totality</text>
+  <!-- Reykjavik C1 60432→212.6 core 63482..64772 → 428..518 C4 67658→726 -->
+  <text x="130" y="185" text-anchor="end" fill="#111" font-weight="bold">Reykjavik</text>
+  <rect x="213" y="171" width="215" height="18" rx="4" fill="#a5b4fc"/>
+  <rect x="428" y="168" width="91" height="24" rx="4" fill="#dc2626"/>
+  <rect x="519" y="171" width="207" height="18" rx="4" fill="#a5b4fc"/>
+  <text x="473" y="185" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">totality</text>
+  <!-- A Coruña C1 63056→397 core 65906..67086 → 598..681 C4 69719→866 -->
+  <text x="130" y="250" text-anchor="end" fill="#111" font-weight="bold">A Coruña</text>
+  <rect x="397" y="236" width="201" height="18" rx="4" fill="#a5b4fc"/>
+  <rect x="598" y="233" width="83" height="24" rx="4" fill="#dc2626"/>
+  <rect x="681" y="236" width="185" height="18" rx="4" fill="#a5b4fc"/>
+  <text x="639" y="250" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">totality</text>
+  <!-- León C1 63164→404 core 65974..67134 → 603..684 C4 69726→867 -->
+  <text x="130" y="315" text-anchor="end" fill="#111" font-weight="bold">León</text>
+  <rect x="404" y="301" width="199" height="18" rx="4" fill="#a5b4fc"/>
+  <rect x="603" y="298" width="81" height="24" rx="4" fill="#dc2626"/>
+  <rect x="684" y="301" width="183" height="18" rx="4" fill="#a5b4fc"/>
+  <text x="643" y="315" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">totality</text>
+  <!-- Zaragoza C1 63281→412 core 66021..67151 → 606..686 C4 68550→784 -->
+  <text x="130" y="380" text-anchor="end" fill="#111" font-weight="bold">Zaragoza</text>
+  <rect x="412" y="366" width="194" height="18" rx="4" fill="#a5b4fc"/>
+  <rect x="606" y="363" width="80" height="24" rx="4" fill="#dc2626"/>
+  <rect x="686" y="366" width="98" height="18" rx="4" fill="#a5b4fc"/>
+  <text x="646" y="380" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">totality</text>
+  <!-- Norwich null row -->
+  <text x="130" y="440" text-anchor="end" fill="#6b7280" font-weight="bold">Norwich CT</text>
+  <rect x="286" y="428" width="420" height="12" rx="4" fill="#e5e7eb"/>
+  <text x="720" y="440" font-size="12" fill="#6b7280">13.2% partial — expected UNDETECTABLE (sealed null: 4.1–7.4%)</text>
+</g>
+<g font-size="12" fill="#333">
+  <rect x="620" y="88" width="16" height="12" fill="#a5b4fc"/><text x="641" y="98">partial phase (edge gradients — GNSS corrections stress here)</text>
+  <rect x="620" y="108" width="16" height="12" fill="#dc2626"/><text x="641" y="118">CORE depletion window (30.9–56.0% TEC collapse)</text>
+</g>
+<text x="480" y="522" text-anchor="middle" font-size="12" fill="#777">Depletion minima arrive in this order — Látrabjarg → +192 s → Reykjavik → +2372 s → A Coruña → +53 s → León → +32 s → Zaragoza — each riding its own maximum. Sealed 27 days ahead.</text>
+</svg>

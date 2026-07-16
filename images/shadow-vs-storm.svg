@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Helvetica,Arial,sans-serif">
+<rect width="960" height="480" fill="#ffffff"/>
+<text x="480" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">A shadow is confined. A storm floods everything.</text>
+<text x="480" y="56" text-anchor="middle" font-size="14" fill="#555">Same station (Carbondale), same instrument grid, same integer law — measured depletion vs quiet baseline</text>
+
+<!-- Left panel: eclipse day 2017-08-21 -->
+<g>
+  <text x="250" y="92" text-anchor="middle" font-size="16" font-weight="bold" fill="#4f46e5">ECLIPSE DAY — Aug 21, 2017</text>
+  <!-- baseline -->
+  <line x1="70" y1="380" x2="430" y2="380" stroke="#333"/>
+  <!-- flank left 162,019 → h=65 ; window 477,395 → h=191 ; flank right 162,019 -->
+  <rect x="90"  y="315" width="90" height="65"  fill="#a5b4fc"/>
+  <rect x="205" y="189" width="90" height="191" fill="#4f46e5"/>
+  <rect x="320" y="315" width="90" height="65"  fill="#a5b4fc"/>
+  <text x="135" y="305" text-anchor="middle" font-size="12" fill="#333">flank ±2 h</text>
+  <text x="135" y="335" text-anchor="middle" font-size="12" fill="#fff">16.2%</text>
+  <text x="250" y="179" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">gate window</text>
+  <text x="250" y="240" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">47.7%</text>
+  <text x="365" y="305" text-anchor="middle" font-size="12" fill="#333">flank ±2 h</text>
+  <text x="365" y="335" text-anchor="middle" font-size="12" fill="#fff">16.2%</text>
+  <!-- excess bracket -->
+  <line x1="440" y1="189" x2="440" y2="315" stroke="#059669" stroke-width="2"/>
+  <line x1="434" y1="189" x2="446" y2="189" stroke="#059669" stroke-width="2"/>
+  <line x1="434" y1="315" x2="446" y2="315" stroke="#059669" stroke-width="2"/>
+  <text x="250" y="415" text-anchor="middle" font-size="15" font-weight="bold" fill="#059669">EXCESS = +315,376 ppm ✓</text>
+  <text x="250" y="436" text-anchor="middle" font-size="12" fill="#555">deep only inside the shadow's own minutes — the ring is threaded</text>
+</g>
+
+<!-- Right panel: Gannon storm May 11 2024 -->
+<g>
+  <text x="710" y="92" text-anchor="middle" font-size="16" font-weight="bold" fill="#dc2626">GANNON G5 STORM — May 11, 2024</text>
+  <line x1="530" y1="380" x2="890" y2="380" stroke="#333"/>
+  <!-- flank 723,259 → h=289 ; window 731,039 → h=292 -->
+  <rect x="550" y="91" width="90" height="289" fill="#fca5a5"/>
+  <rect x="665" y="88" width="90" height="292" fill="#dc2626"/>
+  <rect x="780" y="91" width="90" height="289" fill="#fca5a5"/>
+  <text x="595" y="130" text-anchor="middle" font-size="12" fill="#7f1d1d">72.3%</text>
+  <text x="710" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">73.1%</text>
+  <text x="825" y="130" text-anchor="middle" font-size="12" fill="#7f1d1d">72.3%</text>
+  <text x="710" y="415" text-anchor="middle" font-size="15" font-weight="bold" fill="#b91c1c">EXCESS = +7,780 ppm ✗</text>
+  <text x="710" y="436" text-anchor="middle" font-size="12" fill="#555">deeper than any eclipse — but everywhere at once. No cone, no track, no clock.</text>
+</g>
+<text x="480" y="468" text-anchor="middle" font-size="12" fill="#777">Numbers are ledger rows (median depletion fraction of quiet baseline). The frozen scalar law false-positived this storm 7/7; the confinement read rejects it.</text>
+</svg>

@@ -200,6 +200,8 @@ Calculator trust: the geometry core reproduces independently published city circ
 
 ## The empirical coupling — what history lets us predict
 
+![One law, three solar regimes](images/coupling-three-regimes.svg)
+
 For every projected positive, the measured coupling (depletion as parts-per-thousand of obscuration at the projected second) with the day's geomagnetic context:
 
 <!-- GAIA:BEGIN empirical-coupling -->

@@ -29,6 +29,8 @@ None of this is speculative: the timetable is the sealed geometry this experimen
 
 **The day at a glance** (all times UT; core = deep-depletion window, sealed geometry):
 
+![What to expect on August 12](images/aug12-what-to-expect.svg)
+
 ```mermaid
 gantt
     title August 12, 2026 — the second sky's schedule (UT)
