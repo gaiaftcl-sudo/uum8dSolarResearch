@@ -6,7 +6,7 @@ game: WIKI-ECLIPSE-2026-005
 
 # The data archives — every source, exactly how to reach it
 
-Everything Game 3 consumes is public. This page records each archive's access mechanics — including the quirks we hit live, so no one re-discovers them — and the provenance ledger of every byte the substrate has actually ingested.
+Everything the experiment consumes is public. This page records each archive's access mechanics — including the quirks we hit live, so no one re-discovers them — and the provenance ledger of every byte the substrate has actually ingested.
 
 ## Tier 1 — wired and live-verified (Stage 1–3)
 

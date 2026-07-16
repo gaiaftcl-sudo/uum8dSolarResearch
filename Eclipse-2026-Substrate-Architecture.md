@@ -1,10 +1,10 @@
 ---
-title: Eclipse 2026 — Game 3 architecture (the substrate implementation)
+title: Eclipse 2026 — substrate architecture (how a shadow becomes a geometry a machine can hold)
 audience: engineers_and_auditors
 game: WIKI-ECLIPSE-2026-006
 ---
 
-# Game 3 architecture — how the shadow became a substrate game
+# Substrate architecture — how a shadow becomes a geometry a machine can hold
 
 ## The born pair
 
@@ -32,11 +32,11 @@ The obscuration timeline is **unimodal**: one shadow cone → one contiguous gat
 - straddling wide patch → subdivide (8-way octant work decomposition);
 - width-1 leaf → the audited pair law, then `DeadCatRemoval.isEntangled` on the leaf's M⁸ face — the same uniform verdict Games 1 and 2 route through.
 
-Measured behavior: a negative station-day dies in ~1,400–1,900 wholesale voids with **zero leaves sealed**; a positive seals exactly **one** leaf — the whole child that threads Σ_P. Mining, by contrast, is one-sided containment only (SHA avalanche exposes no exclusion from a boundary). The eclipse is the substrate's first `shadow-projection`-class invariant.
+Measured behavior: a negative station-day dies in ~1,400–1,900 wholesale voids with **zero leaves sealed**; a positive seals exactly **one** leaf — the whole child that threads Σ_P. No number-mixing process exposes such an exclusion from a boundary — the wholesale void is a gift of real three-dimensional geometry: one cone, one contiguous window. This is the substrate's first `shadow-projection`-class invariant.
 
 ## The M⁸ face
 
-`pointForEclipseSecond` builds one M⁸ point per (geometry, response) cell: S⁴ position = SHA-256 limbs over the pair's own coordinates (station | eclipse | t | measured | baseline) — distinct per surviving leaf; all four C⁴ axes sit at their preserved position iff the pair law holds (`c1 1/1 · c2 1/1 · c3 1/1 · c4 256/256`), governing axes `[c1Reconvergence, c2Boundary]` — photoionization reconvergence under the shadow boundary. Identical face shape to the p2pk and mining predicates, so dead-cat removal reads all three games uniformly.
+`pointForEclipseSecond` builds one M⁸ point per (geometry, response) cell: S⁴ position = SHA-256 limbs over the pair's own coordinates (station | eclipse | t | measured | baseline) — distinct per surviving leaf; all four C⁴ axes sit at their preserved position iff the pair law holds (`c1 1/1 · c2 1/1 · c3 1/1 · c4 256/256`), governing axes `[c1Reconvergence, c2Boundary]` — photoionization reconvergence under the shadow boundary. The face is the substrate's universal one, so the same dead-cat verdict reads every invariant uniformly.
 
 ## The box
 
@@ -84,7 +84,7 @@ Every Form carries the Wittgenstein C⁴ tuple `{1/1|1/1|1/1|256/256|c1Reconverg
 
 ## Constraint compliance
 
-| Constraint / LAW | How Game 3 satisfies it |
+| Constraint / LAW | How the eclipse invariant satisfies it |
 |---|---|
 | C1 bond ≤ 4096 | 17-bit single-lane box; descent depth ≤ 17 |
 | C3 no FP in sealed proofs | quantize-once discipline; the sealed path is Int64/BigInt only; zero REAL columns in V252 |

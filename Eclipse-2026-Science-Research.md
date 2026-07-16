@@ -6,7 +6,7 @@ game: WIKI-ECLIPSE-2026-002
 
 # The science — August 12, 2026, and everything history says about it
 
-This page is the research foundation of Game 3: what the 2026 eclipse is, what measured ionospheric physics says a total eclipse does, what the reference storms look like, and what the solar cycle does to the noise floor. Data tables inside `GAIA` markers are generated from the substrate's own ledger.
+This page is the research foundation of the experiment: what the 2026 eclipse is, what measured ionospheric physics says a total eclipse does, what the reference storms look like, and what the solar cycle does to the noise floor. Data tables inside `GAIA` markers are generated from the substrate's own ledger.
 
 ---
 
@@ -44,7 +44,7 @@ The Moon's shadow switches off the ionosphere's photoionization source along a s
 
 **Timing structure** — peak TEC/foF2 reduction lands within ~30 min of local maximum obscuration; the topside lags by 1–2.5 h; foF2 overshoots on recovery. The substrate's projected leaves (below) land **within minutes of local maximum** — consistent with the published bottomside lag.
 
-**Raw vs smoothed products:** high-cadence line-of-sight/1 Hz GNSS data preserves the bow waves and short-period gravity waves that gridded, binned vertical-TEC maps average away, and the choice of background-correction method alone moves reported depletion magnitudes by **20–40%**. Engineering consequence baked into Game 3: ingest raw-est available products, quantize once, pin the baseline *rule* (lower median over named quiet days) in the sealed Form so the correction method can never drift post-hoc.
+**Raw vs smoothed products:** high-cadence line-of-sight/1 Hz GNSS data preserves the bow waves and short-period gravity waves that gridded, binned vertical-TEC maps average away, and the choice of background-correction method alone moves reported depletion magnitudes by **20–40%**. Engineering consequence baked into the experiment: ingest raw-est available products, quantize once, pin the baseline *rule* (lower median over named quiet days) in the sealed Form so the correction method can never drift post-hoc.
 
 ## 3. What the substrate measured (the historical corpus)
 
@@ -95,9 +95,9 @@ Consequences: 2026 background TEC and day-to-day variability will resemble 2024,
 ## 6. Live context
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-07-16 19:12:00 UT
+- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:17:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 19:11:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 19:17:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->
