@@ -24,6 +24,30 @@ This page is the research foundation of the experiment: what the 2026 eclipse is
 **The substrate's own station circumstances for 2026** (computed by `eclipse-geometry`, stored in the ledger):
 
 <!-- GAIA:BEGIN geometry-2026-08-12 -->
+| Station | C1 (UT) | Maximum (UT) | C4 (UT) | Max obscuration |
+|---|---|---|---|---|
+| albuquerque | — | — | — | 0 ppm (0.0%) |
+| carbondale | — | — | — | 0 ppm (0.0%) |
+| casper-wy | — | — | — | 0 ppm (0.0%) |
+| cleveland | 17:07:12 | 17:40:00 | 18:12:16 | 29458 ppm (2.9%) |
+| columbia-sc | — | — | — | 0 ppm (0.0%) |
+| corpus-christi | — | — | — | 0 ppm (0.0%) |
+| coruna | 17:30:56 | 18:28:18 | 19:21:59 | 1000000 ppm (100.0%) |
+| dallas | — | — | — | 0 ppm (0.0%) |
+| eugene-or | — | — | — | 0 ppm (0.0%) |
+| indianapolis | — | — | — | 0 ppm (0.0%) |
+| latrabjarg | 16:43:40 | 17:45:34 | 18:44:55 | 1000000 ppm (100.0%) |
+| leon | 17:32:44 | 18:29:11 | 19:22:06 | 1000000 ppm (100.0%) |
+| mazatlan | — | — | — | 0 ppm (0.0%) |
+| millstone | 17:00:46 | 17:53:59 | 18:45:02 | 158693 ppm (15.9%) |
+| nashville | — | — | — | 0 ppm (0.0%) |
+| norwich | 17:04:36 | 17:55:20 | 18:44:03 | 132007 ppm (13.2%) |
+| reykjavik | 16:47:12 | 17:48:46 | 18:47:38 | 1000000 ppm (100.0%) |
+| salem-or | — | — | — | 0 ppm (0.0%) |
+| san-antonio | — | — | — | 0 ppm (0.0%) |
+| zaragoza | 17:34:41 | 18:29:43 | 19:02:30 | 1000000 ppm (100.0%) |
+
+*Besselian elements fingerprint `f9f9f8eebf7ed0cc` · quantized 10-s lattice · generated from `helio_eclipse_circumstances`.*
 <!-- GAIA:END geometry-2026-08-12 -->
 
 **Norwich, Connecticut** — the home station — sees a shallow **~13.2% partial** with the Sun ~60° high at maximum 17:55:20 UT (1:55 PM EDT). That is a fundamentally different physical regime from totality: far too weak for a detectable local TEC signature, so Norwich (and Millstone Hill, 15.9%) are the **declared below-threshold control channel** of the 2026 prediction — a falsifiable claim in its own right. The science payload comes from the totality path: Iceland and Spain.
@@ -95,9 +119,9 @@ Consequences: 2026 background TEC and day-to-day variability will resemble 2024,
 ## 6. Live context
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:17:00 UT
+- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:55:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 19:17:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 19:55:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

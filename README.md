@@ -23,6 +23,7 @@ Because shape cannot be counterfeited and shape-verdicts are exact, one machine 
 | [Substrate architecture](Eclipse-2026-Substrate-Architecture.md) | How a shadow becomes a geometry a machine can hold |
 | [Benchmark results](Eclipse-2026-Benchmark-Results.md) | The sealed 2024 verdict + cold-machine reproduction runbook |
 | [Prediction registry](Eclipse-2026-Prediction-Registry.md) | Both sealed claims, verbatim, with falsification conditions |
+| [**Satellite & aviation advisory**](Eclipse-2026-Satellite-Aviation-Advisory.md) | The only scheduled ionospheric disturbance in history — GNSS, HF, satellite windows |
 | [**Success criteria**](Eclipse-2026-Success-Criteria.md) | S1–S5 decidable pass/fail, the storm contingency, failure semantics |
 | [Operations runbook](Eclipse-2026-Operations-Runbook.md) | Eclipse day in UT, the live loop, the T+1 resolution |
 

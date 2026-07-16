@@ -45,6 +45,7 @@ On **August 13** the resolution runs against measured data and the verdict — p
 - **[Substrate architecture](Eclipse-2026-Substrate-Architecture.md)** — how a shadow becomes a geometry a machine can hold: the exact-integer law, the topological prune, the Forms.
 - **[Benchmark results](Eclipse-2026-Benchmark-Results.md)** — the sealed 2024 verdict, station by station, with the cold-machine reproduction runbook.
 - **[Prediction registry](Eclipse-2026-Prediction-Registry.md)** — both sealed claims, verbatim, with their falsification conditions.
+- **[Satellite & aviation advisory](Eclipse-2026-Satellite-Aviation-Advisory.md)** — what GNSS, HF, and satellite operators can use before and during the event.
 - **[Success criteria](Eclipse-2026-Success-Criteria.md)** — S1–S5, decidable; the storm contingency; failure semantics.
 - **[Operations runbook](Eclipse-2026-Operations-Runbook.md)** — eclipse day in UT, the live loop, the resolution.
 
@@ -68,9 +69,9 @@ Every data table on these pages sits between `GAIA` markers and is regenerated b
 **Ledger-borne live state:**
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:17:00 UT
+- Latest SWPC estimated Kp in ledger: 0.67 at 2026-07-16 19:55:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 19:17:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-16 19:55:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->
