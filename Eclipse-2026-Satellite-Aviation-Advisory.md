@@ -55,7 +55,7 @@ gantt
     CORE depletion         :crit, zarc, 18:20:21, 18:39:11
     recovery               :zar2, 18:39:11, 19:02:30
     section Greatest eclipse
-    17:45:54 UT            :milestone, ge, 17:45:54, 0s
+    totality peak off Iceland :milestone, ge, 17:45:54, 0m
 ```
 
 Reading it as an operator:
