@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Helvetica,Arial,sans-serif">
+<rect width="960" height="480" fill="#ffffff"/>
+<text x="480" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">A step locked to the sky. A wave crawling with the ground.</text>
+<text x="480" y="56" text-anchor="middle" font-size="14" fill="#555">Same axes — per-station onset lag (min after the shock minute) vs station longitude — FD signature (left) against the adversaries (right)</text>
+<text transform="rotate(-90 22 250)" x="22" y="250" text-anchor="middle" font-size="12" fill="#555">onset lag (min after shock minute)</text>
+<line x1="70" y1="180" x2="450" y2="180" stroke="#e5e7eb"/>
+<line x1="70" y1="250" x2="450" y2="250" stroke="#e5e7eb"/>
+<line x1="70" y1="320" x2="450" y2="320" stroke="#e5e7eb"/>
+<line x1="530" y1="180" x2="910" y2="180" stroke="#e5e7eb"/>
+<line x1="530" y1="250" x2="910" y2="250" stroke="#e5e7eb"/>
+<line x1="530" y1="320" x2="910" y2="320" stroke="#e5e7eb"/>
+<text x="64" y="114" text-anchor="end" font-size="11" fill="#555">0</text>
+<text x="64" y="184" text-anchor="end" font-size="11" fill="#555">360</text>
+<text x="64" y="254" text-anchor="end" font-size="11" fill="#555">720</text>
+<text x="64" y="324" text-anchor="end" font-size="11" fill="#555">1080</text>
+<text x="64" y="394" text-anchor="end" font-size="11" fill="#555">1440</text>
+<line x1="70" y1="110" x2="70" y2="390" stroke="#333"/>
+<line x1="70" y1="390" x2="450" y2="390" stroke="#333"/>
+<line x1="530" y1="110" x2="530" y2="390" stroke="#333"/>
+<line x1="530" y1="390" x2="910" y2="390" stroke="#333"/>
+<text x="70" y="408" text-anchor="middle" font-size="11" fill="#555">0°</text>
+<text x="165" y="408" text-anchor="middle" font-size="11" fill="#555">90°</text>
+<text x="260" y="408" text-anchor="middle" font-size="11" fill="#555">180°</text>
+<text x="355" y="408" text-anchor="middle" font-size="11" fill="#555">270°</text>
+<text x="450" y="408" text-anchor="middle" font-size="11" fill="#555">360°E</text>
+<text x="530" y="408" text-anchor="middle" font-size="11" fill="#555">0°</text>
+<text x="625" y="408" text-anchor="middle" font-size="11" fill="#555">90°</text>
+<text x="720" y="408" text-anchor="middle" font-size="11" fill="#555">180°</text>
+<text x="815" y="408" text-anchor="middle" font-size="11" fill="#555">270°</text>
+<text x="910" y="408" text-anchor="middle" font-size="11" fill="#555">360°E</text>
+<text x="260" y="96" text-anchor="middle" font-size="15" font-weight="bold" fill="#4f46e5">FORBUSH STEP — shock 17:05 UT, 2024-05-10</text>
+<rect x="70" y="110" width="380" height="18" fill="#a5b4fc" opacity="0.4"/>
+<line x1="70" y1="117" x2="450" y2="117" stroke="#4f46e5" stroke-dasharray="6 4"/>
+<circle cx="80.6" cy="114.9" r="5" fill="#4f46e5"/>
+<circle cx="112.2" cy="117.4" r="5" fill="#4f46e5"/>
+<circle cx="149.2" cy="114.3" r="5" fill="#4f46e5"/>
+<circle cx="180.8" cy="118.8" r="5" fill="#4f46e5"/>
+<circle cx="217.8" cy="115.8" r="5" fill="#4f46e5"/>
+<circle cx="249.4" cy="120.1" r="5" fill="#4f46e5"/>
+<circle cx="281.1" cy="113.7" r="5" fill="#4f46e5"/>
+<circle cx="312.8" cy="118.0" r="5" fill="#4f46e5"/>
+<circle cx="344.4" cy="116.4" r="5" fill="#4f46e5"/>
+<circle cx="381.4" cy="119.3" r="5" fill="#4f46e5"/>
+<circle cx="413.1" cy="115.2" r="5" fill="#4f46e5"/>
+<circle cx="439.4" cy="117.0" r="5" fill="#4f46e5"/>
+<text x="76" y="143" font-size="11" fill="#4f46e5">sealed window [T_shock, T_shock + 90 min] — every onset lands inside</text>
+<text x="260" y="168" text-anchor="middle" font-size="12" font-weight="bold" fill="#4f46e5">longitude-flat: |lag slope| ≤ K (sealed integer bound)</text>
+<text x="260" y="330" text-anchor="middle" font-size="12" fill="#333">amplitude ordered Rc^−γ — Kendall pair count, exact integers</text>
+<text x="260" y="350" text-anchor="middle" font-size="11" fill="#555">15.7 % at 10 GV · ~15 % polar · onset globally within ~1 h</text>
+<text x="720" y="96" text-anchor="middle" font-size="15" font-weight="bold" fill="#dc2626">ADVERSARIES — movers in the ground frame</text>
+<line x1="530" y1="110" x2="910" y2="390" stroke="#dc2626" stroke-width="2.5"/>
+<circle cx="561.7" cy="133.3" r="5" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+<circle cx="624.7" cy="180.0" r="5" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+<circle cx="687.7" cy="226.7" r="5" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+<circle cx="750.7" cy="273.3" r="5" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+<circle cx="813.7" cy="320.0" r="5" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+<circle cx="876.7" cy="366.7" r="5" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+<text x="600" y="148" font-size="12" font-weight="bold" fill="#dc2626">diurnal wave: 15°/h — lag climbs 4 min per degree</text>
+<ellipse cx="552" cy="256" rx="28" ry="42" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="545" cy="238" r="5" fill="#dc2626"/>
+<circle cx="560" cy="258" r="5" fill="#dc2626"/>
+<circle cx="548" cy="275" r="5" fill="#dc2626"/>
+<text x="560" y="312" font-size="11" fill="#b91c1c">Storm Ciarán 2023-11-02 — 953 hPa low,</text>
+<text x="560" y="326" font-size="11" fill="#b91c1c">~20 % raw swing, one weather sector,</text>
+<text x="560" y="340" font-size="11" fill="#b91c1c">front ~10 m/s, no L1 shock anywhere</text>
+<text x="710" y="380" text-anchor="middle" font-size="11" fill="#555">0.7 %/hPa × 10–30 hPa = 7–20 % raw — the size matches a real FD</text>
+<text x="480" y="436" text-anchor="middle" font-size="14" font-weight="bold" fill="#16a34a">SHAPE LOCK — one shock minute, flat in longitude, ordered by rigidity: no 10 m/s front and no 15°/h wave can forge it</text>
+<text x="480" y="456" text-anchor="middle" font-size="12" fill="#555">the adversary matches size (7–20 % raw vs FDs 3–15 %), never shape — the verdict reads shape from uncorrected counts + raw pressure</text>
+</svg>

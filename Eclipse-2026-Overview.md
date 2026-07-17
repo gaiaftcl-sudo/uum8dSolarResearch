@@ -65,9 +65,9 @@ Every data table on these pages sits between `GAIA` markers and is regenerated b
 **Ledger-borne live state:**
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.00 at 2026-07-16 22:42:00 UT
+- Latest SWPC estimated Kp in ledger: 0.33 at 2026-07-17 10:38:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2024-05-11
-- Latest magnetometer capture: BOU H at 2026-07-16 22:43:00 UT
+- Latest magnetometer capture: BOU H at 2026-07-17 10:39:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">Shear Studies — the program family</text>
+  <text x="480" y="56" text-anchor="middle" font-size="14" fill="#555">Six forcings, six clocks, one sealed test: the response must keep an appointment a look-alike cannot</text>
+
+  <!-- Panel 1: Eclipse 2026 -->
+  <rect x="20" y="78" width="290" height="180" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="32" y="98" font-size="13" font-weight="bold" fill="#111">1 · Eclipse 2026</text>
+  <text x="32" y="112" font-size="10" fill="#16a34a">locked — resolves 2026-08-13</text>
+  <rect x="204" y="86" width="94" height="15" rx="7.5" fill="#4f46e5"/>
+  <text x="251" y="97" text-anchor="middle" font-size="9.5" fill="#ffffff">clock: ephemeris</text>
+  <circle cx="85" cy="158" r="24" fill="#a5b4fc"/>
+  <circle cx="100" cy="158" r="22" fill="#4f46e5"/>
+  <line x1="118" y1="148" x2="200" y2="213" stroke="#a5b4fc" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="118" y1="168" x2="270" y2="213" stroke="#a5b4fc" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="40" y1="215" x2="298" y2="215" stroke="#333" stroke-width="1"/>
+  <line x1="200" y1="215" x2="270" y2="215" stroke="#4f46e5" stroke-width="5"/>
+  <text x="235" y="231" text-anchor="middle" font-size="10" fill="#555">Iberia ground track · 2026-08-12</text>
+  <text x="32" y="248" font-size="10" fill="#dc2626">sealed adversary: geomagnetic storm</text>
+
+  <!-- Panel 2: Launch ionospheric holes -->
+  <rect x="335" y="78" width="290" height="180" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="347" y="98" font-size="13" font-weight="bold" fill="#111">2 · Launch holes</text>
+  <text x="347" y="112" font-size="10" fill="#555">open — charter sealed</text>
+  <rect x="497" y="86" width="116" height="15" rx="7.5" fill="#4f46e5"/>
+  <text x="555" y="97" text-anchor="middle" font-size="9.5" fill="#ffffff">clock: manifest second</text>
+  <line x1="380" y1="240" x2="430" y2="132" stroke="#a5b4fc" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="432" y1="240" x2="482" y2="132" stroke="#a5b4fc" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="406" y1="240" x2="452" y2="140" stroke="#4f46e5" stroke-width="2.5"/>
+  <polygon points="456,131 444,148 457,146" fill="#4f46e5"/>
+  <ellipse cx="492" cy="152" rx="46" ry="20" fill="#a5b4fc" fill-opacity="0.4" stroke="#4f46e5" stroke-dasharray="4,3"/>
+  <text x="492" y="188" text-anchor="middle" font-size="10" fill="#333">~900 km F-region hole</text>
+  <text x="492" y="202" text-anchor="middle" font-size="9.5" fill="#555">graded in percent of baseline</text>
+  <text x="380" y="252" font-size="9.5" fill="#555">ascent corridor</text>
+  <text x="347" y="234" font-size="10" fill="#dc2626">adversaries: storms ·</text>
+  <text x="347" y="246" font-size="10" fill="#dc2626">traveling disturbances</text>
+
+  <!-- Panel 3: Solar-flare SIDs -->
+  <rect x="650" y="78" width="290" height="180" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="662" y="98" font-size="13" font-weight="bold" fill="#111">3 · Solar-flare SIDs</text>
+  <text x="662" y="112" font-size="10" fill="#555">open — charter sealed</text>
+  <rect x="824" y="86" width="104" height="15" rx="7.5" fill="#4f46e5"/>
+  <text x="876" y="97" text-anchor="middle" font-size="9.5" fill="#ffffff">clock: GOES X-ray</text>
+  <path d="M694,146 a26,26 0 0 0 0,52 z" fill="#a5b4fc"/>
+  <text x="694" y="212" text-anchor="middle" font-size="9.5" fill="#555">sunlit hemisphere</text>
+  <line x1="806" y1="150" x2="806" y2="206" stroke="#e5e7eb" stroke-dasharray="3,3"/>
+  <polyline points="740,204 796,202 806,150 824,162 880,182 926,190" fill="none" stroke="#4f46e5" stroke-width="2.5"/>
+  <text x="806" y="142" text-anchor="middle" font-size="10" fill="#333">flare peak</text>
+  <text x="866" y="216" text-anchor="middle" font-size="9.5" fill="#555">step rides the X-ray clock</text>
+  <text x="662" y="248" font-size="10" fill="#dc2626">adversaries: storms · solar radio bursts</text>
+
+  <!-- Panel 4: Tsunami vs storm surge -->
+  <rect x="20" y="272" width="290" height="180" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="32" y="292" font-size="13" font-weight="bold" fill="#111">4 · Tsunami vs surge</text>
+  <text x="32" y="306" font-size="10" fill="#555">open — charter sealed</text>
+  <rect x="190" y="280" width="108" height="15" rx="7.5" fill="#4f46e5"/>
+  <text x="244" y="291" text-anchor="middle" font-size="9.5" fill="#ffffff">clock: origin second</text>
+  <circle cx="90" cy="372" r="16" fill="none" stroke="#a5b4fc" stroke-dasharray="4,3"/>
+  <circle cx="90" cy="372" r="32" fill="none" stroke="#a5b4fc" stroke-dasharray="4,3"/>
+  <circle cx="90" cy="372" r="48" fill="none" stroke="#a5b4fc" stroke-dasharray="4,3"/>
+  <circle cx="90" cy="372" r="3.5" fill="#4f46e5"/>
+  <text x="90" y="320" text-anchor="middle" font-size="10" fill="#333">M ≥ 7.5 subsea</text>
+  <text x="90" y="433" text-anchor="middle" font-size="9.5" fill="#555">travel-time arcs</text>
+  <text x="228" y="340" text-anchor="middle" font-size="9.5" fill="#333">Tonga 2022: −1.494 m at 22:24 GMT</text>
+  <line x1="165" y1="420" x2="298" y2="420" stroke="#333" stroke-width="1"/>
+  <line x1="215" y1="350" x2="215" y2="420" stroke="#16a34a" stroke-dasharray="3,3"/>
+  <path d="M170,412 Q234,368 298,412" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,4"/>
+  <polyline points="170,405 210,404 216,382 222,414 228,390 236,406 250,400 298,402" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <text x="256" y="436" text-anchor="middle" font-size="9.5" fill="#16a34a">arrival on the clock</text>
+  <text x="32" y="447" font-size="10" fill="#dc2626">adversaries: surge · meteotsunami · Lamb wave</text>
+
+  <!-- Panel 5: Forbush decreases -->
+  <rect x="335" y="272" width="290" height="180" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="347" y="292" font-size="13" font-weight="bold" fill="#111">5 · Forbush decreases</text>
+  <text x="347" y="306" font-size="10" fill="#555">open — charter sealed</text>
+  <rect x="519" y="280" width="94" height="15" rx="7.5" fill="#4f46e5"/>
+  <text x="566" y="291" text-anchor="middle" font-size="9.5" fill="#ffffff">clock: L1 minute</text>
+  <line x1="450" y1="322" x2="450" y2="428" stroke="#333" stroke-dasharray="3,3"/>
+  <text x="450" y="316" text-anchor="middle" font-size="9.5" fill="#333">L1 shock minute</text>
+  <polyline points="355,345 448,342 462,392 490,384 545,370 610,357" fill="none" stroke="#4f46e5" stroke-width="2.5"/>
+  <polyline points="355,405 430,408 470,420 520,410 610,404" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="360" y="333" font-size="9.5" fill="#333">raw counts · ~50 stations</text>
+  <text x="560" y="345" text-anchor="middle" font-size="9.5" fill="#16a34a">0 false positives</text>
+  <text x="530" y="434" text-anchor="middle" font-size="9.5" fill="#555">rigidity-ordered global step</text>
+  <text x="347" y="446" font-size="10" fill="#dc2626">adversaries: pressure lows · diurnal wave</text>
+
+  <!-- Panel 6: Explosion vs earthquake -->
+  <rect x="650" y="272" width="290" height="180" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="662" y="292" font-size="13" font-weight="bold" fill="#111">6 · Explosion vs earthquake</text>
+  <text x="662" y="306" font-size="10" fill="#555">open — charter sealed</text>
+  <rect x="838" y="280" width="90" height="15" rx="7.5" fill="#4f46e5"/>
+  <text x="883" y="291" text-anchor="middle" font-size="9.5" fill="#ffffff">clock: catalog</text>
+  <text x="662" y="320" font-size="9.5" fill="#4f46e5">explosion: Pn-rich ladder</text>
+  <text x="928" y="320" text-anchor="end" font-size="9.5" fill="#555">raw integer counts</text>
+  <line x1="670" y1="352" x2="928" y2="352" stroke="#e5e7eb"/>
+  <line x1="730" y1="352" x2="730" y2="324" stroke="#4f46e5" stroke-width="2.5"/>
+  <line x1="770" y1="352" x2="770" y2="330" stroke="#4f46e5" stroke-width="2.5"/>
+  <line x1="815" y1="352" x2="815" y2="337" stroke="#4f46e5" stroke-width="2.5"/>
+  <line x1="860" y1="352" x2="860" y2="343" stroke="#4f46e5" stroke-width="2.5"/>
+  <text x="730" y="366" text-anchor="middle" font-size="9" fill="#333">Pn</text>
+  <text x="770" y="366" text-anchor="middle" font-size="9" fill="#333">Pg</text>
+  <text x="815" y="366" text-anchor="middle" font-size="9" fill="#333">Sn</text>
+  <text x="860" y="366" text-anchor="middle" font-size="9" fill="#333">Lg</text>
+  <text x="662" y="392" font-size="9.5" fill="#dc2626">earthquake: Lg-rich</text>
+  <line x1="670" y1="410" x2="928" y2="410" stroke="#e5e7eb"/>
+  <line x1="730" y1="410" x2="730" y2="402" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="770" y1="410" x2="770" y2="398" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="815" y1="410" x2="815" y2="386" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="860" y1="410" x2="860" y2="378" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="799" y="430" text-anchor="middle" font-size="9.5" fill="#333">2010-05-12 micro-event: pre-registered holdout</text>
+  <text x="662" y="446" font-size="10" fill="#dc2626">adversaries: earthquakes · quarry blasts</text>
+
+  <!-- Caption row -->
+  <line x1="20" y1="468" x2="940" y2="468" stroke="#e5e7eb"/>
+  <text x="480" y="492" text-anchor="middle" font-size="13" fill="#333">One recipe, six skies: a computable clock and track · a public raw archive · an adversary that mimics magnitude but not shape · standing future events</text>
+  <text x="480" y="514" text-anchor="middle" font-size="12" fill="#555">Thresholds frozen from a historical corpus before any future event is scored · verdicts in exact integers · a failed shear stays on the page</text>
+</svg>

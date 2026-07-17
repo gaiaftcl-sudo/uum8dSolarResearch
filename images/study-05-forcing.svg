@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Helvetica,Arial,sans-serif">
+<rect width="960" height="480" fill="#ffffff"/>
+<text x="480" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">One shock minute at L1, fifty magnetic funnels on the ground</text>
+<text x="480" y="56" text-anchor="middle" font-size="14" fill="#555">The clock is upstream (RTSW 1-min JSON + Ebre SSC list); the track is cutoff rigidity, computed offline with OTSOpy</text>
+<circle cx="62" cy="138" r="26" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+<text x="62" y="184" text-anchor="middle" font-size="12" fill="#333">Sun</text>
+<line x1="94" y1="138" x2="792" y2="138" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="6 5"/>
+<ellipse cx="420" cy="138" rx="118" ry="40" fill="#fca5a5" opacity="0.45"/>
+<text x="420" y="142" text-anchor="middle" font-size="12" fill="#7f1d1d">ICME — magnetized cloud</text>
+<path d="M 548 90 Q 596 138 548 186" fill="none" stroke="#dc2626" stroke-width="3"/>
+<text x="556" y="80" text-anchor="middle" font-size="12" fill="#dc2626">shock front · 400–800 km/s</text>
+<line x1="700" y1="96" x2="700" y2="180" stroke="#4f46e5" stroke-dasharray="4 4"/>
+<circle cx="700" cy="138" r="5" fill="#4f46e5"/>
+<text x="700" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#4f46e5">L1</text>
+<text x="700" y="196" text-anchor="middle" font-size="11" fill="#555">SWFO-L1 / ACE / IMAP</text>
+<text x="700" y="210" text-anchor="middle" font-size="11" fill="#555">rtsw_mag_1m.json · 1-min · no auth</text>
+<circle cx="812" cy="138" r="15" fill="#a5b4fc" stroke="#4f46e5" stroke-width="2"/>
+<text x="812" y="172" text-anchor="middle" font-size="12" fill="#333">Earth</text>
+<line x1="700" y1="112" x2="812" y2="112" stroke="#333"/>
+<line x1="700" y1="107" x2="700" y2="117" stroke="#333"/>
+<line x1="812" y1="107" x2="812" y2="117" stroke="#333"/>
+<text x="756" y="104" text-anchor="middle" font-size="11" fill="#333">1.5 million km</text>
+<text x="842" y="126" font-size="11" fill="#555">≈50 NMDB</text>
+<text x="842" y="140" font-size="11" fill="#555">stations below</text>
+<text x="80" y="238" font-size="13" font-weight="bold" fill="#333">The clock — 2024-05-10 (crucible event): shock at Earth 17:05 UT</text>
+<line x1="255" y1="254" x2="405" y2="254" stroke="#dc2626" stroke-width="2"/>
+<line x1="255" y1="249" x2="255" y2="259" stroke="#dc2626" stroke-width="2"/>
+<line x1="405" y1="249" x2="405" y2="259" stroke="#dc2626" stroke-width="2"/>
+<text x="420" y="258" font-size="11" fill="#b91c1c">L1 → Earth 30–60 min · epoch uncertainty ±15–30 min</text>
+<rect x="330" y="262" width="225" height="28" fill="#a5b4fc" opacity="0.4"/>
+<text x="442" y="280" text-anchor="middle" font-size="11" fill="#4f46e5">[T_shock, T_shock + 90 min] — scored window</text>
+<line x1="330" y1="246" x2="330" y2="290" stroke="#dc2626" stroke-width="3"/>
+<line x1="80" y1="290" x2="880" y2="290" stroke="#333"/>
+<line x1="180" y1="290" x2="180" y2="296" stroke="#333"/>
+<line x1="330" y1="290" x2="330" y2="296" stroke="#333"/>
+<line x1="480" y1="290" x2="480" y2="296" stroke="#333"/>
+<line x1="630" y1="290" x2="630" y2="296" stroke="#333"/>
+<text x="180" y="310" text-anchor="middle" font-size="11" fill="#555">16:05</text>
+<text x="330" y="310" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">17:05 shock</text>
+<text x="480" y="310" text-anchor="middle" font-size="11" fill="#555">18:05</text>
+<text x="630" y="310" text-anchor="middle" font-size="11" fill="#555">19:05</text>
+<text x="880" y="324" text-anchor="end" font-size="11" fill="#16a34a">ground arbiter: Ebre SSC list — minute precision, 1869–present ✓</text>
+<text x="80" y="346" font-size="13" font-weight="bold" fill="#333">The track — amplitude ordered by cutoff rigidity Rc^−γ (γ = 0.4–1.2), never by longitude</text>
+<polygon points="110,356 830,366 830,370 110,378" fill="#4f46e5" opacity="0.25"/>
+<text x="116" y="371" font-size="11" fill="#312e81">deepest ~15 % (polar)</text>
+<text x="828" y="361" text-anchor="end" font-size="11" fill="#4f46e5">smallest at high Rc · 15.7 % at 10 GV index</text>
+<polygon points="115,388 225,388 176,428 164,428" fill="#a5b4fc" opacity="0.9" stroke="#4f46e5"/>
+<polygon points="276,388 364,388 326,428 314,428" fill="#a5b4fc" opacity="0.75" stroke="#4f46e5"/>
+<polygon points="436,388 504,388 476,428 464,428" fill="#a5b4fc" opacity="0.6" stroke="#4f46e5"/>
+<polygon points="594,388 646,388 626,428 614,428" fill="#a5b4fc" opacity="0.5" stroke="#4f46e5"/>
+<polygon points="752,388 788,388 776,428 764,428" fill="#a5b4fc" opacity="0.4" stroke="#4f46e5"/>
+<line x1="100" y1="430" x2="850" y2="430" stroke="#333"/>
+<circle cx="170" cy="430" r="4" fill="#4f46e5"/>
+<circle cx="320" cy="430" r="4" fill="#4f46e5"/>
+<circle cx="470" cy="430" r="4" fill="#4f46e5"/>
+<circle cx="620" cy="430" r="4" fill="#4f46e5"/>
+<circle cx="770" cy="430" r="4" fill="#4f46e5"/>
+<text x="170" y="448" text-anchor="middle" font-size="11" fill="#333">South Pole</text>
+<text x="170" y="462" text-anchor="middle" font-size="10" fill="#555">polar · lowest Rc</text>
+<text x="320" y="448" text-anchor="middle" font-size="11" fill="#333">Oulu</text>
+<text x="320" y="462" text-anchor="middle" font-size="10" fill="#555">1-min NEST ✓</text>
+<text x="470" y="448" text-anchor="middle" font-size="11" fill="#333">sealed strata</text>
+<text x="470" y="462" text-anchor="middle" font-size="10" fill="#555">span ≥ 10 GV</text>
+<text x="620" y="448" text-anchor="middle" font-size="11" fill="#333">10 GV</text>
+<text x="620" y="462" text-anchor="middle" font-size="10" fill="#555">index rigidity</text>
+<text x="770" y="448" text-anchor="middle" font-size="11" fill="#333">Mexico City</text>
+<text x="770" y="462" text-anchor="middle" font-size="10" fill="#555">highest Rc</text>
+<text x="480" y="477" text-anchor="middle" font-size="11" fill="#777">Viewing cones and Rc (centi-GV integers) computed offline with OTSOpy (pinned version) — the track exists before any event · onset quasi-simultaneous globally within ~1 h</text>
+</svg>
