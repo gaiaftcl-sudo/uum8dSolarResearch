@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" font-family="Georgia, serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#1a2744"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="520" fill="url(#sky)"/>
+  <text x="460" y="36" text-anchor="middle" fill="#e8eefc" font-size="22">Study 07 — forcing: Earth-rotation tracks on Sgr A*</text>
+  <text x="460" y="58" text-anchor="middle" fill="#9fb0d0" font-size="13">station locations → (u,v) arcs · CSV samples amplitudes on those arcs</text>
+  <!-- Earth -->
+  <circle cx="220" cy="280" r="110" fill="#243656" stroke="#7fa2d4" stroke-width="2"/>
+  <text x="220" y="275" text-anchor="middle" fill="#d7e4ff" font-size="14">Earth</text>
+  <text x="220" y="295" text-anchor="middle" fill="#9fb0d0" font-size="11">AA AP AZ JC LM SM SP</text>
+  <!-- stations dots -->
+  <circle cx="180" cy="210" r="5" fill="#f0c674"/><text x="155" y="200" fill="#f0c674" font-size="11">AA/AP</text>
+  <circle cx="250" cy="200" r="5" fill="#f0c674"/><text x="258" y="195" fill="#f0c674" font-size="11">AZ</text>
+  <circle cx="160" cy="300" r="5" fill="#f0c674"/><text x="120" y="320" fill="#f0c674" font-size="11">SP</text>
+  <circle cx="280" cy="320" r="5" fill="#f0c674"/><text x="288" y="335" fill="#f0c674" font-size="11">LM</text>
+  <!-- UV plane -->
+  <rect x="420" y="110" width="450" height="340" rx="8" fill="#121a2b" stroke="#4d6a99"/>
+  <text x="645" y="135" text-anchor="middle" fill="#e8eefc" font-size="15">Fourier plane (u, v)</text>
+  <line x1="645" y1="160" x2="645" y2="420" stroke="#3a4f73"/>
+  <line x1="450" y1="290" x2="840" y2="290" stroke="#3a4f73"/>
+  <path d="M470,300 Q560,180 780,210" fill="none" stroke="#6ea8ff" stroke-width="2.5"/>
+  <path d="M490,320 Q600,400 820,350" fill="none" stroke="#8fd0a8" stroke-width="2.5"/>
+  <path d="M500,250 Q620,220 800,280" fill="none" stroke="#e6a0a0" stroke-width="2.5"/>
+  <circle cx="520" cy="270" r="3.5" fill="#fff"/><circle cx="610" cy="230" r="3.5" fill="#fff"/>
+  <circle cx="720" cy="245" r="3.5" fill="#fff"/><circle cx="780" cy="265" r="3.5" fill="#fff"/>
+  <circle cx="550" cy="340" r="3.5" fill="#fff"/><circle cx="700" cy="370" r="3.5" fill="#fff"/>
+  <text x="645" y="445" text-anchor="middle" fill="#9fb0d0" font-size="12">sparse samples — not a filled disk</text>
+  <!-- arrow -->
+  <path d="M340,280 L400,280" stroke="#c5d4ef" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#c5d4ef"/></marker></defs>
+  <text x="220" y="430" text-anchor="middle" fill="#9fb0d0" font-size="12">Milky Way center · catalog direction</text>
+  <text x="220" y="450" text-anchor="middle" fill="#f0c674" font-size="13">Sgr A* · 228 GHz · 2017 Apr 6–7</text>
+</svg>

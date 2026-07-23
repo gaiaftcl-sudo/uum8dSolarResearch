@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="Georgia, serif">
+  <rect width="960" height="540" fill="#0f141f"/>
+  <text x="480" y="34" text-anchor="middle" fill="#e8eefc" font-size="22">Study 07 — shear: raw network vs ring image</text>
+  <text x="480" y="56" text-anchor="middle" fill="#9fb0d0" font-size="13">magnitude can be painted · closure + radial ladder cannot</text>
+  <!-- Left panel raw -->
+  <rect x="40" y="80" width="420" height="400" rx="10" fill="#152033" stroke="#5b7eb0"/>
+  <text x="250" y="110" text-anchor="middle" fill="#8eb6ff" font-size="16">RAW (graded)</text>
+  <text x="250" y="132" text-anchor="middle" fill="#9fb0d0" font-size="12">CSV visibilities · closures · q-ladder</text>
+  <line x1="90" y1="300" x2="400" y2="300" stroke="#334866"/>
+  <line x1="120" y1="160" x2="120" y2="420" stroke="#334866"/>
+  <text x="250" y="160" text-anchor="middle" fill="#c5d4ef" font-size="12">amp vs baseline length q</text>
+  <polyline points="130,200 180,205 230,280 280,340 330,355 380,360" fill="none" stroke="#6ea8ff" stroke-width="3"/>
+  <text x="150" y="190" fill="#f0c674" font-size="11">~2.52 Jy short</text>
+  <text x="300" y="380" fill="#f0c674" font-size="11">~0.14 Jy long</text>
+  <text x="250" y="440" text-anchor="middle" fill="#9fb0d0" font-size="12">day-096 hi HOPS · VERIFIED parse</text>
+  <text x="250" y="460" text-anchor="middle" fill="#8fd0a8" font-size="12">closure triangles cancel station gains</text>
+  <!-- Right panel adversary -->
+  <rect x="500" y="80" width="420" height="400" rx="10" fill="#201518" stroke="#a06070"/>
+  <text x="710" y="110" text-anchor="middle" fill="#f0a0a8" font-size="16">ADVERSARY (not graded as data)</text>
+  <text x="710" y="132" text-anchor="middle" fill="#c49aa0" font-size="12">RML / CLEAN ring · gap fill · self-cal</text>
+  <circle cx="710" cy="290" r="110" fill="none" stroke="#e07888" stroke-width="28"/>
+  <circle cx="710" cy="290" r="40" fill="#201518" stroke="#e07888" stroke-width="2"/>
+  <text x="710" y="420" text-anchor="middle" fill="#c49aa0" font-size="12">continuous image where no baseline flew</text>
+  <text x="710" y="445" text-anchor="middle" fill="#e07888" font-size="12">PNG is the look-alike · CSV is the appointment</text>
+</svg>

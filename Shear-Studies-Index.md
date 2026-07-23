@@ -5,10 +5,10 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 
 ![One method, many skies](images/shear-studies-family.svg)
 
-*Six panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry — and its own track with a public raw archive and a sealed look-alike adversary.*
+*Seven panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry, Earth-rotation VLBI track — and its own track with a public raw archive and a sealed look-alike adversary.*
 
 > [!NOTE]
-> One method, many skies. Study 1 (the 2026 total eclipse) is the reference implementation and is locked; the five charters below run the same recipe against different skies, seas, and ground.
+> One method, many skies. Study 1 (the 2026 total eclipse) is the reference implementation and is locked; Studies 02–07 run the same recipe against different skies, seas, ground, and the galactic center.
 
 ## Program status
 
@@ -20,10 +20,11 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 4 | [Study 04 — Tsunami vs storm surge](Study-04-Tsunami-vs-Storm-Surge.md) | OPEN — charter sealed | A subsea earthquake's USGS origin second plus a Huygens travel-time chart over public tide-gauge archives separates seismic tsunamis from storm surge, meteotsunami, and Lamb-wave adversaries — anchored by live-pulled gauge records from the 2022 Tonga wave and Hurricane Sandy — and resolves as a standing law on the next M ≥ 7.5 subsea event. |
 | 5 | [Study 05 — Forbush decreases](Study-05-Forbush-Decreases.md) | OPEN — charter sealed | An L1 shock minute strobes the ~50-station neutron-monitor network; a rigidity-ordered, longitude-flat global step must part — at zero false positives on raw uncorrected counts, replayed from archived snapshots against held-out negative days — from the pressure lows and the traveling diurnal wave that mimic its size but not its shape. |
 | 6 | [Study 06 — Explosion vs earthquake](Study-06-Explosion-vs-Earthquake.md) | OPEN — charter sealed | A zero-free-parameter point track at Punggye-ri and a deterministic Pn/Pg/Sn/Lg arrival ladder under a catalog clock separate announced explosions from earthquakes in raw integer seismic counts, with near-site earthquakes reaching mb ≥ 4.3 and ripple-fired quarry blasts as adversaries and the contested 2010-05-12 micro-event pre-registered as a scored holdout. |
+| 7 | [Study 07 — Sgr A\* Milky Way raw visibilities](Study-07-SgrA-Milky-Way-Raw-Visibilities.md) | OPEN — charter sealed | Earth-rotation `(u,v)` tracks on the galactic-center source Sgr A\* grade public EHT Stokes-I CSV rows (closures + radial amplitude ladder) against floating-point ring-image reconstructions that fill unobserved Fourier gaps — the short-baseline ~2.5 Jy compact flux is in the table; the filled ring is the adversary. |
 
 ## What this program protects
 
-These are not laboratory curiosities. A tide gauge that can tell a seismic wavefront from a storm surge inside the first hour is the difference between a timely tsunami warning and a coastline evacuated for nothing — or not evacuated at all. A flare shear that reads the sunlit hemisphere on the X-ray clock speaks to the same physics that blacks out polar aviation radio and raises crew radiation dose on high-latitude routes. A seismic ladder that separates an announced explosion from an earthquake in raw integer counts is the working problem of nuclear-treaty verification. And a launch-hole shear that confines each ~900 km ionospheric hole to its ascent corridor gives the launch industry a public, checkable ledger of its atmospheric footprint. In every case the protection comes from the same place: a frozen, exact-integer law that anyone can re-run on the raw archive.
+These are not laboratory curiosities. A tide gauge that can tell a seismic wavefront from a storm surge inside the first hour is the difference between a timely tsunami warning and a coastline evacuated for nothing — or not evacuated at all. A flare shear that reads the sunlit hemisphere on the X-ray clock speaks to the same physics that blacks out polar aviation radio and raises crew radiation dose on high-latitude routes. A seismic ladder that separates an announced explosion from an earthquake in raw integer counts is the working problem of nuclear-treaty verification. A launch-hole shear that confines each ~900 km ionospheric hole to its ascent corridor gives the launch industry a public, checkable ledger of its atmospheric footprint. And a galactic-center visibility shear that grades the public Sgr A\* CSV before any ring PNG keeps the Milky Way's most famous image honest to the bytes anyone can download. In every case the protection comes from the same place: a frozen, exact-integer law that anyone can re-run on the raw archive.
 
 ## The shear recipe
 
