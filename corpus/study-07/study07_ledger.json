@@ -1,0 +1,950 @@
+{
+  "inventory": [
+    {
+      "path": "csv/ER6_SGRA_2017_096_hi_casa_netcal-LMTcal_StokesI.csv",
+      "bytes": 1082760,
+      "sha256": "7ef5bd7f6fdc261be7e57204c7274810fd6a88f28b6f723100271845cad8b9b6",
+      "product": "csv"
+    },
+    {
+      "path": "csv/ER6_SGRA_2017_096_hi_hops_netcal-LMTcal_StokesI.csv",
+      "bytes": 1117260,
+      "sha256": "8bc1bd0b2834b8a6529fa0e28b9813fb55c59d341b30c902e9f917ce72260e54",
+      "product": "csv"
+    },
+    {
+      "path": "csv/ER6_SGRA_2017_096_lo_casa_netcal-LMTcal_StokesI.csv",
+      "bytes": 1027197,
+      "sha256": "225b698525ffdd0299b636de531d9c1585c6472170c0ba04c2c7462ccad5083a",
+      "product": "csv"
+    },
+    {
+      "path": "csv/ER6_SGRA_2017_096_lo_hops_netcal-LMTcal_StokesI.csv",
+      "bytes": 1053304,
+      "sha256": "89429b2a65ba9e9a68c3ea7875b50ab2e00384a722b2f512ecb27e07432d8ccf",
+      "product": "csv"
+    },
+    {
+      "path": "csv/ER6_SGRA_2017_097_hi_casa_netcal-LMTcal_StokesI.csv",
+      "bytes": 1092954,
+      "sha256": "76aab2d2500d03c4f110611480f49545b08f485d513265cc278b7b4d02cde83c",
+      "product": "csv"
+    },
+    {
+      "path": "csv/ER6_SGRA_2017_097_hi_hops_netcal-LMTcal_StokesI.csv",
+      "bytes": 1247937,
+      "sha256": "62f2671aacd867f64fffe383e6d46d68106c4b67f586073d788f8e4ab5fbb597",
+      "product": "csv"
+    },
+    {
+      "path": "csv/ER6_SGRA_2017_097_lo_casa_netcal-LMTcal_StokesI.csv",
+      "bytes": 1257848,
+      "sha256": "a5a40d58da50969942ac8343900e6d97fae627681a6c3938a059fd15b70ad51f",
+      "product": "csv"
+    },
+    {
+      "path": "csv/ER6_SGRA_2017_097_lo_hops_netcal-LMTcal_StokesI.csv",
+      "bytes": 1419016,
+      "sha256": "8f02526ecc8fb85fe2489353f559a02c1d430cac39be34de6b76cfa28fd448ff",
+      "product": "csv"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_096_hi_casa_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1082760,
+      "sha256": "a1a9a93f4d09fd790b0d5e71ffc9f8182b5a7bd50b80c897d4ee6da8e3e96dbf",
+      "product": "csv_norm"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_096_hi_hops_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1117260,
+      "sha256": "e3d2e204ec27c7060dd4c6231c642ad4bc32ab571e032c97c5bc285b9e27caac",
+      "product": "csv_norm"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_096_lo_casa_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1027197,
+      "sha256": "1fcdd490abe7b8045898b14ff5e17321bf282eee670c8bd4d45fe9e2a233ccbf",
+      "product": "csv_norm"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_096_lo_hops_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1053304,
+      "sha256": "5d509e3efe361fd1eab2e96ce55d9311e74df19ea4ce888370bdf2c80874fe61",
+      "product": "csv_norm"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_097_hi_casa_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1092954,
+      "sha256": "6f79cd657851da9c203388200376e7eeb6bb21ad75235f338e1d7229f503cf33",
+      "product": "csv_norm"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_097_hi_hops_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1247937,
+      "sha256": "44bf5fb7c1421425c468c7cddf3dad3240dd27e8fc4b8c44b3331b22ecfbed5e",
+      "product": "csv_norm"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_097_lo_casa_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1257848,
+      "sha256": "f7f3b3d292432db74b2ef47d492e54fcf83b9058a7bad1da9c3a4d5db56b68b8",
+      "product": "csv_norm"
+    },
+    {
+      "path": "csv_norm/ER6_SGRA_2017_097_lo_hops_netcal-LMTcal-norm_StokesI.csv",
+      "bytes": 1419016,
+      "sha256": "4f85581f730cbc06db00caa646e17e9b3b1790dafcf3371394986be07be7abf1",
+      "product": "csv_norm"
+    }
+  ],
+  "tarball": {
+    "file": "EHTC_FirstSgrAResults_May2022_csv.tgz",
+    "bytes": 7083259,
+    "sha256": "709f322cd825669e1b30dacb3c9093f016ae3c931a19366b7b29f536ed0baebb",
+    "source_url": "https://github.com/eventhorizontelescope/2022-D02-01/raw/main/EHTC_FirstSgrAResults_May2022_csv.tgz"
+  },
+  "law": {
+    "sealed_at_iso": "2026-07-23T20:00:59Z",
+    "product_code": "2022-D02-01",
+    "primary_surface": "csv/",
+    "quantization": {
+      "amplitude": "integer microjansky (uJy) via decimal-string \u00d71e6",
+      "phase": "integer millidegree via decimal-string \u00d71e3",
+      "q": "integer kilowavelength (k\u03bb)",
+      "time_bin": "0.01 hour"
+    },
+    "thresholds": {
+      "T_short_min_uJy": 1500000,
+      "T_long_max_uJy": 400000,
+      "T_ratio_min_ppt": 5000,
+      "T_closure_conc_min_ppt": 200,
+      "T_closure_minus_null_min_ppt": 20,
+      "T_arc_order_min_ppt": 400,
+      "hiSNR_min_amp_uJy": 100000
+    },
+    "derivation_pins": {
+      "observed_short_median_uJy_min": 2100435,
+      "observed_short_median_uJy_max": 2516890,
+      "observed_long_median_uJy_min": 103266,
+      "observed_long_median_uJy_max": 135455,
+      "observed_ratio_ppt_min": 18581,
+      "observed_ratio_ppt_max": 21168,
+      "observed_closure_conc_ppt_min": 445,
+      "observed_closure_conc_ppt_max": 509,
+      "observed_null_conc_ppt_max": 379,
+      "observed_min_real_minus_null_ppt": 122,
+      "n_primary_files": 8
+    },
+    "scramble_seed": 7
+  },
+  "primary_grades": [
+    {
+      "file": "ER6_SGRA_2017_096_hi_casa_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "096",
+      "band": "hi",
+      "pipeline": "casa",
+      "n_rows": 13357,
+      "short_median_uJy": 2502812,
+      "long_median_uJy_q_ge_4000": 134379,
+      "short_over_long_ppt": 18625,
+      "closure_sector_conc_ppt": 452,
+      "null_scramble_conc_ppt": 303,
+      "closure_abs_median_mdeg": 15496,
+      "arc_order_agree_ppt_median": 998,
+      "n_closures_hiSNR": 1859
+    },
+    {
+      "file": "ER6_SGRA_2017_096_hi_hops_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "096",
+      "band": "hi",
+      "pipeline": "hops",
+      "n_rows": 13790,
+      "short_median_uJy": 2516890,
+      "long_median_uJy_q_ge_4000": 135455,
+      "short_over_long_ppt": 18581,
+      "closure_sector_conc_ppt": 463,
+      "null_scramble_conc_ppt": 303,
+      "closure_abs_median_mdeg": 13688,
+      "arc_order_agree_ppt_median": 998,
+      "n_closures_hiSNR": 1911
+    },
+    {
+      "file": "ER6_SGRA_2017_096_lo_casa_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "096",
+      "band": "lo",
+      "pipeline": "casa",
+      "n_rows": 12673,
+      "short_median_uJy": 2442837,
+      "long_median_uJy_q_ge_4000": 119388,
+      "short_over_long_ppt": 20461,
+      "closure_sector_conc_ppt": 445,
+      "null_scramble_conc_ppt": 308,
+      "closure_abs_median_mdeg": 13508,
+      "arc_order_agree_ppt_median": 998,
+      "n_closures_hiSNR": 1503
+    },
+    {
+      "file": "ER6_SGRA_2017_096_lo_hops_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "096",
+      "band": "lo",
+      "pipeline": "hops",
+      "n_rows": 12996,
+      "short_median_uJy": 2444417,
+      "long_median_uJy_q_ge_4000": 118326,
+      "short_over_long_ppt": 20658,
+      "closure_sector_conc_ppt": 473,
+      "null_scramble_conc_ppt": 291,
+      "closure_abs_median_mdeg": 12471,
+      "arc_order_agree_ppt_median": 998,
+      "n_closures_hiSNR": 1549
+    },
+    {
+      "file": "ER6_SGRA_2017_097_hi_casa_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "097",
+      "band": "hi",
+      "pipeline": "casa",
+      "n_rows": 13480,
+      "short_median_uJy": 2183111,
+      "long_median_uJy_q_ge_4000": 108769,
+      "short_over_long_ppt": 20071,
+      "closure_sector_conc_ppt": 509,
+      "null_scramble_conc_ppt": 348,
+      "closure_abs_median_mdeg": 13669,
+      "arc_order_agree_ppt_median": 997,
+      "n_closures_hiSNR": 1040
+    },
+    {
+      "file": "ER6_SGRA_2017_097_hi_hops_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "097",
+      "band": "hi",
+      "pipeline": "hops",
+      "n_rows": 15424,
+      "short_median_uJy": 2185992,
+      "long_median_uJy_q_ge_4000": 103266,
+      "short_over_long_ppt": 21168,
+      "closure_sector_conc_ppt": 492,
+      "null_scramble_conc_ppt": 356,
+      "closure_abs_median_mdeg": 14642,
+      "arc_order_agree_ppt_median": 998,
+      "n_closures_hiSNR": 1184
+    },
+    {
+      "file": "ER6_SGRA_2017_097_lo_casa_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "097",
+      "band": "lo",
+      "pipeline": "casa",
+      "n_rows": 15509,
+      "short_median_uJy": 2100435,
+      "long_median_uJy_q_ge_4000": 112209,
+      "short_over_long_ppt": 18718,
+      "closure_sector_conc_ppt": 499,
+      "null_scramble_conc_ppt": 344,
+      "closure_abs_median_mdeg": 13419,
+      "arc_order_agree_ppt_median": 998,
+      "n_closures_hiSNR": 1601
+    },
+    {
+      "file": "ER6_SGRA_2017_097_lo_hops_netcal-LMTcal_StokesI.csv",
+      "verdict": "WIN",
+      "reasons": [],
+      "day": "097",
+      "band": "lo",
+      "pipeline": "hops",
+      "n_rows": 17529,
+      "short_median_uJy": 2106014,
+      "long_median_uJy_q_ge_4000": 108260,
+      "short_over_long_ppt": 19453,
+      "closure_sector_conc_ppt": 501,
+      "null_scramble_conc_ppt": 379,
+      "closure_abs_median_mdeg": 13600,
+      "arc_order_agree_ppt_median": 998,
+      "n_closures_hiSNR": 1801
+    }
+  ],
+  "norm_variant_grades": [
+    {
+      "file": "ER6_SGRA_2017_096_hi_casa_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 280,
+      "short_median_uJy": 998205,
+      "long_median_uJy_q_ge_4000": 52735,
+      "short_over_long_ppt": 18928,
+      "closure_sector_conc_ppt": 514,
+      "null_scramble_conc_ppt": 296,
+      "arc_order_agree_ppt_median": 998
+    },
+    {
+      "file": "ER6_SGRA_2017_096_hi_hops_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 317,
+      "short_median_uJy": 997648,
+      "long_median_uJy_q_ge_4000": 53106,
+      "short_over_long_ppt": 18785,
+      "closure_sector_conc_ppt": 526,
+      "null_scramble_conc_ppt": 302,
+      "arc_order_agree_ppt_median": 998
+    },
+    {
+      "file": "ER6_SGRA_2017_096_lo_casa_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 219,
+      "short_median_uJy": 999073,
+      "long_median_uJy_q_ge_4000": 48675,
+      "short_over_long_ppt": 20525,
+      "closure_sector_conc_ppt": 552,
+      "null_scramble_conc_ppt": 278,
+      "arc_order_agree_ppt_median": 998
+    },
+    {
+      "file": "ER6_SGRA_2017_096_lo_hops_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 248,
+      "short_median_uJy": 998357,
+      "long_median_uJy_q_ge_4000": 48229,
+      "short_over_long_ppt": 20700,
+      "closure_sector_conc_ppt": 524,
+      "null_scramble_conc_ppt": 318,
+      "arc_order_agree_ppt_median": 998
+    },
+    {
+      "file": "ER6_SGRA_2017_097_hi_casa_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 203,
+      "short_median_uJy": 998674,
+      "long_median_uJy_q_ge_4000": 48554,
+      "short_over_long_ppt": 20568,
+      "closure_sector_conc_ppt": 581,
+      "null_scramble_conc_ppt": 325,
+      "arc_order_agree_ppt_median": 997
+    },
+    {
+      "file": "ER6_SGRA_2017_097_hi_hops_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 286,
+      "short_median_uJy": 997263,
+      "long_median_uJy_q_ge_4000": 45922,
+      "short_over_long_ppt": 21716,
+      "closure_sector_conc_ppt": 559,
+      "null_scramble_conc_ppt": 367,
+      "arc_order_agree_ppt_median": 998
+    },
+    {
+      "file": "ER6_SGRA_2017_097_lo_casa_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 471,
+      "short_median_uJy": 999163,
+      "long_median_uJy_q_ge_4000": 51761,
+      "short_over_long_ppt": 19303,
+      "closure_sector_conc_ppt": 590,
+      "null_scramble_conc_ppt": 373,
+      "arc_order_agree_ppt_median": 998
+    },
+    {
+      "file": "ER6_SGRA_2017_097_lo_hops_netcal-LMTcal-norm_StokesI.csv",
+      "verdict": "MISS",
+      "reasons": [
+        "SHORT_FAIL"
+      ],
+      "n_hiSNR": 561,
+      "short_median_uJy": 997976,
+      "long_median_uJy_q_ge_4000": 49844,
+      "short_over_long_ppt": 20021,
+      "closure_sector_conc_ppt": 563,
+      "null_scramble_conc_ppt": 365,
+      "arc_order_agree_ppt_median": 998
+    }
+  ],
+  "per_file_detail": [
+    {
+      "file": "ER6_SGRA_2017_096_hi_casa_netcal-LMTcal_StokesI.csv",
+      "day": "096",
+      "band": "hi",
+      "pipeline": "casa",
+      "mjd": "57849",
+      "freq": "228.1918GHz",
+      "n_rows": 13357,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1248,
+          "median_uJy": 2502812,
+          "min_uJy": 1979753,
+          "max_uJy": 2790909
+        },
+        "q_1000_2000": {
+          "n": 552,
+          "median_uJy": 1499616,
+          "min_uJy": 1254326,
+          "max_uJy": 1978681
+        },
+        "q_2000_4000": {
+          "n": 1760,
+          "median_uJy": 285066,
+          "min_uJy": 42266,
+          "max_uJy": 708712
+        },
+        "q_4000_6000": {
+          "n": 4764,
+          "median_uJy": 212577,
+          "min_uJy": 9602,
+          "max_uJy": 594527
+        },
+        "q_ge_6000": {
+          "n": 5033,
+          "median_uJy": 70116,
+          "min_uJy": 503,
+          "max_uJy": 392276
+        }
+      },
+      "short_median_uJy": 2502812,
+      "long_median_uJy_q_ge_4000": 134379,
+      "short_over_long_ppt": 18625,
+      "n_closures_hiSNR": 1859,
+      "closure_abs_median_mdeg": 15496,
+      "closure_sector_conc_ppt": 452,
+      "closure_sector_hist": [
+        45,
+        81,
+        176,
+        842,
+        571,
+        82,
+        37,
+        25
+      ],
+      "null_scramble_conc_ppt": 303,
+      "arc_order_agree_ppt_median": 998,
+      "n_baselines_arc": 21
+    },
+    {
+      "file": "ER6_SGRA_2017_096_hi_hops_netcal-LMTcal_StokesI.csv",
+      "day": "096",
+      "band": "hi",
+      "pipeline": "hops",
+      "mjd": "57849",
+      "freq": "229.0707GHz",
+      "n_rows": 13790,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1303,
+          "median_uJy": 2516890,
+          "min_uJy": 1993931,
+          "max_uJy": 2787145
+        },
+        "q_1000_2000": {
+          "n": 574,
+          "median_uJy": 1495262,
+          "min_uJy": 1247588,
+          "max_uJy": 1990997
+        },
+        "q_2000_4000": {
+          "n": 1798,
+          "median_uJy": 304205,
+          "min_uJy": 17582,
+          "max_uJy": 697513
+        },
+        "q_4000_6000": {
+          "n": 4901,
+          "median_uJy": 210583,
+          "min_uJy": 13166,
+          "max_uJy": 622574
+        },
+        "q_ge_6000": {
+          "n": 5214,
+          "median_uJy": 68706,
+          "min_uJy": 764,
+          "max_uJy": 387966
+        }
+      },
+      "short_median_uJy": 2516890,
+      "long_median_uJy_q_ge_4000": 135455,
+      "short_over_long_ppt": 18581,
+      "n_closures_hiSNR": 1911,
+      "closure_abs_median_mdeg": 13688,
+      "closure_sector_conc_ppt": 463,
+      "closure_sector_hist": [
+        43,
+        106,
+        156,
+        886,
+        584,
+        63,
+        41,
+        32
+      ],
+      "null_scramble_conc_ppt": 303,
+      "arc_order_agree_ppt_median": 998,
+      "n_baselines_arc": 21
+    },
+    {
+      "file": "ER6_SGRA_2017_096_lo_casa_netcal-LMTcal_StokesI.csv",
+      "day": "096",
+      "band": "lo",
+      "pipeline": "casa",
+      "mjd": "57849",
+      "freq": "226.1918GHz",
+      "n_rows": 12673,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1176,
+          "median_uJy": 2442837,
+          "min_uJy": 1900884,
+          "max_uJy": 2685141
+        },
+        "q_1000_2000": {
+          "n": 532,
+          "median_uJy": 1484725,
+          "min_uJy": 1224938,
+          "max_uJy": 1899640
+        },
+        "q_2000_4000": {
+          "n": 1676,
+          "median_uJy": 270963,
+          "min_uJy": 11214,
+          "max_uJy": 1136675
+        },
+        "q_4000_6000": {
+          "n": 4328,
+          "median_uJy": 201725,
+          "min_uJy": 13726,
+          "max_uJy": 576708
+        },
+        "q_ge_6000": {
+          "n": 4961,
+          "median_uJy": 64208,
+          "min_uJy": 457,
+          "max_uJy": 345652
+        }
+      },
+      "short_median_uJy": 2442837,
+      "long_median_uJy_q_ge_4000": 119388,
+      "short_over_long_ppt": 20461,
+      "n_closures_hiSNR": 1503,
+      "closure_abs_median_mdeg": 13508,
+      "closure_sector_conc_ppt": 445,
+      "closure_sector_hist": [
+        33,
+        73,
+        131,
+        670,
+        493,
+        62,
+        28,
+        13
+      ],
+      "null_scramble_conc_ppt": 308,
+      "arc_order_agree_ppt_median": 998,
+      "n_baselines_arc": 21
+    },
+    {
+      "file": "ER6_SGRA_2017_096_lo_hops_netcal-LMTcal_StokesI.csv",
+      "day": "096",
+      "band": "lo",
+      "pipeline": "hops",
+      "mjd": "57849",
+      "freq": "227.0707GHz",
+      "n_rows": 12996,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1208,
+          "median_uJy": 2444417,
+          "min_uJy": 1910637,
+          "max_uJy": 2684474
+        },
+        "q_1000_2000": {
+          "n": 565,
+          "median_uJy": 1476789,
+          "min_uJy": 1236297,
+          "max_uJy": 1908461
+        },
+        "q_2000_4000": {
+          "n": 1741,
+          "median_uJy": 292497,
+          "min_uJy": 12212,
+          "max_uJy": 809897
+        },
+        "q_4000_6000": {
+          "n": 4395,
+          "median_uJy": 200399,
+          "min_uJy": 3987,
+          "max_uJy": 475103
+        },
+        "q_ge_6000": {
+          "n": 5087,
+          "median_uJy": 60466,
+          "min_uJy": 865,
+          "max_uJy": 382164
+        }
+      },
+      "short_median_uJy": 2444417,
+      "long_median_uJy_q_ge_4000": 118326,
+      "short_over_long_ppt": 20658,
+      "n_closures_hiSNR": 1549,
+      "closure_abs_median_mdeg": 12471,
+      "closure_sector_conc_ppt": 473,
+      "closure_sector_hist": [
+        46,
+        70,
+        82,
+        733,
+        531,
+        50,
+        22,
+        15
+      ],
+      "null_scramble_conc_ppt": 291,
+      "arc_order_agree_ppt_median": 998,
+      "n_baselines_arc": 21
+    },
+    {
+      "file": "ER6_SGRA_2017_097_hi_casa_netcal-LMTcal_StokesI.csv",
+      "day": "097",
+      "band": "hi",
+      "pipeline": "casa",
+      "mjd": "57850",
+      "freq": "228.1918GHz",
+      "n_rows": 13480,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "PV",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1564,
+          "median_uJy": 2183111,
+          "min_uJy": 1419853,
+          "max_uJy": 2627183
+        },
+        "q_1000_2000": {
+          "n": 207,
+          "median_uJy": 1111518,
+          "min_uJy": 1002340,
+          "max_uJy": 1209448
+        },
+        "q_2000_4000": {
+          "n": 1346,
+          "median_uJy": 205068,
+          "min_uJy": 1586,
+          "max_uJy": 683102
+        },
+        "q_4000_6000": {
+          "n": 4731,
+          "median_uJy": 189090,
+          "min_uJy": 1115,
+          "max_uJy": 783936
+        },
+        "q_ge_6000": {
+          "n": 5632,
+          "median_uJy": 60751,
+          "min_uJy": 420,
+          "max_uJy": 534360
+        }
+      },
+      "short_median_uJy": 2183111,
+      "long_median_uJy_q_ge_4000": 108769,
+      "short_over_long_ppt": 20071,
+      "n_closures_hiSNR": 1040,
+      "closure_abs_median_mdeg": 13669,
+      "closure_sector_conc_ppt": 509,
+      "closure_sector_hist": [
+        10,
+        30,
+        76,
+        530,
+        318,
+        43,
+        24,
+        9
+      ],
+      "null_scramble_conc_ppt": 348,
+      "arc_order_agree_ppt_median": 997,
+      "n_baselines_arc": 25
+    },
+    {
+      "file": "ER6_SGRA_2017_097_hi_hops_netcal-LMTcal_StokesI.csv",
+      "day": "097",
+      "band": "hi",
+      "pipeline": "hops",
+      "mjd": "57850",
+      "freq": "229.0707GHz",
+      "n_rows": 15424,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "PV",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1899,
+          "median_uJy": 2185992,
+          "min_uJy": 1962183,
+          "max_uJy": 2625888
+        },
+        "q_1000_2000": {
+          "n": 237,
+          "median_uJy": 1113859,
+          "min_uJy": 1060846,
+          "max_uJy": 1204289
+        },
+        "q_2000_4000": {
+          "n": 1809,
+          "median_uJy": 214375,
+          "min_uJy": 5079,
+          "max_uJy": 714535
+        },
+        "q_4000_6000": {
+          "n": 4975,
+          "median_uJy": 187090,
+          "min_uJy": 9363,
+          "max_uJy": 673128
+        },
+        "q_ge_6000": {
+          "n": 6504,
+          "median_uJy": 59473,
+          "min_uJy": 238,
+          "max_uJy": 448563
+        }
+      },
+      "short_median_uJy": 2185992,
+      "long_median_uJy_q_ge_4000": 103266,
+      "short_over_long_ppt": 21168,
+      "n_closures_hiSNR": 1184,
+      "closure_abs_median_mdeg": 14642,
+      "closure_sector_conc_ppt": 492,
+      "closure_sector_hist": [
+        23,
+        48,
+        97,
+        583,
+        359,
+        30,
+        30,
+        14
+      ],
+      "null_scramble_conc_ppt": 356,
+      "arc_order_agree_ppt_median": 998,
+      "n_baselines_arc": 25
+    },
+    {
+      "file": "ER6_SGRA_2017_097_lo_casa_netcal-LMTcal_StokesI.csv",
+      "day": "097",
+      "band": "lo",
+      "pipeline": "casa",
+      "mjd": "57850",
+      "freq": "226.1918GHz",
+      "n_rows": 15509,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "PV",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1574,
+          "median_uJy": 2100435,
+          "min_uJy": 1668983,
+          "max_uJy": 2538132
+        },
+        "q_1000_2000": {
+          "n": 491,
+          "median_uJy": 1220245,
+          "min_uJy": 796677,
+          "max_uJy": 1667764
+        },
+        "q_2000_4000": {
+          "n": 2109,
+          "median_uJy": 228851,
+          "min_uJy": 1377,
+          "max_uJy": 511333
+        },
+        "q_4000_6000": {
+          "n": 5358,
+          "median_uJy": 197041,
+          "min_uJy": 1904,
+          "max_uJy": 698681
+        },
+        "q_ge_6000": {
+          "n": 5977,
+          "median_uJy": 59327,
+          "min_uJy": 478,
+          "max_uJy": 470285
+        }
+      },
+      "short_median_uJy": 2100435,
+      "long_median_uJy_q_ge_4000": 112209,
+      "short_over_long_ppt": 18718,
+      "n_closures_hiSNR": 1601,
+      "closure_abs_median_mdeg": 13419,
+      "closure_sector_conc_ppt": 499,
+      "closure_sector_hist": [
+        23,
+        50,
+        155,
+        799,
+        475,
+        52,
+        30,
+        17
+      ],
+      "null_scramble_conc_ppt": 344,
+      "arc_order_agree_ppt_median": 998,
+      "n_baselines_arc": 25
+    },
+    {
+      "file": "ER6_SGRA_2017_097_lo_hops_netcal-LMTcal_StokesI.csv",
+      "day": "097",
+      "band": "lo",
+      "pipeline": "hops",
+      "mjd": "57850",
+      "freq": "227.0707GHz",
+      "n_rows": 17529,
+      "stations": [
+        "AA",
+        "AP",
+        "AZ",
+        "JC",
+        "LM",
+        "PV",
+        "SM",
+        "SP"
+      ],
+      "ladder": {
+        "q_lt_1000_Mlambda": {
+          "n": 1879,
+          "median_uJy": 2106014,
+          "min_uJy": 1676348,
+          "max_uJy": 2537890
+        },
+        "q_1000_2000": {
+          "n": 528,
+          "median_uJy": 1212268,
+          "min_uJy": 1053388,
+          "max_uJy": 1675330
+        },
+        "q_2000_4000": {
+          "n": 2885,
+          "median_uJy": 235912,
+          "min_uJy": 4182,
+          "max_uJy": 559440
+        },
+        "q_4000_6000": {
+          "n": 5602,
+          "median_uJy": 196163,
+          "min_uJy": 1414,
+          "max_uJy": 500469
+        },
+        "q_ge_6000": {
+          "n": 6635,
+          "median_uJy": 58274,
+          "min_uJy": 876,
+          "max_uJy": 420335
+        }
+      },
+      "short_median_uJy": 2106014,
+      "long_median_uJy_q_ge_4000": 108260,
+      "short_over_long_ppt": 19453,
+      "n_closures_hiSNR": 1801,
+      "closure_abs_median_mdeg": 13600,
+      "closure_sector_conc_ppt": 501,
+      "closure_sector_hist": [
+        34,
+        67,
+        141,
+        904,
+        540,
+        64,
+        27,
+        24
+      ],
+      "null_scramble_conc_ppt": 379,
+      "arc_order_agree_ppt_median": 998,
+      "n_baselines_arc": 25
+    }
+  ]
+}

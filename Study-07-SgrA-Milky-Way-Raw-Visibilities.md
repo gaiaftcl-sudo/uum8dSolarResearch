@@ -222,4 +222,10 @@ The galactic center is a public scientific object. School posters, press release
 
 ---
 
-**Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the 2022-D02-01 Sgr A\* CSV corpus runs and the integer threshold table freezes.**
+**Status: LAW FROZEN 2026-07-23T20:00:59Z — corpus ingested, primary `csv/` 8/8 WIN, `csv_norm/` processing adversary 8/8 MISS. Prospective portal products OPEN on the [Registry](Study-07-SgrA-Milky-Way-Registry.md).**
+
+| Stage | Page |
+|---|---|
+| Corpus | [Study-07-SgrA-Milky-Way-Corpus](Study-07-SgrA-Milky-Way-Corpus.md) |
+| Results (frozen law + grades) | [Study-07-SgrA-Milky-Way-Results](Study-07-SgrA-Milky-Way-Results.md) |
+| Registry (standing law + future products) | [Study-07-SgrA-Milky-Way-Registry](Study-07-SgrA-Milky-Way-Registry.md) |
