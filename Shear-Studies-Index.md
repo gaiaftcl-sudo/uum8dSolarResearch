@@ -1,6 +1,8 @@
 
 # Shear Studies — Program Index
 
+> **White paper (full program synthesis):** [Shear Studies White Paper — Shape Against Magnitude Across Seven Skies](Shear-Studies-White-Paper.md) · Study 07 law frozen; eclipse resolving 2026-08-13; Studies 02–06 charter-sealed.
+
 The sky writes geometry, and geometry cannot lie. Every study on this wiki begins with a forcing that carries its own clock and its own track — a shadow cone sweeping a ground path, a rocket burn stamped to the manifest second, a flare peak on an X-ray clock, an earthquake origin time, a shock front crossing L1 — and asks whether a public raw archive answers at the place the track names and at the lag the travel time demands. The shear is the sealed, exact-integer test that the true forcing passes and its loudest look-alike fails: an adversary can mimic the *magnitude* of a response, but it cannot fake its *shape*.
 
 ![One method, many skies](images/shear-studies-family.svg)
