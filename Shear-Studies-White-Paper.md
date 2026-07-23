@@ -1,9 +1,10 @@
-# Shear Studies White Paper — Shape Against Magnitude Across Seven Skies
+# Shear Studies White Paper — Shape Against Magnitude Across Eight Skies
 
 **Program:** UUM-8D Solar Research / Shear Studies  
 **Surface:** [uum8dSolarResearch wiki](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki)  
 **Date:** 2026-07-23  
-**Status of this document:** Public synthesis of sealed and open studies. Numbers cited for Study 1 and Study 07 are ledger-frozen; Studies 02–06 are charter-sealed pending corpus ingest.
+**Status of this document:** Public synthesis of sealed and open studies. Numbers for Study 1 and Study 07 are ledger-frozen; Study 08 charter sealed; Studies 02–06 charter-sealed pending corpus.  
+**Readers’ entry:** [Shear-Studies-Readers-Guide](Shear-Studies-Readers-Guide.md)
 
 ---
 
@@ -30,6 +31,17 @@ This program replaces the ruler with a **shear**: a forcing that carries its own
 | Cosmic rays | Pressure lows, diurnal wave | Strobe ~50 neutron monitors in one L1 shock minute, rigidity-ordered |
 | Seismology | Near-site quakes, quarry blasts | Climb a Pn/Pg/Sn/Lg ladder from a fixed depth-0 point track |
 | Galactic center VLBI | Ring PNG + regularizers + `csv_norm` | Invent short-baseline absolute janskys and closure topology absent from the sealed rows |
+| Gaia BH1 astrometry | Published *N* M☉ dark companion | Invent a horizon-scale mass object beyond what integer µas / RV appointments support |
+
+### 1.1b Cosmology’s three black-hole pipelines
+
+| # | Pipeline | Instrument writes | Model shows | Program study |
+|---|---|---|---|---|
+| 1 | High-precision astrometry | Star wobble (Gaia BH1) | Invisible black hole of *N* M☉ | [Study 08](Study-08-Gaia-BH1-Astrometric-Shear.md) |
+| 2 | GW interferometry | Laser strain (LIGO/Virgo) | Merging compact objects | Study 09 queued |
+| 3 | VLBI | Sparse visibilities (EHT) | Ring / shadow image | [Study 07](Study-07-SgrA-Milky-Way-Results.md) — **graded** |
+
+**Origin of shear in those pipelines:** raw tables are finite and sparse; continuous GR / imaging / orbital fits on absolute grids demand infinite precision at singular boundaries. When arithmetic collapses, the program seals an integer boundary and grades the **object assignment** as adversary — it does **not** thrash IEEE-754 `Double` inside the core OS until `isNaN` and call that the horizon. Ingest for Study 08: dedicated `corpus/study-08/` → integer quantization → ledger; NATS only for post-grade seal rows.
 
 ### 1.2 The four-piece shear recipe
 
@@ -266,8 +278,9 @@ Study 1’s historical Form already carries recorded falsifiers. Study 07’s `c
 | 5 | Forbush | Charter sealed | Corpus next |
 | 6 | Explosion vs quake | Charter sealed | Corpus next |
 | 7 | Sgr A\* Milky Way | **Law frozen · graded** | **csv 8/8 WIN; csv_norm 8/8 MISS** |
+| 8 | Gaia BH1 | Charter sealed | Corpus next — dedicated ingest only |
 
-Build order for corpus ingest (pipeline reuse): **02 → 03 → 05 → 04 → 06**, with Study 07 already through frozen law on the VLBI archive.
+Build order for corpus ingest: **08 (Gaia, parallel)** and **02 → 03 → 05 → 04 → 06**, with Study 07 already through frozen law on the VLBI archive.
 
 ---
 

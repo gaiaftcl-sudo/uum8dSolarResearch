@@ -1,5 +1,17 @@
 # Study 07 — Results: frozen law on the Milky Way CSV
 
+## For every reader — what this page proves
+
+You do not need to be a radio astronomer. Three facts:
+
+1. **The measurement is a spreadsheet of radio fringes**, not a photo. Each row is “these two telescopes, at this time, saw this brightness and phase at this Fourier location.”
+2. **That spreadsheet already shows** a bright compact source on short baselines (~2.1–2.5 Jy) and much weaker long baselines (~0.1 Jy), plus structured closure phases — **8/8 WIN** under a frozen integer law.
+3. **The famous ring picture was built from a different spreadsheet** (lightcurve-normalized). That fork **fails** the same absolute short-baseline law — **8/8 MISS**. So the ring is a reconstruction after the table was changed, not a row in the raw data.
+
+Full plain-language walkthrough: [Readers’ guide](Shear-Studies-Readers-Guide.md). Cosmology’s three black-hole pipelines (Gaia / LIGO / EHT): see the guide and [Study 08](Study-08-Gaia-BH1-Astrometric-Shear.md).
+
+---
+
 The law below was derived from the [Corpus](Study-07-SgrA-Milky-Way-Corpus.md) pins, then frozen. Every primary `csv/` file was graded once. Lightcurve-normalized `csv_norm/` files — the processing fork named in the 2022-D02-01 README as the static-imaging input — were graded as the **processing adversary**.
 
 ## Frozen law (sealed 2026-07-23T20:00:59Z)

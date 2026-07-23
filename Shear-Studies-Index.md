@@ -1,16 +1,16 @@
 
 # Shear Studies — Program Index
 
-> **White paper (full program synthesis):** [Shear Studies White Paper — Shape Against Magnitude Across Seven Skies](Shear-Studies-White-Paper.md) · Study 07 law frozen; eclipse resolving 2026-08-13; Studies 02–06 charter-sealed.
+> **Start here:** [Readers’ guide — what we just did](Shear-Studies-Readers-Guide.md) · [White paper](Shear-Studies-White-Paper.md) · Study 07 law frozen; Study 08 Gaia BH1 charter open; eclipse resolving 2026-08-13.
 
 The sky writes geometry, and geometry cannot lie. Every study on this wiki begins with a forcing that carries its own clock and its own track — a shadow cone sweeping a ground path, a rocket burn stamped to the manifest second, a flare peak on an X-ray clock, an earthquake origin time, a shock front crossing L1 — and asks whether a public raw archive answers at the place the track names and at the lag the travel time demands. The shear is the sealed, exact-integer test that the true forcing passes and its loudest look-alike fails: an adversary can mimic the *magnitude* of a response, but it cannot fake its *shape*.
 
 ![One method, many skies](images/shear-studies-family.svg)
 
-*Seven panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry, Earth-rotation VLBI track — and its own track with a public raw archive and a sealed look-alike adversary.*
+*Eight panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry, Earth-rotation VLBI track, Gaia sampling clock — and its own track with a public raw archive and a sealed look-alike adversary.*
 
 > [!NOTE]
-> One method, many skies. Study 1 (the 2026 total eclipse) is the reference implementation and is locked; Studies 02–07 run the same recipe against different skies, seas, ground, and the galactic center.
+> One method, many skies. Study 1 is locked (resolves 2026-08-13). Study 07 law is frozen on Sgr A\*. Study 08 opens Gaia BH1. Studies 02–06 remain charter-sealed pending corpus.
 
 ## Program status
 
@@ -23,6 +23,7 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 5 | [Study 05 — Forbush decreases](Study-05-Forbush-Decreases.md) | OPEN — charter sealed | An L1 shock minute strobes the ~50-station neutron-monitor network; a rigidity-ordered, longitude-flat global step must part — at zero false positives on raw uncorrected counts, replayed from archived snapshots against held-out negative days — from the pressure lows and the traveling diurnal wave that mimic its size but not its shape. |
 | 6 | [Study 06 — Explosion vs earthquake](Study-06-Explosion-vs-Earthquake.md) | OPEN — charter sealed | A zero-free-parameter point track at Punggye-ri and a deterministic Pn/Pg/Sn/Lg arrival ladder under a catalog clock separate announced explosions from earthquakes in raw integer seismic counts, with near-site earthquakes reaching mb ≥ 4.3 and ripple-fired quarry blasts as adversaries and the contested 2010-05-12 micro-event pre-registered as a scored holdout. |
 | 7 | [Study 07 — Sgr A\* Milky Way raw visibilities](Study-07-SgrA-Milky-Way-Raw-Visibilities.md) · [Corpus](Study-07-SgrA-Milky-Way-Corpus.md) · [Results](Study-07-SgrA-Milky-Way-Results.md) · [Registry](Study-07-SgrA-Milky-Way-Registry.md) | **LAW FROZEN** — primary `csv/` 8/8 WIN; `csv_norm/` adversary 8/8 MISS | Earth-rotation `(u,v)` tracks on Sgr A\* grade public EHT Stokes-I CSV rows (closures + radial ladder + arc order). Frozen integers: short ≥ 1.5 Jy, long ≤ 0.4 Jy, ratio ≥ ×5, closure concentration ≥ 200 ppt beating scramble null. Prospective portal products OPEN on the Registry. |
+| 8 | [Study 08 — Gaia BH1 astrometric shear](Study-08-Gaia-BH1-Astrometric-Shear.md) | OPEN — charter sealed | Raw Gaia / RV vectors for the luminous star (integer µas, m·s⁻¹) vs the published *N* M☉ dark-companion fit as adversary — pipeline 1 of the three cosmology black-hole paths; ingest = dedicated corpus only, never float-thrash into core OS or NATS. |
 
 ## What this program protects
 
