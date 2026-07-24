@@ -335,3 +335,10 @@ The sky writes geometry. Geometry cannot lie. The ledger is how we read it.
 | Contact surface | This wiki — append-only study pages; white paper revised only by additive version section |
 
 **Version 1.0** — initial public synthesis coinciding with Study 07 law freeze and full program index of Studies 01–07.
+
+---
+
+## Appendix A — UUM-8D vs IUT (verification win, 2026-07-24)
+
+IUT stalls on manual symbolic verification of inter-universal isomorphisms without a runtime. UUM-8D compiles the job: (1) 8D spatial embedding of arithmetic, (2) Jordan-bonded runtime linking, (3) vQbit state-machine gates. Public seal + graphics: [UUM8D-vs-IUT-Topological-Projection](UUM8D-vs-IUT-Topological-Projection.md).
+

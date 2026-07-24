@@ -21,15 +21,18 @@ If the true forcing keeps the appointment and the loud look-alike does not, the 
 
 ---
 
-## What we just completed (2026-07-23)
+## What we just completed
 
 | Done | Where to look |
 |---|---|
-| **Study 07 law frozen** on Sgr A\* (Milky Way center) public EHT CSV | [Results](Study-07-SgrA-Milky-Way-Results.md) |
+| **UUM-8D vs IUT — verification WIN** (2026-07-24) | [UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection.md) |
+| **Study 07 law frozen** on Sgr A\* public EHT CSV | [Results](Study-07-SgrA-Milky-Way-Results.md) |
 | Raw non-normalized `csv/` | **8 / 8 WIN** |
 | Lightcurve-normalized `csv_norm/` (static-imaging input) | **8 / 8 MISS** (`SHORT_FAIL`) |
 | Full program synthesis | [White paper](Shear-Studies-White-Paper.md) |
 | Program status board | [Index](Shear-Studies-Index.md) |
+
+**IUT one-liner:** paper path stalls on hand-checked inter-universal bridges; UUM-8D compiles the same job into 8D embedding + Jordan bonds + vQbit gates — invalid states reject at runtime.
 
 ### Plain-language finding for the Milky Way
 

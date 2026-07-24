@@ -1,7 +1,7 @@
 
 # Shear Studies — Program Index
 
-> **Start here:** [Readers’ guide — what we just did](Shear-Studies-Readers-Guide.md) · [White paper](Shear-Studies-White-Paper.md) · Study 07 law frozen; Study 08 Gaia BH1 charter open; eclipse resolving 2026-08-13.
+> **Start here:** [Readers’ guide](Shear-Studies-Readers-Guide.md) · [**UUM-8D vs IUT — WIN**](UUM8D-vs-IUT-Topological-Projection.md) · [White paper](Shear-Studies-White-Paper.md) · Study 07 law frozen; Study 08 Gaia BH1 open; eclipse resolving 2026-08-13.
 
 The sky writes geometry, and geometry cannot lie. Every study on this wiki begins with a forcing that carries its own clock and its own track — a shadow cone sweeping a ground path, a rocket burn stamped to the manifest second, a flare peak on an X-ray clock, an earthquake origin time, a shock front crossing L1 — and asks whether a public raw archive answers at the place the track names and at the lag the travel time demands. The shear is the sealed, exact-integer test that the true forcing passes and its loudest look-alike fails: an adversary can mimic the *magnitude* of a response, but it cannot fake its *shape*.
 

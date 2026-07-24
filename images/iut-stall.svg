@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Georgia, serif">
+  <rect width="960" height="480" fill="#101820"/>
+  <text x="480" y="40" text-anchor="middle" fill="#e8eefc" font-size="22">IUT path — symbolic bridges, no execution engine</text>
+  <!-- universe A -->
+  <ellipse cx="180" cy="220" rx="110" ry="80" fill="#1e2a3a" stroke="#7fa2d4" stroke-width="2"/>
+  <text x="180" y="215" text-anchor="middle" fill="#c5d4ef" font-size="15">Universe A</text>
+  <text x="180" y="240" text-anchor="middle" fill="#9fb0d0" font-size="12">ring / scheme data</text>
+  <!-- universe B -->
+  <ellipse cx="780" cy="220" rx="110" ry="80" fill="#1e2a3a" stroke="#7fa2d4" stroke-width="2"/>
+  <text x="780" y="215" text-anchor="middle" fill="#c5d4ef" font-size="15">Universe B</text>
+  <text x="780" y="240" text-anchor="middle" fill="#9fb0d0" font-size="12">alien lattice</text>
+  <!-- dashed bridges -->
+  <path d="M290,180 Q480,80 670,180" fill="none" stroke="#e07888" stroke-width="2" stroke-dasharray="8 6"/>
+  <path d="M290,220 Q480,220 670,220" fill="none" stroke="#e07888" stroke-width="2" stroke-dasharray="8 6"/>
+  <path d="M290,260 Q480,360 670,260" fill="none" stroke="#e07888" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="480" y="120" text-anchor="middle" fill="#f0a0a8" font-size="14">theta-links / bridging lemmas</text>
+  <text x="480" y="145" text-anchor="middle" fill="#c49aa0" font-size="13">(human-checked · unreadability risk)</text>
+  <!-- human -->
+  <rect x="360" y="300" width="240" height="120" rx="10" fill="#2a1820" stroke="#c07080"/>
+  <text x="480" y="345" text-anchor="middle" fill="#f0a0a8" font-size="16">Human deduction</text>
+  <text x="480" y="375" text-anchor="middle" fill="#d8b0b8" font-size="13">no runtime invariant check</text>
+  <text x="480" y="400" text-anchor="middle" fill="#e07888" font-size="18">→ STALL</text>
+</svg>

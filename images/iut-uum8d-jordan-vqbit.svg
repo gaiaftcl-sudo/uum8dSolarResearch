@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Georgia, serif">
+  <rect width="960" height="480" fill="#0c121c"/>
+  <text x="480" y="40" text-anchor="middle" fill="#e8eefc" font-size="22">Jordan bond + vQbit gate</text>
+  <!-- two loops linked -->
+  <ellipse cx="280" cy="220" rx="100" ry="70" fill="none" stroke="#6ea8ff" stroke-width="10"/>
+  <ellipse cx="360" cy="220" rx="100" ry="70" fill="none" stroke="#8fd0a8" stroke-width="10"/>
+  <text x="320" y="330" text-anchor="middle" fill="#f0c674" font-size="16">Jordan-bonded link</text>
+  <text x="320" y="355" text-anchor="middle" fill="#9fb0d0" font-size="13">isomorphism enforced at runtime</text>
+  <!-- gate -->
+  <rect x="560" y="120" width="340" height="240" rx="12" fill="#142820" stroke="#6ecf9a" stroke-width="2"/>
+  <text x="730" y="165" text-anchor="middle" fill="#8fd0a8" font-size="18">vQbit state machine</text>
+  <text x="730" y="210" text-anchor="middle" fill="#c5d4ef" font-size="14">phase² + amplitude² = 1</text>
+  <text x="730" y="240" text-anchor="middle" fill="#c5d4ef" font-size="14">TauAnchor · manifold check</text>
+  <text x="730" y="290" text-anchor="middle" fill="#6ecf9a" font-size="16">ON manifold → ACCEPT</text>
+  <text x="730" y="320" text-anchor="middle" fill="#e07888" font-size="16">OFF manifold → REJECT</text>
+  <text x="480" y="430" text-anchor="middle" fill="#9fb0d0" font-size="14">Verification = invariant check, not manuscript length</text>
+</svg>

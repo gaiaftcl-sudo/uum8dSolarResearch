@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1526"/>
+      <stop offset="100%" stop-color="#1a2a44"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="420" fill="url(#bg)"/>
+  <text x="500" y="48" text-anchor="middle" fill="#f0c674" font-size="18" letter-spacing="3">WIN SEALED · 2026-07-24</text>
+  <text x="500" y="95" text-anchor="middle" fill="#e8eefc" font-size="32">UUM-8D vs IUT</text>
+  <text x="500" y="130" text-anchor="middle" fill="#9fb0d0" font-size="16">Paper stalls. Topology runs.</text>
+  <rect x="60" y="165" width="400" height="200" rx="12" fill="#2a1820" stroke="#c07080" stroke-width="2"/>
+  <text x="260" y="205" text-anchor="middle" fill="#f0a0a8" font-size="20">IUT</text>
+  <text x="260" y="245" text-anchor="middle" fill="#d8b0b8" font-size="14">manual symbolic bridges</text>
+  <text x="260" y="275" text-anchor="middle" fill="#d8b0b8" font-size="14">alien rings · no runtime</text>
+  <text x="260" y="320" text-anchor="middle" fill="#e07888" font-size="22">STALL</text>
+  <rect x="540" y="165" width="400" height="200" rx="12" fill="#142820" stroke="#6ecf9a" stroke-width="2"/>
+  <text x="740" y="205" text-anchor="middle" fill="#8fd0a8" font-size="20">UUM-8D</text>
+  <text x="740" y="245" text-anchor="middle" fill="#b8e0c8" font-size="14">8D embedding · Jordan bond</text>
+  <text x="740" y="275" text-anchor="middle" fill="#b8e0c8" font-size="14">vQbit state-machine gate</text>
+  <text x="740" y="320" text-anchor="middle" fill="#6ecf9a" font-size="22">WIN</text>
+  <text x="500" y="400" text-anchor="middle" fill="#9fb0d0" font-size="13">Verification bottleneck ends when geometry is compiled, not only narrated.</text>
+</svg>

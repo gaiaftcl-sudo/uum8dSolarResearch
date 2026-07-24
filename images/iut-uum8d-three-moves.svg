@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" font-family="Georgia, serif">
+  <rect width="1100" height="420" fill="#0f141f"/>
+  <text x="550" y="42" text-anchor="middle" fill="#e8eefc" font-size="22">UUM-8D — three compiled moves</text>
+  <!-- boxes -->
+  <rect x="40" y="90" width="300" height="260" rx="12" fill="#152033" stroke="#6ea8ff"/>
+  <text x="190" y="130" text-anchor="middle" fill="#8eb6ff" font-size="18">1 · Embed</text>
+  <text x="190" y="170" text-anchor="middle" fill="#c5d4ef" font-size="13">Prime factors →</text>
+  <text x="190" y="195" text-anchor="middle" fill="#c5d4ef" font-size="13">8D ultra-metric space</text>
+  <text x="190" y="230" text-anchor="middle" fill="#9fb0d0" font-size="12">M⁸ = S⁴ × C⁴</text>
+  <text x="190" y="280" text-anchor="middle" fill="#f0c674" font-size="13">inequalities =</text>
+  <text x="190" y="305" text-anchor="middle" fill="#f0c674" font-size="13">volume / boundary</text>
+
+  <rect x="400" y="90" width="300" height="260" rx="12" fill="#152033" stroke="#f0c674"/>
+  <text x="550" y="130" text-anchor="middle" fill="#f0c674" font-size="18">2 · Jordan-bond</text>
+  <text x="550" y="170" text-anchor="middle" fill="#c5d4ef" font-size="13">Runtime-enforced</text>
+  <text x="550" y="195" text-anchor="middle" fill="#c5d4ef" font-size="13">state transitions</text>
+  <text x="550" y="240" text-anchor="middle" fill="#9fb0d0" font-size="12">vector binding rules</text>
+  <text x="550" y="280" text-anchor="middle" fill="#8fd0a8" font-size="13">linked or not linked</text>
+  <text x="550" y="305" text-anchor="middle" fill="#8fd0a8" font-size="13">(integer topology)</text>
+
+  <rect x="760" y="90" width="300" height="260" rx="12" fill="#152033" stroke="#6ecf9a"/>
+  <text x="910" y="130" text-anchor="middle" fill="#8fd0a8" font-size="18">3 · vQbit gate</text>
+  <text x="910" y="170" text-anchor="middle" fill="#c5d4ef" font-size="13">State-vector invariants</text>
+  <text x="910" y="195" text-anchor="middle" fill="#c5d4ef" font-size="13">checked at runtime</text>
+  <text x="910" y="240" text-anchor="middle" fill="#9fb0d0" font-size="12">off-manifold → reject</text>
+  <text x="910" y="280" text-anchor="middle" fill="#6ecf9a" font-size="13">no 500-page audit</text>
+  <text x="910" y="305" text-anchor="middle" fill="#6ecf9a" font-size="13">instant flag</text>
+
+  <!-- arrows -->
+  <text x="360" y="220" fill="#9fb0d0" font-size="28">→</text>
+  <text x="720" y="220" fill="#9fb0d0" font-size="28">→</text>
+  <text x="550" y="390" text-anchor="middle" fill="#9fb0d0" font-size="14">Compile inter-universal geometry into a computable topology</text>
+</svg>
