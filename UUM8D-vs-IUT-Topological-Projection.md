@@ -55,6 +55,11 @@ Arithmetic is not “explained away.” It is **located** — so a machine can t
 
 The bond is the win condition: two presentations are linked or not linked. That is an integer topology fact, not a prose hope.
 
+> [!IMPORTANT]
+> **Torsion ≠ linking number.** Affine torsion \(T^\lambda{}_{\mu\nu}\) is local and continuous. Linking number is global and integer. Both speak to non-closure, at different levels. Do **not** read “Jordan bond” as “torsion.” Read: the runtime invariant sits **where torsion sits in the affine hierarchy**, and is enforced as **integer linking / bonded state** — the same split made rigorous in dislocation theory (Burgers vector) and magnetic helicity (Moffatt: \(H=\int A\cdot B\) **is** field-line linking). Solar working surface for that integer: Study 03 Layer B ([Predictions](Study-03-Predictions-and-Validations.md)).
+
+![Torsion (local continuum) vs linking number (global integer)](images/torsion-vs-linking.svg)
+
 ### 3. vQbit state-machine validation
 
 | Old (symbolic) | UUM-8D (runtime) |

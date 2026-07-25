@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Georgia, serif">
+  <rect width="960" height="400" fill="#101820"/>
+  <text x="480" y="36" text-anchor="middle" fill="#e8eefc" font-size="20">Torsion and linking — not the same object</text>
+  <rect x="50" y="70" width="400" height="260" rx="10" fill="#1a2434" stroke="#7fa2d4"/>
+  <text x="250" y="110" text-anchor="middle" fill="#8eb6ff" font-size="18">Torsion</text>
+  <text x="250" y="150" text-anchor="middle" fill="#c5d4ef" font-size="13">local · continuous · tensorial</text>
+  <text x="250" y="190" text-anchor="middle" fill="#9fb0d0" font-size="12">T = Γ − Γᵀ at a point</text>
+  <text x="250" y="230" text-anchor="middle" fill="#9fb0d0" font-size="12">infinitesimal non-closure</text>
+  <text x="250" y="280" text-anchor="middle" fill="#f0c674" font-size="13">crystal: dislocation density</text>
+  <rect x="510" y="70" width="400" height="260" rx="10" fill="#1a2434" stroke="#8fd0a8"/>
+  <text x="710" y="110" text-anchor="middle" fill="#8fd0a8" font-size="18">Linking number</text>
+  <text x="710" y="150" text-anchor="middle" fill="#c5d4ef" font-size="13">global · integer · topological</text>
+  <text x="710" y="190" text-anchor="middle" fill="#9fb0d0" font-size="12">two closed curves</text>
+  <text x="710" y="230" text-anchor="middle" fill="#9fb0d0" font-size="12">deformation invariant</text>
+  <text x="710" y="280" text-anchor="middle" fill="#f0c674" font-size="13">plasma: Moffatt helicity = Lk</text>
+  <text x="480" y="370" text-anchor="middle" fill="#c5d4ef" font-size="13">Same hierarchy of non-closure · seal the integer level on the Sun</text>
+</svg>

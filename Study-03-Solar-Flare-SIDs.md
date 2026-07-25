@@ -187,13 +187,53 @@ A sudden ionospheric disturbance is not an abstraction. The D-region electrons t
 
 ---
 
+## Layer B — SHARP integer crossing-count helicity (extends this study)
+
+Layer A (above) grades the **ionosphere after** the flare. Layer B grades **magnetic topology before** the flare — same GOES clock, same program recipe, not a new domain. Full prediction/validation IDs: [Study 03 — Predictions and validations](Study-03-Predictions-and-Validations.md).
+
+### Torsion ≠ linking (doctrine line)
+
+Affine **torsion** is local and continuous (\(T^\lambda{}_{\mu\nu}=\Gamma^\lambda{}_{\mu\nu}-\Gamma^\lambda{}_{\nu\mu}\)). **Linking number** is global and integer. Both express non-closure at different levels. This study does **not** say “torsion is our Jordan bond.” It says: our sealed invariant sits **where torsion sits in the affine hierarchy**, realized where physics already equates continuum non-closure with integer topology —
+
+1. **Dislocations** (Kondo 1952; Bilby–Bullough–Smith 1955; Kröner): torsion ↔ dislocation density; Burgers circuit → lattice (integer) Burgers vector; lines link in 3D.
+2. **Magnetic helicity** (Moffatt 1969; Berger & Field): \(H=\int\mathbf{A}\cdot\mathbf{B}\) **is** field-line linking; two tubes \(H=2\Phi_1\Phi_2\,\mathrm{Lk}\). Winding / pairwise-crossing forms on magnetograms are combinatorial.
+
+Einstein–Cartan torsion–spin coupling is **not** an experiment here (empirically inert at accessible densities). The Sun is the accessible analog.
+
+### Four-piece recipe (Layer B)
+
+| Piece | Instantiation |
+|---|---|
+| Clock | GOES flare onsets / class (same catalogs as Layer A) |
+| Raw archive | SDO/HMI **SHARP** via JSOC (~12 min/AR; public from 2010-05; early years alone ~2,071 ARs / ~1.5×10⁶ patches — REPORTED scale) |
+| Adversary | **Large-flux ARs that do not flare** — the field’s open problem; magnitude forgeable, topology the shear |
+| Integer seal | Signed field-line **crossing count** on rationalized coordinates — exact integer, not float ∫A·B |
+
+### Contribution
+
+Everyone’s helicity integral is a float (gauge- and model-sensitive). SHARP parameters are proxies. This layer freezes a **combinatorial crossing-count** and asks whether it separates flaring ARs from **flux-matched quiet** nulls better than the **SWAN-SF** community baseline — checkable by anyone with JSOC data.
+
+![Integer crossing helicity vs float ∫A·B; quiet big AR as adversary](images/study-03-sharp-helicity.svg)
+
+### Predictions / validations (summary)
+
+| Layer B | See |
+|---|---|
+| P-B1…P-B4 | Forecast skill on matched-magnitude nulls; byte-identical integers; SWAN-SF comparison |
+| V-B1…V-B5 | Corpus digests, freeze-before-test, adversary FP bound, baseline table, holdout |
+
+Status of Layer B moves only when its own corpus freezes — independent of Layer A’s TEC freeze.
+
+---
+
 ## Limits
 
-- **This is not a flare forecaster.** Nothing here predicts *when* a flare erupts — only what the ionosphere must do in the minutes after one, and what it must not do when there is none.
+- **Layer A is not a flare forecaster.** Nothing in Layer A predicts *when* a flare erupts — only what the ionosphere must do in the minutes after one, and what it must not do when there is none.
+- **Layer B is a methodological forecast shear**, not a claim of Einstein–Cartan detection.
 - **This is not a storm model.** Storms appear here only as the adversary. Their inner structure (SED plumes, penetration fields) is out of scope beyond "the detector stays silent."
 - **Cross-era classes are not commensurable.** GOES-R science fluxes run ~1.4× the pre-2020 SWPC-scaled values; thresholds are sealed per calibration era, and 2003-vs-2024 class comparisons are never made on a single scale.
 - **The measurement can die at the peak.** An extreme flare or radio burst may leave gaps instead of a step. Dropout-rate is a co-detection channel and the VLF witness stands by on live events, but a false negative from receiver blinding remains possible and would be recorded as such.
 - **A limb X-flare may legitimately under-shoot.** EUV center-to-limb attenuation means the 60° disk-position gate excludes some real flares from scoring — a narrower target set, accepted openly.
 - **The wait may be long.** SC25 is past its maximum interval; the standing law persists until the target arrives. It does not expire and it is not relaxed.
 
-**Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the corpus runs.**
+**Status: OPEN — charter published (Layer A TEC SID + Layer B SHARP integer helicity). Corpora not yet ingested. Thresholds not frozen. Predictions/validations spelled out in [Study-03-Predictions-and-Validations](Study-03-Predictions-and-Validations.md).**

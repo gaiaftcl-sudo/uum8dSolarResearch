@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="Georgia, serif">
+  <rect width="1000" height="520" fill="#0f141f"/>
+  <text x="500" y="36" text-anchor="middle" fill="#e8eefc" font-size="20">Study 03 Layer B — integer crossing helicity</text>
+  <text x="500" y="58" text-anchor="middle" fill="#9fb0d0" font-size="13">Moffatt: helicity is linking · seal crossings, not float ∫A·B</text>
+  <!-- left float -->
+  <rect x="40" y="90" width="420" height="280" rx="10" fill="#201518" stroke="#a06070"/>
+  <text x="250" y="125" text-anchor="middle" fill="#f0a0a8" font-size="16">Field default</text>
+  <text x="250" y="165" text-anchor="middle" fill="#c49aa0" font-size="14">H = ∫ A·B  (float)</text>
+  <text x="250" y="200" text-anchor="middle" fill="#c49aa0" font-size="13">gauge-dependent</text>
+  <text x="250" y="225" text-anchor="middle" fill="#c49aa0" font-size="13">potential-field model choice</text>
+  <text x="250" y="270" text-anchor="middle" fill="#e07888" font-size="14">SHARP proxies · soft skill</text>
+  <text x="250" y="320" text-anchor="middle" fill="#c49aa0" font-size="12">big flux ≈ “will flare?”</text>
+  <text x="250" y="345" text-anchor="middle" fill="#c49aa0" font-size="12">(magnitude forgeable)</text>
+  <!-- right integer -->
+  <rect x="540" y="90" width="420" height="280" rx="10" fill="#142820" stroke="#6ecf9a"/>
+  <text x="750" y="125" text-anchor="middle" fill="#8fd0a8" font-size="16">This seal</text>
+  <text x="750" y="165" text-anchor="middle" fill="#b8e0c8" font-size="14">C = signed crossing count</text>
+  <text x="750" y="200" text-anchor="middle" fill="#b8e0c8" font-size="13">exact integer · no gauge</text>
+  <text x="750" y="225" text-anchor="middle" fill="#b8e0c8" font-size="13">rational coordinates</text>
+  <text x="750" y="270" text-anchor="middle" fill="#6ecf9a" font-size="14">GOES clock · SHARP raw</text>
+  <text x="750" y="320" text-anchor="middle" fill="#f0c674" font-size="12">adversary: large-flux quiet ARs</text>
+  <text x="750" y="345" text-anchor="middle" fill="#f0c674" font-size="12">grade vs SWAN-SF baseline</text>
+  <!-- footer -->
+  <text x="500" y="420" text-anchor="middle" fill="#9fb0d0" font-size="13">Torsion (local continuum) ≠ linking (global integer) — same hierarchy, different level</text>
+  <text x="500" y="450" text-anchor="middle" fill="#9fb0d0" font-size="13">Bridges: dislocations (Burgers) · Moffatt helicity = Lk · Sun is the experiment</text>
+  <text x="500" y="490" text-anchor="middle" fill="#f0c674" font-size="14">Predictions P-B1…P-B4 · Validations V-B1…V-B5</text>
+</svg>
