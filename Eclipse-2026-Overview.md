@@ -20,6 +20,25 @@ On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,0
 **What it proves if it passes:** that a rule calibrated on American mid-day eclipses generalizes to an Arctic, near-sunset one it never saw — sealed in advance, so nobody can call it curve-fitting. **What it proves if it misses:** where the rule breaks, honestly logged. Either way: one entry in the track record. That was the whole goal.
 
 
+## The result so far — and what it actually means (2026-08-13)
+
+**The measured result, one day after the eclipse:** the raw receiver files captured at T+1 — bytes no archive can revise — show a TEC depletion at every sealed totality station in our custody, inside its sealed window, in the sealed order: Reykjavik bottoming at 17:40–17:45 UT against a maximum sealed at 17:48:46; A Coruña, León, and Zaragoza dipping together fifty minutes later at +1,002 s, +952 s, and +467 s after their own sealed maxima — the Spanish trio inside the pre-registered lag gate outright. Depths of 3–6 TECU against the control day, inside the pre-registered 31–56% band. The full table, the method, and its honest edge cases are on the [prediction registry](Eclipse-2026-Prediction-Registry.md); the sealed verdict still grades on the pinned archive when it posts (~2026-08-30). First look and final grading are two different witnesses, and both go on this page.
+
+**What this means — stated at its true size, no larger:**
+
+**The dip is not the discovery.** Eclipses have been known to depress the ionosphere since the earliest measurements; nothing about the physics is overturned here, and this experiment never claimed otherwise. The content is in the *prediction*: which stations, which seconds, which order, which silences — written down, fingerprinted, and published twenty-seven days before the sky moved, so that hindsight had nothing left to adjust. Eclipse-ionosphere work is overwhelmingly retrospective: the event happens, then the analysis finds the signal. This experiment inverted that order in public, at station level, to the second, and then let the data answer. That inversion — not the dip — is the result.
+
+**One transferable finding is already sealed, independent of August 12.** The Gannon superstorm proved in the historical record that magnitude alone cannot distinguish a storm from an eclipse — the strongest storm in two decades faked eclipse-grade depletion at all seven stations, and the confinement-plus-lag shape test rejected every storm row while passing all sixteen true eclipse rows. Anyone attributing an ionospheric depletion to a cause — space-weather operations, GNSS integrity work, research pipelines — can use that discriminant today. It does not depend on the 2026 verdict.
+
+**The custody practice costs almost nothing and closes a real hole.** Within a day of the event, the receiver-level raw files were pulled from public mirrors and SHA-sealed with retrieval timestamps — so no later reprocessing, revision, or archive change can alter what August 12 recorded. Any experiment that grades itself on an archive it does not control can copy this practice with a terminal and a checksum tool. Most do not do it.
+
+**The honesty architecture held under pressure, which is the hardest test it gets.** The record contains its own misses: the Eugene 2023 detection failure sealed by name, nine false positives published, the operational failures of the 27-day cycle graded promise-by-promise — and none of it could be quietly amended, because the seals do not permit it. An experiment whose failures are undeletable earns its successes. That property was demonstrated, not claimed.
+
+**And the bounds, stated with the same care:** this is one event — one entry in the track record, no more, no less. The first look is relative slant TEC from single stations, not the pinned gridded surface the frozen law grades on; Reykjavik's deepest bin sits at the early edge of the lag gate at this resolution; the null-station silences are not yet processed; and a rule that has now worked on four eclipses is exactly that — a rule that has worked on four eclipses. Its power over things it has not seen is earned one sealed event at a time.
+
+**Why it matters if the pinned surface confirms:** the demonstration will be complete that a small, fully public operation — public archives, public seals, public failures, a terminal — can turn raw geophysical data into falsifiable predictions graded in the open. The eclipse was never the product. The eclipse was the calibration. The method is the product, and five more charters are already waiting to use it.
+
+
 ## The second sky
 
 Sixty to a thousand kilometers above your head there is a second sky: the **ionosphere**, a shell of charged particles that GPS travels through, aviation and marine radio bounce off, and power grids feel. It is invisible infrastructure — every phone position fix, every transoceanic flight, every precision-agriculture tractor depends on knowing its state. The Sun builds this shell every morning by ionizing the upper air; storms from the Sun shake it violently.
