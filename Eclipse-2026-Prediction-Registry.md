@@ -82,6 +82,17 @@ gaiaftcl eclipse-wiki-render
 
 The verdict lands in the crucible tables on this wiki the moment the renderer runs — the same tables, the same law, the same fingerprints the world could copy down today.
 
+## Resolution status — measured T+1 (2026-08-13)
+
+The sky kept the appointment; the archive has not yet. Measured on resolution day:
+
+- **Eclipse day was quiet.** GFZ Kp for 2026-08-12: eight 3-hour bins, maximum **Kp 2.667** — far under the Kp ≤ 4 quiet rule and the pre-registered est-Kp ≥ 5 storm gate. **The storm flag never raised**; the prediction grades at full strength, with no storm annotation. The flanking days measured quiet too: 2026-08-05 max Kp 1.667, 2026-08-11 max Kp 3.000.
+- **The response archive trails real time.** Madrigal's world-gridded TEC (instrument 8000) has no experiment for 2026-08-12 yet — measured today, the archive's posting boundary sits between 2026-07-25 and 2026-08-01, a two-to-three-week lag. The sealed claims cannot be graded until the archive posts the day: grading on absent data would be a verdict about an empty query, not about the sky.
+- **The instrument is ready and unchanged.** All four sealed Forms re-verified byte-for-byte today, 28 days after sealing; the crucible re-ran green (2024 benchmark 7/7, 0 false positives) and the shear discriminant re-derived its frozen threshold exactly (minimum eclipse excess 57,543 ppm vs storm floor 42,836 ppm — threshold 50,189 ppm standing).
+- **Expected grading window: the day Madrigal posts 2026-08-12** — at the measured lag, around 2026-08-30, by which time the third pre-registered control day (2026-08-19) posts alongside it, so the resolution runs exactly as sealed. A standing daily probe watches for the posting.
+
+Nothing above changes a sealed claim; the fingerprints are untouched. A pre-registered experiment should say out loud when its grading data has not arrived — the absence of data is a measurement too.
+
 ## Current Form registry
 
 <!-- GAIA:BEGIN forms-registry -->
