@@ -2,6 +2,24 @@
 
 On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,000 kilometers long with a tip 294 kilometers wide — will drag across the Earth at supersonic speed, crossing western Iceland and northern Spain. This wiki is the complete, public, falsifiable record of an experiment that treats that moment not as a number to be measured, but as a **three-dimensional shape to be read** — with its claims sealed 27 days in advance, its data drawn only from public archives, and its verdicts computed in exact integers by a substrate whose native language is geometry.
 
+## The experiment, plain — from the top (recorded T+1, 2026-08-13)
+
+**The goal, in one sentence:** to predict — in writing, sealed 27 days in advance — exactly where and when the ionosphere would dip during the August 12 eclipse, and where it wouldn't, and then let the measured data grade that prediction pass or fail with no room to adjust anything afterward.
+
+**The physical thing being predicted:** sunlight ionizes the upper atmosphere. When the Moon blocks the sun, that ionization drops, so the electron count overhead (TEC — total electron content, which GNSS receivers measure) dips under the shadow, slightly delayed, then recovers. That dip is the signal.
+
+**How it was done, in order:**
+
+1. **A detection rule was written and frozen** (July 16). Mechanical, no judgment calls: at a station where at least 80% of the sun gets covered, the TEC must dip by a set amount against that station's own ordinary-day baseline, within 5-minute bins, on a geomagnetically quiet day. A rule either fires or it doesn't.
+2. **The rule was tested backward on history** — 82 station-days from the 2017 eclipse, the 2023 annular, the 2024 eclipse, and the Gannon storm. It caught 15 of 16 real eclipse signatures, missed one (Eugene, 2023) — and embarrassed itself on the storm, firing at all seven stations when no eclipse existed.
+3. **That storm failure forced two extra clauses, frozen before the event:** the dip must be confined to the eclipse window rather than spread across the whole day, and it must arrive on time — deepest point within a fixed lag of that station's maximum coverage. Storms fail both; eclipses pass both. That is what separates the two.
+4. **The prediction itself was sealed:** five stations under the totality path — Reykjavik, Látrabjarg, A Coruña, León, Zaragoza — must fire at pre-computed seconds, with the dip traveling station to station in the shadow's order. Two stations under weak partial — Norwich and Millstone Hill — must stay silent. The home station was deliberately made a control: too little sun covered to trigger the rule, so silence there is part of the prediction too.
+5. **Everything got a fingerprint** so no number can be quietly edited later. All four re-verified untouched on the 13th.
+6. **The grading is mechanical:** when the archive publishes the measured TEC for August 12, run the frozen rule against it. Five fires at the sealed seconds, two silences, right order, confined and on time — pass. Anything less — miss. Published either way.
+
+**What it proves if it passes:** that a rule calibrated on American mid-day eclipses generalizes to an Arctic, near-sunset one it never saw — sealed in advance, so nobody can call it curve-fitting. **What it proves if it misses:** where the rule breaks, honestly logged. Either way: one entry in the track record. That was the whole goal.
+
+
 ## The second sky
 
 Sixty to a thousand kilometers above your head there is a second sky: the **ionosphere**, a shell of charged particles that GPS travels through, aviation and marine radio bounce off, and power grids feel. It is invisible infrastructure — every phone position fix, every transoceanic flight, every precision-agriculture tractor depends on knowing its state. The Sun builds this shell every morning by ionizing the upper air; storms from the Sun shake it violently.
