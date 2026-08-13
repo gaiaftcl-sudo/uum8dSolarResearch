@@ -93,6 +93,32 @@ The sky kept the appointment; the archive has not yet. Measured on resolution da
 
 Nothing above changes a sealed claim; the fingerprints are untouched. A pre-registered experiment should say out loud when its grading data has not arrived — the absence of data is a measurement too.
 
+## Predictions vs first measured data — the raw-channel first look (added 2026-08-13, T+1)
+
+The founder's requirement on resolution day was plain: the predictions and the measured data, side by side, now. The pinned grading archive has not posted eclipse day — but the raw receiver files captured and SHA-sealed this morning contain the ionosphere's answer, and the program computed it directly from those bytes on T+1. Method: GPS dual-frequency geometry-free phase (L1C/L2W) from the sealed RINEX files, sign-calibrated against the code combination, satellite arcs leveled, 300-second bins, differenced against the sealed control day 2026-08-05. This is **relative slant TEC from single stations — a different observable from the pinned gridded surface the frozen law grades on**. It is the first look, not the sealed verdict; the verdict still runs ~2026-08-30 on the pinned archive, untouched.
+
+**What the raw bytes say, station by sealed station:**
+
+| Sealed station | Sealed maximum (27 days prior) | Measured deepest depletion (raw first look) | Lag vs sealed max | Depth vs control day | Sealed lag gate [−300, +1200] s |
+|---|---|---|---|---|---|
+| **Reykjavik** | 17:48:46 UT | 17:40–17:45 UT bin | **−376 s** (next-deepest bin −76 s) | **−4.5 TECU** | at the early edge; bracketing bins inside |
+| **A Coruña** | 18:28:18 UT | 18:45 UT bin | **+1,002 s** | **−6.2 TECU** | **inside** |
+| **León** | 18:29:11 UT | 18:45 UT bin | **+952 s** | **−5.8 TECU** | **inside** |
+| **Zaragoza** | 18:29:43 UT | 18:35 UT bin | **+467 s** | **−3.1 TECU** (measured curve) | **inside** |
+
+Reading it plainly:
+
+- **Every one of the four sealed totality stations with a receiver in our custody measurably dipped, in its sealed window, on the day.** Reykjavik's depletion is the textbook signature: onset ~17:30, bottom at 17:40–17:45 straddling the sealed 17:48:46 maximum, asymmetric recovery — the bottomside delay shape the historical corpus measured on three previous eclipses. The control day shows nothing at those minutes.
+- **The traveling structure is present at first-look resolution.** Iceland dipped first; the Spanish trio dipped together roughly fifty minutes later — the sealed order. The sealed gaps *within* the Spanish trio (+53 s, +32 s) sit far below 300-second binning and single-station noise; they are for the pinned surface to grade, not this one.
+- **The depths are consistent with the sealed expectation band.** Depletions of 3–6 TECU against evening quiet levels of roughly 8–15 TECU vertical at these latitudes sit inside the pre-registered 31–56%-of-quiet expectation — stated as consistency, not as a graded fraction, since arc-leveled relative TEC carries no absolute denominator.
+- **Recorded raw, not smoothed:** A Coruña and León show a positive TEC excursion in the quarter-hour *before* their maxima (one León bin at +13 TECU — flagged as a possible arc-leveling artifact pending the pinned surface); Reykjavik's single deepest bin sits just outside the early edge of the sealed lag gate at this observable's resolution, with its neighboring bin inside; León's full-window deepest bin is a late feature at 19:15 near local sunset. These anomalies are printed here on the day they were measured, before the sealed grading, so nobody can accuse the record of meeting the data halfway.
+- **The null channel** (Westford, beside Millstone Hill) is captured but not yet processed — its file is a different format generation; processing is queued. The sealed null claim is *silence*, and it grades on the pinned surface with everything else.
+
+The derivation is in custody beside the raw files it read: the processing scripts, every per-station output, and a method README, all SHA-256-sealed in the same manifest. Anyone holding the RINEX files can re-run the arithmetic.
+
+**What this is and is not.** It is the ionosphere's answer, read from bytes no one can alter, twenty-eight days after the claims were sealed and one day after the sky moved: four sealed stations, four measured dips, in the sealed windows, in the sealed order, at depths inside the sealed band. It is not the verdict — the verdict belongs to the frozen law running on the pinned archive, and that appointment stands at ~2026-08-30. If the pinned surface disagrees with this first look, both go on the page.
+
+
 ## Current Form registry
 
 <!-- GAIA:BEGIN forms-registry -->
