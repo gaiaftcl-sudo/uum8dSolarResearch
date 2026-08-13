@@ -2,19 +2,19 @@
 
 **Program:** UUM-8D Solar Research / Shear Studies  
 **Surface:** [uum8dSolarResearch wiki](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki)  
-**Date:** 2026-07-23  
-**Status of this document:** Public synthesis of sealed and open studies. Numbers for Study 1 and Study 07 are ledger-frozen; Study 08 charter sealed; Studies 02–06 charter-sealed pending corpus.  
+**Date:** 2026-08-13 (Version 2.0 — T+1 revision; first version 2026-07-23)  
+**Status of this document:** Public synthesis of sealed and open studies. Study 1: eclipse complete 2026-08-12, day verified quiet, sealed prediction pending its pinned archive (grading window ~2026-08-30). Study 07 numbers ledger-frozen and re-verified byte-exact 2026-08-13. Study 08 charter sealed; Studies 02–06 charter-sealed pending corpus.  
 **Readers’ entry:** [Shear-Studies-Readers-Guide](Shear-Studies-Readers-Guide.md)
 
 ---
 
 ## Abstract
 
-Science has spent decades measuring the world with rulers: percent drop, peak amplitude, χ² fit, image brightness. Rulers are cheap to fool. A geomagnetic superstorm digs a deeper ionospheric hole than an eclipse; a storm surge lifts a tide gauge as high as a tsunami; lightcurve normalization and image regularizers turn sparse radio tracks into a filled ring. Magnitudes travel. **Appointments do not.**
+Science has spent decades measuring the world with rulers: percent drop, peak amplitude, χ² fit, image brightness. Rulers are cheap to fool. A geomagnetic superstorm digs a deeper ionospheric hole than an eclipse; a storm surge lifts a tide gauge as high as a tsunami; lightcurve normalization moves a table’s absolute amplitudes before imaging ever begins. Magnitudes travel. **Appointments do not.**
 
-This program replaces the ruler with a **shear**: a forcing that carries its own public clock and track; a raw public archive; a named adversary that matches size but not shape; and a frozen exact-integer law that grades confinement and traveling lag before any future event is scored. The eclipse of 2026-08-12 is the reference implementation. Six further studies transplant the same recipe to rocket burns, solar flares, tsunamis, cosmic-ray Forbush decreases, explosion-vs-earthquake discrimination, and — now frozen — the Event Horizon Telescope’s public visibilities of Sagittarius A\*, the radio source at the center of the Milky Way.
+This program replaces the ruler with a **shear**: a forcing that carries its own public clock and track; a raw public archive; a named adversary that matches size but not shape; and a frozen exact-integer law that grades confinement and traveling lag before any future event is scored. The eclipse of 2026-08-12 was the reference implementation — it has now happened, on schedule, on a day that measured quiet; the sealed prediction awaits its pinned grading archive (§2.1). Seven further studies transplant the same recipe to rocket burns, solar flares, tsunamis, cosmic-ray Forbush decreases, explosion-vs-earthquake discrimination, the Event Horizon Telescope’s public visibilities of Sagittarius A\* (the radio source at the center of the Milky Way), and the astrometric-spectroscopic orbit of Gaia BH1.
 
-**The finding that changes the reading of the galactic center:** the public non-normalized Stokes-I CSV for Sgr A\* (product 2022-D02-01) passes a frozen integer law on short/long baseline ladder, closure-phase structure, and Earth-rotation arc order — **8/8 WIN** across days, bands, and both HOPS and CASA pipelines. The lightcurve-normalized tables used as static-imaging input fail the same absolute short-baseline floor — **8/8 MISS**. Compact flux ~2.1–2.5 Jy on short baselines is in the sky’s table. The filled ring is what happens after the table is altered and the Fourier gaps are painted. That separation is not a slogan. It is a ledger row.
+**The Study 07 ledger row, stated at its measured strength:** the public non-normalized Stokes-I CSV for Sgr A\* (product 2022-D02-01) passes a frozen integer law on short/long baseline ladder, closure-phase structure, and Earth-rotation arc order — **8/8 WIN** across days, bands, and both HOPS and CASA pipelines. The lightcurve-normalized tables used as static-imaging input fail the same absolute short-baseline floor — **8/8 MISS**, every failure `SHORT_FAIL`. Compact flux ~2.1–2.5 Jy on short baselines is in the sky’s table (VERIFIED against the sealed ledger). What the MISS measures is the definition of normalization doing exactly what the source collaboration’s release notes document: dividing amplitudes by the concurrent total-flux light curve drives short baselines to ~1.0 Jy-equivalent by construction. The shape quantities imaging actually uses — the radial ratio ladder and the closure phases — pass through normalization intact (§4.5). The program’s reading is that the absolute-jansky appointment and the imaging input are **different tables**, and that the fork must be named as provenance; the collaboration documents the same fork in its own release notes. That separation is a ledger row, not a slogan.
 
 ---
 
@@ -31,17 +31,19 @@ This program replaces the ruler with a **shear**: a forcing that carries its own
 | Cosmic rays | Pressure lows, diurnal wave | Strobe ~50 neutron monitors in one L1 shock minute, rigidity-ordered |
 | Seismology | Near-site quakes, quarry blasts | Climb a Pn/Pg/Sn/Lg ladder from a fixed depth-0 point track |
 | Galactic center VLBI | Ring PNG + regularizers + `csv_norm` | Invent short-baseline absolute janskys and closure topology absent from the sealed rows |
-| Gaia BH1 astrometry | Published *N* M☉ dark companion | Invent a horizon-scale mass object beyond what integer µas / RV appointments support |
+| Gaia BH1 astrometry | Published *N* M☉ dark companion narrative | Carry the horizon-scale label into the integer table. The mass itself is in the appointments — the orbital signal sits 10³–10⁴ above the sealed integer quanta (§9.4) — but the horizon narrative is a label, not a measurement, and the integer table does not adjudicate it |
 
 ### 1.1b Cosmology’s three black-hole pipelines
 
 | # | Pipeline | Instrument writes | Model shows | Program study |
 |---|---|---|---|---|
 | 1 | High-precision astrometry | Star wobble (Gaia BH1) | Invisible black hole of *N* M☉ | [Study 08](Study-08-Gaia-BH1-Astrometric-Shear.md) |
-| 2 | GW interferometry | Laser strain (LIGO/Virgo) | Merging compact objects | Study 09 queued |
+| 2 | GW interferometry | Laser strain (LIGO/Virgo) | Merging compact objects | Study 10 queued (renumbered — see note) |
 | 3 | VLBI | Sparse visibilities (EHT) | Ring / shadow image | [Study 07](Study-07-SgrA-Milky-Way-Results.md) — **graded** |
 
-**Origin of shear in those pipelines:** raw tables are finite and sparse; continuous GR / imaging / orbital fits on absolute grids demand infinite precision at singular boundaries. When arithmetic collapses, the program seals an integer boundary and grades the **object assignment** as adversary — it does **not** thrash IEEE-754 `Double` inside the core OS until `isNaN` and call that the horizon. Ingest for Study 08: dedicated `corpus/study-08/` → integer quantization → ledger; NATS only for post-grade seal rows.
+**Renumbering note (2026-08-13):** the first version of this paper queued the GW-interferometry study as “Study 09.” That number has since been taken by a different charter — *Shear Study 09 — The Global Convective Bond* (aircraft traffic, atmosphere, and solar forcing), chartered 2026-07-25 on the program’s main-branch surface. That page is **not** yet published on this wiki; until it is, it is cited here without a link rather than linked into a void. The GW pipeline study is therefore queued as **Study 10**.
+
+**Origin of shear, scoped per pipeline:** the infinite-precision failure mode named in v1 of this paper belongs to **pipeline 3** — imaging regularizers filling sparse Fourier coverage on absolute grids. It does not describe pipeline 1. Gaia BH1’s published mass is a plain Keplerian two-body fit at ~1.4 AU separation from a ~9.3 M☉ companion: no relativistic term enters the fit, no singular boundary is approached, and the 2024 re-analysis reports residuals consistent with noise under the plain Keplerian model (REPORTED — Nagarajan et al. 2024). For pipeline 1 the shear question is narrower and stated in §9.4: which channel of the public record carries the orbit at integer resolution, and what label rides on top of it. Where a fit’s arithmetic does collapse, the program seals an integer boundary and grades the **object assignment** as adversary. Ingest for Study 08 runs through a dedicated `corpus/study-08/` directory with integer quantization at ingest; ledger rows are sealed only after grading.
 
 ### 1.2 The four-piece shear recipe
 
@@ -62,9 +64,9 @@ Charter → Corpus → Frozen law → Pre-registration → Public resolution. No
 
 ## 2. Study 1 — Eclipse 2026: the reference implementation
 
-**Status:** RESOLVING 2026-08-13 · locked until the sky answers.
+**Status:** EVENT COMPLETE 2026-08-12 · fair test VERIFIED quiet · sealed prediction PENDING on the pinned archive · grading window ~2026-08-30.
 
-On 2026-08-12 at 17:45:54 UT the Moon’s umbral cone crosses western Iceland and northern Spain. Sixty years of eclipse-ionosphere work reported scalars (“TEC dropped 40%”). On 2024-05-11 the Gannon superstorm produced deeper depletions under an unobscured Sun — every ruler pipeline that day recorded an eclipse that never happened.
+On 2026-08-12 the Moon’s umbral cone crossed western Iceland and northern Spain, on schedule — the crossing of the sealed stations spanned 16:43:40–19:22:06 UT, with the totality peak off Iceland at 17:45:54 UT. Six decades of eclipse-ionosphere literature reported scalars (“TEC dropped 40%”) — a characterization of the literature (REPORTED, not independently re-surveyed by this program). On 2024-05-11 the Gannon superstorm produced deeper depletions under an unobscured Sun. Graded precisely: **the program’s own frozen magnitude-gate law false-positived at all seven 2024 stations that day** — sealed raw in the historical Form, nine false positives in total (VERIFIED, ledger-frozen). No other collaboration’s pipeline was run or graded here; the plain inference that any detector keyed to depletion magnitude alone would have fired that day is the program’s reading, not a measurement.
 
 Study 1 asks a different question: does the ionospheric dent **thread** the shadow’s timetable — confined to the geometry’s minutes, deepest near each station’s own maximum, marching at the cone’s ground speed? Storms dig holes; they have no cone, no track, no clock.
 
@@ -72,20 +74,56 @@ Study 1 asks a different question: does the ionospheric dent **thread** the shad
 
 | Stage | Claim | Status |
 |---|---|---|
-| 2024 proof | Shape-read verifies April 2024 eclipse from raw archives | SEALED |
-| Historical universality | One frozen law across 2017 / 2023 annular / 2024 + storm shear | SEALED RAW (includes own falsifiers) |
-| 2026 prediction | Named totality stations must thread; named nulls must refuse | PRE-REGISTERED |
-| Extensions | Station order and storm-decidable confinement | PRE-REGISTERED |
+| 2024 proof | Shape-read verifies April 2024 eclipse from raw archives | SEALED — 7/7, 21 controls null, 0 false positives |
+| Historical universality | One frozen law across 2017 / 2023 annular / 2024 + storm shear | SEALED RAW **as a failure** — 15/16, the Eugene OR 2023 miss named in the seal, 9 false positives published |
+| 2026 prediction | Named totality stations must thread; named nulls must refuse | PRE-REGISTERED 2026-07-16 |
+| Extensions | Station order and storm-decidable confinement | PRE-REGISTERED 2026-07-16 |
 
-**Why it is the reference:** it proved that a magnitude-mimicking adversary (Gannon) fails a shape test that true eclipse days pass — and that the law can be sealed weeks before the next sky event. Every later study reuses that logic.
+All four Forms — fingerprints `89afd825011f060e`, `6fe49bee70289fee`, `c3e6841a206b8058`, `b106d2926b1bf2cf` — re-verified byte-for-byte on 2026-08-13, 28 days after sealing (VERIFIED).
 
-**Entry points:** [Overview](Eclipse-2026-Overview.md) · [Model shear](Eclipse-2026-Model-Shear.md) · [Prediction registry](Eclipse-2026-Prediction-Registry.md) · [Blind spots](Eclipse-2026-Blind-Spots.md)
+**The frozen numbers a reader needs to falsify Study 1** (all ledger-frozen; re-derived exactly at T+1):
+
+- **Detection law** (`89afd825011f060e`): 2024 benchmark 7/7 detections, 21 control pairs null, 0 false positives — re-run green 2026-08-13.
+- **Two-clause discriminant** (`b106d2926b1bf2cf`): confinement excess ≥ **50,189 ppm**; lag gate **[−300, +1200] s** around each station’s own maximum; traveling order latrabjarg +192 s → reykjavik +2,372 s → coruna +53 s → leon +32 s → zaragoza.
+- **Storm gate:** est-Kp ≥ 5 on the day voids the clean-test framing. It never fired (§2.1).
+- **Quantified nulls:** norwich must refuse at 40,790–73,923 ppm; millstone at 49,036–88,868 ppm — both undetectable by the sealed law.
+- **Separation:** minimum true-eclipse excess **57,543 ppm** against the maximum storm impostor **42,836 ppm** (Gannon May-11, Dallas) — a clean gap of 14,707 ppm around the frozen threshold. All 16 true eclipse rows pass both clauses, including Eugene, which the base magnitude law missed.
+- **Empirical coupling band:** 309–560 permille of obscuration.
+- **Historical crucible** (`6fe49bee70289fee`, sealed as a failure, raw): 2017 totality 5/5 · 2023 annular 3/4 (the Eugene, OR miss named in the seal, never renamed) · 2024 7/7. Gannon May-10 was a 7/7 dead cat; May-11’s naive-gate false positives are rejected by confinement + lag. 15/16 overall, 9 false positives, across **82 station-day pairs** (a birth-day commit message said 96 — an overcount, corrected in the [autopsy](Eclipse-2026-Autopsy.md)).
+- **2026 prediction** (`c3e6841a206b8058`): the named totality stations must thread; the named nulls must refuse.
+
+A 2026 verdict that fails any of these terms is a miss and will be published as one.
+
+**Why it is the reference:** it proved that a magnitude-mimicking adversary (Gannon) fails a shape test that true eclipse days pass — and that the law can be sealed weeks before the next sky event: sealed 2026-07-16, 27 days before the eclipse, and untouched since. Every later study reuses that logic.
+
+### 2.1 T+1 — the day answered quiet; the archive has not yet spoken (added 2026-08-13)
+
+The eclipse happened. Whether the prediction won is not yet decidable — and the reason is a measured archive calendar, not a hedge.
+
+**The fair test is verified.** The confounds that could have dirtied the test are each quantified from captured public feeds:
+
+- **Geomagnetic quiet (VERIFIED — GFZ definitive Kp):** eclipse-day maximum Kp **2.667** (Aug 9: 2.667 · Aug 10: 2.000 · Aug 11: 3.000). The forecast Kp-5 CME arrival underperformed. The sealed storm gate (est-Kp ≥ 5) never fired.
+- **Flares absent (VERIFIED — captured GOES 7-day X-ray archive):** one B5.4 flare, 16:41–16:55 UT, ending 43 minutes before the Reykjavik totality window opened (17:38–17:59 UT — a ±10-minute window around the sealed maximum-obscuration second, 64,126 s = 17:48:46 UT; totality itself lasts about a minute, and the gap from flare end to the sealed maximum second is ~54 minutes); window-maximum long-band flux 5.6×10⁻⁷ W/m²; zero C-, M-, or X-class flares anywhere in 15:30–20:00 UT.
+- **Solar wind quantified (VERIFIED — captured L1 1-minute feed, reaching back to 11:26 UT on eclipse day):** proton speed 382–478 km/s, density 1.48–9.39 cm⁻³, Bz between −5.0 and +3.4 nT with 56 minutes below −3 nT. A mild residual tail — a named caveat for the Iceland corridor only, which sits auroral-adjacent. The Spanish stations are clean.
+- **Auroral flank quiet (VERIFIED — captured Narsarsuaq magnetometer, full day):** X-component range 107 nT in the eclipse window against 453 nT in the same day’s pre-dawn hours. No substorm. The Leirvogur (Iceland) cross-check is pending; that observatory routes through DTU rather than BGS.
+
+A quiet day is a fair test: a match will be a clean win with no confound to explain it away; a miss will be a clean miss with no storm to blame.
+
+**Raw custody is held.** Twenty-seven RINEX 30-second observation files (93 MB) were captured at T+1 from anonymous public mirrors (BKG IGS/EUREF and NOAA CORS) for nine stations — REYK, HOFN, ACOR, LEON, ZARA, VILL, CANT, SALA, WES2 — covering eclipse day (DOY 224) and control days 217 and 197, alongside the GOES, solar-wind, and magnetometer captures. A SHA-256 manifest records every file’s digest, retrieval timestamp, and source URL. Custody doctrine, stated plainly: **the sealed verdict grades on the pinned Madrigal gridded-TEC surface; the raw RINEX is custody and cross-check, not a substitute grading surface.**
+
+**The grading window is measured, not promised.** Madrigal instrument-8000 gridded TEC for 2026-08-12 was NOT POSTED at T+1. The posting boundary was measured between 2026-07-25 and 2026-08-01 — a two-to-three-week lag — so eclipse day is expected to post around **2026-08-30**, by which time control day 2026-08-19 will also be up. Grading runs then, on the pinned surface, against the untouched fingerprints. Version 1 of this paper promised a public verdict on 2026-08-13; that promise is graded **MISSED** in the published [operational autopsy](Eclipse-2026-Autopsy.md). The archive’s own calendar made it impossible, and the date lived only in prose — no sealed clause ever named it.
+
+**The operational record is on the page.** The [autopsy](Eclipse-2026-Autopsy.md) also records, as failures: the live capture loop was dark from 2026-07-21 through eclipse day (last sample 2026-07-20 18:01 UT); the watch daemon was staged but never installed; the program’s pages were split across three unreconciled surfaces; and the fossil-pair count was corrected from 96 to 82. The sealed core held while the live surface failed. Both facts belong in the record.
+
+**What resolution will mean.** When the archive posts, the prediction grades at full strength on a verified-quiet day. What one resolved prediction proves is one entry in the track record — no more, no less.
+
+**Entry points:** [Overview](Eclipse-2026-Overview.md) · [Model shear](Eclipse-2026-Model-Shear.md) · [Prediction registry](Eclipse-2026-Prediction-Registry.md) · [Blind spots](Eclipse-2026-Blind-Spots.md) · [Autopsy](Eclipse-2026-Autopsy.md)
 
 ---
 
 ## 3. Studies 02–06 — charters sealed, corpus road ahead
 
-These five share Study 1’s recipe. Their status is **OPEN — charter sealed**; thresholds are not yet frozen. They are not placeholders: each names archives, adversaries, integer metrics, and success criteria.
+These five share Study 1’s recipe. Their status is **OPEN — charter sealed**; thresholds are not yet frozen. They are not placeholders: each names archives, adversaries, integer metrics, and success criteria — and since this paper’s first version, each charter page has grown an animation of its discriminating shape, a section on what the study protects (people, ecology, and the planet), and an honest-limits section of its own.
 
 ### 3.1 Study 02 — Launch ionospheric holes
 
@@ -107,6 +145,8 @@ These five share Study 1’s recipe. Their status is **OPEN — charter sealed**
 | Archive | Same TEC / SID-relevant public surfaces named in charter |
 | Adversary | Geomagnetic storms + solar radio bursts |
 | Shear | Hemisphere step lockstep with X-ray clock; quiet-day windows flare-excluded |
+
+Since v1 of this paper, Study 03 has grown a second layer — SHARP integer helicity, a signed crossing-count that is exact in integers, with the torsion-vs-linking vocabulary corrected — and a decidable checklist page: [Study 03 predictions and validations](Study-03-Predictions-and-Validations.md).
 
 **Why it matters:** polar aviation HF and crew dose ride the same daylit physics. Flares at solar-cycle maximum arrive on a drumbeat.  
 **Page:** [Study 03](Study-03-Solar-Flare-SIDs.md)
@@ -151,20 +191,20 @@ These five share Study 1’s recipe. Their status is **OPEN — charter sealed**
 
 ## 4. Study 07 — Sagittarius A\*: what the Milky Way wrote in the table
 
-**Status:** LAW FROZEN 2026-07-23T20:00:59Z · primary `csv/` **8/8 WIN** · `csv_norm/` adversary **8/8 MISS**
+**Status:** LAW FROZEN 2026-07-23T20:00:59Z · primary `csv/` **8/8 WIN** · `csv_norm/` adversary **8/8 MISS** · all rows re-verified against the local ledger 2026-08-13
 
-### 4.1 The category error this study ends
+### 4.1 The provenance line this study draws
 
-The public conversation treats the EHT ring image as if it were the measurement. The measurement is a **visibility table**: time, station pair, `U(lambda)`, `V(lambda)`, Stokes-I amplitude, phase, error. Earth’s rotation drags baselines into arcs. Most of the Fourier plane is empty. Image pipelines minimize a floating-point objective with entropy, total-variation, and compactness priors — and, for Sgr A\* static imaging, start from **lightcurve-normalized** visibilities (`csv_norm/`), not the absolute-jansky `csv/`.
+The public retelling often treats the EHT ring image as if it were the measurement. The source collaboration itself does not claim that: it publishes the calibrated visibility tables (the very release this study graded), documents the lightcurve normalization in its release notes, and describes imaging as reconstruction with quantified uncertainty (REPORTED — EHT Paper III). The measurement is a **visibility table**: time, station pair, `U(lambda)`, `V(lambda)`, Stokes-I amplitude, phase, error. Earth’s rotation drags baselines into arcs. Most of the Fourier plane is empty. Image pipelines minimize a floating-point objective with entropy, total-variation, and compactness priors — and, for Sgr A\* static imaging, start from **lightcurve-normalized** visibilities (`csv_norm/`), not the absolute-jansky `csv/` (VERIFIED from the release’s own README).
 
-Study 07 grades the table first. The PNG is the adversary class.
+Study 07 grades the table first and formalizes the provenance line as a ledger row. The PNG is the adversary class not because images are fabricated bytes — they are not — but because an image is a reconstruction from a named product, and which product fork it came from matters. The image-for-measurement conflation lives chiefly in the press layer, not in the collaboration’s publications; this study makes the distinction gradeable rather than rhetorical.
 
 ### 4.2 Forcing, archive, adversary
 
 | Piece | Instantiation |
 |---|---|
 | Clock / track | Observation UT; Earth-rotation `(u,v)` from station geodesy + Sgr A\* direction |
-| Archive | EHT 2022-D02-01 — tarball SHA-256 `709f322cd825669e1b30dacb3c9093f016ae3c931a19366b7b29f536ed0baebb` |
+| Archive | EHT 2022-D02-01 — tarball SHA-256 `709f322cd825669e1b30dacb3c9093f016ae3c931a19366b7b29f536ed0baebb` (recomputed byte-exact from the local corpus copy 2026-08-13; repository listing and 7,083,259-byte size VERIFIED live) |
 | Adversary | Ring images / pipelines; **processing adversary** = `csv_norm/` (Paper III static-imaging input) |
 | Integer seals | µJy amplitudes, millidegree phases, kλ baselines, 0.01 h bins |
 
@@ -196,29 +236,39 @@ WIN iff all hold. No float crosses a seal.
 | 097 | lo | casa | 2.100 | 0.112 | ×18.7 | 499 ppt | +155 | WIN |
 | 097 | lo | hops | 2.106 | 0.108 | ×19.5 | 501 ppt | +122 | WIN |
 
+The magnitudes agree with the collaboration’s own literature — compact flux ~2.4 Jy at 230 GHz on short baselines, ~0.1 Jy on long (REPORTED) — which is corroboration, not independent reproduction.
+
+**A caveat carried on the row itself:** the six thresholds were derived from this same eight-file corpus and set outside its observed envelope, so 8/8 WIN on the 2017 corpus was guaranteed by construction. The WIN is **descriptive** of what the table contains; the law’s discriminating power exists only against future products it has not seen — the Registry’s S4 rows (§4.7). The seal timestamp 2026-07-23T20:00:59Z is ledger-internal, with no third-party time anchor; anchoring seal times externally is recorded program debt (§9).
+
 ### 4.5 Processing adversary — `csv_norm/`
 
-**8 / 8 MISS**, every file `SHORT_FAIL`. Short-baseline medians fall to ~**0.997–0.999 Jy** — below the 1.5 Jy floor — while ratios remain steep. Normalization preserves a relative ladder and destroys the absolute jansky appointment the raw short baselines keep.
+**8 / 8 MISS**, every file `SHORT_FAIL`. Short-baseline medians fall to ~**0.997–0.999 Jy** — below the 1.5 Jy floor — while ratios remain steep.
+
+This outcome is predictable from the product’s definition: an amplitude divided by the concurrent total-flux light curve has short-baseline amplitude near 1.0 Jy-equivalent **by construction**, and 1.0 < 1.5. The 8/8 MISS therefore re-derives the definition of the normalized product — it is a provenance fact, not a discovery about the sky, and the normalization is a documented processing step whose stated purpose is to mitigate Sgr A\*’s rapid intraday variability so static full-track imaging is possible (REPORTED — Paper III and the release README). The same graded table shows the short/long ratio ladder (18,785–21,716 ppt) survives normalization intact, and closure phases are exactly invariant under a per-time amplitude scale: **the shape information imaging actually uses passes through the fork unchanged.** What normalization destroys is the absolute jansky appointment on short baselines; naming that is the row’s whole content.
 
 ### 4.6 What this means — and what it does not
 
 **Means:**
 
-1. Compact emission at the galactic center is a **table fact** (~2.1–2.5 Jy short baselines).
+1. Compact emission at the galactic center is a **table fact** (~2.1–2.5 Jy short baselines) — a number the collaboration itself publishes in the open release this study graded.
 2. The Fourier profile is a **steep radial ladder** (~×18–×21), not a flat point source.
 3. Closure phases are **structured** against a deterministic scramble null.
 4. `(u,v)` samples **march on Earth-rotation arcs**.
 5. HOPS and CASA **agree** under identical integers.
-6. The static-imaging input product is a **different table**; treating the ring PNG as “the raw data” fails this ledger.
+6. The static-imaging input product is a **different table**: the absolute short-baseline appointment lives only in `csv/`. Treating the ring PNG as “the raw data” confuses a reconstruction with a measurement — a confusion the collaboration’s publications avoid and press simplification routinely commits.
 
 **Does not mean:**
 
 - That there is no compact source at Sgr A\* (the opposite is measured).
 - That published images are fabricated bytes (they are reconstructions from named products).
 - That this study has imaged an event horizon in integer pixels (WIN is network shape, not a ring map).
+- That the ring was painted by priors. The quantities that pin morphology — closure phases and the ratio ladder — pass through normalization unchanged, and the collaboration reports non-ring morphologies in ≤5% of its descattered top-set reconstructions across independent pipelines, plus synthetic-data tests against non-ring models (REPORTED — Paper III). The collaboration explicitly tested the hypothesis a skeptical reader might raise here. This ledger neither confirms nor refutes the ring morphology; the frozen law grades absolute amplitudes and network shape, not images.
 
-**The sentence that changes the public reading:**  
-*The Milky Way’s center wrote arcs, janskys, and closures; the ring is what you see after the table is normalized and the gaps are filled.*
+**The program’s reading, stated as the program’s reading:** the Milky Way’s center wrote arcs, janskys, and closures into the public table; the ring image is a regularized reconstruction built on the normalized fork of that table, filling sparse Fourier coverage. Naming the fork is provenance discipline — a distinction the collaboration also draws in its own release documentation. The frozen law grades the fork’s absolute amplitudes; whether the reconstruction’s morphology is right is a question this ledger does not grade, and one the collaboration addresses with its own published tests.
+
+### 4.7 Standing future test — where the law can actually discriminate
+
+The Registry pre-registers named future portal products (2025-D01-01, 2025-D02-01, 2026-D01-01) under the same frozen law. That is the one place the law earns non-circular discriminating power: a future non-normalized Sgr A\* release passing or failing the 1.5 Jy floor would be a genuine out-of-sample result. As of this revision, S4 is OPEN, the named product codes have not been checked against the portal, and nothing prospective has been graded.
 
 **Entry points:** [Charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md) · [Corpus](Study-07-SgrA-Milky-Way-Corpus.md) · [Results](Study-07-SgrA-Milky-Way-Results.md) · [Registry](Study-07-SgrA-Milky-Way-Registry.md)
 
@@ -228,7 +278,7 @@ WIN iff all hold. No float crosses a seal.
 
 | Study | Confinement analog | Traveling-lag analog | Adversary |
 |---|---|---|---|
-| 01 Eclipse | Umbra / obscuration gate | Station maxima march with cone ground speed | Gannon / Halloween storms |
+| 01 Eclipse | Umbra / obscuration gate | Station maxima march with cone ground speed | Gannon storm (graded); Halloween 2003 ingested as archive reference only, never graded as shear pairs |
 | 02 Launch holes | ±3° ascent corridor | Onset T+5–15 min from liftoff; recovery hours | Storms, Tonga TIDs, deorbit burns |
 | 03 Flare SIDs | Sunlit hemisphere bands | Lockstep with GOES X-ray peak | Storms, radio bursts |
 | 04 Tsunami | Gauge on travel-time chart | Origin → arrival by Huygens time | Surge, meteotsunami, Lamb |
@@ -259,26 +309,28 @@ Study 07 makes explicit what every field quietly knows: the product you download
 
 ### 6.3 Pre-registration is not optional decoration
 
-Study 1 sealed 2026 claims before August. Study 07 freezes thresholds before the next portal release is scored. Studies 02–06 are built to freeze before the next launch, flare, quake, or L1 shock. Without pre-registration, shape tests collapse into post-hoc storytelling — the failure mode the program was built to exit.
+Study 1 sealed its 2026 claims on 2026-07-16, 27 days before the eclipse — and the eclipse then occurred with the fingerprints untouched, re-verified byte-exact the day after. Study 07 freezes thresholds before the next portal release is scored. Studies 02–06 are built to freeze before the next launch, flare, quake, or L1 shock. Without pre-registration, shape tests collapse into post-hoc storytelling — the failure mode the program was built to exit.
 
 ### 6.4 Falsifiers stay on the page
 
-Study 1’s historical Form already carries recorded falsifiers. Study 07’s `csv_norm` MISS rows stay published. The program’s epistemology is: **a recorded failure is how the experiment learns to see.** Renaming MISS as success is forbidden.
+Study 1’s historical Form carries its recorded falsifiers in the seal itself: 15/16, the Eugene 2023 miss named, nine false positives published, sealed under a failure terminal and never renamed. Study 07’s `csv_norm` MISS rows stay published. The program’s **operational** failures get the same treatment: the eclipse-cycle [autopsy](Eclipse-2026-Autopsy.md) grades every public promise KEPT or MISSED by name — including the missed 2026-08-13 verdict date and the dark live watch. The program’s epistemology is: **a recorded failure is how the experiment learns to see.** Renaming MISS as success is forbidden.
 
 ---
 
-## 7. Program status board (as of 2026-07-23)
+## 7. Program status board (as of 2026-08-13, T+1)
 
 | # | Study | Stage | Headline result |
 |---|---|---|---|
-| 1 | Eclipse 2026 | Law frozen · prediction live | Resolves 2026-08-13 |
+| 1 | Eclipse 2026 | **Event complete · fair test verified · Forms re-verified byte-exact** | Grades ~2026-08-30 on Madrigal posting |
 | 2 | Launch holes | Charter sealed | Corpus next |
-| 3 | Flare SIDs | Charter sealed | Corpus next |
+| 3 | Flare SIDs | Charter sealed (+ Layer B helicity, checklist page) | Corpus next |
 | 4 | Tsunami vs surge | Charter sealed | Corpus next |
 | 5 | Forbush | Charter sealed | Corpus next |
 | 6 | Explosion vs quake | Charter sealed | Corpus next |
 | 7 | Sgr A\* Milky Way | **Law frozen · graded** | **csv 8/8 WIN; csv_norm 8/8 MISS** |
 | 8 | Gaia BH1 | Charter sealed | Corpus next — dedicated ingest only |
+| 9 | Global convective bond | Charter sealed on the main-branch surface | Not yet published on this wiki (§1.1b note) |
+| 10 | GW interferometry | Queued | No charter yet |
 
 Build order for corpus ingest: **08 (Gaia, parallel)** and **02 → 03 → 05 → 04 → 06**, with Study 07 already through frozen law on the VLBI archive.
 
@@ -288,39 +340,82 @@ Build order for corpus ingest: **08 (Gaia, parallel)** and **02 → 03 → 05 �
 
 | Study | Downstream |
 |---|---|
-| 01 / 02 / 03 | GNSS, HF aviation, scheduled ionospheric integrity — shape warnings with clocks |
+| 01 / 02 / 03 | GNSS, HF aviation, scheduled ionospheric integrity. What the sealed record supports today is **retrospective grading on definitive archives**. The one operational instantiation attempted so far — Study 1’s live storm-gate watch for eclipse day — never ran (dark from 2026-07-21; graded MISSED in the [autopsy](Eclipse-2026-Autopsy.md)). Shape warnings with clocks remain the goal, not a delivered capability |
 | 04 | Tsunami warning vs surge false alarm — travel-time appointments at gauges |
 | 05 | Honest cosmic-ray steps vs weather-shaped phantoms |
 | 06 | Treaty-relevant explosion/quake shape in public integer counts |
-| 07 | Public honesty about what the galactic-center table contains before any ring is shown |
+| 07 | Public clarity about what the galactic-center table contains, and which product fork any image was built on, before any ring is shown |
 
 ---
 
-## 9. Reproducibility
+## 9. Limitations and falsification — what is not yet won, and what would count as losing
+
+Every charter page on this surface now carries its own honest-limits section; this is the program-level one, covering every open study.
+
+### 9.1 Study 1 — Eclipse 2026
+
+- **Nothing about the 2026 prediction is yet won or lost.** The grading surface (Madrigal instrument-8000) has not posted eclipse day; grading runs ~2026-08-30. The falsification terms are printed in full in §2 — a verdict failing any of them is a miss and will be published as one.
+- **Named residual caveat:** the Iceland corridor carries a mild solar-wind tail (56 minutes of Bz below −3 nT); Spain is clean. The Leirvogur magnetometer cross-check is pending.
+- **The live operational surface failed while the sealed core held:** watch dark from 2026-07-21, daemon never installed, the Aug-13 verdict promise missed — all graded in the [autopsy](Eclipse-2026-Autopsy.md).
+- **The fossil corpus is 82 station-day pairs**, not the 96 a birth-day commit message claimed; and the corpus file itself sits outside version control — custody rests on the ledger rendering, not git (recorded debt).
+
+### 9.2 Studies 02–06
+
+Charters only. No thresholds frozen, no corpus ingested, no result exists — favorable or otherwise. Each could fail at corpus stage; if one does, the failure publishes under the same rules as Study 1’s historical Form. Falsification for each: its sealed confinement and traveling-lag clauses fail on the next scored event in its domain.
+
+### 9.3 Study 07 — Sgr A\*
+
+- **The 8/8 WIN is in-sample by construction:** thresholds were derived from the same eight files they grade, set outside the observed envelope. Discriminating power is prospective only (§4.7), and nothing prospective has been graded; the pre-registered future product codes have not been checked against the portal.
+- **The 8/8 MISS is true by construction:** it re-derives the definition of lightcurve normalization. It is a provenance result, not a sky result.
+- **Reproducibility is partial:** the short/long medians, ratio, and both amplitude floors — the fork that carries the `SHORT_FAIL` headline — are algorithm-complete on the public pages. Three of six law components are not: the closure-phase sector concentration lacks a published triangle-enumeration and binning specification, the scramble null names seed 7 without naming the shuffle algorithm, and arc-sign agreement is not defined at algorithm level. A third party cannot yet reproduce the full six-inequality verdict from published material alone. Publishing those three specifications is open debt.
+- **Seal timestamps are ledger-internal** with no third-party time anchor (a program-wide debt, §9.6).
+- **Falsifier:** a future non-normalized Sgr A\* release failing the 1.5 Jy short-baseline floor — or a normalized one passing it — breaks the law’s reading of the archive.
+
+### 9.4 Study 08 — Gaia BH1
+
+- **The title channel is undecidable today.** Gaia DR3 publishes no epoch astrometry for this source; the astrometric-residual track cannot be constructed from any public release until Gaia DR4, announced for **2026-12-02** (VERIFIED). The charter’s VOID-by-inventory clause covers this honestly; the S4 pre-registration should pin that date. The decidable raw channel at charter stage is the radial-velocity series — 115 public epochs across four instruments (VERIFIED), the study’s strongest public raw surface.
+- **The arithmetic already fixes the honest expectation.** From the published parameters, the star’s barycentric orbit subtends ~2,600 integer microarcseconds and the RV semi-amplitude is ~66,000 integer m/s — 10³–10⁴ times the sealed integer quanta, whose m/s quantum sits at the best instrument’s own noise floor. The charter-stage expectation, to be pre-registered at S4, is therefore an adversary **WIN on the mass object**: the ~9.3 M☉ dark companion is fully supported by integer appointments. Only the horizon-scale **label** stays at the model layer — and the published papers themselves claim no horizon-scale measurement; that narrative is the press layer. The charter grades the published solution and the popular narrative separately, and this paper adopts that split.
+- **The sealed adversary must pin which published solution is graded:** the 2023 discovery mass (9.62 ± 0.18 M☉) and the 2024 refit (9.27 ± 0.10 M☉) differ by ~0.35 M☉ (both REPORTED from the literature, VERIFIED as published values).
+- **The public sampling clock is a forecast:** the scanning-law transit predictor is public, but only ~80% of predicted transits yield accepted data, and the as-flown per-transit times in the DR3 fit are unpublished until DR4. The frozen law must grade windows, not individual guaranteed transits.
+
+### 9.5 Studies 09 and 10
+
+Study 09 (Global Convective Bond) exists as a charter on the main-branch surface only; it is not yet published here, and this paper cites it without a link rather than linking into a void. Study 10 (GW interferometry) is queued with no charter.
+
+### 9.6 Program-wide
+
+Seal timestamps across the program are ledger-internal; third-party time anchoring is open debt. The program was split across three surfaces during the eclipse cycle and has not finished reconciling them (autopsy finding). Where this paper characterizes external literature or another collaboration’s claims, the sourcing tag is REPORTED; where it states bytes fetched, hashed, or re-derived by the program, the tag is VERIFIED.
+
+---
+
+## 10. Reproducibility
 
 | Object | Location |
 |---|---|
 | Program index | [Shear-Studies-Index](Shear-Studies-Index.md) |
 | Study 07 ledger JSON | `corpus/study-07/study07_ledger.json` in [uum8dSolarResearch](https://github.com/gaiaftcl-sudo/uum8dSolarResearch) |
-| Study 07 tarball digest | SHA-256 `709f322cd825669e1b30dacb3c9093f016ae3c931a19366b7b29f536ed0baebb` |
+| Study 07 tarball digest | SHA-256 `709f322cd825669e1b30dacb3c9093f016ae3c931a19366b7b29f536ed0baebb` (recomputed byte-exact from the corpus copy 2026-08-13) |
 | EHT source | https://github.com/eventhorizontelescope/2022-D02-01 |
-| Eclipse Forms / live tables | Regenerated into wiki GAIA blocks from the experiment ledger |
+| Eclipse Forms / live tables | Ledger-rendered status blocks on the wiki — all live-status blocks across five pages rendered one identical ledger state at 2026-08-13 10:41 UT, and the trial tables match the 82-row corpus row-for-row. Recorded debt: the corpus file itself sits outside version control |
+| Eclipse T+1 raw custody | 27 RINEX 30-s files (93 MB, 9 stations, eclipse day DOY 224 + control days 217 / 197) plus GOES / solar-wind / magnetometer captures, under a SHA-256 manifest recording digest, retrieval timestamp, and source URL for every file — held by the program as custody and cross-check; the grading surface remains the pinned Madrigal archive |
 
-Anyone with the charter pages and a terminal can pull the named archives. Study 07’s integers are reproducible from the public CSV by the sealed quantization rules on the Results page.
+Anyone with the charter pages and a terminal can pull the named archives. Study 07’s short/long medians, ratio, and both amplitude floors — the fork that carries the `SHORT_FAIL` headline — are reproducible from the public CSV by the sealed quantization rules on the Results page. The closure-sector, scramble-null, and arc-order components are not yet algorithm-complete in public; publishing those three specifications is recorded debt (§9.3).
 
 ---
 
-## 10. Conclusion
+## 11. Conclusion
 
-The shear program is one claim, restated seven times:
+The shear program is one claim, restated eight times:
 
 > **An adversary can copy the size of a response. It cannot keep the forcing’s appointment. Grade the appointment in exact integers on public raw bytes. Freeze the law before the next event. Publish WIN and MISS alike.**
 
-Study 1 proved it on the Moon’s shadow against a superstorm. Study 07 proved it on the Milky Way’s center against the imaging stack: the table carries compact flux, a steep radial ladder, structured closures, and arc order; the normalized imaging input fails the absolute short-baseline seal; the ring remains a reconstruction, not a row.
+Study 1 proved it on the Moon’s shadow against a superstorm — in the historical crucible: sixteen true eclipse rows pass confinement and lag, every Gannon row is rejected, and the threshold was frozen 27 days before the 2026 eclipse, which then arrived on a verified-quiet day with the fingerprints untouched. The 2026 prediction itself grades ~2026-08-30 on the pinned archive; when it resolves, it will be one entry in the track record — no more, no less.
 
-Studies 02–06 stand ready on the same grammar — ionosphere, ocean, cosmic rays, and ground — so the method does not stop at one sky.
+Study 07 proved the same grammar on the Milky Way’s center against the imaging stack: the table carries compact flux, a steep radial ladder, structured closures, and arc order; the normalized imaging input fails the absolute short-baseline seal exactly as its own definition requires; and the ring remains a reconstruction from a named product — which fork it was built on is now a ledger row.
 
-The sky writes geometry. Geometry cannot lie. The ledger is how we read it.
+Studies 02–06 and 08 stand ready on the same grammar — ionosphere, ocean, cosmic rays, ground, and a stellar orbit — so the method does not stop at one sky.
+
+The sky writes geometry. The ledger is how we read it — wins, misses, and the program’s own failures alike.
 
 ---
 
@@ -328,17 +423,19 @@ The sky writes geometry. Geometry cannot lie. The ledger is how we read it.
 
 | Field | Value |
 |---|---|
-| Title | Shear Studies White Paper — Shape Against Magnitude Across Seven Skies |
-| Version | 1.0 |
+| Title | Shear Studies White Paper — Shape Against Magnitude Across Eight Skies |
+| Version | 2.0 |
 | Sealed Study 07 law timestamp | 2026-07-23T20:00:59Z |
-| Eclipse resolution date | 2026-08-13 |
-| Contact surface | This wiki — append-only study pages; white paper revised only by additive version section |
+| Eclipse event date | 2026-08-12 — complete; day verified quiet |
+| Eclipse grading window | ~2026-08-30, on Madrigal instrument-8000 posting (lag measured at 2–3 weeks between 2026-07-25 and 2026-08-01) |
+| Contact surface | This wiki — append-only study pages; white paper revised by versioned section |
 
-**Version 1.0** — initial public synthesis coinciding with Study 07 law freeze and full program index of Studies 01–07.
+**Version 1.0 (2026-07-23)** — initial public synthesis coinciding with Study 07 law freeze and full program index of Studies 01–07. Carried a title/doc-control contradiction (Eight vs Seven Skies) and a prose-only 2026-08-13 resolution date, both corrected below.
+
+**Version 2.0 (2026-08-13, T+1)** — post-eclipse revision. Past-tense sweep for the completed event; new §2.1 (fair-test verification, raw custody, measured grading window, operational-honesty pointer); Study 1’s frozen falsification numbers printed in full; interpretive claims re-scoped to their evidence class in the Abstract and §§1.1, 1.1b, 4.1, 4.4–4.6, 5, and 8, with the program’s readings attributed as the program’s and the source collaborations’ own statements distinguished; Study 03’s Layer B and checklist page linked; Study 09 renumbering note added and the GW study moved to Study 10; new §9 (limitations and falsification, all open studies); status board refreshed to T+1; title/doc-control contradiction fixed; abstract count corrected to eight skies.
 
 ---
 
-## Appendix A — UUM-8D vs IUT (verification win, 2026-07-24)
+## Appendix A — UUM-8D vs IUT (verification exercise, 2026-07-24)
 
-IUT stalls on manual symbolic verification of inter-universal isomorphisms without a runtime. UUM-8D compiles the job: (1) 8D spatial embedding of arithmetic, (2) Jordan-bonded runtime linking, (3) vQbit state-machine gates. Public seal + graphics: [UUM8D-vs-IUT-Topological-Projection](UUM8D-vs-IUT-Topological-Projection.md).
-
+A separate program page records a verification exercise comparing the program’s runtime formalization against Inter-universal Teichmüller theory’s manual symbolic verification, with public seal and graphics: [UUM8D-vs-IUT-Topological-Projection](UUM8D-vs-IUT-Topological-Projection.md).
