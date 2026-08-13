@@ -25,6 +25,7 @@ If the true forcing keeps the appointment and the loud look-alike does not, the 
 
 | Done | Where to look |
 |---|---|
+| **Eclipse 2026 crossed** (2026-08-12) — raw first look matched the sealed prediction at all four custody stations; pinned-archive verdict ~2026-08-30 | [Eclipse Overview](Eclipse-2026-Overview.md) |
 | **UUM-8D vs IUT — verification WIN** (2026-07-24) | [UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection.md) |
 | **Study 07 law frozen** on Sgr A\* public EHT CSV | [Results](Study-07-SgrA-Milky-Way-Results.md) |
 | Raw non-normalized `csv/` | **8 / 8 WIN** |
@@ -60,11 +61,11 @@ Five stages, in order: Charter → Corpus → Frozen law → Pre-registration �
 
 ---
 
-## All seven studies at a glance
+## All eight studies at a glance
 
 | # | Name | Everyday picture | Status |
 |---|---|---|---|
-| 1 | [Eclipse 2026](Eclipse-2026-Overview.md) | Moon’s shadow dents the ionosphere; storms dig deeper holes but have no shadow track | **Resolving 2026-08-13** (locked) |
+| 1 | [Eclipse 2026](Eclipse-2026-Overview.md) | Moon’s shadow dents the ionosphere; storms dig deeper holes but have no shadow track | **Crossed 2026-08-12** — first look matched; archive verdict ~2026-08-30 |
 | 2 | [Launch holes](Study-02-Launch-Ionospheric-Holes.md) | Rocket exhaust punches a ~900 km hole on a published liftoff second | Charter sealed |
 | 3 | [Flare SIDs](Study-03-Solar-Flare-SIDs.md) | Solar flare steps the sunlit sky on the X-ray clock | Charter sealed |
 | 4 | [Tsunami vs surge](Study-04-Tsunami-vs-Storm-Surge.md) | Quake wave keeps travel-time appointments at tide gauges; surge does not | Charter sealed |
@@ -126,7 +127,7 @@ Study 07’s result is the template: raw `csv/` WIN; imaging `csv_norm/` MISS.
 
 **Operator waiting on the sky:**
 
-- Eclipse resolves **2026-08-13**. Those pages stay locked until then.
+- The eclipse crossed **2026-08-12** on a verified-quiet day; the raw first look matched the sealed prediction at all four custody stations. The pinned-archive verdict grades ~**2026-08-30** — first look and final grading are two different witnesses, both published on [Eclipse Overview](Eclipse-2026-Overview.md).
 - Study 07 accepts new EHT portal products only through the [Registry](Study-07-SgrA-Milky-Way-Registry.md).
 
 ---

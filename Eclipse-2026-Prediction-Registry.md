@@ -60,7 +60,7 @@ resolution=post-eclipse eclipse-shear analysis on measured 2026-08-12 vtec
 *Rendered verbatim from the sealed Form; `invariant-verify --path …/eclipse-prediction-extensions-2026-08-12.invariant.json` re-derives it byte-for-byte from the Besselian elements.*
 <!-- GAIA:END prediction-extensions -->
 
-## The resolution procedure (T+1, ~2026-08-13)
+## The resolution procedure (runs the day Madrigal posts 2026-08-12 — ~2026-08-30)
 
 ```bash
 # 1. geometry for the 2026 stations is already ledger-stored; ingest the day + controls:
@@ -69,7 +69,7 @@ for d in 2026-08-12 2026-08-05 2026-08-19 2026-07-16; do
   gaiaftcl helio-ingest madrigal-tec --day $d \
     --stations reykjavik,latrabjarg,coruna,leon,zaragoza,norwich,millstone
 done
-# (Madrigal final gridded TEC lands T+1; preliminary may land hours after.)
+# (Madrigal posts on a measured two-to-three-week lag — eclipse day expected ~2026-08-30; see resolution status below.)
 
 # 2. fossils for 2026 (quiet rule live), then the crucible against the sealed claim:
 gaiaftcl eclipse-geometry --eclipse 2026-08-12 --build-fossils \

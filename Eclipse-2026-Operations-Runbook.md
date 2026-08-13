@@ -31,20 +31,20 @@ gaiaftcl eclipse-watch --poll-seconds 60 # the 24×7 loop
 Current ledger-borne state:
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 10:41:00 UT
+- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 13:22:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2026-08-12
-- Latest magnetometer capture: BOU H at 2026-08-13 10:40:00 UT
+- Latest magnetometer capture: BOU H at 2026-08-13 13:20:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->
 
-**What the live loop is and is not:** it is the eclipse-day capture and the storm gate. It is **not** the verdict — Madrigal's definitive gridded TEC lands T+1, and the resolution crucible is the judgment. Real-time TEC (NTRIP/GNSS streams) is Stage-4 territory with its own registrations.
+**What the live loop is and is not:** it is the eclipse-day capture and the storm gate. It is **not** the verdict — Madrigal's definitive gridded TEC posts on a measured two-to-three-week lag (resolution status below), and the resolution crucible is the judgment. Real-time TEC (NTRIP/GNSS streams) is Stage-4 territory with its own registrations.
 
-## T+1 — the resolution
+## The resolution — runs the day the archive posts (~2026-08-30)
 
 The exact command chain lives in the [prediction registry](Eclipse-2026-Prediction-Registry.md). Sequence: ingest eclipse day + the three pre-registered control days (2026-08-05, 2026-08-19, 2026-07-16 — each must pass Kp ≤ 4 live or is excluded and reported) → build the 2026 fossils → `eclipse-invariant --historical --seal --save` → `eclipse-wiki-render`. The wiki's crucible tables become the public readout of whether the sealed claim held.
 
-## Standing maintenance (now → eclipse week)
+## Standing maintenance (now → the grading window)
 
 - `eclipse-wiki-render --check` after any ingest: exit 1 = the wiki drifted from the ledger → run the renderer.
 - `invariant-verify --game eclipse` and `--path …/eclipse-prediction-2026-08-12.invariant.json` at will — both must exit 0; any drift is a stop-everything signal.
@@ -52,17 +52,10 @@ The exact command chain lives in the [prediction registry](Eclipse-2026-Predicti
 
 ## Handoffs (outside the eclipse lane — stated, not performed)
 
-1. **Daemonizing the live loop:** the plist is staged at `cells/launchd/com.gaiaftcl.franklin.eclipse-watch.plist`; bootstrapping it requires deploying the shared CLI binary to the fleet path — Games-1/2-stream territory. Until then the loop runs manually from the repo build binary.
+1. **Daemonizing the live loop:** the plist is staged at `cells/launchd/com.gaiaftcl.franklin.eclipse-watch.plist`; bootstrapping it requires deploying the shared CLI binary to the fleet path — a separate deployment stream. Until then the loop runs manually from the repo build binary.
 2. **Publishing this wiki:** `scripts/publish_wiki.sh` pushes to the public GitHub wiki remote — founder's action.
 3. **Stage-4 registrations** (Earthdata/CDDIS 1 Hz RINEX, ESA EO/Swarm, SuperMAG, GAGE NTRIP) — founder account signups; none block current operations.
 
 ## Resolution status — measured T+1 (2026-08-13)
 
-The sky kept the appointment; the archive has not yet. Measured on resolution day:
-
-- **Eclipse day was quiet.** GFZ Kp for 2026-08-12: eight 3-hour bins, maximum **Kp 2.667** — far under the Kp ≤ 4 quiet rule and the pre-registered est-Kp ≥ 5 storm gate. **The storm flag never raised**; the prediction grades at full strength, with no storm annotation. The flanking days measured quiet too: 2026-08-05 max Kp 1.667, 2026-08-11 max Kp 3.000.
-- **The response archive trails real time.** Madrigal's world-gridded TEC (instrument 8000) has no experiment for 2026-08-12 yet — measured today, the archive's posting boundary sits between 2026-07-25 and 2026-08-01, a two-to-three-week lag. The sealed claims cannot be graded until the archive posts the day: grading on absent data would be a verdict about an empty query, not about the sky.
-- **The instrument is ready and unchanged.** All four sealed Forms re-verified byte-for-byte today, 28 days after sealing; the crucible re-ran green (2024 benchmark 7/7, 0 false positives) and the shear discriminant re-derived its frozen threshold exactly (minimum eclipse excess 57,543 ppm vs storm floor 42,836 ppm — threshold 50,189 ppm standing).
-- **Expected grading window: the day Madrigal posts 2026-08-12** — at the measured lag, around 2026-08-30, by which time the third pre-registered control day (2026-08-19) posts alongside it, so the resolution runs exactly as sealed. A standing daily probe watches for the posting.
-
-Nothing above changes a sealed claim; the fingerprints are untouched. A pre-registered experiment should say out loud when its grading data has not arrived — the absence of data is a measurement too.
+The sky kept the appointment; the archive has not yet: eclipse day measured quiet (max Kp 2.667, storm flag never raised), Madrigal posts on a measured two-to-three-week lag, and the grading window opens around 2026-08-30. The full dated status lives on the [prediction registry](Eclipse-2026-Prediction-Registry.md); the operational account is in [the first 27 days review](Eclipse-2026-First-27-Days-Review.md).

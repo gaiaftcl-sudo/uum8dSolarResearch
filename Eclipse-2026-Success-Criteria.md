@@ -4,7 +4,7 @@ Every criterion below is pinned to a sealed, fingerprint-checked Form and decide
 
 ## Tier 0 — Pre-registration integrity *(testable every day; already green)*
 
-All Forms re-verify from disk, and both prediction Forms re-derive **byte-for-byte** from the NASA Besselian elements. Any drift before August 12 — constants, roster, coordinates, elements — falsifies the pre-registration itself. This is the criterion that gives the others their meaning.
+All Forms re-verify from disk, and both prediction Forms re-derive **byte-for-byte** from the NASA Besselian elements. Any drift before the resolution runs — constants, roster, coordinates, elements — falsifies the pre-registration itself. This is the criterion that gives the others their meaning.
 
 <!-- GAIA:BEGIN forms-registry -->
 | Form | Kind | Class | Closure | Terminal | Fingerprint | Stamped |
@@ -21,7 +21,7 @@ All Forms re-verify from disk, and both prediction Forms re-derive **byte-for-by
 
 | ID | Criterion | Decided by |
 |---|---|---|
-| **S1** | All five totality stations — Reykjavik, Látrabjarg, A Coruña, León, Zaragoza — **PROJECT** under the frozen law: depletion ≥ 300‰ of obscuration inside their ≥80% gate windows | T+1 crucible on measured vTEC |
+| **S1** | All five totality stations — Reykjavik, Látrabjarg, A Coruña, León, Zaragoza — **PROJECT** under the frozen law: depletion ≥ 300‰ of obscuration inside their ≥80% gate windows | resolution crucible on measured vTEC, when the archive posts (~2026-08-30) |
 | **S2** | Both declared controls — Norwich CT (13.2%), Millstone Hill (15.9%) — **seal dead cat** (their gate can never open, by geometry alone) | same crucible |
 
 CALORIE iff **5/5 projections and 0 false positives**.
@@ -40,7 +40,7 @@ The criteria no depletion-magnitude model even states:
 
 The 2026 couplings land inside the measured historical band **309–560‰** — extending the one-frozen-law result from three eclipses and a full solar cycle (2017 SC24-declining · 2023 annular · 2024 SC25-max) to a fourth eclipse and the hardest geometry transfer: high latitude, +25.8° Sun, near sunset over Europe.
 
-## The storm contingency (pre-registered)
+## The storm contingency (pre-registered; never triggered — eclipse day measured quiet, max Kp 2.667)
 
 If SWPC est-Kp ≥ 5 during 15:30–20:00 UT on eclipse day: **S1–S4 remain decidable** — that is exactly what the shear bought — while S5 weakens with a storm annotation. A G-storm cannot un-total an eclipse, and it cannot fake confinement.
 
@@ -66,4 +66,4 @@ Standard practice filters model failures out as bad data. This study ingested th
 
 ## 4. A general template
 
-Wherever a computable forcing meets a noisy medium, the same read applies: pair the forcing's own timetable with the response, demand confinement + traveling coherence against that timetable, and use the adversarial corpus (the "storms" of that domain) as the shear. Launch- and eruption-driven TIDs, flare-vs-storm thermospheric response, any detector whose adversary mimics magnitude but not structure. And if S3+S4 hold on August 12, the ionosphere will have been shown to carry a readable, per-second copy of the umbra's ground track that survives storm contamination — the Moon as a calibrated signal generator, photochemistry separated from electrodynamics at 300-second resolution, from public raw data on one machine.
+Wherever a computable forcing meets a noisy medium, the same read applies: pair the forcing's own timetable with the response, demand confinement + traveling coherence against that timetable, and use the adversarial corpus (the "storms" of that domain) as the shear. Launch- and eruption-driven TIDs, flare-vs-storm thermospheric response, any detector whose adversary mimics magnitude but not structure. And if S3+S4 hold when the pinned archive grades August 12, the ionosphere will have been shown to carry a readable, per-second copy of the umbra's ground track that survives storm contamination — the Moon as a calibrated signal generator, photochemistry separated from electrodynamics at 300-second resolution, from public raw data on one machine.

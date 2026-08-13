@@ -229,32 +229,9 @@ This table is what "data sheared of the models" yields: the frozen law's own fal
 
 ## The 2026 storm pivot (pre-registered)
 
-- On eclipse day, `eclipse-watch` reads NOAA SWPC's 1-minute estimated Kp every pass. **Est Kp ≥ 5 opens the storm gate**: the capture continues, the totality-path resolution still runs (a G-storm cannot un-total an eclipse — the geometry side is untouched), but the interpretation gains a storm annotation, the control-channel claims (Norwich/Millstone null) are weakened by storm variability, and the Gannon/Halloween archives become the parallel science channel.
+- On eclipse day, `eclipse-watch` read NOAA SWPC's 1-minute estimated Kp every pass. **Est Kp ≥ 5 would have opened the storm gate**: the capture continues, the totality-path resolution still runs (a G-storm cannot un-total an eclipse — the geometry side is untouched), but the interpretation gains a storm annotation, the control-channel claims (Norwich/Millstone null) are weakened by storm variability, and the Gannon/Halloween archives become the parallel science channel. On 2026-08-12 the gate never opened — the day resolved geomagnetically quiet, so the sealed resolution grades clean, with no storm annotation.
 - Post-eclipse control days (2026-08-05, 2026-08-19, 2026-07-16) pass the same Kp ≤ 4 gate before entering the resolution baselines; a disturbed control is excluded and reported, exactly as on the historical corpus.
 
 ## Ledger provenance
 
-<!-- GAIA:BEGIN ingest-ledger -->
-| UT day | Stations sliced | vTEC bins | Scan SHA-256 (12) | Max Kp | Class |
-|---|---|---|---|---|---|
-| 2003-10-29 | 7 | 1860 | `145dc2eaf8ca` | 9.0 | DISTURBED |
-| 2003-10-30 | 7 | 1816 | `abaf5f22591e` | 9.0 | DISTURBED |
-| 2017-07-25 | 5 | 1440 | `1a8590fab838` | 3.0 | quiet |
-| 2017-08-14 | 5 | 1440 | `1cc6b02e6c84` | 2.0 | quiet |
-| 2017-08-21 | 5 | 1440 | `1d94e38b4b4d` | 3.0 | quiet |
-| 2017-08-28 | 5 | 1440 | `7c195648907e` | 0.7 | quiet |
-| 2023-09-17 | 4 | 1152 | `37f0b808236e` | 3.3 | quiet |
-| 2023-09-30 | 4 | 1152 | `86df55f9289f` | 2.3 | quiet |
-| 2023-10-02 | 4 | 1152 | `aa254ad157b2` | 3.0 | quiet |
-| 2023-10-07 | 4 | 1152 | `11079644ae38` | 1.7 | quiet |
-| 2023-10-14 | 4 | 1152 | `a5cc83d231c8` | 3.0 | quiet |
-| 2023-10-21 | 4 | 1152 | `9cd98d7d699c` | 5.0 | DISTURBED |
-| 2024-03-12 | 7 | 2016 | `881948be8b56` | 2.3 | quiet |
-| 2024-04-01 | 7 | 2016 | `3c4eb2649f94` | 3.7 | quiet |
-| 2024-04-08 | 7 | 2014 | `7f36c28f7ab6` | 3.3 | quiet |
-| 2024-04-15 | 7 | 2016 | `d09d2dcafe16` | 2.7 | quiet |
-| 2024-05-10 | 7 | 2013 | `eb16ca1b2801` | 8.7 | DISTURBED |
-| 2024-05-11 | 7 | 2012 | `dc0c9c4b4a4c` | 9.0 | DISTURBED |
-
-*One Madrigal world-file scan per day, sliced per station locally; SHA-256 over the raw fetched bytes. Generated from `helio_ingest_provenance` + ledger Kp.*
-<!-- GAIA:END ingest-ledger -->
+One Madrigal world-file scan per day, SHA-256 over the raw fetched bytes — the full ingest ledger lives on [Data archives](Eclipse-2026-Data-Archives.md), the authoritative provenance page.

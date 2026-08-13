@@ -40,7 +40,7 @@ Everything the experiment consumes is public. This page records each archive's a
 | **IRIS/EarthScope DMC** | infrasound/seismic miniSEED (TA 40 Hz BDF channels) | FDSN `https://service.iris.edu/` | none |
 | **IGS real-time** | NTRIP correction streams | `caster.cddis.eosdis.nasa.gov`, `products.igs-ip.net` | free registration |
 
-Registrations are **founder actions** (account signups); none block the current pipeline.
+Registrations are manual account signups; none block the current pipeline.
 
 ## The provenance discipline
 

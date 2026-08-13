@@ -2,9 +2,9 @@
 
 ## Why operators should care about the second sky that day
 
-The ionosphere is the error term in every GNSS position fix and the mirror for every HF radio call. On August 12, 2026, over the busiest oceanic corridor on Earth — the **North Atlantic tracks pass directly beneath the eclipse path** — and over Icelandic and Iberian terminal airspace, the second sky will do something it never otherwise does: **change on a schedule known to the second, years in advance.**
+The ionosphere is the error term in every GNSS position fix and the mirror for every HF radio call. On August 12, 2026, over the busiest oceanic corridor on Earth — the **North Atlantic tracks pass directly beneath the eclipse path** — and over Icelandic and Iberian terminal airspace, the second sky did something it never otherwise does: **it changed on a schedule known to the second, years in advance.**
 
-- **GNSS users** (aircraft RNP approaches, LEO satellite navigation, precision timing): total electron content along the path will collapse by an expected **31–56% of its quiet value** inside each station's core window below, then recover — with the strongest *horizontal gradients* (the thing that actually stresses single-frequency and differential corrections) in the edge windows on either side.
+- **GNSS users** (aircraft RNP approaches, LEO satellite navigation, precision timing): total electron content along the path was pre-registered to collapse by an expected **31–56% of its quiet value** inside each station's core window below, then recover — with the strongest *horizontal gradients* (the thing that actually stresses single-frequency and differential corrections) in the edge windows on either side.
 - **HF communications** (oceanic and polar air traffic control): the shadow lowers the reflecting layers' ionization along the track — a brief, moving, predictable dent in HF propagation over Iceland and the North Atlantic during the core windows.
 - **Satellite operators**: the eclipse briefly *cools* the local thermosphere (a transient density dip along the track — the opposite of a storm's drag spike). If a geomagnetic storm lands the same day, the shear discriminant below tells you which regime your anomalies belong to — retrospectively separable in the same public data.
 
@@ -70,18 +70,18 @@ Reading it as an operator:
 ## The storm question — the part that matters most
 
 > [!WARNING]
-> Solar Cycle 25 is at maximum. If SWPC est-Kp reaches **≥ 5** during 15:30–20:00 UT on eclipse day, the pre-registered storm flag raises — the timetable above still holds (a storm cannot move the Moon), and the confinement verdict below remains decidable **through** the storm.
+> Solar Cycle 25 is at maximum. The pre-registered gate — SWPC est-Kp **≥ 5** during 15:30–20:00 UT on eclipse day raises the storm flag — was sealed with the property that the timetable above still holds (a storm cannot move the Moon) and the confinement verdict below remains decidable **through** the storm. Measured outcome (definitive index, 2026-08-13): the flag never raised — eclipse day's maximum was Kp 2.667, quiet.
 
 Conventional practice would call a stormy eclipse day's ionospheric data *contaminated* and unusable. This experiment pre-registered the opposite:
 
 - **A storm cannot fake, and cannot hide, the eclipse signature.** The [finished shear](Eclipse-2026-Model-Shear.md) measured both regimes in the same instrument grid: a shadow's depletion is *confined* to its own minutes and *rides its own maximum*; a storm floods the flanking hours as deeply as the window (measured at 665,000–724,000 ppm on May 11, 2024) and pins to window edges. The confinement verdict — excess in-window depletion against a frozen 50,189 ppm threshold — stays **decidable through a G5**.
 - **What that gives operators**: if August 12 turns stormy, the same public data separates "the scheduled, geometric dent" from "the storm on top of it." GNSS anomaly forensics that day do not have to throw the eclipse hours away — the two signatures are readable apart. On any *other* storm day, the same shape-read is the reason a deep TEC drop should **not** be attributed to a transient local cause: if the flanks are flooded and nothing rides a track, it is the storm, whole-sky ([Blind spots](Eclipse-2026-Blind-Spots.md), Stories 2–3).
-- **Live gate**: the experiment's watch loop reads NOAA SWPC's 1-minute estimated Kp continuously; est-Kp ≥ 5 during 15:30–20:00 UT raises the pre-registered storm flag.
+- **Live gate, resolved**: the storm gate was graded from the definitive planetary index — maximum Kp 2.667 on 2026-08-12, the flag never raised; the capture record for the day is documented, dated, in [the first 27 days review](Eclipse-2026-First-27-Days-Review.md).
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 10:41:00 UT
+- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 13:22:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2026-08-12
-- Latest magnetometer capture: BOU H at 2026-08-13 10:40:00 UT
+- Latest magnetometer capture: BOU H at 2026-08-13 13:20:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->
@@ -90,7 +90,7 @@ Conventional practice would call a stormy eclipse day's ionospheric data *contam
 
 - It is a **timing-and-shape** product at 300-second, 1° resolution: *when* and *where* the second sky departs from quiet, by *how much* in band, and *what shape* distinguishes shadow from storm.
 - It is **not** a scintillation forecast (small-scale phase jitter), **not** a radiation/SEU product, and **not** a thermospheric-density model — those need instruments this experiment does not ingest (yet; the Stage-4 archives — dual-frequency 1 Hz GNSS, Swarm in-situ — are documented in [Data archives](Eclipse-2026-Data-Archives.md)).
-- Every number above traces to a sealed Form or a ledger row; the falsification conditions live in the [prediction registry](Eclipse-2026-Prediction-Registry.md). If the sky disagrees on August 12, these tables will say so, publicly, on August 13.
+- Every number above traces to a sealed Form or a ledger row; the falsification conditions live in the [prediction registry](Eclipse-2026-Prediction-Registry.md). If the sky disagreed on August 12, these tables will say so, publicly — the grading runs the day the pinned archive posts eclipse day, around 2026-08-30 at the lag measured 2026-08-13 (dated status on the [prediction registry](Eclipse-2026-Prediction-Registry.md)).
 
 ## The larger point for the space-weather community
 

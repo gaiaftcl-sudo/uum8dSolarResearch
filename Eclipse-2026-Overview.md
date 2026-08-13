@@ -1,6 +1,6 @@
 # ☀️🌑 Eclipse 2026 — the sky writes geometry, and geometry cannot lie
 
-On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,000 kilometers long with a tip 294 kilometers wide — will drag across the Earth at supersonic speed, crossing western Iceland and northern Spain. This wiki is the complete, public, falsifiable record of an experiment that treats that moment not as a number to be measured, but as a **three-dimensional shape to be read** — with its claims sealed 27 days in advance, its data drawn only from public archives, and its verdicts computed in exact integers by a substrate whose native language is geometry.
+On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,000 kilometers long with a tip 294 kilometers wide — dragged across the Earth at supersonic speed, crossing western Iceland and northern Spain. This wiki is the complete, public, falsifiable record of an experiment that treats that moment not as a number to be measured, but as a **three-dimensional shape to be read** — with its claims sealed 27 days in advance, its data drawn only from public archives, and its verdicts computed in exact integers by a substrate whose native language is geometry.
 
 ## The experiment, plain — from the top (recorded T+1, 2026-08-13)
 
@@ -11,7 +11,7 @@ On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,0
 **How it was done, in order:**
 
 1. **A detection rule was written and frozen** (July 16). Mechanical, no judgment calls: at a station where at least 80% of the sun gets covered, the TEC must dip by a set amount against that station's own ordinary-day baseline, within 5-minute bins, on a geomagnetically quiet day. A rule either fires or it doesn't.
-2. **The rule was tested backward on history** — 82 station-days from the 2017 eclipse, the 2023 annular, the 2024 eclipse, and the Gannon storm. It caught 15 of 16 real eclipse signatures, missed one (Eugene, 2023) — and embarrassed itself on the storm, firing at all seven stations when no eclipse existed.
+2. **The rule was tested backward on history** — 82 station-days from the 2017 eclipse, the 2023 annular, the 2024 eclipse, and the Gannon storm. It caught 15 of 16 real eclipse signatures, missed one (Eugene, 2023) — and false-positived on the storm, firing at all seven stations when no eclipse existed.
 3. **That storm failure forced two extra clauses, frozen before the event:** the dip must be confined to the eclipse window rather than spread across the whole day, and it must arrive on time — deepest point within a fixed lag of that station's maximum coverage. Storms fail both; eclipses pass both. That is what separates the two.
 4. **The prediction itself was sealed:** five stations under the totality path — Reykjavik, Látrabjarg, A Coruña, León, Zaragoza — must fire at pre-computed seconds, with the dip traveling station to station in the shadow's order. Two stations under weak partial — Norwich and Millstone Hill — must stay silent. The home station was deliberately made a control: too little sun covered to trigger the rule, so silence there is part of the prediction too.
 5. **Everything got a fingerprint** so no number can be quietly edited later. All four re-verified untouched on the 13th.
@@ -70,7 +70,7 @@ When the Moon's shadow cone pierces that shell, it switches the builder off alon
 
 That is the explosive part: **shape cannot be counterfeited, and shape-verdicts are exact.** Once the question changes from *how much* to *what shape*, entire classes of events that ruler-science glosses over — and will always gloss over, by construction — become plainly readable: the weak-but-perfectly-shaped eclipse the magnitude test threw away, the phantom eclipse every scalar records, the seasonal ghost, the inversion, the moving calibration. Five of them, read from this experiment's own ledger, are told in [Blind spots](Eclipse-2026-Blind-Spots.md).
 
-And because shape-verdicts are integers computed from public data, something new becomes possible: **one machine sealed to-the-second claims about the sky, 27 days before the sky moves, in public, in a form that survives a superstorm** — claims anyone on Earth can check against the same archives on August 13.
+And because shape-verdicts are integers computed from public data, something new becomes possible: **one machine sealed to-the-second claims about the sky, 27 days before the sky moves, in public, in a form that survives a superstorm** — claims anyone on Earth can check against the same archives — as the raw first look did on August 13, with the pinned-archive grading to follow (~2026-08-30).
 
 ![The experiment in 15 seconds](images/eclipse-2026-shear.gif)
 
@@ -83,7 +83,7 @@ And because shape-verdicts are integers computed from public data, something new
 | **The 2026 prediction** | Five totality stations MUST thread; two named home stations MUST refuse | **PRE-REGISTERED** · fp `c3e6841a206b8058` |
 | **The extensions** | The umbra's ground track written into the ionosphere in the pinned order — Látrabjarg → +192 s → Reykjavik → +2372 s → A Coruña → +53 s → León → +32 s → Zaragoza — each dent riding its own maximum; a confinement verdict that stays decidable **through a geomagnetic storm**; quantified nulls | **PRE-REGISTERED** · fp `b106d2926b1bf2cf` |
 
-On **August 13** the resolution runs against measured data and the verdict — pass or fail — lands in these same tables. A failure is published identically to a success; the historical record above already carries its own falsifiers in the open, because a recorded failure is how this experiment learned to see ([Model shear](Eclipse-2026-Model-Shear.md)).
+The raw first look ran on **August 13** and matched the sealed prediction at every custody station; the sealed resolution grades on the pinned archive when it posts (~2026-08-30), and the verdict — pass or fail — lands in these same tables. A failure is published identically to a success; the historical record above already carries its own falsifiers in the open, because a recorded failure is how this experiment learned to see ([Model shear](Eclipse-2026-Model-Shear.md)).
 
 ## Read the record
 
@@ -119,9 +119,9 @@ Every data table on these pages sits between `GAIA` markers and is regenerated b
 **Ledger-borne live state:**
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 10:41:00 UT
+- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 13:22:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2026-08-12
-- Latest magnetometer capture: BOU H at 2026-08-13 10:40:00 UT
+- Latest magnetometer capture: BOU H at 2026-08-13 13:20:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

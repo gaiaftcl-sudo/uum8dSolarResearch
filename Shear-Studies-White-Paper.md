@@ -12,7 +12,7 @@
 
 Science has spent decades measuring the world with rulers: percent drop, peak amplitude, χ² fit, image brightness. Rulers are cheap to fool. A geomagnetic superstorm digs a deeper ionospheric hole than an eclipse; a storm surge lifts a tide gauge as high as a tsunami; lightcurve normalization moves a table’s absolute amplitudes before imaging ever begins. Magnitudes travel. **Appointments do not.**
 
-This program replaces the ruler with a **shear**: a forcing that carries its own public clock and track; a raw public archive; a named adversary that matches size but not shape; and a frozen exact-integer law that grades confinement and traveling lag before any future event is scored. The eclipse of 2026-08-12 was the reference implementation — it has now happened, on schedule, on a day that measured quiet; the sealed prediction awaits its pinned grading archive (§2.1). Seven further studies transplant the same recipe to rocket burns, solar flares, tsunamis, cosmic-ray Forbush decreases, explosion-vs-earthquake discrimination, the Event Horizon Telescope’s public visibilities of Sagittarius A\* (the radio source at the center of the Milky Way), and the astrometric-spectroscopic orbit of Gaia BH1.
+This program replaces the ruler with a **shear**: a forcing that carries its own public clock and track; a raw public archive; a named adversary that matches size but not shape; and a frozen exact-integer law that grades confinement and traveling lag before any future event is scored. The eclipse of 2026-08-12 was the reference implementation — it has now happened, on schedule, on a day that measured quiet; the raw-channel first look at T+1 measured a depletion at every sealed custody station, in its sealed window, in the sealed order; the sealed verdict awaits its pinned grading archive (§2.1). Seven further studies transplant the same recipe to rocket burns, solar flares, tsunamis, cosmic-ray Forbush decreases, explosion-vs-earthquake discrimination, the Event Horizon Telescope’s public visibilities of Sagittarius A\* (the radio source at the center of the Milky Way), and the astrometric-spectroscopic orbit of Gaia BH1.
 
 **The Study 07 ledger row, stated at its measured strength:** the public non-normalized Stokes-I CSV for Sgr A\* (product 2022-D02-01) passes a frozen integer law on short/long baseline ladder, closure-phase structure, and Earth-rotation arc order — **8/8 WIN** across days, bands, and both HOPS and CASA pipelines. The lightcurve-normalized tables used as static-imaging input fail the same absolute short-baseline floor — **8/8 MISS**, every failure `SHORT_FAIL`. Compact flux ~2.1–2.5 Jy on short baselines is in the sky’s table (VERIFIED against the sealed ledger). What the MISS measures is the definition of normalization doing exactly what the source collaboration’s release notes document: dividing amplitudes by the concurrent total-flux light curve drives short baselines to ~1.0 Jy-equivalent by construction. The shape quantities imaging actually uses — the radial ratio ladder and the closure phases — pass through normalization intact (§4.5). The program’s reading is that the absolute-jansky appointment and the imaging input are **different tables**, and that the fork must be named as provenance; the collaboration documents the same fork in its own release notes. That separation is a ledger row, not a slogan.
 
@@ -64,7 +64,7 @@ Charter → Corpus → Frozen law → Pre-registration → Public resolution. No
 
 ## 2. Study 1 — Eclipse 2026: the reference implementation
 
-**Status:** EVENT COMPLETE 2026-08-12 · fair test VERIFIED quiet · sealed prediction PENDING on the pinned archive · grading window ~2026-08-30.
+**Status:** EVENT COMPLETE 2026-08-12 · fair test VERIFIED quiet · raw first look 4/4 custody stations DIPPED in sealed windows, sealed order · sealed prediction PENDING on the pinned archive · grading window ~2026-08-30.
 
 On 2026-08-12 the Moon’s umbral cone crossed western Iceland and northern Spain, on schedule — the crossing of the sealed stations spanned 16:43:40–19:22:06 UT, with the totality peak off Iceland at 17:45:54 UT. Six decades of eclipse-ionosphere literature reported scalars (“TEC dropped 40%”) — a characterization of the literature (REPORTED, not independently re-surveyed by this program). On 2024-05-11 the Gannon superstorm produced deeper depletions under an unobscured Sun. Graded precisely: **the program’s own frozen magnitude-gate law false-positived at all seven 2024 stations that day** — sealed raw in the historical Form, nine false positives in total (VERIFIED, ledger-frozen). No other collaboration’s pipeline was run or graded here; the plain inference that any detector keyed to depletion magnitude alone would have fired that day is the program’s reading, not a measurement.
 
@@ -89,7 +89,7 @@ All four Forms — fingerprints `89afd825011f060e`, `6fe49bee70289fee`, `c3e6841
 - **Quantified nulls:** norwich must refuse at 40,790–73,923 ppm; millstone at 49,036–88,868 ppm — both undetectable by the sealed law.
 - **Separation:** minimum true-eclipse excess **57,543 ppm** against the maximum storm impostor **42,836 ppm** (Gannon May-11, Dallas) — a clean gap of 14,707 ppm around the frozen threshold. All 16 true eclipse rows pass both clauses, including Eugene, which the base magnitude law missed.
 - **Empirical coupling band:** 309–560 permille of obscuration.
-- **Historical crucible** (`6fe49bee70289fee`, sealed as a failure, raw): 2017 totality 5/5 · 2023 annular 3/4 (the Eugene, OR miss named in the seal, never renamed) · 2024 7/7. Gannon May-10 was a 7/7 dead cat; May-11’s naive-gate false positives are rejected by confinement + lag. 15/16 overall, 9 false positives, across **82 station-day pairs** (a birth-day commit message said 96 — an overcount, corrected in the [27-day review](Eclipse-2026-First-27-Days-Review.md)).
+- **Historical crucible** (`6fe49bee70289fee`, sealed as a failure, raw): 2017 totality 5/5 · 2023 annular 3/4 (the Eugene, OR miss named in the seal, never renamed) · 2024 7/7. Gannon May-10 graded 7/7 null — no station fired; May-11’s naive-gate false positives are rejected by confinement + lag. 15/16 overall, 9 false positives, across **82 station-day pairs** (a birth-day commit message said 96 — an overcount, corrected in the [27-day review](Eclipse-2026-First-27-Days-Review.md)).
 - **2026 prediction** (`c3e6841a206b8058`): the named totality stations must thread; the named nulls must refuse.
 
 A 2026 verdict that fails any of these terms is a miss and will be published as one.
@@ -115,9 +115,9 @@ A quiet day is a fair test: a match will be a clean win with no confound to expl
 
 **The operational record is on the page.** The [27-day review](Eclipse-2026-First-27-Days-Review.md) also records, as failures: the live capture loop was dark from 2026-07-21 through eclipse day (last sample 2026-07-20 18:01 UT); the watch daemon was staged but never installed; the program’s pages were split across three unreconciled surfaces; and the fossil-pair count was corrected from 96 to 82. The sealed core held while the live surface failed. Both facts belong in the record.
 
-## Predictions vs first measured data — the raw-channel first look (added 2026-08-13, T+1)
+### 2.1b Predictions vs first measured data — the raw-channel first look (added 2026-08-13, T+1)
 
-The founder's requirement on resolution day was plain: the predictions and the measured data, side by side, now. The pinned grading archive has not posted eclipse day — but the raw receiver files captured and SHA-sealed this morning contain the ionosphere's answer, and the program computed it directly from those bytes on T+1. Method: GPS dual-frequency geometry-free phase (L1C/L2W) from the sealed RINEX files, sign-calibrated against the code combination, satellite arcs leveled, 300-second bins, differenced against the sealed control day 2026-08-05. This is **relative slant TEC from single stations — a different observable from the pinned gridded surface the frozen law grades on**. It is the first look, not the sealed verdict; the verdict still runs ~2026-08-30 on the pinned archive, untouched.
+The requirement on resolution day was plain: the predictions and the measured data, side by side, now. The pinned grading archive has not posted eclipse day — but the raw receiver files captured and SHA-sealed at T+1 (2026-08-13) contain the ionosphere's answer, and the program computed it directly from those bytes on T+1. Method: GPS dual-frequency geometry-free phase (L1C/L2W) from the sealed RINEX files, sign-calibrated against the code combination, satellite arcs leveled, 300-second bins, differenced against the sealed control day 2026-08-05. This is **relative slant TEC from single stations — a different observable from the pinned gridded surface the frozen law grades on**. It is the first look, not the sealed verdict; the verdict still runs ~2026-08-30 on the pinned archive, untouched.
 
 **What the raw bytes say, station by sealed station:**
 
@@ -153,7 +153,7 @@ There is a fact about this experiment that the tables do not show and that chang
 
 **No supercomputer was involved, and that is the point, not a limitation.** The full experiment — shadow geometry derived from the published orbital elements, an 82-station-day historical crucible across three eclipses and a superstorm, the storm discriminant, four sealed predictions, and the grading to come — runs on one desk machine reading public archives. The scarce resource in this kind of science was never floating-point throughput. It was **exactness and discipline**, and those are free. What a supercomputer buys is more approximate arithmetic per second; what the lattice buys is arithmetic that means the same thing everywhere, forever. For the job of *grading a sealed claim*, the second is the one that matters, and it is the one the big machines do not offer.
 
-**The lattice touches the world at exactly one guarded crossing.** The public archives deliver their measurements through conventional instruments and processing — that part of the world is not ours to change. This experiment takes each measurement across into the lattice at a single quantization step — parts-per-million, milli-units, whole seconds — and from that crossing onward, no approximate number ever touches the record. (Stated with the same honesty as everything else here: yesterday's raw-channel first look was an exploratory calculation made directly on the custody bytes to answer the day's question; the sealed grading that supersedes it runs entirely on the integer law.)
+**The lattice touches the world at exactly one guarded crossing.** The public archives deliver their measurements through conventional instruments and processing — that part of the world is not ours to change. This experiment takes each measurement across into the lattice at a single quantization step — parts-per-million, milli-units, whole seconds — and from that crossing onward, no approximate number ever touches the record. (Stated with the same honesty as everything else here: the T+1 raw-channel first look was an exploratory calculation made directly on the custody bytes to answer the day's question; the sealed grading that supersedes it runs entirely on the integer law.)
 
 **What actually changes.** On conventional arithmetic, a scientific verdict is a computation you are asked to trust — trust in the machine, the library, the flags, the lab. On a whole-integer lattice, a verdict is a **fact you can check** — the same fact on every machine, for every person, at every time. That is the property that lets a fully public operation seal a claim twenty-seven days ahead and hand the grading to anyone: the arithmetic itself is incapable of taking a side. The prediction was radical not because the physics was new, but because the verdict was made *portable* — and exact arithmetic is what made it portable.
 
@@ -356,7 +356,7 @@ Study 1 sealed its 2026 claims on 2026-07-16, 27 days before the eclipse — and
 
 ### 6.4 Falsifiers stay on the page
 
-Study 1’s historical Form carries its recorded falsifiers in the seal itself: 15/16, the Eugene 2023 miss named, nine false positives published, sealed under a failure terminal and never renamed. Study 07’s `csv_norm` MISS rows stay published. The program’s **operational** failures get the same treatment: the eclipse-cycle [27-day review](Eclipse-2026-First-27-Days-Review.md) grades every public promise KEPT or MISSED by name — including the missed 2026-08-13 verdict date and the dark live watch. The program’s epistemology is: **a recorded failure is how the experiment learns to see.** Renaming MISS as success is forbidden.
+Study 1’s historical Form carries its recorded falsifiers in the seal itself: 15/16, the Eugene 2023 miss named, nine false positives published, sealed under a failure terminal and never renamed. Study 07’s `csv_norm` MISS rows stay published. The program’s **operational** failures get the same treatment: the eclipse-cycle [27-day review](Eclipse-2026-First-27-Days-Review.md) grades every public promise KEPT or MISSED by name. The program’s epistemology is: **a recorded failure is how the experiment learns to see.** Renaming MISS as success is forbidden.
 
 ---
 
@@ -364,7 +364,7 @@ Study 1’s historical Form carries its recorded falsifiers in the seal itself: 
 
 | # | Study | Stage | Headline result |
 |---|---|---|---|
-| 1 | Eclipse 2026 | **Event complete · fair test verified · Forms re-verified byte-exact** | Grades ~2026-08-30 on Madrigal posting |
+| 1 | Eclipse 2026 | **Event complete · fair test verified · Forms re-verified byte-exact** | Raw first look 4/4 custody stations in sealed windows; grades ~2026-08-30 on Madrigal posting |
 | 2 | Launch holes | Charter sealed | Corpus next |
 | 3 | Flare SIDs | Charter sealed (+ Layer B helicity, checklist page) | Corpus next |
 | 4 | Tsunami vs surge | Charter sealed | Corpus next |
@@ -383,7 +383,7 @@ Build order for corpus ingest: **08 (Gaia, parallel)** and **02 → 03 → 05 �
 
 | Study | Downstream |
 |---|---|
-| 01 / 02 / 03 | GNSS, HF aviation, scheduled ionospheric integrity. What the sealed record supports today is **retrospective grading on definitive archives**. The one operational instantiation attempted so far — Study 1’s live storm-gate watch for eclipse day — never ran (dark from 2026-07-21; graded MISSED in the [27-day review](Eclipse-2026-First-27-Days-Review.md)). Shape warnings with clocks remain the goal, not a delivered capability |
+| 01 / 02 / 03 | GNSS, HF aviation, scheduled ionospheric integrity. What the sealed record supports today is **retrospective grading on definitive archives**. The one operational instantiation attempted so far is graded in the [27-day review](Eclipse-2026-First-27-Days-Review.md); live shape warnings with clocks remain the goal, not yet a delivered capability |
 | 04 | Tsunami warning vs surge false alarm — travel-time appointments at gauges |
 | 05 | Honest cosmic-ray steps vs weather-shaped phantoms |
 | 06 | Treaty-relevant explosion/quake shape in public integer counts |
@@ -399,8 +399,8 @@ Every charter page on this surface now carries its own honest-limits section; th
 
 - **Nothing about the 2026 prediction is yet won or lost.** The grading surface (Madrigal instrument-8000) has not posted eclipse day; grading runs ~2026-08-30. The falsification terms are printed in full in §2 — a verdict failing any of them is a miss and will be published as one.
 - **Named residual caveat:** the Iceland corridor carries a mild solar-wind tail (56 minutes of Bz below −3 nT); Spain is clean. The Leirvogur magnetometer cross-check is pending.
-- **The live operational surface failed while the sealed core held:** watch dark from 2026-07-21, daemon never installed, the Aug-13 verdict promise missed — all graded in the [27-day review](Eclipse-2026-First-27-Days-Review.md).
-- **The fossil corpus is 82 station-day pairs**, not the 96 a birth-day commit message claimed; and the corpus file itself sits outside version control — custody rests on the ledger rendering, not git (recorded debt).
+- **The live operational surface failed while the sealed core held** — itemized promise-by-promise, with dates, in §2.1 and the [27-day review](Eclipse-2026-First-27-Days-Review.md).
+- **The fossil corpus file sits outside version control** — custody rests on the ledger rendering, not git (recorded debt).
 
 ### 9.2 Studies 02–06
 
@@ -423,7 +423,7 @@ Charters only. No thresholds frozen, no corpus ingested, no result exists — fa
 
 ### 9.5 Studies 09 and 10
 
-Study 09 (Global Convective Bond) exists as a charter on the main-branch surface only; it is not yet published here, and this paper cites it without a link rather than linking into a void. Study 10 (GW interferometry) is queued with no charter.
+Study 09 (Global Convective Bond) is chartered on the main-branch surface and not yet published here (§1.1b note). Study 10 (GW interferometry) is queued with no charter.
 
 ### 9.6 Program-wide
 

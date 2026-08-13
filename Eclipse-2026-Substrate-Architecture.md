@@ -2,7 +2,7 @@
 
 ## The born pair
 
-**(shadow geometry, ionospheric response).** The parent owns exactly ONE binding shape Σ_P — the genes-only parent disk shared byte-identically by all three games. The two sides of the pair:
+**(shadow geometry, ionospheric response).** The parent owns exactly ONE binding shape Σ_P — the genes-only parent disk shared byte-identically by every invariant class the substrate seals. The two sides of the pair:
 
 - **Target descriptor (H1 — geometry ONLY):** the quantized obscuration timeline — NASA Besselian element polynomials + station coordinates, computed by the Explanatory-Supplement local-circumstance algorithm, quantized ONCE (obscuration in ppm on a 10-s lattice, contacts in whole seconds UT), stored, fingerprinted. The measured data never touches this side.
 - **Measured side (the box contents):** the station-day's vertical-TEC series, quantized ONCE to milliTECU integers, binned per 300 s (Madrigal's native cadence), with a baseline vector built by the pre-registered rule: element-wise **lower median** over named quiet control days (max Kp ≤ 4) — an order statistic, never an average, so the arithmetic is integer-exact on every machine.
@@ -24,7 +24,7 @@ The obscuration timeline is **unimodal**: one shadow cone → one contiguous gat
 
 - patch ∩ gate window = ∅ → **the whole patch is a proven void** — every leaf's C⁴ face is not-whole, its clasp lifts clear of z=0, lk = 0 — ARC frees it in O(1), never split;
 - straddling wide patch → subdivide (8-way octant work decomposition);
-- width-1 leaf → the audited pair law, then `DeadCatRemoval.isEntangled` on the leaf's M⁸ face — the same uniform verdict Games 1 and 2 route through.
+- width-1 leaf → the audited pair law, then `DeadCatRemoval.isEntangled` on the leaf's M⁸ face — the same uniform verdict every substrate invariant class routes through.
 
 Measured behavior: a negative station-day dies in ~1,400–1,900 wholesale voids with **zero leaves sealed**; a positive seals exactly **one** leaf — the whole child that threads Σ_P. No number-mixing process exposes such an exclusion from a boundary — the wholesale void is a gift of real three-dimensional geometry: one cone, one contiguous window. This is the substrate's first `shadow-projection`-class invariant.
 

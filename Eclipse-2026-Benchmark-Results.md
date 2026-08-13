@@ -74,8 +74,8 @@ What the table shows, in words:
 ## Reproduction runbook (from a cold machine)
 
 ```bash
-# 0. build (mutex queue), then geometry with the fixture gate:
-~/bin/gaiaftcl-mac-build.sh -c release --product GaiaFTCLCLI
+# 0. build, then geometry with the fixture gate:
+swift build -c release --product GaiaFTCLCLI
 gaiaftcl eclipse-geometry --eclipse 2024-04-08 --all-stations       # fixtures must print GREEN
 
 # 1. raw ingest — eclipse day + three controls (one world-scan each), plus Kp:

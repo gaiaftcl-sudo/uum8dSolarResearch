@@ -1,7 +1,7 @@
 
 # Shear Studies — Program Index
 
-> **Start here:** [Readers’ guide](Shear-Studies-Readers-Guide.md) · [**UUM-8D vs IUT — WIN**](UUM8D-vs-IUT-Topological-Projection.md) · [White paper](Shear-Studies-White-Paper.md) · Study 07 law frozen; Study 08 Gaia BH1 open; eclipse resolving 2026-08-13.
+> **Start here:** [Readers’ guide](Shear-Studies-Readers-Guide.md) · [**UUM-8D vs IUT — WIN**](UUM8D-vs-IUT-Topological-Projection.md) · [White paper](Shear-Studies-White-Paper.md) · Study 07 law frozen; Study 08 Gaia BH1 open; eclipse crossed 2026-08-12 — first look matched; archive verdict ~2026-08-30.
 
 The sky writes geometry, and geometry cannot lie. Every study on this wiki begins with a forcing that carries its own clock and its own track — a shadow cone sweeping a ground path, a rocket burn stamped to the manifest second, a flare peak on an X-ray clock, an earthquake origin time, a shock front crossing L1 — and asks whether a public raw archive answers at the place the track names and at the lag the travel time demands. The shear is the sealed, exact-integer test that the true forcing passes and its loudest look-alike fails: an adversary can mimic the *magnitude* of a response, but it cannot fake its *shape*.
 
@@ -10,13 +10,13 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 *Eight panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry, Earth-rotation VLBI track, Gaia sampling clock — and its own track with a public raw archive and a sealed look-alike adversary.*
 
 > [!NOTE]
-> One method, many skies. Study 1 is locked (resolves 2026-08-13). Study 07 law is frozen on Sgr A\*. Study 08 opens Gaia BH1. Studies 02–06 remain charter-sealed pending corpus.
+> One method, many skies. Study 1 crossed 2026-08-12 (archive verdict ~2026-08-30). Study 07 law is frozen on Sgr A\*. Study 08 opens Gaia BH1. Studies 02–06 remain charter-sealed pending corpus.
 
 ## Program status
 
 | # | Study | Status | The forcing and the shear |
 |---|-------|--------|---------------------------|
-| 1 | [Eclipse 2026 — Overview](Eclipse-2026-Overview.md) | **RESOLVING 2026-08-13** | The Moon's umbral cone crosses Iberia on 2026-08-12; the total-electron-content bite must ride the shadow's ground track on the ephemeris clock, with geomagnetic storms as the sealed adversary. |
+| 1 | [Eclipse 2026 — Overview](Eclipse-2026-Overview.md) | **CROSSED 2026-08-12 — first look matched; pinned-archive verdict ~2026-08-30** | The Moon's umbral cone crossed Iberia on 2026-08-12 on a verified-quiet day; the raw first look shows the total-electron-content bite riding the shadow's ground track at all four custody stations, with geomagnetic storms as the sealed adversary. The sealed verdict grades on the pinned archive (~2026-08-30). |
 | 2 | [Study 02 — Launch ionospheric holes](Study-02-Launch-Ionospheric-Holes.md) | OPEN — charter sealed | Rocket second-stage burns punch ~900 km holes in the ionospheric F-region on a manifest-published clock; the hole must confine to the ascent corridor, lag the burn second, and grade out in exact percent-of-baseline depletion — a shape that storms, Tonga-class traveling disturbances, and deorbit burns cannot fake — with an automated watch standing on future manifests. |
 | 3 | [Study 03 — Solar-flare SIDs](Study-03-Solar-Flare-SIDs.md) · [Predictions & validations](Study-03-Predictions-and-Validations.md) | OPEN — charter sealed (Layer A TEC + Layer B SHARP integer helicity) | Layer A: sunlit TEC step on GOES clock vs storms/radio bursts. Layer B: SHARP signed crossing-count helicity (exact integer, not float ∫A·B) vs large-flux quiet ARs + SWAN-SF baseline — Moffatt linking on the Sun; torsion≠linking spelled out. |
 | 4 | [Study 04 — Tsunami vs storm surge](Study-04-Tsunami-vs-Storm-Surge.md) | OPEN — charter sealed | A subsea earthquake's USGS origin second plus a Huygens travel-time chart over public tide-gauge archives separates seismic tsunamis from storm surge, meteotsunami, and Lamb-wave adversaries — anchored by live-pulled gauge records from the 2022 Tonga wave and Hurricane Sandy — and resolves as a standing law on the next M ≥ 7.5 subsea event. |

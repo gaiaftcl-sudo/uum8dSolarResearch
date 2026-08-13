@@ -108,14 +108,14 @@ Both storms' TEC days are ingested into the ledger; the Gannon days form the **s
 - **2024-04-08** sat near **SC25 maximum**.
 - **2026-08-12** sits **near/just past SC25 maximum**: per NOAA SWPC (Jan 30, 2026), SC25 likely reached the highest sunspot number in over 20 years — WDC-SILSO's initial daily estimate for Aug 8 was **299** (SWPC non-official estimate 337, a value unseen since March 2001). SC25 ran ~31% above SC24 at the equivalent point.
 
-Consequences: 2026 background TEC and day-to-day variability will resemble 2024, not 2017 — the noise floor is high, storm probability is elevated, and the cross-cycle corpus (same law, three regimes) is precisely what bounds how much of the eclipse signature survives regime change.
+Consequences: 2026 background TEC and day-to-day variability resemble 2024, not 2017 — the noise floor is high, storm probability was elevated (August 12 itself resolved geomagnetically quiet), and the cross-cycle corpus (same law, three regimes) is precisely what bounds how much of the eclipse signature survives regime change.
 
 ## 6. Live context
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 10:41:00 UT
+- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 13:22:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2026-08-12
-- Latest magnetometer capture: BOU H at 2026-08-13 10:40:00 UT
+- Latest magnetometer capture: BOU H at 2026-08-13 13:20:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

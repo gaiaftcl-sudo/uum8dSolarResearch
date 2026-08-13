@@ -1,6 +1,6 @@
 # The historical corpus — one frozen law across three solar regimes
 
-The full picture the founder asked for: every relevant historical eclipse ingested raw, quantized once, and presented to the **same frozen pair law** that is pre-registered for 2026. Nothing here is tuned per eclipse — the constants (`gate=800000ppm`, `coupling=3/10`, lower-median quiet baselines, Kp ≤ 4) were set once on the 2024 benchmark and never moved. What history shows at those constants is recorded raw, CALORIE or CURE (LAW 3).
+The full historical picture: every relevant historical eclipse ingested raw, quantized once, and presented to the **same frozen pair law** that is pre-registered for 2026. Nothing here is tuned per eclipse — the constants (`gate=800000ppm`, `coupling=3/10`, lower-median quiet baselines, Kp ≤ 4) were set once on the 2024 benchmark and never moved. What history shows at those constants is recorded raw, CALORIE or CURE (LAW 3).
 
 ## Why these three eclipses
 
@@ -226,7 +226,7 @@ For every projected positive, the measured coupling (depletion as parts-per-thou
 *Coupling = depletion·1000 ÷ obscuration at the projected second (exact integer). The 2026 expectation inherits this measured range: at totality (obs = 10⁶ ppm) expect depletion between the table's min and max coupling ‰ of baseline; the frozen law audits at ≥ 3·obs/10.*
 <!-- GAIA:END empirical-coupling -->
 
-**Reading the table toward 2026:** the pre-registered law requires depletion ≥ 300‰ of obscuration (coupling 3/10). Every historical coupling value above 300 is margin; the min–max range across regimes IS the falsifiable expectation band for the 2026 totality-path stations (obs = 10⁶ ppm at Reykjavik/Látrabjarg/A Coruña/León/Zaragoza). If 2026 lands inside the historical range, the shadow law generalizes across four eclipses and a full solar cycle; if it lands below the 300‰ audit line, the prediction seals CURE — recorded raw.
+**Reading the table toward 2026:** the pre-registered law requires depletion ≥ 300‰ of obscuration (coupling 3/10). Every historical coupling value above 300 is margin; the min–max range across regimes IS the falsifiable expectation band for the 2026 totality-path stations (obs = 10⁶ ppm at Reykjavik/Látrabjarg/A Coruña/León/Zaragoza). If 2026 lands inside the historical range, the shadow law generalizes across four eclipses and a full solar cycle; if it lands below the 300‰ audit line, the prediction seals CURE — recorded raw. The T+1 raw first look landed inside this band at every custody station; the sealed grading on the pinned archive (~2026-08-30) decides.
 
 ## The ingest ledger behind all of it
 
