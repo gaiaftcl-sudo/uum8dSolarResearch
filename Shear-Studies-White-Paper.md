@@ -89,7 +89,7 @@ All four Forms — fingerprints `89afd825011f060e`, `6fe49bee70289fee`, `c3e6841
 - **Quantified nulls:** norwich must refuse at 40,790–73,923 ppm; millstone at 49,036–88,868 ppm — both undetectable by the sealed law.
 - **Separation:** minimum true-eclipse excess **57,543 ppm** against the maximum storm impostor **42,836 ppm** (Gannon May-11, Dallas) — a clean gap of 14,707 ppm around the frozen threshold. All 16 true eclipse rows pass both clauses, including Eugene, which the base magnitude law missed.
 - **Empirical coupling band:** 309–560 permille of obscuration.
-- **Historical crucible** (`6fe49bee70289fee`, sealed as a failure, raw): 2017 totality 5/5 · 2023 annular 3/4 (the Eugene, OR miss named in the seal, never renamed) · 2024 7/7. Gannon May-10 was a 7/7 dead cat; May-11’s naive-gate false positives are rejected by confinement + lag. 15/16 overall, 9 false positives, across **82 station-day pairs** (a birth-day commit message said 96 — an overcount, corrected in the [autopsy](Eclipse-2026-Autopsy.md)).
+- **Historical crucible** (`6fe49bee70289fee`, sealed as a failure, raw): 2017 totality 5/5 · 2023 annular 3/4 (the Eugene, OR miss named in the seal, never renamed) · 2024 7/7. Gannon May-10 was a 7/7 dead cat; May-11’s naive-gate false positives are rejected by confinement + lag. 15/16 overall, 9 false positives, across **82 station-day pairs** (a birth-day commit message said 96 — an overcount, corrected in the [27-day review](Eclipse-2026-First-27-Days-Review.md)).
 - **2026 prediction** (`c3e6841a206b8058`): the named totality stations must thread; the named nulls must refuse.
 
 A 2026 verdict that fails any of these terms is a miss and will be published as one.
@@ -111,13 +111,13 @@ A quiet day is a fair test: a match will be a clean win with no confound to expl
 
 **Raw custody is held.** Twenty-seven RINEX 30-second observation files (93 MB) were captured at T+1 from anonymous public mirrors (BKG IGS/EUREF and NOAA CORS) for nine stations — REYK, HOFN, ACOR, LEON, ZARA, VILL, CANT, SALA, WES2 — covering eclipse day (DOY 224) and control days 217 and 197, alongside the GOES, solar-wind, and magnetometer captures. A SHA-256 manifest records every file’s digest, retrieval timestamp, and source URL. Custody doctrine, stated plainly: **the sealed verdict grades on the pinned Madrigal gridded-TEC surface; the raw RINEX is custody and cross-check, not a substitute grading surface.**
 
-**The grading window is measured, not promised.** Madrigal instrument-8000 gridded TEC for 2026-08-12 was NOT POSTED at T+1. The posting boundary was measured between 2026-07-25 and 2026-08-01 — a two-to-three-week lag — so eclipse day is expected to post around **2026-08-30**, by which time control day 2026-08-19 will also be up. Grading runs then, on the pinned surface, against the untouched fingerprints. Version 1 of this paper promised a public verdict on 2026-08-13; that promise is graded **MISSED** in the published [operational autopsy](Eclipse-2026-Autopsy.md). The archive’s own calendar made it impossible, and the date lived only in prose — no sealed clause ever named it.
+**The grading window is measured, not promised.** Madrigal instrument-8000 gridded TEC for 2026-08-12 was NOT POSTED at T+1. The posting boundary was measured between 2026-07-25 and 2026-08-01 — a two-to-three-week lag — so eclipse day is expected to post around **2026-08-30**, by which time control day 2026-08-19 will also be up. Grading runs then, on the pinned surface, against the untouched fingerprints. Version 1 of this paper promised a public verdict on 2026-08-13; that promise is graded **MISSED** in the published [operational review](Eclipse-2026-First-27-Days-Review.md). The archive’s own calendar made it impossible, and the date lived only in prose — no sealed clause ever named it.
 
-**The operational record is on the page.** The [autopsy](Eclipse-2026-Autopsy.md) also records, as failures: the live capture loop was dark from 2026-07-21 through eclipse day (last sample 2026-07-20 18:01 UT); the watch daemon was staged but never installed; the program’s pages were split across three unreconciled surfaces; and the fossil-pair count was corrected from 96 to 82. The sealed core held while the live surface failed. Both facts belong in the record.
+**The operational record is on the page.** The [27-day review](Eclipse-2026-First-27-Days-Review.md) also records, as failures: the live capture loop was dark from 2026-07-21 through eclipse day (last sample 2026-07-20 18:01 UT); the watch daemon was staged but never installed; the program’s pages were split across three unreconciled surfaces; and the fossil-pair count was corrected from 96 to 82. The sealed core held while the live surface failed. Both facts belong in the record.
 
 **What resolution will mean.** When the archive posts, the prediction grades at full strength on a verified-quiet day. What one resolved prediction proves is one entry in the track record — no more, no less.
 
-**Entry points:** [Overview](Eclipse-2026-Overview.md) · [Model shear](Eclipse-2026-Model-Shear.md) · [Prediction registry](Eclipse-2026-Prediction-Registry.md) · [Blind spots](Eclipse-2026-Blind-Spots.md) · [Autopsy](Eclipse-2026-Autopsy.md)
+**Entry points:** [Overview](Eclipse-2026-Overview.md) · [Model shear](Eclipse-2026-Model-Shear.md) · [Prediction registry](Eclipse-2026-Prediction-Registry.md) · [Blind spots](Eclipse-2026-Blind-Spots.md) · [First 27 days — full review](Eclipse-2026-First-27-Days-Review.md)
 
 ---
 
@@ -313,7 +313,7 @@ Study 1 sealed its 2026 claims on 2026-07-16, 27 days before the eclipse — and
 
 ### 6.4 Falsifiers stay on the page
 
-Study 1’s historical Form carries its recorded falsifiers in the seal itself: 15/16, the Eugene 2023 miss named, nine false positives published, sealed under a failure terminal and never renamed. Study 07’s `csv_norm` MISS rows stay published. The program’s **operational** failures get the same treatment: the eclipse-cycle [autopsy](Eclipse-2026-Autopsy.md) grades every public promise KEPT or MISSED by name — including the missed 2026-08-13 verdict date and the dark live watch. The program’s epistemology is: **a recorded failure is how the experiment learns to see.** Renaming MISS as success is forbidden.
+Study 1’s historical Form carries its recorded falsifiers in the seal itself: 15/16, the Eugene 2023 miss named, nine false positives published, sealed under a failure terminal and never renamed. Study 07’s `csv_norm` MISS rows stay published. The program’s **operational** failures get the same treatment: the eclipse-cycle [27-day review](Eclipse-2026-First-27-Days-Review.md) grades every public promise KEPT or MISSED by name — including the missed 2026-08-13 verdict date and the dark live watch. The program’s epistemology is: **a recorded failure is how the experiment learns to see.** Renaming MISS as success is forbidden.
 
 ---
 
@@ -340,7 +340,7 @@ Build order for corpus ingest: **08 (Gaia, parallel)** and **02 → 03 → 05 �
 
 | Study | Downstream |
 |---|---|
-| 01 / 02 / 03 | GNSS, HF aviation, scheduled ionospheric integrity. What the sealed record supports today is **retrospective grading on definitive archives**. The one operational instantiation attempted so far — Study 1’s live storm-gate watch for eclipse day — never ran (dark from 2026-07-21; graded MISSED in the [autopsy](Eclipse-2026-Autopsy.md)). Shape warnings with clocks remain the goal, not a delivered capability |
+| 01 / 02 / 03 | GNSS, HF aviation, scheduled ionospheric integrity. What the sealed record supports today is **retrospective grading on definitive archives**. The one operational instantiation attempted so far — Study 1’s live storm-gate watch for eclipse day — never ran (dark from 2026-07-21; graded MISSED in the [27-day review](Eclipse-2026-First-27-Days-Review.md)). Shape warnings with clocks remain the goal, not a delivered capability |
 | 04 | Tsunami warning vs surge false alarm — travel-time appointments at gauges |
 | 05 | Honest cosmic-ray steps vs weather-shaped phantoms |
 | 06 | Treaty-relevant explosion/quake shape in public integer counts |
@@ -356,7 +356,7 @@ Every charter page on this surface now carries its own honest-limits section; th
 
 - **Nothing about the 2026 prediction is yet won or lost.** The grading surface (Madrigal instrument-8000) has not posted eclipse day; grading runs ~2026-08-30. The falsification terms are printed in full in §2 — a verdict failing any of them is a miss and will be published as one.
 - **Named residual caveat:** the Iceland corridor carries a mild solar-wind tail (56 minutes of Bz below −3 nT); Spain is clean. The Leirvogur magnetometer cross-check is pending.
-- **The live operational surface failed while the sealed core held:** watch dark from 2026-07-21, daemon never installed, the Aug-13 verdict promise missed — all graded in the [autopsy](Eclipse-2026-Autopsy.md).
+- **The live operational surface failed while the sealed core held:** watch dark from 2026-07-21, daemon never installed, the Aug-13 verdict promise missed — all graded in the [27-day review](Eclipse-2026-First-27-Days-Review.md).
 - **The fossil corpus is 82 station-day pairs**, not the 96 a birth-day commit message claimed; and the corpus file itself sits outside version control — custody rests on the ledger rendering, not git (recorded debt).
 
 ### 9.2 Studies 02–06
@@ -384,7 +384,7 @@ Study 09 (Global Convective Bond) exists as a charter on the main-branch surface
 
 ### 9.6 Program-wide
 
-Seal timestamps across the program are ledger-internal; third-party time anchoring is open debt. The program was split across three surfaces during the eclipse cycle and has not finished reconciling them (autopsy finding). Where this paper characterizes external literature or another collaboration’s claims, the sourcing tag is REPORTED; where it states bytes fetched, hashed, or re-derived by the program, the tag is VERIFIED.
+Seal timestamps across the program are ledger-internal; third-party time anchoring is open debt. The program was split across three surfaces during the eclipse cycle and has not finished reconciling them (27-day-review finding). Where this paper characterizes external literature or another collaboration’s claims, the sourcing tag is REPORTED; where it states bytes fetched, hashed, or re-derived by the program, the tag is VERIFIED.
 
 ---
 

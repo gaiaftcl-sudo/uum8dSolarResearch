@@ -103,7 +103,7 @@ Exact thresholds: derived at corpus ingest, then frozen — same road as Study 0
 
 - Not a substitute for full binary-population statistics.
 - Not a claim that the luminous star does not wobble — the wobble is the table.
-- Not an IEEE autopsy inside the OS kernel.
+- Not an IEEE floating-point teardown inside the OS kernel.
 - Epoch-astrometry gaps are VOID-by-inventory, not filled by the mass model.
 
 ---

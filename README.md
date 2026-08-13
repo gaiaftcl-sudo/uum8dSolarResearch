@@ -26,7 +26,7 @@ Because shape cannot be counterfeited and shape-verdicts are exact, one machine 
 | [**Satellite & aviation advisory**](Eclipse-2026-Satellite-Aviation-Advisory.md) | The only scheduled ionospheric disturbance in history — GNSS, HF, satellite windows |
 | [**Success criteria**](Eclipse-2026-Success-Criteria.md) | S1–S5 decidable pass/fail, the storm contingency, failure semantics |
 | [Operations runbook](Eclipse-2026-Operations-Runbook.md) | Eclipse day in UT, the live loop, the T+1 resolution |
-| [**Autopsy — the first 27 days**](Eclipse-2026-Autopsy.md) | T+1: every failure itemized, every promise graded, the fair test verified |
+| [**The first 27 days — full review**](Eclipse-2026-First-27-Days-Review.md) | T+1: every failure itemized, every promise graded, the fair test verified |
 
 ## How this stays true
 
