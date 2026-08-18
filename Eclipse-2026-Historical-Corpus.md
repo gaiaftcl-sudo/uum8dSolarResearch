@@ -192,6 +192,18 @@ Calculator trust: the geometry core reproduces independently published city circ
 | 2024-04-08 | shear-negative | shear-2024-04-08-millstone-storm2024-05-11 | FALSE POSITIVE ‼︎ | 19:17:05 UT | 671980 ppm (67.2%) | 801464 ppm |
 | 2024-04-08 | shear-negative | shear-2024-04-08-norwich-storm2024-05-10 | dead cat ✓ | — | — | — |
 | 2024-04-08 | shear-negative | shear-2024-04-08-norwich-storm2024-05-11 | FALSE POSITIVE ‼︎ | 19:17:06 UT | 694994 ppm (69.5%) | 801484 ppm |
+| 2026-08-12 | positive | 2026-08-12-coruna-eclipse | no projection ‼︎ | — | — | — |
+| 2026-08-12 | positive | 2026-08-12-latrabjarg-eclipse | PROJECTED ✓ | 17:40:00 UT | 293964 ppm (29.4%) | 915557 ppm |
+| 2026-08-12 | positive | 2026-08-12-leon-eclipse | no projection ‼︎ | — | — | — |
+| 2026-08-12 | positive | 2026-08-12-reykjavik-eclipse | no projection ‼︎ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-coruna-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-coruna-ctrl2026-08-05 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-latrabjarg-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-latrabjarg-ctrl2026-08-05 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-leon-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-leon-ctrl2026-08-05 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-reykjavik-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-reykjavik-ctrl2026-08-05 | dead cat ✓ | — | — | — |
 
 *ONE frozen law — gate 800000 ppm, coupling 3/10 — applied to every pair. Generated live from `eclipse-fossils.jsonl` through `EclipseProjectionRunner`.*
 <!-- GAIA:END crucible-historical -->
@@ -222,6 +234,7 @@ For every projected positive, the measured coupling (depletion as parts-per-thou
 | 2024-04-08 | mazatlan | 18:05:00 UT | 970682 | 323319 | 333 | 3.3 |
 | 2024-04-08 | millstone | 19:17:05 UT | 801464 | 419091 | 522 | 3.3 |
 | 2024-04-08 | norwich | 19:17:06 UT | 801484 | 426439 | 532 | 3.3 |
+| 2026-08-12 | latrabjarg | 17:40:00 UT | 915557 | 293964 | 321 | 2.7 |
 
 *Coupling = depletion·1000 ÷ obscuration at the projected second (exact integer). The 2026 expectation inherits this measured range: at totality (obs = 10⁶ ppm) expect depletion between the table's min and max coupling ‰ of baseline; the frozen law audits at ≥ 3·obs/10.*
 <!-- GAIA:END empirical-coupling -->
@@ -251,6 +264,9 @@ For every projected positive, the measured coupling (depletion as parts-per-thou
 | 2024-04-15 | 7 | 2016 | `d09d2dcafe16` | 2.7 | quiet |
 | 2024-05-10 | 7 | 2013 | `eb16ca1b2801` | 8.7 | DISTURBED |
 | 2024-05-11 | 7 | 2012 | `dc0c9c4b4a4c` | 9.0 | DISTURBED |
+| 2026-07-16 | 7 | 1885 | `2b1f97c7d9ad` | 3.3 | quiet |
+| 2026-08-05 | 7 | 1911 | `d7d94604ffda` | 1.7 | quiet |
+| 2026-08-12 | 5 | 1304 | `9b89a22f14b4` | 2.7 | quiet |
 
 *One Madrigal world-file scan per day, sliced per station locally; SHA-256 over the raw fetched bytes. Generated from `helio_ingest_provenance` + ledger Kp.*
 <!-- GAIA:END ingest-ledger -->

@@ -116,6 +116,18 @@ The `shear-negative` rows in the full historical table:
 | 2024-04-08 | shear-negative | shear-2024-04-08-millstone-storm2024-05-11 | FALSE POSITIVE ‼︎ | 19:17:05 UT | 671980 ppm (67.2%) | 801464 ppm |
 | 2024-04-08 | shear-negative | shear-2024-04-08-norwich-storm2024-05-10 | dead cat ✓ | — | — | — |
 | 2024-04-08 | shear-negative | shear-2024-04-08-norwich-storm2024-05-11 | FALSE POSITIVE ‼︎ | 19:17:06 UT | 694994 ppm (69.5%) | 801484 ppm |
+| 2026-08-12 | positive | 2026-08-12-coruna-eclipse | no projection ‼︎ | — | — | — |
+| 2026-08-12 | positive | 2026-08-12-latrabjarg-eclipse | PROJECTED ✓ | 17:40:00 UT | 293964 ppm (29.4%) | 915557 ppm |
+| 2026-08-12 | positive | 2026-08-12-leon-eclipse | no projection ‼︎ | — | — | — |
+| 2026-08-12 | positive | 2026-08-12-reykjavik-eclipse | no projection ‼︎ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-coruna-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-coruna-ctrl2026-08-05 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-latrabjarg-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-latrabjarg-ctrl2026-08-05 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-leon-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-leon-ctrl2026-08-05 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-reykjavik-ctrl2026-07-16 | dead cat ✓ | — | — | — |
+| 2026-08-12 | control-negative | neg-2026-08-12-reykjavik-ctrl2026-08-05 | dead cat ✓ | — | — | — |
 
 *ONE frozen law — gate 800000 ppm, coupling 3/10 — applied to every pair. Generated live from `eclipse-fossils.jsonl` through `EclipseProjectionRunner`.*
 <!-- GAIA:END crucible-historical -->
@@ -217,8 +229,20 @@ The May-11 false positives above taught the second-generation layer: a shadow's 
 | 2024-04-08 | shear-storm | millstone | 2024-05-11 | 667827 ppm | 665528 ppm | **2299 ppm** | 19:17:30 | -709 s ✗ |
 | 2024-04-08 | shear-storm | norwich | 2024-05-10 | 0 ppm | 0 ppm | **0 ppm** | 19:17:30 | -648 s ✗ |
 | 2024-04-08 | shear-storm | norwich | 2024-05-11 | 687000 ppm | 684796 ppm | **2204 ppm** | 19:17:30 | -648 s ✗ |
+| 2026-08-12 | control | coruna | 2026-07-16 | 91635 ppm | 57229 ppm | **34406 ppm** | 18:17:30 | -648 s ✗ |
+| 2026-08-12 | control | coruna | 2026-08-05 | 0 ppm | 0 ppm | **0 ppm** | 18:17:30 | -648 s ✗ |
+| 2026-08-12 | control | latrabjarg | 2026-07-16 | 31700 ppm | 95949 ppm | **-64249 ppm** | 17:32:30 | -784 s ✗ |
+| 2026-08-12 | control | latrabjarg | 2026-08-05 | 0 ppm | 0 ppm | **0 ppm** | 17:47:30 | 116 s ✓ |
+| 2026-08-12 | control | leon | 2026-07-16 | 71830 ppm | 43561 ppm | **28269 ppm** | 18:27:30 | -101 s ✓ |
+| 2026-08-12 | control | leon | 2026-08-05 | 0 ppm | 0 ppm | **0 ppm** | 18:17:30 | -701 s ✗ |
+| 2026-08-12 | control | reykjavik | 2026-07-16 | 62519 ppm | 106097 ppm | **-43578 ppm** | 17:37:30 | -676 s ✗ |
+| 2026-08-12 | control | reykjavik | 2026-08-05 | 0 ppm | 0 ppm | **0 ppm** | 17:37:30 | -676 s ✗ |
+| 2026-08-12 | eclipse | coruna | 2026-08-12 | 113004 ppm | 0 ppm | **113004 ppm** | 18:32:30 | 252 s ✓ |
+| 2026-08-12 | eclipse | latrabjarg | 2026-08-12 | 293964 ppm | 100157 ppm | **193807 ppm** | 17:52:30 | 416 s ✓ |
+| 2026-08-12 | eclipse | leon | 2026-08-12 | 15304 ppm | 0 ppm | **15304 ppm** | 18:37:30 | 499 s ✓ |
+| 2026-08-12 | eclipse | reykjavik | 2026-08-12 | 197572 ppm | 85768 ppm | **111804 ppm** | 17:42:30 | -376 s ✗ |
 
-**Measured two-clause separation** (lag gate [-300, +1200] s): min eclipse excess 57543 ppm · eclipse lag failures 0 · max lag-passing non-eclipse excess 42836 ppm (shear-storm dallas 2024-05-11) — **CLEAN, gap 14707 ppm, threshold 50189 ppm**
+**Measured two-clause separation** (lag gate [-300, +1200] s): min eclipse excess 15304 ppm · eclipse lag failures 1 · max lag-passing non-eclipse excess 42836 ppm (shear-storm dallas 2024-05-11) — no clean separation (recorded raw)
 
 *Excess = median depletion inside the gate window − median over the ±2 h flanks (exact integers, ledger-direct). A shadow is confined and rides its own maximum; a storm floods the flanks and pins to window edges. Generated live from the V252 ledger.*
 <!-- GAIA:END shear-discriminant -->

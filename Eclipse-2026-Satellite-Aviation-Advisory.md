@@ -79,9 +79,9 @@ Conventional practice would call a stormy eclipse day's ionospheric data *contam
 - **Live gate, resolved**: the storm gate was graded from the definitive planetary index — maximum Kp 2.667 on 2026-08-12, the flag never raised; the capture record for the day is documented, dated, in [the first 27 days review](Eclipse-2026-First-27-Days-Review.md).
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 13:22:00 UT
+- Latest SWPC estimated Kp in ledger: 1.33 at 2026-08-18 11:36:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2026-08-12
-- Latest magnetometer capture: BOU H at 2026-08-13 13:20:00 UT
+- Latest magnetometer capture: BOU H at 2026-08-18 11:36:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

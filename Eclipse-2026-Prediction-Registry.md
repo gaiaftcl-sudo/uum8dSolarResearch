@@ -127,7 +127,7 @@ The derivation is in custody beside the raw files it read: the processing script
 | 2024 benchmark | projection | shadow-projection | 7/7 | CALORIE | `89afd825011f060e` | 2026-07-16T16:01:47Z |
 | 2026 prediction | prediction-2026-08-12 | shadow-projection | PREREGISTERED | CALORIE | `c3e6841a206b8058` | 2026-07-16T16:02:00Z |
 | 2026 prediction extensions | prediction-extensions-2026-08-12 | shadow-projection | PREREGISTERED | CALORIE | `b106d2926b1bf2cf` | 2026-07-16T18:54:39Z |
-| historical universality | historical-universality | shadow-projection | 15/16 | CURE | `6fe49bee70289fee` | 2026-07-16T18:14:09Z |
+| historical universality | historical-universality | shadow-projection | 16/20 | CURE | `cdf43e80f06f10a3` | 2026-08-18T16:42:21Z |
 
 *Loaded and fingerprint-checked from `~/.gaiaftcl/franklin/invariants/` at render time.*
 <!-- GAIA:END forms-registry -->

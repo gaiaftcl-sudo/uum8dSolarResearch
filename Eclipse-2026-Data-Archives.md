@@ -67,6 +67,9 @@ Every fetched artifact lands as a row in `helio_ingest_provenance` carrying the 
 | 2024-04-15 | 7 | 2016 | `d09d2dcafe16` | 2.7 | quiet |
 | 2024-05-10 | 7 | 2013 | `eb16ca1b2801` | 8.7 | DISTURBED |
 | 2024-05-11 | 7 | 2012 | `dc0c9c4b4a4c` | 9.0 | DISTURBED |
+| 2026-07-16 | 7 | 1885 | `2b1f97c7d9ad` | 3.3 | quiet |
+| 2026-08-05 | 7 | 1911 | `d7d94604ffda` | 1.7 | quiet |
+| 2026-08-12 | 5 | 1304 | `9b89a22f14b4` | 2.7 | quiet |
 
 *One Madrigal world-file scan per day, sliced per station locally; SHA-256 over the raw fetched bytes. Generated from `helio_ingest_provenance` + ledger Kp.*
 <!-- GAIA:END ingest-ledger -->

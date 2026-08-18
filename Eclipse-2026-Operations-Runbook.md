@@ -31,9 +31,9 @@ gaiaftcl eclipse-watch --poll-seconds 60 # the 24×7 loop
 Current ledger-borne state:
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 13:22:00 UT
+- Latest SWPC estimated Kp in ledger: 1.33 at 2026-08-18 11:36:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2026-08-12
-- Latest magnetometer capture: BOU H at 2026-08-13 13:20:00 UT
+- Latest magnetometer capture: BOU H at 2026-08-18 11:36:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->

@@ -86,6 +86,7 @@ The corpus below is the substrate's own end-to-end measurement — public raw ar
 | 2024-04-08 | mazatlan | 18:05:00 UT | 970682 | 323319 | 333 | 3.3 |
 | 2024-04-08 | millstone | 19:17:05 UT | 801464 | 419091 | 522 | 3.3 |
 | 2024-04-08 | norwich | 19:17:06 UT | 801484 | 426439 | 532 | 3.3 |
+| 2026-08-12 | latrabjarg | 17:40:00 UT | 915557 | 293964 | 321 | 2.7 |
 
 *Coupling = depletion·1000 ÷ obscuration at the projected second (exact integer). The 2026 expectation inherits this measured range: at totality (obs = 10⁶ ppm) expect depletion between the table's min and max coupling ‰ of baseline; the frozen law audits at ≥ 3·obs/10.*
 <!-- GAIA:END empirical-coupling -->
@@ -113,9 +114,9 @@ Consequences: 2026 background TEC and day-to-day variability resemble 2024, not 
 ## 6. Live context
 
 <!-- GAIA:BEGIN live-status -->
-- Latest SWPC estimated Kp in ledger: 0.33 at 2026-08-13 13:22:00 UT
+- Latest SWPC estimated Kp in ledger: 1.33 at 2026-08-18 11:36:00 UT
 - Latest GFZ definitive/nowcast Kp day in ledger: 2026-08-12
-- Latest magnetometer capture: BOU H at 2026-08-13 13:20:00 UT
+- Latest magnetometer capture: BOU H at 2026-08-18 11:36:00 UT
 
 *Ledger-borne (renders identically until the next ingest).*
 <!-- GAIA:END live-status -->
