@@ -1,0 +1,10 @@
+#EventID|Time|Latitude|Longitude|Depth/km|Author|Catalog|Contributor|ContributorID|MagType|Magnitude|MagAuthor|EventLocationName
+us1000aqsx|2017-10-12T16:41:08.670|41.3563|129.0251|5|us|us|us|us1000aqsx|mb_lg|2.9|us|22 km ENE of S?ngjibaegam, North Korea
+us2000ati7|2017-09-23T08:29:16.810|41.2958|129.0438|5|us|us|us|us2000ati7|ml|3.6|us|21 km ENE of S?ngjibaegam, North Korea
+us2000aetk|2017-09-03T03:38:31.810|41.334|129.031|0|spec|us|us|us2000aetk|ml|4.1|us|21 km ENE of S?ngjibaegam, North Korea
+us2000aert|2017-09-03T03:30:01.760|41.3324|129.0297|0|us|us|us|us2000aert|mb|6.3|us|21 km ENE of S?ngjibaegam, North Korea
+us10006n8a|2016-09-09T00:30:01.440|41.2869|129.0783|0|spec|us|us|us10006n8a|mb|5.3|us|23 km ENE of S?ngjibaegam, North Korea
+us10004bnm|2016-01-06T01:30:01.480|41.2996|129.0467|0|us|us|us|us10004bnm|mb|5.1|us|21 km ENE of S?ngjibaegam, North Korea
+usc000f5t0|2013-02-12T02:57:51.490|41.299|129.004|0|us|us|us|usc000f5t0|mb|5.1|us|18 km ENE of S?ngjibaegam, North Korea
+usp000gxgc|2009-05-25T00:54:43.120|41.303|129.037|0|us|us|us|usp000gxgc|mb|4.7|us|21 km ENE of S?ngjibaegam, North Korea
+usp000eurb|2006-10-09T01:35:28.020|41.294|129.094|0|us|us|us|usp000eurb|mb|4.3|us|25 km ENE of S?ngjibaegam, North Korea

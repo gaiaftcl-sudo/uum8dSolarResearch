@@ -258,3 +258,7 @@ What this study is **not**:
 ---
 
 **Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the corpus runs.**
+
+---
+
+**Status: LAW FROZEN 2026-08-20T19:45:00Z — IC.MDJ historical 6/6 WIN + 3/3 adversary reject. See [Results](Study-06-Explosion-vs-Earthquake-Results.md).**

@@ -1,0 +1,84 @@
+{
+  "study": 4,
+  "law": {
+    "sealed_at_iso": "2026-08-20T20:10:00Z",
+    "status": "PARTIAL_CORPUS_SEAL",
+    "T_lag_tol_min": 45,
+    "T_exc_min_mm": 500,
+    "chart_min": {
+      "pago_samoa": 57,
+      "nawiliwili_tohoku": 456
+    },
+    "onset_rule": "first sample |level-baseline|>=T_exc_mm; baseline=first-hour median",
+    "note": "Partial: 2 tsunami gauges + Sandy adversary + Tonga VOID pending pressure. Multi-gauge coherence Form still OPEN.",
+    "quantization": "CO-OPS \u2192 integer mm"
+  },
+  "grades": [
+    {
+      "name": "pago_samoa",
+      "file": "coops/pago_2009-09-29.json",
+      "sha256": "c605b8933eeeb2ed114118dea0d646d77461f1ad03e618a5986973672774fc4d",
+      "bytes": 36330,
+      "n": 480,
+      "onset_residual_mm": -1255,
+      "baseline_mm": -94,
+      "onset_unix": 1254247920,
+      "origin_unix": 1254246490,
+      "lag_min": 24,
+      "chart_min": 57,
+      "verdict": "WIN",
+      "class": "tsunami"
+    },
+    {
+      "name": "nawiliwili_tohoku",
+      "file": "coops/nawiliwili_2011-03-11.json",
+      "sha256": "ab818b078d959cee3683680b13159e7f81b609b59c3af22f4fb7921972d639eb",
+      "bytes": 36261,
+      "n": 480,
+      "onset_residual_mm": 608,
+      "baseline_mm": -181,
+      "onset_unix": 1299849120,
+      "origin_unix": 1299822384,
+      "lag_min": 446,
+      "chart_min": 456,
+      "verdict": "WIN",
+      "class": "tsunami"
+    },
+    {
+      "name": "battery_sandy",
+      "file": "coops/battery_2012-10-29.json",
+      "sha256": "984f6ff6882b794e2c281c6c1c7d8ac849c8e5164ff741b20d9bd51c77123b2a",
+      "bytes": 54018,
+      "n": 720,
+      "onset_residual_mm": -503,
+      "baseline_mm": 1489,
+      "onset_unix": 1351479240,
+      "origin_unix": null,
+      "lag_min": null,
+      "chart_min": null,
+      "verdict": "WIN",
+      "class": "adversary"
+    },
+    {
+      "name": "psl_tonga",
+      "file": "coops/portsanluis_2022-01-15.json",
+      "sha256": "1eba2e83fe79a76a1d0b134abe0f93c16ac5ce8ef87dfd52569acb32cba527f3",
+      "bytes": 36179,
+      "n": 480,
+      "onset_residual_mm": 510,
+      "baseline_mm": -783,
+      "onset_unix": 1642213440,
+      "origin_unix": 1642220085,
+      "lag_min": -111,
+      "chart_min": 780,
+      "verdict": "VOID_NEED_PRESSURE",
+      "class": "dual"
+    }
+  ],
+  "summary": {
+    "tsunami_WIN": 2,
+    "tsunami_n": 2,
+    "adversary_WIN": 1,
+    "tonga": "VOID_NEED_PRESSURE"
+  }
+}

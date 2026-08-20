@@ -27,6 +27,7 @@ If the true forcing keeps the appointment and the loud look-alike does not, the 
 |---|---|
 | **Eclipse 2026 crossed** (2026-08-12) — raw first look matched the sealed prediction at all four custody stations; pinned-archive verdict ~2026-08-30 | [Eclipse Overview](Eclipse-2026-Overview.md) |
 | **UUM-8D vs IUT — verification WIN** (2026-07-24) | [UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection.md) |
+| **Study 06 law frozen** on Punggye-ri IC.MDJ integer counts | [Results](Study-06-Explosion-vs-Earthquake-Results.md) |
 | **Study 07 law frozen** on Sgr A\* public EHT CSV | [Results](Study-07-SgrA-Milky-Way-Results.md) |
 | Raw non-normalized `csv/` | **8 / 8 WIN** |
 | Lightcurve-normalized `csv_norm/` (static-imaging input) | **8 / 8 MISS** (`SHORT_FAIL`) |
