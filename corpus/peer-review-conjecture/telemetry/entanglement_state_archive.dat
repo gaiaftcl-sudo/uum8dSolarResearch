@@ -1,0 +1,4 @@
+{"cell_id": "scrubbed", "classical_bound": "3/4", "discrete_rate": "3/4", "kind": "QPR_ROUND_STATE", "no_float": true, "rounds": 1, "transition": "jordan_swap"}
+{"cell_id": "scrubbed", "classical_bound": "9/16", "discrete_rate": "9/16", "kind": "QPR_ROUND_STATE", "no_float": true, "rounds": 2, "transition": "jordan_swap"}
+{"cell_id": "scrubbed", "classical_bound": "81/256", "discrete_rate": "81/256", "kind": "QPR_ROUND_STATE", "no_float": true, "rounds": 4, "transition": "jordan_swap"}
+{"cell_id": "scrubbed", "classical_bound": "6561/65536", "discrete_rate": "6561/65536", "kind": "QPR_ROUND_STATE", "no_float": true, "rounds": 8, "transition": "jordan_swap"}

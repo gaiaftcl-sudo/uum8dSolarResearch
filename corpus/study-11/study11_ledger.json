@@ -1,0 +1,124 @@
+{
+  "study_id": 11,
+  "title": "Ehrhart Volume Shear",
+  "sealed_at": "2026-08-22T16:00:00Z",
+  "law": {
+    "count": "integer_bbox_enumeration_with_exact_facets",
+    "volume": "leading_coeff_equals_Delta^d_h(0)/d!",
+    "adversary": "float_triangulation_volume_times_t^d_rounded",
+    "no_float_on_seal_path": true,
+    "T_max": 12
+  },
+  "grades": [
+    {
+      "id": "unit_square",
+      "dim": 2,
+      "counts_0_6": [
+        1,
+        4,
+        9,
+        16,
+        25,
+        36,
+        49
+      ],
+      "vol_fd": "1/1",
+      "vol_exp": "1/1",
+      "ref_ok": true,
+      "vol_ok": true,
+      "count_T": 169,
+      "float_pred": 216,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "id": "unit_triangle",
+      "dim": 2,
+      "counts_0_6": [
+        1,
+        3,
+        6,
+        10,
+        15,
+        21,
+        28
+      ],
+      "vol_fd": "1/2",
+      "vol_exp": "1/2",
+      "ref_ok": true,
+      "vol_ok": true,
+      "count_T": 91,
+      "float_pred": 72,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "id": "simplex3",
+      "dim": 3,
+      "counts_0_6": [
+        1,
+        4,
+        10,
+        20,
+        35,
+        56,
+        84
+      ],
+      "vol_fd": "1/6",
+      "vol_exp": "1/6",
+      "ref_ok": true,
+      "vol_ok": true,
+      "count_T": 455,
+      "float_pred": 288,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "id": "hle_poly_d2",
+      "dim": 2,
+      "counts_0_6": [
+        1,
+        4,
+        9,
+        16,
+        25,
+        36,
+        49
+      ],
+      "vol_fd": "1/1",
+      "vol_exp": "1/1",
+      "ref_ok": true,
+      "vol_ok": true,
+      "count_T": 169,
+      "float_pred": 216,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "id": "hle_poly_d3",
+      "dim": 3,
+      "counts_0_6": [
+        1,
+        6,
+        19,
+        44,
+        85,
+        146,
+        231
+      ],
+      "vol_fd": "2/3",
+      "vol_exp": "2/3",
+      "ref_ok": true,
+      "vol_ok": true,
+      "count_T": 1469,
+      "float_pred": 2304,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    }
+  ],
+  "summary": {
+    "primary_win": 5,
+    "primary_total": 5,
+    "adversary_miss": 5
+  }
+}

@@ -14,6 +14,9 @@ Math · science · compute — exact lattice, Jordan bonds, dead-cat prune.
 
 | Package | Verdict | Page |
 |---|---|---|
+| **Ehrhart volume (Study 11)** | **5/5 WIN** · **5/5** float-volume MISS | [Study 11 Results](Study-11-Ehrhart-Volume-Results) |
+| **Quantum parallel repetition (Study 12)** | **4/4 WIN** · **4/4** float-amplitude MISS | [Study 12 Results](Study-12-Quantum-Parallel-Repetition-Results) |
+| **Connes rigidity (Study 13)** | **5/5 WIN** · **5/5** float-spectral MISS | [Study 13 Results](Study-13-Connes-Rigidity-Results) |
 | **Milky Way / Sgr A\*** | **8/8 WIN** raw CSV · **8/8 MISS** imaging-norm | [Study 07 Results](Study-07-SgrA-Milky-Way-Results) |
 | **Punggye-ri explosions** | **6/6 WIN** · **3/3** adversary reject | [Study 06 Results](Study-06-Explosion-vs-Earthquake-Results) |
 | **UUM-8D vs IUT** | **WIN SEALED** — runtime topology | [UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection) |

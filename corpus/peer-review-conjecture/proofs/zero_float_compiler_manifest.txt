@@ -1,0 +1,18 @@
+ZERO FLOAT COMPILER MANIFEST
+schema: uum8d.zero_float.v1
+sealed_at: 2026-08-22T18:00:00Z
+
+TRAP
+  Float, Double, CGFloat, TimeInterval forbidden on the seal path.
+  Wire scalars are Int64 mill/micro units or Rational num/den text.
+  Comparison is ordinal (<, >) via cross-multiplication. Equality of
+  continuous amplitudes is not a legal question.
+
+WHAT IS NOT IN THIS BUNDLE
+  Execution-cell source, KVM routing, AArch64 SIMD kernels,
+  node IPs, worker IDs, cluster headers, connection pools.
+
+WHAT IS PROVEN
+  Study 11: 5/5 WIN, 5/5 float-volume adversary MISS, shard sum = 169.
+  Study 12: 4/4 WIN, discrete (3/4)^n equals bound, 751/1000 MISS.
+  Study 13: 5/5 WIN, Eisenstein linking rigid, spectral proxy MISS.

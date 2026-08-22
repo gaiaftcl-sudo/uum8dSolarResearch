@@ -1,7 +1,7 @@
 
 # Shear Studies — Program Index
 
-> **Start here:** [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm.md) · [Readers’ guide](Shear-Studies-Readers-Guide.md) · [**UUM-8D vs IUT — WIN**](UUM8D-vs-IUT-Topological-Projection.md) · [White paper](Shear-Studies-White-Paper.md) · Study 07 + Study 06 **LAW FROZEN**; Study 10 Fermi/DM **CHARTER SEALED**; eclipse crossed 2026-08-12 — pinned-archive verdict ~2026-08-30.
+> **Start here:** [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm.md) · [Readers’ guide](Shear-Studies-Readers-Guide.md) · [**UUM-8D vs IUT — WIN**](UUM8D-vs-IUT-Topological-Projection.md) · [White paper](Shear-Studies-White-Paper.md) · Studies **11 + 12 + 13** conjecture WINs sealed; Study 07 + Study 06 **LAW FROZEN**; Study 10 Fermi/DM **CHARTER SEALED**; eclipse crossed 2026-08-12 — pinned-archive verdict ~2026-08-30.
 
 The sky writes geometry, and geometry cannot lie. Every study on this wiki begins with a forcing that carries its own clock and its own track — a shadow cone sweeping a ground path, a rocket burn stamped to the manifest second, a flare peak on an X-ray clock, an earthquake origin time, a shock front crossing L1 — and asks whether a public raw archive answers at the place the track names and at the lag the travel time demands. The shear is the sealed, exact-integer test that the true forcing passes and its loudest look-alike fails: an adversary can mimic the *magnitude* of a response, but it cannot fake its *shape*.
 
@@ -10,7 +10,7 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 *Eight panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry, Earth-rotation VLBI track, Gaia sampling clock — and its own track with a public raw archive and a sealed look-alike adversary.*
 
 > [!NOTE]
-> One method, many skies. **Zero float · zero shear** is the program doctrine. Study 1 crossed 2026-08-12. Studies 06 + 07 laws frozen. Study 10 (Fermi / 43 GeV) charter sealed — Inner Galaxy null kills canonical DM annihilation for that line. Studies 02–05, 08 open. Study 09 live on Affine.Earth OS.
+> One method, many skies. **Zero float · zero shear** is the program doctrine. Study 1 crossed 2026-08-12. Studies 06 + 07 + **11 + 12 + 13** laws frozen. Study 10 (Fermi / 43 GeV) charter sealed — Inner Galaxy null kills canonical DM annihilation for that line. Studies 02–05, 08 open. Study 09 live on Affine.Earth OS. Peer-review payload: [Conjecture bundle](Peer-Review-Conjecture-Bundle).
 
 ## Program status
 
@@ -26,6 +26,9 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 8 | [Study 08 — Gaia BH1 astrometric shear](Study-08-Gaia-BH1-Astrometric-Shear.md) | OPEN — charter sealed | Raw Gaia / RV vectors for the luminous star (integer µas, m·s⁻¹) vs the published *N* M☉ dark-companion fit as adversary — pipeline 1 of the three cosmology black-hole paths; ingest = dedicated corpus only, never float-thrash into core OS or NATS. |
 | 9 | Study 09 — Global Convective Bond (Affine.Earth OS press / `Study-09-Global-Convective-Bond.md`) | **CHARTER SEALED** — live membrane on affine.earth | Traffic + atmosphere + solar; frozen Int64 thresholds; REFUSED ≠ clear sky. |
 | 10 | [Study 10 — Fermi gamma shear / dark matter](Study-10-Fermi-Gamma-Shear-Dark-Matter.md) | **CHARTER SEALED** — corpus OPEN | ~43.2 GeV stacked cluster line vs **Inner Galaxy null** — canonical DM annihilation not possible as the source; continuous stack = adversary. |
+| 11 | [Study 11 — Ehrhart volume](Study-11-Ehrhart-Volume-Shear.md) · [Corpus](Study-11-Ehrhart-Volume-Corpus.md) · [Results](Study-11-Ehrhart-Volume-Results.md) | **LAW FROZEN** — 5/5 WIN · 5/5 float adversary MISS | Integer lattice counts in dilated polytopes recover exact Ehrhart volume; float triangulation shear-fails at \(t=12\). |
+| 12 | [Study 12 — Quantum parallel repetition](Study-12-Quantum-Parallel-Repetition-Shear.md) · [Corpus](Study-12-Quantum-Parallel-Repetition-Corpus.md) · [Results](Study-12-Quantum-Parallel-Repetition-Results.md) | **LAW FROZEN** — 4/4 WIN · 4/4 float adversary MISS | CHSH classical ceiling \(3/4\) multiplies as \((3/4)^n\); float amplitude \(751/1000\) never names the appointment. |
+| 13 | [Study 13 — Connes rigidity](Study-13-Connes-Rigidity-Shear.md) · [Corpus](Study-13-Connes-Rigidity-Corpus.md) · [Results](Study-13-Connes-Rigidity-Results.md) | **LAW FROZEN** — 5/5 WIN · 5/5 float adversary MISS | Group words walk the Eisenstein lattice; linking \((q,r)\) is rigid; float spectral proxy is offset by one. |
 
 ## What this program protects
 

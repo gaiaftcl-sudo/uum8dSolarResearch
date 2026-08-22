@@ -8,6 +8,11 @@
 
 ## ✅ Sealed results
 
+- [Study 11 — Ehrhart Volume](Study-11-Ehrhart-Volume-Results)
+- [Study 12 — Parallel Repetition](Study-12-Quantum-Parallel-Repetition-Results)
+- [Study 13 — Connes Rigidity](Study-13-Connes-Rigidity-Results)
+- [Peer-review bundle](Peer-Review-Conjecture-Bundle)
+- [Conjecture alignment](Conjecture-Alignment-UUM8D)
 - [Study 07 — Milky Way Results](Study-07-SgrA-Milky-Way-Results)
 - [Study 06 — Explosion Results](Study-06-Explosion-vs-Earthquake-Results)
 - [Study 10 — Fermi / Dark Matter](Study-10-Fermi-Gamma-Shear-Dark-Matter)

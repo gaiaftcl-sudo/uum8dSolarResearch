@@ -1,0 +1,64 @@
+{
+  "schema": "uum8d.vqbit.bipartite_transition.v1",
+  "integer_only": true,
+  "game": "CHSH",
+  "win_rule": "a XOR b == x AND y",
+  "inputs": [
+    0,
+    1
+  ],
+  "outputs": [
+    0,
+    1
+  ],
+  "classical_ceiling": "3/4",
+  "round_transition": {
+    "kind": "discrete_jordan_swap",
+    "win_numer_multiplier": 3,
+    "win_denom_multiplier": 4,
+    "norm": "unit_rational"
+  },
+  "rounds": [
+    {
+      "rounds": 1,
+      "classical_bound": "3/4",
+      "discrete_rate": "3/4",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "rounds": 2,
+      "classical_bound": "9/16",
+      "discrete_rate": "9/16",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "rounds": 4,
+      "classical_bound": "81/256",
+      "discrete_rate": "81/256",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "rounds": 8,
+      "classical_bound": "6561/65536",
+      "discrete_rate": "6561/65536",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    }
+  ],
+  "ledger_summary": {
+    "primary_win": 4,
+    "primary_total": 4,
+    "adversary_miss": 4
+  }
+}

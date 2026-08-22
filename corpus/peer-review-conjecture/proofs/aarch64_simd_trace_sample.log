@@ -1,0 +1,10 @@
+AARCH64 INTEGER VECTOR TRACE SAMPLE — scrubbed, no host, no ISA dump
+width=4 lanes  element=int64  op=dot_then_compare
+polytope=unit_square dilation=12
+lane_op[0]  nx*x + ny*y  <= c   accept
+lane_op[1]  nx*x + ny*y  <= c   accept
+lane_op[2]  nx*x + ny*y  <= c   reject
+lane_op[3]  nx*x + ny*y  <= c   accept
+bbox_points_tested=169  facet_rejects_are_integer  float_ops=0
+shard_partition  39+39+39+52 = 169  identity holds
+end_trace

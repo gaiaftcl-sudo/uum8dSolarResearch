@@ -1,0 +1,142 @@
+{
+  "schema": "uum8d.ehrhart.polytope_boundary.v1",
+  "integer_only": true,
+  "T_max": 12,
+  "polytopes": [
+    {
+      "id": "unit_square",
+      "dim": 2,
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "volume": "1/1"
+    },
+    {
+      "id": "unit_triangle",
+      "dim": 2,
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "volume": "1/2"
+    },
+    {
+      "id": "simplex3",
+      "dim": 3,
+      "vertices": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "volume": "1/6"
+    },
+    {
+      "id": "hle_poly_d2",
+      "dim": 2,
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "volume": "1/1"
+    },
+    {
+      "id": "hle_poly_d3",
+      "dim": 3,
+      "vertices": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "volume": "2/3"
+    }
+  ],
+  "facet_rule": "integer_halfspace_nx+ny(+nz)<=c",
+  "ledger_summary": {
+    "primary_win": 5,
+    "primary_total": 5,
+    "adversary_miss": 5
+  }
+}

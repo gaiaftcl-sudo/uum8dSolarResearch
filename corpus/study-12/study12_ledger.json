@@ -1,0 +1,61 @@
+{
+  "study_id": 12,
+  "title": "Quantum Parallel Repetition Shear",
+  "sealed_at": "2026-08-22T18:00:00Z",
+  "law": {
+    "game": "CHSH_a_xor_b_eq_x_and_y",
+    "classical_ceiling": "3/4",
+    "repetition": "(3/4)^n exact rational product",
+    "adversary": "751/1000 millisecond float proxy",
+    "no_float_on_seal_path": true,
+    "rounds": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "grades": [
+    {
+      "rounds": 1,
+      "classical_bound": "3/4",
+      "discrete_rate": "3/4",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "rounds": 2,
+      "classical_bound": "9/16",
+      "discrete_rate": "9/16",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "rounds": 4,
+      "classical_bound": "81/256",
+      "discrete_rate": "81/256",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "rounds": 8,
+      "classical_bound": "6561/65536",
+      "discrete_rate": "6561/65536",
+      "float_adversary": "751/1000",
+      "bound_ok": true,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    }
+  ],
+  "summary": {
+    "primary_win": 4,
+    "primary_total": 4,
+    "adversary_miss": 4
+  }
+}

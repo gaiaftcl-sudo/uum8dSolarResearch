@@ -1,0 +1,73 @@
+{
+  "study_id": 13,
+  "title": "Connes Rigidity Shear",
+  "sealed_at": "2026-08-22T18:00:00Z",
+  "law": {
+    "lattice": "Eisenstein_hex_axial_qr",
+    "invariant": "terminal_linking_position",
+    "adversary": "abs(q)+abs(r)+1 float-spectral proxy",
+    "no_float_on_seal_path": true
+  },
+  "grades": [
+    {
+      "word": "Z2_a2b",
+      "presentation": "cyclicZ2",
+      "reduced": "b",
+      "linking_q": 0,
+      "linking_r": 1,
+      "rigid_class": "RIGID_CYCLE",
+      "float_spectral_adversary": 2,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "word": "Z2_aba",
+      "presentation": "cyclicZ2",
+      "reduced": "b",
+      "linking_q": 0,
+      "linking_r": 1,
+      "rigid_class": "RIGID_CYCLE",
+      "float_spectral_adversary": 2,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "word": "Z2_abAB",
+      "presentation": "freeAbelianZ2",
+      "reduced": "",
+      "linking_q": 0,
+      "linking_r": 0,
+      "rigid_class": "RIGID_COMMUTATIVE",
+      "float_spectral_adversary": 1,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "word": "Z2_ba",
+      "presentation": "freeAbelianZ2",
+      "reduced": "ab",
+      "linking_q": 1,
+      "linking_r": 1,
+      "rigid_class": "RIGID_TRANSLATION",
+      "float_spectral_adversary": 3,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    },
+    {
+      "word": "S3_abab",
+      "presentation": "symmetricS3",
+      "reduced": "abab",
+      "linking_q": 2,
+      "linking_r": 2,
+      "rigid_class": "RIGID_BOUNDED",
+      "float_spectral_adversary": 5,
+      "adversary_miss": true,
+      "verdict": "WIN"
+    }
+  ],
+  "summary": {
+    "primary_win": 5,
+    "primary_total": 5,
+    "adversary_miss": 5
+  }
+}
