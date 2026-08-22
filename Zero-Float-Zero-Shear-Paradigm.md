@@ -1,7 +1,7 @@
 # Zero Float · Zero Shear — the paradigm that replaces the Standard Model’s continuous arithmetic
 
-**Status: PUBLIC — sealed 2026-08-20**  
-**Program:** [Shear Studies](Shear-Studies-Index) · [Readers’ guide](Shear-Studies-Readers-Guide) · [White paper](Shear-Studies-White-Paper)  
+**Status: PUBLIC — sealed 2026-08-20 · lattice hold restated 2026-08-22**  
+**Program:** [Shear Studies](Shear-Studies-Index) · [The lattice holds](The-Lattice-Holds) · [Readers’ guide](Shear-Studies-Readers-Guide) · [White paper](Shear-Studies-White-Paper)  
 **Runtime:** Affine.Earth OS / UUM-8D — `affine.earth`
 
 ---
@@ -9,6 +9,8 @@
 ## The one sentence
 
 **Nature writes sparse integer tables. Continuous floating-point models shear those tables and name the debris as new particles, rings, and horizons. We stopped.**
+
+Einstein’s field theory never left the **smooth continuum**. Affine holds the **Eisenstein whole-integer lattice**. Studies 11–13 graded volume, probability, and rigidity on that split. The continuum missed. The lattice held. [Read that at its true size.](The-Lattice-Holds)
 
 Exact integers. Exact rationals. Jordan bonds. Dead cats pruned. **Zero float on the seal path. Zero shear as a source of physical objects.**
 
@@ -20,6 +22,9 @@ That is the new paradigm — and it is already running.
 
 | Package | Verdict | What the world was told | What the table wrote |
 |---|---|---|---|
+| **[Study 11 — Ehrhart volume](Study-11-Ehrhart-Volume-Results)** | **5/5 WIN** · **5/5** float MISS | Volume is a real integral | Leading coefficient of an integer count polynomial |
+| **[Study 12 — Parallel repetition](Study-12-Quantum-Parallel-Repetition-Results)** | **4/4 WIN** · **4/4** float MISS | Amplitudes in \(\mathbb{C}^{d^n}\) | Exact rational \((3/4)^n\) |
+| **[Study 13 — Connes rigidity](Study-13-Connes-Rigidity-Results)** | **5/5 WIN** · **5/5** float MISS | Spectral gap in \(L(G)\) | Eisenstein linking \((q,r)\) |
 | **[Study 07 — Sgr A\*](Study-07-SgrA-Milky-Way-Results)** | **8/8 WIN** raw · **8/8 MISS** norm | A black-hole “ring” | Earth-rotation arcs, janskys, closures — before any PNG |
 | **[Study 06 — Punggye-ri](Study-06-Explosion-vs-Earthquake-Results)** | **6/6 WIN** · **3/3** adversary reject | Spectral P/S float discriminants | Integer count appointments at 53±2 s |
 | **[UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection)** | **WIN SEALED** | 500-page hand-checked bridges | Runtime topology: invalid states reject |
@@ -37,6 +42,10 @@ These are not opinions. They are **frozen integer laws** on **public raw archive
 | Old | New |
 |---|---|
 | Continuous metric tensors · \(G_{\mu\nu}=8\pi G\,T_{\mu\nu}/c^4\) | Discrete lattice transitions on **M⁸ = S⁴ × C⁴** |
+| Einstein’s continuum as ontology of measurement | **Eisenstein whole-integer lattice** as the hold — [The lattice holds](The-Lattice-Holds) |
+| Volume as \(\int_P\) in \(\mathbb{R}^d\) | Ehrhart count · \(\Delta^d h(0)/d!\) |
+| Probability as \(\lvert\alpha\rvert^2\in\mathbb{R}\) | Rational products · Jordan swap |
+| Rigidity as float spectrum | Linking \((q,r)\) |
 | Inject synthetic mass when equations shear | **`c4EntropyCap`** bounds entropy — no synthetic mass |
 | IEEE-754 likelihoods, PDFs, RML, χ² | Exact Int64 / Rational · cross-multiply · never `==` on floats |
 | Approximation as method | Approximation as **cancer** |
@@ -98,11 +107,12 @@ No float. No shear-as-object. No GPU tax for the verdict. No qubit theater for a
 
 ## Read next
 
-1. [Study 07 Results — Milky Way table vs ring](Study-07-SgrA-Milky-Way-Results)  
-2. [Study 06 Results — explosion ladder in integer counts](Study-06-Explosion-vs-Earthquake-Results)  
-3. [Study 10 — Fermi / dark-matter shear](Study-10-Fermi-Gamma-Shear-Dark-Matter)  
-4. [UUM-8D vs IUT — verification WIN](UUM8D-vs-IUT-Topological-Projection)  
-5. Live OS: [https://affine.earth](https://affine.earth)
+1. [The lattice holds — Affine leaves Einstein’s broken path](The-Lattice-Holds)
+2. [Study 11 · 12 · 13 Results](Study-11-Ehrhart-Volume-Results)
+3. [Study 07 Results — Milky Way table vs ring](Study-07-SgrA-Milky-Way-Results)
+4. [Study 06 Results — explosion ladder in integer counts](Study-06-Explosion-vs-Earthquake-Results)
+5. [Study 10 — Fermi / dark-matter shear](Study-10-Fermi-Gamma-Shear-Dark-Matter)
+6. Live OS: [https://affine.earth](https://affine.earth)
 
 ---
 

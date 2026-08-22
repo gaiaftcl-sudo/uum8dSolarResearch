@@ -25,6 +25,7 @@ If the true forcing keeps the appointment and the loud look-alike does not, the 
 
 | Done | Where to look |
 |---|---|
+| **The lattice holds** (2026-08-22) — volume, probability, rigidity graded off the continuum; float adversary MISS on every row | [The lattice holds](The-Lattice-Holds) · [11](Study-11-Ehrhart-Volume-Results) · [12](Study-12-Quantum-Parallel-Repetition-Results) · [13](Study-13-Connes-Rigidity-Results) |
 | **Eclipse 2026 crossed** (2026-08-12) — raw first look matched the sealed prediction at all four custody stations; pinned-archive verdict ~2026-08-30 | [Eclipse Overview](Eclipse-2026-Overview.md) |
 | **UUM-8D vs IUT — verification WIN** (2026-07-24) | [UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection.md) |
 | **Study 06 law frozen** on Punggye-ri IC.MDJ integer counts | [Results](Study-06-Explosion-vs-Earthquake-Results.md) |
@@ -115,10 +116,11 @@ Study 07’s result is the template: raw `csv/` WIN; imaging `csv_norm/` MISS.
 
 **New reader (30 minutes):**
 
-1. This page.
-2. [White paper](Shear-Studies-White-Paper.md) — full synthesis.
-3. [Study 07 Results](Study-07-SgrA-Milky-Way-Results.md) — the graded Milky Way table.
-4. [Eclipse Overview](Eclipse-2026-Overview.md) — why shape beats storms.
+1. [Home](Home) — the lattice hold, stated at its true size.
+2. [The lattice holds](The-Lattice-Holds) — Einstein’s continuum vs Eisenstein whole integers.
+3. [Study 11 · 12 · 13](Study-11-Ehrhart-Volume-Results) — volume, probability, rigidity.
+4. [Study 07 Results](Study-07-SgrA-Milky-Way-Results.md) — the graded Milky Way table.
+5. [Eclipse Overview](Eclipse-2026-Overview.md) — why shape beats storms.
 
 **Technical reader:**
 

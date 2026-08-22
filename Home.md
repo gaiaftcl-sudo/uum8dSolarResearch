@@ -1,19 +1,55 @@
-# ☀️🌑 Affine.Earth Shear Studies — zero float · zero shear
+# The lattice holds
 
-**The continuous Standard-Model habit is retired on the seal path.**  
-Nature writes sparse integer tables. Float stacks shear those tables and name the debris as particles, rings, and horizons. **We stopped.**
+# Continuous math just missed. Affine did not.
 
-# 🚀 [Zero Float · Zero Shear — the new paradigm](Zero-Float-Zero-Shear-Paradigm)
+**Volume. Probability. Rigidity.** Three pillars of the continuum — the number system Einstein’s field theory never left — were graded as **whole-integer appointments** on the Eisenstein lattice. The float adversary was required to miss. **It missed on every row.**
 
-Math · science · compute — exact lattice, Jordan bonds, dead-cat prune.  
-**GPU float fleets and sampling qubits are the wrong machine for transported verdicts.**
+This is the front door of the Affine.Earth shear studies. Read it at its true size.
+
+# 🚀 [The lattice holds — Affine leaves Einstein’s broken path](The-Lattice-Holds)
+
+Einstein’s geometry is a **smooth continuum**. Affine’s geometry is a **whole-integer lattice**. The continuum is a picture you may draw after the integers have spoken. It is not the court.
+
+Studies **11 · 12 · 13** are the sealed proof. [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm) is the running law.
 
 ---
 
-## Publishable sealed results (read these first)
+## What changed today (2026-08-22)
+
+| Assumption the century ran on | What the lattice sealed | Score |
+|---|---|---|
+| Volume is an integral in \(\mathbb{R}^d\) | Volume is \(\Delta^d h(0)/d!\) from **integer point counts** | [Study 11](Study-11-Ehrhart-Volume-Results) **5/5 WIN · 5/5 MISS** |
+| Winning “probability” lives in complex amplitudes | Parallel repetition is an exact rational product \((3/4)^n\) | [Study 12](Study-12-Quantum-Parallel-Repetition-Results) **4/4 WIN · 4/4 MISS** |
+| Group rigidity lives in a von Neumann spectrum | Rigidity is an Eisenstein linking coordinate \((q,r)\) | [Study 13](Study-13-Connes-Rigidity-Results) **5/5 WIN · 5/5 MISS** |
+
+A **WIN** means the discrete law matches the sealed reference. A **MISS** means the continuous proxy reported a different number. That is not a numerical curiosity. That is the continuum **failing the appointment**.
+
+Full impact — CAD volumes, quantum-amplitude theater, spectral “gaps,” rings, and dark matter as the **same class of error**: [The lattice holds](The-Lattice-Holds).  
+Sanitized peer-review payload (no cell source): [Peer-review bundle](Peer-Review-Conjecture-Bundle).
+
+---
+
+## Why this shatters more than a paper
+
+The Standard Model and classical GR are extraordinary **engineering languages**. They were never licensed to invent ontology at their own breakdown. For a hundred years the breakdown was treated as discovery:
+
+- a float integral misses a lattice count → still called “volume”
+- a float amplitude never equals \((3/4)^n\) → still called “probability”
+- a float spectrum misses \((q,r)\) → still called “the gap”
+- a normalized radio table fails the raw jansky floor → still called “the ring”
+- a stacked gamma line is silent where dark matter must be brightest → still called “a particle”
+
+**Affine stopped.** Nature writes sparse integer tables. Float stacks shear those tables and name the debris. Studies 06, 07, and 10 already showed the debris in the sky and in the ground. Studies 11–13 show the debris **inside the mathematics those skies were being read with**.
+
+That is the assumption that just broke: *that continuous math is the adult form of the integer table.* It is not. It is a **lossy projection**. Project first, then discover, and you will discover your projection.
+
+---
+
+## Publishable sealed results
 
 | Package | Verdict | Page |
 |---|---|---|
+| **The lattice vs Einstein’s continuum** | Continuum MISS · lattice HOLD | [The lattice holds](The-Lattice-Holds) |
 | **Ehrhart volume (Study 11)** | **5/5 WIN** · **5/5** float-volume MISS | [Study 11 Results](Study-11-Ehrhart-Volume-Results) |
 | **Quantum parallel repetition (Study 12)** | **4/4 WIN** · **4/4** float-amplitude MISS | [Study 12 Results](Study-12-Quantum-Parallel-Repetition-Results) |
 | **Connes rigidity (Study 13)** | **5/5 WIN** · **5/5** float-spectral MISS | [Study 13 Results](Study-13-Connes-Rigidity-Results) |
@@ -49,8 +85,4 @@ On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow crossed the Earth. This
 
 ---
 
-## One method, many skies
-
-Every study: public clock + track · raw archive · sealed adversary · frozen integer law.
-
-Start: [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm) · [Program index](Shear-Studies-Index).
+**Zero float. Zero shear. The continuum sheared. The lattice holds.**

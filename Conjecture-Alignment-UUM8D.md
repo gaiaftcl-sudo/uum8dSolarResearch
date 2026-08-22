@@ -1,7 +1,9 @@
 # Conjecture Alignment with UUM-8D — architectural map
 
 **Status: PUBLIC — 2026-08-22**  
-**Program:** [Shear Studies](Shear-Studies-Index) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm) · [Peer-review bundle](Peer-Review-Conjecture-Bundle)
+**Program:** [The lattice holds](The-Lattice-Holds) · [Shear Studies](Shear-Studies-Index) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm) · [Peer-review bundle](Peer-Review-Conjecture-Bundle)
+
+Three pillars of continuous mathematics — volume, probability, rigidity — were taken off Einstein’s continuum and graded on the Eisenstein whole-integer lattice. The continuum missed. The lattice held. That is the assumption that broke. [Impact, stated at its true size.](The-Lattice-Holds)
 
 ---
 
