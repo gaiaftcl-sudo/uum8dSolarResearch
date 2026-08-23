@@ -12,6 +12,26 @@ Hologram WASM is a different face. These courts do not go through it. The resear
 
 Public wiki of the same studies: [uum8dSolarResearch](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki).
 
+## Agent bind — the court is already MCP
+
+Do not write a second law in Python, Node, LangChain, or LlamaIndex. Bind the remote.
+
+```json
+{
+  "mcpServers": {
+    "affine-earth-math-court": {
+      "url": "https://affine.earth/language-invariant/mcp"
+    }
+  }
+}
+```
+
+SSE face: `https://affine.earth/language-invariant/mcp/sse`
+
+`tools/list` on that URL returns the fifteen tools the cell serves (`execute_transition`, `verify_jordan_bond`, `twin.robotics.evaluate_exact_ik`, …). A float POST is HTTP 400 `REFUSED_FLOAT`. Geometry `dilation: 12` seals count **169** against float adversary **216**.
+
+Registry descriptor in gaiaFTCL: `docs/mcp/server.json` (`earth.affine/math-court`). Prove: `bash scripts/prove-math-court-agent-ingest.sh`.
+
 ---
 
 ## 0. Open the catalog (start here)
