@@ -110,10 +110,10 @@ No float. No shear-as-object. No GPU tax for the verdict. No qubit theater for a
 1. [The lattice holds — Affine leaves Einstein’s broken path](The-Lattice-Holds)
 2. [Impact study — physics, health, finance, CS, fluids](Impact-Study-Death-of-Continuous-Shear)
 3. [Study 11 · 12 · 13 Results](Study-11-Ehrhart-Volume-Results)
-3. [Study 07 Results — Milky Way table vs ring](Study-07-SgrA-Milky-Way-Results)
-4. [Study 06 Results — explosion ladder in integer counts](Study-06-Explosion-vs-Earthquake-Results)
-5. [Study 10 — Fermi / dark-matter shear](Study-10-Fermi-Gamma-Shear-Dark-Matter)
-6. Live OS: [https://affine.earth](https://affine.earth)
+4. [Study 07 Results — Milky Way table vs ring](Study-07-SgrA-Milky-Way-Results)
+5. [Study 06 Results — explosion ladder in integer counts](Study-06-Explosion-vs-Earthquake-Results)
+6. [Study 10 — Fermi / dark-matter shear](Study-10-Fermi-Gamma-Shear-Dark-Matter)
+7. Live OS: [https://affine.earth](https://affine.earth)
 
 ---
 
