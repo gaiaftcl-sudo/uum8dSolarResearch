@@ -12,7 +12,7 @@ If a wrapper computes volume, Ehrhart, Eisenstein, or a float projection, it is 
 | Live MCP | `https://affine.earth/language-invariant/mcp` |
 | SSE | `https://affine.earth/language-invariant/mcp/sse` |
 | Glama connector | https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote |
-| Look (no visitor data) | https://affine.earth/language-game/#researcher |
+| Look (no visitor data) | https://affine.earth/language-game/#researcher · paints 15 tool names from `GET /language-game/mcp-tools.json` |
 | Official registry | `earth.affine/math-court` |
 | Courts | `POST /language-invariant/game/{domain}/ingest` |
 
