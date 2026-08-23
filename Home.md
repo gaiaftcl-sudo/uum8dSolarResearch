@@ -24,8 +24,9 @@ Studies **11 · 12 · 13** are the sealed proof. [Zero Float · Zero Shear](Zero
 
 A **WIN** means the discrete law matches the sealed reference. A **MISS** means the continuous proxy reported a different number. That is not a numerical curiosity. That is the continuum **failing the appointment**.
 
-Full impact — CAD volumes, quantum-amplitude theater, spectral “gaps,” rings, and dark matter as the **same class of error**: [The lattice holds](The-Lattice-Holds).  
-Sanitized peer-review payload (no cell source): [Peer-review bundle](Peer-Review-Conjecture-Bundle).
+**Deep dive — every domain, old equation, new court:** [Impact study — the death of continuous shear](Impact-Study-Death-of-Continuous-Shear)  
+Physics, health, finance, computer science, and continuum fluid engineering. Navier–Stokes is a sketch. The plant was sized on the adversary.  
+Paradigm: [The lattice holds](The-Lattice-Holds) · payload: [Peer-review bundle](Peer-Review-Conjecture-Bundle).
 
 ---
 
@@ -49,6 +50,7 @@ That is the assumption that just broke: *that continuous math is the adult form 
 
 | Package | Verdict | Page |
 |---|---|---|
+| **Death of continuous shear (impact)** | Continuum equations retired as courts | [Impact study](Impact-Study-Death-of-Continuous-Shear) |
 | **The lattice vs Einstein’s continuum** | Continuum MISS · lattice HOLD | [The lattice holds](The-Lattice-Holds) |
 | **Ehrhart volume (Study 11)** | **5/5 WIN** · **5/5** float-volume MISS | [Study 11 Results](Study-11-Ehrhart-Volume-Results) |
 | **Quantum parallel repetition (Study 12)** | **4/4 WIN** · **4/4** float-amplitude MISS | [Study 12 Results](Study-12-Quantum-Parallel-Repetition-Results) |

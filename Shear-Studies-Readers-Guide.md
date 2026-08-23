@@ -26,6 +26,7 @@ If the true forcing keeps the appointment and the loud look-alike does not, the 
 | Done | Where to look |
 |---|---|
 | **The lattice holds** (2026-08-22) — volume, probability, rigidity graded off the continuum; float adversary MISS on every row | [The lattice holds](The-Lattice-Holds) · [11](Study-11-Ehrhart-Volume-Results) · [12](Study-12-Quantum-Parallel-Repetition-Results) · [13](Study-13-Connes-Rigidity-Results) |
+| **Impact study** (2026-08-23) — physics, health, finance, CS, continuum CFD rewritten; old equations named; NS retired as a court | [Death of continuous shear](Impact-Study-Death-of-Continuous-Shear) |
 | **Eclipse 2026 crossed** (2026-08-12) — raw first look matched the sealed prediction at all four custody stations; pinned-archive verdict ~2026-08-30 | [Eclipse Overview](Eclipse-2026-Overview.md) |
 | **UUM-8D vs IUT — verification WIN** (2026-07-24) | [UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection.md) |
 | **Study 06 law frozen** on Punggye-ri IC.MDJ integer counts | [Results](Study-06-Explosion-vs-Earthquake-Results.md) |

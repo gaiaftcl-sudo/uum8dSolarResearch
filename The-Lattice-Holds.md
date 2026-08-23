@@ -1,7 +1,8 @@
 # The lattice holds — Affine leaves Einstein’s broken path
 
 **Status: PUBLIC — 2026-08-22**  
-**Sealed proof:** Studies [11](Study-11-Ehrhart-Volume-Results) · [12](Study-12-Quantum-Parallel-Repetition-Results) · [13](Study-13-Connes-Rigidity-Results) · [Peer-review bundle](Peer-Review-Conjecture-Bundle)
+**Sealed proof:** Studies [11](Study-11-Ehrhart-Volume-Results) · [12](Study-12-Quantum-Parallel-Repetition-Results) · [13](Study-13-Connes-Rigidity-Results) · [Peer-review bundle](Peer-Review-Conjecture-Bundle)  
+**Domain rewrite:** [Impact study — the death of continuous shear](Impact-Study-Death-of-Continuous-Shear)
 
 ---
 
