@@ -2,7 +2,7 @@
 
 **Status: PUBLIC — sealed 2026-08-20 · lattice hold restated 2026-08-22**  
 **Program:** [Shear Studies](Shear-Studies-Index) · [The lattice holds](The-Lattice-Holds) · [Readers’ guide](Shear-Studies-Readers-Guide) · [White paper](Shear-Studies-White-Paper)  
-**Runtime:** Affine.Earth OS / UUM-8D — `affine.earth`
+**Runtime:** Affine.Earth OS / UUM-8D — `affine.earth` · [explore the live courts](Affine-Earth-Lattice-Endpoints)
 
 ---
 

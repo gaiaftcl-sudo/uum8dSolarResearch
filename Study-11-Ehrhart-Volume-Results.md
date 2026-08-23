@@ -8,6 +8,8 @@
 
 Charter: [Study 11](Study-11-Ehrhart-Volume-Shear) · Corpus: [Corpus](Study-11-Ehrhart-Volume-Corpus) · Ledger: `corpus/study-11/study11_ledger.json`
 
+**Live court (2026-08-23):** `POST https://affine.earth/language-invariant/game/geometry/ingest` — explorer: [Lattice role endpoints](Affine-Earth-Lattice-Endpoints). Measured: `unit_square` @ `dilation` 12 → `lattice_count` 169 · `volume` `1/1` · `float_adversary` 216 · verdict **WIN**.
+
 ---
 
 ## Frozen law (sealed 2026-08-22T16:00:00Z)

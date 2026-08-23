@@ -8,6 +8,8 @@
 
 Charter: [Study 12](Study-12-Quantum-Parallel-Repetition-Shear) · Corpus: [Corpus](Study-12-Quantum-Parallel-Repetition-Corpus) · Ledger: `corpus/study-12/study12_ledger.json`
 
+**Live court (2026-08-23):** `POST https://affine.earth/language-invariant/game/chance/ingest` — explorer: [Lattice role endpoints](Affine-Earth-Lattice-Endpoints). Measured: `role=quantum_info` `rounds=1` → verdict **WIN**.
+
 ---
 
 ## Frozen law (sealed 2026-08-22T18:00:00Z)

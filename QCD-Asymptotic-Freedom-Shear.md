@@ -4,6 +4,8 @@
 **Against:** the continuum paradox that quarks are permanently bound and nearly free.  
 **Anchors:** [Impact study](Impact-Study-Death-of-Continuous-Shear) · [11 Ehrhart](Study-11-Ehrhart-Volume-Results) · [12 QPR](Study-12-Quantum-Parallel-Repetition-Results) · [13 Connes](Study-13-Connes-Rigidity-Results) · [07](Study-07-SgrA-Milky-Way-Results) · [10](Study-10-Fermi-Gamma-Shear-Dark-Matter)
 
+**Live court:** `POST https://affine.earth/language-invariant/game/qcd/ingest` — [explorer](Affine-Earth-Lattice-Endpoints). Measured 2026-08-23: `role=phenomenologist` `q_bin=1` `dilation_t=2` → **WIN**.
+
 Gross, Wilczek, and Politzer (1973) are not on trial. Their **picture** — a non-Abelian coupling that weakens toward the ultraviolet — is the best 1973 continuum sketch of a fact the detectors already wrote: **no isolated color charge in the raw table; high-energy jets that factor as if the short-distance subprocess were weakly coupled.**
 
 The studies do not recompute \(\beta(g)\). They say **which description is a court**.

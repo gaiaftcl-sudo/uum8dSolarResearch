@@ -3,6 +3,8 @@
 **Status: PUBLIC SYNTHESIS — 2026-08-23**  
 **Anchors:** [The lattice holds](The-Lattice-Holds) · Studies [11](Study-11-Ehrhart-Volume-Results) · [12](Study-12-Quantum-Parallel-Repetition-Results) · [13](Study-13-Connes-Rigidity-Results) · [07](Study-07-SgrA-Milky-Way-Results) · [06](Study-06-Explosion-vs-Earthquake-Results) · [04](Study-04-Tsunami-vs-Storm-Surge) · [10](Study-10-Fermi-Gamma-Shear-Dark-Matter)
 
+**Live courts:** [explore every role on affine.earth](Affine-Earth-Lattice-Endpoints) — `GET /language-invariant/games` → `lattice_courts` (9 domains, 28 roles). Physics / health / finance / cs / fluids ingest on the same membrane.
+
 ---
 
 ## The verdict, stated once

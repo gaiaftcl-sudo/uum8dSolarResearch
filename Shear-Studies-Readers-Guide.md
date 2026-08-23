@@ -2,6 +2,8 @@
 
 This wiki is not a blog of opinions. It is a **public ledger of shape tests**. Each study asks one question in the same grammar. This page tells you what we just did, what the numbers mean, and how cosmology’s three black-hole pipelines sit inside that grammar.
 
+**Replay on the live OS:** [Explore the lattice courts](Affine-Earth-Lattice-Endpoints) — catalog first (`GET https://affine.earth/language-invariant/games`), then one `POST` per role.
+
 ---
 
 ## The one idea (read this first)

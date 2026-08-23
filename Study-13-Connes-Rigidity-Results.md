@@ -8,6 +8,8 @@
 
 Charter: [Study 13](Study-13-Connes-Rigidity-Shear) · Corpus: [Corpus](Study-13-Connes-Rigidity-Corpus) · Ledger: `corpus/study-13/study13_ledger.json`
 
+**Live court (2026-08-23):** `POST https://affine.earth/language-invariant/game/algebra/ingest` — explorer: [Lattice role endpoints](Affine-Earth-Lattice-Endpoints). Measured: `word=Z2_aba` → verdict **WIN**. Corpus words: `Z2_a2b` `Z2_aba` `Z2_abAB` `Z2_ba` `S3_abab`.
+
 ---
 
 ## Frozen law (sealed 2026-08-22T18:00:00Z)

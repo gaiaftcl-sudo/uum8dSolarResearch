@@ -14,7 +14,22 @@ Studies **11 · 12 · 13** are the sealed proof. [Zero Float · Zero Shear](Zero
 
 ---
 
-## What changed today (2026-08-22)
+## What changed (2026-08-23) — the courts are live
+
+Researchers replay the sealed studies on [affine.earth](https://affine.earth). Catalog: `GET /language-invariant/games` → `lattice_courts` (9 domains, 28 roles). Copy-paste curls and the measured 2026-08-23 receipts: **[Explore the lattice courts](Affine-Earth-Lattice-Endpoints)**.
+
+| Court | POST | Measured |
+|---|---|---|
+| geometry (Study 11) | `/language-invariant/game/geometry/ingest` | WIN · count 169 · vol `1/1` · float 216 |
+| chance (Study 12) | `/language-invariant/game/chance/ingest` | WIN |
+| algebra (Study 13) | `/language-invariant/game/algebra/ingest` | WIN · `Z2_aba` |
+| physics · qcd · health · finance · cs · fluids | `/language-invariant/game/{domain}/ingest` | CALORIE (physics CONTRACT) |
+
+Integer body only. `1.5` → `REFUSED_FLOAT`. No `source` → `REFUSED_UNATTRIBUTED`.
+
+---
+
+## What the lattice sealed (2026-08-22)
 
 | Assumption the century ran on | What the lattice sealed | Score |
 |---|---|---|
@@ -24,6 +39,7 @@ Studies **11 · 12 · 13** are the sealed proof. [Zero Float · Zero Shear](Zero
 
 A **WIN** means the discrete law matches the sealed reference. A **MISS** means the continuous proxy reported a different number. That is not a numerical curiosity. That is the continuum **failing the appointment**.
 
+**Integrate on affine.earth:** [one POST per role, every rewritten domain](Affine-Earth-Lattice-Endpoints)  
 **QCD’s “free and confined” paradox:** [same law, different dilation](QCD-Asymptotic-Freedom-Shear) — the table never wrote a free quark.  
 **Deep dive — every domain, old equation, new court:** [Impact study — the death of continuous shear](Impact-Study-Death-of-Continuous-Shear)  
 Physics, health, finance, computer science, and continuum fluid engineering. Navier–Stokes is a sketch. The plant was sized on the adversary.  
