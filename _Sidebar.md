@@ -2,6 +2,7 @@
 
 - [**The lattice holds**](The-Lattice-Holds)
 - [**Impact study — continuum dead**](Impact-Study-Death-of-Continuous-Shear)
+- [**QCD: freedom is dilation**](QCD-Asymptotic-Freedom-Shear)
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm)
 - [UUM-8D vs IUT — WIN](UUM8D-vs-IUT-Topological-Projection)
 - [Readers’ guide](Shear-Studies-Readers-Guide)

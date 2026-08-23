@@ -24,6 +24,7 @@ Studies **11 · 12 · 13** are the sealed proof. [Zero Float · Zero Shear](Zero
 
 A **WIN** means the discrete law matches the sealed reference. A **MISS** means the continuous proxy reported a different number. That is not a numerical curiosity. That is the continuum **failing the appointment**.
 
+**QCD’s “free and confined” paradox:** [same law, different dilation](QCD-Asymptotic-Freedom-Shear) — the table never wrote a free quark.  
 **Deep dive — every domain, old equation, new court:** [Impact study — the death of continuous shear](Impact-Study-Death-of-Continuous-Shear)  
 Physics, health, finance, computer science, and continuum fluid engineering. Navier–Stokes is a sketch. The plant was sized on the adversary.  
 Paradigm: [The lattice holds](The-Lattice-Holds) · payload: [Peer-review bundle](Peer-Review-Conjecture-Bundle).
