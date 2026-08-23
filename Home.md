@@ -16,7 +16,7 @@ Studies **11 · 12 · 13** are the sealed proof. [Zero Float · Zero Shear](Zero
 
 ## What changed (2026-08-23) — the courts are live
 
-**Agent builders:** public MCP clients and framework wrappers are in this git — [`clients/math-court-mcp`](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp). Bind `https://affine.earth/language-invariant/mcp`. Registry name `earth.affine/math-court`. The membrane stays off this repository.
+**Agent builders:** the live court is the remote MCP. **Glama (approved):** [Affine Earth Math Court Remote](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote). Public bind tree: [`clients/math-court-mcp`](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp). Registry: `earth.affine/math-court`.
 
 Researchers start in the main UI — **[look, do not share](https://affine.earth/language-game/#researcher)** — then replay the sealed studies. Catalog: `GET /language-invariant/games` → `lattice_courts` (9 domains, 28 roles). Copy-paste curls and the measured 2026-08-23 receipts: **[Explore the lattice courts](Affine-Earth-Lattice-Endpoints)**.
 

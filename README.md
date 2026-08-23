@@ -1,8 +1,8 @@
-# Affine.Earth Math Court — public MCP clients
+# Affine.Earth Math Court — public MCP bind
 
-**Deterministic, no-float Math Court for agent builders.** The court itself is not in this git. Bind [affine.earth](https://affine.earth/language-invariant/mcp). Every Cursor / Claude / VS Code config, STDIO proxy, HTTP bind, and LangChain · LlamaIndex · CrewAI · AutoGen · OpenAI-tool wrapper lives here:
+**Deterministic, no-float Math Court for agent builders.** Live remote: [affine.earth MCP](https://affine.earth/language-invariant/mcp). **Glama (approved):** [Affine Earth Math Court Remote](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote).
 
-**→ [`clients/math-court-mcp/`](clients/math-court-mcp/) · [`MATH-COURT-MCP.md`](MATH-COURT-MCP.md)**
+Public bind tree: [`clients/math-court-mcp/`](clients/math-court-mcp/) · [`MATH-COURT-MCP.md`](MATH-COURT-MCP.md)
 
 Registry: `earth.affine/math-court`. Floats refused. Integers sealed.
 

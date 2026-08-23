@@ -1,6 +1,9 @@
-# Affine.Earth Math Court — MCP client (deterministic, no-float)
+# Affine.Earth Math Court — public MCP bind (deterministic, no-float)
 
-**The server is not here.** The court runs on bare-metal AArch64 at [affine.earth](https://affine.earth). This tree is every **client** an agent builder needs: Cursor / Claude / VS Code configs, a STDIO→HTTPS proxy, HTTP binds, and LangChain / LlamaIndex / CrewAI / AutoGen / OpenAI-tool wrappers that **POST integers and stop**.
+The court is the live remote MCP: `https://affine.earth/language-invariant/mcp`.  
+**Glama listing (approved):** [Affine Earth Math Court Remote](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote)
+
+This git is the public bind: Cursor / Claude / VS Code configs, a STDIO→HTTPS proxy, HTTP clients, and LangChain / LlamaIndex / CrewAI / AutoGen / OpenAI-tool wrappers that **POST integers and stop**. Glama's connector row is the directory. Do not resubmit this repository as a local MCP server.
 
 If a wrapper computes volume, Ehrhart, Eisenstein, or a float projection, it is a second law. Delete it.
 
@@ -8,6 +11,7 @@ If a wrapper computes volume, Ehrhart, Eisenstein, or a float projection, it is 
 |---|---|
 | Live MCP | `https://affine.earth/language-invariant/mcp` |
 | SSE | `https://affine.earth/language-invariant/mcp/sse` |
+| Glama connector | https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote |
 | Look (no visitor data) | https://affine.earth/language-game/#researcher |
 | Official registry | `earth.affine/math-court` |
 | Courts | `POST /language-invariant/game/{domain}/ingest` |

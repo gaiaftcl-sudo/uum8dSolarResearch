@@ -4,8 +4,9 @@ Agent builders searching for **trustworthy math**, **verification**, **no floati
 
 - **MCP (streamable HTTP):** https://affine.earth/language-invariant/mcp
 - **SSE:** https://affine.earth/language-invariant/mcp/sse
+- **Glama connector (approved):** https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote
 - **Registry name:** `earth.affine/math-court`
-- **Client tree (this public git):** [`clients/math-court-mcp/`](clients/math-court-mcp/)
+- **Public bind tree:** [`clients/math-court-mcp/`](clients/math-court-mcp/)
 - **Look path:** https://affine.earth/language-game/#researcher
 
 Cursor / Claude:
