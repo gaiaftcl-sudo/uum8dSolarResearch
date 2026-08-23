@@ -3,7 +3,7 @@
   "name": "earth.affine/math-court",
   "title": "Affine.Earth Math Court",
   "description": "No-float UUM-8D Math Court. Integer courts and certified MCP. Floats refused.",
-  "version": "2026.8.23.1",
+  "version": "2026.8.24",
   "websiteUrl": "https://affine.earth/language-game/#researcher",
   "repository": {
     "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
