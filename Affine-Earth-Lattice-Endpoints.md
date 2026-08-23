@@ -2,9 +2,13 @@
 
 Researchers replay the sealed studies on the same membrane travelers already use. No new host. No canvas. Integers only.
 
+**Start in the main UI (look only):** [https://affine.earth/language-game/#researcher](https://affine.earth/language-game/#researcher)
+
+That view is the client experience. It teaches what Affine.Earth is and how UUM-8D entities (vQbit, M⁸ = S⁴ × C⁴, TauAnchor, Jordan bond, GOP frame, lattice court) play in the digital twin. It GETs the public catalog. It sends **no location, no wallet, no name, no source**. Court POSTs stay on this page as an explicit second act.
+
 **Live 2026-08-23.** Nine cells serve one ELF (`984e5f57364b70ad…`). Catalog: `lattice_courts.domain_count = 9`, `role_count = 28`. Apex `GET /language-invariant/games` → HTTP 200.
 
-Hologram WASM is a different face. These courts do not go through it.
+Hologram WASM is a different face. These courts do not go through it. The researcher look path is a panel on the same `/language-game/` page travelers already use.
 
 Public wiki of the same studies: [uum8dSolarResearch](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki).
 

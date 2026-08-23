@@ -16,7 +16,7 @@ Studies **11 · 12 · 13** are the sealed proof. [Zero Float · Zero Shear](Zero
 
 ## What changed (2026-08-23) — the courts are live
 
-Researchers replay the sealed studies on [affine.earth](https://affine.earth). Catalog: `GET /language-invariant/games` → `lattice_courts` (9 domains, 28 roles). Copy-paste curls and the measured 2026-08-23 receipts: **[Explore the lattice courts](Affine-Earth-Lattice-Endpoints)**.
+Researchers start in the main UI — **[look, do not share](https://affine.earth/language-game/#researcher)** — then replay the sealed studies. Catalog: `GET /language-invariant/games` → `lattice_courts` (9 domains, 28 roles). Copy-paste curls and the measured 2026-08-23 receipts: **[Explore the lattice courts](Affine-Earth-Lattice-Endpoints)**.
 
 | Court | POST | Measured |
 |---|---|---|
