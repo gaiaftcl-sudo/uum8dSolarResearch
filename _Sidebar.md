@@ -5,6 +5,7 @@
 - [**QCD: freedom is dilation**](QCD-Asymptotic-Freedom-Shear)
 - [**Look in the UI (no visitor data)**](https://affine.earth/language-game/#researcher)
 - [**Explore the live courts**](Affine-Earth-Lattice-Endpoints)
+- [**MCP clients (public)**](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp)
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm)
 - [UUM-8D vs IUT — WIN](UUM8D-vs-IUT-Topological-Projection)
 - [Readers’ guide](Shear-Studies-Readers-Guide)

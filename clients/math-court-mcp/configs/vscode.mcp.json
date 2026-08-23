@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "affine-earth-math-court": {
+      "type": "http",
+      "url": "https://affine.earth/language-invariant/mcp"
+    }
+  }
+}

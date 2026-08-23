@@ -1,0 +1,63 @@
+{
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "affine_earth_mcp",
+        "description": "Call the live Affine.Earth Math Court MCP. Discrete math, no floats. Use method tools/list or tools/call. Do not invent tool names.",
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method"],
+          "properties": {
+            "method": {
+              "type": "string",
+              "enum": ["tools/list", "tools/call"]
+            },
+            "name": {
+              "type": "string",
+              "description": "MCP tool name from tools/list"
+            },
+            "arguments": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "affine_earth_court_ingest",
+        "description": "POST an integer claim to a live lattice court on affine.earth. Floats are refused. source and role required.",
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["domain", "source", "role"],
+          "properties": {
+            "domain": {
+              "type": "string",
+              "enum": [
+                "geometry",
+                "chance",
+                "algebra",
+                "physics",
+                "qcd",
+                "health",
+                "finance",
+                "cs",
+                "fluids"
+              ]
+            },
+            "source": { "type": "string" },
+            "role": { "type": "string" },
+            "claim": {
+              "type": "object",
+              "description": "Integer keys only. geometry: polytope_id + dilation."
+            }
+          }
+        }
+      }
+    }
+  ]
+}

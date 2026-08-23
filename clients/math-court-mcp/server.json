@@ -1,0 +1,62 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "earth.affine/math-court",
+  "title": "Affine.Earth Math Court",
+  "description": "No-float UUM-8D Math Court. Integer courts and certified MCP. Floats refused.",
+  "version": "2026.8.23.1",
+  "websiteUrl": "https://affine.earth/language-game/#researcher",
+  "repository": {
+    "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+    "source": "github",
+    "subfolder": "clients/math-court-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://affine.earth/language-invariant/mcp"
+    },
+    {
+      "type": "sse",
+      "url": "https://affine.earth/language-invariant/mcp/sse"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "look": "https://affine.earth/language-game/#researcher",
+      "catalog": "https://affine.earth/language-invariant/games",
+      "ingest": "https://affine.earth/language-invariant/game/{domain}/ingest",
+      "no_float": true,
+      "client_only": true,
+      "server_hidden": true,
+      "pricing_axis": "entropy_delta_dh_structural",
+      "tools_measured_20260823": [
+        "atc.assert_4d_deconfliction",
+        "corpus_bonds",
+        "critique_frame",
+        "execute_transition",
+        "feeds_catalog",
+        "game_frame_meta",
+        "ide_rebuild_mesh",
+        "membrane_health",
+        "noaa_goes_r_weather",
+        "twin.robotics.evaluate_exact_ik",
+        "umc_direct",
+        "umc_resume",
+        "umc_status",
+        "verify_jordan_bond",
+        "weather.convective_containment"
+      ],
+      "courts": [
+        "geometry",
+        "chance",
+        "algebra",
+        "physics",
+        "qcd",
+        "health",
+        "finance",
+        "cs",
+        "fluids"
+      ]
+    }
+  }
+}

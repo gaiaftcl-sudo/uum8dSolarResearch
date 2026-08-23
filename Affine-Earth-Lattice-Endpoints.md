@@ -14,7 +14,7 @@ Public wiki of the same studies: [uum8dSolarResearch](https://github.com/gaiaftc
 
 ## Agent bind — the court is already MCP
 
-Do not write a second law in Python, Node, LangChain, or LlamaIndex. Bind the remote.
+Public client tree: [`clients/math-court-mcp`](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp). Wrappers POST to the remote. They compute no court.
 
 ```json
 {
@@ -30,7 +30,7 @@ SSE face: `https://affine.earth/language-invariant/mcp/sse`
 
 `tools/list` on that URL returns the fifteen tools the cell serves (`execute_transition`, `verify_jordan_bond`, `twin.robotics.evaluate_exact_ik`, …). A float POST is HTTP 400 `REFUSED_FLOAT`. Geometry `dilation: 12` seals count **169** against float adversary **216**.
 
-Registry descriptor in gaiaFTCL: `docs/mcp/server.json` (`earth.affine/math-court`). Prove: `bash scripts/prove-math-court-agent-ingest.sh`.
+Registry: `earth.affine/math-court` · descriptor [`clients/math-court-mcp/server.json`](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/blob/main/clients/math-court-mcp/server.json). Prove: `bash clients/math-court-mcp/prove/prove-math-court-agent-ingest.sh`. The Swift membrane is not in this repository.
 
 ---
 

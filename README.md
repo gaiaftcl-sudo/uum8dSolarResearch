@@ -1,3 +1,13 @@
+# Affine.Earth Math Court — public MCP clients
+
+**Deterministic, no-float Math Court for agent builders.** The court itself is not in this git. Bind [affine.earth](https://affine.earth/language-invariant/mcp). Every Cursor / Claude / VS Code config, STDIO proxy, HTTP bind, and LangChain · LlamaIndex · CrewAI · AutoGen · OpenAI-tool wrapper lives here:
+
+**→ [`clients/math-court-mcp/`](clients/math-court-mcp/) · [`MATH-COURT-MCP.md`](MATH-COURT-MCP.md)**
+
+Registry: `earth.affine/math-court`. Floats refused. Integers sealed.
+
+---
+
 # ☀️🌑 Eclipse 2026 — the sky writes geometry, and geometry cannot lie
 
 > **RESULT — first look, T+1 (2026-08-13):** the raw receiver data shows a measured TEC depletion at **every sealed totality station in custody, inside its sealed window, in the sealed order** — Reykjavik at its sealed maximum, the Spanish trio inside the pre-registered lag gate, depths inside the pre-registered band. Sealed 27 days ahead; measured the day after. The pinned-archive verdict lands ~2026-08-30. Full table: [the prediction registry](Eclipse-2026-Prediction-Registry.md). One entry in the track record — no more, no less.

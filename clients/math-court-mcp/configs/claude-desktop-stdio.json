@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "affine-earth-math-court": {
+      "command": "python3",
+      "args": [
+        "clients/math-court-mcp/stdio/affine_earth_mcp_stdio.py"
+      ]
+    }
+  }
+}
