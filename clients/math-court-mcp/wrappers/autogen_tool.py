@@ -1,27 +1,12 @@
-"""AutoGen function map that POSTs to affine.earth. Computes no court."""
+"""AutoGen function map — one named tool per live membrane tool. POST only."""
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "http"))
-from affine_earth import court_ingest, tools_list  # noqa: E402
+from tools import NAMED, LIVE_TOOL_NAMES, court_ingest  # noqa: E402
 
-
-def affine_earth_tools_list() -> str:
-    return json.dumps(tools_list())
-
-
-def affine_earth_court(domain: str, source: str, role: str, claim_json: str) -> str:
-    claim = json.loads(claim_json or "{}")
-    claim["source"] = source
-    claim["role"] = role
-    code, body = court_ingest(domain, claim)
-    return json.dumps({"http": code, "body": body})
-
-
-FUNCTION_MAP = {
-    "affine_earth_tools_list": affine_earth_tools_list,
-    "affine_earth_court": affine_earth_court,
-}
+FUNCTION_MAP = {name.replace(".", "_"): NAMED[name] for name in LIVE_TOOL_NAMES}
+FUNCTION_MAP["court_ingest"] = court_ingest
+FUNCTION_MAP.update({k: v for k, v in NAMED.items() if "." not in k})

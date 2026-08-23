@@ -43,20 +43,47 @@ bash clients/math-court-mcp/prove/prove-math-court-agent-ingest.sh
 
 Measured 2026-08-23 on the live apex: `tools/list` = **15**, `dilation: 1.5` → `REFUSED_FLOAT`, `dilation: 12` → WIN count **169** vs float adversary **216**.
 
+## Client tools (named, one per live MCP tool)
+
+Schemas: [`tools/catalog.json`](tools/catalog.json) (measured `tools/list`).  
+OpenAI functions: [`tools/openai_tools.json`](tools/openai_tools.json) — 15 MCP tools + `court_ingest`.  
+Python: `PYTHONPATH=clients/math-court-mcp/http python3 -c "from tools import membrane_health; print(membrane_health())"`
+
+| Client name | Live MCP tool |
+|---|---|
+| `atc_assert_4d_deconfliction` | `atc.assert_4d_deconfliction` |
+| `corpus_bonds` | `corpus_bonds` |
+| `critique_frame` | `critique_frame` |
+| `execute_transition` | `execute_transition` |
+| `feeds_catalog` | `feeds_catalog` |
+| `game_frame_meta` | `game_frame_meta` |
+| `ide_rebuild_mesh` | `ide_rebuild_mesh` |
+| `membrane_health` | `membrane_health` |
+| `noaa_goes_r_weather` | `noaa_goes_r_weather` |
+| `twin_robotics_evaluate_exact_ik` | `twin.robotics.evaluate_exact_ik` |
+| `umc_direct` | `umc_direct` |
+| `umc_resume` | `umc_resume` |
+| `umc_status` | `umc_status` |
+| `verify_jordan_bond` | `verify_jordan_bond` |
+| `weather_convective_containment` | `weather.convective_containment` |
+| `court_ingest` | REST `/language-invariant/game/{domain}/ingest` |
+
+Each function POSTs. None of them evaluate a lattice.
+
 ## Tree
 
 ```
 clients/math-court-mcp/
-  server.json                 official registry descriptor (remote only)
-  configs/                    Cursor · Claude · VS Code
-  http/affine_earth.py        urllib JSON-RPC + court POST
-  http/mcp-bind.js            browser fetch bind
+  server.json
+  tools/catalog.json          live tools/list snapshot
+  tools/openai_tools.json     16 named functions
+  http/affine_earth.py
+  http/tools.py               16 named Python tools
+  http/mcp-bind.js
+  http/mcp-tools.js
   stdio/affine_earth_mcp_stdio.py
-  wrappers/langchain_tool.py
-  wrappers/llamaindex_tool.py
-  wrappers/crewai_tool.py
-  wrappers/autogen_tool.py
-  wrappers/openai_tools.json
+  wrappers/                   LangChain · LlamaIndex · CrewAI · AutoGen · OpenAI
+  configs/
   prove/prove-math-court-agent-ingest.sh
 ```
 

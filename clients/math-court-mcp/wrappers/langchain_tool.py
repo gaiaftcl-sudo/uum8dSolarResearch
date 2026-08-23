@@ -1,4 +1,4 @@
-"""LangChain @tool that POSTs to affine.earth. Computes no court."""
+"""LangChain tools — one named tool per live membrane tool. POST only."""
 from __future__ import annotations
 
 import json
@@ -6,31 +6,34 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "http"))
-from affine_earth import court_ingest, tools_call, tools_list  # noqa: E402
+from tools import NAMED, LIVE_TOOL_NAMES, court_ingest  # noqa: E402
 
 
-def affine_earth_tools_list() -> str:
-    return json.dumps(tools_list())
-
-
-def affine_earth_tools_call(name: str, arguments_json: str = "{}") -> str:
-    args = json.loads(arguments_json or "{}")
-    return json.dumps(tools_call(name, args))
-
-
-def affine_earth_court(domain: str, source: str, role: str, claim_json: str) -> str:
-    claim = json.loads(claim_json or "{}")
-    claim["source"] = source
-    claim["role"] = role
-    code, body = court_ingest(domain, claim)
-    return json.dumps({"http": code, "body": body})
+def _as_json(fn, **kwargs):
+    return json.dumps(fn(**kwargs), default=str)
 
 
 try:
-    from langchain_core.tools import tool
+    from langchain_core.tools import StructuredTool
 
-    affine_earth_tools_list = tool(affine_earth_tools_list)  # type: ignore[assignment]
-    affine_earth_tools_call = tool(affine_earth_tools_call)  # type: ignore[assignment]
-    affine_earth_court = tool(affine_earth_court)  # type: ignore[assignment]
+    LANGCHAIN_TOOLS = []
+    for name in LIVE_TOOL_NAMES:
+        fn = NAMED[name]
+        LANGCHAIN_TOOLS.append(
+            StructuredTool.from_function(
+                func=lambda _fn=fn, **kwargs: _as_json(_fn, **kwargs),
+                name=name.replace(".", "_"),
+                description="Affine.Earth MCP tool %s. Forwards to affine.earth." % name,
+            )
+        )
+    LANGCHAIN_TOOLS.append(
+        StructuredTool.from_function(
+            func=lambda domain, source, role, **claim: _as_json(
+                court_ingest, domain=domain, source=source, role=role, **claim
+            ),
+            name="court_ingest",
+            description="POST an integer lattice-court claim. Floats refused.",
+        )
+    )
 except ImportError:
-    pass
+    LANGCHAIN_TOOLS = []

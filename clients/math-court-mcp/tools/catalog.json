@@ -1,0 +1,446 @@
+{
+  "source": "https://affine.earth/language-invariant/mcp",
+  "measured": "2026-08-23",
+  "count": 15,
+  "tools": [
+    {
+      "description": "Exact 4D separation over declared trajectories in integer-scaled geodetic coordinates: decide whether any two are ever SIMULTANEOUSLY inside the stated separation minima, and return either a separation certificate or the violating pair with the exact interval and magnitude of the incursion. Integer micro-degrees, feet and seconds with rational time parameters; no floating point and no epsilon, so separation exactly equal to the minima is separated and nine cells return the same verdict from the same bytes. The longitude frame is the caller's to state exactly, as an optional rational scale with its reference latitude, so the cos(latitude) approximation is chosen deliberately and on the record rather than done in floating point outside the boundary. Civil FAA/ICAO framing; a traffic-analysis instrument, never a control tool.",
+      "inputSchema": {
+        "properties": {
+          "horizontal_minima_micro_deg": {
+            "description": "REQUIRED, no default -- a defaulted separation standard is a verdict about a rule the caller never stated",
+            "type": "integer"
+          },
+          "lon_scale_den": {
+            "description": "OPTIONAL, denominator of the longitude scale. RECOMMENDED: six digits or fewer. Cosine to 1e-6 is far below any error that could change a verdict about aircraft, and a six-digit denominator clears every segment-pair time base up to 8589 seconds; a three-digit one clears any time base at all. The hard ceiling is 1000000000, but the binding limit is per-request: 8589934592 divided by the segment pair time base, which is the least common multiple of the two segment durations. Above it the pair returns NOT_MEASURED_SCALED_TIME_BASE_EXCEEDS_EXACT_RANGE naming the exact denominator ceiling that clears at that time base, so the remedy is read off the refusal rather than found by bisection. Reduce the ratio to lowest terms or round it to fewer digits",
+            "type": "integer"
+          },
+          "lon_scale_num": {
+            "description": "OPTIONAL exact rational longitude scale, numerator. Stands for cos(latitude), which is not rational -- so the caller states the approximation it chose and everything after that choice is exact. The test becomes (dlat*den)^2 + (dlon*num)^2 < (minima*den)^2, entirely in integers; latitude is never scaled. Must satisfy 1 <= num <= den",
+            "type": "integer"
+          },
+          "look_ahead_seconds": {
+            "description": "optional horizon clipped forward from the earliest declared time",
+            "type": "integer"
+          },
+          "obs_seq": {
+            "description": "a sealed AirspaceObservationSeal sequence is ONE INSTANT of sky and carries no time base, so supplying it alone returns NOT_MEASURED_OBSERVATION_SET_HAS_NO_TIME_BASE rather than a fabricated verdict",
+            "type": "integer"
+          },
+          "reference_lat_micro_deg": {
+            "description": "OPTIONAL, the latitude the scale was computed for. REQUIRED whenever a scale is declared: all three fields travel together and a partial declaration is refused with REFUSED_INCOMPLETE_LONGITUDE_SCALE rather than silently ignored. WHEN ALL THREE ARE ABSENT the predicate decides in the plain declared micro-degree coordinate plane with no correction, reports longitude_scale NOT_DECLARED on the certificate, and says so -- a coordinate statement is never presented as a ground distance",
+            "type": "integer"
+          },
+          "trajectories": {
+            "description": "declared 4D paths: id plus waypoints of lat_micro_deg,lon_micro_deg,alt_feet,t_seconds, strictly advancing in time",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "vertical_minima_feet": {
+            "description": "REQUIRED, no default",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "trajectories",
+          "horizontal_minima_micro_deg",
+          "vertical_minima_feet"
+        ],
+        "type": "object"
+      },
+      "name": "atc.assert_4d_deconfliction"
+    },
+    {
+      "description": "Sealed bonds from the Affine.Earth corpus (GAIA_SPATIAL_BOND_WIRES). mined_from is LLM_WEIGHTS or LLVM_IR. Stateless: pin at_seq to make the read reproducible across cells, or omit it to read the moving head.",
+      "inputSchema": {
+        "properties": {
+          "at_seq": {
+            "description": "caller-pinned stream position; same value = same bytes",
+            "type": "integer"
+          },
+          "limit": {
+            "description": "rows, up to 8192",
+            "type": "integer"
+          },
+          "sector": {
+            "description": "hex sector prefix",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "corpus_bonds"
+    },
+    {
+      "description": "Grade a rendered frame and return integer corrections. THE CRITIC IS DETERMINISTIC, NOT A MODEL: nine cells must reach the same verdict or the fleet's byte-identity is gone, and a cell reports generative:0 because it hosts no model. Scores 0-1000 and returns span/pitch deltas as integers.",
+      "inputSchema": {
+        "properties": {
+          "h": {
+            "type": "integer"
+          },
+          "kind": {
+            "enum": [
+              "atc",
+              "proteins",
+              "materials"
+            ],
+            "type": "string"
+          },
+          "n": {
+            "type": "integer"
+          },
+          "seed": {
+            "type": "integer"
+          },
+          "span_scale_q16": {
+            "description": "framing to grade; 65536 = unity",
+            "type": "integer"
+          },
+          "t": {
+            "type": "integer"
+          },
+          "w": {
+            "type": "integer"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "critique_frame"
+    },
+    {
+      "description": "Certified membrane: Rational S4/C4 lanes -> SCF boundary -> annihilate raw context -> NATS geometry-only turn -> Aristotelian projection. IDEMPOTENT: this membrane is stateless and keeps no record of a signature, so replaying an identical request is admitted and returns the identical receipt_hash rather than being refused as a replay. Safe to retry on a timeout; it is not a second transition.",
+      "inputSchema": {
+        "properties": {
+          "bond_status": {
+            "type": "string"
+          },
+          "c4_constraints": {
+            "description": "Rational lanes as num/den strings",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "client_signature": {
+            "description": "sha256(INTENT|scf_hex|user_vqbit_hash|genesis_epoch) first 16 bytes as 32 lowercase hex; or the game seal sha256(INTENT|scf_hex|user_vqbit_hash); or an ML-DSA-87 IDENTITY_BIND package. scf_hex is NOT an input and is NOT a sha256: the cell derives it with SpatialChordalFingerprint (15 integer lattice ratios folded FNV-1a-128) over the NORMALISED lanes. Mirror that algorithm to sign on the first call - /language-game/scf.js is the reference port - or send any 32-hex signature once and re-sign over the scf_hex the refusal returns. genesis_epoch is 2026-01-27T00:00:00Z.",
+            "type": "string"
+          },
+          "economics": {
+            "description": "Optional I_PF economics: executor hash + impact matrix (Rational weights).",
+            "type": "object"
+          },
+          "entity_id": {
+            "description": "wallet_geo entityID hex",
+            "type": "string"
+          },
+          "intent": {
+            "enum": [
+              "OPEN_CURVE",
+              "INGEST",
+              "ARISTOTELIAN",
+              "JORDAN_CLOSED",
+              "KLEIN_FLIP",
+              "FLUSH",
+              "PROTOCOL_DRILL",
+              "IDENTITY_BIND",
+              "WALLET_LOCATION_BIND",
+              "OPERATOR_TENSOR_HEAL",
+              "REALITY_PRESENCE_INTRO",
+              "REALITY_OPERATOR_HEAL",
+              "REALITY_DISAGREE_SHATTER",
+              "CINEMA_SEED_EXPORT"
+            ],
+            "type": "string"
+          },
+          "s4_coordinates": {
+            "description": "Rational lanes as num/den strings",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "user_vqbit_hash": {
+            "description": "Exactly 32 lowercase hex, or OMIT it and the cell derives sha256(entity_id|scf_hex)[0:16]. A stated value that is not 32 hex is REFUSED rather than replaced - the cell will not verify your signature against an identity you did not state.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "entity_id",
+          "intent",
+          "client_signature"
+        ],
+        "type": "object"
+      },
+      "name": "execute_transition"
+    },
+    {
+      "description": "Every feed a client can drive a game from - corpus lanes by mined_from, the live global feeds, and the transport each is reachable on (REST, RSS, MCP, NATS subject). Stateless; takes no arguments.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "feeds_catalog"
+    },
+    {
+      "description": "Run a language-game context and return its state plus the cell's own self-evaluation of the rendered frame - integer score 0-1000 over occupancy, spread, contrast and edge quality, with the C4 span correction applied. Stateless: (kind, seed, t, n, at_seq) fully determine the result.",
+      "inputSchema": {
+        "properties": {
+          "at_seq": {
+            "description": "pinned corpus epoch",
+            "type": "integer"
+          },
+          "h": {
+            "type": "integer"
+          },
+          "kind": {
+            "enum": [
+              "atc",
+              "proteins",
+              "materials"
+            ],
+            "type": "string"
+          },
+          "max_iter": {
+            "description": "iteration cap, default 10",
+            "type": "integer"
+          },
+          "n": {
+            "description": "population",
+            "type": "integer"
+          },
+          "seed": {
+            "type": "integer"
+          },
+          "t": {
+            "description": "step index",
+            "type": "integer"
+          },
+          "target": {
+            "description": "refine until score >= this (0-1000, default 950)",
+            "type": "integer"
+          },
+          "w": {
+            "type": "integer"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "game_frame_meta"
+    },
+    {
+      "description": "Trigger a Mac mesh rebuild from the IDE. Only permitted on the founder cell.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "ide_rebuild_mesh"
+    },
+    {
+      "description": "Stateless membrane identity (mode, genesis epoch, subjects) plus cell listen facts.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "membrane_health"
+    },
+    {
+      "description": "Live NOAA weather for the aviation radar lane. lane=weather returns real convective SIGMET hazard polygons (aviationweather.gov airsigmet) with altitude tops and movement vectors; lane=space returns real GOES-R primary X-ray flux plus NOAA scales, planetary K and OVATION aurora. No mock radar: an empty result is empty, a failed fetch is CURE.",
+      "inputSchema": {
+        "properties": {
+          "c4_invariant_scf": {
+            "type": "string"
+          },
+          "lane": {
+            "description": "weather | space (maps to gaiaftcl.radar.*)",
+            "enum": [
+              "weather",
+              "space"
+            ],
+            "type": "string"
+          },
+          "wallet_hash": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "noaa_goes_r_weather"
+    },
+    {
+      "description": "Exact integer inverse kinematics over a declared piece chain: compose local frames from the sovereign anchor and report each piece's pose in whole milli-units. Zero floats, one Q16 normalization point, byte-identical on arm64 and wasm32.",
+      "inputSchema": {
+        "properties": {
+          "piece_id": {
+            "description": "the piece to solve for",
+            "type": "integer"
+          },
+          "pieces": {
+            "description": "declared PieceFrame rows: piece_id,parent_id,origin_x_milli,origin_y_milli,origin_z_milli,rotation_milli_deg,extent_milli",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "relative_to_head": {
+            "description": "state the pose relative to the head (camera-free) rather than the anchor",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "pieces",
+          "piece_id"
+        ],
+        "type": "object"
+      },
+      "name": "twin.robotics.evaluate_exact_ik"
+    },
+    {
+      "description": "Universal Manifold Controller GAV direct: seed (optional) -> decompose -> measure Rational torsion -> shear-correct -> converge. Domains: cinema|aviation|gaming|coding.",
+      "inputSchema": {
+        "properties": {
+          "checkpoint": {
+            "type": "boolean"
+          },
+          "domain": {
+            "enum": [
+              "cinema",
+              "aviation",
+              "gaming",
+              "coding"
+            ],
+            "type": "string"
+          },
+          "max_turns": {
+            "type": "integer"
+          },
+          "node_id": {
+            "type": "string"
+          },
+          "session_id": {
+            "type": "string"
+          },
+          "tau_height": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "umc_direct"
+    },
+    {
+      "description": "Resume UMC Long Play from latest tip (local cache / NATS KV). Domains: cinema|aviation|gaming|coding.",
+      "inputSchema": {
+        "properties": {
+          "direct": {
+            "type": "boolean"
+          },
+          "domain": {
+            "enum": [
+              "cinema",
+              "aviation",
+              "gaming",
+              "coding"
+            ],
+            "type": "string"
+          },
+          "node_id": {
+            "type": "string"
+          },
+          "session_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domain",
+          "session_id",
+          "node_id"
+        ],
+        "type": "object"
+      },
+      "name": "umc_resume"
+    },
+    {
+      "description": "UMC tip + documented MCP tool surface + NATS subjects (gaiaftcl.umc.state.> / gaiaftcl.agent.state.>).",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "umc_status"
+    },
+    {
+      "description": "UUM-8D Jordan bond cross-mul admit (cell-local JordanBondTable, integer geometry).",
+      "inputSchema": {
+        "properties": {
+          "source_creator_hash": {
+            "type": "string"
+          },
+          "target_creator_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_creator_hash",
+          "target_creator_hash"
+        ],
+        "type": "object"
+      },
+      "name": "verify_jordan_bond"
+    },
+    {
+      "description": "Exact containment of a declared track against convective cell boundaries, including NON-CONVEX footprints: decide whether the track stays outside every declared cell within that cell's altitude layer, and on a breach name the breaching segment, the cell, how the breach happens and the exact parameter along the segment where it does. Exact integer crossing number over micro-degree vertices, with the optional standoff decided by comparing squared distances \u2014 no square root, no floating point, no epsilon. Advisory only; not a dispatch or flight-planning authority.",
+      "inputSchema": {
+        "properties": {
+          "cells": {
+            "description": "declared convective cells: id, vertices of lat_micro_deg/lon_micro_deg (three or more, concavity welcome), and the layer base_feet/top_feet. Declaring none returns NOT_MEASURED_NO_CONVECTIVE_CELLS_DECLARED, never CONTAINED",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "margin_micro_deg": {
+            "description": "optional standoff in the same declared units; strict, so exactly this far away is contained",
+            "type": "integer"
+          },
+          "track_micro_deg": {
+            "description": "lat_micro_deg,lon_micro_deg,alt_feet points; two or more, since this names a breaching SEGMENT",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "track_micro_deg",
+          "cells"
+        ],
+        "type": "object"
+      },
+      "name": "weather.convective_containment"
+    }
+  ],
+  "court": {
+    "name": "court_ingest",
+    "description": "POST an integer claim to a live lattice court. source and role required. Floats refused by the cell.",
+    "domains": [
+      "geometry",
+      "chance",
+      "algebra",
+      "physics",
+      "qcd",
+      "health",
+      "finance",
+      "cs",
+      "fluids"
+    ]
+  }
+}
