@@ -35,6 +35,7 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 16 | [Study 16 — Disease type](Study-16-Disease-Type.md) | **LAW FROZEN** — ICD/DOID fixture. Claim waits on membrane binary. | Industry key is ICD-10 + DOID. Generated ERIC labels do not WIN. Occupancy stays Study 14 grammar. |
 | 17 | [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey.md) | **LAW FROZEN** — InChIKey/CID fixture. Claim waits on membrane binary. | CID 2244 PUG VERIFIED. Float MW/logP refused. SMILES is not the court. |
 | 18 | [Study 18 — Material STD](Study-18-Material-STD.md) | **LAW FROZEN** — COD/mp/space-group fixture. Claim waits on membrane binary. | COD 9008564 sg 227 Diamond. No minted mp- ids. No 46622 dump. |
+| 19 | [Study 19 — Go First Dice](Study-19-Go-First-Dice.md) | **LAW FROZEN** — cited Meyer 2023 5×d60. Claim waits on membrane binary. | Exact `1/120`. No face scan. Float simplex is the adversary. |
 
 Ledger (pointer, not a study number): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) — hashes + N on steward disk. The games are 16 / 17 / 18. C-007 arms ABSENT FROM APEX (file count **7**). OPEN stays 03 / 05 / 08.
 

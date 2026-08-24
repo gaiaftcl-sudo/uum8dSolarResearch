@@ -34,6 +34,7 @@
 - [Study 16 — Disease type](Study-16-Disease-Type)
 - [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey)
 - [Study 18 — Material STD](Study-18-Material-STD)
+- [Study 19 — Go First Dice](Study-19-Go-First-Dice)
 
 ## ☀️🌑 Eclipse 2026
 

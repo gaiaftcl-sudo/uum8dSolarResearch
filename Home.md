@@ -81,6 +81,7 @@ That is the assumption that just broke: *that continuous math is the adult form 
 
 Program board: [Shear Studies Index](Shear-Studies-Index) · [Readers’ guide](Shear-Studies-Readers-Guide) · [White paper](Shear-Studies-White-Paper)  
 Look ledger: [Known discoveries](Known-Discoveries-Index) · [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review) — **LOOK LIVE · LOCAL ARCHIVE · CLAIM DARK** (hosted hashes + integer aggregates; 0 public PDB ids).  
+Industry keys: [16 disease](Study-16-Disease-Type) · [17 chemistry](Study-17-Chemistry-InChIKey) · [18 material](Study-18-Material-STD). Combinatorial court: [19 Go First Dice](Study-19-Go-First-Dice) — cited Meyer 2023 5×d60, exact `1/120`.  
 Live OS: [affine.earth](https://affine.earth)
 
 ---

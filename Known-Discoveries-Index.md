@@ -35,13 +35,17 @@ Hosted catalogs: `discoveries/catalog.json` (PDB holdings N=258616) and `discove
 | 13 Connes | word `Z2_a2b` · `(0,1)` | [13](Study-13-Connes-Rigidity-Shear.md) | [`#connes-rigidity`](https://affine.earth/language-game/ide.html#connes-rigidity) | **LIVE CLAIM** |
 | 14 PDB holdings | **258616** | [14](Study-14-Protein-Lattice-Manifold.md) · [molecular ledger](Known-Molecular-Discoveries.md) | [`#discovery-review`](https://affine.earth/language-game/ide.html#discovery-review) | **LOOK LIVE · CHARTER WITH ARCHIVE · CLAIM DARK** |
 | 15 Skala GMTKN55 | cited **2.72** / **2.8** | [15](Study-15-Skala-DFT-Shear.md) | [`#skala-cited`](https://affine.earth/language-game/ide.html#skala-cited) | **CITED** · court **DARK** |
+| 16 Disease ICD/DOID | **3** fixture rows | [16](Study-16-Disease-Type.md) | [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) | **LAW FROZEN** · court **DARK** |
+| 17 Chemistry InChIKey | **3** fixture rows | [17](Study-17-Chemistry-InChIKey.md) | [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) | **LAW FROZEN** · court **DARK** |
+| 18 Material STD | **3** fixture rows | [18](Study-18-Material-STD.md) | [`#material-std`](https://affine.earth/language-game/ide.html#material-std) | **LAW FROZEN** · court **DARK** |
+| 19 Go First Dice | **300** faces (5×60) | [19](Study-19-Go-First-Dice.md) | [`#gofirst-dice`](https://affine.earth/language-game/ide.html#gofirst-dice) | **LAW FROZEN** · court **DARK** · Meyer 2023 cited |
 | QCD freedom | `q_bin=1` `dilation_t=2` | [QCD](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/QCD-Asymptotic-Freedom-Shear) | [`#qcd-freedom`](https://affine.earth/language-game/ide.html#qcd-freedom) | **LIVE CLAIM** |
 | NOAA SWPC feed | **7/7** on Study 02 prove | [02](Study-02-Launch-Ionospheric-Holes.md) | [`#falcon-damage`](https://affine.earth/language-game/ide.html#falcon-damage) | **LIVE CLAIM** (feed, not a SID court) |
 | ERIC local archive | **78680** proteins · **46622** materials (`index_n=125302`) | [ERIC ingest review](ERIC-Ultimate-Ingest-Review.md) | [`#eric-archive`](https://affine.earth/language-game/ide.html#eric-archive) | **LOOK LIVE · LOCAL ARCHIVE · CLAIM DARK** — hosted hashes + integer aggregates. `label_kind=GENERATED_CANDIDATE`. **0** public PDB/PubChem/ChEMBL/DailyMed ids. C-007 arms not ingested. |
 
 **OPEN (no data) — only 03, 05, 08.** Those rows have no IDE hash because there is nothing to GET. ERIC does not supply SID / NMDB / µas.
 
-**DARK court, data present — 01, 04, 06, 07, 10, 14, 15.** LOOK templates GET this ledger. They do not POST `eclipse` / `seismic` / `eht` / occupancy / kcal. Apex does not serve those `game_id`s.
+**DARK court, data present — 01, 04, 06, 07, 10, 14, 15, 16, 17, 18, 19.** LOOK templates GET this ledger. They do not POST `eclipse` / `seismic` / `eht` / occupancy / kcal. Apex does not serve those `game_id`s.
 
 Health court is PK dose (`mass_milli`/`vol_milli`), not a pocket, not ozone.
 
