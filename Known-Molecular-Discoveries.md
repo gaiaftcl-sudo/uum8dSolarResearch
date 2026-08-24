@@ -100,3 +100,5 @@ No IC50 is written on any row. If a number was not in the fetch, it is absent.
 - Does not POST occupancy, residue, or pocket integers
 
 **Status: LOOK LIVE — hosted index N=258616. Claim DARK.** Family ledger: [Known discoveries](Known-Discoveries-Index.md).
+
+Local generated-candidate archive (not this catalog): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) — CHARTER WITH ARCHIVE · CLAIM DARK · **0** public PDB/PubChem/ChEMBL/DailyMed ids.

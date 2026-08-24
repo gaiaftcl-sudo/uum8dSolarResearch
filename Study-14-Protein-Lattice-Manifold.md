@@ -110,7 +110,7 @@ This is Look → Claim → Build → Share applied to a **public discovery ledge
 
 **Instructions** means public, labeled, cited: INN, indication (on the source document), PDB / PubChem / ChEMBL / DailyMed id, manufacture *class* (recombinant / chemical / extracted) from FDA / EMA / label / PDB, and links to that document. It does **not** mean a step-by-step synthesis. C-007: no pathogen enhancement, no military, no unpublished manufacture.
 
-Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#discovery-review`](https://affine.earth/language-game/ide.html#discovery-review) · Look panel [\#researcher](https://affine.earth/language-game/#researcher) (GET links only).
+Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#discovery-review`](https://affine.earth/language-game/ide.html#discovery-review) · Look panel [\#researcher](https://affine.earth/language-game/#researcher) (GET links only). Local ERIC archive (generated labels, not PDB): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md).
 
 ### Skala contrast (one paragraph)
 

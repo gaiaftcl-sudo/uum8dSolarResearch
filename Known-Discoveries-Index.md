@@ -37,8 +37,9 @@ The molecular corpus is **one hosted file**: `discoveries/catalog.json`. There i
 | 15 Skala GMTKN55 | cited **2.72** / **2.8** | [15](Study-15-Skala-DFT-Shear.md) | [`#skala-cited`](https://affine.earth/language-game/ide.html#skala-cited) | **CITED** · court **DARK** |
 | QCD freedom | `q_bin=1` `dilation_t=2` | [QCD](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/QCD-Asymptotic-Freedom-Shear) | [`#qcd-freedom`](https://affine.earth/language-game/ide.html#qcd-freedom) | **LIVE CLAIM** |
 | NOAA SWPC feed | **7/7** on Study 02 prove | [02](Study-02-Launch-Ionospheric-Holes.md) | [`#falcon-damage`](https://affine.earth/language-game/ide.html#falcon-damage) | **LIVE CLAIM** (feed, not a SID court) |
+| ERIC local archive | **78680** proteins · **46622** materials (on-disk CSV) | [ERIC ingest review](ERIC-Ultimate-Ingest-Review.md) | [`#discovery-review`](https://affine.earth/language-game/ide.html#discovery-review) | **CHARTER WITH ARCHIVE · LOOK path · CLAIM DARK** — local hashes; **0** public PDB/PubChem/ChEMBL/DailyMed ids. Not a hosted `families.json` row this hour. Scores are shear. SOP/warfare/transmutation **C-007**. |
 
-**OPEN (no data) — only 03, 05, 08.** Those rows have no IDE hash because there is nothing to GET.
+**OPEN (no data) — only 03, 05, 08.** Those rows have no IDE hash because there is nothing to GET. ERIC does not supply SID / NMDB / µas.
 
 **DARK court, data present — 01, 04, 06, 07, 10, 14, 15.** LOOK templates GET this ledger. They do not POST `eclipse` / `seismic` / `eht` / occupancy / kcal. Apex does not serve those `game_id`s.
 

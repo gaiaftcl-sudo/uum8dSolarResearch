@@ -80,6 +80,7 @@ That is the assumption that just broke: *that continuous math is the adult form 
 | **Fermi 43 GeV / dark matter** | Inner Galaxy null · edge word *not known*. This page does **not** say dark matter is disproved. | [Study 10 Charter](Study-10-Fermi-Gamma-Shear-Dark-Matter) |
 
 Program board: [Shear Studies Index](Shear-Studies-Index) · [Readers’ guide](Shear-Studies-Readers-Guide) · [White paper](Shear-Studies-White-Paper)  
+Look ledger: [Known discoveries](Known-Discoveries-Index) · [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review) — **CHARTER WITH ARCHIVE · LOOK path · CLAIM DARK** (local hashes; 0 public PDB ids).  
 Live OS: [affine.earth](https://affine.earth)
 
 ---

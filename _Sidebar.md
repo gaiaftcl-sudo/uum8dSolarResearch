@@ -15,6 +15,7 @@
 - [Language-games study board](Language-Games-Study-Board)
 - [Known discoveries — family ledger](Known-Discoveries-Index)
 - [Known molecular discoveries](Known-Molecular-Discoveries)
+- [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review)
 
 ## ✅ Sealed results
 
