@@ -82,7 +82,7 @@ No invented catalog. Three rows only.
 ## What this page does not do
 
 - Does not mint Materials Project ids
-- Does not dump ERIC materials CSVs
+- Does not dump generated-candidate materials CSVs
 - Does not host SOP / transmutation / warfare guides
 - Does not invent occupancy / docking
 

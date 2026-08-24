@@ -81,7 +81,7 @@ Affine already LOOKS CID 2244 on the molecular ledger. This court CLAIMS it.
 
 - Does not host SMILES, sequences, or SOP steps
 - Does not seal float MW / logP / confidence
-- Does not dump ERIC chemistry CSVs
+- Does not dump generated-candidate chemistry CSVs
 - Does not invent a docking court
 
 Swift: `IndustryStandardCourts.swift` · domain `chemistry`.

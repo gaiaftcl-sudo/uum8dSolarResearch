@@ -20,7 +20,7 @@ The win is the **verified bond** to a public industry code. Occupancy stays Stud
 
 ## Goal
 
-Name a disease the way the public already names it: **ICD-10** (or ICD-11 when a public row has it) and **DOID** when a public DOID exists. Generated ERIC labels (`Bladder_Cancer_111`) do not WIN.
+Name a disease the way the public already names it: **ICD-10** (or ICD-11 when a public row has it) and **DOID** when a public DOID exists. Generated labels (`Bladder_Cancer_111`) do not WIN.
 
 SOP-as-contract is this token. The recipe stays on disk.
 
@@ -80,7 +80,7 @@ ICD-11 WHO API returned 401 this hour. Founder allows ICD-10 when that is the pu
 
 ## What this page does not do
 
-- Does not ingest ERIC disease names or sequences
+- Does not ingest generated disease nicknames or sequences
 - Does not write `ProteinManifold.evaluateDocking`
 - Does not treat health as a pocket
 - Does not fill OPEN 03 / 05 / 08

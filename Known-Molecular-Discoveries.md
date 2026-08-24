@@ -99,6 +99,6 @@ No IC50 is written on any row. If a number was not in the fetch, it is absent.
 - Does not call Skala / float MD / AlphaFold **useless**
 - Does not POST occupancy, residue, or pocket integers
 
-**Status: LOOK LIVE — hosted index N=258616. Claim DARK.** Family ledger: [Known discoveries](Known-Discoveries-Index.md).
+**Status: LOOK LIVE — hosted index N=258616. PDB id Claim LIVE. Occupancy DARK.** Family ledger: [Known discoveries](Known-Discoveries-Index.md). Play: [Study 14](Study-14-Protein-Lattice-Manifold.md) · IDE `#pdb-holdings`.
 
-Local generated-candidate archive (not this catalog): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) · [eric-local-archive.json](https://affine.earth/language-game/discoveries/eric-local-archive.json) — **LOOK LIVE · LOCAL ARCHIVE · PLAY VIA 16–18** · IDE `#eric-archive` · play `#disease-icd` `#chemistry-inchi` `#material-std` · **0** public PDB/PubChem/ChEMBL/DailyMed ids.
+Generated-candidate hashes (not this catalog): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) — Look only. Generated rows without a PDB/ICD/InChI/COD key are not playable.

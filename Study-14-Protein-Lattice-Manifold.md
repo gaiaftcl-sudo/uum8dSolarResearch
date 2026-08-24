@@ -1,14 +1,17 @@
 # Study 14 — Protein lattice manifold
 
-**Status: LOOK LIVE · CHARTER WITH ARCHIVE · CLAIM DARK — 2026-08-24**  
+**Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · PDB id court · occupancy DARK**  
 **Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear.md) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm.md)
 
 | Surface | URL / key | Cited vs sealed |
 |---|---|---|
-| Look | https://affine.earth/language-game/#researcher · [catalog GET](https://affine.earth/language-game/discoveries/catalog.json) | GET only. credentials omit. |
-| Review ledger | [Known molecular discoveries](Known-Molecular-Discoveries.md) · IDE `#discovery-review` | **LOOK LIVE** — measured PDB holdings **258616** VERIFIED 2026-08-24. Claim stays **DARK**. |
-| Court | occupancy / pocket still **DARK** — complementary occupancy is the grammar, not a dock | **DARK** |
-| Industry courts | [Study 16 ICD](Study-16-Disease-Type.md) · [Study 17 InChIKey](Study-17-Chemistry-InChIKey.md) · [Study 18 material STD](Study-18-Material-STD.md) | **LAW FROZEN** — generated ERIC labels are not these keys |
+| Claim UI | https://affine.earth/language-game/study-14-pdb.html | POST `pdb` ingest · `pdb_id` |
+| IDE | https://affine.earth/language-game/ide.html#pdb-holdings | GET catalog · POST a presented 4-char id |
+| Look | https://affine.earth/language-game/#researcher · [catalog GET](https://affine.earth/language-game/discoveries/catalog.json) | GET only. credentials omit. Holdings **N=258616**. |
+| Review ledger | [Known molecular discoveries](Known-Molecular-Discoveries.md) · IDE `#discovery-review` | **LOOK LIVE** — play the id on `#pdb-holdings`. |
+| Court | `POST /language-invariant/game/pdb/ingest` | format + holdings membership of a **presented** id. Unknown id → `REFUSED_NO_STD`. |
+| Occupancy / pocket | complementary occupancy is the grammar, not a dock | **DARK** |
+| Industry siblings | [Study 16 ICD](Study-16-Disease-Type.md) · [Study 17 InChIKey](Study-17-Chemistry-InChIKey.md) · [Study 18 material STD](Study-18-Material-STD.md) | **LAW FROZEN** — generated nicknames are not these keys |
 | `health` court | `mass_milli` / `vol_milli` | PK **dose**. Not a binding pocket. Not ozone. |
 | Study 11 `geometry` | `polytope_id` + `dilation` | Ehrhart volume. **Not** a protein fold. |
 | Humanity | Small- and large-molecule discovery without a moving DFT baseline | **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.** |
@@ -105,13 +108,13 @@ This is Look → Claim → Build → Share applied to a **public discovery ledge
 | Act | What happens | Status this hour |
 |---|---|---|
 | **LOOK** | `GET /language-game/discoveries/catalog.json` — index of public PDB ids + source URL template. No visitor data. `credentials: omit`. | **LIVE** — hosted `index_n=258616` from RCSB holdings HTTP 200, fetched 2026-08-24T17:13:23Z. Example fact sheets (4HHB, aspirin CID 2244 / CHEMBL25, DailyMed insulin human) are fields that came from those fetches. |
-| **CLAIM** | Integer appointment about a *named* discovery (id, occupancy class, dose if health court). `source`+`role`. | **DARK** — no occupancy / residue / pocket key. Health `mass_milli`/`vol_milli` is PK dose, not this molecule. |
-| **BUILD** | IDE template `#discovery-review` GETs the catalog and opens one record (id, name, source URL, manufacture class when the source stated it, known-facts from the fetch). | **LIVE** template. No hallucinated IC50. |
+| **CLAIM** | Present a 4-character PDB id from the holdings catalog. `source`+`role`. Occupancy / residue / pocket stay DARK. Health `mass_milli`/`vol_milli` is PK dose. | **LIVE CLAIM** — `pdb` ingest. 4HHB / 1IWB WIN. Unknown id `REFUSED_NO_STD`. |
+| **BUILD** | IDE `#pdb-holdings` GETs the catalog and POSTs a presented id. `#discovery-review` remains the Look template. | **LIVE** template. No occupancy invent. No hallucinated IC50. |
 | **SHARE** | Receipt names `source`. GET view of the record (this wiki + the catalog JSON). | **LIVE** GET |
 
 **Instructions** means public, labeled, cited: INN, indication (on the source document), PDB / PubChem / ChEMBL / DailyMed id, manufacture *class* (recombinant / chemical / extracted) from FDA / EMA / label / PDB, and links to that document. It does **not** mean a step-by-step synthesis. C-007: no pathogen enhancement, no military, no unpublished manufacture.
 
-Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#discovery-review`](https://affine.earth/language-game/ide.html#discovery-review) · Look panel [\#researcher](https://affine.earth/language-game/#researcher) (GET links only). Local ERIC archive (generated labels, not PDB): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) · [eric-local-archive.json](https://affine.earth/language-game/discoveries/eric-local-archive.json) · IDE [`#eric-archive`](https://affine.earth/language-game/ide.html#eric-archive).
+Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) · claim [study-14-pdb.html](https://affine.earth/language-game/study-14-pdb.html) · Look panel [\#researcher](https://affine.earth/language-game/#researcher). Generated-candidate hashes (not playable without an industry key): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) · IDE [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look).
 
 ### Skala contrast (one paragraph)
 
@@ -135,4 +138,4 @@ Cross-link: [Study 15](Study-15-Skala-DFT-Shear.md) · [Known molecular discover
 
 ---
 
-**Status: LOOK LIVE · CHARTER WITH ARCHIVE · CLAIM DARK.** Occupancy integers are absent so Claim stays DARK. OPEN is false — the PDB id list is ingested.
+**Status: LAW FROZEN + LIVE CLAIM** on the PDB id. Occupancy integers remain absent so occupancy Claim stays DARK. OPEN is false — the holdings list is ingested and any presented catalog id is playable.

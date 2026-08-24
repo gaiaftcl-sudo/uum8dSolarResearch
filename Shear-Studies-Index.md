@@ -29,15 +29,14 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 11 | [Study 11 — Ehrhart volume shear](Study-11-Ehrhart-Volume-Shear.md) · [Corpus](Study-11-Ehrhart-Volume-Corpus.md) · [Results](Study-11-Ehrhart-Volume-Results.md) | **LAW FROZEN** + **LIVE CLAIM** — 5/5 WIN · 5/5 float adversary MISS | Integer lattice counts in dilated polytopes recover exact Ehrhart volume; float triangulation shear-fails at \(t=12\). [Conjecture map](Conjecture-Alignment-UUM8D.md). |
 | 12 | [Study 12 — Quantum parallel repetition](Study-12-Quantum-Parallel-Repetition-Shear.md) | **LIVE CLAIM** | vQbit + Jordan bonds vs float amplitude tensor — discrete repetition bounds. |
 | 13 | [Study 13 — Connes rigidity](Study-13-Connes-Rigidity-Shear.md) | **LIVE CLAIM** | Group rigidity via integer linking invariants vs float spectral adversary. |
-| 14 | [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md) | **LOOK LIVE · CHARTER WITH ARCHIVE · CLAIM DARK** | Cited amino-acid alphabet; complementary occupancy is the *shape*, not an O(1) engine. Public PDB index GET `index_n=258616` VERIFIED 2026-08-24. IDE `#discovery-review`. OPEN is false — the PDB id list is ingested; occupancy integers are still absent so Claim stays DARK. |
+| 14 | [Study 14 — Protein lattice / PDB play](Study-14-Protein-Lattice-Manifold.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md) | **LAW FROZEN** + **LIVE CLAIM** | 4-char PDB id from hosted holdings N=258616. IDE `#pdb-holdings`. Occupancy stays DARK. |
 | 15 | [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear.md) | **CITED** — GMTKN55 **2.72 / 2.8** kcal/mol fetched 2026-08-24. Court DARK. Not OPEN. | Contrast methods. Affine refuses the float or seals the integer. Do not call Skala useless. Family ledger: [Known discoveries](Known-Discoveries-Index.md). |
-
-| 16 | [Study 16 — Disease type](Study-16-Disease-Type.md) | **LAW FROZEN** + **LIVE CLAIM** | ICD/DOID industry key. Generated ERIC labels do not WIN. |
+| 16 | [Study 16 — Disease type](Study-16-Disease-Type.md) | **LAW FROZEN** + **LIVE CLAIM** | ICD/DOID industry key. Generated labels do not WIN. |
 | 17 | [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey.md) | **LAW FROZEN** + **LIVE CLAIM** | InChIKey/CID. SMILES and float MW/logP are not the court. |
 | 18 | [Study 18 — Material STD](Study-18-Material-STD.md) | **LAW FROZEN** + **LIVE CLAIM** | COD / mp-id / space-group. No minted ids. |
-| 19 | [Study 19 — Go First Dice](Study-19-Go-First-Dice.md) | **LAW FROZEN** + **LIVE CLAIM** | Cited Meyer 2023 5×d60. Exact `1/120`. Sibling of ERIC, not a dump. |
+| 19 | [Study 19 — Go First Dice](Study-19-Go-First-Dice.md) | **LAW FROZEN** + **LIVE CLAIM** | Cited Meyer 2023 5×d60. Exact `1/120`. |
 
-Ledger (not a new study number): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) — **LOOK LIVE · LOCAL ARCHIVE · PLAY VIA 16–18**. Hosted hashes + integer aggregates `index_n=125302` (78680 + 46622); **0** public PDB ids; C-007 arms not ingested. Play on `#disease-icd` `#chemistry-inchi` `#material-std`. OPEN stays 03 / 05 / 08.
+Generated-candidate hashes (not a new study number): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) — Look only, N=125302. Play proteins on `#pdb-holdings`. OPEN stays 03 / 05 / 08.
 
 ## What this program protects
 

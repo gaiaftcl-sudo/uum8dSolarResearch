@@ -1,6 +1,6 @@
 # Study 19 — Combinatorial State Space: 5-Player Go First Dice
 
-**Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · Meyer 2023 5×d60 CALORIE · sibling of ERIC, not a dump**  
+**Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · Meyer 2023 5×d60 CALORIE**  
 **Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 11 Ehrhart](Study-11-Ehrhart-Volume-Shear.md) · [Study 12 chance](Study-12-Quantum-Parallel-Repetition-Shear.md)
 
 | Surface | URL / key | Grade |
@@ -55,7 +55,7 @@ IEEE payload (`0.008333`, `1.5`) → HTTP 400 `REFUSED_FLOAT`.
 
 Problem paper (does not invent the Meyer faces; states the N=5 question and two other constructions): Ford, Grime, Harshbarger, Pollock, *Go First Dice for Five Players and Beyond*, Recreational Mathematics Magazine 10(17) 2023, [DOI 10.2478/rmm-2023-0004](https://doi.org/10.2478/rmm-2023-0004). Harshbarger’s mixed d20+d36+2×d48+d54 construction is cited there and on [ericharshbarger.org/dice/go_first_dice.html](http://www.ericharshbarger.org/dice/go_first_dice.html). This court seals the **complete public integer lists** (Meyer 5×d60). It does not invent faces and does not scan for a smaller set.
 
-Five dice × 60 faces = 300 integers. Tiny. Not ERIC. Not 125k.
+Five dice × 60 faces = 300 integers. Tiny. Not a generated-candidate dump.
 
 Die A: `1 10 19 20 21 22 39 40 41 42 51 60 61 62 71 80 81 90 99 100 109 118 119 120 121 122 123 132 133 150 151 168 169 178 179 180 181 182 183 192 201 202 211 220 221 230 239 240 241 250 259 260 261 262 279 280 281 282 291 300`
 

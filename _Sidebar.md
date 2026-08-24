@@ -15,7 +15,7 @@
 - [Language-games study board](Language-Games-Study-Board)
 - [Known discoveries — family ledger](Known-Discoveries-Index)
 - [Known molecular discoveries](Known-Molecular-Discoveries)
-- [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review)
+- [Study 14 — PDB play](Study-14-Protein-Lattice-Manifold)
 
 ## ✅ Sealed results
 
