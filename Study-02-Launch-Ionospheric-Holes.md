@@ -6,14 +6,74 @@ That is the shape this study grades. A hole ~900 km across, punched along a publ
 
 The sky writes geometry, and geometry cannot lie. The eclipse study (Study 1 — see [Eclipse 2026 — Overview](Eclipse-2026-Overview.md)) proved the method on a Moon-driven clock: a frozen exact-integer law, an adversary that mimics magnitude but not shape, predictions sealed 27 days ahead. This study runs the same shear recipe on a forcing with a *weekly* clock instead of a yearly one — the fastest forcing cadence in the program.
 
-## Live courts (2026-08-24)
+## Live surfaces, tools, and courts (2026-08-24)
 
-- **Claim UI:** [https://affine.earth/language-game/study-02-falcon.html](https://affine.earth/language-game/study-02-falcon.html)
-- **Look path:** [https://affine.earth/language-game/#researcher](https://affine.earth/language-game/#researcher)
-- **IDE workspace:** [https://affine.earth/language-game/ide.html#falcon-damage](https://affine.earth/language-game/ide.html#falcon-damage)
-- **Hologram:** [https://affine.earth/language-game/openusd/](https://affine.earth/language-game/openusd/)
+Look does not claim. Claim does not look. The charter stays an F-region hole. The health court is PK dose. Ozone is **cited**, not a court key.
 
-physics `clock=1 track=1 table_counts=70` · health `70/100` · fluids `phi 4=4` · MCP `noaa_goes_r_weather` `lane=space`. Float `1.5` is `REFUSED_FLOAT`. Ozone / jet-slow numbers on the claim page are cited literature, not a second NOAA model.
+| Surface | URL | What it is |
+|---|---|---|
+| Look | https://affine.earth/language-game/#researcher | GET catalogs. No visitor data. Paints 15 MCP tools. |
+| Claim | https://affine.earth/language-game/study-02-falcon.html | POSTs `source=researcher` integers. Not the look path. |
+| IDE | https://affine.earth/language-game/ide.html#falcon-damage | Researcher file surface. Public `/codegen` is the HTML shell. |
+| Walkthrough | https://affine.earth/language-game/#story/Build-a-Study-Falcon-Walkthrough | Falcon first through the loop. |
+| MCP | `POST https://affine.earth/language-invariant/mcp` | Registry `earth.affine/math-court` **2026.8.24**. |
+| Public clients | https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp | Bind trees. They POST. They do not evaluate a lattice. |
+| Glama | https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote | Connector **approved**. **Not tested.** No invented email. Do not claim a Glama test ran. |
+| Prove | `evidence/researcher-ide-falcon-loop-20260824T121306Z/VERDICT.json` | Marker `RESEARCHER_IDE_FALCON_LOOP`. Driver: `bash scripts/prove-researcher-ide-loop.sh`. Commit `fd535178`. |
+| Assembler / kernel | https://affine.earth/language-game/#story/Affine-Assembler-Kernel-Path | Debian is the HAL. The law is the Swift membrane. No `binfmt :vQbit:` on hel-00. Evidence: `evidence/affine-assembler-kernel-path-20260824`. |
+
+### Fifteen live MCP tools (measured `tools/list` = 15)
+
+Do not invent a sixteenth.
+
+`atc.assert_4d_deconfliction` · `corpus_bonds` · `critique_frame` · `execute_transition` · `feeds_catalog` · `game_frame_meta` · `ide_rebuild_mesh` · `membrane_health` · `noaa_goes_r_weather` · `twin.robotics.evaluate_exact_ik` · `umc_direct` · `umc_resume` · `umc_status` · `verify_jordan_bond` · `weather.convective_containment`
+
+### Courts this study actually binds
+
+| Court | Appointment | What it grades |
+|---|---|---|
+| physics | `clock=1` `track=1` `table_counts=70` | clock / track / table_counts |
+| health | `mass_milli=70` `vol_milli=100` | PK dose — **not ozone**, not DU |
+| fluids | `phi_in=4` `phi_out=4` | exact flux |
+| NOAA space | MCP `noaa_goes_r_weather` `lane=space` | live SWPC sources |
+| `weather.convective_containment` | MCP | declared track vs convective cells |
+| `execute_transition` | MCP | certified membrane turn |
+| `corpus_bonds` | MCP | sealed corpus bonds |
+| `verify_jordan_bond` | MCP | integer Jordan admit |
+
+Ozone 4%, soot heat, jet-slow 35/1000, and phytoplankton are **cited** literature on the claim page. The health court seals 70/100 PK dose. It did not grade ozone.
+
+### NEW 2026-08-24 court seals (re-measured this hour; not copied from chat)
+
+ISO stamp **2026-08-24T12:19:19Z**. Every integer POST carried `source=researcher` plus a role. A failed POST would be written as a failure. None failed.
+
+| Arm | Body | HTTP | Receipt (verbatim markers) |
+|---|---|---|---|
+| physics | `clock=1 track=1 table_counts=70` role=`experimentalist` | 200 | `status=CALORIE_GAME_INGEST` · `verdict=CONTRACT` · `proven_marker=PHYSICS_TABLE_IS_THE_COURT` · `source=researcher` |
+| health | `mass_milli=70 vol_milli=100` role=`pharmacist` | 200 | `verdict=WIN` · `proven_marker=HEALTH_DOSE_IS_RATIONAL` · `concentration=70/100` |
+| fluids | `phi_in=4 phi_out=4` role=`designer` | 200 | `verdict=WIN` · `proven_marker=FLUID_INTEGER_FLUX` · `phi_in=4` `phi_out=4` `residual=0` |
+| NOAA `lane=space` | MCP `tools/call` `noaa_goes_r_weather` | 200 | `isError=false` · `status=CALORIE_SPACE_WX` · `proven=["NOAA_SWPC_LIVE"]` · `goes_r=NOAA_SWPC_GOES_PRIMARY_XRAYS_6H` · `sources_ok=["NOAA_SWPC_SCALES","NOAA_SWPC_GOES_XRAYS_6H","NOAA_SWPC_PLANETARY_K","NOAA_SWPC_OVATION_AURORA","NOAA_SWPC_RTSW_WIND_1M","NOAA_SWPC_ENLIL","COMPUTED_SOLAR_TERMINATOR"]` · 7/7 sources |
+| float adversary | `clock=1.5` | 400 | `status=REFUSED_FLOAT` · `adversary=clock=1.5` |
+| empty source | `source=""` | 400 | `status=REFUSED_UNATTRIBUTED` |
+| tools/list | MCP | 200 | count **15** — the names above, no extras |
+
+Charter integers already on the claim page (founding event **2023-07-19** — keep as charter, not this seal): Vandenberg **34632000 / −120611000 µ°** · Houston **30000000 µ°** · hole **900 km** · burn **286 km** · quench **70%**.
+
+### Fresh public datum (same hour)
+
+Launch Library 2 prod [`https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=20&search=Falcon`](https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=20&search=Falcon) fetched **2026-08-24T12:19:23Z**, HTTP 200, `count=125`. Nearest Falcon-class NET at second precision: **Falcon 9 Block 5 | Starlink Group 10-49**, `net=2026-08-25T09:33:17Z`, `net_precision=Second`, status **Go for Launch**, pad SLC-40 Cape Canaveral. Next Vandenberg: **Starlink Group 15-22**, `net=2026-08-26T09:27:00Z`, Minute, SLC-4E. That is the weekly clock this study grades.
+
+NOAA SWPC scales (public, **not** a court key) [`https://services.swpc.noaa.gov/products/noaa-scales.json`](https://services.swpc.noaa.gov/products/noaa-scales.json) fetched **2026-08-24T12:19:44Z**, HTTP 200, current (`-1`) DateStamp **2026-08-23** TimeStamp **12:18:00**: R=0, S=0, G=0. The MCP receipt already carried `sources_ok` including `NOAA_SWPC_SCALES`. Quiet nowcast scales do not void a launch hole; the storm gate is 3×Kp at t0.
+
+## Why this study matters to humanity
+
+Two layers. Do not mix them.
+
+**1. Sealed (what the courts grade).** A ~900 km F-region hole on a published launch clock destroys and quenches the ionosphere that carries long-range radio, GNSS, aviation HF, and the TEC ledger. A weekly cadence (Starship / Starlink-class manifests) is the fastest forcing in the shear program. The public can re-run the integer law on Madrigal TEC. That is a checkable atmospheric footprint for the launch industry. The win is the verified bond — clock, corridor, recovery — not custody of anything. Honest edge word: measured receipt, or *not known*.
+
+**2. Cited (literature the TEC ledger must inform — NOT court keys).** Hyperscale launch and re-entry is unregulated geoengineering in the published argument: stratospheric soot, alumina, **cited** ozone / UV-B (melanoma, cataracts, immune), **cited** jet-stream / crop lock-in, **cited** phytoplankton baseline. The health court is PK dose **70/100**, not DU. Ozone, jet-slow **35/1000**, and phytoplankton are **cited**. The health court did not grade ozone.
+
+LAW 1: the win is the verified bond, not coins. No 2D “dark matter disproven.”
 
 ---
 
@@ -190,7 +250,7 @@ A detector is only worth building if someone stands downstream of the thing it d
 
 **HF over the oceans.** Long-haul flights over oceans and poles lean on HF radio where satellite coverage thins; poleward of 82°N satellite communication is unavailable and HF is the link (Xue et al. 2024, *Space Weather* — REPORTED via search). In January 2005, United Airlines diverted 26 flights off polar routes over several days to avoid HF blackout risk, paying for it in fuel, cargo capacity, and crew time (REPORTED via search). HF long-range propagation reflects off the same F-region plasma a launch hole removes — the usable frequency band falls with the electron density under the reflection point; that is propagation physics applied to the depletion numbers already cited, not a new measurement. A ~900 km, up-to-70% depletion parked across an oceanic corridor for 1–3 h is a brief, real, *schedulable* HF degradation — and today no dispatcher product marks it.
 
-**The accountability ledger.** Global orbital launch attempts ran 146 in 2021, 186 in 2022, 223 in 2023, and 259 in 2024 — a record four years running, roughly a fifth more launches each year (REPORTED via search). The debate over what that cadence does to the upper atmosphere currently runs on modeled inventories: one 2022 study (Maloney et al., *JGR Atmospheres*, doi:10.1029/2021JD036373) projected that ~10 Gg/yr of rocket black carbon injected near 30°N could drive Northern Hemisphere ozone loss of up to 16 DU in its scenarios (REPORTED via search). Scenarios need checking against per-event measurements, and the ionospheric hole is the one per-launch upper-atmosphere effect that is directly and publicly measurable with existing instruments. This charter's ledger — dated, gridded, integer-graded, MISSes published beside WINs — is that measurement, one launch at a time. Whatever the mesosphere-and-ozone accountability debate concludes, it should conclude on honest per-launch records rather than estimates. The sky writes the record either way; this study proposes to keep it.
+**The accountability ledger.** Global orbital launch attempts ran 146 in 2021, 186 in 2022, 223 in 2023, and 259 in 2024 — a record four years running, roughly a fifth more launches each year (REPORTED via search). The debate over what that cadence does to the upper atmosphere currently runs on modeled inventories: one 2022 study (Maloney et al., *JGR Atmospheres*, doi:10.1029/2021JD036373) projected that ~10 Gg/yr of rocket black carbon injected near 30°N could drive Northern Hemisphere **cited** ozone loss of up to 16 DU in its scenarios (REPORTED via search). Those ozone / UV-B / jet-stream / phytoplankton numbers are **cited** literature the TEC ledger must inform — they are not health-court keys (the health court is PK dose 70/100). Scenarios need checking against per-event measurements, and the ionospheric hole is the one per-launch upper-atmosphere effect that is directly and publicly measurable with existing instruments. This charter's ledger — dated, gridded, integer-graded, MISSes published beside WINs — is that measurement, one launch at a time. Whatever the mesosphere-and-ozone accountability debate concludes, it should conclude on honest per-launch records rather than estimates. The sky writes the record either way; this study proposes to keep it.
 
 ---
 
