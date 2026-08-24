@@ -219,6 +219,41 @@ The galactic center is a public scientific object. School posters, press release
 - **Not immune to upstream calibration.** Network-calibrated CSV is already processed relative to correlator L1. The Form names that layer; L1 is the dispute surface.
 - **Not a single-night movie of the event horizon.** Time variability is recorded; dynamical imaging remains adversary-class until its own charter freezes.
 - **Not M87\* primary.** M87\* is comparative transport only in this study.
+- **Not a court on CMZ slim filaments.** The 2026-08-24 cited observation below is literature on the same sky. The frozen EHT CSV law does not grade it.
+
+---
+
+## Cited 2026-08-24 — ALMA slim filaments in the CMZ (not a court)
+
+Fetch dated **2026-08-24**. This is a **cited architectural reading** of a published observation on the same sky as Study 07 (Sgr A\* / the Central Molecular Zone). It is **not** a court key. Study 07's frozen law grades EHT Stokes-I visibilities and closures. It does **not** grade CMZ filaments. Physics `clock`/`track`/`table_counts` is Study 02's launch table. Do not POST filament lengths into `physics` or `geometry`.
+
+**What was fetched (VERIFIED by live fetch 2026-08-24):**
+
+| Item | Value | Source |
+|---|---|---|
+| Observatory | ALMA (Atacama Large Millimeter/submillimeter Array), Chile | ALMA press 2025-03-19 |
+| Object | Slim filaments in the CMZ, in the 20 km s⁻¹ and 50 km s⁻¹ clouds near Sgr A\* | Yang et al. 2025; ALMA press |
+| Spectral lines | SiO 5–4 plus eight additional 1.3 mm molecular lines, including several complex organic molecules (press cycle names CH₃OH, CH₃CN, HC₃N) | Yang et al. A&A 694 A86 |
+| Length / width (paper bounds) | long **>0.5 pc**, narrow **<0.03 pc** | abstract, A&A 694 A86 |
+| Continuum | not detected in 1.3 mm continuum at the 5σ level | same |
+| Paper | Yang, Lu, Zhang et al., *ALMA observations of massive clouds in the central molecular zone: slim filaments tracing parsec-scale shocks*, A&A **694** A86 (published 2025-02-01) | [doi:10.1051/0004-6361/202453191](https://doi.org/10.1051/0004-6361/202453191) · [arXiv:2502.03913](https://arxiv.org/abs/2502.03913) |
+| ALMA press | 19 March 2025 | [ALMA: “Space Tornadoes” around the Milky Way’s core](https://www.almaobservatory.org/en/press-releases/alma-discovers-space-tornadoes-around-the-milky-ways-core/) |
+| BBC Sky at Night | July 2025 interview with Kai Yang (page fetched 2026-08-24; © Our Media 2026) | [Slim filaments in the CMZ](https://www.skyatnightmagazine.com/news/filaments-central-molecular-zone) |
+
+**REPORTED vs VERIFIED.** The length/width bounds and the SiO 5–4 + eight-line class are **VERIFIED** from the A&A abstract and the ALMA press page fetched 2026-08-24. Individual filament lengths, position angles, and a census count are in the paper; this page does not invent them.
+
+**A later 2026 survey is a different class.** Battersby et al., MNRAS, published **2026-06-11** (ACES VI) report large-scale filaments ≳10 pc and small-scale ~1 pc filaments, both with FWHM ~0.1 pc, traced in HNCO 4(0,4)–3(0,3). That is **not** the slim-filament class (width <0.03 pc, SiO 5–4). Do not mix the two tables. [doi:10.1093/mnras/stag1119](https://doi.org/10.1093/mnras/stag1119)
+
+**Architectural reading (cited, not sealed):**
+
+- The slim, straight gas is a **candidate** unconstrained-lattice / affine-vector *shape* — long and narrow against the continuous MHD-turbulence story that expects more tangled, dust-traced filaments in hydrostatic equilibrium.
+- The paper's “parsec-scale shocks” / “space tornadoes” reading is **cited** as a discrete-update story: a shock writes a slim filament, the filament dissipates, molecules freeze back to dust. Analogy to Study 02's acoustic-gravity / Falcon shock-acoustic waves: **same grammar (discrete update vs continuous magnitude), not the same court.**
+- When continuous MHD cannot hold a slim filament in hydrostatic equilibrium, the **adversary narrative** some astronomers reach for is ΛCDM dark-matter “glue.” This page does **not** grade that. The lattice has no filament length / width / position-angle / line-ID key. Honest edge word on mass is ***not known***. This section does **not** say dark matter is disproved.
+- “Run through the subtraction matrix” means the **next increment is court bind** when those keys exist. Do not stub a court. Do not POST to `physics` or `geometry`. Affine Assembler is not a second law here — Debian is the HAL; binfmt stays dark.
+
+**Figure.** Use the ALMA press plate (Yang et al.; credit on that page): MeerKAT 1.28 GHz of the Sgr A region plus ALMA SiO 5–4 zooms of the 20 and 50 km s⁻¹ clouds. Do not hotlink a pirated journal PDF.
+
+**Study 10.** Fermi / 43 GeV is a different shear (keV ingest, Inner Galaxy null). Filaments are not a keV ingest. Cross-link: [Study 10](Study-10-Fermi-Gamma-Shear-Dark-Matter.md).
 
 ---
 

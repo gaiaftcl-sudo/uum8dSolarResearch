@@ -47,4 +47,6 @@ Each row freezes **before** that product's imaging press surface is scored. Port
 3. Emit one ledger row per stratum: WIN / MISS / VOID.
 4. Publish the row raw on the Results page. Do not retune thresholds.
 
+ALMA CMZ slim filaments (cited 2026-08-24 on the [charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md#cited-2026-08-24--alma-slim-filaments-in-the-cmz-not-a-court)) are **not** a pre-registered EHT product. They do not move these integers.
+
 Back to [Study 07 charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md) · [Corpus](Study-07-SgrA-Milky-Way-Corpus.md) · [Results](Study-07-SgrA-Milky-Way-Results.md)

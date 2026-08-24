@@ -87,4 +87,8 @@ Paper III static imaging used lightcurve-normalized visibilities. Graded under t
 | S3 — Pipeline strata agree or disagreement published | **PASS** — HOPS and CASA both 4/4 WIN |
 | S4 — Prospective releases | **OPEN** — waiting on next portal Sgr A* product (see [Registry](Study-07-SgrA-Milky-Way-Registry.md)) |
 
+## Cited 2026-08-24 — CMZ slim filaments (not this law)
+
+The frozen integers on this page grade EHT Stokes-I visibilities and closures. They do **not** grade ALMA CMZ slim filaments. Fetch dated **2026-08-24**: Yang et al., A&A **694** A86 (2025-02-01) — ALMA, SiO 5–4 plus eight 1.3 mm lines, length **>0.5 pc**, width **<0.03 pc**, in the 20 and 50 km s⁻¹ clouds near Sgr A\*. Full cited reading, REPORTED vs VERIFIED, and the *not known* clause: [Study 07 charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md#cited-2026-08-24--alma-slim-filaments-in-the-cmz-not-a-court). Claim stays **DARK**. Do not POST this into `physics`.
+
 Back to [Study 07 charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md) · [Corpus](Study-07-SgrA-Milky-Way-Corpus.md) · [Registry](Study-07-SgrA-Milky-Way-Registry.md)

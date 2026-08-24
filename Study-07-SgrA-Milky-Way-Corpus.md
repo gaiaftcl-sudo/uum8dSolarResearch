@@ -50,4 +50,6 @@ Eight primary `csv/` strata (2 days × 2 bands × 2 pipelines). Observed envelop
 | Scramble-null concentration max | 379 ppt |
 | Min (real − null) concentration | 122 ppt |
 
+This inventory is the 2017 EHT Stokes-I CSV set. ALMA CMZ slim filaments (cited 2026-08-24) are **not** in this tarball and have no SHA-256 row here. See the [charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md#cited-2026-08-24--alma-slim-filaments-in-the-cmz-not-a-court).
+
 Back to [Study 07 charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md) · [Results](Study-07-SgrA-Milky-Way-Results.md) · [Registry](Study-07-SgrA-Milky-Way-Registry.md)
