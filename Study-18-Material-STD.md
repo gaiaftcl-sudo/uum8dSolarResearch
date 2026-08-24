@@ -1,6 +1,6 @@
 # Study 18 — Material STD (COD / mp-id / space-group)
 
-**Status: LAW FROZEN — 2026-08-24 · Claim on apex waits on the membrane binary**  
+**Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · COD 9008564 CALORIE**  
 **Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 16](Study-16-Disease-Type.md) · [Study 17](Study-17-Chemistry-InChIKey.md)
 
 | Surface | URL / key | Grade |

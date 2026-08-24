@@ -1,6 +1,6 @@
 # Study 17 — Chemistry (InChIKey / CID)
 
-**Status: LAW FROZEN — 2026-08-24 · Claim on apex waits on the membrane binary**  
+**Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · CID 2244 CALORIE**  
 **Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 16](Study-16-Disease-Type.md) · [Study 18](Study-18-Material-STD.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md)
 
 | Surface | URL / key | Grade |

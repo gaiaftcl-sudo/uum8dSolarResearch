@@ -101,4 +101,4 @@ No IC50 is written on any row. If a number was not in the fetch, it is absent.
 
 **Status: LOOK LIVE — hosted index N=258616. Claim DARK.** Family ledger: [Known discoveries](Known-Discoveries-Index.md).
 
-Local generated-candidate archive (not this catalog): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) · [eric-local-archive.json](https://affine.earth/language-game/discoveries/eric-local-archive.json) — **LOOK LIVE · LOCAL ARCHIVE · CLAIM DARK** · IDE `#eric-archive` · **0** public PDB/PubChem/ChEMBL/DailyMed ids.
+Local generated-candidate archive (not this catalog): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) · [eric-local-archive.json](https://affine.earth/language-game/discoveries/eric-local-archive.json) — **LOOK LIVE · LOCAL ARCHIVE · PLAY VIA 16–18** · IDE `#eric-archive` · play `#disease-icd` `#chemistry-inchi` `#material-std` · **0** public PDB/PubChem/ChEMBL/DailyMed ids.

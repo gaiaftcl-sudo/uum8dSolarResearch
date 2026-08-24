@@ -1,6 +1,6 @@
 # Study 16 — Disease type (ICD / DOID)
 
-**Status: LAW FROZEN — 2026-08-24 · Claim on apex waits on the membrane binary**  
+**Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · E11 / DOID:9352 CALORIE · generated nicknames REFUSED_NO_STD**  
 **Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold.md) · [Study 17](Study-17-Chemistry-InChIKey.md) · [Study 18](Study-18-Material-STD.md)
 
 | Surface | URL / key | Grade |

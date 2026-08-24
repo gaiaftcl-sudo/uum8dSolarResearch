@@ -1,7 +1,7 @@
-# ERIC Ultimate package — pointer, not the games
+# ERIC Ultimate package — Look archive, play via 16–18
 
-**Status: LOOK LIVE · POINTER · CLAIM is Studies 16 / 17 / 18 — 2026-08-24**  
-**The work is the games.** This file is a pointer (N + sha256 of files that remain on steward disk). It is not a court.  
+**Status: LOOK LIVE · LOCAL ARCHIVE · PLAY VIA 16–18 — 2026-08-24**  
+**The work is the games.** This file is the Look catalog (N + sha256 of files that remain on steward disk). It is not a court.  
 **Program:** [Study 16 — Disease type](Study-16-Disease-Type.md) · [Study 17 — Chemistry](Study-17-Chemistry-InChIKey.md) · [Study 18 — Material STD](Study-18-Material-STD.md) · [Study 14](Study-14-Protein-Lattice-Manifold.md) · [Language-games study board](Language-Games-Study-Board.md)
 
 | Surface | URL / key | Grade |
@@ -9,8 +9,21 @@
 | ERIC Look | [eric-local-archive.json](https://affine.earth/language-game/discoveries/eric-local-archive.json) | **LIVE** · hosted hashes + integer aggregates. `index_n=125302` = **78680** proteins + **46622** materials. `label_kind=GENERATED_CANDIDATE`. |
 | PDB Look (separate file) | [catalog.json](https://affine.earth/language-game/discoveries/catalog.json) | **LIVE** · hosted PDB holdings **N=258616**. ERIC adds **0** named public PDB / PubChem / ChEMBL / DailyMed ids. Not merged. |
 | Family GET | [families.json](https://affine.earth/language-game/discoveries/families.json) | **LIVE** · row `eric-local-archive`. OPEN stays **03 / 05 / 08**. |
-| IDE | [ide.html#eric-archive](https://affine.earth/language-game/ide.html#eric-archive) · [#researcher](https://affine.earth/language-game/#researcher) | GET catalog. `credentials: omit`. Writes a Look receipt locally. |
-| Claim | Studies 16 / 17 / 18 | Industry keys: ICD/DOID · InChIKey/CID · COD/mp/space-group. Generated ERIC labels do not WIN. Occupancy stays Study 14 grammar. |
+| IDE | [ide.html#eric-archive](https://affine.earth/language-game/ide.html#eric-archive) · [#researcher](https://affine.earth/language-game/#researcher) | GET catalog. `credentials: omit`. Writes a Look receipt locally. Walks to 16–18. |
+| Play | Studies 16 / 17 / 18 | Industry keys: ICD/DOID · InChIKey/CID · COD/mp/space-group. Generated ERIC labels do not WIN. Occupancy stays Study 14 grammar. |
+
+---
+
+## How ERIC is played
+
+ERIC nicknames are not keys. Industry STD is how ERIC is played. The tiny fixture is already live — do not invent 125k ICD maps.
+
+1. **LOOK** the archive — [eric-local-archive.json](https://affine.earth/language-game/discoveries/eric-local-archive.json) · IDE [`#eric-archive`](https://affine.earth/language-game/ide.html#eric-archive). Hashes + integer aggregates. `GENERATED_CANDIDATE`. Claim on raw labels is DARK.
+2. **CLAIM** the goal on the live industry courts with industry keys:
+   - Disease — [Study 16](Study-16-Disease-Type.md) · [claim](https://affine.earth/language-game/study-16-disease.html) · IDE [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd). ICD/DOID. Fixture E11 / DOID:9352. Generated `Bladder_Cancer_111` → `REFUSED_NO_STD`.
+   - Chemistry — [Study 17](Study-17-Chemistry-InChIKey.md) · [claim](https://affine.earth/language-game/study-17-chemistry.html) · IDE [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi). InChIKey/CID. Fixture CID 2244.
+   - Material — [Study 18](Study-18-Material-STD.md) · [claim](https://affine.earth/language-game/study-18-material.html) · IDE [`#material-std`](https://affine.earth/language-game/ide.html#material-std). COD / mp / space-group. Fixture COD 9008564.
+3. **Go First 19** — [Study 19](Study-19-Go-First-Dice.md) · IDE [`#gofirst-dice`](https://affine.earth/language-game/ide.html#gofirst-dice) is a sibling shear study (Meyer 2023 5×d60, exact `1/120`). Not an ERIC dump.
 
 The win is the **verified bond**. Edge word on unbound generated mass: ***not known***. This page does not say folding, docking, or thermochemistry is solved. Generated labels are not PDB ids.
 
@@ -85,6 +98,10 @@ LOOK = GET. No identity.
 - https://affine.earth/language-game/discoveries/catalog.json
 - https://affine.earth/language-game/#researcher
 - https://affine.earth/language-game/ide.html#eric-archive
+- https://affine.earth/language-game/ide.html#disease-icd
+- https://affine.earth/language-game/ide.html#chemistry-inchi
+- https://affine.earth/language-game/ide.html#material-std
+- https://affine.earth/language-game/ide.html#gofirst-dice
 - https://affine.earth/language-game/ide.html#discovery-review
 - https://affine.earth/language-game/ide.html#discoveries-index
 - https://affine.earth/language-game/#story/ERIC-Ultimate-Ingest-Review

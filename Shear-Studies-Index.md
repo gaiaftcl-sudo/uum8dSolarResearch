@@ -32,12 +32,12 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 14 | [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md) | **LOOK LIVE · CHARTER WITH ARCHIVE · CLAIM DARK** | Cited amino-acid alphabet; complementary occupancy is the *shape*, not an O(1) engine. Public PDB index GET `index_n=258616` VERIFIED 2026-08-24. IDE `#discovery-review`. OPEN is false — the PDB id list is ingested; occupancy integers are still absent so Claim stays DARK. |
 | 15 | [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear.md) | **CITED** — GMTKN55 **2.72 / 2.8** kcal/mol fetched 2026-08-24. Court DARK. Not OPEN. | Contrast methods. Affine refuses the float or seals the integer. Do not call Skala useless. Family ledger: [Known discoveries](Known-Discoveries-Index.md). |
 
-| 16 | [Study 16 — Disease type](Study-16-Disease-Type.md) | **LAW FROZEN** — ICD/DOID fixture. Claim waits on membrane binary. | Industry key is ICD-10 + DOID. Generated ERIC labels do not WIN. Occupancy stays Study 14 grammar. |
-| 17 | [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey.md) | **LAW FROZEN** — InChIKey/CID fixture. Claim waits on membrane binary. | CID 2244 PUG VERIFIED. Float MW/logP refused. SMILES is not the court. |
-| 18 | [Study 18 — Material STD](Study-18-Material-STD.md) | **LAW FROZEN** — COD/mp/space-group fixture. Claim waits on membrane binary. | COD 9008564 sg 227 Diamond. No minted mp- ids. No 46622 dump. |
-| 19 | [Study 19 — Go First Dice](Study-19-Go-First-Dice.md) | **LAW FROZEN** — cited Meyer 2023 5×d60. Claim waits on membrane binary. | Exact `1/120`. No face scan. Float simplex is the adversary. |
+| 16 | [Study 16 — Disease type](Study-16-Disease-Type.md) | **LAW FROZEN** + **LIVE CLAIM** | ICD/DOID industry key. Generated ERIC labels do not WIN. |
+| 17 | [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey.md) | **LAW FROZEN** + **LIVE CLAIM** | InChIKey/CID. SMILES and float MW/logP are not the court. |
+| 18 | [Study 18 — Material STD](Study-18-Material-STD.md) | **LAW FROZEN** + **LIVE CLAIM** | COD / mp-id / space-group. No minted ids. |
+| 19 | [Study 19 — Go First Dice](Study-19-Go-First-Dice.md) | **LAW FROZEN** + **LIVE CLAIM** | Cited Meyer 2023 5×d60. Exact `1/120`. Sibling of ERIC, not a dump. |
 
-Ledger (pointer, not a study number): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) — hashes + N on steward disk. The games are 16 / 17 / 18. C-007 arms ABSENT FROM APEX (file count **7**). OPEN stays 03 / 05 / 08.
+Ledger (not a new study number): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) — **LOOK LIVE · LOCAL ARCHIVE · PLAY VIA 16–18**. Hosted hashes + integer aggregates `index_n=125302` (78680 + 46622); **0** public PDB ids; C-007 arms not ingested. Play on `#disease-icd` `#chemistry-inchi` `#material-std`. OPEN stays 03 / 05 / 08.
 
 ## What this program protects
 

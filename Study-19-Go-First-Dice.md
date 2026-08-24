@@ -1,6 +1,6 @@
 # Study 19 — Combinatorial State Space: 5-Player Go First Dice
 
-**Status: LAW FROZEN — 2026-08-24 · Claim on apex waits on the membrane binary**  
+**Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · Meyer 2023 5×d60 CALORIE · sibling of ERIC, not a dump**  
 **Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 11 Ehrhart](Study-11-Ehrhart-Volume-Shear.md) · [Study 12 chance](Study-12-Quantum-Parallel-Repetition-Shear.md)
 
 | Surface | URL / key | Grade |
