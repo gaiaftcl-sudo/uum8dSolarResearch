@@ -6,6 +6,15 @@ That is the shape this study grades. A hole ~900 km across, punched along a publ
 
 The sky writes geometry, and geometry cannot lie. The eclipse study (Study 1 — see [Eclipse 2026 — Overview](Eclipse-2026-Overview.md)) proved the method on a Moon-driven clock: a frozen exact-integer law, an adversary that mimics magnitude but not shape, predictions sealed 27 days ahead. This study runs the same shear recipe on a forcing with a *weekly* clock instead of a yearly one — the fastest forcing cadence in the program.
 
+## Live courts (2026-08-24)
+
+- **Claim UI:** [https://affine.earth/language-game/study-02-falcon.html](https://affine.earth/language-game/study-02-falcon.html)
+- **Look path:** [https://affine.earth/language-game/#researcher](https://affine.earth/language-game/#researcher)
+- **IDE workspace:** [https://affine.earth/language-game/ide.html#falcon-damage](https://affine.earth/language-game/ide.html#falcon-damage)
+- **Hologram:** [https://affine.earth/language-game/openusd/](https://affine.earth/language-game/openusd/)
+
+physics `clock=1 track=1 table_counts=70` · health `70/100` · fluids `phi 4=4` · MCP `noaa_goes_r_weather` `lane=space`. Float `1.5` is `REFUSED_FLOAT`. Ozone / jet-slow numbers on the claim page are cited literature, not a second NOAA model.
+
 ---
 
 ## The forcing and its clock
