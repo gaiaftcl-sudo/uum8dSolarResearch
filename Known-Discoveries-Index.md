@@ -12,7 +12,7 @@
 
 Thousands = measured catalog **N**, not 258616 invented pages. Example fact sheets already exist (4HHB, CID 2244, CHEMBL25, DailyMed insulin) and stay cited fetch fields only.
 
-The molecular corpus is **one hosted file**: `discoveries/catalog.json`. There is no second hosted protein / materials / drug / satellite discovery catalog.
+Hosted catalogs: `discoveries/catalog.json` (PDB holdings N=258616) and `discoveries/eric-local-archive.json` (generated candidates, **not** PDB; N=78680 proteins + 46622 materials). They are never merged.
 
 ---
 
@@ -37,7 +37,7 @@ The molecular corpus is **one hosted file**: `discoveries/catalog.json`. There i
 | 15 Skala GMTKN55 | cited **2.72** / **2.8** | [15](Study-15-Skala-DFT-Shear.md) | [`#skala-cited`](https://affine.earth/language-game/ide.html#skala-cited) | **CITED** · court **DARK** |
 | QCD freedom | `q_bin=1` `dilation_t=2` | [QCD](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/QCD-Asymptotic-Freedom-Shear) | [`#qcd-freedom`](https://affine.earth/language-game/ide.html#qcd-freedom) | **LIVE CLAIM** |
 | NOAA SWPC feed | **7/7** on Study 02 prove | [02](Study-02-Launch-Ionospheric-Holes.md) | [`#falcon-damage`](https://affine.earth/language-game/ide.html#falcon-damage) | **LIVE CLAIM** (feed, not a SID court) |
-| ERIC local archive | **78680** proteins · **46622** materials (on-disk CSV) | [ERIC ingest review](ERIC-Ultimate-Ingest-Review.md) | [`#discovery-review`](https://affine.earth/language-game/ide.html#discovery-review) | **CHARTER WITH ARCHIVE · LOOK path · CLAIM DARK** — local hashes; **0** public PDB/PubChem/ChEMBL/DailyMed ids. Not a hosted `families.json` row this hour. Scores are shear. SOP/warfare/transmutation **C-007**. |
+| ERIC local archive | **78680** proteins · **46622** materials (`index_n=125302`) | [ERIC ingest review](ERIC-Ultimate-Ingest-Review.md) | [`#eric-archive`](https://affine.earth/language-game/ide.html#eric-archive) | **LOOK LIVE · LOCAL ARCHIVE · CLAIM DARK** — hosted hashes + integer aggregates. `label_kind=GENERATED_CANDIDATE`. **0** public PDB/PubChem/ChEMBL/DailyMed ids. C-007 arms not ingested. |
 
 **OPEN (no data) — only 03, 05, 08.** Those rows have no IDE hash because there is nothing to GET. ERIC does not supply SID / NMDB / µas.
 
@@ -52,6 +52,7 @@ Health court is PK dose (`mass_milli`/`vol_milli`), not a pocket, not ozone.
 | Path | Hosted? | What it is |
 |---|---|---|
 | `cells/xcode/Resources/language-game/discoveries/catalog.json` | **yes** · `/language-game/discoveries/catalog.json` | PDB holdings N=258616 + cited examples |
+| `cells/xcode/Resources/language-game/discoveries/eric-local-archive.json` | **yes** · `/language-game/discoveries/eric-local-archive.json` | generated candidates · hashes + integer aggregates · not PDB |
 | `cells/xcode/Resources/language-game/discoveries/families.json` | **yes** · `/language-game/discoveries/families.json` | this family ledger |
 | `cells/xcode/Resources/language-game/press/catalog.json` | **yes** | wiki story index — not a discovery corpus |
 | `cells/xcode/Resources/language-game/mcp-tools.json` | **yes** | 15 MCP tool names |
