@@ -1,17 +1,25 @@
 # Study 12 — Quantum Parallel Repetition Shear
 
-**Status: LAW FROZEN — 2026-08-22**  
+**Status: CHARTER SEALED — 2026-08-22 · LIVE CLAIM**  
 **Program:** [Conjecture Alignment](Conjecture-Alignment-UUM8D) · [Shear Studies Index](Shear-Studies-Index)
+
+| Surface | URL / key | Cited vs sealed |
+|---|---|---|
+| Claim UI | https://affine.earth/language-game/study-12-chance.html | sealed POST |
+| IDE | https://affine.earth/language-game/ide.html#qpr | file template; no auto-POST |
+| Look | https://affine.earth/language-game/#researcher | GET only |
+| Court | `POST /language-invariant/game/chance/ingest` `rounds=3` | sealed `27/64` / `27/64` · `STUDY12_QPR_PROVEN` · float `1.5` → HTTP 400 |
+| Humanity | Discrete repetition bounds without a second amplitude law | float adversary `751/1000` is the sealed miss |
 
 ---
 
 ## For every reader
 
-Quantum parallel repetition asks: *if Alice and Bob play a nonlocal game \(G\) in parallel \(n\) times, how fast does the winning probability decay?* The standard proof uses **continuous amplitudes** and tensor products in \(\mathbb{C}\). UUM-8D replaces amplitudes with **discrete vQbit transitions** and **Jordan-bonded** win fractions — exact rationals.
+Quantum parallel repetition asks: *if Alice and Bob play a nonlocal game \(G\) in parallel \(n\) times, how fast does the winning probability decay?* The standard proof uses **continuous amplitudes** and tensor products in \(\mathbb{C}\). UUM-8D replaces amplitudes with **vQbit** primitives and **Jordan-bonded** entanglement matrices — discrete state transitions with exact rationals.
 
-Results: [Study 12 Results](Study-12-Quantum-Parallel-Repetition-Results) · Corpus: [Corpus](Study-12-Quantum-Parallel-Repetition-Corpus)
+This study will grade whether integer-bounded parallel repetition bounds match published thresholds — and whether float amplitude models shear the bound.
 
-**4 / 4 WIN. Float adversary 4 / 4 MISS.**
+**LIVE CLAIM** — apex `chance` returns `STUDY12_QPR_PROVEN`. Named receipt is the court.
 
 ---
 
@@ -21,30 +29,36 @@ Results: [Study 12 Results](Study-12-Quantum-Parallel-Repetition-Results) · Cor
 |---|---|
 | **Forcing** | Parallel repetition index \(n\) (integer rounds) |
 | **Clock** | Round index \(k=1\ldots n\) |
-| **Track** | CHSH payoff table; discrete product \((3/4)^n\) |
-| **Raw archive** | Integer win rule \(a\oplus b=x\land y\) on this corpus page |
-| **Adversary** | Float millisecond proxy \(751/1000\) |
+| **Track** | Bipartite strategy simplex in the integer manifold |
+| **Raw archive** | Published game tables (CHSH, Magic Square, etc.) with exact rational winning thresholds |
+| **Adversary** | Float amplitude product model — continuous \(\mathbb{C}^{d^n}\) tensor |
 | **Future events** | New games registered before bounds are examined |
 
 ---
 
-## What the WIN means
+## UUM-8D integration path
 
-The classical CHSH ceiling is a finite strategy table. Multiplying that ceiling \(n\) times is the parallel-repetition law. A unit-norm discrete transition carries the same fraction. A continuous amplitude model that reports \(0.751\) never names the appointment.
-
----
-
-## Falsifiers
-
-| Falsifier | Effect |
+| Standard | UUM-8D |
 |---|---|
-| Discrete rate \(>\) \((3/4)^n\) | Primary **MISS** |
-| Float proxy equals the sealed fraction | Adversary no longer shears |
+| Complex amplitude \(\alpha\in\mathbb{C}\) | vQbit \((\tau, \mathrm{phase}, \mathrm{amplitude})\) with unit-norm rational |
+| Tensor product Hilbert space | Jordan algebra state on M⁸ = S⁴ × C⁴ |
+| Winning probability (float) | Ordinal comparison via cross-multiplication on \(\mathbb{Q}\) |
+| Parallel repetition bound | Discrete collapse turn count at sealed \(\chi_{\max}\) |
+
+Reference substrate map: `cells/xcode/Sources/InvariantCompiler/QuantumShearMap.swift` — transport criterion per algorithm row.
 
 ---
 
-## Read next
+## Success criteria (pre-registration)
 
-- [Study 12 Results](Study-12-Quantum-Parallel-Repetition-Results)
-- [Peer-review bundle](Peer-Review-Conjecture-Bundle)
-- [Study 13 — Connes rigidity](Study-13-Connes-Rigidity-Results)
+1. Integer Jordan-bonded repetition bound \(\le\) published upper bound for CHSH at \(n=1,2,4,8\).
+2. Float amplitude adversary **over- or under-estimates** the sealed bound at least once (shear measurable).
+3. No `Float`/`Double` on the seal path.
+
+---
+
+## Status
+
+**LIVE CLAIM — named `chance` receipt. Not OPEN.**
+
+When complete, results will publish as `Study-12-Quantum-Parallel-Repetition-Results.md`.

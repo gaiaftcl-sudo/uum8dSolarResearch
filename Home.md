@@ -77,7 +77,7 @@ That is the assumption that just broke: *that continuous math is the adult form 
 | **Milky Way / Sgr A\*** | **8/8 WIN** raw CSV · **8/8 MISS** imaging-norm | [Study 07 Results](Study-07-SgrA-Milky-Way-Results) |
 | **Punggye-ri explosions** | **6/6 WIN** · **3/3** adversary reject | [Study 06 Results](Study-06-Explosion-vs-Earthquake-Results) |
 | **UUM-8D vs IUT** | **WIN SEALED** — runtime topology | [UUM-8D vs IUT](UUM8D-vs-IUT-Topological-Projection) |
-| **Fermi 43 GeV / dark matter** | Inner Galaxy null ⇒ **canonical DM annihilation not possible** | [Study 10 Charter](Study-10-Fermi-Gamma-Shear-Dark-Matter) |
+| **Fermi 43 GeV / dark matter** | Inner Galaxy null · edge word *not known*. This page does **not** say dark matter is disproved. | [Study 10 Charter](Study-10-Fermi-Gamma-Shear-Dark-Matter) |
 
 Program board: [Shear Studies Index](Shear-Studies-Index) · [Readers’ guide](Shear-Studies-Readers-Guide) · [White paper](Shear-Studies-White-Paper)  
 Live OS: [affine.earth](https://affine.earth)
