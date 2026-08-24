@@ -31,6 +31,9 @@
 - [Study 09 — Convective bond](Study-09-Global-Convective-Bond)
 - [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold)
 - [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear)
+- [Study 16 — Disease type](Study-16-Disease-Type)
+- [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey)
+- [Study 18 — Material STD](Study-18-Material-STD)
 
 ## ☀️🌑 Eclipse 2026
 

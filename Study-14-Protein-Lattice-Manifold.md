@@ -7,7 +7,8 @@
 |---|---|---|
 | Look | https://affine.earth/language-game/#researcher · [catalog GET](https://affine.earth/language-game/discoveries/catalog.json) | GET only. credentials omit. |
 | Review ledger | [Known molecular discoveries](Known-Molecular-Discoveries.md) · IDE `#discovery-review` | **LOOK LIVE** — measured PDB holdings **258616** VERIFIED 2026-08-24. Claim stays **DARK**. |
-| Court | none — no occupancy / residue / pocket key on the running membrane | **DARK** |
+| Court | occupancy / pocket still **DARK** — complementary occupancy is the grammar, not a dock | **DARK** |
+| Industry courts | [Study 16 ICD](Study-16-Disease-Type.md) · [Study 17 InChIKey](Study-17-Chemistry-InChIKey.md) · [Study 18 material STD](Study-18-Material-STD.md) | **LAW FROZEN** — generated ERIC labels are not these keys |
 | `health` court | `mass_milli` / `vol_milli` | PK **dose**. Not a binding pocket. Not ozone. |
 | Study 11 `geometry` | `polytope_id` + `dilation` | Ehrhart volume. **Not** a protein fold. |
 | Humanity | Small- and large-molecule discovery without a moving DFT baseline | **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.** |

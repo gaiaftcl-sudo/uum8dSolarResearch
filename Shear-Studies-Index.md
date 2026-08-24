@@ -32,7 +32,11 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 14 | [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md) | **LOOK LIVE · CHARTER WITH ARCHIVE · CLAIM DARK** | Cited amino-acid alphabet; complementary occupancy is the *shape*, not an O(1) engine. Public PDB index GET `index_n=258616` VERIFIED 2026-08-24. IDE `#discovery-review`. OPEN is false — the PDB id list is ingested; occupancy integers are still absent so Claim stays DARK. |
 | 15 | [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear.md) | **CITED** — GMTKN55 **2.72 / 2.8** kcal/mol fetched 2026-08-24. Court DARK. Not OPEN. | Contrast methods. Affine refuses the float or seals the integer. Do not call Skala useless. Family ledger: [Known discoveries](Known-Discoveries-Index.md). |
 
-Ledger (not a new study number): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) — **LOOK LIVE · LOCAL ARCHIVE · CLAIM DARK**. Hosted hashes + integer aggregates `index_n=125302` (78680 + 46622); **0** public PDB ids; C-007 arms not ingested. Not Study 16. OPEN stays 03 / 05 / 08.
+| 16 | [Study 16 — Disease type](Study-16-Disease-Type.md) | **LAW FROZEN** — ICD/DOID fixture. Claim waits on membrane binary. | Industry key is ICD-10 + DOID. Generated ERIC labels do not WIN. Occupancy stays Study 14 grammar. |
+| 17 | [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey.md) | **LAW FROZEN** — InChIKey/CID fixture. Claim waits on membrane binary. | CID 2244 PUG VERIFIED. Float MW/logP refused. SMILES is not the court. |
+| 18 | [Study 18 — Material STD](Study-18-Material-STD.md) | **LAW FROZEN** — COD/mp/space-group fixture. Claim waits on membrane binary. | COD 9008564 sg 227 Diamond. No minted mp- ids. No 46622 dump. |
+
+Ledger (pointer, not a study number): [ERIC Ultimate ingest review](ERIC-Ultimate-Ingest-Review.md) — hashes + N on steward disk. The games are 16 / 17 / 18. C-007 arms ABSENT FROM APEX (file count **7**). OPEN stays 03 / 05 / 08.
 
 ## What this program protects
 
