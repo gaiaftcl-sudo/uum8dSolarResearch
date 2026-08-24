@@ -3,7 +3,7 @@
 This page is the **decidable checklist** for Study 03. Nothing here is scored by narrative. Each row is WIN / MISS / VOID from named public archives and sealed integers.
 
 **Parent charter:** [Study 03 — Solar-flare SIDs](Study-03-Solar-Flare-SIDs.md)  
-**Status:** OPEN — charter + Layer B sealed in prose; TEC corpus and SHARP corpus not yet ingested; thresholds not frozen until corpus runs.
+**Status:** OPEN — no TEC / SHARP corpus ingested; thresholds not frozen. We do not have the data.
 
 ---
 

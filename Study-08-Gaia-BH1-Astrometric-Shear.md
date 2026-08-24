@@ -108,4 +108,4 @@ Exact thresholds: derived at corpus ingest, then frozen — same road as Study 0
 
 ---
 
-**Status: OPEN — charter published, corpus not yet ingested. Ingest path sealed above: dedicated corpus → integers → ledger; NATS only post-grade.**
+**Status: OPEN — no µas ingest; thresholds not frozen. We do not have the data. Ingest path: dedicated corpus → integers → ledger; NATS only post-grade.**

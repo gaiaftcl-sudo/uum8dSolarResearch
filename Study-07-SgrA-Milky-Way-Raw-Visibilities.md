@@ -257,7 +257,7 @@ Fetch dated **2026-08-24**. This is a **cited architectural reading** of a publi
 
 ---
 
-**Status: LAW FROZEN 2026-07-23T20:00:59Z — corpus ingested, primary `csv/` 8/8 WIN, `csv_norm/` processing adversary 8/8 MISS. Prospective portal products OPEN on the [Registry](Study-07-SgrA-Milky-Way-Registry.md).**
+**Status: LAW FROZEN 2026-07-23T20:00:59Z — corpus ingested, primary `csv/` 8/8 WIN, `csv_norm/` processing adversary 8/8 MISS. Data is sealed. Claim on apex is not served yet. Next portal product is a registry slot, not an open study.**
 
 | Stage | Page |
 |---|---|

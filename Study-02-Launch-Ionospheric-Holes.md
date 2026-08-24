@@ -269,4 +269,4 @@ What this study is NOT:
 
 ---
 
-**Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the corpus runs.**
+**Status: LIVE CLAIM — apex POSTs named physics / health / fluids receipts. Charter corpus watch is a later Form, not an open study.**

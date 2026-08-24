@@ -193,4 +193,4 @@ Both directions of the ledger matter.
 
 ---
 
-**Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the corpus runs.**
+**Status: OPEN — no NMDB corpus ingested; thresholds not frozen. We do not have the data.**

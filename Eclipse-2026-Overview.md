@@ -1,5 +1,8 @@
 # ☀️🌑 Eclipse 2026 — the sky writes geometry, and geometry cannot lie
 
+**Status: DATA SEALED — first look 2026-08-12 matched; frozen integers + 82-row corpus. Data is sealed. Claim on apex is not served yet.**
+
+
 On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,000 kilometers long with a tip 294 kilometers wide — dragged across the Earth at supersonic speed, crossing western Iceland and northern Spain. This wiki is the complete, public, falsifiable record of an experiment that treats that moment not as a number to be measured, but as a **three-dimensional shape to be read** — with its claims sealed 27 days in advance, its data drawn only from public archives, and its verdicts computed in exact integers by a substrate whose native language is geometry.
 
 ## The experiment, plain — from the top (recorded T+1, 2026-08-13)

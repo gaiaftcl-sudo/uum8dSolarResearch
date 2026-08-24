@@ -236,4 +236,4 @@ Status of Layer B moves only when its own corpus freezes — independent of Laye
 - **A limb X-flare may legitimately under-shoot.** EUV center-to-limb attenuation means the 60° disk-position gate excludes some real flares from scoring — a narrower target set, accepted openly.
 - **The wait may be long.** SC25 is past its maximum interval; the standing law persists until the target arrives. It does not expire and it is not relaxed.
 
-**Status: OPEN — charter published (Layer A TEC SID + Layer B SHARP integer helicity). Corpora not yet ingested. Thresholds not frozen. Predictions/validations spelled out in [Study-03-Predictions-and-Validations](Study-03-Predictions-and-Validations.md).**
+**Status: OPEN — no SID corpus ingested; detection threshold not sealed. We do not have the data. Layer A TEC + Layer B SHARP stay charter prose. See [Study-03-Predictions-and-Validations](Study-03-Predictions-and-Validations.md).**

@@ -1,6 +1,6 @@
 # Study 10 — Fermi Gamma Shear: the 43 GeV line and why dark-matter annihilation is not possible
 
-**Status: CHARTER SEALED 2026-08-20** — corpus ingest OPEN · Inner Galaxy null is the load-bearing fact  
+**Status: CHARTER WITH ARCHIVE — 2026-08-20** — named HEASARC weekly photon FITS + paper. No keV ingest. Not OPEN. Edge word on mass: *not known*.  
 **Paradigm:** [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm) · [Program index](Shear-Studies-Index)
 
 ---
@@ -77,4 +77,4 @@ That observation is **not** a keV ingest. Fermi / 43 GeV is a different shear. F
 
 ---
 
-**Status: CHARTER SEALED — ready for corpus. The physics cut is already public in the paper; the lattice seal makes it a Shear Study.**
+**Status: CHARTER WITH ARCHIVE — named HEASARC weekly photon FITS + paper. No keV corpus on the lattice. Data cited, not ingested. Claim on apex is not served yet. Edge word on mass: *not known*.**
