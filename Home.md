@@ -19,7 +19,7 @@ FoT is the base. Public flourishing. **100k+ discoveries** means two measured ca
 | Builder | BUILD | [IDE chooser](https://affine.earth/language-game/ide.html#chooser) |
 | Public / press | SHARE | [Discoveries by user](Discoveries-By-User.md) · [family ledger](Known-Discoveries-Index.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot) · [`#stellar-dynamo`](https://affine.earth/language-game/ide.html#stellar-dynamo) |
 
-Each type’s goal, catalog N, industry key, WIN, and refuse examples: [Discoveries by user](Discoveries-By-User.md). Numbered one-tap walks with measured HTTP + hologram sha: [Low-friction user flows](Low-Friction-User-Flows.md) · [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+Each type’s goal, catalog N, industry key, WIN, and refuse examples: [Discoveries by user](Discoveries-By-User.md). One story — Home → chooser → **Open this door** → filled sample POST → WIN + hologram + receipt: [Low-friction user flows](Low-Friction-User-Flows.md) · frame sha this hour [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
 
 ## The realization
 

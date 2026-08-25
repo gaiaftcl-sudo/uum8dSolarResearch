@@ -32,7 +32,7 @@ Health court is PK **dose** (`mass_milli` / `vol_milli`), not a pocket and not a
 
 Look omits credentials. Claim needs `source`+`role`.
 
-Numbered walks that match the live buttons (chooser **Open this door** · sample chips · **POST selected** · **Refuse example**): [Low-friction user flows](Low-Friction-User-Flows.md). Hologram measure: [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+Numbered walks that match the live buttons (chooser **Open this door** · sample chips · **POST selected** · **Refuse example**): [Low-friction user flows](Low-Friction-User-Flows.md). After WIN (and after Look catalog / manufacture contracts GET) the same proteins/frame sits next to the receipt — sha256 `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e` this hour. Hologram measure: [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
 
 ---
 
@@ -103,7 +103,7 @@ https://affine.earth/language-game/study-21-dynamo.html · [`#stellar-dynamo`](h
 
 ## Manufacture contracts
 
-Look: [`#manufacture-look`](https://affine.earth/language-game/ide.html#manufacture-look) · [Manufacture contracts](Manufacture-Contracts.md) · GET `manufacture-contracts.json`. CLASS + sha256. Zero steps.
+Look: [`#manufacture-look`](https://affine.earth/language-game/ide.html#manufacture-look) · [Manufacture contracts](Manufacture-Contracts.md) · GET `manufacture-contracts.json`. CLASS + sha256. Zero steps. HUD shows the existing proteins/frame after that GET.
 
 ---
 

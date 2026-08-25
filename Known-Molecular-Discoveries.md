@@ -1,6 +1,6 @@
 # Known molecular discoveries — public review ledger
 
-**Status: LOOK LIVE — 2026-08-24 · Claim DARK — no occupancy key**  
+**Status: LOOK LIVE — 2026-08-25 · PDB id Claim LIVE · occupancy DARK**  
 **Program:** [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold.md) · [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear.md) · [Language-games study board](Language-Games-Study-Board.md)
 
 | Surface | URL | Grade |
@@ -8,7 +8,7 @@
 | Catalog GET | https://affine.earth/language-game/discoveries/catalog.json | **LIVE** · `credentials: omit` · no visitor data |
 | IDE | https://affine.earth/language-game/ide.html#discovery-review | Template opens a fetched record |
 | Look walks | https://affine.earth/language-game/#researcher | GET links only. No auto-POST. |
-| Claim | none | **DARK** — no occupancy / residue / pocket key |
+| Claim | `#pdb-holdings` 4HHB / 2HYY | **LIVE** on presented `pdb_id` · occupancy / residue / pocket stay **DARK** |
 
 The win is the **verified bond**, not custody of a fold and not a true/false “discovery” bit.
 

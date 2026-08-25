@@ -114,11 +114,13 @@ This is Look → Claim → Build → Share applied to a **public discovery ledge
 
 **Instructions** means public, labeled, cited: INN, indication (on the source document), PDB / PubChem / ChEMBL / DailyMed id, manufacture *class* (recombinant / chemical / extracted) from FDA / EMA / label / PDB, and links to that document. It does **not** mean a step-by-step synthesis. C-007: no pathogen enhancement, no military, no unpublished manufacture.
 
+Low-friction walk (chooser → **4HHB** / **2HYY** → WIN + hologram): [Low-friction user flows](Low-Friction-User-Flows.md#protein). Hologram is the existing proteins/frame, not a dock: [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+
 Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) · claim [study-14-pdb.html](https://affine.earth/language-game/study-14-pdb.html) · Look panel [\#researcher](https://affine.earth/language-game/#researcher). Generated-candidate hashes (not playable without an industry key): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) · IDE [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look).
 
 **Combinations (pdb + CID):** appoint two keys that already pass their own courts. [Combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · IDE [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) · [Study 17](Study-17-Chemistry-InChIKey.md). 1N8Z has no small-molecule CID. Occupancy stays DARK.
 
-**Hologram after WIN:** existing lattice frame, not a dock. [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+**Hologram after WIN:** existing lattice frame GET `/language-invariant/game/proteins/frame?w=512&h=512&t=800`, not a dock. This hour sha256 `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e`. [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
 
 **Manufacture contract:** [Manufacture contracts](Manufacture-Contracts.md) · `#manufacture-look`. CLASS_ABSENT for the PDB archive row.
 
