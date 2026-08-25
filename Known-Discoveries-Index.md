@@ -23,7 +23,7 @@ Hosted catalogs: `discoveries/catalog.json` (PDB holdings N=258616 — the playa
 | Family | N | Wiki | IDE | Grade |
 |---|---:|---|---|---|
 | 01 Eclipse 82-row | **82** | [Overview](Eclipse-2026-Overview.md) | [`#eclipse-corpus`](https://affine.earth/language-game/ide.html#eclipse-corpus) | **DATA SEALED** · court **DARK** |
-| 02 Falcon launch table + NOAA | live court | [02](Study-02-Launch-Ionospheric-Holes.md) · [walkthrough](Build-a-Study-Falcon-Walkthrough.md) | [`#falcon-damage`](https://affine.earth/language-game/ide.html#falcon-damage) | **LIVE CLAIM** |
+| 02 Falcon launch table + NOAA | **DATA** Starlink 10-49 `2026-08-25T09:33:38Z` · CORS 21 integer files · Madrigal TEC GAP | [02](Study-02-Launch-Ionospheric-Holes.md) · [walkthrough](Build-a-Study-Falcon-Walkthrough.md) | [`#falcon-damage`](https://affine.earth/language-game/ide.html#falcon-damage) | **LIVE CLAIM** · 900 km cited / not measured · IGR waits 26 Aug 17:00 UTC |
 | 03 Flare SIDs | — | [03](Study-03-Solar-Flare-SIDs.md) | none | **OPEN** · no SID corpus |
 | 04 Tsunami vs surge | **4** events (2/2 tsunami WIN · Sandy WIN · Tonga VOID) | [04](Study-04-Tsunami-vs-Storm-Surge.md) · [Results](Study-04-Tsunami-vs-Storm-Surge-Results.md) | [`#tsunami-corpus`](https://affine.earth/language-game/ide.html#tsunami-corpus) | **PARTIAL_CORPUS_SEAL** · court **DARK** |
 | 05 Forbush / NMDB | — | [05](Study-05-Forbush-Decreases.md) | none | **OPEN** · no NMDB corpus |
