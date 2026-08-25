@@ -36,7 +36,7 @@ sha256 values live on the GET JSON. This page does not repeat a recipe.
 
 Counted **2026-08-25**. Path is a folder label, not a brand. **51 files** = 50 `*_MANUFACTURING_GUIDE.md` + `MASTER_INDEX.md`.
 
-Bodies were **not copied**. Warfare-titled files were **not ingested**.
+Bodies were **not copied**. C-007-titled files were **not ingested**.
 
 Titles counted, not copied. Two military-protection-titled files are **not listed here** and **not ingested**. Class not assigned — no FDA/EMA/label fetch this hour.
 
