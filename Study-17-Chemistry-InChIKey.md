@@ -16,6 +16,12 @@ The win is the **verified bond** to a public compound identity. SMILES is a cook
 
 Chemist door: [Discoveries by user](Discoveries-By-User.md) · IDE [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi).
 
+Fixture this hour (PubChem PUG): CID **2244** aspirin · **962** water · **702** ethanol · **5291** imatinib · **123631** gefitinib · **176870** erlotinib.
+
+**Combinations** with a PDB id: [Combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) · [Study 14](Study-14-Protein-Lattice-Manifold.md). Two keys, not a dock.
+
+**Manufacture contract:** CLASS `chemical` for CID 2244. [Manufacture contracts](Manufacture-Contracts.md).
+
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.**
 
 ---
@@ -39,13 +45,16 @@ Name a molecule the way PubChem already names it: **InChIKey** (27-char standard
 
 ---
 
-## Authored fixture (3 rows, PubChem PUG 2026-08-24)
+## Authored fixture (6 rows, PubChem PUG)
 
 | cid | inchikey | formula | fetch |
 |---:|---|---|---|
-| 2244 | BSYNRYMUTXBXSQ-UHFFFAOYSA-N | C9H8O4 | PUG cid/2244 |
+| 2244 | BSYNRYMUTXBXSQ-UHFFFAOYSA-N | C9H8O4 | PUG cid/2244 (2026-08-24) |
 | 962 | XLYOFNOQVPJJNP-UHFFFAOYSA-N | H2O | PUG cid/962 |
 | 702 | LFQSCWFLJHTTHZ-UHFFFAOYSA-N | C2H6O | PUG cid/702 |
+| 5291 | KTUFNOKKBVMGRW-UHFFFAOYSA-N | C29H31N7O | PUG cid/5291 Title=Imatinib (2026-08-25) |
+| 123631 | XGALLCVXEZPNRQ-UHFFFAOYSA-N | C22H24ClFN4O3 | PUG cid/123631 Title=Gefitinib (2026-08-25) |
+| 176870 | AAKJLRGGTJKAMG-UHFFFAOYSA-N | C22H23N3O4 | PUG cid/176870 Title=Erlotinib (2026-08-25) |
 
 Affine already LOOKS CID 2244 on the molecular ledger. This court CLAIMS it.
 

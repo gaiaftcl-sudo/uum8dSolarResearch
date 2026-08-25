@@ -11,7 +11,10 @@ FoT is the base. Public flourishing. **100k+ discoveries** means two measured ca
 | Researcher | LOOK | [affine #researcher](https://affine.earth/language-game/#researcher) · [IDE Look](https://affine.earth/language-game/ide.html#protein-material-look) |
 | Chemist | CLAIM InChIKey/CID | [Study 17](Study-17-Chemistry-InChIKey.md) · [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) |
 | Materials | CLAIM COD/mp/sg | [Study 18](Study-18-Material-STD.md) · [`#material-std`](https://affine.earth/language-game/ide.html#material-std) · [desalination](Discoveries-By-User.md#water--desalination-materials) |
-| Disease / protein | CLAIM ICD + PDB | [Study 16](Study-16-Disease-Type.md) · [Study 14](Study-14-Protein-Lattice-Manifold.md) · [cancer-related](Discoveries-By-User.md#cancer-related-discoveries) · [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) |
+| Disease / protein | CLAIM ICD + PDB | [Study 16](Study-16-Disease-Type.md) · [Study 14](Study-14-Protein-Lattice-Manifold.md) · [cancer-related](Discoveries-By-User.md#cancer-related-discoveries) · [combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) · [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) |
+| Researcher hologram | LOOK existing frame | [How the IDE hologram works](How-the-IDE-Hologram-Works.md) · [`#ehrhart-volume`](https://affine.earth/language-game/ide.html#ehrhart-volume) |
+| Rife test claim | CLAIM integer Hz/nm | [Study 20](Study-20-Rife-Frequency.md) · [`#rife-frequency`](https://affine.earth/language-game/ide.html#rife-frequency) |
+| Manufacture contract | LOOK CLASS + sha256 | [Manufacture contracts](Manufacture-Contracts.md) · [`#manufacture-look`](https://affine.earth/language-game/ide.html#manufacture-look) |
 | Builder | BUILD | [IDE chooser](https://affine.earth/language-game/ide.html#chooser) |
 | Public / press | SHARE | [Discoveries by user](Discoveries-By-User.md) · [family ledger](Known-Discoveries-Index.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom) |
 

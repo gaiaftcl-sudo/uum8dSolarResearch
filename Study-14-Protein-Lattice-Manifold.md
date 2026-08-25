@@ -116,6 +116,12 @@ This is Look → Claim → Build → Share applied to a **public discovery ledge
 
 Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) · claim [study-14-pdb.html](https://affine.earth/language-game/study-14-pdb.html) · Look panel [\#researcher](https://affine.earth/language-game/#researcher). Generated-candidate hashes (not playable without an industry key): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) · IDE [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look).
 
+**Combinations (pdb + CID):** appoint two keys that already pass their own courts. [Combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · IDE [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) · [Study 17](Study-17-Chemistry-InChIKey.md). 1N8Z has no small-molecule CID. Occupancy stays DARK.
+
+**Hologram after WIN:** existing lattice frame, not a dock. [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+
+**Manufacture contract:** [Manufacture contracts](Manufacture-Contracts.md) · `#manufacture-look`. CLASS_ABSENT for the PDB archive row.
+
 ### Skala contrast (one paragraph)
 
 Sheared tools — Skala, float MD, AlphaFold — are **not accurate due to shear**. Using them as the molecule **may be dangerous**: a kcal/mol miss or a predicted fold treated as the sealed structure is a spatial collision (wrong pocket, wrong bond, wrong dose). They are not called useless. Study 15 cites their GMTKN55 **2.72 / 2.8 kcal/mol** from their pages. Affine refuses the float or seals the integer. Pocket Claim stays DARK. Honest edge word on an unbound fold: ***not known***.

@@ -23,7 +23,7 @@ Health court is PK **dose** (`mass_milli` / `vol_milli`), not a pocket and not a
 | User | Act | Goal | Catalog N | Industry key | IDE | WIN | Refuse |
 |---|---|---|---|---|---|---|---|
 | **Researcher** | LOOK | GET catalogs, no identity | 258616 and 125302 stated separately | none on Look | [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look) · [\#researcher](https://affine.earth/language-game/#researcher) | GET HTTP 200 | this door never POSTs |
-| **Chemist** | CLAIM | InChIKey + CID | 3 fixture rows | `inchikey` + `cid` | [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) | CID **2244** CALORIE | `cid` 99999999 → `REFUSED_NO_STD` |
+| **Chemist** | CLAIM | InChIKey + CID | 6 fixture rows | `inchikey` + `cid` | [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) | CID **2244** / **5291** CALORIE | `cid` 99999999 → `REFUSED_NO_STD` |
 | **Materials** | CLAIM | COD / mp / space-group | 7 fixture rows | `cod` / `mp_id` / `space_group`+`pearson` | [`#material-std`](https://affine.earth/language-game/ide.html#material-std) | COD **9008564** / **9008569** CALORIE | `mp-99999999` → `REFUSED_NO_STD` |
 | **Disease / protein** | CLAIM | ICD/DOID + PDB id | fixture 12 + holdings 258616 | `icd`+`doid` · `pdb_id` | [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) | **C67** / **C50** / **4HHB** / **2HYY** CALORIE | `Bladder_Cancer_111` / `ZZZZ` → `REFUSED_NO_STD` |
 | **Builder** | BUILD | IDE hash → court HUD | families.json | the hash names the court | [`#chooser`](https://affine.earth/language-game/ide.html#chooser) | POST selected id → WIN | do not invent a `game_id` |
@@ -58,6 +58,41 @@ Acceptance = CALORIE / WIN on a **presented** industry id. Miss = CURE `REFUSED_
 Those generated names are not hosted as playable keys. They are Look-aggregate only.
 
 Charter: [Study 16](Study-16-Disease-Type.md) · [Study 14](Study-14-Protein-Lattice-Manifold.md)
+
+---
+
+## Combinations — small molecule + protein
+
+Appointment of **two industry keys**. Not docking. Not a pose. Not kcal/mol. Not IC50.
+
+WIN iff `pdb_id` is in holdings **and** CID/InChIKey already passes the chemistry court (fixture, or well-formed InChIKey + integer hbd/hba/lipinski).
+
+PubChem PUG GET **2026-08-25** this hour. RCSB titles already on the cancer table.
+
+| pdb_id | CID | InChIKey | Cited | POST |
+|---|---:|---|---|---|
+| **2HYY** | **5291** | KTUFNOKKBVMGRW-UHFFFAOYSA-N | Abl + imatinib | [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) |
+| **2ITO** | **123631** | XGALLCVXEZPNRQ-UHFFFAOYSA-N | EGFR + gefitinib | same |
+| **4HJO** | **176870** | AAKJLRGGTJKAMG-UHFFFAOYSA-N | EGFR + erlotinib | same |
+| **1T46** | **5291** | KTUFNOKKBVMGRW-UHFFFAOYSA-N | KIT + STI-571 | same |
+
+**1N8Z** (HER2+Herceptin Fab) — RCSB `nonpolymer_bound_components` is **NAG** only. No small-molecule CID is invented.
+
+Claim UI: https://affine.earth/language-game/study-complex.html · cross-see [Study 14](Study-14-Protein-Lattice-Manifold.md) · [Study 17](Study-17-Chemistry-InChIKey.md)
+
+---
+
+## Rife light / sound (Study 20)
+
+Test claim, not efficacy. Wikipedia Royal Rife publishes no Hz/nm table — none invented. Court: integer `hz` and/or `nm` + source+role. Cited: **440 Hz** ISO 16 · **380 nm** / **750 nm** visible bounds.
+
+https://affine.earth/language-game/study-20-rife.html · [`#rife-frequency`](https://affine.earth/language-game/ide.html#rife-frequency) · [Study 20](Study-20-Rife-Frequency.md)
+
+---
+
+## Manufacture contracts
+
+Look: [`#manufacture-look`](https://affine.earth/language-game/ide.html#manufacture-look) · [Manufacture contracts](Manufacture-Contracts.md) · GET `manufacture-contracts.json`. CLASS + sha256. Zero steps.
 
 ---
 
