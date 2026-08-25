@@ -22,12 +22,13 @@ Health court is PK **dose** (`mass_milli` / `vol_milli`), not a pocket and not a
 
 | User | Act | Goal | Catalog N | Industry key | IDE | WIN | Refuse |
 |---|---|---|---|---|---|---|---|
-| **Researcher** | LOOK | GET catalogs, no identity | 258616 and 125302 stated separately | none on Look | [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look) · [\#researcher](https://affine.earth/language-game/#researcher) | GET HTTP 200 | this door never POSTs |
+| **Researcher** | LOOK | GET catalogs, no identity | 258616 and 125302 stated separately | none on Look | [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look) · [\#researcher](https://affine.earth/language-game/#researcher) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) | GET HTTP 200 | this door never POSTs |
 | **Chemist** | CLAIM | InChIKey + CID | 6 fixture rows | `inchikey` + `cid` | [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) | CID **2244** / **5291** CALORIE | `cid` 99999999 → `REFUSED_NO_STD` |
 | **Materials** | CLAIM | COD / mp / space-group | 7 fixture rows | `cod` / `mp_id` / `space_group`+`pearson` | [`#material-std`](https://affine.earth/language-game/ide.html#material-std) | COD **9008564** / **9008569** CALORIE | `mp-99999999` → `REFUSED_NO_STD` |
 | **Disease / protein** | CLAIM | ICD/DOID + PDB id | fixture 12 + holdings 258616 | `icd`+`doid` · `pdb_id` | [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) | **C67** / **C50** / **4HHB** / **2HYY** CALORIE | `Bladder_Cancer_111` / `ZZZZ` → `REFUSED_NO_STD` |
+| **Astrophysicist** | CLAIM | Integer `(q,r)` + `n/d` dynamo step | 1 cited fixture | `q` `r` `n` `d` | [`#stellar-dynamo`](https://affine.earth/language-game/ide.html#stellar-dynamo) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) | `(0,1)`+`1/2` WIN `STUDY21_DYNAMO_INTEGER_STEP` | `k=0.15` → `REFUSED_FLOAT` |
 | **Builder** | BUILD | IDE hash → court HUD | families.json | the hash names the court | [`#chooser`](https://affine.earth/language-game/ide.html#chooser) | POST selected id → WIN | do not invent a `game_id` |
-| **Public / press** | SHARE | wiki stories that cross-see affine.earth | same two N | cited public ids | [`#discoveries-index`](https://affine.earth/language-game/ide.html#discoveries-index) | story names the hash | no cure protocol · no minted STD |
+| **Public / press** | SHARE | wiki stories that cross-see affine.earth | same two N | cited public ids | [`#discoveries-index`](https://affine.earth/language-game/ide.html#discoveries-index) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) | story names the hash | no cure protocol · no minted STD |
 
 Look omits credentials. Claim needs `source`+`role`.
 
@@ -135,7 +136,7 @@ Charter: [Study 18](Study-18-Material-STD.md)
 | LOOK | Researcher | GET catalogs. credentials omit. |
 | CLAIM | Chemist · Materials · Disease / protein | POST industry key + source+role |
 | BUILD | Builder | `ide.html` hash · court HUD search / sample / POST |
-| SHARE | Public / press | this wiki · GitHub tab · affine `#story/` · [Fourier Phantom](Impact-Study-Fourier-Phantom.md) · [Death of continuous shear](Death-of-Continuous-Shear.md) |
+| SHARE | Public / press | this wiki · GitHub tab · affine `#story/` · [Fourier Phantom](Impact-Study-Fourier-Phantom.md) · [Death of continuous shear](Death-of-Continuous-Shear.md) · [stellar dynamo kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) |
 
 **OPEN stays 03 / 05 / 08.**
 

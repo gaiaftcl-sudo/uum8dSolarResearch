@@ -13,7 +13,7 @@ Hologram URL (same after Look and after every WIN):
 
 `GET https://affine.earth/language-invariant/game/proteins/frame?w=512&h=512&t=800`
 
-Measured this hour: HTTP **200**, `application/octet-stream`, **1048576** bytes, sha256 `fd023ec04f9481ffb19c55d0309a98832cd867a5f6e12e95b3fdc568ab43dde6`.
+Measured this hour: HTTP **200**, `application/octet-stream`, **1048576** bytes, sha256 `c4dae839391998605fa264d7622aa688f3f4e463432febe88e44e7872756ddd4`.
 
 ---
 
@@ -27,11 +27,11 @@ Measured this hour: HTTP **200**, `application/octet-stream`, **1048576** bytes,
 | 2 | Tap **Open this door** on Researcher | hash `#protein-material-look` or home `#researcher` |
 | 3 | Page GETs holdings catalog | GET `discoveries/catalog.json` HTTP **200** · `index_n=258616` · `ids` 258616 |
 | 4 | Page GETs aggregates | GET `protein-material-aggregates.json` HTTP **200** · `index_n=125302` (78680 + 46622) |
-| 5 | Lattice frame appears | GET proteins/frame HTTP **200** · sha256 `fd023ec0…dde6` |
+| 5 | Lattice frame appears | GET proteins/frame HTTP **200** · sha256 `c4dae839…5ddd4` |
 
-Identity: **omit**. No POST. Sample buttons on the IDE Look are **Play #pdb-holdings**, **Play #disease-icd**, **Play #chemistry-inchi**, **Play #material-std** — they change hash. They do not POST a generated label.
+Identity: **omit**. No POST. Sample buttons on the IDE Look are **Play #pdb-holdings**, **Play #disease-icd**, **Play #chemistry-inchi**, **Play #material-std**, **Play #stellar-dynamo**, **kill shot** — they change hash or open the kill-shot story. They do not POST a generated label.
 
-Hologram: **yes** (after catalog GET).
+Hologram: **yes** (after catalog GET). Dynamo claim is a different door: chooser **Astrophysicist** or tap **Play #stellar-dynamo** then **Z2_a2b (0,1) + 1/2**.
 
 ---
 
@@ -139,14 +139,15 @@ Test claim, not efficacy. Affine does not write that a frequency kills cancer. C
 
 ## Stellar dynamo — integer step
 
-**URL:** https://affine.earth/language-game/ide.html#stellar-dynamo
+**URL:** https://affine.earth/language-game/ide.html#chooser → **Open this door** on Astrophysicist · or https://affine.earth/language-game/ide.html#stellar-dynamo  
+**LOOK door:** `#researcher` **kill shot** · SHARE: Discoveries-By-User **kill shot**
 
 | Step | Button / action | Capture |
 |---|---|---|
-| 1 | Hash `#stellar-dynamo` | input already `0,1` + `1/2` |
+| 1 | Chooser → **Open this door** on Astrophysicist · or hash `#stellar-dynamo` | input already `0,1` + `1/2` · HUD title Stellar dynamo |
 | 2 | Tap **Z2_a2b (0,1) + 1/2** or **POST selected** | POST `{source:researcher, role:researcher, q:0, r:1, n:1, d:2, cited_id:z2-a2b-half-step}` |
 | 3 | Receipt | HTTP **200** WIN `STUDY21_DYNAMO_INTEGER_STEP` linking `(0,1)` spin `1/2` |
-| 4 | Hologram | proteins/frame after WIN · same sha |
+| 4 | Hologram | proteins/frame after WIN · sha256 `c4dae839…5ddd4` |
 | 5 | **Refuse example** | POST `{k:0.15}` → HTTP **400** `REFUSED_FLOAT` · hologram not shown |
 
 Court, not a Kepler/TESS B. Study 09 convective is a different court. Charter: [Study 21](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md)
@@ -175,7 +176,8 @@ Charter: [Manufacture contracts](Manufacture-Contracts.md)
 |---|---|---|
 | 1 | GitHub wiki Home | GET https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki HTTP **200** |
 | 2 | [Discoveries by user](Discoveries-By-User.md) | GET `…/wiki/Discoveries-By-User` HTTP **200** |
-| 3 | One IDE hash from that table | e.g. `#disease-icd` — walk above |
+| 3 | One IDE hash from that table | e.g. `#stellar-dynamo` or Astrophysicist **Open this door** |
+| 4 | Kill shot SHARE | [Impact-Study-Stellar-Dynamo-Kill-Shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) · `#story/Impact-Study-Stellar-Dynamo-Kill-Shot` |
 
 Affine story copies: https://affine.earth/language-game/#story/Low-Friction-User-Flows · `#story/How-the-IDE-Hologram-Works` · `#story/Home`
 
@@ -185,7 +187,7 @@ Affine story copies: https://affine.earth/language-game/#story/Low-Friction-User
 
 | User | URL | Capture verdict | Hologram |
 |---|---|---|---|
-| Researcher LOOK | `#researcher` / `#protein-material-look` | GET catalog 258616 HTTP 200 | sha256 `fd023ec0…dde6` |
+| Researcher LOOK | `#researcher` / `#protein-material-look` | GET catalog 258616 HTTP 200 | sha256 `c4dae839…5ddd4` |
 | Disease | `#disease-icd` C67 / C50 | WIN `STUDY16_DISEASE_ICD_PROVEN` | same sha |
 | Protein | `#pdb-holdings` 4HHB / 2HYY | WIN `STUDY14_PDB_HOLDINGS_PROVEN` | same sha |
 | Chemist | `#chemistry-inchi` 2244 | WIN `STUDY17_CHEMISTRY_INCHI_PROVEN` | same sha · caption: chemistry uses lattice frame |
@@ -193,12 +195,12 @@ Affine story copies: https://affine.earth/language-game/#story/Low-Friction-User
 | Builder / pair | `#complex-pair` 2HYY+5291 | WIN `COMPLEX_PAIR_KEYS_PROVEN` | same sha |
 | Rife | `#rife-frequency` 440 | WIN `STUDY20_RIFE_INTEGER_FREQUENCY_CLAIM` | same sha |
 | Rife refuse | 432.0 | `REFUSED_FLOAT` | not shown |
-| Dynamo | `#stellar-dynamo` (0,1)+1/2 | WIN `STUDY21_DYNAMO_INTEGER_STEP` after membrane | same sha |
+| Dynamo | chooser Astrophysicist → `#stellar-dynamo` (0,1)+1/2 | WIN `STUDY21_DYNAMO_INTEGER_STEP` | same sha |
 | Dynamo refuse | k=0.15 | `REFUSED_FLOAT` | not shown |
 | Disease refuse | `Bladder_Cancer_111` | `REFUSED_NO_STD` | not shown |
 | Empty source | `source=""` | `REFUSED_UNATTRIBUTED` | not shown |
 | Manufacture | `#manufacture-look` | GET contracts HTTP 200 · no steps | not shown |
-| Press | GitHub Home → Discoveries-By-User | HTTP 200 | — |
+| Press | GitHub Home → Discoveries-By-User **kill shot** + `#stellar-dynamo` | HTTP 200 | — |
 
 ---
 

@@ -107,7 +107,7 @@ Empty `source` → HTTP 400 `REFUSED_UNATTRIBUTED`. File-only HTML is not the co
 
 | Domain | Equation that is no longer a court | Why | New equation / law | What it solves |
 |---|---|---|---|---|
-| Astrophysics (Dynamo) | Continuous MHD & Gyrochronology (\(\mathrm{d}\omega/\mathrm{d}t=-k\omega^{a}\)) | Float curve fits miss discrete topological phase steps | \(L(w)=(q,r)\in\mathbb{Z}^{2}\) + rational spin steps | Dynamo “collapse” / solar anomaly phantoms |
+| Astrophysics (Dynamo) · Study 21 | Continuous MHD & Gyrochronology (\(\mathrm{d}\omega/\mathrm{d}t=-k\omega^{a}\)) | Float curve fits miss discrete topological phase steps | \(L(w)=(q,r)\in\mathbb{Z}^{2}\) + rational spin steps · [Study 21](Study-21-Stellar-Dynamo-Shear) | Dynamo “collapse” / solar anomaly phantoms |
 
 This row is also landed on the [Section 6 table](Impact-Study-Death-of-Continuous-Shear#6-one-table--old-equation-why-dead-what-replaces-it) of the continuum rewrite.
 

@@ -119,7 +119,7 @@ No Kepler / TESS \(B\) is invented. Study 09 convective is LIVE and is a **diffe
 
 | Domain | Equation that is no longer a court | Why | New equation / law | What it solves |
 |---|---|---|---|---|
-| Astrophysics (Dynamo) | Continuous MHD & Gyrochronology (\(\mathrm{d}\omega/\mathrm{d}t=-k\omega^{a}\)) | Float curve fits miss discrete topological phase steps | \(L(w)=(q,r)\in\mathbb{Z}^{2}\) + rational spin steps | Dynamo “collapse” / solar anomaly phantoms |
+| Astrophysics (Dynamo) · Study 21 | Continuous MHD & Gyrochronology (\(\mathrm{d}\omega/\mathrm{d}t=-k\omega^{a}\)) | Float curve fits miss discrete topological phase steps | \(L(w)=(q,r)\in\mathbb{Z}^{2}\) + rational spin steps · this charter | Dynamo “collapse” / solar anomaly phantoms |
 
 Landed also on [Impact-Study-Death-of-Continuous-Shear §6](Impact-Study-Death-of-Continuous-Shear.md#6-one-table--old-equation-why-dead-what-replaces-it) and the [kill-shot page](Impact-Study-Stellar-Dynamo-Kill-Shot.md#section-6-row).
 

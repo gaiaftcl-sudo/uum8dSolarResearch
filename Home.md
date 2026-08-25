@@ -17,7 +17,7 @@ FoT is the base. Public flourishing. **100k+ discoveries** means two measured ca
 | Stellar dynamo | CLAIM integer (q,r)+n/d | [Study 21](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) · [`#stellar-dynamo`](https://affine.earth/language-game/ide.html#stellar-dynamo) |
 | Manufacture contract | LOOK CLASS + sha256 | [Manufacture contracts](Manufacture-Contracts.md) · [`#manufacture-look`](https://affine.earth/language-game/ide.html#manufacture-look) |
 | Builder | BUILD | [IDE chooser](https://affine.earth/language-game/ide.html#chooser) |
-| Public / press | SHARE | [Discoveries by user](Discoveries-By-User.md) · [family ledger](Known-Discoveries-Index.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom) |
+| Public / press | SHARE | [Discoveries by user](Discoveries-By-User.md) · [family ledger](Known-Discoveries-Index.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot) · [`#stellar-dynamo`](https://affine.earth/language-game/ide.html#stellar-dynamo) |
 
 Each type’s goal, catalog N, industry key, WIN, and refuse examples: [Discoveries by user](Discoveries-By-User.md). Numbered one-tap walks with measured HTTP + hologram sha: [Low-friction user flows](Low-Friction-User-Flows.md) · [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
 

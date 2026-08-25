@@ -16,7 +16,7 @@ Researchers and claimants see a **receipt + the frame that already paints**. Aff
 | HTTP | **200** |
 | `content-type` | `application/octet-stream` |
 | Byte length | **1048576** (512 × 512 × 4 RGBA) |
-| sha256 | `fd023ec04f9481ffb19c55d0309a98832cd867a5f6e12e95b3fdc568ab43dde6` |
+| sha256 | `c4dae839391998605fa264d7622aa688f3f4e463432febe88e44e7872756ddd4` |
 | `x-affine-game` | `proteins` |
 | `x-gop-width` / `x-gop-height` | 512 / 512 |
 | `x-affine-game-step` | 800 |
@@ -28,7 +28,7 @@ A second existing raster (not what the HUD loads after WIN):
 
 `GET /language-invariant/game/materials/frame?w=512&h=512&t=600` — HTTP 200, octet-stream, 1048576 bytes, sha256 `cd806d8a4d5848e10b02c09bc8b81f6ef63ce851d553fb8101ce275d09f3e8e0`. Chemistry / materials WIN still load **proteins/frame**. The HUD caption says so.
 
-Evidence: `evidence/low-friction-flows-20260825/CAPTURES.md`
+Evidence: `evidence/keep-going-dynamo-flows-20260825/` · earlier walk `evidence/low-friction-flows-20260825/CAPTURES.md`
 
 `backdrop-filter` on the IDE chrome is CSS blur. It is not a hologram `filter:` law and was not changed.
 
@@ -68,7 +68,7 @@ The court HUD:
 2. Writes the JSON receipt on the same page
 3. If HTTP 2xx, sets `img.src` to `/language-invariant/game/proteins/frame?w=512&h=512&t=800`
 
-Meaning = seal + frame. No training paragraph required.
+Meaning = seal + frame. No training paragraph required. Dynamo WIN uses this same proteins/frame — integer step seal + frame, not a stellar-surface hologram.
 
 ---
 
