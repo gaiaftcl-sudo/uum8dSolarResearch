@@ -12,7 +12,7 @@
 
 Thousands = measured catalog **N**, not 258616 invented pages. Example fact sheets already exist (4HHB, CID 2244, CHEMBL25, DailyMed insulin) and stay cited fetch fields only.
 
-**Pick your door:** [Discoveries by user](Discoveries-By-User.md) — Researcher LOOK · Chemist `#chemistry-inchi` · Materials `#material-std` · Disease/protein `#disease-icd` + `#pdb-holdings` · Builder `#chooser` · Press this wiki. Cancer-related and water/desalination sections name what is playable vs Look-only.
+**Pick your door:** [Discoveries by user](Discoveries-By-User.md) — Researcher LOOK · Chemist `#chemistry-inchi` · Materials `#material-std` · Disease/protein `#disease-icd` + `#pdb-holdings` · Builder `#chooser` · Press this wiki. Numbered walks: [Low-friction user flows](Low-Friction-User-Flows.md). Cancer-related and water/desalination sections name what is playable vs Look-only.
 
 Hosted catalogs: `discoveries/catalog.json` (PDB holdings N=258616 — the playable protein set) and `discoveries/protein-material-aggregates.json` (generated-candidate hashes + integer N, **not** playable without a PDB/ICD/InChI/COD key). They are never merged.
 
@@ -43,6 +43,7 @@ Hosted catalogs: `discoveries/catalog.json` (PDB holdings N=258616 — the playa
 | 19 Go First Dice | **300** faces (5×60) | [19](Study-19-Go-First-Dice.md) | [`#gofirst-dice`](https://affine.earth/language-game/ide.html#gofirst-dice) | **LAW FROZEN** + **LIVE CLAIM** · Meyer 2023 cited |
 | Combinations (14+17) | **4** pairs | [Discoveries by user](Discoveries-By-User.md#combinations--small-molecule--protein) | [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) | **LIVE CLAIM** · two keys, not a dock |
 | 20 Rife Hz/nm | **3** cited integers | [20](Study-20-Rife-Frequency.md) | [`#rife-frequency`](https://affine.earth/language-game/ide.html#rife-frequency) | **LAW FROZEN** + **LIVE CLAIM** · test claim, not efficacy |
+| 21 Stellar dynamo | **1** cited fixture `(0,1)`+`1/2` | [21](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) | [`#stellar-dynamo`](https://affine.earth/language-game/ide.html#stellar-dynamo) | **LAW FROZEN** · LIVE CLAIM only after apex HTTP 200 WIN · not a Kepler/TESS B |
 | Manufacture contracts | **6** families | [Manufacture contracts](Manufacture-Contracts.md) | [`#manufacture-look`](https://affine.earth/language-game/ide.html#manufacture-look) | **LOOK** · CLASS + sha256 · zero steps |
 | QCD freedom | `q_bin=1` `dilation_t=2` | [QCD](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/QCD-Asymptotic-Freedom-Shear) | [`#qcd-freedom`](https://affine.earth/language-game/ide.html#qcd-freedom) | **LIVE CLAIM** |
 | NOAA SWPC feed | **7/7** on Study 02 prove | [02](Study-02-Launch-Ionospheric-Holes.md) | [`#falcon-damage`](https://affine.earth/language-game/ide.html#falcon-damage) | **LIVE CLAIM** (feed, not a SID court) |

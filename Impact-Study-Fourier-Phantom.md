@@ -4,7 +4,8 @@
 **Target:** Linear-Scaling DFT with Neural Operators (Anima AI, Aug 2026) — **their** published claim.  
 **Replacement:** Studies **11 + 12 + 13**. Those courts are LIVE on affine.earth.  
 **Door:** [Death of continuous shear](Death-of-Continuous-Shear) · long rewrite: [Impact study — continuum dead](Impact-Study-Death-of-Continuous-Shear)  
-**Skala sibling:** [Study 15](Study-15-Skala-DFT-Shear) — same continuum court, **CITED** 2.72 / 2.8, kcal court **DARK**.
+**Skala sibling:** [Study 15](Study-15-Skala-DFT-Shear) — same continuum court, **CITED** 2.72 / 2.8, kcal court **DARK**.  
+**Dynamo sibling:** [Stellar dynamo kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot) — gyrochronology / weakened magnetic braking is the same continuum court on a star. Study 21. Not a Kepler/TESS CALORIE.
 
 This page maps their continuum pipeline onto the integer courts that replace it. It does **not** write that Affine cured DFT. It does **not** seal an 82,500-atom magnesium density CALORIE. Anima’s 82,500-atom Mg dislocation / B300 / FNO run is **Anima’s demo**. Affine’s side of the comparison is the LIVE courts that replace that pipeline.
 
@@ -115,8 +116,9 @@ Microsoft Skala 1.1 is the same continuum court under a different costume: a dee
 1. https://affine.earth/language-game/ide.html#qpr
 2. https://affine.earth/language-game/ide.html#ehrhart-volume
 3. https://affine.earth/language-game/ide.html#connes-rigidity
+4. https://affine.earth/language-game/ide.html#stellar-dynamo — Study 21 dynamo step. Same lattice, stellar MHD instead of DFT.
 
-Look walk: [\#researcher](https://affine.earth/language-game/#researcher) · this story: https://affine.earth/language-game/#story/Impact-Study-Fourier-Phantom
+Look walk: [\#researcher](https://affine.earth/language-game/#researcher) · this story: https://affine.earth/language-game/#story/Impact-Study-Fourier-Phantom · kill shot: https://affine.earth/language-game/#story/Impact-Study-Stellar-Dynamo-Kill-Shot
 
 ---
 

@@ -12,13 +12,14 @@ FoT is the base. Public flourishing. **100k+ discoveries** means two measured ca
 | Chemist | CLAIM InChIKey/CID | [Study 17](Study-17-Chemistry-InChIKey.md) · [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) |
 | Materials | CLAIM COD/mp/sg | [Study 18](Study-18-Material-STD.md) · [`#material-std`](https://affine.earth/language-game/ide.html#material-std) · [desalination](Discoveries-By-User.md#water--desalination-materials) |
 | Disease / protein | CLAIM ICD + PDB | [Study 16](Study-16-Disease-Type.md) · [Study 14](Study-14-Protein-Lattice-Manifold.md) · [cancer-related](Discoveries-By-User.md#cancer-related-discoveries) · [combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) · [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) |
-| Researcher hologram | LOOK existing frame | [How the IDE hologram works](How-the-IDE-Hologram-Works.md) · [`#ehrhart-volume`](https://affine.earth/language-game/ide.html#ehrhart-volume) |
+| Researcher hologram | LOOK existing frame | [How the IDE hologram works](How-the-IDE-Hologram-Works.md) · [Low-friction flows](Low-Friction-User-Flows.md) · [`#chooser`](https://affine.earth/language-game/ide.html#chooser) |
 | Rife test claim | CLAIM integer Hz/nm | [Study 20](Study-20-Rife-Frequency.md) · [`#rife-frequency`](https://affine.earth/language-game/ide.html#rife-frequency) |
+| Stellar dynamo | CLAIM integer (q,r)+n/d | [Study 21](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) · [`#stellar-dynamo`](https://affine.earth/language-game/ide.html#stellar-dynamo) |
 | Manufacture contract | LOOK CLASS + sha256 | [Manufacture contracts](Manufacture-Contracts.md) · [`#manufacture-look`](https://affine.earth/language-game/ide.html#manufacture-look) |
 | Builder | BUILD | [IDE chooser](https://affine.earth/language-game/ide.html#chooser) |
 | Public / press | SHARE | [Discoveries by user](Discoveries-By-User.md) · [family ledger](Known-Discoveries-Index.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom) |
 
-Each type’s goal, catalog N, industry key, WIN, and refuse examples: [Discoveries by user](Discoveries-By-User.md).
+Each type’s goal, catalog N, industry key, WIN, and refuse examples: [Discoveries by user](Discoveries-By-User.md). Numbered one-tap walks with measured HTTP + hologram sha: [Low-friction user flows](Low-Friction-User-Flows.md) · [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
 
 ## The realization
 
@@ -55,7 +56,7 @@ The generating substrate lives elsewhere; after every ingest or verdict it regen
 
 The eclipse was the first sky to sign its name. Five more charters are now sealed and open: rocket burns that punch ~900 km holes in the ionosphere on a manifest clock, solar flares that step the daylit hemisphere in lockstep with the GOES X-ray record, tsunamis that keep a Huygens travel-time appointment at every tide gauge, cosmic-ray dropouts that strobe ~50 neutron monitors from a single L1 shock minute, and explosions whose seismic arrival ladder no earthquake can climb. Each study runs the same recipe the eclipse proved out — a forcing with a computable clock and track, a public raw archive, a sealed adversary that mimics magnitude but not shape, and a standing future event where a frozen exact-integer law must resolve in the open.
 
-Start at the [Shear Studies — Program index](Shear-Studies-Index). Continuum rewrite: [Death of continuous shear](Death-of-Continuous-Shear) · [Fourier Phantom — Anima FNO vs 11+12+13](Impact-Study-Fourier-Phantom). Look ledger: [Known discoveries](Known-Discoveries-Index) · [Known molecular discoveries](Known-Molecular-Discoveries) · [Discoveries by user](Discoveries-By-User). Playable keys: [14 PDB](Study-14-Protein-Lattice-Manifold) · [16 disease](Study-16-Disease-Type) · [17 chemistry](Study-17-Chemistry-InChIKey) · [18 material](Study-18-Material-STD). Combinatorial court: [19 Go First Dice](Study-19-Go-First-Dice).
+Start at the [Shear Studies — Program index](Shear-Studies-Index). Continuum rewrite: [Death of continuous shear](Death-of-Continuous-Shear) · [Fourier Phantom — Anima FNO vs 11+12+13](Impact-Study-Fourier-Phantom) · [stellar dynamo kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot). Look ledger: [Known discoveries](Known-Discoveries-Index) · [Known molecular discoveries](Known-Molecular-Discoveries) · [Discoveries by user](Discoveries-By-User). Playable keys: [14 PDB](Study-14-Protein-Lattice-Manifold) · [16 disease](Study-16-Disease-Type) · [17 chemistry](Study-17-Chemistry-InChIKey) · [18 material](Study-18-Material-STD). Combinatorial court: [19 Go First Dice](Study-19-Go-First-Dice). Dynamo court: [21](Study-21-Stellar-Dynamo-Shear).
 
 ---
 

@@ -1,9 +1,48 @@
 # How the IDE hologram works
 
-**Status: measured — existing lattice / Franklin canvas. No protein-dock hologram.**  
-**Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 11 Ehrhart](Study-11-Ehrhart-Volume-Shear.md)
+**Status: measured 2026-08-25 — existing lattice frame. No protein-dock hologram.**  
+**Walks:** [Low-friction user flows](Low-Friction-User-Flows.md) · [Study 11 Ehrhart](Study-11-Ehrhart-Volume-Shear.md)
 
-Researchers see a **receipt + the frame that already paints**. Affine does not invent a pdb occupancy hologram. `ProteinManifold.evaluateDocking` is not stubbed.
+Researchers and claimants see a **receipt + the frame that already paints**. Affine does not invent a pdb occupancy hologram. `ProteinManifold.evaluateDocking` is not stubbed.
+
+---
+
+## Validated capture this hour
+
+`GET https://affine.earth/language-invariant/game/proteins/frame?w=512&h=512&t=800`
+
+| Field | Measured 2026-08-25T12:45:44Z · nbg-01 |
+|---|---|
+| HTTP | **200** |
+| `content-type` | `application/octet-stream` |
+| Byte length | **1048576** (512 × 512 × 4 RGBA) |
+| sha256 | `fd023ec04f9481ffb19c55d0309a98832cd867a5f6e12e95b3fdc568ab43dde6` |
+| `x-affine-game` | `proteins` |
+| `x-gop-width` / `x-gop-height` | 512 / 512 |
+| `x-affine-game-step` | 800 |
+| `x-gop-order` | RGBA |
+
+This is the **same URL** the court HUD `<img id="courtPlayHologramImg">` loads after a Look catalog GET and after every WIN. It is not a hologram of 4HHB or 2HYY. It is the live LatticeRender protein-fold raster.
+
+A second existing raster (not what the HUD loads after WIN):
+
+`GET /language-invariant/game/materials/frame?w=512&h=512&t=600` — HTTP 200, octet-stream, 1048576 bytes, sha256 `cd806d8a4d5848e10b02c09bc8b81f6ef63ce851d553fb8101ce275d09f3e8e0`. Chemistry / materials WIN still load **proteins/frame**. The HUD caption says so.
+
+Evidence: `evidence/low-friction-flows-20260825/CAPTURES.md`
+
+`backdrop-filter` on the IDE chrome is CSS blur. It is not a hologram `filter:` law and was not changed.
+
+---
+
+## When the frame appears
+
+| Surface | When `img.src` is set | Requires Claim POST? |
+|---|---|---|
+| `#researcher` (home Look) | After GET catalog.json HTTP 200 `index_n=258616` | **no** |
+| `#protein-material-look` | After GET catalog.json HTTP 200 `index_n=258616` | **no** |
+| `#disease-icd` · `#pdb-holdings` · `#chemistry-inchi` · `#material-std` · `#complex-pair` · `#rife-frequency` · `#stellar-dynamo` | After ingest HTTP 2xx (WIN / CALORIE) | **yes** — sample button or **POST selected** |
+| `#manufacture-look` | never — Look contracts only | no POST, no frame |
+| Refuse (`REFUSED_NO_STD` / `REFUSED_FLOAT` / `REFUSED_UNATTRIBUTED`) | frame stays hidden | — |
 
 ---
 
@@ -11,29 +50,25 @@ Researchers see a **receipt + the frame that already paints**. Affine does not i
 
 | Hash / URL | What GET/POST does | What pixels come from |
 |---|---|---|
-| [`ide.html#ehrhart-volume`](https://affine.earth/language-game/ide.html#ehrhart-volume) | Template POSTs Study 11 geometry ingest (`polytope_id` + integer `dilation`) | Court receipt in the workspace. No dedicated png on this hash. |
-| [`ide.html#gym`](https://affine.earth/language-game/ide.html#gym) | Gym view. Franklin hologram card | `hologram-manifold.js` + `franklin-law-plot.js` paint the gym canvas from sealed A/V attribute URLs |
-| [`/language-game/`](https://affine.earth/language-game/) | Main UI stage | Same hologram scripts. `#capture` records the canvas via `captureStream` |
-| `GET /language-invariant/game/proteins/frame?w=512&h=512&t=800` | Integer `w`/`h`/`t` query | LatticeRender protein-fold raster (NP-hard catalog `protein-fold`). **Not** a pdb dock. |
-| `GET /language-invariant/game/materials/frame?w=512&h=512&t=600` | same pattern | Crystal lattice raster. Not a manufacture cookbook. |
-| `GET /language-invariant/game/geometry/context` | Study 11 roles | JSON, not pixels |
-| `#complex-pair` · `#rife-frequency` · `#pdb-holdings` | POST industry keys | After WIN the HUD `<img>` loads the **existing** proteins frame above. Caption says so. |
-
-`backdrop-filter` on the IDE chrome is CSS blur. It is not a hologram `filter:` law and was not changed.
+| [`ide.html#chooser`](https://affine.earth/language-game/ide.html#chooser) | First screen. **Open this door** | none until a court mounts |
+| [`#researcher`](https://affine.earth/language-game/#researcher) | GET catalog + games. credentials omit | proteins/frame after catalog 200 |
+| [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look) | GET catalog 258616 + aggregates 125302 | same proteins/frame |
+| [`#ehrhart-volume`](https://affine.earth/language-game/ide.html#ehrhart-volume) | Template POSTs Study 11 geometry | Court receipt. No dedicated png on this hash. |
+| [`#gym`](https://affine.earth/language-game/ide.html#gym) | Gym view. Franklin hologram card | `hologram-manifold.js` + `franklin-law-plot.js` |
+| [`/language-game/`](https://affine.earth/language-game/) | Main UI stage | Same hologram scripts. `#capture` records the canvas |
+| `#disease-icd` · `#pdb-holdings` · `#chemistry-inchi` · `#material-std` · `#complex-pair` · `#rife-frequency` · `#stellar-dynamo` | POST industry key + source+role | After WIN: proteins/frame |
 
 ---
 
-## After a WIN (pdb / complex / rife)
+## After a WIN
 
 The court HUD:
 
-1. POSTs `/language-invariant/game/{domain}/ingest` with `source`+`role`
-2. Writes the JSON receipt
+1. POSTs `/language-invariant/game/{domain}/ingest` with `source`+`role` (sample button fills and POSTs; or tap **POST selected**)
+2. Writes the JSON receipt on the same page
 3. If HTTP 2xx, sets `img.src` to `/language-invariant/game/proteins/frame?w=512&h=512&t=800`
 
-That frame is the **already-live** lattice raster. It is not a hologram of 2HYY. It is not occupancy. A researcher sees the claim receipt and the live lattice in the same workspace.
-
-Wiki door: [Study 11](Study-11-Ehrhart-Volume-Shear.md) · IDE [`#ehrhart-volume`](https://affine.earth/language-game/ide.html#ehrhart-volume).
+Meaning = seal + frame. No training paragraph required.
 
 ---
 
@@ -43,3 +78,4 @@ Wiki door: [Study 11](Study-11-Ehrhart-Volume-Shear.md) · IDE [`#ehrhart-volume
 - Does not stub `ProteinManifold.evaluateDocking`
 - Does not claim the proteins frame is the presented PDB
 - Does not add an MCP tool
+- Does not change hologram `filter:` / `backdrop-filter`

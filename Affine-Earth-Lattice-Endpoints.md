@@ -97,6 +97,7 @@ Keys may sit at the top level **or** under `payload`. The cell takes `payload` w
 | `finance` | `1/2` | `trader` · `risk` · `clearing` · `auditor` | `lots` `ticks` `loss_ticks` `threshold_ticks` | [Impact](Impact-Study-Death-of-Continuous-Shear) |
 | `cs` | `1/5` | `compiler` · `consensus` · `ml_engineer` | `num` `den` `payload_sha256d` `label_int` | [Impact](Impact-Study-Death-of-Continuous-Shear) |
 | `fluids` | `1/3` | `designer` · `cfd_vendor` · `certifier` · `operator` | `phi_in` `phi_out` `residual_int` | [Impact](Impact-Study-Death-of-Continuous-Shear) |
+| `dynamo` | — | `researcher` · `theorist` · `steward` | `q` `r` `n` `d` | [Study 21](Study-21-Stellar-Dynamo-Shear) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot) |
 
 Polytopes the geometry court already grades: `unit_square` `unit_triangle` `simplex3` `hle_poly_d2` `hle_poly_d3`.
 

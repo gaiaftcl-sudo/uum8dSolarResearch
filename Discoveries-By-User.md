@@ -31,6 +31,8 @@ Health court is PK **dose** (`mass_milli` / `vol_milli`), not a pocket and not a
 
 Look omits credentials. Claim needs `source`+`role`.
 
+Numbered walks that match the live buttons (chooser **Open this door** · sample chips · **POST selected** · **Refuse example**): [Low-friction user flows](Low-Friction-User-Flows.md). Hologram measure: [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+
 ---
 
 ## Cancer-related discoveries
@@ -87,6 +89,14 @@ Claim UI: https://affine.earth/language-game/study-complex.html · cross-see [St
 Test claim, not efficacy. Wikipedia Royal Rife publishes no Hz/nm table — none invented. Court: integer `hz` and/or `nm` + source+role. Cited: **440 Hz** ISO 16 · **380 nm** / **750 nm** visible bounds.
 
 https://affine.earth/language-game/study-20-rife.html · [`#rife-frequency`](https://affine.earth/language-game/ide.html#rife-frequency) · [Study 20](Study-20-Rife-Frequency.md)
+
+---
+
+## Stellar dynamo (Study 21)
+
+Kill shot against the continuum. Court: integer `(q,r)` + rational `n/d` + source+role. Cited fixture is Study 13 `Z2_a2b` linking **(0,1)** plus **1/2** — not a star’s measured B. van Saders et al. 2016 (DOI 10.1038/nature16168) is **their** weakened-magnetic-braking patch. Affine does not invent a Kepler/TESS CALORIE.
+
+https://affine.earth/language-game/study-21-dynamo.html · [`#stellar-dynamo`](https://affine.earth/language-game/ide.html#stellar-dynamo) · [Study 21](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md)
 
 ---
 

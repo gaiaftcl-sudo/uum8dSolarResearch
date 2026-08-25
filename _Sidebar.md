@@ -4,6 +4,7 @@
 - [**Impact study — continuum dead**](Impact-Study-Death-of-Continuous-Shear)
 - [**Death of continuous shear**](Death-of-Continuous-Shear)
 - [**Fourier Phantom — Anima FNO vs 11+12+13**](Impact-Study-Fourier-Phantom)
+- [**Stellar dynamo kill shot**](Impact-Study-Stellar-Dynamo-Kill-Shot)
 - [**QCD: freedom is dilation**](QCD-Asymptotic-Freedom-Shear)
 - [**Look in the UI (no visitor data)**](https://affine.earth/language-game/#researcher)
 - [**Explore the live courts**](Affine-Earth-Lattice-Endpoints)
@@ -17,6 +18,8 @@
 - [Language-games study board](Language-Games-Study-Board)
 - [Known discoveries — family ledger](Known-Discoveries-Index)
 - [Discoveries by user](Discoveries-By-User)
+- [Low-friction user flows](Low-Friction-User-Flows)
+- [How the IDE hologram works](How-the-IDE-Hologram-Works)
 - [Known molecular discoveries](Known-Molecular-Discoveries)
 - [Study 14 — PDB play](Study-14-Protein-Lattice-Manifold)
 
@@ -38,6 +41,8 @@
 - [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey)
 - [Study 18 — Material STD](Study-18-Material-STD)
 - [Study 19 — Go First Dice](Study-19-Go-First-Dice)
+- [Study 20 — Rife frequency](Study-20-Rife-Frequency)
+- [Study 21 — Stellar dynamo](Study-21-Stellar-Dynamo-Shear)
 
 ## ☀️🌑 Eclipse 2026
 

@@ -8,6 +8,8 @@
 **Door:** [Death of continuous shear](Death-of-Continuous-Shear)  
 **Addendum 2026-08-25:** [The Fourier Phantom](Impact-Study-Fourier-Phantom) — Anima AI / Kohn–Sham / FNO DFT mapped onto LIVE Studies **11 + 12 + 13**. Anima’s 82,500-atom Mg / B300 demo is **their** claim. Affine does not seal that density. Study 15 Skala 2.72 / 2.8 is the same continuum court, cited, not useless — may be dangerous.
 
+**Lead corpus 2026-08-25:** [The stellar dynamo kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot) — weakened magnetic braking / gyrochronology (van Saders et al. 2016, DOI 10.1038/nature16168) is **their** patch. Study 21 court is integer \((q,r)+(n/d)\). Not a Kepler/TESS CALORIE.
+
 ---
 
 ## The verdict, stated once
@@ -415,6 +417,7 @@ It does not say air is not a fluid, or that a picture of NS is useless for intui
 | Fluids | NS + RANS closures | continuum + float mesh | integer \(\Phi\), linking, Ehrhart vol | Plant/twin precision |
 | Ocean | \(c=\sqrt{gH}\) live float | libm | pinned minutes (Study 04) | Evacuation clock |
 | Blast | spectral P/S | float discriminant | 53±2 s integer SNR (Study 06) | Treaty ladder |
+| Astrophysics (Dynamo) | Continuous MHD & Gyrochronology (\(\mathrm{d}\omega/\mathrm{d}t=-k\omega^{a}\)) | Float curve fits miss discrete topological phase steps | \(L(w)=(q,r)\in\mathbb{Z}^{2}\) + rational spin steps | Dynamo “collapse” / solar anomaly phantoms |
 
 ---
 
