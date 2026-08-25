@@ -417,7 +417,7 @@ It does not say air is not a fluid, or that a picture of NS is useless for intui
 | Fluids | NS + RANS closures | continuum + float mesh | integer \(\Phi\), linking, Ehrhart vol | Plant/twin precision |
 | Ocean | \(c=\sqrt{gH}\) live float | libm | pinned minutes (Study 04) | Evacuation clock |
 | Blast | spectral P/S | float discriminant | 53±2 s integer SNR (Study 06) | Treaty ladder |
-| Astrophysics (Dynamo) | Continuous MHD & Gyrochronology (\(\mathrm{d}\omega/\mathrm{d}t=-k\omega^{a}\)) | Float curve fits miss discrete topological phase steps | \(L(w)=(q,r)\in\mathbb{Z}^{2}\) + rational spin steps | Dynamo “collapse” / solar anomaly phantoms |
+| Astrophysics (Dynamo) · Study 21 | Continuous MHD & Gyrochronology (\(\mathrm{d}\omega/\mathrm{d}t=-k\omega^{a}\)) | Float curve fits miss discrete topological phase steps | \(L(w)=(q,r)\in\mathbb{Z}^{2}\) + rational spin steps · [Study 21](Study-21-Stellar-Dynamo-Shear) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot) | Dynamo “collapse” / solar anomaly phantoms |
 
 ---
 
