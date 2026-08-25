@@ -16,7 +16,7 @@ The win is the **verified bond**, not custody of a fold and not a true/false “
 
 ## For every reader — one paragraph
 
-A researcher walks **named** public discoveries the same way Falcon walks a court: Look, then (when a key exists) Claim, then Build, then Share. Today Look is live. The cell serves an **index** of public PDB entry ids with a source-URL template, plus a handful of fact sheets whose fields came from a fetch (PDB 4HHB, PubChem aspirin CID 2244, ChEMBL CHEMBL25, DailyMed aspirin and insulin-human SPLs). The researcher GETs a fact sheet from RCSB / PubChem / ChEMBL / DailyMed. Claim stays DARK until an integer occupancy key exists.
+A named public discovery here is a **fetched industry record** — a PDB accession in the hosted holdings, a PubChem CID, a ChEMBL id, a DailyMed SPL — walked Look → Claim → Build → Share. The cell serves the holdings index (N=258616) and a handful of fact sheets whose fields came from those fetches (4HHB, aspirin CID 2244 / CHEMBL25, DailyMed insulin human). Claim on a presented 4-char `pdb_id` is **LIVE**. Occupancy / residue / pocket stay DARK. The meaning of a WIN is holdings membership of that id, not a dock and not a cookbook.
 
 **Instructions** means cited public facts and links — INN, indication on the label, PDB / PubChem / ChEMBL / DailyMed id, manufacture *class* (recombinant / chemical / extracted) from FDA / EMA / label / PDB. It does **not** mean a synthesis cookbook. C-007: no pathogen enhancement, no military, no unpublished manufacture steps.
 

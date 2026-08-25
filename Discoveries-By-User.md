@@ -1,7 +1,9 @@
 # Discoveries by user type
 
-**Status: LOOK LIVE + LIVE CLAIM on industry keys — 2026-08-25**  
+**Status: LOOK LIVE + LIVE CLAIM on industry keys — 2026-08-25T21:35:58Z**  
 **Program:** [Known discoveries](Known-Discoveries-Index.md) · [Language-games study board](Language-Games-Study-Board.md) · [Home](Home.md)
+
+A public discovery here is a **verified bond to a cited industry id** — ICD/DOID, a 4-char PDB accession in the hosted holdings, an InChIKey/CID, a COD/mp row, or two keys appointed together. The catalog N is how many ids the cell hosts. The WIN is that the presented id is on the court. Occupancy / docking / treatment stay off this page.
 
 FoT is the base. Public flourishing. A steward-disk folder label is not a brand.
 
@@ -32,7 +34,7 @@ Health court is PK **dose** (`mass_milli` / `vol_milli`), not a pocket and not a
 
 Look omits credentials. Claim needs `source`+`role`.
 
-Numbered walks that match the live buttons (chooser **Open this door** · sample chips · **POST selected** · **Refuse example**): [Low-friction user flows](Low-Friction-User-Flows.md). After WIN (and after Look catalog / manufacture contracts GET) the same proteins/frame sits next to the receipt — sha256 `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e` this hour. Hologram measure: [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+Numbered walks that match the live buttons (chooser **Open this door** · sample chips · **POST selected** · **Refuse example**): [Low-friction user flows](Low-Friction-User-Flows.md). After WIN (and after Look catalog / manufacture contracts GET) the same proteins/frame sits next to the receipt — sha256 `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266` this hour. Hologram measure: [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
 
 ---
 

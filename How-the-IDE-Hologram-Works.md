@@ -1,6 +1,6 @@
 # How the IDE hologram works
 
-**Status: measured 2026-08-25 — existing lattice frame. No protein-dock hologram.**  
+**Status: measured 2026-08-25T21:35:58Z — existing lattice frame. No protein-dock hologram.**  
 **Walks:** [Low-friction user flows](Low-Friction-User-Flows.md) · [Study 11 Ehrhart](Study-11-Ehrhart-Volume-Shear.md)
 
 Researchers and claimants see a **receipt + the frame that already paints**. Affine does not invent a pdb occupancy hologram. `ProteinManifold.evaluateDocking` is not stubbed.
@@ -13,18 +13,20 @@ Meaning = **integer seal + lattice raster**. Not a training deck. Not a molecule
 
 `GET https://affine.earth/language-invariant/game/proteins/frame?w=512&h=512&t=800`
 
-| Field | Measured 2026-08-25T21:14:06Z · nbg-01 |
+| Field | Measured 2026-08-25T21:35:58Z · hel-00 |
 |---|---|
 | HTTP | **200** |
 | `content-type` | `application/octet-stream` |
 | Byte length | **1048576** (512 × 512 × 4 RGBA) |
-| sha256 | `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e` |
+| sha256 | `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266` |
 | `x-affine-game` | `proteins` |
 | `x-gop-width` / `x-gop-height` | 512 / 512 |
 | `x-affine-game-step` | 800 |
 | `x-gop-order` | RGBA |
 
-Same sha after pdb 4HHB WIN and after complex 2HYY+5291 WIN. `t=800` did not change. Earlier hour `c4dae839391998605fa264d7622aa688f3f4e463432febe88e44e7872756ddd4` was the previous raster at this same URL.
+Same sha after pdb 4HHB WIN. `t=800` did not change. Prior hour `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e` was the previous raster at this same URL. Earlier still `c4dae839391998605fa264d7622aa688f3f4e463432febe88e44e7872756ddd4`.
+
+The HUD paints this frame in two places only: after a Look catalog/contracts GET (no Claim), and after a Claim WIN (HTTP 2xx). Refuse leaves the figure hidden.
 
 This is the **same URL** the court HUD `<img id="courtPlayHologramImg">` loads after a Look catalog GET and after every WIN. Home Look `#researcher` loads the same URL into `<img id="researcherHologramImg">`. It is not a hologram of 4HHB or 2HYY. It is the live LatticeRender protein-fold raster.
 
@@ -32,7 +34,7 @@ A second existing raster (not what the HUD loads after WIN):
 
 `GET /language-invariant/game/materials/frame?w=512&h=512&t=600` — HTTP 200, octet-stream, 1048576 bytes. Chemistry / materials WIN still load **proteins/frame**. The HUD caption says so.
 
-Evidence: `evidence/discovery-app-hologram-flow-20260825/`
+Evidence: `evidence/docs-drift-20260825/`
 
 `backdrop-filter` on the IDE chrome is CSS blur. It is not a hologram `filter:` law and was not changed.
 

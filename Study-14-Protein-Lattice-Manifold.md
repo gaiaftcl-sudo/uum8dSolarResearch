@@ -22,7 +22,7 @@ The win is the **verified bond**, not custody of a fold and not a true/false “
 
 ## For every reader — one paragraph
 
-A protein is a chain written in a **cited** finite alphabet. Affine.Earth’s intended game is lattice occupancy — each voxel is 0 or 1 — and a peptide appointment as an exact rational Jordan link. That game is **not** implemented as a court today. Cryo-EM / X-ray density quantized to occupancy is the *intended* ingest. Complementary occupancy (ligand 1s ⊂ pocket 0s) is the *shape of the game*, not an O(1) engine. AlphaFold is the adversary (predicted float coordinates), not our method. This page does **not** say folding is solved, and it does **not** land a docking stub.
+A protein on this court is a **presented 4-character PDB accession** that is a member of the hosted holdings (N=258616). The win is that membership — the verified bond to a public RCSB id — not custody of a fold and not a true/false “discovery” bit. Occupancy (each voxel 0 or 1) and complementary pocket geometry are the *intended* lattice game and stay DARK until an integer occupancy key exists. AlphaFold / float MD remain the named adversary. Play **4HHB** or **2HYY** on `#pdb-holdings`; the hologram that appears is the existing proteins/frame, not a dock of that id.
 
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.** A kcal/mol miss or a moving XC baseline treated as the molecule is a spatial collision: wrong pocket, wrong bond, wrong dose.
 
@@ -120,7 +120,7 @@ Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog 
 
 **Combinations (pdb + CID):** appoint two keys that already pass their own courts. [Combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · IDE [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) · [Study 17](Study-17-Chemistry-InChIKey.md). 1N8Z has no small-molecule CID. Occupancy stays DARK.
 
-**Hologram after WIN:** existing lattice frame GET `/language-invariant/game/proteins/frame?w=512&h=512&t=800`, not a dock. This hour sha256 `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e`. [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+**Hologram after WIN:** existing lattice frame GET `/language-invariant/game/proteins/frame?w=512&h=512&t=800`, not a dock. This hour sha256 `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266`. [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
 
 **Manufacture contract:** [Manufacture contracts](Manufacture-Contracts.md) · `#manufacture-look`. CLASS_ABSENT for the PDB archive row.
 
@@ -133,7 +133,6 @@ Sheared tools — Skala, float MD, AlphaFold — are **not accurate due to shear
 ## What this page does not do
 
 - Does not write `ProteinManifold.evaluateDocking` or a true/false discovery court
-- Does not write Affine Assembler / string ALU / `binfmt` (Debian is HAL; law is the Swift membrane)
 - Does not claim docking is a millisecond O(1) solved problem
 - Does not claim Affine solved folding
 - Does not call Skala, DFT+DL, float MD, or AlphaFold **useless** — they shear; using the shear as the molecule **may be dangerous**

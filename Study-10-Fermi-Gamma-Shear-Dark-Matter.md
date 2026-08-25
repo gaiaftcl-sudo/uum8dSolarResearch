@@ -73,7 +73,7 @@ UUM-8D names the rest: \(c^4\) is **`c4EntropyCap`** — entropy bound on discre
 
 Study 07's sky (Sgr A\* / the Central Molecular Zone) now carries a **cited** ALMA observation: Yang et al., A&A **694** A86 (2025-02-01), fetched **2026-08-24** — slim filaments, SiO 5–4 plus eight 1.3 mm lines, paper bounds long **>0.5 pc** and narrow **<0.03 pc**, in the 20 and 50 km s⁻¹ clouds. Full table and architectural reading live on [Study 07](Study-07-SgrA-Milky-Way-Raw-Visibilities.md#cited-2026-08-24--alma-slim-filaments-in-the-cmz-not-a-court).
 
-That observation is **not** a keV ingest. Fermi / 43 GeV is a different shear. Filaments do not bind this charter's Inner Galaxy null, and this charter does not grade filament length, width, or position angle. When continuous MHD cannot hold a slim filament, ΛCDM dark-matter “glue” is the **adversary narrative** some astronomers use — the lattice does not yet grade that. Honest edge word on mass is ***not known***. This page does **not** say dark matter is disproved. Next increment on the filament side is court bind on Study 07 when keys exist — do not stub a court, and do not POST filaments into `physics`.
+That observation is **not** a keV ingest. Fermi / 43 GeV is a different shear. Filaments do not bind this charter's Inner Galaxy null, and this charter does not grade filament length, width, or position angle. When continuous MHD cannot hold a slim filament, some astronomers reach for dark-matter “glue” as the **adversary narrative** — the lattice does not yet grade that. Honest edge word on mass is ***not known***. Next increment on the filament side is court bind on Study 07 when keys exist — do not stub a court, and do not POST filaments into `physics`.
 
 ---
 

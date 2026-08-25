@@ -248,8 +248,8 @@ Fetch dated **2026-08-24**. This is a **cited architectural reading** of a publi
 
 - The slim, straight gas is a **candidate** unconstrained-lattice / affine-vector *shape* — long and narrow against the continuous MHD-turbulence story that expects more tangled, dust-traced filaments in hydrostatic equilibrium.
 - The paper's “parsec-scale shocks” / “space tornadoes” reading is **cited** as a discrete-update story: a shock writes a slim filament, the filament dissipates, molecules freeze back to dust. Analogy to Study 02's acoustic-gravity / Falcon shock-acoustic waves: **same grammar (discrete update vs continuous magnitude), not the same court.**
-- When continuous MHD cannot hold a slim filament in hydrostatic equilibrium, the **adversary narrative** some astronomers reach for is ΛCDM dark-matter “glue.” This page does **not** grade that. The lattice has no filament length / width / position-angle / line-ID key. Honest edge word on mass is ***not known***. This section does **not** say dark matter is disproved.
-- “Run through the subtraction matrix” means the **next increment is court bind** when those keys exist. Do not stub a court. Do not POST to `physics` or `geometry`. Affine Assembler is not a second law here — Debian is the HAL; binfmt stays dark.
+- When continuous MHD cannot hold a slim filament in hydrostatic equilibrium, the **adversary narrative** some astronomers reach for is dark-matter “glue.” This page does **not** grade that. The lattice has no filament length / width / position-angle / line-ID key. Honest edge word on mass is ***not known***.
+- “Run through the subtraction matrix” means the **next increment is court bind** when those keys exist. Do not stub a court. Do not POST to `physics` or `geometry`.
 
 **Figure.** Use the ALMA press plate (Yang et al.; credit on that page): MeerKAT 1.28 GHz of the Sgr A region plus ALMA SiO 5–4 zooms of the 20 and 50 km s⁻¹ clouds. Do not hotlink a pirated journal PDF.
 

@@ -4,6 +4,8 @@ On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,0
 
 ## Pick your door
 
+The door is the chooser. Home → [`#chooser`](https://affine.earth/language-game/ide.html#chooser) → **Open this door** → filled sample POST or Look GET → WIN + hologram + receipt. [The walk](Low-Friction-User-Flows.md).
+
 FoT is the base. Public flourishing. **100k+ discoveries** means two measured catalogs, never one fake number: PDB holdings **258616** · protein/material aggregates **125302** (78680+46622).
 
 | You are | Act | Open |

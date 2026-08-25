@@ -1,6 +1,6 @@
 # Low-friction user flows
 
-**Status: measured 2026-08-25 — one story, every step a curl or a live button.**  
+**Status: measured 2026-08-25T21:35:58Z — one story, every step a curl or a live button.**  
 **Start:** https://affine.earth/language-game/ → https://affine.earth/language-game/ide.html#chooser  
 **Hologram:** [How the IDE hologram works](How-the-IDE-Hologram-Works.md)  
 **Doors:** [Discoveries by user](Discoveries-By-User.md)
@@ -9,13 +9,25 @@ A stranger walks **one path**: Home → chooser (who I am) → **Open this door*
 
 FoT is the base. Chooser is the first screen. One tap per user type (**Open this door**) lands on a court that already has sample buttons. Look never asks for identity. Claim POSTs `source`+`role` in the body — there is no login form. After WIN the receipt and the existing lattice frame sit on the same HUD.
 
-Evidence: `evidence/discovery-app-hologram-flow-20260825/CAPTURES.md`
+Evidence: `evidence/docs-drift-20260825/VERDICT.json`
 
 Hologram URL (same after Look and after every WIN):
 
 `GET https://affine.earth/language-invariant/game/proteins/frame?w=512&h=512&t=800`
 
-Measured this hour: HTTP **200**, `application/octet-stream`, **1048576** bytes, sha256 `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e`. Same sha after pdb 4HHB WIN and after complex 2HYY+5291 WIN. `t=800` did not change. Earlier hour `c4dae839…5ddd4` was the previous raster at the same URL.
+Measured this hour (hel-00): HTTP **200**, `application/octet-stream`, **1048576** bytes, sha256 `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266`. Same sha after pdb 4HHB WIN. `t=800` did not change. Prior hour `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e` was the previous raster at this same URL.
+
+## Drift (so the next hour can see staleness)
+
+| Field | Last validated |
+|---|---|
+| UTC | **2026-08-25T21:35:58Z** · edge hel-00 |
+| Catalog `index_n` | **258616** · GET `discoveries/catalog.json` HTTP 200 · `ids` 258616 |
+| Hologram sha256 | `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266` · 1048576 bytes · t=800 |
+| Look `identity_leak` | **0** |
+| Walk | Home → `#chooser` → **Open this door** → filled sample POST/GET → WIN + hologram + receipt |
+
+If catalog N or the hologram sha on this page is not those two numbers, this page is stale — re-GET and rewrite the row. Do not invent a sha.
 
 ---
 
@@ -29,7 +41,7 @@ Measured this hour: HTTP **200**, `application/octet-stream`, **1048576** bytes,
 | 2 | Tap **Open this door** on Researcher | hash `#protein-material-look` or home `#researcher` |
 | 3 | Page GETs holdings catalog | GET `discoveries/catalog.json` HTTP **200** · `index_n=258616` · `ids` 258616 |
 | 4 | Page GETs aggregates | GET `protein-material-aggregates.json` HTTP **200** · `index_n=125302` (78680 + 46622) |
-| 5 | Lattice frame appears | GET proteins/frame HTTP **200** · sha256 `a3f6f2bb…14235e` |
+| 5 | Lattice frame appears | GET proteins/frame HTTP **200** · sha256 `97f1bd07…0ec266` |
 
 Identity: **omit**. No POST. Sample buttons on the IDE Look are **Play #pdb-holdings**, **Play #disease-icd**, **Play #chemistry-inchi**, **Play #material-std**, **Play #stellar-dynamo**, **kill shot** — they change hash or open the kill-shot story. They do not POST a generated label.
 
@@ -50,7 +62,7 @@ Hologram: **yes** (after catalog GET). No Claim required.
 | 1 | Chooser → **Open this door** on Disease / protein · or hash `#disease-icd` | court HUD mounts; input already `C67` |
 | 2 | Door-open POSTs the filled sample, or tap **C67 · DOID:11054** / **POST selected** | POST `/language-invariant/game/disease/ingest` `{source:researcher, role:clinician, icd:C67, doid:DOID:11054}` |
 | 3 | Receipt | HTTP **200** · `lattice_court.verdict=WIN` · `status=CALORIE_GAME_INGEST` · `proven_marker=STUDY16_DISEASE_ICD_PROVEN` |
-| 4 | Hologram | proteins/frame HTTP **200** · sha256 `a3f6f2bb…14235e` · HUD `<img id="courtPlayHologramImg">` unhides |
+| 4 | Hologram | proteins/frame HTTP **200** · sha256 `97f1bd07…0ec266` · HUD `<img id="courtPlayHologramImg">` unhides |
 
 C50 this hour: tap **C50 · DOID:1612** → HTTP **200** WIN `STUDY16_DISEASE_ICD_PROVEN`.
 
@@ -92,7 +104,7 @@ Charter: [Study 16](Study-16-Disease-Type.md) · [Study 14](Study-14-Protein-Lat
 | 1 | Chooser → **Open this door** on Chemist | input already `2244` |
 | 2 | Door-open POSTs the filled sample, or tap **CID 2244** / **POST selected** | POST `/language-invariant/game/chemistry/ingest` `{source:researcher, role:chemist, cid:2244, inchikey:BSYNRYMUTXBXSQ-UHFFFAOYSA-N, hbd:1, hba:4, lipinski_violations:0}` |
 | 3 | Receipt | HTTP **200** WIN `STUDY17_CHEMISTRY_INCHI_PROVEN` |
-| 4 | Hologram | **yes** — chemistry uses lattice frame proteins/frame (caption on the HUD). Not a molecule dock. sha256 `a3f6f2bb…14235e` |
+| 4 | Hologram | **yes** — chemistry uses lattice frame proteins/frame (caption on the HUD). Not a molecule dock. sha256 `97f1bd07…0ec266` |
 
 Charter: [Study 17](Study-17-Chemistry-InChIKey.md)
 
@@ -161,7 +173,7 @@ Test claim, not efficacy. Affine does not write that a frequency kills cancer. C
 | 1 | Chooser → **Open this door** on Astrophysicist · or hash `#stellar-dynamo` | input already `0,1` + `1/2` · HUD title Stellar dynamo |
 | 2 | Tap **Z2_a2b (0,1) + 1/2** or **POST selected** | POST `{source:researcher, role:researcher, q:0, r:1, n:1, d:2, cited_id:z2-a2b-half-step}` |
 | 3 | Receipt | HTTP **200** WIN `STUDY21_DYNAMO_INTEGER_STEP` linking `(0,1)` spin `1/2` |
-| 4 | Hologram | proteins/frame after WIN · sha256 `a3f6f2bb…14235e` |
+| 4 | Hologram | proteins/frame after WIN · sha256 `97f1bd07…0ec266` |
 | 5 | **Refuse example** | POST `{k:0.15}` → HTTP **400** `REFUSED_FLOAT` · hologram not shown |
 
 Court, not a Kepler/TESS B. Study 09 convective is a different court. Charter: [Study 21](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md)
@@ -204,7 +216,7 @@ Affine story copies: https://affine.earth/language-game/#story/Low-Friction-User
 
 | User | URL | Capture verdict | Hologram |
 |---|---|---|---|
-| Researcher LOOK | `#researcher` / `#protein-material-look` | GET catalog 258616 HTTP 200 | sha256 `a3f6f2bb…14235e` |
+| Researcher LOOK | `#researcher` / `#protein-material-look` | GET catalog 258616 HTTP 200 | sha256 `97f1bd07…0ec266` |
 | Disease | `#disease-icd` C67 / C50 | WIN `STUDY16_DISEASE_ICD_PROVEN` | same sha |
 | Protein | `#pdb-holdings` 4HHB / 2HYY | WIN `STUDY14_PDB_HOLDINGS_PROVEN` | same sha |
 | Chemist | `#chemistry-inchi` 2244 | WIN `STUDY17_CHEMISTRY_INCHI_PROVEN` | same sha · caption: chemistry uses lattice frame |

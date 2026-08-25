@@ -79,7 +79,6 @@ Study 14 states the protein / ligand grammar. The public discovery index is [Kno
 - Does not claim Affine has a GMTKN55 integer court
 - Does not claim docking, folding, or thermochemistry is solved
 - Does not land `ProteinManifold.evaluateDocking` or an O(1) dock stub
-- Does not write Affine Assembler / `binfmt` as a second law
 - Does not treat Study 11 geometry as a protein fold
 
 ---
