@@ -14,6 +14,8 @@
 
 The win is the **verified bond** to a public crystal STD. Generated material nicknames do not WIN. No minted `mp-` ids. No 46622-row catalog.
 
+Water / desalination: [Discoveries by user — desalination](Discoveries-By-User.md#water--desalination-materials). Play only a row that already carries a fixture COD / mp / space-group. Steward-disk desalinate/RO/membrane titles this hour: **0**. No membrane synthesis steps.
+
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.**
 
 ---

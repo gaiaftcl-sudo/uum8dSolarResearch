@@ -82,7 +82,7 @@ No IC50 is written on any row. If a number was not in the fetch, it is absent.
 | Act | Researcher does | This surface |
 |---|---|---|
 | 1 LOOK | GET the catalog. No identity. | [catalog.json](https://affine.earth/language-game/discoveries/catalog.json) · [\#researcher](https://affine.earth/language-game/#researcher) |
-| 2 CLAIM | POST integers + `source`+`role` about a *named* id | **DARK** — no occupancy key. Do not POST Study 11 geometry as a fold. Do not treat health dose as a pocket. |
+| 2 CLAIM | POST a presented PDB id + `source`+`role` | **LIVE** on `#pdb-holdings`. Occupancy / pocket stay **DARK**. Do not treat health dose as a pocket. |
 | 3 BUILD | Open the record in the IDE that exists | [ide.html#discovery-review](https://affine.earth/language-game/ide.html#discovery-review) |
 | 4 SHARE | GET view that names `source` | this page · catalog `examples[]` |
 

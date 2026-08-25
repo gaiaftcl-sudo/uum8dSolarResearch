@@ -14,6 +14,7 @@
 - [Program index](Shear-Studies-Index)
 - [Language-games study board](Language-Games-Study-Board)
 - [Known discoveries — family ledger](Known-Discoveries-Index)
+- [Discoveries by user](Discoveries-By-User)
 - [Known molecular discoveries](Known-Molecular-Discoveries)
 - [Study 14 — PDB play](Study-14-Protein-Lattice-Manifold)
 

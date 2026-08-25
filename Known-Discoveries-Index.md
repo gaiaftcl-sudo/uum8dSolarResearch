@@ -1,7 +1,7 @@
 # Known discoveries — family ledger
 
 **Status: LOOK LIVE — 2026-08-24 · one row per family · no invented fact sheets**  
-**Program:** [Language-games study board](Language-Games-Study-Board.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md)
+**Program:** [Language-games study board](Language-Games-Study-Board.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md) · [Discoveries by user](Discoveries-By-User.md)
 
 | Surface | URL | Grade |
 |---|---|---|
@@ -11,6 +11,8 @@
 | Look walks | https://affine.earth/language-game/#researcher | GET links only. No auto-POST. |
 
 Thousands = measured catalog **N**, not 258616 invented pages. Example fact sheets already exist (4HHB, CID 2244, CHEMBL25, DailyMed insulin) and stay cited fetch fields only.
+
+**Pick your door:** [Discoveries by user](Discoveries-By-User.md) — Researcher LOOK · Chemist `#chemistry-inchi` · Materials `#material-std` · Disease/protein `#disease-icd` + `#pdb-holdings` · Builder `#chooser` · Press this wiki. Cancer-related and water/desalination sections name what is playable vs Look-only.
 
 Hosted catalogs: `discoveries/catalog.json` (PDB holdings N=258616 — the playable protein set) and `discoveries/protein-material-aggregates.json` (generated-candidate hashes + integer N, **not** playable without a PDB/ICD/InChI/COD key). They are never merged.
 

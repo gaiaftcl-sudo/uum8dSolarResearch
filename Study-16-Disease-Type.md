@@ -14,6 +14,8 @@
 
 The win is the **verified bond** to a public industry code. Occupancy stays Study 14 grammar, not a dock. Health is PK dose (`mass_milli`/`vol_milli`), not a pocket. Complementary occupancy is not this court.
 
+Cancer-related play is this court plus PDB holdings — [Discoveries by user — Cancer-related](Discoveries-By-User.md#cancer-related-discoveries). **C67** + `DOID:11054` already WIN. Generated nicknames do not. This page is not a treatment protocol.
+
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.**
 
 ---

@@ -11,7 +11,7 @@
 | Review ledger | [Known molecular discoveries](Known-Molecular-Discoveries.md) · IDE `#discovery-review` | **LOOK LIVE** — play the id on `#pdb-holdings`. |
 | Court | `POST /language-invariant/game/pdb/ingest` | format + holdings membership of a **presented** id. Unknown id → `REFUSED_NO_STD`. |
 | Occupancy / pocket | complementary occupancy is the grammar, not a dock | **DARK** |
-| Industry siblings | [Study 16 ICD](Study-16-Disease-Type.md) · [Study 17 InChIKey](Study-17-Chemistry-InChIKey.md) · [Study 18 material STD](Study-18-Material-STD.md) | **LAW FROZEN** — generated nicknames are not these keys |
+| Industry siblings | [Study 16 ICD](Study-16-Disease-Type.md) · [Study 17 InChIKey](Study-17-Chemistry-InChIKey.md) · [Study 18 material STD](Study-18-Material-STD.md) · [user doors](Discoveries-By-User.md) | **LAW FROZEN** — generated nicknames are not these keys |
 | `health` court | `mass_milli` / `vol_milli` | PK **dose**. Not a binding pocket. Not ozone. |
 | Study 11 `geometry` | `polytope_id` + `dilation` | Ehrhart volume. **Not** a protein fold. |
 | Humanity | Small- and large-molecule discovery without a moving DFT baseline | **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.** |

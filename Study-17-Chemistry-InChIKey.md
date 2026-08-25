@@ -14,6 +14,8 @@
 
 The win is the **verified bond** to a public compound identity. SMILES is a cookbook, not this court. Float MW / logP are not a verdict.
 
+Chemist door: [Discoveries by user](Discoveries-By-User.md) · IDE [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi).
+
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.**
 
 ---
