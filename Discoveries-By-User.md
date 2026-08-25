@@ -86,7 +86,7 @@ Charter: [Study 18](Study-18-Material-STD.md)
 | LOOK | Researcher | GET catalogs. credentials omit. |
 | CLAIM | Chemist · Materials · Disease / protein | POST industry key + source+role |
 | BUILD | Builder | `ide.html` hash · court HUD search / sample / POST |
-| SHARE | Public / press | this wiki · GitHub tab · affine `#story/` |
+| SHARE | Public / press | this wiki · GitHub tab · affine `#story/` · [Fourier Phantom](Impact-Study-Fourier-Phantom.md) · [Death of continuous shear](Death-of-Continuous-Shear.md) |
 
 **OPEN stays 03 / 05 / 08.**
 

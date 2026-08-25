@@ -1,15 +1,17 @@
 # Study 13 — Connes Rigidity Shear
 
 **Status: CHARTER SEALED — 2026-08-22 · LIVE CLAIM**  
-**Program:** [Conjecture Alignment](Conjecture-Alignment-UUM8D) · [Shear Studies Index](Shear-Studies-Index)
+**Program:** [Conjecture Alignment](Conjecture-Alignment-UUM8D) · [Shear Studies Index](Shear-Studies-Index) · [Fourier Phantom](Impact-Study-Fourier-Phantom)
 
 | Surface | URL / key | Cited vs sealed |
 |---|---|---|
 | Claim UI | https://affine.earth/language-game/study-13-algebra.html | sealed POST |
 | IDE | https://affine.earth/language-game/ide.html#connes-rigidity | file template; no auto-POST |
 | Look | https://affine.earth/language-game/#researcher | GET only |
+| Affine story | https://affine.earth/language-game/#story/Study-13-Connes-Rigidity-Shear | this charter |
 | Court | `POST /language-invariant/game/algebra/ingest` `word=Z2_a2b` | sealed linking `(0,1)` `RIGID_CYCLE` · never lone `"e"` |
 | Humanity | Operator-algebra rigidity projected to a replayable `(q,r)` | spectral-radius float is the adversary |
+| DFT map | KS effective potential / MO landscape | Anima guesses continuous potential↔density. Study 13 locks \(L(\gamma)=(q,r)\in\mathbb{Z}^2\). |
 
 ---
 
@@ -55,5 +57,7 @@ Connes's rigidity conjecture asks whether certain discrete groups have **rigid**
 ## Status
 
 **LIVE CLAIM — named `algebra` receipt. Not OPEN.**
+
+Replacement trio: [12 kills \(\psi\)](Study-12-Quantum-Parallel-Repetition-Shear) · [11 kills continuous density](Study-11-Ehrhart-Volume-Shear) · this page kills the KS potential. Synthesis: [Fourier Phantom](Impact-Study-Fourier-Phantom). Decode-path sibling: [`GET /language-invariant/eisenstein/seal`](https://affine.earth/language-invariant/eisenstein/seal).
 
 When complete, results will publish as `Study-13-Connes-Rigidity-Results.md`.

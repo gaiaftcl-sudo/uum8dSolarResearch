@@ -10,7 +10,7 @@ That view is the client experience. It teaches what Affine.Earth is and how UUM-
 
 Hologram WASM is a different face. These courts do not go through it. The researcher look path is a panel on the same `/language-game/` page travelers already use.
 
-Public wiki of the same studies: [uum8dSolarResearch](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki).
+Public wiki of the same studies: [uum8dSolarResearch](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki). DFT map: [Fourier Phantom](Impact-Study-Fourier-Phantom) — Anima FNO is **their** claim; Affine LIVE courts are 11 / 12 / 13.
 
 ## Agent bind — the court is already MCP
 

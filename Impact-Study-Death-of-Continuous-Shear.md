@@ -5,6 +5,9 @@
 
 **Live courts:** [explore every role on affine.earth](Affine-Earth-Lattice-Endpoints) — `GET /language-invariant/games` → `lattice_courts` (9 domains, 28 roles). Physics / health / finance / cs / fluids ingest on the same membrane.
 
+**Door:** [Death of continuous shear](Death-of-Continuous-Shear)  
+**Addendum 2026-08-25:** [The Fourier Phantom](Impact-Study-Fourier-Phantom) — Anima AI / Kohn–Sham / FNO DFT mapped onto LIVE Studies **11 + 12 + 13**. Anima’s 82,500-atom Mg / B300 demo is **their** claim. Affine does not seal that density. Study 15 Skala 2.72 / 2.8 is the same continuum court, cited, not useless — may be dangerous.
+
 ---
 
 ## The verdict, stated once

@@ -1,7 +1,18 @@
 # Study 11 — Ehrhart Volume Shear: lattice points vs float volume
 
-**Status: LAW FROZEN — 2026-08-22**  
-**Program:** [Shear Studies Index](Shear-Studies-Index) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm)
+**Status: LAW FROZEN — 2026-08-22 · LIVE CLAIM**  
+**Program:** [Shear Studies Index](Shear-Studies-Index) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm) · [Fourier Phantom](Impact-Study-Fourier-Phantom)
+
+| Surface | URL / key | Cited vs sealed |
+|---|---|---|
+| Claim UI | https://affine.earth/language-game/study-11-ehrhart.html | sealed POST |
+| IDE | https://affine.earth/language-game/ide.html#ehrhart-volume | file template; no auto-POST |
+| Look | https://affine.earth/language-game/#researcher | GET only |
+| Affine story | https://affine.earth/language-game/#story/Study-11-Ehrhart-Volume-Shear | this charter |
+| Court | `POST /language-invariant/game/geometry/ingest` `polytope_id=unit_square` `dilation=12` | sealed count **169** vol `1/1` · float `1.5` → HTTP 400 `REFUSED_FLOAT` |
+| DFT map | Hohenberg–Kohn \(\int\rho(r)\,dr\) | density is Ehrhart count, not a float tensor. Anima FNO density is **their** claim. |
+
+Replacement trio: [12 kills \(\psi\)](Study-12-Quantum-Parallel-Repetition-Shear) · this page kills continuous density · [13 kills KS potential](Study-13-Connes-Rigidity-Shear). Synthesis: [Fourier Phantom](Impact-Study-Fourier-Phantom).
 
 ---
 
@@ -72,3 +83,5 @@ No float crosses the seal path. Volume comparisons use `Fraction` rationals only
 - [Study 11 Results](Study-11-Ehrhart-Volume-Results)
 - [Peer-review bundle](Peer-Review-Conjecture-Bundle)
 - [Study 12 Results](Study-12-Quantum-Parallel-Repetition-Results)
+- [Fourier Phantom — Anima FNO vs 11+12+13](Impact-Study-Fourier-Phantom)
+- Live IDE: https://affine.earth/language-game/ide.html#ehrhart-volume

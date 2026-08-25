@@ -1,7 +1,7 @@
 # Study 15 — Skala DFT shear
 
 **Status: CITED · court DARK — GMTKN55 2.72 / 2.8 kcal/mol fetched 2026-08-24**  
-**Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold.md) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm.md)
+**Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold.md) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom.md)
 
 | Surface | URL / key | Cited vs sealed |
 |---|---|---|
@@ -20,6 +20,8 @@ This page **contrasts methods**. It does not write a 2D verdict that Skala “is
 Microsoft Skala 1.1 is a deep-learning exchange-correlation functional for DFT. Their own pages publish a GMTKN55 weighted error and a “continuously improving” release rule: each version supersedes the last. Affine.Earth OS freezes integer law. A float on the wire is refused. Nine cells replay the same Swift bytes. Study 11 at dilation 12 still returns count **169** volume `1/1`.
 
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.** A kcal/mol miss treated as the molecule is a spatial collision: wrong pocket, wrong bond, wrong dose. GMTKN55 “2.8 kcal/mol average error” is that danger, **cited from their page**, not a dunk.
+
+Same continuum court as Anima’s FNO DFT (Aug 2026 — **their** 82,500-atom Mg / B300 claim). Skala shears the kcal. Anima shears the density via Fourier. Affine’s replacement is not a second XC functional: [Study 11](Study-11-Ehrhart-Volume-Shear.md) counts, [Study 12](Study-12-Quantum-Parallel-Repetition-Shear.md) locks state as rationals, [Study 13](Study-13-Connes-Rigidity-Shear.md) locks the Jordan link. Addendum: [Fourier Phantom](Impact-Study-Fourier-Phantom.md). Affine has not sealed an 82,500-atom Mg density.
 
 ---
 

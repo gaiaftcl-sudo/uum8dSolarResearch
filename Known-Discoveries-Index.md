@@ -32,9 +32,9 @@ Hosted catalogs: `discoveries/catalog.json` (PDB holdings N=258616 — the playa
 | 08 Gaia BH1 µas | — | [08](Study-08-Gaia-BH1-Astrometric-Shear.md) | none | **OPEN** · no µas ingest |
 | 09 Convective bond | live court | [09](Study-09-Global-Convective-Bond.md) | [`#convective-containment`](https://affine.earth/language-game/ide.html#convective-containment) | **LIVE CLAIM** |
 | 10 Fermi / HEASARC | named FITS + paper | [10](Study-10-Fermi-Gamma-Shear-Dark-Matter.md) | [`#fermi-archive`](https://affine.earth/language-game/ide.html#fermi-archive) | **CHARTER WITH ARCHIVE** · court **DARK** · edge *not known* |
-| 11 Ehrhart | **169** | [11](Study-11-Ehrhart-Volume-Shear.md) | [`#ehrhart-volume`](https://affine.earth/language-game/ide.html#ehrhart-volume) | **LAW FROZEN** + **LIVE CLAIM** |
-| 12 QPR | **3** rounds · `27/64` | [12](Study-12-Quantum-Parallel-Repetition-Shear.md) | [`#qpr`](https://affine.earth/language-game/ide.html#qpr) | **LIVE CLAIM** |
-| 13 Connes | word `Z2_a2b` · `(0,1)` | [13](Study-13-Connes-Rigidity-Shear.md) | [`#connes-rigidity`](https://affine.earth/language-game/ide.html#connes-rigidity) | **LIVE CLAIM** |
+| 11 Ehrhart | **169** | [11](Study-11-Ehrhart-Volume-Shear.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom.md) | [`#ehrhart-volume`](https://affine.earth/language-game/ide.html#ehrhart-volume) | **LAW FROZEN** + **LIVE CLAIM** |
+| 12 QPR | **3** rounds · `27/64` | [12](Study-12-Quantum-Parallel-Repetition-Shear.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom.md) | [`#qpr`](https://affine.earth/language-game/ide.html#qpr) | **LIVE CLAIM** |
+| 13 Connes | word `Z2_a2b` · `(0,1)` | [13](Study-13-Connes-Rigidity-Shear.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom.md) | [`#connes-rigidity`](https://affine.earth/language-game/ide.html#connes-rigidity) | **LIVE CLAIM** |
 | 14 PDB holdings | **258616** | [14](Study-14-Protein-Lattice-Manifold.md) · [molecular ledger](Known-Molecular-Discoveries.md) | [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) | **LAW FROZEN** + **LIVE CLAIM** · `pdb_id` · occupancy DARK |
 | 15 Skala GMTKN55 | cited **2.72** / **2.8** | [15](Study-15-Skala-DFT-Shear.md) | [`#skala-cited`](https://affine.earth/language-game/ide.html#skala-cited) | **CITED** · court **DARK** |
 | 16 Disease ICD/DOID | **3** fixture rows | [16](Study-16-Disease-Type.md) | [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) | **LAW FROZEN** + **LIVE CLAIM** |
@@ -76,6 +76,7 @@ No UniProt / Materials Project / COD / satellite TLE catalog is hosted.
 |---|---|
 | Fan, Shen, Liang et al., arXiv:2407.11737 / DOI 10.1103/lq5r-sjp7 | Study 10 |
 | Luise et al., arXiv:2506.14665 (2025) | Study 15 |
+| Anima AI, Linear-Scaling DFT with Neural Operators (Aug 2026) — **their** 82,500-atom Mg / B300 / FNO claim | [Fourier Phantom](Impact-Study-Fourier-Phantom.md) · Studies 11+12+13. Not an Affine 82500 CALORIE. |
 | EHT 2022-D02-01 CyVerse DOI 10.25739/m140-ct59 | Study 07 |
 | Yang, Lu, Zhang et al., A&A 694 A86 · doi:10.1051/0004-6361/202453191 · arXiv:2502.03913 | Study 07 cited CMZ slim filaments — not a Claim |
 

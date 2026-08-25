@@ -108,7 +108,7 @@ No float. No shear-as-object. No GPU tax for the verdict. No qubit theater for a
 ## Read next
 
 1. [The lattice holds — Affine leaves Einstein’s broken path](The-Lattice-Holds)
-2. [Impact study — physics, health, finance, CS, fluids](Impact-Study-Death-of-Continuous-Shear)
+2. [Impact study — physics, health, finance, CS, fluids](Impact-Study-Death-of-Continuous-Shear) · [Fourier Phantom](Impact-Study-Fourier-Phantom) · [door](Death-of-Continuous-Shear)
 3. [Study 11 · 12 · 13 Results](Study-11-Ehrhart-Volume-Results)
 4. [Study 07 Results — Milky Way table vs ring](Study-07-SgrA-Milky-Way-Results)
 5. [Study 06 Results — explosion ladder in integer counts](Study-06-Explosion-vs-Earthquake-Results)

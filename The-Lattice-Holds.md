@@ -2,7 +2,7 @@
 
 **Status: PUBLIC — 2026-08-22**  
 **Sealed proof:** Studies [11](Study-11-Ehrhart-Volume-Results) · [12](Study-12-Quantum-Parallel-Repetition-Results) · [13](Study-13-Connes-Rigidity-Results) · [Peer-review bundle](Peer-Review-Conjecture-Bundle)  
-**Domain rewrite:** [Impact study — the death of continuous shear](Impact-Study-Death-of-Continuous-Shear)  
+**Domain rewrite:** [Impact study — the death of continuous shear](Impact-Study-Death-of-Continuous-Shear) · [Fourier Phantom](Impact-Study-Fourier-Phantom) · [door](Death-of-Continuous-Shear)  
 **Live courts:** [explore on affine.earth](Affine-Earth-Lattice-Endpoints) — catalog `GET /language-invariant/games`, then one POST per role.
 
 ---

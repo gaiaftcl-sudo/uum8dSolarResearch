@@ -2,6 +2,8 @@
 
 - [**The lattice holds**](The-Lattice-Holds)
 - [**Impact study — continuum dead**](Impact-Study-Death-of-Continuous-Shear)
+- [**Death of continuous shear**](Death-of-Continuous-Shear)
+- [**Fourier Phantom — Anima FNO vs 11+12+13**](Impact-Study-Fourier-Phantom)
 - [**QCD: freedom is dilation**](QCD-Asymptotic-Freedom-Shear)
 - [**Look in the UI (no visitor data)**](https://affine.earth/language-game/#researcher)
 - [**Explore the live courts**](Affine-Earth-Lattice-Endpoints)

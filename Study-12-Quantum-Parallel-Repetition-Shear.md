@@ -1,15 +1,17 @@
 # Study 12 — Quantum Parallel Repetition Shear
 
 **Status: CHARTER SEALED — 2026-08-22 · LIVE CLAIM**  
-**Program:** [Conjecture Alignment](Conjecture-Alignment-UUM8D) · [Shear Studies Index](Shear-Studies-Index)
+**Program:** [Conjecture Alignment](Conjecture-Alignment-UUM8D) · [Shear Studies Index](Shear-Studies-Index) · [Fourier Phantom](Impact-Study-Fourier-Phantom)
 
 | Surface | URL / key | Cited vs sealed |
 |---|---|---|
 | Claim UI | https://affine.earth/language-game/study-12-chance.html | sealed POST |
 | IDE | https://affine.earth/language-game/ide.html#qpr | file template; no auto-POST |
 | Look | https://affine.earth/language-game/#researcher | GET only |
+| Affine story | https://affine.earth/language-game/#story/Study-12-Quantum-Parallel-Repetition-Shear | this charter |
 | Court | `POST /language-invariant/game/chance/ingest` `rounds=3` | sealed `27/64` / `27/64` · `STUDY12_QPR_PROVEN` · float `1.5` → HTTP 400 |
 | Humanity | Discrete repetition bounds without a second amplitude law | float adversary `751/1000` is the sealed miss |
+| DFT map | many-electron \(\psi\), Born amplitudes | Anima approximates a probability in floats. Study 12 replaces \(\psi\) with \(W_n\in\mathbb{Q}\). |
 
 ---
 
@@ -60,5 +62,7 @@ Reference substrate map: `cells/xcode/Sources/InvariantCompiler/QuantumShearMap.
 ## Status
 
 **LIVE CLAIM — named `chance` receipt. Not OPEN.**
+
+Replacement trio: this page kills the wavefunction · [11 kills continuous density](Study-11-Ehrhart-Volume-Shear) · [13 kills KS potential](Study-13-Connes-Rigidity-Shear). Synthesis: [Fourier Phantom](Impact-Study-Fourier-Phantom).
 
 When complete, results will publish as `Study-12-Quantum-Parallel-Repetition-Results.md`.
