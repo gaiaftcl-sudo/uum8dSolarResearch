@@ -56,7 +56,7 @@ Puller: `scripts/study-02-cors-integer-phase.sh` — decimal-string shift, prese
 | Site | Where (verified) | Hour j L1 / L2 milli-cycles | Hour k | Hour l |
 |---|---|---|---|---|
 | FLF1 | Miami / Richmond FL (site log) | 108457668731 / 84512448562 | 110639339950 / 86212452296 | 117983716024 / 91935337954 |
-| COLB | Columbia SC (ECEF) | 132098480845 / 102933980505 | 131430874164 / 98146481686 | 110762098322 / 86308080798 |
+| COLB | Columbus OH (NGS coord_20 HTTP 200 — **not** Columbia SC; not the Cape→NY track) | 132098480845 / 102933980505 | 131430874164 / 98146481686 | 110762098322 / 86308080798 |
 | NCLL | North Carolina (ECEF) | 131465531640 / 102440817370 | 132158508246 / 102980798433 | 110587326128 / 86172031537 |
 | HNPT | Maryland Eastern Shore (IGS 38.59N, 76.13W) | 105945820596 / 82555189889 | 110854825817 / 86380387239 | 121187288685 / 94431648559 |
 | NYST | Saratoga NY | 24308663980 / 127742905757 | 24250055940 / 127434911542 | 21580256820 / 113405040707 |
@@ -95,7 +95,7 @@ Founder note that CORS L1/L2 had propagated through Madrigal is **not measured a
 
 Swift 6.4 + CORS integer ingest stress: **PASS** — 7 stations × 3 hours × integer L1/L2, zero float. That is **not** Affine Assembler.
 
-Evidence: `evidence/study-02-falcon-20260825/VERDICT.json`. Claim: [study-02-falcon.html](https://affine.earth/language-game/study-02-falcon.html). IDE: [ide.html#falcon-damage](https://affine.earth/language-game/ide.html#falcon-damage).
+Evidence: `evidence/study-02-falcon-20260825/VERDICT.json`. Claim: [study-02-falcon.html](https://affine.earth/language-game/study-02-falcon.html). IDE: [ide.html#falcon-damage](https://affine.earth/language-game/ide.html#falcon-damage). **Regulatory alarm (package ready, no receipt id):** [Study-02-Regulatory-Alarm](Study-02-Regulatory-Alarm.md) · `CONSTRAINT_DIFFERENTIAL.json` sha256 `6569066c62c1eded957b4717e1d682d05361a2ec47b07ba185219bf9400b440f` · IONEX `1ebc01833ea4e57e48061a08342a8337062661ee946cdf73a928d43195d1038a` (not the seal) · FITS `e36e3b8e3aa3353c24fd10eb4c5c390235ba2a56051a2edaf9d599652313e791`.
 
 ## Live surfaces, tools, and courts (2026-08-25)
 

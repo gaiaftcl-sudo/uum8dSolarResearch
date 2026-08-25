@@ -58,6 +58,7 @@
 ## 🌊 LIVE CLAIM
 
 - [Study 02 — Launch holes](Study-02-Launch-Ionospheric-Holes)
+- [Study 02 — Regulatory alarm](Study-02-Regulatory-Alarm)
 - [Build a study — Falcon](Build-a-Study-Falcon-Walkthrough)
 
 ## 🌊 OPEN (no data)
