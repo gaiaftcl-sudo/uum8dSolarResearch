@@ -13,7 +13,7 @@ FoT is the base. Public flourishing. **100k+ discoveries** means two measured ca
 | Materials | CLAIM COD/mp/sg | [Study 18](Study-18-Material-STD.md) · [`#material-std`](https://affine.earth/language-game/ide.html#material-std) · [desalination](Discoveries-By-User.md#water--desalination-materials) |
 | Disease / protein | CLAIM ICD + PDB | [Study 16](Study-16-Disease-Type.md) · [Study 14](Study-14-Protein-Lattice-Manifold.md) · [cancer-related](Discoveries-By-User.md#cancer-related-discoveries) · [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) |
 | Builder | BUILD | [IDE chooser](https://affine.earth/language-game/ide.html#chooser) |
-| Public / press | SHARE | [Discoveries by user](Discoveries-By-User.md) · [family ledger](Known-Discoveries-Index.md) |
+| Public / press | SHARE | [Discoveries by user](Discoveries-By-User.md) · [family ledger](Known-Discoveries-Index.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom) |
 
 Each type’s goal, catalog N, industry key, WIN, and refuse examples: [Discoveries by user](Discoveries-By-User.md).
 
