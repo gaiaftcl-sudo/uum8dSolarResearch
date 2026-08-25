@@ -24,8 +24,8 @@ Health court is PK **dose** (`mass_milli` / `vol_milli`), not a pocket and not a
 |---|---|---|---|---|---|---|---|
 | **Researcher** | LOOK | GET catalogs, no identity | 258616 and 125302 stated separately | none on Look | [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look) · [\#researcher](https://affine.earth/language-game/#researcher) | GET HTTP 200 | this door never POSTs |
 | **Chemist** | CLAIM | InChIKey + CID | 3 fixture rows | `inchikey` + `cid` | [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) | CID **2244** CALORIE | `cid` 99999999 → `REFUSED_NO_STD` |
-| **Materials** | CLAIM | COD / mp / space-group | 3 fixture rows | `cod` / `mp_id` / `space_group`+`pearson` | [`#material-std`](https://affine.earth/language-game/ide.html#material-std) | COD **9008564** CALORIE | `mp-99999999` → `REFUSED_NO_STD` |
-| **Disease / protein** | CLAIM | ICD/DOID + PDB id | fixture 3 + holdings 258616 | `icd`+`doid` · `pdb_id` | [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) | **C67** / **4HHB** CALORIE | `Bladder_Cancer_111` / `ZZZZ` → `REFUSED_NO_STD` |
+| **Materials** | CLAIM | COD / mp / space-group | 7 fixture rows | `cod` / `mp_id` / `space_group`+`pearson` | [`#material-std`](https://affine.earth/language-game/ide.html#material-std) | COD **9008564** / **9008569** CALORIE | `mp-99999999` → `REFUSED_NO_STD` |
+| **Disease / protein** | CLAIM | ICD/DOID + PDB id | fixture 12 + holdings 258616 | `icd`+`doid` · `pdb_id` | [`#disease-icd`](https://affine.earth/language-game/ide.html#disease-icd) · [`#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) | **C67** / **C50** / **4HHB** / **2HYY** CALORIE | `Bladder_Cancer_111` / `ZZZZ` → `REFUSED_NO_STD` |
 | **Builder** | BUILD | IDE hash → court HUD | families.json | the hash names the court | [`#chooser`](https://affine.earth/language-game/ide.html#chooser) | POST selected id → WIN | do not invent a `game_id` |
 | **Public / press** | SHARE | wiki stories that cross-see affine.earth | same two N | cited public ids | [`#discoveries-index`](https://affine.earth/language-game/ide.html#discoveries-index) | story names the hash | no cure protocol · no minted STD |
 
@@ -37,12 +37,14 @@ Look omits credentials. Claim needs `source`+`role`.
 
 Affine does **not** write “Affine cured cancer.” Affine does **not** host a treatment SOP.
 
-**Playable**
+**Playable** — OLS4 + RCSB fetched **2026-08-25T11:19:20Z**. ICD-11 WHO API HTTP 401 this hour; ICD-10 is the public row.
 
-| Court | Key | Example already WIN | IDE |
+| Court | Key | Cited this hour | IDE |
 |---|---|---|---|
-| Disease | ICD / DOID | **C67** + `DOID:11054` (urinary bladder cancer, OLS4) | https://affine.earth/language-game/ide.html#disease-icd |
-| Protein | 4-char PDB accession | every id in holdings N=258616 · proven **4HHB** / **1IWB** | https://affine.earth/language-game/ide.html#pdb-holdings |
+| Disease | ICD / DOID | **C67** + `DOID:11054` bladder · **C50** + `DOID:1612` breast · **C18** + `DOID:219` colon · **C61** + `DOID:10283` prostate · **C64** + `DOID:263` kidney · **C53** + `DOID:4362` cervical · **C34.1** + `DOID:1324` lung · **C25.0** + `DOID:1793` pancreas · **C43.9** + `DOID:8923` skin melanoma · **C22.0** + `DOID:3571` liver | https://affine.earth/language-game/ide.html#disease-icd |
+| Protein | 4-char PDB accession | holdings N=258616 · **4HHB** stays · cancer-related in holdings: **2HYY** Abl+imatinib · **1N8Z** HER2+trastuzumab Fab · **1YCR** MDM2–p53 · **5P21** H-Ras · **2ITO** EGFR+gefitinib · **4HJO** EGFR+erlotinib · **1T46** KIT+STI-571 | https://affine.earth/language-game/ide.html#pdb-holdings |
+
+Fetch URLs: OLS4 `https://www.ebi.ac.uk/ols4/api/ontologies/doid/terms?iri=http://purl.obolibrary.org/obo/DOID_<n>` HTTP 200. RCSB `https://data.rcsb.org/rest/v1/core/entry/<id>` HTTP 200. Holdings membership is Set.contains.
 
 Acceptance = CALORIE / WIN on a **presented** industry id. Miss = CURE `REFUSED_NO_STD`.
 
@@ -63,15 +65,17 @@ Charter: [Study 16](Study-16-Disease-Type.md) · [Study 14](Study-14-Protein-Lat
 
 Affine does **not** host membrane synthesis steps. Affine does **not** mint `mp-` ids.
 
-**Playable** — materials court only when the row already carries a fixture STD:
+**Playable** — materials court when the row carries a fixture STD. Steward-disk validated CSVs this hour: **0** desalinate / RO / membrane titles. **4** water-related COD ids cited from COD `result.php` + CIF + HTML HTTP 200 at **2026-08-25T11:19:20Z**. Materials Project HTML/API returned 530/401 — **no new mp- rows**.
 
-| STD | Cited | IDE |
-|---|---|---|
-| COD **9008564** · sg 227 · `cF8` | Diamond · https://www.crystallography.net/cod/9008564.html | https://affine.earth/language-game/ide.html#material-std |
-| mp-**149** · sg 227 · `cF8` | silicon · public Materials Project id | same |
-| COD **1573832** · sg 194 | hexagonal 4H Si-IV | same |
-
-None of those three fixture rows is a desalination membrane. A desalination material plays **only if** it already has COD / mp / space-group in that fixture. Steward-disk validated CSVs this hour: **0** rows whose title/objective columns mention desalinate / RO / membrane. Markdown titles outside refused SOP / manufacture / transmutation dirs: **0**.
+| STD | Cited | Fetch | IDE |
+|---|---|---|---|
+| COD **9008564** · sg 227 · `cF8` | Diamond | https://www.crystallography.net/cod/9008564.html | https://affine.earth/language-game/ide.html#material-std |
+| mp-**149** · sg 227 · `cF8` | silicon · already in fixture | https://next.materialsproject.org/materials/mp-149 | same |
+| COD **1573832** · sg 194 | hexagonal 4H Si-IV | https://www.crystallography.net/cod/1573832.html | same |
+| COD **9008569** · sg 186 | Graphite (GO-membrane parent lattice) | https://www.crystallography.net/cod/9008569.html · CIF `_chemical_name_mineral Graphite` | same |
+| COD **1000041** · sg 225 | Sodium chloride (the solute desalination removes) | https://www.crystallography.net/cod/1000041.html · COD search `text=sodium+chloride` | same |
+| COD **1011255** · sg 43 | Natrolite (fibrous zeolite) | https://www.crystallography.net/cod/1011255.html · COD search `text=zeolite` | same |
+| COD **1011097** · sg 152 | Quartz low (SiO₂) | https://www.crystallography.net/cod/1011097.html · CIF `_chemical_name_mineral Quartz low` | same |
 
 Chemistry fixture CID **962** is H₂O (PubChem). That is a water molecule on the chemistry court, not a desalination material.
 

@@ -14,7 +14,7 @@
 
 The win is the **verified bond** to a public industry code. Occupancy stays Study 14 grammar, not a dock. Health is PK dose (`mass_milli`/`vol_milli`), not a pocket. Complementary occupancy is not this court.
 
-Cancer-related play is this court plus PDB holdings — [Discoveries by user — Cancer-related](Discoveries-By-User.md#cancer-related-discoveries). **C67** + `DOID:11054` already WIN. Generated nicknames do not. This page is not a treatment protocol.
+Cancer-related play is this court plus PDB holdings — [Discoveries by user — Cancer-related](Discoveries-By-User.md#cancer-related-discoveries). **C67** + `DOID:11054` already WIN. OLS4 this hour also cites **C50** / **C18** / **C61** / **C64** / **C53** / **C34.1** / **C25.0** / **C43.9** / **C22.0**. Generated nicknames do not. This page is not a treatment protocol.
 
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.**
 
@@ -40,15 +40,24 @@ No float field is a key. `confidence` / `overall_score` → HTTP 400 `REFUSED_FL
 
 ---
 
-## Authored fixture (3 rows, fetched 2026-08-24)
+## Authored fixture (12 rows)
+
+Fetched OLS4 HTTP 200 **2026-08-25T11:19:20Z**. ICD-11 WHO `id.who.int` HTTP **401** this hour. Founder allows ICD-10 when that is the public row. Do not invent ICD-11 codes. Lung / pancreas / melanoma / liver use the OLS4 xref as written (C34.1 not C34).
 
 | icd10 | doid | cited label | fetch |
 |---|---|---|---|
 | E11 | DOID:9352 | type 2 diabetes mellitus | OLS4 DOID_9352 · xref ICD10CM:E11 |
 | C67 | DOID:11054 | urinary bladder cancer | OLS4 DOID_11054 · xref ICD10CM:C67 |
 | I10 | DOID:10825 | essential hypertension | OLS4 DOID_10825 · xref ICD10CM:I10 |
-
-ICD-11 WHO API returned 401 this hour. Founder allows ICD-10 when that is the public row. Do not invent ICD-11 codes to fill the gap.
+| C50 | DOID:1612 | breast cancer | OLS4 DOID_1612 · xref ICD10CM:C50 |
+| C18 | DOID:219 | colon cancer | OLS4 DOID_219 · xref ICD10CM:C18 |
+| C61 | DOID:10283 | prostate cancer | OLS4 DOID_10283 · xref ICD10CM:C61 |
+| C64 | DOID:263 | kidney cancer | OLS4 DOID_263 · xref ICD10CM:C64 |
+| C53 | DOID:4362 | cervical cancer | OLS4 DOID_4362 · xref ICD10CM:C53 |
+| C34.1 | DOID:1324 | lung cancer | OLS4 DOID_1324 · xref ICD10CM:C34.1 |
+| C25.0 | DOID:1793 | pancreatic cancer | OLS4 DOID_1793 · xref ICD10CM:C25.0 |
+| C43.9 | DOID:8923 | skin melanoma | OLS4 DOID_8923 · xref ICD10CM:C43.9 |
+| C22.0 | DOID:3571 | liver cancer | OLS4 DOID_3571 · xref ICD10CM:C22.0 |
 
 ---
 

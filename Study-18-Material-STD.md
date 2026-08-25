@@ -14,7 +14,7 @@
 
 The win is the **verified bond** to a public crystal STD. Generated material nicknames do not WIN. No minted `mp-` ids. No 46622-row catalog.
 
-Water / desalination: [Discoveries by user — desalination](Discoveries-By-User.md#water--desalination-materials). Play only a row that already carries a fixture COD / mp / space-group. Steward-disk desalinate/RO/membrane titles this hour: **0**. No membrane synthesis steps.
+Water / desalination: [Discoveries by user — desalination](Discoveries-By-User.md#water--desalination-materials). Steward-disk desalinate/RO/membrane titles this hour: **0**. Four COD water keys cited 2026-08-25 (graphite 9008569 · NaCl 1000041 · natrolite 1011255 · quartz 1011097). No minted `mp-` ids. No membrane synthesis steps.
 
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.**
 
@@ -41,15 +41,21 @@ Float density / GPa / mS/cm → HTTP 400 `REFUSED_FLOAT`.
 
 ---
 
-## Authored fixture (3 rows, fetched 2026-08-24)
+## Authored fixture (7 rows)
+
+Diamond / silicon / Si-IV from 2026-08-24. Water keys fetched COD `result.php?format=json` + CIF + HTML HTTP 200 **2026-08-25T11:19:20Z**. Materials Project `next.materialsproject.org` / `api.materialsproject.org` returned 530/401 — no new mp- rows.
 
 | STD | integers / tokens | cited | fetch |
 |---|---|---|---|
-| COD **9008564** | space_group **227** · pearson **cF8** | Diamond | `https://www.crystallography.net/cod/9008564.html` HTTP 200 · COD search `sgNumber=227` |
-| mp-**149** | space_group **227** · pearson **cF8** | silicon | public MP id; HTML scrape blocked, id cited not invented |
-| COD **1573832** | space_group **194** | hexagonal 4H Si-IV | COD search JSON `file=1573832` |
+| COD **9008564** | space_group **227** · pearson **cF8** | Diamond | `https://www.crystallography.net/cod/9008564.html` HTTP 200 |
+| mp-**149** | space_group **227** · pearson **cF8** | silicon | public MP id already in fixture; HTML scrape blocked this hour |
+| COD **1573832** | space_group **194** | hexagonal 4H Si-IV | `https://www.crystallography.net/cod/1573832.html` |
+| COD **9008569** | space_group **186** | Graphite | CIF `_chemical_name_mineral Graphite` · HTML 200 |
+| COD **1000041** | space_group **225** | Sodium chloride | COD search `text=sodium+chloride` file=1000041 · HTML 200 |
+| COD **1011255** | space_group **43** | Natrolite | COD search `text=zeolite` · title “The structures of fibrous zeolites” · HTML 200 |
+| COD **1011097** | space_group **152** | Quartz low | CIF `_chemical_name_mineral Quartz low` · HTML 200 |
 
-No invented catalog. Three rows only.
+No invented catalog. No minted mp- ids.
 
 ---
 
