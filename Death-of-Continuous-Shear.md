@@ -21,4 +21,4 @@ Anima’s 82,500-atom Mg / B300 / FNO run is **their** published claim. Affine d
 
 Look: [\#researcher](https://affine.earth/language-game/#researcher) · stories: [dynamo kill shot](https://affine.earth/language-game/#story/Impact-Study-Stellar-Dynamo-Kill-Shot) · [Fourier Phantom](https://affine.earth/language-game/#story/Impact-Study-Fourier-Phantom) · [continuum rewrite](https://affine.earth/language-game/#story/Impact-Study-Death-of-Continuous-Shear)
 
-OPEN stays **03 / 05 / 08**. Study 21 game_id is `dynamo`. LIVE CLAIM only after apex POST HTTP 200 WIN.
+OPEN stays **03 / 05 / 08**. Study 21 game_id `dynamo` is **LIVE CLAIM** — HTTP 200 `STUDY21_DYNAMO_INTEGER_STEP`.

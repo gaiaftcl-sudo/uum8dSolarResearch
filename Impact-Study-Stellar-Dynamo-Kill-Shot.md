@@ -99,7 +99,7 @@ Anima’s 82,500-atom Mg / B300 / FNO run is **their** published claim. Affine d
 {"source":"researcher","role":"researcher","k":0.15}
 ```
 
-Empty `source` → HTTP 400 `REFUSED_UNATTRIBUTED`. File-only HTML is not the court. **LIVE CLAIM** only if apex POST HTTP 200 WIN. Until that receipt exists the game is **DARK** on the running membrane.
+Empty `source` → HTTP 400 `REFUSED_UNATTRIBUTED`. File-only HTML is not the court. **LIVE CLAIM** measured 2026-08-25: apex POST HTTP 200 WIN `STUDY21_DYNAMO_INTEGER_STEP` linking `(0,1)` spin `1/2`. `k=0.15` → HTTP 400 `REFUSED_FLOAT`.
 
 ---
 

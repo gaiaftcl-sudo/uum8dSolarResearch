@@ -1,6 +1,6 @@
 # Study 21 — Stellar dynamo shear (integer step court)
 
-**Status: LAW FROZEN · court grade on the apex this hour — see the table**  
+**Status: LAW FROZEN + LIVE CLAIM — 2026-08-25 · integer step court, not a Kepler/TESS observation**  
 **Lead corpus (read first):** [Impact study — the stellar dynamo kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md)  
 **Program:** [Language-games study board](Language-Games-Study-Board.md) · [Death of continuous shear](Death-of-Continuous-Shear.md) · [Fourier Phantom](Impact-Study-Fourier-Phantom.md)
 
@@ -22,7 +22,7 @@ Walk: tap **Z2_a2b (0,1) + 1/2** → WIN; **Refuse example** → `k=0.15` `REFUS
 
 This study has a court. It is **not OPEN**. OPEN stays 03 / 05 / 08.
 
-**Affine does not write a sealed Kepler / TESS observation.** Affine does not invent a star’s measured \(B\). File-only HTML is not the court. **LIVE CLAIM** only if apex POST HTTP 200 WIN.
+**Affine does not write a sealed Kepler / TESS observation.** Affine does not invent a star’s measured \(B\). File-only HTML is not the court. Apex POST this hour: HTTP 200 WIN `STUDY21_DYNAMO_INTEGER_STEP` linking `(0,1)` spin `1/2`. `k=0.15` → HTTP 400 `REFUSED_FLOAT`.
 
 ---
 

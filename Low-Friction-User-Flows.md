@@ -145,7 +145,7 @@ Test claim, not efficacy. Affine does not write that a frequency kills cancer. C
 |---|---|---|
 | 1 | Hash `#stellar-dynamo` | input already `0,1` + `1/2` |
 | 2 | Tap **Z2_a2b (0,1) + 1/2** or **POST selected** | POST `{source:researcher, role:researcher, q:0, r:1, n:1, d:2, cited_id:z2-a2b-half-step}` |
-| 3 | Receipt | HTTP **200** WIN `STUDY21_DYNAMO_INTEGER_STEP` — or DARK unknown game_id until the membrane carries `dynamo` |
+| 3 | Receipt | HTTP **200** WIN `STUDY21_DYNAMO_INTEGER_STEP` linking `(0,1)` spin `1/2` |
 | 4 | Hologram | proteins/frame after WIN · same sha |
 | 5 | **Refuse example** | POST `{k:0.15}` → HTTP **400** `REFUSED_FLOAT` · hologram not shown |
 

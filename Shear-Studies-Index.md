@@ -36,7 +36,7 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 18 | [Study 18 — Material STD](Study-18-Material-STD.md) | **LAW FROZEN** + **LIVE CLAIM** | COD / mp-id / space-group. No minted ids. |
 | 19 | [Study 19 — Go First Dice](Study-19-Go-First-Dice.md) | **LAW FROZEN** + **LIVE CLAIM** | Cited Meyer 2023 5×d60. Exact `1/120`. |
 | 20 | [Study 20 — Rife frequency](Study-20-Rife-Frequency.md) | **LAW FROZEN** + **LIVE CLAIM** | Integer Hz/nm test claim. Not efficacy. |
-| 21 | [Study 21 — Stellar dynamo](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) | **LAW FROZEN** — LIVE CLAIM after apex 200 | Integer `(q,r)` + `n/d` vs continuous MHD / gyrochronology. van Saders 2016 is **their** WMB patch. No Kepler/TESS B. Not Study 09. |
+| 21 | [Study 21 — Stellar dynamo](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) | **LAW FROZEN** + **LIVE CLAIM** | Integer `(q,r)` + `n/d` vs continuous MHD / gyrochronology. van Saders 2016 is **their** WMB patch. No Kepler/TESS B. Not Study 09. |
 
 Generated-candidate hashes (not a new study number): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) — Look only, N=125302. Play proteins on `#pdb-holdings`. OPEN stays 03 / 05 / 08.
 
