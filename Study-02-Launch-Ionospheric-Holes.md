@@ -6,9 +6,9 @@ That is the shape this study grades. A hole ~900 km across, punched along a publ
 
 The sky writes geometry, and geometry cannot lie. The eclipse study (Study 1 — see [Eclipse 2026 — Overview](Eclipse-2026-Overview.md)) proved the method on a Moon-driven clock: a frozen exact-integer law, an adversary that mimics magnitude but not shape, predictions sealed 27 days ahead. This study runs the same shear recipe on a forcing with a *weekly* clock instead of a yearly one — the fastest forcing cadence in the program.
 
-## This morning — Starlink Group 10-49 (DATA, not OPEN)
+## This morning — Starlink Group 10-49 (DATA)
 
-Fetched **2026-08-25T20:33:34Z**. The morning launch **is** Starlink Group 10-49. It is not a different Falcon 9.
+Fetched **2026-08-25T20:33:34Z**. The morning launch **is** Starlink Group 10-49. Public alarm — why the heatmap is the wrong court, and where the package goes: [Study 02 — Regulatory alarm](Study-02-Regulatory-Alarm).
 
 | Field | Measured this hour | Source |
 |---|---|---|
@@ -23,26 +23,22 @@ Fetched **2026-08-25T20:33:34Z**. The morning launch **is** Starlink Group 10-49
 
 Yesterday's freeze (`2026-08-24T12:19:23Z`) named this same NET. The weekly clock this study grades **fired**.
 
-### Float heatmap is the old court (do not seal it)
+### The heatmap is the old court
 
-Standard viz paints a 10–70% TEC drop as a continuous color gradient. Smoothing the depletion boundary injects spatial uncertainty. Subtracting that gradient from a cosmic shear baseline leaves artifact noise later named dark matter.
+Standard viz paints a 10–70% TEC drop as a continuous color gradient. Smoothing the depletion boundary invents spatial uncertainty the raw phases never contained. Subtract that gradient from a cosmic shear baseline and the leftover is later named as noise or as lensing.
 
-**Affine does not publish a float heatmap as the seal.** The 2023 charter 70% / 900 km numbers stay **cited founding-event integers**. They are not this morning's measured hole. Health remains PK dose 70/100. Fluids remain Φ. Physics remains clock / track / table_counts.
+**Affine seals integer L1/L2, not a float heatmap.** The 2023 charter 70% / 900 km numbers stay **cited founding-event integers**. They are not this morning's measured hole. Health remains PK dose 70/100. Fluids remain Φ. Physics remains clock / track / table_counts.
 
-Mass / DM edge word: ***not known***. This page does **not** say ΛCDM is invalidated and does **not** say dark matter is disproved. Terrestrial shear is subtracted so a plasma hole is **not mistaken for** cosmological lensing. That is de-bias.
+Mass: ***not known***. The lockout **09:35–11:30 UTC** is a precautionary charter so a plasma hole is not read as cosmological shear. Study 07 (Sgr A\* / EHT, MJD 57849–57850 = 2017 April 6–7) is the cosmic baseline the window quarantines **against**. **No intersection measured** with East Coast 09:35–10:15 UTC this morning — no in-tree EHT/Euclid visibility table intersects that window.
 
-The constrained block is **locked out** of the cosmic baseline for **τ ∈ [09:35, 11:30] UTC 2026-08-25** so a plasma hole cannot be read as cosmological shear. Study 07 (Sgr A\* / EHT, MJD 57849–57850 = 2017 April 6–7) is the cosmic baseline to quarantine **against**. **NO INTERSECTION MEASURED** with East Coast 09:35–10:15 UTC this morning — no in-tree EHT/Euclid visibility table intersects that window. Do not invent Sgr A\* pointing.
-
-### Lattice void (UUM-8D) — not Affine Assembler
-
-Phase-delay **strings** route through the Swift 6.4 membrane / integer ingest that already exists. No Affine Assembler. No `binfmt`. No `/var/affine/manifold.db`.
+Phase-delay strings route through the Swift 6.4 membrane already on the nine cells.
 
 | Quantity | Grade this hour |
 |---|---|
-| Spatial diameter ~900 km | **CITED founder scale / NOT MEASURED.** Madrigal world TEC (kindat 3500, instrument 8000) for 2026-08-25 returned HTTP **200** and **0 bytes**. Control: 2026-08-12 experiment list HTTP **200**, 702 bytes (eclipse-day files exist). Do **not** seal 900 as CALORIE. |
-| Cylinder 200–300 km · Cape → coastal Carolinas | **CITED.** Northeast track from Spaceflight Now. CORS this hour is Miami (FLF1) → COLB / NCLL → HNPT → NYST / NYBP → WES2. Cape pad hourly `ccv6` / `cccs` / `ksc1` HTTP **404**. |
-| TEC drop threshold 1/10 … 7/10 | **NOT APPLIED.** No Madrigal TEC numerators for this window. A 0.10–0.70 percent field would be `REFUSED_FLOAT`. Rational conversion is legal only when the source data exists. |
-| Window lockout | **Presented** integers: `window_start=935` `window_end=1130` `constrained=1` (HHMM). Temporal lockout of the cosmic baseline — not a measured TEC void CALORIE. |
+| Spatial diameter ~900 km | **Cited founding scale / not measured.** Madrigal world TEC (kindat 3500, instrument 8000) for 2026-08-25 returned HTTP **200** and **0 bytes**. Control: 2026-08-12 experiment list HTTP **200**, 702 bytes (eclipse-day files exist). |
+| Cylinder 200–300 km · Cape → coastal Carolinas | **Cited.** Northeast track from Spaceflight Now. CORS this hour is Miami (FLF1) → COLB / NCLL → HNPT → NYST / NYBP → WES2. Cape pad hourly `ccv6` / `cccs` / `ksc1` HTTP **404**. |
+| TEC drop threshold 1/10 … 7/10 | **Not applied.** No Madrigal TEC numerators for this window. |
+| Window lockout | Presented integers: `window_start=935` `window_end=1130` `constrained=1` (HHMM). Precautionary charter — not a measured TEC void. |
 | IGR Rapid orbit | **WAIT** until **~2026-08-26T17:00Z** (17–24 h latency from 09:33 UTC). Not ingested today. Second increment calendared then. |
 
 ### CORS RINEX — LIVE integer ingest (09–11 UTC)
@@ -56,7 +52,7 @@ Puller: `scripts/study-02-cors-integer-phase.sh` — decimal-string shift, prese
 | Site | Where (verified) | Hour j L1 / L2 milli-cycles | Hour k | Hour l |
 |---|---|---|---|---|
 | FLF1 | Miami / Richmond FL (site log) | 108457668731 / 84512448562 | 110639339950 / 86212452296 | 117983716024 / 91935337954 |
-| COLB | Columbus OH (NGS coord_20 HTTP 200 — **not** Columbia SC; not the Cape→NY track) | 132098480845 / 102933980505 | 131430874164 / 98146481686 | 110762098322 / 86308080798 |
+| COLB | Columbus, Ohio (NGS coord_20 HTTP 200; inland — not the Cape→NY track) | 132098480845 / 102933980505 | 131430874164 / 98146481686 | 110762098322 / 86308080798 |
 | NCLL | North Carolina (ECEF) | 131465531640 / 102440817370 | 132158508246 / 102980798433 | 110587326128 / 86172031537 |
 | HNPT | Maryland Eastern Shore (IGS 38.59N, 76.13W) | 105945820596 / 82555189889 | 110854825817 / 86380387239 | 121187288685 / 94431648559 |
 | NYST | Saratoga NY | 24308663980 / 127742905757 | 24250055940 / 127434911542 | 21580256820 / 113405040707 |
@@ -65,9 +61,9 @@ Puller: `scripts/study-02-cors-integer-phase.sh` — decimal-string shift, prese
 
 P011 hourly files exist but the header is **Arizona** (36.15N, 109.52W). Excluded from the East Coast map. Cape stations in the presented list were **404**.
 
-Constraint goal: raw transient baseline variance is the electronic shadow of the hole. These integers are the presented first-epoch limbs, **not** a TEC map and **not** a 900 km CALORIE.
+Constraint goal: raw transient baseline variance is the electronic shadow of the hole. These integers are the presented first-epoch limbs, not a TEC map. The ~900 km diameter stays cited founding scale until Madrigal posts launch-day TEC.
 
-SHA-256 of every `.26o.gz` is in `evidence/study-02-falcon-20260825/cors/downloads.tsv`. FoT on the ledger claim: **hashes + 21 integer pairs are on disk in evidence. No multi-GB SQLite block was written.** A `SELECT COUNT(*)` of a invented vQbit slab would be a lie.
+SHA-256 of every `.26o.gz` is in `evidence/study-02-falcon-20260825/cors/downloads.tsv`. The ledger claim is those hashes plus the 21 integer pairs.
 
 ### Madrigal Haystack — API live, this window GAP
 
@@ -80,7 +76,7 @@ SHA-256 of every `.26o.gz` is in `evidence/study-02-falcon-20260825/cors/downloa
 | 2026-08-23 | 200 | **0** | GAP |
 | 2026-08-12 (control) | 200 | **702** | API works; eclipse-day `gps/12aug26` listed (Anthea Coster / Haystack) |
 
-Founder note that CORS L1/L2 had propagated through Madrigal is **not measured as a 2026-08-25 kindat-3500 file this hour**. NGS CORS is live. Haystack TEC for today is empty. Do not fake the file.
+CORS L1/L2 through Madrigal is **not measured as a 2026-08-25 kindat-3500 file this hour**. NGS CORS is live. Haystack TEC for today is empty.
 
 ### Court seals this hour (2026-08-25T20:38:38Z)
 
@@ -93,9 +89,9 @@ Founder note that CORS L1/L2 had propagated through Madrigal is **not measured a
 | Eisenstein | `GET /language-invariant/eisenstein/seal` | 200 | `ok=true` · `AFFINE_EISENSTEIN_WIRE_SEAL_V1` · 12 checks pass. Metric-tensor quench law for this hole is **LAW FROZEN** on the integer path; no new F-region Eisenstein CALORIE invented. |
 | NOAA space | MCP `noaa_goes_r_weather` `lane=space` | 200 | `isError=false` |
 
-Swift 6.4 + CORS integer ingest stress: **PASS** — 7 stations × 3 hours × integer L1/L2, zero float. That is **not** Affine Assembler.
+Swift 6.4 + CORS integer ingest: **PASS** — 7 stations × 3 hours × integer L1/L2.
 
-Evidence: `evidence/study-02-falcon-20260825/VERDICT.json`. Claim: [study-02-falcon.html](https://affine.earth/language-game/study-02-falcon.html). IDE: [ide.html#falcon-damage](https://affine.earth/language-game/ide.html#falcon-damage). **Regulatory alarm (package ready, no receipt id):** [Study-02-Regulatory-Alarm](Study-02-Regulatory-Alarm.md) · `CONSTRAINT_DIFFERENTIAL.json` sha256 `6569066c62c1eded957b4717e1d682d05361a2ec47b07ba185219bf9400b440f` · IONEX `1ebc01833ea4e57e48061a08342a8337062661ee946cdf73a928d43195d1038a` (not the seal) · FITS `e36e3b8e3aa3353c24fd10eb4c5c390235ba2a56051a2edaf9d599652313e791`.
+Evidence: `evidence/study-02-falcon-20260825/VERDICT.json`. Claim: [study-02-falcon.html](https://affine.earth/language-game/study-02-falcon.html). IDE: [ide.html#falcon-damage](https://affine.earth/language-game/ide.html#falcon-damage). **Regulatory alarm (package ready; founder files):** [Study-02-Regulatory-Alarm](Study-02-Regulatory-Alarm) · `CONSTRAINT_DIFFERENTIAL.json` sha256 `6569066c62c1eded957b4717e1d682d05361a2ec47b07ba185219bf9400b440f` · IONEX `1ebc01833ea4e57e48061a08342a8337062661ee946cdf73a928d43195d1038a` (one-way bridge, not the seal) · FITS `e36e3b8e3aa3353c24fd10eb4c5c390235ba2a56051a2edaf9d599652313e791` (21-row table).
 
 ## Live surfaces, tools, and courts (2026-08-25)
 
@@ -111,7 +107,7 @@ Look does not claim. Claim does not look. The charter stays an F-region hole. Th
 | Public clients | https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp | Bind trees. They POST. They do not evaluate a lattice. |
 | Glama | https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote | Connector **approved**. **Not tested.** No invented email. Do not claim a Glama test ran. |
 | Prove | `evidence/study-02-falcon-20260825/VERDICT.json` | Marker `STUDY02_FALCON_1049_TERRESTRIAL_DEBIAS`. CORS integer ingest + lockout appointment. Prior loop: `evidence/researcher-ide-falcon-loop-20260824T121306Z`. |
-| CORS integer puller | `scripts/study-02-cors-integer-phase.sh` | Presented first-epoch L1/L2 milli-cycles. `REFUSED_FLOAT` on sci-notation. Not Affine Assembler. |
+| CORS integer puller | `scripts/study-02-cors-integer-phase.sh` | Presented first-epoch L1/L2 milli-cycles. `REFUSED_FLOAT` on sci-notation. |
 
 ### Fifteen live MCP tools (measured `tools/list` = 15)
 
@@ -164,7 +160,7 @@ Two layers. Do not mix them.
 
 **2. Cited (literature the TEC ledger must inform — NOT court keys).** Hyperscale launch and re-entry is unregulated geoengineering in the published argument: stratospheric soot, alumina, **cited** ozone / UV-B (melanoma, cataracts, immune), **cited** jet-stream / crop lock-in, **cited** phytoplankton baseline. The health court is PK dose **70/100**, not DU. Ozone, jet-slow **35/1000**, and phytoplankton are **cited**. The health court did not grade ozone.
 
-LAW 1: the win is the verified bond, not coins. No 2D “dark matter disproven.” This morning’s hole is terrestrial de-bias. Edge: *not known*.
+This morning’s hole is terrestrial de-bias. Mass: *not known*. The win is the verified bond — clock, corridor, recovery.
 
 ---
 
