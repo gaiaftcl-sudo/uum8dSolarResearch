@@ -2,7 +2,7 @@
 
 **Deterministic, no-float Math Court for agent builders.** Live remote: [affine.earth MCP](https://affine.earth/language-invariant/mcp). **Glama (approved):** [Affine Earth Math Court Remote](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote).
 
-Public bind tree: [`clients/math-court-mcp/`](clients/math-court-mcp/) · [`MATH-COURT-MCP.md`](MATH-COURT-MCP.md)
+Public bind tree: [`clients/math-court-mcp/`](clients/math-court-mcp/) · Swift example: [`swift-example/`](clients/math-court-mcp/swift-example/) · [`MATH-COURT-MCP.md`](MATH-COURT-MCP.md) · [User guide](Math-Court-User-Guide.md) · [Example app](Math-Court-Example-App.md) · [Math Court on Glama](Affine-Math-Court-Glama.md)
 
 Registry: `earth.affine/math-court`. Floats refused. Integers sealed.
 

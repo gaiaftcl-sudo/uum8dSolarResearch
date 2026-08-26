@@ -10,7 +10,7 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 *Eight panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry, Earth-rotation VLBI track, Gaia sampling clock — and its own track with a public raw archive and a sealed look-alike adversary.*
 
 > [!NOTE]
-> One method, many skies. **Zero float · zero shear** is the program doctrine. `OPEN` means we do **not** have the data — only **03, 05, 08**. 01 / 04 / 06 / 07 have sealed integers (apex `game_id` missing is a membrane gap). 10 is CHARTER WITH ARCHIVE, not OPEN. 02 / 09 / 11 / 12 / 13 are LIVE CLAIM.
+> One method, many skies. **Zero float · zero shear** is the program doctrine. `OPEN` means we do **not** have the data — only **03, 05, 08**. 01 / 04 / 06 / 07 have sealed integers (apex `game_id` missing is a membrane gap). 10 is CHARTER WITH ARCHIVE, not OPEN. 02 / 09 / 11 / 12 / 13 are LIVE CLAIM. **Studies 22–25 are live on Glama** — [user guide](Math-Court-User-Guide.md) · [example app](Math-Court-Example-App.md) · [Math Court](Affine-Math-Court-Glama.md).
 
 ## Program status
 
@@ -37,6 +37,10 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 19 | [Study 19 — Go First Dice](Study-19-Go-First-Dice.md) | **LAW FROZEN** + **LIVE CLAIM** | Cited Meyer 2023 5×d60. Exact `1/120`. |
 | 20 | [Study 20 — Rife frequency](Study-20-Rife-Frequency.md) | **LAW FROZEN** + **LIVE CLAIM** | Integer Hz/nm test claim. Not efficacy. |
 | 21 | [Study 21 — Stellar dynamo](Study-21-Stellar-Dynamo-Shear.md) · [kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) | **LAW FROZEN** + **LIVE CLAIM** | Integer `(q,r)` + `n/d` vs continuous MHD / gyrochronology. van Saders 2016 is **their** WMB patch. No Kepler/TESS B. Not Study 09. |
+| 22 | [Study 22 — The ground state is a coordinate](Study-22-QMA-2-Local-Hamiltonian.md) · [Math Court](Affine-Math-Court-Glama.md) | **LIVE ON GLAMA** — energy −1/1 | VQE sells a statistical ground energy. Affine prints the exact rational. Public tool: `execute_2local_hamiltonian`. [Example app](Math-Court-Example-App.md). |
+| 23 | [Study 23 — A spin glass does not need a freezer](Study-23-QMA-Spin-Glass.md) | **LIVE ON GLAMA** — energy −1 | D-Wave anneals with temperature. Affine grades a ±1 string and prints the integer. Public tool: `route_spin_glass_manifold`. |
+| 24 | [Study 24 — A molecule is consistent, or it is not](Study-24-QMA-N-Representability.md) | **LIVE ON GLAMA** — WIN | Float SDPs invent false-positive geometries. Affine cross-multiplies a rational 2-RDM. Public tool: `verify_n_representability`. |
+| 25 | [Study 25 — Supremacy is often a rounding error](Study-25-Exact-Permanent.md) | **LIVE ON GLAMA** — permanent 6 | Boson-sampling floats cancel the integer. Affine prints **6** for the 3×3 all-ones matrix. Public tool: `execute_exact_permanent`. |
 
 Generated-candidate hashes (not a new study number): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) — Look only, N=125302. Play proteins on `#pdb-holdings`. OPEN stays 03 / 05 / 08.
 

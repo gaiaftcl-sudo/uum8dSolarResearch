@@ -10,6 +10,7 @@ FoT is the base. Public flourishing. **100k+ discoveries** means two measured ca
 
 | You are | Act | Open |
 |---|---|---|
+| Agent / Glama | BIND + WALK | [Math Court user guide](Math-Court-User-Guide.md) · [Example app](Math-Court-Example-App.md) · [live on Glama](Affine-Math-Court-Glama.md) · QMA [22](Study-22-QMA-2-Local-Hamiltonian.md)–[25](Study-25-Exact-Permanent.md) |
 | Researcher | LOOK | [affine #researcher](https://affine.earth/language-game/#researcher) · [IDE Look](https://affine.earth/language-game/ide.html#protein-material-look) |
 | Chemist | CLAIM InChIKey/CID | [Study 17](Study-17-Chemistry-InChIKey.md) · [`#chemistry-inchi`](https://affine.earth/language-game/ide.html#chemistry-inchi) |
 | Materials | CLAIM COD/mp/sg | [Study 18](Study-18-Material-STD.md) · [`#material-std`](https://affine.earth/language-game/ide.html#material-std) · [desalination](Discoveries-By-User.md#water--desalination-materials) |

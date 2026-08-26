@@ -9,6 +9,9 @@
 - [**Look in the UI (no visitor data)**](https://affine.earth/language-game/#researcher)
 - [**Explore the live courts**](Affine-Earth-Lattice-Endpoints)
 - [**MCP clients (public)**](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp)
+- [**Example app — entire court**](Math-Court-Example-App)
+- [**Math Court user guide**](Math-Court-User-Guide)
+- [**Math Court on Glama**](Affine-Math-Court-Glama)
 - [**Glama connector**](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote)
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm)
 - [UUM-8D vs IUT — WIN](UUM8D-vs-IUT-Topological-Projection)
@@ -43,6 +46,10 @@
 - [Study 19 — Go First Dice](Study-19-Go-First-Dice)
 - [Study 20 — Rife frequency](Study-20-Rife-Frequency)
 - [Study 21 — Stellar dynamo](Study-21-Stellar-Dynamo-Shear)
+- [Study 22 — Ground state is a coordinate](Study-22-QMA-2-Local-Hamiltonian)
+- [Study 23 — Spin glass, no freezer](Study-23-QMA-Spin-Glass)
+- [Study 24 — Molecule is consistent or not](Study-24-QMA-N-Representability)
+- [Study 25 — Supremacy is a rounding error](Study-25-Exact-Permanent)
 
 ## ☀️🌑 Eclipse 2026
 

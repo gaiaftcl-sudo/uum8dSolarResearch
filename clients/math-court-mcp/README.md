@@ -41,7 +41,9 @@ STDIO-only hosts: `python3 stdio/affine_earth_mcp_stdio.py` — see [`configs/cl
 bash clients/math-court-mcp/prove/prove-math-court-agent-ingest.sh
 ```
 
-Measured 2026-08-23 on the live apex: `tools/list` = **15**, `dilation: 1.5` → `REFUSED_FLOAT`, `dilation: 12` → WIN count **169** vs float adversary **216**.
+Measured 2026-08-23 on the live apex: `dilation: 1.5` → `REFUSED_FLOAT`, `dilation: 12` → WIN count **169** vs float adversary **216**.
+
+Measured 2026-08-26: `tools/list` = **21** (adds `lattice_op`, `math_court`, and the four QMA names). Swift visitor [`swift-example/`](swift-example/) walked the **entire** court: **29 LIVE · 0 LEARN**. Wiki: [Example app](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Math-Court-Example-App) · [User guide](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Math-Court-User-Guide).
 
 ## Client tools (named, one per live MCP tool)
 
@@ -85,12 +87,13 @@ clients/math-court-mcp/
   wrappers/                   LangChain · LlamaIndex · CrewAI · AutoGen · OpenAI
   configs/
   prove/prove-math-court-agent-ingest.sh
+  swift-example/              Swift 6.4 visitor — entire court + QMA (no verdict)
 ```
 
 The generating substrate is not in this repository. Studies 11–13 (the sealed shear) live in the wiki pages of this same public git.
 
 ## Courts
 
-`geometry` · `chance` · `algebra` · `physics` · `qcd` · `health` · `finance` · `cs` · `fluids`
+`geometry` · `chance` · `algebra` · `physics` · `qcd` · `health` · `finance` · `cs` · `fluids` · `qma_2local` · `qma_spinglass` · `qma_nrep` · `qma_permanent`
 
 `source` required. `role` required. Integers only.
