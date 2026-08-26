@@ -42,6 +42,7 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 | 24 | [Study 24 — A molecule is consistent, or it is not](Study-24-QMA-N-Representability.md) | **LIVE ON GLAMA** — WIN | Float SDPs invent false-positive geometries. Affine cross-multiplies a rational 2-RDM. Public tool: `verify_n_representability`. |
 | 25 | [Study 25 — Supremacy is often a rounding error](Study-25-Exact-Permanent.md) | **LIVE ON GLAMA** — permanent 6 | Boson-sampling floats cancel the integer. Affine prints **6** for the 3×3 all-ones matrix. Public tool: `execute_exact_permanent`. |
 | 26 | [Study 26 — Master regulator bonds](Study-26-Master-Regulator-Bonds.md) | **OPEN** — charter only; no regulon corpus ingested; gate not run | Load-bearing regulator sets as bonds — network shape vs mutation magnitude on public TCGA/LINCS keys; test claim, not efficacy. |
+| 27 | [Study 27 — Exact nuclear scattering](Study-27-Exact-Nuclear-Scattering.md) | **OPEN** — charter only; no configuration corpus ingested; gate not run | Glauber all-orders vs optical-limit smear on public EXFOR/AME2020 keys — the field's own 30–50 mb divergence replayed in exact integers; test claim, not efficacy. |
 
 Generated-candidate hashes (not a new study number): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) — Look only, N=125302. Play proteins on `#pdb-holdings`. OPEN stays 03 / 05 / 08.
 

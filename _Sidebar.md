@@ -74,3 +74,4 @@
 - [Study 05 — Forbush](Study-05-Forbush-Decreases)
 - [Study 08 — Gaia BH1](Study-08-Gaia-BH1-Astrometric-Shear)
 - [Study 26 — Master regulator bonds](Study-26-Master-Regulator-Bonds)
+- [Study 27 — Exact nuclear scattering](Study-27-Exact-Nuclear-Scattering)
