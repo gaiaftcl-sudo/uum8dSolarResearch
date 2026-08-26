@@ -73,3 +73,4 @@
 - [Study 03 — Flare SIDs](Study-03-Solar-Flare-SIDs)
 - [Study 05 — Forbush](Study-05-Forbush-Decreases)
 - [Study 08 — Gaia BH1](Study-08-Gaia-BH1-Astrometric-Shear)
+- [Study 26 — Master regulator bonds](Study-26-Master-Regulator-Bonds)
