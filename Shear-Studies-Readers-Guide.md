@@ -6,6 +6,10 @@ This wiki is not a blog of opinions. It is a **public ledger of shape tests**. E
 
 ---
 
+## The story in plain words
+
+For decades, science measured the world with rulers and smooth approximations — percent drops, probability clouds, smeared densities. This year, field after field published the same confession: cosmologists showed the black-hole ring is a reconstruction from a normalized table, not the raw measurement; oncologists showed tumors are held together by a few load-bearing regulators, not by their mutation counts; nuclear physicists showed that smearing protons and neutrons into a continuous blur overshoots the measured data, worst exactly where nature is most interesting. Different sciences, one pattern: **when you respect the discrete structure, the data agrees; when you smooth it away, the approximation eventually lies.** This wiki is the public ledger where those findings become checkable — every claim frozen before scoring, every verdict an exact string anyone can replay on any machine, every miss published beside every win.
+
 ## The one idea (read this first)
 
 **Magnitude is cheap. Appointments are not.**
