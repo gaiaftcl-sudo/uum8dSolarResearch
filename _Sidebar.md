@@ -18,40 +18,43 @@
 - [Readers’ guide](Shear-Studies-Readers-Guide)
 - [White paper](Shear-Studies-White-Paper)
 - [Program index](Shear-Studies-Index)
+- [Roadmap — what comes next](Shear-Studies-Roadmap)
 - [Language-games study board](Language-Games-Study-Board)
 - [Known discoveries — family ledger](Known-Discoveries-Index)
 - [Discoveries by user](Discoveries-By-User)
 - [Low-friction user flows](Low-Friction-User-Flows)
 - [How the IDE hologram works](How-the-IDE-Hologram-Works)
 - [Known molecular discoveries](Known-Molecular-Discoveries)
-- [Study 14 — PDB play](Study-14-Protein-Lattice-Manifold)
 
-## ✅ Sealed results
+## ✅ Sealed — live court PROVEN
 
+- [Study 06 — Explosion Results](Study-06-Explosion-vs-Earthquake-Results)
+- [Study 07 — Milky Way Results](Study-07-SgrA-Milky-Way-Results)
 - [Study 11 — Ehrhart Volume](Study-11-Ehrhart-Volume-Results)
 - [Study 12 — Parallel Repetition](Study-12-Quantum-Parallel-Repetition-Results)
 - [Study 13 — Connes Rigidity](Study-13-Connes-Rigidity-Results)
-- [Peer-review bundle](Peer-Review-Conjecture-Bundle)
-- [Conjecture alignment](Conjecture-Alignment-UUM8D)
-- [Study 07 — Milky Way Results](Study-07-SgrA-Milky-Way-Results)
-- [Study 06 — Explosion Results](Study-06-Explosion-vs-Earthquake-Results)
-- [Study 10 — Fermi / Dark Matter](Study-10-Fermi-Gamma-Shear-Dark-Matter)
-- [Study 04 — Tsunami (partial)](Study-04-Tsunami-vs-Storm-Surge-Results)
-- [Study 09 — Convective bond](Study-09-Global-Convective-Bond)
 - [Study 14 — Protein lattice](Study-14-Protein-Lattice-Manifold)
-- [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear)
 - [Study 16 — Disease type](Study-16-Disease-Type)
 - [Study 17 — Chemistry InChIKey](Study-17-Chemistry-InChIKey)
 - [Study 18 — Material STD](Study-18-Material-STD)
 - [Study 19 — Go First Dice](Study-19-Go-First-Dice)
+- [Peer-review bundle](Peer-Review-Conjecture-Bundle)
+- [Conjecture alignment](Conjecture-Alignment-UUM8D)
+
+## 🔴 Live claims — standing, not sealed
+
+- [Study 02 — Launch holes](Study-02-Launch-Ionospheric-Holes)
+- [Study 02 — Regulatory alarm](Study-02-Regulatory-Alarm)
+- [Build a study — Falcon](Build-a-Study-Falcon-Walkthrough)
+- [Study 09 — Convective bond](Study-09-Global-Convective-Bond)
 - [Study 20 — Rife frequency](Study-20-Rife-Frequency)
 - [Study 21 — Stellar dynamo](Study-21-Stellar-Dynamo-Shear)
-- [Study 22 — Ground state is a coordinate](Study-22-QMA-2-Local-Hamiltonian)
-- [Study 23 — Spin glass, no freezer](Study-23-QMA-Spin-Glass)
-- [Study 24 — Molecule is consistent or not](Study-24-QMA-N-Representability)
-- [Study 25 — Supremacy is a rounding error](Study-25-Exact-Permanent)
+- [Study 22 — Ground state](Study-22-QMA-2-Local-Hamiltonian)
+- [Study 23 — Spin glass](Study-23-QMA-Spin-Glass)
+- [Study 24 — N-representability](Study-24-QMA-N-Representability)
+- [Study 25 — Permanent](Study-25-Exact-Permanent)
 
-## ☀️🌑 Eclipse 2026
+## ☀️🌑 Eclipse 2026 — Study 01 DATA SEALED
 
 - [**Home**](Home)
 - [Overview](Eclipse-2026-Overview)
@@ -62,16 +65,14 @@
 - [Prediction registry](Eclipse-2026-Prediction-Registry)
 - [Success criteria](Eclipse-2026-Success-Criteria)
 
-## 🌊 LIVE CLAIM
-
-- [Study 02 — Launch holes](Study-02-Launch-Ionospheric-Holes)
-- [Study 02 — Regulatory alarm](Study-02-Regulatory-Alarm)
-- [Build a study — Falcon](Build-a-Study-Falcon-Walkthrough)
-
-## 🌊 OPEN (no data)
+## 🌊 Chartered — corpus pending
 
 - [Study 03 — Flare SIDs](Study-03-Solar-Flare-SIDs)
+- [Study 04 — Tsunami (partial seal)](Study-04-Tsunami-vs-Storm-Surge-Results)
 - [Study 05 — Forbush](Study-05-Forbush-Decreases)
 - [Study 08 — Gaia BH1](Study-08-Gaia-BH1-Astrometric-Shear)
+- [Study 10 — Fermi / Dark Matter](Study-10-Fermi-Gamma-Shear-Dark-Matter)
+- [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear)
 - [Study 26 — Master regulator bonds](Study-26-Master-Regulator-Bonds)
 - [Study 27 — Exact nuclear scattering](Study-27-Exact-Nuclear-Scattering)
+- [Study 28 — Wet-bulb threshold court](Study-28-Wet-Bulb-Threshold-Court)
