@@ -147,4 +147,9 @@ The same discipline protects the commons downstream: public archives (GEO, GDC, 
 - [Eclipse 2026 — Model shear](Eclipse-2026-Model-Shear.md) — the shape-versus-magnitude lineage this study extends into biology.
 - [Shear Studies Index](Shear-Studies-Index.md) — the program board, Studies 01–26.
 
+## Data availability — measured 2026-08-27
+
+- **TCGA via GDC open API: SERVED, anonymous.** `api.gdc.cancer.gov/status` reports Data Release 46.0 (2026-08-10); a filtered files query returned 1,231 open-access TCGA-BRCA gene-expression files; a real file answered an anonymous range request with genuine GENCODE-v36 TSV content.
+- **LINCS: one door gated, one open.** `api.clue.io` refuses without a user key (HTTP 401 — recorded as GATED; this study does not route through it). The open door is GEO series GSE92742 at `ftp.ncbi.nlm.nih.gov` — directory listable, all 18 supplementary files served, SHA512SUMS present; the Level-5 signature matrix is 20 GB and the metadata sidecars under 25 MB were fetched as proof. The regulon corpus ingest is unblocked through the open doors only.
+
 **Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the corpus runs.**

@@ -154,4 +154,9 @@ What a replay court contributes is accounting integrity, and only that: a public
 - [Eclipse 2026 — Model shear](Eclipse-2026-Model-Shear.md) — the shape-versus-magnitude lineage this study extends into nuclear scattering.
 - [Shear Studies Index](Shear-Studies-Index.md) — the program board and the four-piece recipe every charter must instantiate.
 
+## Data availability — measured 2026-08-27
+
+- **EXFOR: SERVED, anonymous, with the working lane named.** `www-nds.iaea.org/exfor/x4get?sub=E1174013` returns the real subentry (Tanihata 1985, ¹¹Li+C, 1040 ± 60 mb at 790 MeV/A); the whole E1174 entry serves 23 subentries; the documented `x4get` API also offers `op=csv`/`op=c4` machine formats. Recorded dead ends so nobody re-walks them: the `X4sGetSubent` servlet returns a 6-byte error token, the NNDC mirror 404s, and the quick-link path returns a JavaScript shim, not data.
+- **AME2020: SERVED, anonymous.** `www-nds.iaea.org/amdc/ame2020/mass_1.mas20.txt` (472,648 bytes, header verbatim from the 3 Mar 2021 adjustment). The `.txt` suffix is required — the bare filename 404s. The configuration corpus ingest is unblocked.
+
 **Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the corpus runs.**

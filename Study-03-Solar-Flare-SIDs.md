@@ -236,4 +236,9 @@ Status of Layer B moves only when its own corpus freezes — independent of Laye
 - **A limb X-flare may legitimately under-shoot.** EUV center-to-limb attenuation means the 60° disk-position gate excludes some real flares from scoring — a narrower target set, accepted openly.
 - **The wait may be long.** SC25 is past its maximum interval; the standing law persists until the target arrives. It does not expire and it is not relaxed.
 
+## Data availability — measured 2026-08-27
+
+- **GOES X-ray clock: SERVED, anonymous.** Live feed `https://services.swpc.noaa.gov/json/goes/primary/xrays-7-day.json` (HTTP 200, 4,586,259 bytes, real 2026-08 flux records) and the NCEI XRS science archive (directory index served; a real per-day netCDF answered an anonymous range request with the HDF5 magic bytes).
+- **Stanford SID archive: NOT RETRIEVABLE — absent, not gated.** `sid.stanford.edu/database-browser/` serves an empty index (zero data entries); the successor endpoint `sid2.stanford.edu:8080` that Stanford's own data-access page links to does not respond (timeout, three paths tried); no authentication wall was encountered anywhere. Layer A (TEC step on the GOES clock) can ingest today; the SID ground-truth leg needs a replacement source (e.g. mirrored SuperSID station archives) before it can run, and this page will name one before any SID hour is scored.
+
 **Status: OPEN — no SID corpus ingested; detection threshold not sealed. We do not have the data. Layer A TEC + Layer B SHARP stay charter prose. See [Study-03-Predictions-and-Validations](Study-03-Predictions-and-Validations.md).**

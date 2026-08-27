@@ -77,4 +77,8 @@ That observation is **not** a keV ingest. Fermi / 43 GeV is a different shear. F
 
 ---
 
+## Data availability — measured 2026-08-27
+
+- **HEASARC weekly photon FITS: SERVED, anonymous.** Directory lists 943 weekly files; newest complete week `lat_photon_weekly_w951_p305_v001.fits` (238,322,880 bytes, Last-Modified 2026-08-27T03:40:38 GMT); the current week w952 is still filling (10× smaller, modified hours ago). Range requests honored (HTTP 206, genuine FITS header bytes). The keV ingest is unblocked whenever this charter's corpus stage is scheduled.
+
 **Status: CHARTER WITH ARCHIVE — named HEASARC weekly photon FITS + paper. No keV corpus on the lattice. Data cited, not ingested. Claim on apex is not served yet. Edge word on mass: *not known*.**

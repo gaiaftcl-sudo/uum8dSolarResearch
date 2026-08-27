@@ -193,4 +193,8 @@ Both directions of the ledger matter.
 
 ---
 
+## Data availability — measured 2026-08-27
+
+- **NMDB NEST: SERVED, anonymous.** The ASCII export lane (`nmdb.eu/nest/draw_graph.php` with `wget=1&output=ascii`) returned a complete 24/24-row hourly table for OULU, 2026-08-25, with no registration, key, or cookie — data two days fresh at fetch time, original resolution 1 minute available through the same door. The corpus ingest is unblocked; the acknowledgement banner (cite NMDB and the station PI) travels with any sealed corpus.
+
 **Status: OPEN — no NMDB corpus ingested; thresholds not frozen. We do not have the data.**

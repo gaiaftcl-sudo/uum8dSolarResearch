@@ -108,4 +108,8 @@ Exact thresholds: derived at corpus ingest, then frozen — same road as Study 0
 
 ---
 
-**Status: OPEN — no µas ingest; thresholds not frozen. We do not have the data. Ingest path: dedicated corpus → integers → ledger; NATS only post-grade.**
+## Data availability — measured 2026-08-27
+
+- **ESA Gaia TAP: SERVED — but the epoch series this charter needs is ABSENT from it.** Anonymous ADQL returned Gaia BH1's `gaiadr3.gaia_source` row (mean RV 23.029732 ± 2.6334877 km/s from 21 transits) with `has_epoch_rv = false`, and **zero rows** for this source in both `gaiadr3.vari_epoch_radial_velocity` and `gaiafpr.vari_epoch_radial_velocity`. DR4 is unpublished — measured from the archive's own `tap_schema` (no `gaiadr4` schema exists), not from memory. Consequence, stated plainly: **neither channel of this study can ingest from ESA today** — the astrometric channel waits on DR4 (announced 2026-12-02), and the per-epoch RV series is not in the archive either (the published epoch RVs live in the discovery paper's ground-based follow-up). This study is a standing charter with no runnable corpus until DR4 posts.
+
+**Status: STANDING CHARTER, NO RUNNABLE CORPUS — measured 2026-08-27: epoch data absent from the ESA archive in both channels; DR4 (announced 2026-12-02) is the unblocking event. Thresholds not frozen. Nothing here is sealed.**

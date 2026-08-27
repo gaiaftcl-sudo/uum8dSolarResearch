@@ -1,0 +1,42 @@
+=== S1 CONTROLS ===
+ULSAN 47152 2025-01-01T00 θ=611/20: exact=BELOW STULL=BELOW ITER=BELOW
+ULSAN 47152 2025-01-01T00 θ=350/10: exact=BELOW STULL=BELOW ITER=BELOW
+POHANG 47138 2025-01-01T00 θ=611/20: exact=BELOW STULL=BELOW ITER=BELOW
+POHANG 47138 2025-01-01T00 θ=350/10: exact=BELOW STULL=BELOW ITER=BELOW
+ABUDHABI 41217 2025-07-15T12 θ=611/20: exact=BELOW STULL=BELOW ITER=BELOW
+ABUDHABI 41217 2025-07-15T12 θ=350/10: exact=BELOW STULL=BELOW ITER=BELOW
+GIMHAE 47153 2025-01-01T00: SLP sentinel 99999,9 -> ELEMENT_MISSING (no verdict; counted in the absence census below)
+PROBE T=-25: STULL=DOMAIN_REFUSED refused=true
+=== CORPUS ===
+47152099999: admitted=5558 qcExcl=19 elemMissing=3 inverted=0 saturated=0 onBoundary=0 precExh=0 s2=5558/5558 s2Refused=0 flips=0 breaches=0 nearθ[611/20]=0/0 nearθ[350/10]=0/0
+47153099999: admitted=15 qcExcl=0 elemMissing=6397 inverted=0 saturated=1 onBoundary=0 precExh=0 s2=14/14 s2Refused=1 flips=0 breaches=0 nearθ[611/20]=0/0 nearθ[350/10]=0/0
+41217099999: admitted=1834 qcExcl=15 elemMissing=5802 inverted=0 saturated=0 onBoundary=0 precExh=0 s2=1788/1834 s2Refused=0 flips=4 breaches=0 nearθ[611/20]=4/43 nearθ[350/10]=0/0
+STATION_ELEV_EXCLUDED 41715099999 elevation=56.38
+41184099999: admitted=1711 qcExcl=31 elemMissing=5456 inverted=0 saturated=0 onBoundary=0 precExh=0 s2=1650/1710 s2Refused=1 flips=3 breaches=0 nearθ[611/20]=3/24 nearθ[350/10]=0/0
+41024099999: admitted=1823 qcExcl=28 elemMissing=5632 inverted=0 saturated=0 onBoundary=0 precExh=0 s2=1820/1823 s2Refused=0 flips=0 breaches=0 nearθ[611/20]=0/35 nearθ[350/10]=0/0
+41150099999: admitted=1833 qcExcl=11 elemMissing=6290 inverted=0 saturated=0 onBoundary=0 precExh=0 s2=1821/1833 s2Refused=0 flips=10 breaches=0 nearθ[611/20]=10/124 nearθ[350/10]=0/0
+47138099999: admitted=5567 qcExcl=9 elemMissing=2 inverted=0 saturated=0 onBoundary=0 precExh=0 s2=5566/5566 s2Refused=1 flips=0 breaches=0 nearθ[611/20]=0/0 nearθ[350/10]=0/0
+47165099999: admitted=5570 qcExcl=7 elemMissing=1 inverted=0 saturated=10 onBoundary=0 precExh=0 s2=5403/5403 s2Refused=167 flips=0 breaches=0 nearθ[611/20]=0/0 nearθ[350/10]=0/0
+=== SUMMARY ===
+S2: 23620/23741 in [-10,+7] tenths (needs >= 99/100)
+Agreement floor breaches (dist > G): 0
+S3 Gulf-block flips at 611/20: 17
+Total sealed flips: 17
+FLIP 41217099999,2025-06-17T09:00:00,TMP=406,DEW=271,SLP=9951,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=301
+FLIP 41217099999,2025-07-20T09:00:00,TMP=390,DEW=277,SLP=9936,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=302
+FLIP 41217099999,2025-07-25T12:00:00,TMP=398,DEW=277,SLP=9908,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=303
+FLIP 41217099999,2025-08-03T12:00:00,TMP=393,DEW=279,SLP=9960,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=304
+FLIP 41184099999,2025-06-27T09:00:00,TMP=402,DEW=273,SLP=9953,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=302
+FLIP 41184099999,2025-07-05T09:00:00,TMP=380,DEW=284,SLP=9955,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=305
+FLIP 41184099999,2025-07-05T12:00:00,TMP=371,DEW=284,SLP=9946,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=303
+FLIP 41150099999,2025-08-05T12:00:00,TMP=363,DEW=289,SLP=9987,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=305
+FLIP 41150099999,2025-08-07T09:00:00,TMP=385,DEW=278,SLP=9995,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=301
+FLIP 41150099999,2025-08-10T09:00:00,TMP=379,DEW=282,SLP=10016,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=303
+FLIP 41150099999,2025-08-10T12:00:00,TMP=377,DEW=283,SLP=10003,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=303
+FLIP 41150099999,2025-08-11T21:00:00,TMP=350,DEW=293,SLP=10007,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=305
+FLIP 41150099999,2025-08-15T15:00:00,TMP=358,DEW=291,SLP=9956,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=305
+FLIP 41150099999,2025-08-17T12:00:00,TMP=374,DEW=286,SLP=9969,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=305
+FLIP 41150099999,2025-08-17T15:00:00,TMP=354,DEW=292,SLP=9971,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=305
+FLIP 41150099999,2025-08-21T09:00:00,TMP=368,DEW=285,SLP=10003,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=303
+FLIP 41150099999,2025-08-22T06:00:00,TMP=361,DEW=289,SLP=10018,θ=611/20,arm=STULL,exact=BELOW,arm_v=EXCEEDS,exact_tenths=304
+libm: Apple libSystem, macOS Version 27.0 (Build 26A5416b)
