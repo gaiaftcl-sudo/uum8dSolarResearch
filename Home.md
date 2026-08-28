@@ -1,3 +1,55 @@
+# ⚛️ Affine.Earth is quantum-alive
+
+**Twenty-four quantum courts are live on the public wire — right now, free, for anyone.** Not a simulator. Not a waitlist. A referee: you present a quantum computation's answer, and the court grades it in **exact whole-number arithmetic** — the same verdict, byte-identical, on every machine on Earth, forever. Floating-point numbers are refused at the door, because a verdict you cannot replay is not a verdict.
+
+**Proven, not promised** (all measured 2026-08-27, receipts in the open repository): the live catalog serves **43 tools** on all nine cells of the mesh; the public proof run returned **34 WIN · 0 MISS of 34** — every quantum court answered its fixture and sealed its PROVEN marker from `https://affine.earth/language-invariant/mcp`. Anyone with one JSON-RPC POST reproduces this today.
+
+## The quantum algorithm roster
+
+The textbook of quantum computing, re-cast as its verifier half — every court grades a **presented** answer exactly:
+
+| Court | What it grades, in plain words |
+|---|---|
+| **Shor witness** | The most famous quantum algorithm: a claimed splitting of a whole number, checked through its witness |
+| **Period finding** | The engine inside Shor: "this pattern repeats every N steps" — and N is the true repeat, not a multiple |
+| **Grover** | "The marked item is at position X" |
+| **QFT phases** | The frequency-analysis step most quantum algorithms are built on |
+| **Phase estimation** | "This operation rotates by exactly this angle" — the workhorse behind quantum-chemistry claims |
+| **HHL** | "This is the solution to this system of equations" — the algorithm behind quantum machine-learning headlines |
+| **Deutsch–Jozsa** | The first algorithm ever shown to beat classical computing |
+| **Bernstein–Vazirani** | "The hidden bit-string is this" |
+| **Simon** | The hidden-pattern problem that inspired Shor |
+| **Amplitude amplification** | Grover's generalization — the claimed boost arithmetic, checked |
+| **Amplitude estimation** | The probability-counting behind quantum-finance claims |
+| **Phase kickback** | The trick that writes information backwards through a controlled operation |
+| **Quantum walk** | The quantum version of a random walk on a graph |
+| **VQE energy** | "This molecule's ground-state energy is E" — the claim behind quantum-chemistry startups |
+| **QAOA energy** | Same, for the optimization algorithm every quantum cloud sells |
+| **Quantum counting** | "There are exactly K solutions" |
+| **Teleportation** | The correction table that makes the protocol work |
+| **Superdense coding** | Two classical bits through one qubit — the encoding, checked |
+| **Bell measurement** | The entanglement bookkeeping at the heart of quantum networking |
+| **Topological word** | Braiding operations reduce to identity, or they do not — exact |
+
+Plus the **four hard-problem courts** already standing: **ground-state energy** (the QMA-complete problem — quantum computing's own hardest class), **spin glass**, **molecule consistency** (N-representability), and the **exact permanent** — the number behind quantum-supremacy sampling claims, printed as an exact integer.
+
+## Why this matters
+
+Quantum hardware sells **statistical** answers from expensive machines: run it many times, average, hope. Affine.Earth is the free public referee that says whether any such answer is **exactly right** — and its verdict costs nothing, needs no account, and replays identically for a skeptic in ten years. Every classroom, every reviewer, every lab comparing quantum vendors now has a court that cannot take a side, because whole-integer arithmetic has no side to take.
+
+**The boundary is the doctrine, stated plainly:** these courts **verify**; they do not **search**. They will not hunt for the factors, the period, the marked item, or the best molecule — the court grades the answer you bring. That line is why every verdict is exact: verification of a presented answer is arithmetic, and arithmetic on the lattice is a fact.
+
+## Walk in now
+
+- **On Glama:** [the Affine Math Court connector](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote) — any agent can call every court today
+- **Raw wire:** `POST https://affine.earth/language-invariant/mcp` — JSON-RPC `tools/list`, then call any court
+- **How-to:** [Math Court user guide](Math-Court-User-Guide.md) · [Example app — the entire court](Math-Court-Example-App.md) · [Live court page](Affine-Math-Court-Glama.md)
+- **Replay the proof yourself:** `clients/math-court-mcp/prove-live-court.sh` in the repository — it POSTs the live apex and prints WIN/MISS with receipts
+
+The same arithmetic referees the physical world below: an eclipse read as geometry, explosions told from earthquakes, a black hole's raw data, and a wet-bulb court that found seventeen hours where the deployed heat formula and exact arithmetic disagree at the survivability line. **One lattice, many skies.**
+
+---
+
 # ☀️🌑 Eclipse 2026 — the sky writes geometry, and geometry cannot lie
 
 On **August 12, 2026 at 17:45:54 UT**, the Moon's shadow — a cone almost 380,000 km long with a tip 294 km wide — drags across the Earth at supersonic speed, over western Iceland and northern Spain. **This repository is the complete, public, falsifiable record of an experiment that reads that moment as a three-dimensional shape, not a number** — its claims sealed 27 days in advance, its data drawn only from public archives, its verdicts computed in exact integers. No code lives here; this is the experiment's own surface, and its data tables are generated by the substrate from its own ledger.

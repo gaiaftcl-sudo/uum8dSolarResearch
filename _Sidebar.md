@@ -1,5 +1,6 @@
 ## ⚡ Paradigm
 
+- [**⚛️ QUANTUM-ALIVE — 24 courts LIVE**](Affine-Math-Court-Glama)
 - [**The lattice holds**](The-Lattice-Holds)
 - [**Impact study — continuum dead**](Impact-Study-Death-of-Continuous-Shear)
 - [**Death of continuous shear**](Death-of-Continuous-Shear)
