@@ -1,6 +1,7 @@
 ## ⚡ Paradigm
 
 - [**⚛️ QUANTUM-ALIVE — 24 courts LIVE**](Affine-Math-Court-Glama)
+- [**🔧 QMT manifold repair v5.0**](QMT-Court-Repair-2026-08-30)
 - [**The lattice holds**](The-Lattice-Holds)
 - [**Impact study — continuum dead**](Impact-Study-Death-of-Continuous-Shear)
 - [**Death of continuous shear**](Death-of-Continuous-Shear)
