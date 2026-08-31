@@ -78,3 +78,4 @@
 - [Study 26 — Master regulator bonds](Study-26-Master-Regulator-Bonds)
 - [Study 27 — Exact nuclear scattering](Study-27-Exact-Nuclear-Scattering)
 - [Study 28 — Wet-bulb court (Act 1 SEALED)](Study-28-Wet-Bulb-Threshold-Court)
+- [Study 29 — Sovereign substrate (OPEN)](Study-29-Affine-Earth-Sovereign-Substrate)
