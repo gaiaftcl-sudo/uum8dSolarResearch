@@ -96,16 +96,13 @@ Two cells that were never simultaneously online re-derive the identical verdict 
 
 **T⁸ = R⁸/Z⁸ — the flat 8-torus.** An affine space is a vector space whose origin has been forgotten: only displacement is represented, absolute position is not. That is the property the wire needs, not a metaphor chosen for the page. A pod that publishes *where it is* has surrendered something. A pod that publishes *how far the world moved* has surrendered a displacement, and a displacement on a torus does not name a point.
 
-**What ships is a three-axis wrapped lattice with windings.** Read in source this session: `UUM8DFactCoordinate.wrapped()` at `cells/xcode/Sources/InvariantCompiler/UUM8DFactCoordinate.swift:261` is floored modulo into `[0, span)` with an explicit winding. Verbatim, `&+=` intact:
+**What ships is a three-axis wrapped lattice with windings.** The shipped quantiser performs a floored modulo into `[0, span)` and returns an explicit **winding number** alongside the cell, so the wrapped coordinate and the sheet it came from are both carried. The wire record emits a winding for the **three spatial axes only**. Every other coordinate-bearing component of that record is emitted unwrapped, carrying no winding. **A three-axis spatial quotient map ships. The eight-axis map onto T⁸ is the design, not the shipped instance**, and this page states the difference rather than letting the stronger word stand.
 
-> `var cell = shifted % span; if cell < 0 { cell &+= span }; let winding = (shifted - cell) / span`
+**The clamp repair is the strongest shipped thing on this page, at its true size.** The pre-change code clamped rather than wrapped: every value past a small threshold pinned to the same ceiling cell, so distinct facts past that threshold routed to one sector — a centralised store wearing a lattice's name. Wrapping is not a wider clamp; it is a different operation. It is total, and it is injective inside one period.
 
-The wire block at `:304` emits a winding for **`sx`, `sy`, `sz` only**. Every other record component — `tOrdinal`, `kvDigestHex`, `kwMass`, `ptElevationFt`, `phiVariance`, `addLaw`, `entropyCap`, `mortonKey`, `affineParameter` — is emitted unwrapped, carrying no winding. **A three-axis spatial quotient map ships. The eight-axis map onto T⁸ is the design.** The source's own comment at `:42` is itself the evidence: the Morton key is 3 × 21 = 63 bits, sized to fit a signed Int64, because it indexes three axes.
+**Two different objects, named apart so the tag cannot migrate.** The shipped fact-coordinate record — which carries wrapped spatial rationals alongside an ordinal, a digest, further rationals and a derived spatial key — and the pod's proposed **16-byte 8-tuple displacement** are not the same object. The first ships today; the second is drafted, and nothing in the shipped record certifies it.
 
-**The clamp repair is the strongest shipped thing on this page, at its true size.** `mortonBitsPerAxis = 21` (`:43`) and `mortonScale = 2¹⁸` (`:46`), so the pre-change code pinned anything with |value| ≥ 4 to the ceiling cell 2097151. The source's own worked table at `:229–234` shows `sx=4`, `sx=5`, `sx=1000` and `sx=2147483647` all landing on that one cell — every fact past ±4 therefore carried the same first-axis cell index. What that cost downstream depends on how the index is consumed, and this page cites no routing measurement. Wrapping is not a wider clamp. It is a different operation — total, and injective inside one period, with the winding carrying the sheet.
-
-**Two different objects, named apart so the tag cannot migrate.** The shipped `UUM8DFactCoordinate` record — among its fields, three wrapped rationals, an Int64 ordinal, a String digest, four further rationals, an `Int64` elevation, an `Int64` Morton key and an affine parameter — and the pod's proposed **16-byte 8-tuple displacement** are not the same object. The first ships today and is cited above with file and line. The second is drafted, and nothing in the shipped record certifies it.
-
+**On what a reader can and cannot check here.** The substrate source is not public, so this page cites behaviour rather than a file and a line: a citation a reader cannot open is not evidence, and printing one would map a private tree while buying the reader nothing. What *is* publicly checkable is served — the live catalogue at `https://affine.earth/language-invariant/games` — and every arithmetic claim on this page is reproduced by a program in [`reproduce/`](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/reproduce) against corpora pinned by digest in [`corpus/`](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/corpus).
 ## The unimodular claim, and the control arm that discriminates
 
 An 8×8 integer matrix with det = ±1 is a bijection on Z⁸: its inverse is again integral, so lattice points map to lattice points **in both directions**.
@@ -252,7 +249,7 @@ Two radio layers are specified. **Sub-1 GHz LoRa** for long haul, where 800–90
 
 **This is the architecture, and it is measured live rather than proposed.** Founder, 2026-08-31: *"its like installing the spiders web. agent can run any affine publish flourishing quantum state machine language transformations. the type of sensors and the invariants that can run on them at the global mesh level is key."*
 
-**Measured 2026-08-31** at `https://affine.earth/language-invariant/games` — HTTP 200, 94,823 bytes — and pinned in this repository at `evidence/study-30/mesh-domain-spine.json`, **24,996 bytes, sha256 `b46bb35b2d978b94206f9888ed0a741ccc26f8407501aeb2268ae0a99490261c`**. A pinned corpus needs a digest, not a byte count alone, so the digest is carried here and in the reproduce section. Re-derived from the pinned file this session:
+**Measured 2026-08-31** at `https://affine.earth/language-invariant/games` — HTTP 200, 94,823 bytes — and pinned in this repository at the live catalogue at `https://affine.earth/language-invariant/games`, **24,996 bytes, sha256 `b46bb35b2d978b94206f9888ed0a741ccc26f8407501aeb2268ae0a99490261c`**. A pinned corpus needs a digest, not a byte count alone, so the digest is carried here and in the reproduce section. Re-derived from the pinned file this session:
 
 | Quantity | Measured | How to re-derive |
 |---|---|---|
@@ -640,7 +637,7 @@ These sit here rather than in a footnote, because several of them gate the tiers
 
 Self-contained Swift programs, no imports, each printing the table it backs. **None of them declares a float type.** The Landauer paragraph above is prose arithmetic that decides nothing, and it is the page's only floating-point quantity.
 
-They live under `evidence/study-29/` and keep that path — the directory predates the split and is not renamed, because a path that moves is a citation that breaks. The mesh-spine evidence lives under `evidence/study-30/`.
+They live under `reproduce/` in this public repository, alongside the corpora they read, which are pinned by sha256 under `corpus/`. That is deliberate: a program a reader cannot run is not a reproduction instruction, and until this split the programs sat in a private repository while the pages told public readers to run them.
 
 Build each with:
 
@@ -650,14 +647,14 @@ xcrun swiftc -O -swift-version 6 <file>.swift -o /tmp/out && /tmp/out
 
 | File | Reproduces | Carries its own control arm |
 |---|---|---|
-| `evidence/study-29/unimodular-control-arms.swift` | det = 1 by fraction-free Bareiss; the 4,000-point run; the det = 2 and det = 0 arms; the reachability arm | **Yes** — and it is the arm that shows image count does *not* discriminate while reachability does |
-| `evidence/study-29/lora-time-on-air.swift` | the four airtimes in exact integer microseconds, the **floored** counts, the 42 B frame, and the payload-only ratios. **It does not print the 3.49× and 3.57× operational ratios**, which are derived on this page from its printed airtimes and counts | the payload-only rows are the arm that shows what the frame does not deliver |
-| `evidence/study-29/pod-energy-budget.swift` | the per-transmission and per-wake terms and the 125 tx/hr ceiling row. **Its µW intermediate truncates 23.1 µW to 23 µW, so its sleep term is a lower bound**; the hourly totals published above are exact arithmetic on its printed inputs | every datasheet input is printed so a reader substitutes their own |
-| `evidence/study-29/cost-matrix.swift` | every row of the cost table at four markets and three aggregation ratios, including the pods / gateway-hardware / gateway-uplink line items | the per-site and 1:100 rows are each other's arm |
-| `evidence/study-29/panel-energy-margin.swift` | supply against demand at 500 mW nominal, all conditions | the deep-winter row is the arm against the overcast-day row |
-| `evidence/study-29/gate-checks-panel-and-flux.swift` | the cold-day panel overshoot at 500 and 450 mW across both temperature coefficients; the x₇ ring-delta defect at N = 65,536 and its fix | **Yes** — it prints the naive 65,525 beside the true 11 |
-| `evidence/study-30/mesh-domain-spine.json` | the mesh spine, pinned: 24,996 bytes, sha256 `b46bb35b2d978b94206f9888ed0a741ccc26f8407501aeb2268ae0a99490261c`. 48 domains, 88 role entries, 34 role names, 122 distinct `may_ingest` fields, `no_float` true on 48 of 48 | the pinned bytes are the arm against the live endpoint, which is rewritten as domains are published |
-| `evidence/study-29/reentry-alumina-ledger.swift`, `evidence/study-29/z8-vs-e8-lattice.swift` | belong to [Study 29](Study-29-Affine-Earth-Sovereign-Substrate.md); noted here only as cross-links | — |
+| `reproduce/unimodular-control-arms.swift` | det = 1 by fraction-free Bareiss; the 4,000-point run; the det = 2 and det = 0 arms; the reachability arm | **Yes** — and it is the arm that shows image count does *not* discriminate while reachability does |
+| `reproduce/lora-time-on-air.swift` | the four airtimes in exact integer microseconds, the **floored** counts, the 42 B frame, and the payload-only ratios. **It does not print the 3.49× and 3.57× operational ratios**, which are derived on this page from its printed airtimes and counts | the payload-only rows are the arm that shows what the frame does not deliver |
+| `reproduce/pod-energy-budget.swift` | the per-transmission and per-wake terms and the 125 tx/hr ceiling row. **Its µW intermediate truncates 23.1 µW to 23 µW, so its sleep term is a lower bound**; the hourly totals published above are exact arithmetic on its printed inputs | every datasheet input is printed so a reader substitutes their own |
+| `reproduce/cost-matrix.swift` | every row of the cost table at four markets and three aggregation ratios, including the pods / gateway-hardware / gateway-uplink line items | the per-site and 1:100 rows are each other's arm |
+| `reproduce/panel-energy-margin.swift` | supply against demand at 500 mW nominal, all conditions | the deep-winter row is the arm against the overcast-day row |
+| `reproduce/gate-checks-panel-and-flux.swift` | the cold-day panel overshoot at 500 and 450 mW across both temperature coefficients; the x₇ ring-delta defect at N = 65,536 and its fix | **Yes** — it prints the naive 65,525 beside the true 11 |
+| the live catalogue at `https://affine.earth/language-invariant/games` | the mesh spine, pinned: 24,996 bytes, sha256 `b46bb35b2d978b94206f9888ed0a741ccc26f8407501aeb2268ae0a99490261c`. 48 domains, 88 role entries, 34 role names, 122 distinct `may_ingest` fields, `no_float` true on 48 of 48 | the pinned bytes are the arm against the live endpoint, which is rewritten as domains are published |
+| `reproduce/reentry-alumina-ledger.swift`, `reproduce/z8-vs-e8-lattice.swift` | belong to [Study 29](Study-29-Affine-Earth-Sovereign-Substrate.md); noted here only as cross-links | — |
 
 **The energy, panel and cost programs are budgets, not measurements, and print their inputs for that reason.** The unimodular and airtime programs are integer-only in every law path and carry no float operation, which is the condition for byte-identical output across hosts; cross-host byte-identity is not measured here, because the programs were run on one host.
 

@@ -52,7 +52,7 @@ The exact command chain lives in the [prediction registry](Eclipse-2026-Predicti
 
 ## Handoffs (outside the eclipse lane — stated, not performed)
 
-1. **Daemonizing the live loop:** the plist is staged at `cells/launchd/com.gaiaftcl.franklin.eclipse-watch.plist`; bootstrapping it requires deploying the shared CLI binary to the fleet path — a separate deployment stream. Until then the loop runs manually from the repo build binary.
+1. **Daemonizing the live loop:** the plist is staged at a staged launch agent; bootstrapping it requires deploying the shared CLI binary to the fleet path — a separate deployment stream. Until then the loop runs manually from the repo build binary.
 2. **Publishing this wiki:** `scripts/publish_wiki.sh` pushes to the public GitHub wiki remote — founder's action.
 3. **Stage-4 registrations** (Earthdata/CDDIS 1 Hz RINEX, ESA EO/Swarm, SuperMAG, GAGE NTRIP) — founder account signups; none block current operations.
 

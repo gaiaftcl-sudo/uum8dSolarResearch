@@ -87,4 +87,4 @@ File-only HTML is not the court. **LIVE CLAIM** only if apex POST HTTP 200 WIN.
 - Does not fill OPEN 03 / 05 / 08
 - Does not host occupancy / docking
 
-Swift: `cells/xcode/Sources/InvariantCompiler/RifeFrequencyCourt.swift` · domain `rife` in `LatticeDomainIntegration.swift`.
+Swift: the shipped substrate · domain `rife` in `LatticeDomainIntegration.swift`.

@@ -5,7 +5,7 @@ Everything the experiment consumes is public. This page records each archive's a
 ## Tier 1 — wired and live-verified (Stage 1–3)
 
 ### MIT Haystack **Madrigal** — the TEC backbone
-- **Base:** `https://cedar.openmadrigal.org` (HTTPS only — plain http 301s). **No account**; every call carries an identification triple (`user_fullname`/`user_email`/`user_affiliation`) from `~/.gaiaftcl/helio_sources.toml`.
+- **Base:** `https://cedar.openmadrigal.org` (HTTPS only — plain http 301s). **No account**; every call carries an identification triple (`user_fullname`/`user_email`/`user_affiliation`) from a local operator path.
 - **Discovery:** `getExperimentsService.py?code=8000` (World-wide GNSS TEC; Millstone Hill ISR is code 30). **Quirk #1 (measured):** the end bound must be *next-day 00:00* — an end bound of `23:59:59` intermittently returns an EMPTY experiment list.
 - **Files:** `getExperimentFilesService.py?id=<exp>` — gridded vertical TEC is **kindat 3500** (`TEC binned 1 degree by 1 degree by 5 min`), category 1 = final (e.g. `gps240408g.002.hdf5`); line-of-sight TEC is kindat 3505 (Stage-4 material).
 - **Extraction:** `isprintService.py` — ASCII always, never HDF5. **Quirk #2 (measured):** `parms` is a REPEATED query key (`parms=YEAR&parms=MONTH&…`), and filters percent-encode `=` and `,` (`filter%3Dgdlat%2C32%2C34`, `%20` between filters). Columns come back whitespace-aligned: `YEAR MONTH DAY HOUR MIN SEC GDLAT GLON TEC DTEC`, 5-minute bins stamped at ~hh:mm:30.

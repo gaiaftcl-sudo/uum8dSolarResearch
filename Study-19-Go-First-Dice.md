@@ -106,4 +106,4 @@ File-only HTML is not the court. **LIVE CLAIM** only if apex POST HTTP 200 WIN. 
 - Does not treat health as a pocket
 - Does not undo Studies 16–18
 
-Swift: `cells/xcode/Sources/InvariantCompiler/GoFirstDiceCourt.swift` · domain `gofirst` in `LatticeDomainIntegration.swift`.
+Swift: the shipped substrate · domain `gofirst` in `LatticeDomainIntegration.swift`.

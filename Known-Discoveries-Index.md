@@ -61,11 +61,11 @@ Health court is PK dose (`mass_milli`/`vol_milli`), not a pocket, not ozone.
 
 | Path | Hosted? | What it is |
 |---|---|---|
-| `cells/xcode/Resources/language-game/discoveries/catalog.json` | **yes** · `/language-game/discoveries/catalog.json` | PDB holdings N=258616 + cited examples |
-| `cells/xcode/Resources/language-game/discoveries/protein-material-aggregates.json` | **yes** · `/language-game/discoveries/protein-material-aggregates.json` | generated-candidate hashes + integer N · not playable without an industry key |
-| `cells/xcode/Resources/language-game/discoveries/families.json` | **yes** · `/language-game/discoveries/families.json` | this family ledger |
-| `cells/xcode/Resources/language-game/press/catalog.json` | **yes** | wiki story index — not a discovery corpus |
-| `cells/xcode/Resources/language-game/mcp-tools.json` | **yes** | 15 MCP tool names |
+| the shipped resource tree | **yes** · `/language-game/discoveries/catalog.json` | PDB holdings N=258616 + cited examples |
+| the shipped resource tree | **yes** · `/language-game/discoveries/protein-material-aggregates.json` | generated-candidate hashes + integer N · not playable without an industry key |
+| the shipped resource tree | **yes** · `/language-game/discoveries/families.json` | this family ledger |
+| the shipped resource tree | **yes** | wiki story index — not a discovery corpus |
+| the shipped resource tree | **yes** | 15 MCP tool names |
 | `llm-llvm-benchmark-suite/**/CATALOG.json` | **no** | HLE exam receipts |
 | Public wiki `corpus/study-04|06|07|11|12|13/` | wiki git only | sealed ledgers; not a second apex catalog |
 | IDE `protein-materials` / `orbital-satellite` templates | IDE chrome | **not** discovery catalogs. Do not treat as holdings. |

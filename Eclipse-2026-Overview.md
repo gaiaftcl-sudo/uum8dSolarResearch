@@ -116,7 +116,7 @@ Every data table on these pages sits between `GAIA` markers and is regenerated b
 | 2026 prediction extensions | prediction-extensions-2026-08-12 | shadow-projection | PREREGISTERED | CALORIE | `b106d2926b1bf2cf` | 2026-07-16T18:54:39Z |
 | historical universality | historical-universality | shadow-projection | 16/20 | CURE | `cdf43e80f06f10a3` | 2026-08-18T16:42:21Z |
 
-*Loaded and fingerprint-checked from `~/.gaiaftcl/franklin/invariants/` at render time.*
+*Loaded and fingerprint-checked from a local operator path at render time.*
 <!-- GAIA:END forms-registry -->
 
 **Ledger-borne live state:**

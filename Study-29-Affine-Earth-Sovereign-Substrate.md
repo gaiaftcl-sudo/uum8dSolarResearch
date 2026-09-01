@@ -20,7 +20,7 @@ A satellite reentering the atmosphere is a discrete, countable, exactly-ledgerab
 
 This study is not a novel manoeuvre. It is the forty-ninth instance of a pattern the substrate already serves publicly forty-eight times.
 
-Measured live on 2026-08-31 at `https://affine.earth/language-invariant/games` — HTTP 200, 94,823 bytes — and pinned in the repository at `evidence/study-30/mesh-domain-spine.json`: **48 domains, 88 roles, 13 games, `no_float: true` on 48 of 48.** Re-derived from the pinned file this pass: 48 domain objects, 88 role objects, **122 distinct `may_ingest` field names**, and a `dead_equation` / `new_law` pair present on **48 of 48**.
+Measured live on 2026-08-31 at `https://affine.earth/language-invariant/games` — HTTP 200, 94,823 bytes — and pinned in the repository at the live catalogue at `https://affine.earth/language-invariant/games`: **48 domains, 88 roles, 13 games, `no_float: true` on 48 of 48.** Re-derived from the pinned file this pass: 48 domain objects, 88 role objects, **122 distinct `may_ingest` field names**, and a `dead_equation` / `new_law` pair present on **48 of 48**.
 
 Every domain carries the same skeleton, and the skeleton is the argument:
 
@@ -233,7 +233,7 @@ The ordering is structurally auditable because the archives' own latencies enfor
 
 ### The reentry ledger, and the units artifact it dissolves
 
-**This subsection is measured arithmetic and is published as arithmetic.** It is re-derived by `evidence/study-29/reentry-alumina-ledger.swift` in exact `Int64` rational arithmetic with no float anywhere, and it concerns only what is **consistent** between published figures. It concerns no atmosphere and it is not a finding about anyone's model.
+**This subsection is measured arithmetic and is published as arithmetic.** It is re-derived by `reproduce/reentry-alumina-ledger.swift` in exact `Int64` rational arithmetic with no float anywhere, and it concerns only what is **consistent** between published figures. It concerns no atmosphere and it is not a finding about anyone's model.
 
 **The yield is an exact rational.** Ferreira et al. 2024's 30 kg of Al₂O₃ per 250 kg satellite is **30/250 = 3/25** exactly. The whole ledger is therefore a counting problem with a rational operator and needs no float at any step.
 
@@ -389,7 +389,7 @@ This section is framing rather than evidence, and it is written to the same stan
 
 **One — Z[ω] is not the coordinate lattice of T⁸, and a claim that it is fails on determinant alone.** (T⁸ = R⁸/Z⁸ is the coordinate quotient of the substrate's eight-axis wire tuple; its shipped extent is Study 30's subject and only the lattice question is treated here.) The Eisenstein integers Z[ω] form a **rank-2** lattice: hexagonal, isometric to A₂, determinant 3, kissing number 6. Z⁸ is cubic, determinant 1, kissing number 16. Even Z[ω]⁴ = A₂⁴ has determinant 81 and kissing number 24, so it is not isometric to Z⁸ — the determinants settle it before any finer invariant is needed.
 
-**Two — Z[ω] is nonetheless a shipped, live law in this substrate, which is why the anchor is load-bearing rather than decorative.** Two of the forty-eight served domains carry it as their `new_law`, verbatim from `evidence/study-30/mesh-domain-spine.json`:
+**Two — Z[ω] is nonetheless a shipped, live law in this substrate, which is why the anchor is load-bearing rather than decorative.** Two of the forty-eight served domains carry it as their `new_law`, verbatim from the live catalogue at `https://affine.earth/language-invariant/games`:
 
 | domain | title | `new_law` |
 |---|---|---|
@@ -398,7 +398,7 @@ This section is framing rather than evidence, and it is written to the same stan
 
 **Three — the eight-dimensional lattice that does carry an Eisenstein module structure is E8, and the substrate uses Z⁸.** E8 is a free **Z[ω]-module of rank 4** — concretely {x ∈ Z[ω]⁴ : x mod √(−3) lies in the ternary tetracode} — so multiplication by ω is an order-3 lattice automorphism, and the ω-commuting symmetry group is the complex reflection group **6·PSp₄(3)**, Shephard–Todd **G₃₂**, order **155,520** (Basak, arXiv:math/0508228, *Journal of Algebra*; Construction A over the Eisenstein integers, Conway & Sloane, *SPLAG* — REPORTED). By Viazovska (*Annals of Mathematics* 185 (2017) 991–1015, arXiv:1603.04246 — REPORTED) E8 is the densest sphere packing in R⁸ among **all** packings, periodic or not — not merely among lattices — at density π⁴/384; Fields Medal 2022. Its kissing number is **240**, proven maximal in 1979 (Odlyzko–Sloane; independently Levenshtein — REPORTED).
 
-**Measured by this program, by direct integer enumeration** (`evidence/study-29/z8-vs-e8-lattice.swift`, re-run this pass):
+**Measured by this program, by direct integer enumeration** (`reproduce/z8-vs-e8-lattice.swift`, re-run this pass):
 
 | lattice | kissing number | minimal norm | covolume |
 |---|---|---|---|
@@ -409,7 +409,7 @@ Both lattices are unimodular, so at equal covolume the packing-density ratio is 
 
 **The honest caveat, which must appear beside the upgrade.** E8's Eisenstein structure is real but **not unique**: E8 also carries Gaussian Z[i] and Hurwitz-quaternion structures, and is isomorphic to the icosian ring (Nebe lattice database; Baez, arXiv:1712.06436 — REPORTED). *"E8 is Eisenstein"* is true and singles out Eisenstein no more than it singles out Hurwitz. **Choosing the Eisenstein structure is interpretation**, legitimate because its unit group is precisely the six-fold hexagonal symmetry — and that is stated as the reason rather than left implicit.
 
-**What the substrate actually uses, and the open question that follows.** `UUM8DFactCoordinate.wrapped()` at `cells/xcode/Sources/InvariantCompiler/UUM8DFactCoordinate.swift:261` performs a floored modulo per axis onto a 2²¹ span with the winding preserved — **R⁸/(sZ)⁸, cubic**, not E8. **Whether to move the quantiser to E8 is an open question, not a claim and not a defect**: it would change the quantiser, the Morton key, the wire format and every sealed digest, and none of those changes has been costed. It is recorded here as a question because a framing section that named E8 without saying which lattice ships would be the failure this program exists to catch.
+**What the substrate actually uses, and the open question that follows.** `UUM8DFactCoordinate.wrapped()` at the shipped substrate:261` performs a floored modulo per axis onto a 2²¹ span with the winding preserved — **R⁸/(sZ)⁸, cubic**, not E8. **Whether to move the quantiser to E8 is an open question, not a claim and not a defect**: it would change the quantiser, the Morton key, the wire format and every sealed digest, and none of those changes has been costed. It is recorded here as a question because a framing section that named E8 without saying which lattice ships would be the failure this program exists to catch.
 
 **Two smaller corrections, made once and kept.** Calling T⁸ an *orientable* flat torus distinguishes nothing — **every** flat torus R^n/L is orientable and parallelizable for every L, because R^n/L is a compact abelian Lie group — so the adjective is dropped. And the vQbit is conceptually like an **irreducible element** of Z[ω], never like a unit: a unit is invertible and Z[ω] has exactly six of them, while an irreducible is by definition not a unit. The simile is kept and sharpened — an irreducible element π is determined only up to its **six associates** {±π, ±ωπ, ±ω²π}, and that sixfold ambiguity **is** the hexagonal symmetry, which strengthens the analogy rather than weakening it.
 
@@ -479,12 +479,12 @@ The A.E.P-1 pod, its four-tier validation gate, its HAL, its transport and energ
 
 | File | Reproduces | Carries its own control arm |
 |---|---|---|
-| `evidence/study-29/reentry-alumina-ledger.swift` | the exact-rational reentry ledger: the 3/25 operator, the 12,000/yr reentry count from Maloney's stated case, 3,120 t → 374.4 t and 9,600 t → 1,152 t, the 16/5 and 26/25 exact ratios, and the mass-against-alumina units reading | prints both unit sets side by side so the reader sees which quantity each published figure is |
-| `evidence/study-29/z8-vs-e8-lattice.swift` | Z⁸ kissing 16, E8 kissing 240, and the exactly-16 density ratio at equal covolume, by direct integer enumeration | the two lattices are each other's arm at equal covolume |
+| `reproduce/reentry-alumina-ledger.swift` | the exact-rational reentry ledger: the 3/25 operator, the 12,000/yr reentry count from Maloney's stated case, 3,120 t → 374.4 t and 9,600 t → 1,152 t, the 16/5 and 26/25 exact ratios, and the mass-against-alumina units reading | prints both unit sets side by side so the reader sees which quantity each published figure is |
+| `reproduce/z8-vs-e8-lattice.swift` | Z⁸ kissing 16, E8 kissing 240, and the exactly-16 density ratio at equal covolume, by direct integer enumeration | the two lattices are each other's arm at equal covolume |
 
 **Both programs are integer-only in every law path and carry no float operation, which is the condition for byte-identical output across hosts. Cross-host byte-identity is not measured here; the programs were run on one host.**
 
-**The domain spine** is re-derived from `evidence/study-30/mesh-domain-spine.json` — 48 domain objects, 88 role objects, 122 distinct `may_ingest` field names, `no_float: true` on 48 of 48, and a `dead_equation` / `new_law` pair on 48 of 48 — and the live surface is one anonymous GET to `https://affine.earth/language-invariant/games`.
+**The domain spine** is re-derived from the live catalogue at `https://affine.earth/language-invariant/games` — 48 domain objects, 88 role objects, 122 distinct `may_ingest` field names, `no_float: true` on 48 of 48, and a `dead_equation` / `new_law` pair on 48 of 48 — and the live surface is one anonymous GET to `https://affine.earth/language-invariant/games`.
 
 ## Cross-links
 

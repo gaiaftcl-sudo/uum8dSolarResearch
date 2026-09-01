@@ -46,7 +46,7 @@ One lane, `laneExtentBits: [17]` — 2¹⁷ = 131,072 ≥ 86,400 UT seconds of d
 | 2026 prediction extensions | prediction-extensions-2026-08-12 | shadow-projection | PREREGISTERED | CALORIE | `b106d2926b1bf2cf` | 2026-07-16T18:54:39Z |
 | historical universality | historical-universality | shadow-projection | 16/20 | CURE | `cdf43e80f06f10a3` | 2026-08-18T16:42:21Z |
 
-*Loaded and fingerprint-checked from `~/.gaiaftcl/franklin/invariants/` at render time.*
+*Loaded and fingerprint-checked from a local operator path at render time.*
 <!-- GAIA:END forms-registry -->
 
 Three Forms, three scopes, one law:
@@ -74,7 +74,7 @@ Every Form carries the Wittgenstein C⁴ tuple `{1/1|1/1|1/1|256/256|c1Reconverg
 | The projection runner | `Sources/InvariantCompiler/EclipseProjectionRunner.swift` |
 | CLI verbs | `Sources/GaiaFTCLCLI/Commands/HelioIngestCommand.swift`, `EclipseGeometryCommand.swift`, `EclipseInvariantCommand.swift`, `EclipseWatchCommand.swift`, `EclipseWikiRenderCommand.swift` |
 | Verify/boot seam | `Sources/GaiaFTCLCLI/Commands/InvariantVerifyCommand.swift` (`--game eclipse`) |
-| Live-loop plist (staged) | `cells/launchd/com.gaiaftcl.franklin.eclipse-watch.plist` |
+| Live-loop plist (staged) | a staged launch agent |
 
 ## Constraint compliance
 

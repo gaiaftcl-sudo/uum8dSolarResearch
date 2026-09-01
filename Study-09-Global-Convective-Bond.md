@@ -41,7 +41,7 @@ Program links: [Shear Studies Index](Shear-Studies-Index.md) · [Shear Studies W
 
 Companion nulls seal separately. LAW 3: a miss is **CURE** — never renamed to CALORIE.
 
-Swift SoT: `Study09FrozenThresholds` in `cells/xcode/Sources/InvariantCompiler/Study09GlobalConvectiveBond.swift`.
+Swift SoT: `Study09FrozenThresholds` in the shipped substrate.
 
 ---
 

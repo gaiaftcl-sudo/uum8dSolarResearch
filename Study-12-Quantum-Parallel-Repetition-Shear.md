@@ -47,7 +47,7 @@ This study will grade whether integer-bounded parallel repetition bounds match p
 | Winning probability (float) | Ordinal comparison via cross-multiplication on \(\mathbb{Q}\) |
 | Parallel repetition bound | Discrete collapse turn count at sealed \(\chi_{\max}\) |
 
-Reference substrate map: `cells/xcode/Sources/InvariantCompiler/QuantumShearMap.swift` — transport criterion per algorithm row.
+Reference substrate map: the shipped substrate — transport criterion per algorithm row.
 
 ---
 

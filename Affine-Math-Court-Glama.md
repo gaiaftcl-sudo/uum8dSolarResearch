@@ -44,7 +44,7 @@ Full algorithm map: [Quantum algorithms inventory](Quantum-Algorithms-Inventory.
 ## The 43 live tools (measured 2026-08-27, post-roll)
 
 Live HTTP: `POST https://affine.earth/language-invariant/mcp` `tools/list` → HTTP 200, **43 names** after the 2026-08-27 cell roll (the 23 below plus the 20 QC verifiers listed in the next section).  
-In-repo mirror: `cells/xcode/Resources/language-game/mcp-tools.json` · `CapabilityRegistry.servableEntries`.  
+In-repo mirror: the shipped resource tree · `CapabilityRegistry.servableEntries`.  
 If those two disagree, the live HTTP wins. Re-measure: `bash clients/math-court-mcp/prove-live-court.sh`.
 
 | # | Tool | Role |
@@ -87,7 +87,7 @@ Five catalogued **ABSENT** rows (`mcpTool: false`, empty primitive) are **not** 
 |---|---|
 | Shor / period / Grover / QFT / QPE court | Named MCP tools above (after deploy) · local `swift test --package-path LatticeRender --filter QCCourtLaw` |
 | Shor witness Lean | `cd proof/lean && lake build FirstRoars.ShorWitnessCertifier` · [Lion-Shor-Witness-Certifier](Lion-Shor-Witness-Certifier.md) |
-| Shor ECDLP substrate | `cells/xcode/Sources/ShorECDLPSubstrate/` · Lean `ShorECDLP.lean` |
+| Shor ECDLP substrate | the shipped substrate · Lean `ShorECDLP.lean` |
 | Studies 12–13 local prover | `gaiaftcl prove conjecture-workload` |
 | Miner verbs | `mine`, `isolate`, `sha256d`, `submitblock`, `nphard` — unproven, off `tools/list` |
 

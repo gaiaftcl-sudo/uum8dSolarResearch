@@ -134,4 +134,4 @@ Landed also on [Impact-Study-Death-of-Continuous-Shear §6](Impact-Study-Death-o
 - Does not fill OPEN 03 / 05 / 08
 - Does not host occupancy / docking
 
-Swift: `cells/xcode/Sources/InvariantCompiler/StellarDynamoCourt.swift` · domain `dynamo` in `LatticeDomainIntegration.swift`.
+Swift: the shipped substrate · domain `dynamo` in `LatticeDomainIntegration.swift`.
