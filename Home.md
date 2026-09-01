@@ -188,6 +188,10 @@ And the chain **stops at link 5** — not because the mechanism is doubtful, but
 
 **Three of the four open links are cheap. None of them is being done.**
 
+**And the axes have now been joined.** The biosphere column is empty in all five published papers — each models one axis, none carries a biological term, and no two share a full axis set, so the joint number cannot even be assembled from the literature. [Study 31](Study-31-Biosphere-Cascade) holds every axis in one exact ledger, against measured baselines: 56,575 daily ozone observations (the ingest independently recovers the Antarctic depletion at -16.1%, proving it can see a real loss) and NOAA's 46-year greenhouse forcing record. What the join shows: **the already-authorised fleet moves three independent planetary accounts by percent-scale amounts at once** — 13–26% of the natural meteoric flux, 3.1% regional ozone, 1.0% of all greenhouse forcing — **and no instrument reports any of the three.** Every unmeasured biological feedback is named and excluded from the sum, and every one of them points the same way, so the ledger is a floor.
+
+
+
 ## Where we refused to go
 
 There is no year on this page. No date by which the sky becomes unrecoverable.
