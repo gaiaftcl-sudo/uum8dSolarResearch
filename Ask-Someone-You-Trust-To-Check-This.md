@@ -1,5 +1,7 @@
 # Someone is running an experiment on the sky. Nobody is writing down the results.
 
+**Page class: PUBLIC CASE.** It carries no figure that is not on a Results page. Every claim is typed — see [the ontology](Ontology).
+
 Imagine a factory near your town announced the following.
 
 *We are going to release 210 tonnes of vaporised aluminium into the air every year. That is about ten times what nature puts there. We will also release copper, lithium, lead, niobium, hafnium and about fifteen other metals. We do not know what any of it does. We are not going to measure it. And we would like permission to increase it fiftyfold.*

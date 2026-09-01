@@ -1,5 +1,7 @@
 # The reentry forcing nobody is required to measure
 
+**Page class: EVIDENCE.** Every assertion below carries its grade — VERIFIED, REPORTED, MEASURED, PROJECTION, ABSENT or NOT_KNOWN — defined in [the ontology](Ontology).
+
 **Every number on this page is either exact integer arithmetic over a corpus pinned by digest, or a verbatim quotation from a primary source with its citation attached.** Where a quantity is contested, the contest is shown. Where the honest answer is that something is not known, it says so.
 
 This page makes **no claim of catastrophe, no claim of established ecological harm, and no prediction**. It states a forcing that is exactly countable, an occupancy that has already been measured, a scientific response that five published groups disagree about *on the sign*, and a regulatory record in which no one is obliged to measure any of it.
