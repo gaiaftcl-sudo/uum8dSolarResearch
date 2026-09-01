@@ -74,4 +74,52 @@ That is what survives over-scaling: not the loudest instrument, but the one whos
 
 ---
 
+## The market, as reported — with the spread carried
+
+Market figures on this wiki are **REPORTED**: named analyst, named year, and where analysts disagree the spread is published rather than a midpoint picked. Every figure below is 2025 unless stated.
+
+| vertical | reported size, 2025 | the spread between named analysts |
+|---|---|---|
+| **Space** | **$686B** (Space Foundation, +12% on 2024's $613B; ~$544B of it commercial); projected to cross $1T by 2032 | tightest of the four — one canonical reporter |
+| **AI** | **$143B** (IMARC) to **$294B** (Fortune Business Insights); IDC puts 2025 enterprise AI *spend* at $307B | **2.1×** between analysts, same year, same market |
+| **Autonomy / FSD** | **$143.7B** (IMARC) to **$273.75B** (Precedence Research) | **1.9×** |
+| **Quantum** | **$1B+** vendor revenue (McKinsey) · $1.9B (QED-C) · **$3.52B** (MarketsandMarkets); McKinsey's $2.7T-by-2035 figure is *economic value*, a different quantity, and is not summed with revenue here | **3.5×** |
+
+**Sit with the spread column for a moment, because it is this wiki's whole argument appearing somewhere unexpected.** Three of the four verticals cannot agree on their own size to within a factor of two — named analysts, same year, same definition-shaped question. The market-sizing industry is itself an un-re-derivable-verdict industry: methodologies differ, none publishes a ledger a stranger can replay, and the reader is left to trust the loudest logo. **The spread between analysts is the same defect shape as the five atmospheric models disagreeing on sign.** So this page carries the band, exactly as it carries the meteoric-flux band, and refuses to pick.
+
+### The honest addressable market is the seam, not the vertical
+
+Affine.Earth does not address "the AI market." It addresses the **verification layer** of each vertical — the slice where a computed number must function as *evidence*. That layer already has its own reported markets:
+
+| the seam market | reported size | reported trajectory |
+|---|---|---|
+| simulation software | **$12.6B** (MRFR, 2025) to **$19.95B** (MarketsandMarkets, 2024) | to $36–56B by 2030–33 |
+| digital twin | **$21.1B** (MarketsandMarkets, 2025) | to **$149.8B by 2030 — 47.9% CAGR** |
+
+Note which line grows fastest: **the verdict layer is growing at ~48% a year — faster than the verticals it serves** — because every agent, twin and autonomous system added is another consumer of computed verdicts. That is the over-scaling law appearing in the analysts' own numbers: the demand curve for *checkable* answers is the steepest curve on this page. And the incumbent seam — the one whose vendors document non-portability in their own manuals — is the one the [49-domain catalog](The-Replacement-Grade) is replacing, domain by domain, with proof markers instead of press releases.
+
+---
+
+## The pod mesh, across the planet
+
+The other half of the answer is physical. [Study 30](Study-30-Sovereign-Edge-Pod)'s pod runs the same 49-domain law layer at **3.240 J per hour** on a 510 mW panel. Producing program: `reproduce/pod-mesh-planetary.swift`; solar bands are REPORTED atlas ranges carried at both ends.
+
+| region | peak-sun band | solar margin (worst end) | binding constraint | the verdicts a mesh delivers there |
+|---|---|---|---|---|
+| Sahel / Horn of Africa | 5.5–6.5 h | **129:1** | 1%-duty radio law → 35 msgs/hr | wadi flash-flood gauges; the wet-bulb heat court at the 30.55 °C survivability line |
+| Monsoon South Asia | 4.0–5.5 h | **94:1** | 1% duty → 35 msgs/hr | river-rise lead time; the heat-mortality instruments [Study 28](Study-28-Wet-Bulb-Threshold-Court) graded |
+| Equatorial SE Asia | 3.8–4.8 h | **89:1** | listen-before-talk + duty | flood lead time under cloud; tsunami-vs-surge discrimination (Study 04's law) |
+| Mid-latitude Europe | 2.5–4.0 h | **59:1** | EU868 1% duty | air and water verdicts a regulator re-derives without trusting a vendor |
+| Continental N. America | 3.5–5.5 h | **82:1** | dwell-time rules, no duty cap | flood lead time — validated on the four-gauge USGS corpus in this repository |
+| Andes / high altitude | 4.5–6.0 h | **106:1** | no duty cap | glacial-lake outburst gauges; a surface UV-B record exactly where the regional ozone projection bites |
+| High latitude (60°N+) | 1.5–3.0 h | **35:1** | 1% duty | reentry-track observation under the polar inclinations most reentries cross |
+
+**The finding the table forces: the worst solar margin on the planet is 35:1.** The pod is over-provisioned by two orders of magnitude everywhere inhabited, so **energy binds nowhere**. The binding constraints are a region's radio law — 35 exact messages an hour under a 1% duty regime, counted by flooring, never rounding — and the local density of things worth measuring. One power stage, pole to pole, no redesign.
+
+**Cost, from the validated matrix, including the row where we lose:** a pod mesh at 1:100 aggregation is **$1,825,000 against the orbital path's $1,594,900 — they win on price.** The premium buys the four properties the price column cannot see: ground-repairable, country-owned, zero atmospheric cost in operation, and **every verdict re-derivable by the population it serves.** That last property is what "lasting benefit to the local population" means as an engineering fact rather than a slogan: the flood gauge's lead-time verdict, the heat court's threshold call, the UV record under a thinning column — each lands as an integer the people under it can check, in their own country, with no account and no permission.
+
+**What this section does not claim:** no lives-saved figure, no adoption forecast, no revenue projection for the mesh itself. The solar bands are atlas ranges, not site surveys, and a real deployment starts with a site survey. The claim is narrower and holds: the power stage closes everywhere, the law layer is the same 49 domains everywhere, and the verdicts land in the hands of the people under them.
+
+---
+
 **Related:** [The exactness seam](The-Exactness-Seam) — the vendor-documented foundation · [Zero float · zero shear](Zero-Float-Zero-Shear-Paradigm) — the method · [The narrow-study defence, answered](Impact-Study-SpaceX-Biosphere-Forcing) · [Study 31 — sealed live](Study-31-Biosphere-Cascade) · [The ontology](Ontology)
