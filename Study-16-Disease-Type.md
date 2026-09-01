@@ -97,4 +97,4 @@ Fetched OLS4 HTTP 200 **2026-08-25T11:19:20Z**. ICD-11 WHO `id.who.int` HTTP **4
 - Does not fill OPEN 03 / 05 / 08
 - Does not host SOP step bodies
 
-Swift: the shipped substrate · domain `disease` in `LatticeDomainIntegration.swift`.
+Swift: the shipped substrate · domain `disease`.

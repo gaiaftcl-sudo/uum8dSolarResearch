@@ -94,6 +94,6 @@ No invented catalog. No minted mp- ids.
 - Does not host SOP / transmutation / warfare guides
 - Does not invent occupancy / docking
 
-Swift: `IndustryStandardCourts.swift` · domain `material`.
+Swift: the shipped substrate · domain `material`.
 
 C-007 arms (warfare / transmutation / gene-vector): **ABSENT FROM APEX**. File count on steward disk: **7**. No game.

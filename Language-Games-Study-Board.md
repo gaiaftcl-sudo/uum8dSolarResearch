@@ -4,7 +4,7 @@
 
 **Status: measured 2026-08-24 — OPEN means no data. A missing apex `game_id` is a membrane gap, not an open study.** This page grades every sealed shear study for **language-game value** — can a developer walk Look → Claim → Build → Share against LIVE courts and the 15 MCP tools, with no second law in Node or Python.
 
-Walkthrough: [Build a study — Falcon](Build-a-Study-Falcon-Walkthrough.md) · One-tap walks: [Low-friction user flows](Low-Friction-User-Flows.md) · Hologram: [How the IDE hologram works](How-the-IDE-Hologram-Works.md) · User doors: [Discoveries by user](Discoveries-By-User.md) · Claim UIs: [02](https://affine.earth/language-game/study-02-falcon.html) · [09](https://affine.earth/language-game/study-09-convective.html) · [11](https://affine.earth/language-game/study-11-ehrhart.html) · [12](https://affine.earth/language-game/study-12-chance.html) · [13](https://affine.earth/language-game/study-13-algebra.html) · [21](https://affine.earth/language-game/study-21-dynamo.html) · Look: [\#researcher](https://affine.earth/language-game/#researcher) · DFT addendum: [Fourier Phantom](Impact-Study-Fourier-Phantom.md) · Dynamo kill shot: [Impact-Study-Stellar-Dynamo-Kill-Shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) · IDE chooser: [ide.html#chooser](https://affine.earth/language-game/ide.html#chooser) · Prove: `bash scripts/prove-language-games-study-board.sh`
+Walkthrough: [Build a study — Falcon](Build-a-Study-Falcon-Walkthrough.md) · One-tap walks: [Low-friction user flows](Low-Friction-User-Flows.md) · Hologram: [How the IDE hologram works](How-the-IDE-Hologram-Works.md) · User doors: [Discoveries by user](Discoveries-By-User.md) · Claim UIs: [02](https://affine.earth/language-game/study-02-falcon.html) · [09](https://affine.earth/language-game/study-09-convective.html) · [11](https://affine.earth/language-game/study-11-ehrhart.html) · [12](https://affine.earth/language-game/study-12-chance.html) · [13](https://affine.earth/language-game/study-13-algebra.html) · [21](https://affine.earth/language-game/study-21-dynamo.html) · Look: [\#researcher](https://affine.earth/language-game/#researcher) · DFT addendum: [Fourier Phantom](Impact-Study-Fourier-Phantom.md) · Dynamo kill shot: [Impact-Study-Stellar-Dynamo-Kill-Shot](Impact-Study-Stellar-Dynamo-Kill-Shot.md) · IDE chooser: [ide.html#chooser](https://affine.earth/language-game/ide.html#chooser) · Prove: `bash a shipped script`
 
 Registry: `earth.affine/math-court` `2026.8.24`. MCP: `POST https://affine.earth/language-invariant/mcp`. Courts: `POST /language-invariant/game/{domain}/ingest` — integers only, `source`+`role` required.
 
@@ -120,7 +120,7 @@ Falcon remains the template. 09 / 11 / 12 / 13 copied that claim surface. Sealed
 ## Reproduce
 
 ```bash
-bash scripts/prove-language-games-study-board.sh
+bash a shipped script
 ```
 
 Arms: MCP 15 · each LIVE ingest (02 physics, 09 containment, 11 geometry, 12 chance, 13 algebra, QCD) · float refuse · empty source · Study 02 claim URL 200 · this page served after rsync. Evidence: `evidence/language-games-study-board-<UTC>/VERDICT.json` · marker `LANGUAGE_GAMES_STUDY_BOARD`.

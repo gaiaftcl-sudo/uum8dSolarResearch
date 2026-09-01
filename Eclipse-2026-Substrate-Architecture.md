@@ -59,21 +59,23 @@ Three Forms, three scopes, one law:
 
 Every Form carries the Wittgenstein C⁴ tuple `{1/1|1/1|1/1|256/256|c1Reconvergence}`, class `shadow-projection`, and a content fingerprint over every semantics-bearing field. Live surfaces (`eclipse-watch`) re-prove the benchmark Form **every pass** and refuse on drift (LAW 3).
 
-## File map
+## Component map
 
-| Piece | Path |
-|---|---|
-| Besselian elements (4 eclipses, embedded verbatim) | `Sources/HeliosphereIngest/BesselianElements.swift` |
-| Circumstance calculator + quantized timeline | `Sources/HeliosphereIngest/EclipseCircumstanceCalculator.swift` |
-| Published-circumstance fixtures (trust gate) | `Sources/HeliosphereIngest/EclipseGeometryFixtures.swift` |
-| Madrigal / GFZ / USGS / SWPC clients | `Sources/HeliosphereIngest/MadrigalClient.swift`, `GeomagIndicesClient.swift` |
-| The single float→int crossing | `Sources/HeliosphereIngest/IngestQuantizer.swift` |
-| Ledger store (V252 tables) | `Sources/HeliosphereIngest/HeliosphereStore.swift`, `Sources/GaiaFTCLCore/HeliosphereSchemaV252.swift` |
-| Fossil corpus (multi-eclipse + shear) | `Sources/HeliosphereIngest/EclipseFossilCorpus.swift` |
-| The predicate (RegionInvariant) | `Sources/InvariantCompiler/EclipseCollapsePredicate.swift` |
-| The projection runner | `Sources/InvariantCompiler/EclipseProjectionRunner.swift` |
-| CLI verbs | `Sources/GaiaFTCLCLI/Commands/HelioIngestCommand.swift`, `EclipseGeometryCommand.swift`, `EclipseInvariantCommand.swift`, `EclipseWatchCommand.swift`, `EclipseWikiRenderCommand.swift` |
-| Verify/boot seam | `Sources/GaiaFTCLCLI/Commands/InvariantVerifyCommand.swift` (`--game eclipse`) |
+The substrate source is private, so this lists what each piece does rather than where it lives.
+
+| Piece |
+|---|
+| Besselian elements (4 eclipses, embedded verbatim) |
+| Circumstance calculator + quantized timeline |
+| Published-circumstance fixtures (trust gate) |
+| Madrigal / GFZ / USGS / SWPC clients |
+| The single float→int crossing |
+| Ledger store (V252 tables) |
+| Fossil corpus (multi-eclipse + shear) |
+| The predicate (RegionInvariant) |
+| The projection runner |
+| CLI verbs |
+| Verify/boot seam |
 | Live-loop plist (staged) | a staged launch agent |
 
 ## Constraint compliance

@@ -47,7 +47,7 @@ Public path measured: `https://geodesy.noaa.gov/corsdata/rinex/2026/237/{ssss}/{
 
 **7 stations × 3 hours = 21 files. First-epoch L1/L2 as integer milli-cycles. `REFUSED_FLOAT` = 0.**
 
-Puller: `scripts/study-02-cors-integer-phase.sh` — decimal-string shift, presented first epoch only.
+Puller: a shipped script — decimal-string shift, presented first epoch only.
 
 | Site | Where (verified) | Hour j L1 / L2 milli-cycles | Hour k | Hour l |
 |---|---|---|---|---|
@@ -107,7 +107,7 @@ Look does not claim. Claim does not look. The charter stays an F-region hole. Th
 | Public clients | https://github.com/gaiaftcl-sudo/uum8dSolarResearch/tree/main/clients/math-court-mcp | Bind trees. They POST. They do not evaluate a lattice. |
 | Glama | https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote | Connector **approved**. **Not tested.** No invented email. Do not claim a Glama test ran. |
 | Prove | `evidence/study-02-falcon-20260825/VERDICT.json` | Marker `STUDY02_FALCON_1049_TERRESTRIAL_DEBIAS`. CORS integer ingest + lockout appointment. Prior loop: `evidence/researcher-ide-falcon-loop-20260824T121306Z`. |
-| CORS integer puller | `scripts/study-02-cors-integer-phase.sh` | Presented first-epoch L1/L2 milli-cycles. `REFUSED_FLOAT` on sci-notation. |
+| CORS integer puller | a shipped script | Presented first-epoch L1/L2 milli-cycles. `REFUSED_FLOAT` on sci-notation. |
 
 ### Fifteen live MCP tools (measured `tools/list` = 15)
 

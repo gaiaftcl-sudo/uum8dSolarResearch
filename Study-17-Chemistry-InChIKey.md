@@ -95,4 +95,4 @@ Affine already LOOKS CID 2244 on the molecular ledger. This court CLAIMS it.
 - Does not dump generated-candidate chemistry CSVs
 - Does not invent a docking court
 
-Swift: `IndustryStandardCourts.swift` · domain `chemistry`.
+Swift: the shipped substrate · domain `chemistry`.

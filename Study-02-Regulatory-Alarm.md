@@ -94,7 +94,7 @@ Evidence dir: `evidence/study-02-alarm-20260825/`
 
 IONEX TECU is **UNKNOWN** until Madrigal or IGR supplies a numerator. FITS is the 21-row limb table in a format MAST already opens. Neither file is the seal. The seal is the CORS integers.
 
-Exporter: `Study02AlarmLegacyProjector` · a shipped script · `scripts/study-02-alarm-legacy-project.sh`. Isolated `swiftc`. One-way projection.
+Exporter: `Study02AlarmLegacyProjector` · a shipped script · a shipped script. Isolated `swiftc`. One-way projection.
 
 Brief the founder files from: `evidence/study-02-alarm-20260825/SUBMISSION_BRIEF.md`
 

@@ -70,4 +70,4 @@ Presented configurations are verified. Unknown grounds are not searched.
 
 ## Read the source
 
-[`Sources/main.swift`](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/blob/main/clients/math-court-mcp/swift-example/Sources/main.swift) is the whole example. Copy that file if you are writing a visitor in another sanctioned shell. Do not copy the law. The law is on the cell.
+[the shipped substrate](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/blob/main/clients/math-court-mcp/swift-example/the shipped substrate) is the whole example. Copy that file if you are writing a visitor in another sanctioned shell. Do not copy the law. The law is on the cell.
