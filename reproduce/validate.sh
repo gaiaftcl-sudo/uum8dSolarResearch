@@ -66,6 +66,20 @@ check_figure rate-of-rise-common-window    "885"      ""
 check_figure flourishing-entropy-ledger    "9 resolve exactly" ""
 check_figure flourishing-entropy-ledger    "1/1"      "Home.md"
 
+# --- the landing page's own headline figures ---
+check_figure seasonal-and-alternative      "52.9 t"   "Home.md"
+check_figure seasonal-and-alternative      "477.3 t"  "Home.md"
+check_figure seasonal-and-alternative      "2,460 tonnes per season" "Home.md"
+check_figure seasonal-and-alternative      "20,000 tonnes per season" "Home.md"
+check_figure seasonal-and-alternative      "219 tonnes every single day" "Home.md"
+check_figure seasonal-and-alternative      "1,594,900" "Home.md"
+check_figure seasonal-and-alternative      "1,825,000" "Home.md"
+check_figure seasonal-and-alternative      "3.240 J"  "Home.md"
+check_figure response-envelope-projection  "0.257"    ""
+check_figure response-envelope-projection  "1.324"    ""
+check_figure response-envelope-projection  "10.767"   ""
+check_figure atmosphere-domain-entropy     "461,213,509" "Home.md"
+
 echo "=== 4. the public pages carry no private reference ==="
 # grep -c prints 0 AND exits 1 on no match, so `|| echo 0` yields "0\n0" and breaks the
 # arithmetic — which is how the first version of this check reported PASS having counted
