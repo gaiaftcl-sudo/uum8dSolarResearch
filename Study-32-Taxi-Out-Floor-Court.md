@@ -2,7 +2,7 @@
 
 **Page class: CHARTER + RESULTS (Act 1).** Law frozen 2026-09-01 before grading. Corpus: `corpus/study-32/`, exact integer minutes, CC BY 4.0, provenance and digests pinned. Producing programs: `reproduce/taxiout-extract.swift`, `reproduce/taxiout-floor-court.swift`. Grades per [the ontology](Ontology).
 
-**Status: ACT 1 SEALED on the open 2022 corpus (525,541 flights). ACT 2 (the 2026 challenge data) is ARCHIVE GATED — measured, not assumed: every anonymous probe of the challenge buckets returns 403, keys come with registration, and this programme does not create accounts.**
+**Status: SEALED on the open 2022 corpus (525,541 flights). This study is not a competition entry and files no submission — the challenge's registration-gated 2026 archive was measured (403 on every anonymous probe) and declined: joining the RMSE game would concede the premise this court exists to refuse. The open data proves the method; that is the whole use of it.**
 
 ---
 
@@ -46,9 +46,9 @@ A proposal for this study circulated claiming that a discrete state representati
 - **LOSS (ii):** the floors are unstable year-over-year — then p05 is not a floor and the law is re-frozen *as a correction, dated*.
 - **LOSS (iii):** an exact-scheduling literature value already accounts for the full excess as irreducible queueing. Then the coordination claim dies and the page says so.
 
-## Act 2 — the 2026 challenge, gated and waiting
+## Why this study does not enter the competition
 
-The 2026 movement data (11 airports, AOBT/ATOT per movement) would let this court compute floors per runway configuration and split the ledger further. The archive is measured **registration-gated** (403 on every anonymous probe). When a registered participant supplies the files, the frozen law runs unchanged — and the study's answer to the challenge's own question is filed as: *the RMSE of a prediction is the wrong quantity; here is the exact excess, its floor, and its refusals.*
+Entering would mean submitting a prediction and being scored on its RMSE — which is precisely the premise under judgment here. A court that joined the game it is grading would stop being a court. So: no registration, no submission, no leaderboard. The 2026 archive is recorded as measured and gated; the open CC-BY corpus is sufficient to seal the law; and the study's answer to the challenge's own question stands on this page instead of on a leaderboard: **the RMSE of a prediction is the wrong quantity — here is the exact excess, its floor, and its refusals.** Anyone holding the 2026 movement files can replay the frozen law against them unchanged; the court does not need to be in the room.
 
 ---
 
