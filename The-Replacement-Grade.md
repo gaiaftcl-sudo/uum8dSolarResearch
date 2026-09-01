@@ -120,7 +120,24 @@ The other half of the answer is physical. [Study 30](Study-30-Sovereign-Edge-Pod
 
 **And the axis the price column cannot see at all is the direction of flow.** A subscription is rent: at the REPORTED ~$120/month rate, one hundred households send **$144,000 a year — $2,160,000 over the horizon — out of their local economy**, for hardware that retires on the operator's schedule, at a price the operator sets, into an asset they never own. A mesh the community buys is the same money kept: paid once, repaired locally by their own hands, priced by no one, still standing at year fifteen — and sending nothing to the stratosphere when a unit dies. **Rent extraction is not a moral flourish; it is a direction of flow**, and exactly one of these architectures points it at the community. (Scope, refused in capitals in the program itself: **THE POD MESH IS NOT BROADBAND** — LoRa moves verdicts, gauges and warnings, not video; the rent figures show the *structure* of subscription versus ownership on the one workload where a like-for-like number exists.)
 
-That, plus the four properties already named — ground-repairable, country-owned, zero atmospheric cost in operation, **every verdict re-derivable by the population it serves** — is what "lasting benefit to the local population" means as an engineering fact rather than a slogan.
+### The lives axis — what the ownership actually decides
+
+The money above is the *smallest* thing the ownership structure settles, and this page would miss its own point if it stopped there. **The stake is the warning chain, and warnings are lives.**
+
+The record on this wiki already holds both ends of that sentence, measured:
+
+- **The night the Guadalupe rose, 180 minutes of lead time existed in public gauge data** while the river climbed at 885 milli-feet per minute — three hours in which the water announced itself to any instrument that was listening and empowered to say so. (MEASURED — `reproduce/guadalupe-wave-ledger.swift`, the four-gauge USGS corpus in this repository.)
+- **In one month of 2026, one country counted 41,174 people carried to hospital by heat and 79 dead**, while the operational instruments that decide when to warn carry error bands their own documentation calls verdict-sized. (REPORTED — FDMA figures; the instrument confession is [Study 28](Study-28-Wet-Bulb-Threshold-Court).)
+
+A warning is not bandwidth. It is **a threshold verdict plus one message** — and 35 exact messages an hour is not a limitation for that job; it is dozens of chances an hour to say the only sentence that matters. The question the two architectures answer differently is not *how fast is the link*. It is:
+
+> **Who owns the instrument that issues the warning, and what does it depend on the day the disaster arrives?**
+
+A subscription warning chain runs: sensor → operator's network → operator's billing state → operator's coverage decision → the sky, where its hardware retires into [Study 31's ledger](Study-31-Biosphere-Cascade). Every link is owned elsewhere, priced elsewhere, and revocable from elsewhere — and the chain's own infrastructure contributes flux to the very atmospheric account the warnings will increasingly be *about*. A community mesh runs: **gauge → verdict computed at the gauge → local broadcast.** The threshold is a frozen integer the town can read; the instrument answers to the people it warns; nothing upstream can turn it off, bill it, or deorbit it.
+
+**No lives-saved figure is claimed here, and none will be** — that arithmetic is not honestly computable and this programme does not fake it. The claim is narrower and it is the whole of it: **the people a warning is for should own the instrument that issues it.** The lead time was in the data. The question every architecture answers is who was allowed to act on it.
+
+All of that, plus the four properties already named — ground-repairable, country-owned, zero atmospheric cost in operation, **every verdict re-derivable by the population it serves** — is what "lasting benefit to the local population" means as an engineering fact rather than a slogan.
 
 **What this section does not claim:** no lives-saved figure, no adoption forecast, no revenue projection for the mesh itself. The solar bands are atlas ranges, not site surveys, and a real deployment starts with a site survey. The claim is narrower and holds: the power stage closes everywhere, the law layer is the same 49 domains everywhere, and the verdicts land in the hands of the people under them.
 

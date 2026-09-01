@@ -95,6 +95,8 @@ check_figure taxiout-floor-court          "20,405 hours" "Study-32-Taxi-Out-Floo
 check_figure taxiout-floor-court          "3.6 minutes" ""
 check_figure taxiout-floor-court          "8.8 min" "Study-32-Taxi-Out-Floor-Court.md"
 check_figure taxiout-floor-court          "9794 to 18365" ""
+check_figure guadalupe-wave-ledger        "180 minutes" "The-Replacement-Grade.md"
+check_figure rate-of-rise-common-window   "885 milli-ft/min" ""
 check_figure cost-ownership-horizon       "year 5"   "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "4,784,700" "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "2,160,000" "The-Replacement-Grade.md"
