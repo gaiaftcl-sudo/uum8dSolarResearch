@@ -11,6 +11,22 @@ Two of them read the pinned corpora and must be run from the corpus directory:
     cd ../corpus/flood-lead-time && xcrun swiftc -O -swift-version 5 \
         ../../reproduce/guadalupe-wave-ledger.swift -o /tmp/run && /tmp/run
 
+
+## Validate everything at once
+
+    bash validate.sh
+
+Checks, in order: every corpus verifies against its pinned sha256; every program compiles
+and runs; **every published figure appears in the output of the program that produces it**;
+the published pages carry no reference into the private substrate repository; and the live
+catalogue serves with the counts the pages claim.
+
+It refuses to report a clean boundary if it finds no pages to scan, and it carries a
+positive control so a scanner that has silently stopped working cannot pass. The first
+version of that check reported PASS having counted nothing — `grep -c` prints `0` *and*
+exits non-zero on no match, so a `|| echo 0` fallback produced `0\n0` and broke the
+arithmetic. A gate handed nothing must not exit 0.
+
 | program | reproduces | control arm |
 |---|---|---|
 | `unimodular-control-arms.swift` | det = 1 by fraction-free Bareiss; 4,000 → 4,000 distinct integral images | **yes, and it is the point** — it shows image count does *not* discriminate (det 2 and det 0 also give 4,000) and that reachability does |
