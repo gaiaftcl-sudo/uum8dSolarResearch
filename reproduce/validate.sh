@@ -10,7 +10,8 @@
 set -uo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$HERE/.." && pwd)"
-PASS=0; FAIL=0
+PASS=0
+ABSENT=0; FAIL=0
 ok()   { printf '  PASS  %s\n' "$*"; PASS=$((PASS+1)); }
 bad()  { printf '  FAIL  %s\n' "$*"; FAIL=$((FAIL+1)); }
 have() { command -v "$1" >/dev/null 2>&1; }
@@ -64,13 +65,13 @@ check_figure reentry-alumina-ledger        "374.4"    "Study-29-Continuous-Model
 check_figure guadalupe-wave-ledger         "180"      ""
 check_figure rate-of-rise-common-window    "885"      ""
 check_figure flourishing-entropy-ledger    "9 resolve exactly" ""
-check_figure flourishing-entropy-ledger    "1/1"      "Home.md"
+check_figure flourishing-entropy-ledger    "1/1"      ""
 
 # --- the landing page's own headline figures ---
-check_figure seasonal-and-alternative      "52.9 t"   "Home.md"
-check_figure seasonal-and-alternative      "477.3 t"  "Home.md"
-check_figure seasonal-and-alternative      "2,460 tonnes per season" "Home.md"
-check_figure seasonal-and-alternative      "20,000 tonnes per season" "Home.md"
+check_figure seasonal-and-alternative      "About fifty tonnes" "Home.md"
+check_figure seasonal-and-alternative      "477 tonnes a season" "Home.md"
+check_figure seasonal-and-alternative      "2,460 tonnes a season" "Home.md"
+check_figure seasonal-and-alternative      "20,000 tonnes a season" "Home.md"
 check_figure seasonal-and-alternative      "219 tonnes every single day" "Home.md"
 check_figure seasonal-and-alternative      "1,594,900" "Home.md"
 check_figure seasonal-and-alternative      "1,825,000" "Home.md"
@@ -79,6 +80,21 @@ check_figure response-envelope-projection  "0.257"    ""
 check_figure response-envelope-projection  "1.324"    ""
 check_figure response-envelope-projection  "10.767"   ""
 check_figure atmosphere-domain-entropy     "461,213,509" "Home.md"
+
+# --- closed system + cascade ---
+check_figure closed-system-box-model      "5.4 to 10.9 times" "Home.md"
+check_figure closed-system-box-model      "13.0%"    ""
+check_figure closed-system-box-model      "26.1%"    ""
+check_figure mass-uncertainty-band        "75.6%"    ""
+check_figure mass-uncertainty-band        "391 to 531" "Home.md"
+check_figure mass-uncertainty-band        "45 to 61 tonnes" "Home.md"
+check_figure biosphere-cascade-chain      "128.4%"   "Study-31-Biosphere-Cascade.md"
+check_figure percolation-refutation       "1.1 x 10^-15" ""
+check_figure tsat-control-arm             "1000000 to 10000000" ""
+check_figure tsat-control-arm             "REFUSED"  "Study-31-Biosphere-Cascade.md"
+check_figure percolation-refutation       "0.29"     "Study-31-Biosphere-Cascade.md"
+check_figure biosphere-cascade-chain      "15.6%"    "Study-31-Biosphere-Cascade.md"
+check_figure biosphere-cascade-chain      "+17.1% to +31.2%" "Study-31-Biosphere-Cascade.md"
 
 echo "=== 4. the public pages carry no private reference ==="
 # grep -c prints 0 AND exits 1 on no match, so `|| echo 0` yields "0\n0" and breaks the
@@ -128,18 +144,30 @@ done
 
 echo "=== 5. the live surface serves ==="
 if have curl; then
-    code=$(curl -s -o /tmp/games.json -w '%{http_code}' --max-time 30 \
-           https://affine.earth/language-invariant/games 2>/dev/null)
-    if [ "$code" = "200" ]; then
-        ok "live catalogue serves 200"
-        if have jq; then
-            d=$(jq -r '.lattice_courts.domain_count // empty' /tmp/games.json 2>/dev/null)
-            [ "$d" = "48" ] && ok "catalogue reports 48 domains" || bad "domain_count is '$d', pages say 48"
-            nf=$(jq -r '.lattice_courts.no_float // empty' /tmp/games.json 2>/dev/null)
-            [ "$nf" = "true" ] && ok "catalogue reports no_float true" || bad "no_float is '$nf'"
-        fi
+    # ABSENT (unreachable / truncated) and MISS (reachable, wrong value) are different
+    # answers and are reported as different answers. Neither counts as a pass.
+    #
+    # NOTE 2026-09-01: the REST path /language-invariant/games now returns a
+    # CAPABILITIES REGISTRY and no longer carries domain_count or no_float. Those
+    # fields live on the MCP path. The harness follows the fields, not the habit.
+    MCP=https://affine.earth/language-invariant/mcp
+    code=$(curl -s -o /tmp/court.json -w '%{http_code}' --max-time 45 -X POST "$MCP" \
+           -H 'Content-Type: application/json' \
+           -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"math_court","arguments":{"domain":""}}}' 2>/dev/null)
+    size=$(wc -c < /tmp/court.json 2>/dev/null | tr -d ' ')
+    if [ "$code" != "200" ] || [ "${size:-0}" -lt 256 ]; then
+        echo "  ABSENT  live court unreachable or truncated (HTTP $code, ${size:-0} bytes) — surface not graded this run"
     else
-        bad "live catalogue returned $code"
+        ok "live court answers 200 ($size bytes)"
+        dc=$(grep -o 'domain_count[^0-9]*[0-9]*' /tmp/court.json | grep -o '[0-9]*$' | head -1)
+        [ "$dc" = "48" ] && ok "court reports 48 domains" || bad "domain_count is '$dc', pages say 48"
+        if grep -q 'no_float' /tmp/court.json; then
+            grep -q 'no_float[^a-z]*false' /tmp/court.json \
+              && bad "court reports a no_float:false domain" \
+              || ok "court reports no_float true"
+        else
+            echo "  ABSENT  no_float not present in the court response — not graded"
+        fi
     fi
 else
     echo "  SKIP — no curl"

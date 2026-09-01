@@ -4,6 +4,7 @@
 - [**Ask someone you trust to check this**](Ask-Someone-You-Trust-To-Check-This)
 - [**The forcing nobody measures**](Reentry-Forcing-Nobody-Measures)
 - [**Study 29** — continuous-model shear](Study-29-Continuous-Model-Shear)
+- [**Study 31** — the biosphere cascade](Study-31-Biosphere-Cascade)
 - [**Study 30** — sovereign edge pod](Study-30-Sovereign-Edge-Pod)
 - [**The exactness seam** — the business case](The-Exactness-Seam)
 

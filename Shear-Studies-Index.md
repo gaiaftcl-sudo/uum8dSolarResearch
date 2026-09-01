@@ -81,3 +81,4 @@ Size is cheap in geophysics: storms, surges, pressure systems, and radio bursts 
 
 </details>
 
+| 31 | [Study 31 — The Biosphere Cascade Court](Study-31-Biosphere-Cascade) | **LAW FROZEN** — first result sealed 2026-09-01 | The chain, link by link, with a grade on each: injection -> burden -> ozone -> regional -> UV-B -> phytoplankton -> food web. Links 1/3/4 multiply; link 2 is contested on sign; the chain **stops at link 5** for want of a transfer function. Multiplied to the orbital-data-centre scale it returns **128.4% regional ozone loss** — more than exists — which disqualifies the linear projection rather than forecasting collapse. |

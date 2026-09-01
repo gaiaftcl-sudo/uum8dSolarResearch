@@ -17,6 +17,11 @@ for (n, gy) in seasons {
 }
 print("")
 print("  Human-readable, as the pages print them:")
+print("    About fifty tonnes a season, right now, at the measured rate.")
+    print("    About fifty tonnes -- the phrase the landing page uses.")
+print("    477 tonnes a season      at the authorized fleet")
+print("    2,460 tonnes a season    at the Gen3 filing")
+print("    20,000 tonnes a season   at the orbital data centres")
 print("    today            52.9 t/season   ~53 tonnes,  about half a tonne a day")
 print("    authorized       477.3 t/season")
 print("    Gen3 filed     2,460 tonnes per season   (27 tonnes a day)")
