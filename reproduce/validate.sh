@@ -86,6 +86,30 @@ else
     bad "the scanner found NOTHING at all, including its own control — it is not working"
 fi
 
+echo "=== 4b. every cited public artifact actually exists ==="
+# A page citing reproduce/foo.swift or corpus/bar that is not there is a broken
+# reproduction instruction — exactly the defect this repository was restructured to fix,
+# so the harness checks it rather than trusting that a rename kept up.
+MISSING=0
+for cited in $(grep -ohE 'reproduce/[a-z0-9-]+\.swift|corpus/[A-Za-z0-9/_.-]+\.(tsv|md)|corpus/[A-Za-z0-9_-]+/SHA256SUMS' "$ROOT"/*.md 2>/dev/null | sort -u); do
+    [ -e "$ROOT/$cited" ] || { bad "cited but absent: $cited"; MISSING=$((MISSING+1)); }
+done
+[ "$MISSING" -eq 0 ] && ok "every cited program and corpus path exists"
+
+echo "=== 4c. no private identifier, not just no private path ==="
+# The path patterns in 4 miss private IDENTIFIERS — daemon names, artifact names, internal
+# record fields. A boundary scan scoped to paths reported clean while three of these were
+# present, which is the same scoping error the substrate's float and heap gates each paid
+# for once.
+IDS=0
+for pat in 'treasury-swarm' 'injector_lease_holder' 'covered_execs' 'observed_execs' \
+           'com\.gaiaftcl' 'gaiaftcl-language-invariant' 'prove-fleet-byte-identity' \
+           'apex-watchdog' 'prove-cell-identity' 'CertifiedUser' 'servableEntries'; do
+    hits=$(grep -lE "$pat" "$ROOT"/*.md 2>/dev/null | wc -l | tr -d ' ')
+    [ "${hits:-0}" -gt 0 ] && { bad "private identifier '$pat' in $hits page(s)"; IDS=1; }
+done
+[ "$IDS" -eq 0 ] && ok "no private identifier in any published page"
+
 echo "=== 5. the live surface serves ==="
 if have curl; then
     code=$(curl -s -o /tmp/games.json -w '%{http_code}' --max-time 30 \
