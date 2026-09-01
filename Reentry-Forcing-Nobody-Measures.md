@@ -78,6 +78,35 @@ At the SEC-filed five-year useful life for broadband satellites (424B4, 2026-06-
 
 ---
 
+## 3b. The orbital data centre application, on SpaceX's own disposal split
+
+The pending application is for **up to one million satellites** (SAT-LOA-20260108-00016, accepted for filing DA 26-113, 2026-02-04). At the roughly five-year life of data-centre GPUs, about **200,000 would be decommissioned each year**.
+
+**They do not all reenter, and the split is SpaceX's own.** Per their FCC filing of 29 May 2026, about **40,000 would deorbit and burn up**; the remaining ~160,000 would be pushed outward to a distant disposal orbit. An earlier version of this page projected all 200,000 as reentering — **five times too many** — and the correction is recorded here rather than applied silently.
+
+| per-unit mass basis | deorbiting flux | vs 2025 measured |
+|---|---|---|
+| Starlink fleet mean, 492 kg | 19.7 Gg/yr | 93× |
+| Gen3 filing figure, 2,000 kg | **80 Gg/yr** | **378×** |
+| heavier rack-class, unstated | 160 Gg/yr | 756× |
+
+**The per-unit mass is the missing input and nobody has published it.** No SpaceX filing states an AI-satellite mass, and the reporting that surfaced this filing says so directly: *"Without full, detailed specifications for these satellites, there's no way to properly tally the amount of material"* (Ars Technica, 2026-08-20). The flux is therefore a **range with a named gap**, not a point estimate.
+
+### What that flux means against a sourced denominator
+
+A flux against a sink does not accumulate to a limit; it converges to flux × residence time. Stratospheric aerosol residence is 1–4 years. The background stratospheric aerosol burden is **109–156 Gg of sulfur** (Sheng et al. 2015, doi:10.1002/2014JD021985; Brodowsky et al. 2024, doi:10.5194/acp-24-5513-2024), which at the published 4.083 sulfur-to-aerosol factor (Kremser et al. 2016, doi:10.1002/2015RG000511) is **445–637 Gg of aerosol**.
+
+| sustained flux | τ = 2 yr standing burden | against the natural layer |
+|---|---|---|
+| 80 Gg/yr | 160 Gg | ~0.25–0.36× |
+| 250 Gg/yr | 500 Gg | **~0.8–1.1×** |
+
+**At the upper end this is a sustained perturbation comparable to the entire natural stratospheric aerosol layer.** For scale, Mount Pinatubo peaked at 30–60× background (Kremser et al. 2016) and measurably cooled the surface for roughly two years — but as a *decaying pulse*, not a maintained level.
+
+**This page publishes no saturation year.** A saturation claim requires a capacity in the same units, and no published source states one. Two attempts were put to the court and refused: a proposed threshold of 1 particle/cm³ sits **at** the measured Junge-layer background of 1–10 particles/cm³, so the same arithmetic returns "saturated" for the pre-industrial sky with zero satellites; and an accumulation model omits the 1–4 year sink. Neither refusal is a function of constellation size — scaling the flux does not repair a denominator that equals the ambient value.
+
+---
+
 ## 4. Two facts that cut against alarm, stated before the ones that do not
 
 - The trailing 365-day measured flux is **178 t/yr**, which is **below the 450 t/yr average** assumed by the ESA studies SpaceX itself cited to the FCC in the 22-91 docket.
