@@ -229,6 +229,8 @@ Not a ban. Three things, all boring:
 
 **3. Put the compute on the ground.** Which is the next section, and where we have to be careful with you.
 
+**And name the shape of the bet plainly, because it is not the shape the sales pitch implies.** This is not *do this or die* — every service the fleets sell is deliverable, or replaceable, from the ground. It is *do this optional thing and accept an unmeasured planetary-scale tail on behalf of everyone alive* — an upside that is substitutable, priced against a downside that is `NOT_KNOWN` at the exact link where the ocean's food and oxygen begin. A bounded, replaceable upside cannot price an unbounded, unmeasured downside — and nobody was given the authority to place that bet for the rest of us. The full decision structure, graded: [danger versus overkill](Impact-Study-SpaceX-Biosphere-Forcing).
+
 **The window is open because the worst case is filed and not granted.** 19,408 are authorised. The 100,000 and the 1,000,000 are applications. A regulator can attach a measurement condition to a licence tomorrow at essentially zero cost, and every number on this page becomes checkable instead of arguable. **That is the whole ask.**
 
 ---

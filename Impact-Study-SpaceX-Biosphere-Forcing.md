@@ -76,6 +76,25 @@ A cleaner propellant answers *which rocket*. It silently concedes *whether the r
 
 **So the favours below are read at their true size: they are facts about the remainder, not licences for the whole.** The chlorine advantage is real *for launches that survive questions 1 and 2*. For the fully substitutable services — the million-satellite compute filing above all — the flourishing-first answer precedes chemistry: **the cleanest reentry is the one that does not happen, and for that service, it does not have to.**
 
+## Danger versus overkill — the shape of the bet
+
+Strip everything above to its decision structure and this is what remains, with every input graded on this wiki:
+
+| side of the bet | what it is | grade |
+|---|---|---|
+| **the upside** | orbital compute and mass-market connectivity — services the ground already delivers or can deliver, at 3.240 J/hour for the verdict layer and in ground data centres for the rest | **SUBSTITUTABLE — measured above** |
+| **the downside** | three planetary accounts moving at once at the licensed scale; the chain into the ocean food web graded `NOT_KNOWN`; the projections *disqualifying themselves* past the filed scale because the instruments leave their valid range | **UNMEASURED, planetary, shared by everyone — including the operator** |
+
+**This is not "do this or die." Nothing on the necessity side compels the flux — that is what the substitutability section establishes, service by service.** The honest structure is the other one: *do this optional thing, and accept an unmeasured planetary-scale tail on behalf of everyone alive and everyone after them.*
+
+That asymmetry is the whole argument, and it needs no catastrophe proof to bind:
+
+- **A bounded, replaceable upside cannot price an unbounded, unmeasured downside.** Not because the downside is proven large — this page has refused every such proof — but because it is proven *unmeasured*, at the exact links where the biosphere's food and oxygen begin. `NOT_KNOWN` is not zero. Betting as if it were zero is not engineering; it is exposure without an instrument.
+- **The bet is placed on parties who never sat at the table.** The upside accrues to an operator and its subscribers. The downside is drawn on the one atmosphere, against every person under it — which is why this page keeps saying *we live here*, and why the licences' skipped environmental review is a procedural fact that matters.
+- **Overkill is the precise word for the upside.** A million-satellite compute fleet is not the only way to run the workload — it is not even the cheap way past the first hardware replacement cycle, on the operator's own filed five-year life. An optional activity, deliverable from the ground, carrying an unmeasured planetary tail, is not a trade-off. **It is an unnecessary bet with everyone's stake on the table.**
+
+The refusal this page asks for is therefore the mildest one available: **do not place the unmeasured bet while the measurement is this cheap.** Measure the flux, publish the regional minima, run the dose–response — three years, near-zero cost — and then let the licences argue from data. Until then, the flourishing-first answer stands: **we do not need what is being sold, and the price on the tag is not the price of the bet.**
+
 ## What cuts in SpaceX's favour, with the same weight
 
 - **Their engines burn kerosene, which emits no chlorine** — and the sharpest recent analysis puts the dominant depletion driver at solid-propellant chlorine. On the axis that paper says matters most, this operator scores *well*. (CITED, NOT MEASURED — Barker 2026, carried as published. **Conditional per the ordering above:** a fact about launches that survive the necessity and substitutability questions, not a licence for the ones that do not.)
