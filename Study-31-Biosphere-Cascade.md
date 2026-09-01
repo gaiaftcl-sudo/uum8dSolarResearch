@@ -298,6 +298,34 @@ The model was presented to the live court at `https://affine.earth/language-inva
 
 **`REFUSED_UNKNOWN_DOMAIN`.** The court has 48 domains and not one of them is atmospheric — measured the same day, **0 of 49 court tools** mention ozone, reentry, stratosphere or wet-bulb. So no study on this wiki's planetary programme can currently seal, which is why Studies 28–31 carry no `PROVEN` marker while eleven other studies do.
 
+### The court answering, verbatim
+
+The `biosphere` domain is wired into the court and the law runs inside it — not in a side program. Four scenarios and a refusal arm, called through the court's own MCP wire against the built binary, 2026-09-01:
+
+```json
+// measured_2025 — every axis graded on the wire
+{"verdict":"JOINT_LEDGER",
+ "vs_meteoric_flux_per_mille":{"lo":"31","hi":"63","grade":"MEASURED — residence time cancels"},
+ "regional_o3_loss_per_mille":{"value":"3","terminal":"WITHIN_HEALTHY_RANGE"},
+ "boulder_median_deci_du":{"healthy":"3100","after":"3091","healthy_p05":"2670"},
+ "radiative_share_of_aggi_per_mille":{"value":"1","aggi_total_milli_w_m2":"3539",
+   "sign_contested":"Barker +6.47/-6.40 same model"}}
+
+// gen3_filed_100000 — the terminal changes
+{"regional_o3_loss_per_mille":{"value":"156","terminal":"BELOW_HEALTHY_P05"},
+ "boulder_median_deci_du":{"healthy":"3100","after":"2617","healthy_p05":"2670"}}
+
+// orbital_data_centres — the projection disqualifies itself
+{"regional_o3_loss_per_mille":{"value":"1296","terminal":"EXCEEDS_COLUMN_PROJECTION_DISQUALIFIED"},
+ "boulder_median_deci_du":{"after":"NOT_A_VALUE_PROJECTION_DISQUALIFIED"}}
+
+// anything that is not a filed fleet
+{"verdict":"REFUSED_SCENARIO",
+ "scenarios":["authorised_19408","gen3_filed_100000","measured_2025","orbital_data_centres"]}
+```
+
+Three distinct terminals across the scenarios plus a refusal: the instrument discriminates. Where the projection exceeds the column, the court refuses to print an after-value at all — an impossible number does not go on the wire, even labelled.
+
 **That gap is now half-closed, and the page tracks which half.** The `biosphere` domain is wired into the court's own domain table — presenting it no longer returns `REFUSED_UNKNOWN_DOMAIN`; it returns the five roles (`mass_ledger`, `ozone_column`, `radiative`, `coupling`, `regulator`) and the `regulator` role answers the joint ledger with grades attached to every axis. That is verified against the built court binary. **The remaining half is the fleet roll:** until the nine cells serve the new binary, the live `affine.earth` court still refuses the domain, and this page remains a charter with a computed first result rather than a sealed verdict. When the roll lands, the marker is `STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN`.
 
 ### What refusing a model does not do
