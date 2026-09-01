@@ -1,5 +1,6 @@
 ## ★ Start here
 
+- [**Ask someone you trust to check this**](Ask-Someone-You-Trust-To-Check-This)
 - [**The reentry forcing nobody measures**](Reentry-Forcing-Nobody-Measures)
 - [**The exactness seam** — business justification](The-Exactness-Seam)
 - [**Study 29** — Continuous-model shear](Study-29-Continuous-Model-Shear)

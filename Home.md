@@ -52,6 +52,12 @@ Nine resolve exactly, verified by [`reproduce/flourishing-entropy-ledger.swift`]
 
 ---
 
+## If you are not a scientist, start here
+
+**[Ask someone you trust to check this](Ask-Someone-You-Trust-To-Check-This.md)** — the plain-language version. There is a measured amount of vaporised spacecraft in the air above you: roughly **one in ten** of the larger stratospheric particles now contains satellite metal, from a NASA aircraft campaign that analysed over 500,000 individual particles. Nobody is required to weigh what comes down. The only rule that exists asks for a **count of satellites**.
+
+Send it to one person who reads papers for a living, and ask them to try to prove it wrong.
+
 ## Start here
 
 **[The reentry forcing nobody is required to measure](Reentry-Forcing-Nobody-Measures.md)** — one operator went from 0% to **45.8%** of all mass entering the atmosphere in six years; spacecraft aluminium already ablates at ~10× the meteoric supply on the measuring paper's own denominator; **10 ± 7%** of stratospheric particles above 120 nm already carry spacecraft metals; five models disagree on the **sign** of what that does; and the only reentry duty any regulator imposes is a semi-annual **count of satellites**.
