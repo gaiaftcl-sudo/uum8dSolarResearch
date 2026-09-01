@@ -174,3 +174,7 @@ That any life was or will be lost. That any disaster is imminent. That any ecolo
 **A presented configuration is verified; an unknown configuration is not searched.**
 
 *Every figure above is reproducible from this repository or quoted verbatim from a cited primary source. Corrections are recorded on the page rather than applied silently.*
+
+## The axes, joined — and answerable live
+
+Every section above measures one axis. As of 2026-09-01 they are held in **one exact-integer account** — the mass ledger, the ozone column against a measured pre-1980 healthy range, the radiative term against NOAA's 46-year forcing record, and the biosphere couplings graded `NOT_KNOWN` and excluded so the totals are a floor. The joint ledger runs live on the court at `affine.earth`, answers on all nine cells with the marker `STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN`, and refuses to print a value where the projection exceeds physical bounds. The call, the scenarios and the pinned corpora: [Study 31](Study-31-Biosphere-Cascade).

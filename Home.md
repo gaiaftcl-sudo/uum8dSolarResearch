@@ -307,6 +307,9 @@ The harness verifies that the corpora match their published digests, that every 
 
 **If a check fails, we want the issue. If a number is wrong, tell us and we will publish the correction with a date on it — as we did today with our own headline mass.**
 
+**Or skip the clone and ask the running court directly.** The joint ledger answers live on nine machines at `affine.earth` — the call, the tool name and the four admitted scenarios are on [the study page](Study-31-Biosphere-Cascade). The response grades every axis (`MEASURED` / `PROJECTION` / `NOT_KNOWN`) and carries the marker `STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN`. Where a projection exceeds physical bounds, the court refuses to print a value at all.
+
+
 **Ask a researcher you trust to run it.** Not to agree with us. To check us. That is the entire ask of this project and it is written out in full here: **[Ask someone you trust to check this](Ask-Someone-You-Trust-To-Check-This)**.
 
 ---

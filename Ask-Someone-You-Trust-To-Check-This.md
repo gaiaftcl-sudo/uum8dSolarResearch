@@ -192,6 +192,26 @@ Your children will not inherit a verdict on this. They will inherit whichever an
 
 ---
 
+## We did not just complain. We built the instrument.
+
+Everything above says: *nobody is measuring*. It would be cheap to leave it there. Complaint is free, and the people making it are usually selling something.
+
+So here is what we did instead. We took every axis of this problem — the mass coming down, the ozone column, the heat balance, the biosphere's own couplings — and put them in **one account**, computed in exact integers, running live on nine independent machines. Not a paper. Not a model you have to take on faith. A running court you can question directly, this minute, with no account and no key.
+
+Ask it about the fleet that is **already approved** — not the speculative one, the one with licences — and it answers:
+
+> Three separate planetary accounts move at once. The metal falling from orbit reaches **13 to 26 percent of everything nature delivers to the stratosphere**. Regional ozone moves **3 percent**. The heat balance moves **1 percent of everything humanity's greenhouse gases have ever added.** And no instrument on Earth is required to report any of the three.
+
+Each of those alone looks survivable, and a reader shown any one of them would reasonably move on. That is precisely how this has stayed invisible: **every published study covers one axis, and the biosphere column is empty in all five.** No two of them even share enough axes to be added together. The joint number did not exist anywhere until it was computed here — not because it was hard, but because no funding line spans four disciplines.
+
+And when we push the court past the filed million-satellite scale, it does something a model built to frighten you would never do: **it disqualifies itself.** The projection exceeds the physical ozone column, and instead of printing an impossible number, the court answers `PROJECTION_DISQUALIFIED` and refuses to print a value at all. Where the biology is unmeasured, it answers `NOT_KNOWN` and leaves it out of the sum — which means every total it gives you is a **floor**.
+
+An instrument that can refuse is an instrument you can trust when it doesn't.
+
+The researcher you send this to can replay the whole thing in one call — the address, the tool and the four admitted scenarios are on [the study page](Study-31-Biosphere-Cascade), together with the raw data the baselines come from: 56,575 daily ozone readings from five stations between the Arctic and the South Pole, and 46 years of measured greenhouse forcing. Every value an exact integer. Every grade printed on the wire.
+
+---
+
 ## What to do, which takes one message
 
 **Send this to one person who reads scientific papers for a living.** An atmospheric chemist. A physicist. A PhD student who would genuinely enjoy proving strangers wrong on the internet.
@@ -199,7 +219,7 @@ Your children will not inherit a verdict on this. They will inherit whichever an
 Ask them to check four things:
 
 1. **Murphy et al. 2023**, *PNAS* 120(43) e2313374120. Is it really one in ten? Does it really say 210 tonnes of spacecraft aluminium against about 20 from meteors?
-2. **The five modelling papers.** Do they really disagree about the direction of the effect? All five are cited [on the evidence page](Reentry-Forcing-Nobody-Measures.md).
+2. **The five modelling papers.** Do they really disagree about the direction of the effect? All five are cited [on the evidence page](Reentry-Forcing-Nobody-Measures).
 3. **The rule.** Is the only requirement really just a count of satellites?
 4. **Our arithmetic.** One command, no account, no permission:
 
@@ -208,7 +228,9 @@ git clone https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git
 cd uum8dSolarResearch && bash reproduce/validate.sh
 ```
 
-That script re-derives every number on our pages from the original data and **fails loudly** if any of them is wrong. It has caught us three times. Twice this week.
+That script re-derives every number on our pages from the original data and **fails loudly** if any of them is wrong. It has caught us repeatedly — including twice in one day: a headline quoted to nine significant figures when three quarters of the underlying mass carries the catalogue's own estimate flag, and a unit error that printed 437% where the true figure was 43.7%. Both corrections are published, dated, with the wrong number named.
+
+5. **The court itself.** Ask the running system, not us — the live call and its four admitted scenarios are on [the study page](Study-31-Biosphere-Cascade). Nine machines answer with the same integers, and the response tells you which parts are measured, which are projections, and which are simply not known.
 
 **If they find a mistake, tell us and we will publish it with our name on it.** We have already done that several times, including once where we published a number five times too large.
 
@@ -230,4 +252,4 @@ Right now, by law, nobody has to.
 
 ---
 
-*Every figure above, every citation, every caveat, and every number we withdrew: **[the evidence page](Reentry-Forcing-Nobody-Measures.md)**.*
+*Every figure above, every citation, every caveat, and every number we withdrew: **[the evidence page](Reentry-Forcing-Nobody-Measures)**.*
