@@ -34,6 +34,23 @@ Four industries are scaling fastest into the failure mode, and for each one the 
 
 Every tool named in that column is on the live court's `tools/list` right now — the same wire this wiki's harness checks on every run.
 
+### How a guessing system is sold — the FSD case, graded
+
+The autonomy row deserves its worked example, because the flagship product of that vertical is sold on exactly the relative-comparator structure this wiki's [observer-independence rule](Impact-Study-SpaceX-Biosphere-Forcing) forbids — and every defect below is REPORTED from named public sources, about claims and instruments, never about a person.
+
+The headline safety statistic — *crashes per mile with the system engaged versus the average driver* — carries, per its published critics:
+
+- **A counting threshold on one side only:** only crashes that fire an airbag or restraint are counted for the system, while the federal baseline counts police-reported crashes — two different definitions of "crash" on the two sides of one ratio (REPORTED — the vendor's own methodology notes, as analysed in arXiv:2311.06187).
+- **A road-type mismatch:** the system runs mostly on limited-access highways — already the safest roads — while the baseline blends every road class (REPORTED — multiple analyses; the same defect as comparing a fleet's best miles to everyone's all miles).
+- **A fleet-age mismatch:** an average fleet age of ~4.1 years against a national fleet of ~12.8 (REPORTED) — newer cars crash less regardless of software.
+- **Un-re-derivable by construction:** raw crash counts and vehicle-miles-travelled are not disclosed, so *no outside party can recompute the ratio at all* (REPORTED). The verdict is not checkable even in principle — testimony, not evidence.
+- **The expert census:** ten of eleven traffic-safety researchers who reviewed the methodology for Reuters called the statistics misleading marketing rather than a serious safety analysis (REPORTED — Reuters investigation, 2026).
+- **The name itself is a contested claim:** the product is named *Full Self-Driving (Supervised)* — the noun asserts what the parenthetical retracts, the system is a driver-assistance level requiring an attentive human, and the naming has been the subject of a public false-advertising proceeding by the California DMV (REPORTED — public regulatory record).
+
+**The structural diagnosis, in this page's own terms:** a probabilistic perception stack whose safety case is a relative statistic, against an uncontrolled comparator, with mismatched definitions on the two sides of the ratio, resting on undisclosed denominators. Every element of the axis/comparator omission, in its purest commercial form — and the tail of the bet rides with whoever is on the road, not with whoever chose the comparator.
+
+**The exact seam is not a hypothetical alternative; it answers on this substrate's live court:** `atc_assert_4d_deconfliction` returns **a separation certificate or the violating pair** from declared trajectories in exact integer coordinates, and `twin_robotics_evaluate_exact_ik` returns exact kinematics — verdicts a regulator, an insurer, or a victim's investigator can re-derive without trusting the vendor. That is the difference this whole page is about: *the model was 99.7% sure* is a sentence about the vendor's instrument; *these two trajectories provably never occupy the same coordinate* is a fact about the world, the same for every observer.
+
 **The benefit thread, stated plainly:** in each vertical the replacement moves the *authority over the verdict* from the vendor to the public. That is what "lasting benefit for the local population" means in practice — not a cheaper service, but a verdict their own regulator, their own engineer, their own researcher can re-derive without permission. The [flourishing identity](Ontology) is the per-domain measure of exactly that transfer.
 
 ---
