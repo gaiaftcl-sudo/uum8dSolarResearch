@@ -298,7 +298,7 @@ The model was presented to the live court at `https://affine.earth/language-inva
 
 **`REFUSED_UNKNOWN_DOMAIN`.** The court has 48 domains and not one of them is atmospheric — measured the same day, **0 of 49 court tools** mention ozone, reentry, stratosphere or wet-bulb. So no study on this wiki's planetary programme can currently seal, which is why Studies 28–31 carry no `PROVEN` marker while eleven other studies do.
 
-**That gap is the work item, and it is named here rather than papered over:** the `biosphere` domain declared above must be added to the court's domain table and rolled to the fleet. Until it is, this page is a charter with a computed first result, not a sealed verdict, and it says so.
+**That gap is now half-closed, and the page tracks which half.** The `biosphere` domain is wired into the court's own domain table — presenting it no longer returns `REFUSED_UNKNOWN_DOMAIN`; it returns the five roles (`mass_ledger`, `ozone_column`, `radiative`, `coupling`, `regulator`) and the `regulator` role answers the joint ledger with grades attached to every axis. That is verified against the built court binary. **The remaining half is the fleet roll:** until the nine cells serve the new binary, the live `affine.earth` court still refuses the domain, and this page remains a charter with a computed first result rather than a sealed verdict. When the roll lands, the marker is `STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN`.
 
 ### What refusing a model does not do
 
