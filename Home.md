@@ -54,6 +54,8 @@ Nine resolve exactly, verified by [`reproduce/flourishing-entropy-ledger.swift`]
 
 ## Start here
 
+**[The reentry forcing nobody is required to measure](Reentry-Forcing-Nobody-Measures.md)** — one operator went from 0% to **45.8%** of all mass entering the atmosphere in six years; spacecraft aluminium already ablates at ~10× the meteoric supply on the measuring paper's own denominator; **10 ± 7%** of stratospheric particles above 120 nm already carry spacecraft metals; five models disagree on the **sign** of what that does; and the only reentry duty any regulator imposes is a semi-annual **count of satellites**.
+
 **[The exactness seam](The-Exactness-Seam.md)** — the business justification. Three markets settle their central quantities in floating point, and the participants document the consequences themselves. Ansys states results change between releases. Dassault states Abaqus/Explicit results depend on the parallel decomposition. NVIDIA states PhysX results vary across platforms, compilers and optimisation settings, and that adding one non-interacting actor can diverge a scene. ISO 23247-1, the international framework standard for manufacturing digital twins, contains **zero occurrences** of *reproducibility*, *repeatability*, *precision* or *floating point*.
 
 **[Study 29 — The continuous-model shear](Study-29-Continuous-Model-Shear.md)** — the reentry ledger against the models that consume it.
