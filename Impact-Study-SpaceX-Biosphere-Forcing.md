@@ -95,6 +95,18 @@ That asymmetry is the whole argument, and it needs no catastrophe proof to bind:
 
 The refusal this page asks for is therefore the mildest one available: **do not place the unmeasured bet while the measurement is this cheap.** Measure the flux, publish the regional minima, run the dose–response — three years, near-zero cost — and then let the licences argue from data. Until then, the flourishing-first answer stands: **we do not need what is being sold, and the price on the tag is not the price of the bet.**
 
+### Is it worth it at any odds — and who decides?
+
+Put the question at its sharpest: *suppose the chance that this cascades into the food chain were one in a million. Is it worth it?*
+
+**First honesty: one-in-a-million is not a measurement.** No instrument on Earth currently produces that number — the dose–response has never been run, the transfer functions do not exist, and this page's own chain stops at `NOT_KNOWN` exactly there. A stated tiny probability would at least be an instrument reading; what actually exists is **no reading at all**. That is worse for the bet, not better: you cannot price a tail you have refused to measure.
+
+**Second: even granting the number, the arithmetic does not close.** A small probability prices a bounded loss — that is what insurance is. It cannot price a loss that includes *the ability to try again*. A wager that consumes the table on failure has no acceptable odds **when the upside is substitutable at no comparable risk** — and the substitution is measured, service by service, above. Small annual probabilities also compound over a permanent program: a flux that runs forever is not one draw from the urn, it is a draw every year, indefinitely, and the tail accumulates while the measurement stays unfunded.
+
+**Third — who decides? The record already answers, and the answer is the scandal:** as of today, **nobody decided.** The licences issued under a categorical exclusion mean the question was never formally asked — not answered wrongly, *never asked* — while the parties bearing the stake are everyone under the atmosphere and everyone after them, none of whom hold a seat. The upside has an owner; the downside has no representative.
+
+The constructive answer to *who decides* is the one this whole substrate exists to make possible: **a decision of this class belongs to the people staked, and they can only decide what they can check.** That is what measurement buys — it converts an unconsented gamble into a decidable public question, with verdicts the bound parties re-derive instead of trust. Three years of inventory, one output field of regional minima, one standard dose–response experiment. Until those exist, the honest status of the wager is: **placed without odds, without consent, and without an instrument — on everyone.**
+
 ## What cuts in SpaceX's favour, with the same weight
 
 - **Their engines burn kerosene, which emits no chlorine** — and the sharpest recent analysis puts the dominant depletion driver at solid-propellant chlorine. On the axis that paper says matters most, this operator scores *well*. (CITED, NOT MEASURED — Barker 2026, carried as published. **Conditional per the ordering above:** a fact about launches that survive the necessity and substitutability questions, not a licence for the ones that do not.)
