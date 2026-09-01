@@ -13,6 +13,7 @@
 
 - [**The ontology**](Ontology) — grades, terminals, controls
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm) — the method
+- [**The full-grade replacement**](The-Replacement-Grade) — 49 retired instruments, 4 verticals
 - [Program index — all 30 studies](Shear-Studies-Index)
 - [Readers’ guide](Shear-Studies-Readers-Guide)
 - [White paper](Shear-Studies-White-Paper)

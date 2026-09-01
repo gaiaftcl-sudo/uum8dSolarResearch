@@ -1,0 +1,2131 @@
+{
+ "domain_count": 49,
+ "domains": [
+  {
+   "dead_equation": "each axis modelled alone in floating point and reported as a GLOBAL MEAN; no model spans mass, ozone, radiative and biological coupling together",
+   "domain": "biosphere",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/biosphere/context"
+   },
+   "new_law": "one conserved integer ledger over every axis at once: burden ratio = flux ratio (residence time cancels); regional = global x 12; forcing in milli-W/m^2 against the measured AGGI baseline; ozone in deci-Dobson against the measured pre-1980 record; every unquantified coupling named NOT_KNOWN and EXCLUDED from the sum, so the total is a floor",
+   "no_float": true,
+   "proven_marker": "STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/biosphere/context",
+      "POST": "/language-invariant/game/biosphere/ingest"
+     },
+     "integrate": "/language-invariant/game/biosphere/ingest",
+     "may_ingest": [
+      "year",
+      "operator",
+      "dry_mass_g"
+     ],
+     "role": "mass_ledger",
+     "title": "Reentry mass ledger"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/biosphere/context",
+      "POST": "/language-invariant/game/biosphere/ingest"
+     },
+     "integrate": "/language-invariant/game/biosphere/ingest",
+     "may_ingest": [
+      "station",
+      "deci_dobson",
+      "year"
+     ],
+     "role": "ozone_column",
+     "title": "Total column ozone"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/biosphere/context",
+      "POST": "/language-invariant/game/biosphere/ingest"
+     },
+     "integrate": "/language-invariant/game/biosphere/ingest",
+     "may_ingest": [
+      "milli_w_per_m2",
+      "convention"
+     ],
+     "role": "radiative",
+     "title": "Radiative forcing"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/biosphere/context",
+      "POST": "/language-invariant/game/biosphere/ingest"
+     },
+     "integrate": "/language-invariant/game/biosphere/ingest",
+     "may_ingest": [
+      "term",
+      "grade"
+     ],
+     "role": "coupling",
+     "title": "Biosphere coupling back"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/biosphere/context",
+      "POST": "/language-invariant/game/biosphere/ingest"
+     },
+     "integrate": "/language-invariant/game/biosphere/ingest",
+     "may_ingest": [
+      "scenario"
+     ],
+     "role": "regulator",
+     "title": "Regulator / replay"
+    }
+   ],
+   "study": "31",
+   "title": "Biosphere \u2014 the integrated system, one joint ledger",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-31-Biosphere-Cascade"
+  },
+  {
+   "dead_equation": "vol = integral_P 1 dx",
+   "domain": "geometry",
+   "entropy_bare": "6/5",
+   "entropy_delta": "1/5",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "GUIDE_PUBLIC_FLOURISHING_ALL \u2014 volume is a count a regulator can replay",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/geometry/context"
+   },
+   "new_law": "h_P(t)=|tP intersect Z^d|; vol = Delta^d h(0)/d!",
+   "no_float": true,
+   "proven_marker": "STUDY11_EHRHART_VOLUME_PROVEN",
+   "qfot_cost": "1/5",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/geometry/context",
+      "POST": "/language-invariant/game/geometry/ingest"
+     },
+     "integrate": "/language-invariant/game/geometry/ingest",
+     "may_ingest": [
+      "polytope_id",
+      "dilation",
+      "vertices"
+     ],
+     "role": "cad_engineer",
+     "title": "CAD engineer"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/geometry/context",
+      "POST": "/language-invariant/game/geometry/ingest"
+     },
+     "integrate": "/language-invariant/game/geometry/ingest",
+     "may_ingest": [
+      "polytope_id",
+      "dilation"
+     ],
+     "role": "digital_twin",
+     "title": "Digital twin"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/geometry/context",
+      "POST": "/language-invariant/game/geometry/ingest"
+     },
+     "integrate": "/language-invariant/game/geometry/ingest",
+     "may_ingest": [
+      "polytope_id",
+      "dilation"
+     ],
+     "role": "regulator",
+     "title": "Regulator / replay"
+    }
+   ],
+   "study": "11",
+   "title": "Volume / Ehrhart lattice",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-11-Ehrhart-Volume-Results"
+  },
+  {
+   "dead_equation": "Pr = |alpha|^2 in R",
+   "domain": "chance",
+   "entropy_bare": "5/4",
+   "entropy_delta": "1/4",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "GUIDE_PUBLIC_FLOURISHING_ALL \u2014 chance is Q; no float amplitude tax on consensus",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/chance/context"
+   },
+   "new_law": "W_n = (3/4)^n in Q",
+   "no_float": true,
+   "proven_marker": "STUDY12_QPR_PROVEN",
+   "qfot_cost": "1/4",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/chance/context",
+      "POST": "/language-invariant/game/chance/ingest"
+     },
+     "integrate": "/language-invariant/game/chance/ingest",
+     "may_ingest": [
+      "rounds"
+     ],
+     "role": "quantum_info",
+     "title": "Quantum information"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/chance/context",
+      "POST": "/language-invariant/game/chance/ingest"
+     },
+     "integrate": "/language-invariant/game/chance/ingest",
+     "may_ingest": [
+      "rounds"
+     ],
+     "role": "compiler",
+     "title": "Compiler / runtime"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/chance/context",
+      "POST": "/language-invariant/game/chance/ingest"
+     },
+     "integrate": "/language-invariant/game/chance/ingest",
+     "may_ingest": [
+      "rounds"
+     ],
+     "role": "consensus",
+     "title": "Consensus cell"
+    }
+   ],
+   "study": "12",
+   "title": "Probability / parallel repetition",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-12-Quantum-Parallel-Repetition-Results"
+  },
+  {
+   "dead_equation": "spectral radius / gap in L(G)",
+   "domain": "algebra",
+   "entropy_bare": "6/5",
+   "entropy_delta": "1/5",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "GUIDE_PUBLIC_FLOURISHING_ALL \u2014 linking (q,r) is a table, not a spectral object",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/algebra/context"
+   },
+   "new_law": "L(w)=(q,r) in Z^2",
+   "no_float": true,
+   "proven_marker": "STUDY13_CONNES_RIGIDITY_PROVEN",
+   "qfot_cost": "1/5",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/algebra/context",
+      "POST": "/language-invariant/game/algebra/ingest"
+     },
+     "integrate": "/language-invariant/game/algebra/ingest",
+     "may_ingest": [
+      "word",
+      "presentation"
+     ],
+     "role": "phenomenologist",
+     "title": "Phenomenologist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/algebra/context",
+      "POST": "/language-invariant/game/algebra/ingest"
+     },
+     "integrate": "/language-invariant/game/algebra/ingest",
+     "may_ingest": [
+      "word",
+      "presentation"
+     ],
+     "role": "qft_theorist",
+     "title": "QFT theorist"
+    }
+   ],
+   "study": "13",
+   "title": "Rigidity / Eisenstein linking",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-13-Connes-Rigidity-Results"
+  },
+  {
+   "dead_equation": "G_mu_nu = 8 pi T / c^4 as object factory; Z = integral e^{-beta H}",
+   "domain": "physics",
+   "entropy_bare": "4/3",
+   "entropy_delta": "1/3",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "PUBLIC_VERNACULAR_FOR_ALL \u2014 the appointment is clock + track + table",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/physics/context"
+   },
+   "new_law": "appointment = (clock, track, integer table)",
+   "no_float": true,
+   "proven_marker": "PHYSICS_TABLE_IS_THE_COURT",
+   "qfot_cost": "1/3",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/physics/context",
+      "POST": "/language-invariant/game/physics/ingest"
+     },
+     "integrate": "/language-invariant/game/physics/ingest",
+     "may_ingest": [
+      "clock",
+      "track",
+      "table_counts"
+     ],
+     "role": "experimentalist",
+     "title": "Experimentalist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/physics/context",
+      "POST": "/language-invariant/game/physics/ingest"
+     },
+     "integrate": "/language-invariant/game/physics/ingest",
+     "may_ingest": [
+      "clock",
+      "track",
+      "table_counts"
+     ],
+     "role": "detector",
+     "title": "Detector ops"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/physics/context",
+      "POST": "/language-invariant/game/physics/ingest"
+     },
+     "integrate": "/language-invariant/game/physics/ingest",
+     "may_ingest": [
+      "clock",
+      "track"
+     ],
+     "role": "theorist",
+     "title": "Theorist"
+    }
+   ],
+   "study": "07+10",
+   "title": "Physics \u2014 table vs continuum object",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Impact-Study-Death-of-Continuous-Shear"
+  },
+  {
+   "dead_equation": "alpha_s(Q^2) running in R",
+   "domain": "qcd",
+   "entropy_bare": "4/3",
+   "entropy_delta": "1/3",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "PUBLIC_VERNACULAR_FOR_ALL \u2014 no isolated color row; freedom is small dilation",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qcd/context"
+   },
+   "new_law": "same h_P; UV = small t; IR = large t; no isolated color row",
+   "no_float": true,
+   "proven_marker": "QCD_FREEDOM_IS_DILATION",
+   "qfot_cost": "1/3",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qcd/context",
+      "POST": "/language-invariant/game/qcd/ingest"
+     },
+     "integrate": "/language-invariant/game/qcd/ingest",
+     "may_ingest": [
+      "q_bin",
+      "jet_counts",
+      "color_isolated"
+     ],
+     "role": "jet_analyst",
+     "title": "Jet analyst"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/qcd/context",
+      "POST": "/language-invariant/game/qcd/ingest"
+     },
+     "integrate": "/language-invariant/game/qcd/ingest",
+     "may_ingest": [
+      "q_bin",
+      "dilation_t"
+     ],
+     "role": "phenomenologist",
+     "title": "Phenomenologist"
+    }
+   ],
+   "study": "reading",
+   "title": "QCD \u2014 freedom is dilation",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/QCD-Asymptotic-Freedom-Shear"
+  },
+  {
+   "dead_equation": "C = C0 e^{-k t}; p-value; Cox e^{beta X}",
+   "domain": "health",
+   "entropy_bare": "3/2",
+   "entropy_delta": "1/2",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "GUIDE_PUBLIC_FLOURISHING_ALL \u2014 dose on a body is n/d; exponential PK is adversary",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/health/context"
+   },
+   "new_law": "C = n_mass / d_vol exact rational; WIN/MISS on assay counts",
+   "no_float": true,
+   "proven_marker": "HEALTH_DOSE_IS_RATIONAL",
+   "qfot_cost": "1/2",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/health/context",
+      "POST": "/language-invariant/game/health/ingest"
+     },
+     "integrate": "/language-invariant/game/health/ingest",
+     "may_ingest": [
+      "mass_milli",
+      "vol_milli",
+      "tau_s"
+     ],
+     "role": "clinician",
+     "title": "Clinician"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/health/context",
+      "POST": "/language-invariant/game/health/ingest"
+     },
+     "integrate": "/language-invariant/game/health/ingest",
+     "may_ingest": [
+      "mass_milli",
+      "vol_milli"
+     ],
+     "role": "pharmacist",
+     "title": "Pharmacist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/health/context",
+      "POST": "/language-invariant/game/health/ingest"
+     },
+     "integrate": "/language-invariant/game/health/ingest",
+     "may_ingest": [
+      "arm_counts",
+      "clock"
+     ],
+     "role": "trialist",
+     "title": "Trialist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/health/context",
+      "POST": "/language-invariant/game/health/ingest"
+     },
+     "integrate": "/language-invariant/game/health/ingest",
+     "may_ingest": [
+      "arm_counts",
+      "clock"
+     ],
+     "role": "regulator",
+     "title": "Regulator"
+    }
+   ],
+   "study": "impact",
+   "title": "Health \u2014 dose as mill-units",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Impact-Study-Death-of-Continuous-Shear"
+  },
+  {
+   "dead_equation": "Black-Scholes PDE; GBM + VaR Monte Carlo",
+   "domain": "finance",
+   "entropy_bare": "3/2",
+   "entropy_delta": "1/2",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "GUIDE_PUBLIC_FLOURISHING_ALL \u2014 tick PnL; Black-Scholes PDE is extraction entropy",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/finance/context"
+   },
+   "new_law": "tick in Z; PnL = lots * ticks; discount n/d per period",
+   "no_float": true,
+   "proven_marker": "FINANCE_TICK_IS_THE_COURT",
+   "qfot_cost": "1/2",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/finance/context",
+      "POST": "/language-invariant/game/finance/ingest"
+     },
+     "integrate": "/language-invariant/game/finance/ingest",
+     "may_ingest": [
+      "lots",
+      "ticks"
+     ],
+     "role": "trader",
+     "title": "Trader"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/finance/context",
+      "POST": "/language-invariant/game/finance/ingest"
+     },
+     "integrate": "/language-invariant/game/finance/ingest",
+     "may_ingest": [
+      "loss_ticks",
+      "threshold_ticks"
+     ],
+     "role": "risk",
+     "title": "Risk"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/finance/context",
+      "POST": "/language-invariant/game/finance/ingest"
+     },
+     "integrate": "/language-invariant/game/finance/ingest",
+     "may_ingest": [
+      "lots",
+      "ticks"
+     ],
+     "role": "clearing",
+     "title": "Clearing"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/finance/context",
+      "POST": "/language-invariant/game/finance/ingest"
+     },
+     "integrate": "/language-invariant/game/finance/ingest",
+     "may_ingest": [
+      "lots",
+      "ticks",
+      "loss_ticks"
+     ],
+     "role": "auditor",
+     "title": "Auditor"
+    }
+   ],
+   "study": "impact",
+   "title": "Finance \u2014 tick lattice",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Impact-Study-Death-of-Continuous-Shear"
+  },
+  {
+   "dead_equation": "IEEE-754 sums; float loss + backprop",
+   "domain": "cs",
+   "entropy_bare": "6/5",
+   "entropy_delta": "1/5",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "PUBLIC_VERNACULAR_FOR_ALL \u2014 seals agree across cells; IEEE-754 is adversary",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/cs/context"
+   },
+   "new_law": "a/b + c/d = (ad+bc)/bd; SHA256d lock",
+   "no_float": true,
+   "proven_marker": "CS_NO_FLOAT_SEAL",
+   "qfot_cost": "1/5",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/cs/context",
+      "POST": "/language-invariant/game/cs/ingest"
+     },
+     "integrate": "/language-invariant/game/cs/ingest",
+     "may_ingest": [
+      "num",
+      "den"
+     ],
+     "role": "compiler",
+     "title": "Compiler"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/cs/context",
+      "POST": "/language-invariant/game/cs/ingest"
+     },
+     "integrate": "/language-invariant/game/cs/ingest",
+     "may_ingest": [
+      "payload_sha256d"
+     ],
+     "role": "consensus",
+     "title": "Consensus"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/cs/context",
+      "POST": "/language-invariant/game/cs/ingest"
+     },
+     "integrate": "/language-invariant/game/cs/ingest",
+     "may_ingest": [
+      "label_int",
+      "score_num",
+      "score_den"
+     ],
+     "role": "ml_engineer",
+     "title": "ML engineer"
+    }
+   ],
+   "study": "12+constraint3",
+   "title": "Computer science \u2014 associative rationals",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Impact-Study-Death-of-Continuous-Shear"
+  },
+  {
+   "dead_equation": "Navier-Stokes + RANS closures; Re = UL/nu",
+   "domain": "fluids",
+   "entropy_bare": "4/3",
+   "entropy_delta": "1/3",
+   "entropy_resolved": "1/1",
+   "flourishing_root": "GUIDE_PUBLIC_FLOURISHING_ALL \u2014 sum Phi = 0; NS+RANS is not a certification court",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/fluids/context"
+   },
+   "new_law": "sum Phi = 0 exact; L(gamma)=(q,r); vol = Delta^d h(0)/d!",
+   "no_float": true,
+   "proven_marker": "FLUID_INTEGER_FLUX",
+   "qfot_cost": "1/3",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/fluids/context",
+      "POST": "/language-invariant/game/fluids/ingest"
+     },
+     "integrate": "/language-invariant/game/fluids/ingest",
+     "may_ingest": [
+      "phi_in",
+      "phi_out"
+     ],
+     "role": "designer",
+     "title": "Designer"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/fluids/context",
+      "POST": "/language-invariant/game/fluids/ingest"
+     },
+     "integrate": "/language-invariant/game/fluids/ingest",
+     "may_ingest": [
+      "phi_in",
+      "phi_out",
+      "residual_int"
+     ],
+     "role": "cfd_vendor",
+     "title": "CFD vendor"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/fluids/context",
+      "POST": "/language-invariant/game/fluids/ingest"
+     },
+     "integrate": "/language-invariant/game/fluids/ingest",
+     "may_ingest": [
+      "phi_in",
+      "phi_out"
+     ],
+     "role": "certifier",
+     "title": "Certifier"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/fluids/context",
+      "POST": "/language-invariant/game/fluids/ingest"
+     },
+     "integrate": "/language-invariant/game/fluids/ingest",
+     "may_ingest": [
+      "origin_s",
+      "arrival_min"
+     ],
+     "role": "operator",
+     "title": "Operator"
+    }
+   ],
+   "study": "04+11+13",
+   "title": "Fluids \u2014 integer conservation",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Impact-Study-Death-of-Continuous-Shear"
+  },
+  {
+   "dead_equation": "TEC dropped N%; storm magnitude is the same ruler",
+   "domain": "eclipse",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/eclipse/context"
+   },
+   "new_law": "cone gate 800000 ppm; coupling 3/10; confinement 50189 ppm; lag in [-300,+1200] s",
+   "no_float": true,
+   "proven_marker": "STUDY01_ECLIPSE_CONE_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/eclipse/context",
+      "POST": "/language-invariant/game/eclipse/ingest"
+     },
+     "integrate": "/language-invariant/game/eclipse/ingest",
+     "may_ingest": [
+      "obscuration_ppm",
+      "depletion_ppm",
+      "lag_s"
+     ],
+     "role": "ionosonde",
+     "title": "Ionosonde"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/eclipse/context",
+      "POST": "/language-invariant/game/eclipse/ingest"
+     },
+     "integrate": "/language-invariant/game/eclipse/ingest",
+     "may_ingest": [
+      "obscuration_ppm",
+      "depletion_ppm",
+      "confinement_ppm",
+      "lag_s"
+     ],
+     "role": "gnss",
+     "title": "GNSS / TEC"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/eclipse/context",
+      "POST": "/language-invariant/game/eclipse/ingest"
+     },
+     "integrate": "/language-invariant/game/eclipse/ingest",
+     "may_ingest": [
+      "obscuration_ppm",
+      "depletion_ppm"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "01",
+   "title": "Eclipse \u2014 TEC bite on the umbral cone",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Eclipse-2026-Overview"
+  },
+  {
+   "dead_equation": "Jy ring from csv_norm / RML image",
+   "domain": "eht",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/eht/context"
+   },
+   "new_law": "short>=1500000 uJy; long<=400000; ratio>=5000 ppt; closure>=200; closure-null>=20; arc>=400",
+   "no_float": true,
+   "proven_marker": "STUDY07_EHT_CSV_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/eht/context",
+      "POST": "/language-invariant/game/eht/ingest"
+     },
+     "integrate": "/language-invariant/game/eht/ingest",
+     "may_ingest": [
+      "short_median_ujy",
+      "long_median_ujy",
+      "ratio_ppt",
+      "closure_conc_ppt",
+      "null_conc_ppt",
+      "arc_order_ppt"
+     ],
+     "role": "experimentalist",
+     "title": "Experimentalist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/eht/context",
+      "POST": "/language-invariant/game/eht/ingest"
+     },
+     "integrate": "/language-invariant/game/eht/ingest",
+     "may_ingest": [
+      "short_median_ujy",
+      "long_median_ujy",
+      "ratio_ppt"
+     ],
+     "role": "detector",
+     "title": "Detector ops"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/eht/context",
+      "POST": "/language-invariant/game/eht/ingest"
+     },
+     "integrate": "/language-invariant/game/eht/ingest",
+     "may_ingest": [
+      "closure_conc_ppt",
+      "null_conc_ppt",
+      "arc_order_ppt"
+     ],
+     "role": "theorist",
+     "title": "Theorist"
+    }
+   ],
+   "study": "07",
+   "title": "EHT \u2014 frozen Stokes-I CSV law",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-07-SgrA-Milky-Way-Registry"
+  },
+  {
+   "dead_equation": "P/S spectral discriminant in R",
+   "domain": "seismic",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/seismic/context"
+   },
+   "new_law": "|travel_s - 53| <= 2 AND snr_ppt >= 20000",
+   "no_float": true,
+   "proven_marker": "STUDY06_EXPLOSION_LADDER_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/seismic/context",
+      "POST": "/language-invariant/game/seismic/ingest"
+     },
+     "integrate": "/language-invariant/game/seismic/ingest",
+     "may_ingest": [
+      "travel_s",
+      "snr_ppt"
+     ],
+     "role": "station",
+     "title": "Station / IC.MDJ"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/seismic/context",
+      "POST": "/language-invariant/game/seismic/ingest"
+     },
+     "integrate": "/language-invariant/game/seismic/ingest",
+     "may_ingest": [
+      "travel_s",
+      "snr_ppt",
+      "pn_pred_s"
+     ],
+     "role": "treaty",
+     "title": "Treaty replay"
+    }
+   ],
+   "study": "06",
+   "title": "Seismic \u2014 Pn ladder at IC.MDJ",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-06-Explosion-vs-Earthquake-Results"
+  },
+  {
+   "dead_equation": "generated disease nickname as the key",
+   "domain": "disease",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/disease/context"
+   },
+   "new_law": "key = ICD-10/11 + DOID; fixture presence; generated labels VOID",
+   "no_float": true,
+   "proven_marker": "STUDY16_DISEASE_ICD_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/disease/context",
+      "POST": "/language-invariant/game/disease/ingest"
+     },
+     "integrate": "/language-invariant/game/disease/ingest",
+     "may_ingest": [
+      "icd",
+      "doid"
+     ],
+     "role": "clinician",
+     "title": "Clinician"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/disease/context",
+      "POST": "/language-invariant/game/disease/ingest"
+     },
+     "integrate": "/language-invariant/game/disease/ingest",
+     "may_ingest": [
+      "icd",
+      "doid"
+     ],
+     "role": "registrar",
+     "title": "Registrar"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/disease/context",
+      "POST": "/language-invariant/game/disease/ingest"
+     },
+     "integrate": "/language-invariant/game/disease/ingest",
+     "may_ingest": [
+      "icd",
+      "doid"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "16",
+   "title": "Disease \u2014 ICD / DOID appointment",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-16-Disease-Type"
+  },
+  {
+   "dead_equation": "SMILES cookbook + float MW/logP as the verdict",
+   "domain": "chemistry",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/chemistry/context"
+   },
+   "new_law": "key = InChIKey + CID; hbd/hba/lipinski as ints; float MW/logP refused",
+   "no_float": true,
+   "proven_marker": "STUDY17_CHEMISTRY_INCHI_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/chemistry/context",
+      "POST": "/language-invariant/game/chemistry/ingest"
+     },
+     "integrate": "/language-invariant/game/chemistry/ingest",
+     "may_ingest": [
+      "inchikey",
+      "cid",
+      "hbd",
+      "hba",
+      "lipinski_violations"
+     ],
+     "role": "chemist",
+     "title": "Chemist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/chemistry/context",
+      "POST": "/language-invariant/game/chemistry/ingest"
+     },
+     "integrate": "/language-invariant/game/chemistry/ingest",
+     "may_ingest": [
+      "inchikey",
+      "cid"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "17",
+   "title": "Chemistry \u2014 InChIKey / CID appointment",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-17-Chemistry-InChIKey"
+  },
+  {
+   "dead_equation": "generated material nickname as the key",
+   "domain": "material",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/material/context"
+   },
+   "new_law": "key = COD / mp-##### / space-group 1-230 + Pearson; no minted ids",
+   "no_float": true,
+   "proven_marker": "STUDY18_MATERIAL_STD_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/material/context",
+      "POST": "/language-invariant/game/material/ingest"
+     },
+     "integrate": "/language-invariant/game/material/ingest",
+     "may_ingest": [
+      "cod",
+      "mp_id",
+      "space_group",
+      "pearson",
+      "num_atoms"
+     ],
+     "role": "crystallographer",
+     "title": "Crystallographer"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/material/context",
+      "POST": "/language-invariant/game/material/ingest"
+     },
+     "integrate": "/language-invariant/game/material/ingest",
+     "may_ingest": [
+      "cod",
+      "mp_id",
+      "space_group"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "18",
+   "title": "Material \u2014 COD / mp-id / space-group appointment",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-18-Material-STD"
+  },
+  {
+   "dead_equation": "generated protein nickname or occupancy/dock as the key",
+   "domain": "pdb",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/pdb/context"
+   },
+   "new_law": "key = 4-char PDB id; format + holdings membership; occupancy VOID",
+   "no_float": true,
+   "proven_marker": "STUDY14_PDB_HOLDINGS_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/pdb/context",
+      "POST": "/language-invariant/game/pdb/ingest"
+     },
+     "integrate": "/language-invariant/game/pdb/ingest",
+     "may_ingest": [
+      "pdb_id"
+     ],
+     "role": "crystallographer",
+     "title": "Crystallographer"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/pdb/context",
+      "POST": "/language-invariant/game/pdb/ingest"
+     },
+     "integrate": "/language-invariant/game/pdb/ingest",
+     "may_ingest": [
+      "pdb_id"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/pdb/context",
+      "POST": "/language-invariant/game/pdb/ingest"
+     },
+     "integrate": "/language-invariant/game/pdb/ingest",
+     "may_ingest": [
+      "pdb_id"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "14",
+   "title": "PDB holdings \u2014 4-character accession appointment",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-14-Protein-Lattice-Manifold"
+  },
+  {
+   "dead_equation": "CPLEX/Gurobi float simplex + 0.008333 as 1/120",
+   "domain": "gofirst",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/gofirst/context"
+   },
+   "new_law": "cited Meyer 2023 5\u00d7d60 tuple + exact Rational 1/120; no face scan",
+   "no_float": true,
+   "proven_marker": "STUDY19_GOFIRST_CITED_TUPLE_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/gofirst/context",
+      "POST": "/language-invariant/game/gofirst/ingest"
+     },
+     "integrate": "/language-invariant/game/gofirst/ingest",
+     "may_ingest": [
+      "die_a",
+      "die_b",
+      "die_c",
+      "die_d",
+      "die_e",
+      "cited_id",
+      "n_players",
+      "face_counts",
+      "perm_num",
+      "perm_den"
+     ],
+     "role": "combinatorist",
+     "title": "Combinatorist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/gofirst/context",
+      "POST": "/language-invariant/game/gofirst/ingest"
+     },
+     "integrate": "/language-invariant/game/gofirst/ingest",
+     "may_ingest": [
+      "die_a",
+      "die_b",
+      "die_c",
+      "die_d",
+      "die_e",
+      "cited_id",
+      "perm_num",
+      "perm_den"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "19",
+   "title": "Go First Dice \u2014 cited N=5 integer faces",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-19-Go-First-Dice"
+  },
+  {
+   "dead_equation": "occupancy / dock / kcal/mol / IC50 as the pair verdict",
+   "domain": "complex",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/complex/context"
+   },
+   "new_law": "WIN iff pdb holdings AND chemistry fixture or well-formed InChIKey+ints; two keys, not a pose",
+   "no_float": true,
+   "proven_marker": "COMPLEX_PAIR_KEYS_PROVEN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/complex/context",
+      "POST": "/language-invariant/game/complex/ingest"
+     },
+     "integrate": "/language-invariant/game/complex/ingest",
+     "may_ingest": [
+      "pdb_id",
+      "cid",
+      "inchikey",
+      "hbd",
+      "hba",
+      "lipinski_violations"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/complex/context",
+      "POST": "/language-invariant/game/complex/ingest"
+     },
+     "integrate": "/language-invariant/game/complex/ingest",
+     "may_ingest": [
+      "pdb_id",
+      "cid",
+      "inchikey"
+     ],
+     "role": "chemist",
+     "title": "Chemist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/complex/context",
+      "POST": "/language-invariant/game/complex/ingest"
+     },
+     "integrate": "/language-invariant/game/complex/ingest",
+     "may_ingest": [
+      "pdb_id",
+      "cid",
+      "inchikey"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "14+17",
+   "title": "Complex pair \u2014 pdb_id + cid|inchikey appointment",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Discoveries-By-User"
+  },
+  {
+   "dead_equation": "432.0 float pitch or unattributed mortal-oscillatory rate as a cure",
+   "domain": "rife",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/rife/context"
+   },
+   "new_law": "integer hz and/or nm + source+role; cited fixture optional; test claim not efficacy",
+   "no_float": true,
+   "proven_marker": "STUDY20_RIFE_INTEGER_FREQUENCY_CLAIM",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/rife/context",
+      "POST": "/language-invariant/game/rife/ingest"
+     },
+     "integrate": "/language-invariant/game/rife/ingest",
+     "may_ingest": [
+      "hz",
+      "nm",
+      "cited_id",
+      "cited_url"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/rife/context",
+      "POST": "/language-invariant/game/rife/ingest"
+     },
+     "integrate": "/language-invariant/game/rife/ingest",
+     "may_ingest": [
+      "hz",
+      "nm",
+      "cited_id"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "20",
+   "title": "Rife light/sound \u2014 integer Hz / nm test claim",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-20-Rife-Frequency"
+  },
+  {
+   "dead_equation": "d\u03c9/dt = -k \u03c9^a ; \u2202B/\u2202t = \u2207\u00d7(u\u00d7B) + \u03b7\u2207\u00b2B \u2014 continuous MHD / gyrochronology",
+   "domain": "dynamo",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/dynamo/context"
+   },
+   "new_law": "L(w)=(q,r)\u2208Z\u00b2 + spin n/d \u2208 Q, den>0; dipole\u2192multipole is a Jordan swap, not float decay",
+   "no_float": true,
+   "proven_marker": "STUDY21_DYNAMO_INTEGER_STEP",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/dynamo/context",
+      "POST": "/language-invariant/game/dynamo/ingest"
+     },
+     "integrate": "/language-invariant/game/dynamo/ingest",
+     "may_ingest": [
+      "q",
+      "r",
+      "n",
+      "d",
+      "cited_id",
+      "cited_url"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/dynamo/context",
+      "POST": "/language-invariant/game/dynamo/ingest"
+     },
+     "integrate": "/language-invariant/game/dynamo/ingest",
+     "may_ingest": [
+      "q",
+      "r",
+      "n",
+      "d",
+      "cited_id"
+     ],
+     "role": "theorist",
+     "title": "Theorist"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/dynamo/context",
+      "POST": "/language-invariant/game/dynamo/ingest"
+     },
+     "integrate": "/language-invariant/game/dynamo/ingest",
+     "may_ingest": [
+      "q",
+      "r",
+      "n",
+      "d",
+      "cited_id"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "21",
+   "title": "Stellar dynamo \u2014 integer (q,r) + rational n/d step",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-21-Stellar-Dynamo-Shear"
+  },
+  {
+   "dead_equation": "VQE / continuous e^{-iHt} ground-state float",
+   "domain": "qma_2local",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qma_2local/context"
+   },
+   "new_law": "2-qubit ZZ projectors as exact rational exclusions; energy num/den",
+   "no_float": true,
+   "proven_marker": "AFFINE_QMA_2LOCAL",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_2local/context",
+      "POST": "/language-invariant/game/qma_2local/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_2local/ingest",
+     "may_ingest": [
+      "constraints",
+      "config",
+      "jordanBondExclusions"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_2local/context",
+      "POST": "/language-invariant/game/qma_2local/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_2local/ingest",
+     "may_ingest": [
+      "constraints",
+      "config"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "22",
+   "title": "QMA \u2014 2-local Hamiltonian as Jordan exclusions",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-22-QMA-2-Local-Hamiltonian"
+  },
+  {
+   "dead_equation": "D-Wave analog anneal / QMC sign problem",
+   "domain": "qma_spinglass",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qma_spinglass/context"
+   },
+   "new_law": "discrete \u00b11 spins; exact integer energy; sealed triangle ground \u22121",
+   "no_float": true,
+   "proven_marker": "AFFINE_QMA_SPIN_GLASS",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_spinglass/context",
+      "POST": "/language-invariant/game/qma_spinglass/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_spinglass/ingest",
+     "may_ingest": [
+      "edges",
+      "spins"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_spinglass/context",
+      "POST": "/language-invariant/game/qma_spinglass/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_spinglass/ingest",
+     "may_ingest": [
+      "edges",
+      "spins"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "23",
+   "title": "QMA \u2014 3-spin frustrated Ising on the torus",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-23-QMA-Spin-Glass"
+  },
+  {
+   "dead_equation": "float SDP / continuous 2-RDM eigenvalues",
+   "domain": "qma_nrep",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qma_nrep/context"
+   },
+   "new_law": "trace = N(N-1)/2 exact; symmetric; a11\u22650 and det\u22650 as rationals",
+   "no_float": true,
+   "proven_marker": "AFFINE_QMA_NREP",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_nrep/context",
+      "POST": "/language-invariant/game/qma_nrep/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_nrep/ingest",
+     "may_ingest": [
+      "rho2",
+      "n"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_nrep/context",
+      "POST": "/language-invariant/game/qma_nrep/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_nrep/ingest",
+     "may_ingest": [
+      "rho2",
+      "n"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "24",
+   "title": "QMA \u2014 N-representability as rational 2-RDM",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-24-QMA-N-Representability"
+  },
+  {
+   "dead_equation": "float permanent / boson-sampling truncation",
+   "domain": "qma_permanent",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qma_permanent/context"
+   },
+   "new_law": "n\u22643 integer permanent; 3\u00d73 all-ones is 6; n>3 refused as instance bound",
+   "no_float": true,
+   "proven_marker": "AFFINE_QMA_PERMANENT",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_permanent/context",
+      "POST": "/language-invariant/game/qma_permanent/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_permanent/ingest",
+     "may_ingest": [
+      "matrix"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    },
+    {
+     "http": {
+      "GET": "/language-invariant/game/qma_permanent/context",
+      "POST": "/language-invariant/game/qma_permanent/ingest"
+     },
+     "integrate": "/language-invariant/game/qma_permanent/ingest",
+     "may_ingest": [
+      "matrix"
+     ],
+     "role": "steward",
+     "title": "Steward / replay"
+    }
+   ],
+   "study": "25",
+   "title": "#P \u2014 exact matrix permanent",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-25-Exact-Permanent"
+  },
+  {
+   "dead_equation": "quantum period search / vmNotConnected catalog body",
+   "domain": "qc_shor",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_shor/context"
+   },
+   "new_law": "presented (N, halfPow, factor, cofactor) integer witness",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_SHOR_WITNESS",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_shor/context",
+      "POST": "/language-invariant/game/qc_shor/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_shor/ingest",
+     "may_ingest": [
+      "N",
+      "halfPow",
+      "factor",
+      "cofactor"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-001",
+   "title": "QC-001 Shor witness",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "period search / discrete log \u2014 neither is used or needed",
+   "domain": "qc_shor_twin",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_shor_twin/context"
+   },
+   "new_law": "post one half: a -> gcd(a-1,N),gcd(a+1,N) | factors -> a by CRT",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_SHOR_TWIN",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_shor_twin/context",
+      "POST": "/language-invariant/game/qc_shor_twin/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_shor_twin/ingest",
+     "may_ingest": [
+      "N",
+      "halfPow",
+      "factor",
+      "cofactor"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-001b",
+   "title": "QC-001b Shor twin projection",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "backfilling the unpresented face with x(Q) and calling it a bond",
+   "domain": "qc_affine_key",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_affine_key/context"
+   },
+   "new_law": "post one face: A -> A*G is total | Q -> A is the discrete log, NOT_KNOWN",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_AFFINE_KEY",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_affine_key/context",
+      "POST": "/language-invariant/game/qc_affine_key/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_affine_key/ingest",
+     "may_ingest": [
+      "A",
+      "k",
+      "q_hex",
+      "Q"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-021b",
+   "title": "Affine key projection",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "brute order-finding scan",
+   "domain": "qc_period",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_period/context"
+   },
+   "new_law": "a^r \u2261 1 (mod N); optional proper_divisors",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_PERIOD",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_period/context",
+      "POST": "/language-invariant/game/qc_period/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_period/ingest",
+     "may_ingest": [
+      "a",
+      "N",
+      "r",
+      "proper_divisors"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-001",
+   "title": "Presented period",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "unstructured search loop",
+   "domain": "qc_grover",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_grover/context"
+   },
+   "new_law": "presented 0/1 oracle; unique marked index",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_GROVER",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_grover/context",
+      "POST": "/language-invariant/game/qc_grover/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_grover/ingest",
+     "may_ingest": [
+      "oracle",
+      "marked"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-002",
+   "title": "QC-002 Grover oracle",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "complex float DFT",
+   "domain": "qc_qft",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_qft/context"
+   },
+   "new_law": "phase[j]=(j*k)/n exact rationals",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_QFT",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_qft/context",
+      "POST": "/language-invariant/game/qc_qft/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_qft/ingest",
+     "may_ingest": [
+      "n",
+      "k",
+      "phases"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-003",
+   "title": "QC-003 QFT phases",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "float phase estimate",
+   "domain": "qc_qpe",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_qpe/context"
+   },
+   "new_law": "phase = k/2^m exact",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_QPE",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_qpe/context",
+      "POST": "/language-invariant/game/qc_qpe/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_qpe/ingest",
+     "may_ingest": [
+      "m",
+      "k",
+      "phase"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-004",
+   "title": "QC-004 QPE phase",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "float linear solve",
+   "domain": "qc_hhl",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_hhl/context"
+   },
+   "new_law": "n<=2 exact Ax=b",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_HHL",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_hhl/context",
+      "POST": "/language-invariant/game/qc_hhl/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_hhl/ingest",
+     "may_ingest": [
+      "matrix",
+      "b",
+      "x"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-005",
+   "title": "QC-005 HHL Ax=b",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "amplitude classification",
+   "domain": "qc_dj",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_dj/context"
+   },
+   "new_law": "constant iff bits equal; balanced iff half ones",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_DEUTSCH_JOZSA",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_dj/context",
+      "POST": "/language-invariant/game/qc_dj/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_dj/ingest",
+     "may_ingest": [
+      "table",
+      "class"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-006",
+   "title": "QC-006 Deutsch-Jozsa",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "hidden-string search",
+   "domain": "qc_bv",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_bv/context"
+   },
+   "new_law": "answers = s\u00b7q mod 2",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_BERNSTEIN_VAZIRANI",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_bv/context",
+      "POST": "/language-invariant/game/qc_bv/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_bv/ingest",
+     "may_ingest": [
+      "hidden",
+      "queries",
+      "answers"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-007",
+   "title": "QC-007 Bernstein-Vazirani",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "XOR-mask search",
+   "domain": "qc_simon",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_simon/context"
+   },
+   "new_law": "x\u2260y, x\u2295y=mask, f(x)=f(y)",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_SIMON",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_simon/context",
+      "POST": "/language-invariant/game/qc_simon/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_simon/ingest",
+     "may_ingest": [
+      "mask",
+      "x",
+      "y",
+      "fx",
+      "fy"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-008",
+   "title": "QC-008 Simon collision",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "iterate search",
+   "domain": "qc_ampamp",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_ampamp/context"
+   },
+   "new_law": "Grover oracle + presented iterate count",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_AMPAMP",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_ampamp/context",
+      "POST": "/language-invariant/game/qc_ampamp/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_ampamp/ingest",
+     "may_ingest": [
+      "oracle",
+      "marked",
+      "iterations"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-009",
+   "title": "QC-009 Amplitude amplification",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "float marked fraction",
+   "domain": "qc_ampest",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_ampest/context"
+   },
+   "new_law": "fraction = M/N exact",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_AMPEST",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_ampest/context",
+      "POST": "/language-invariant/game/qc_ampest/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_ampest/ingest",
+     "may_ingest": [
+      "N",
+      "M",
+      "fraction"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-010",
+   "title": "QC-010 Amplitude estimation",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "float kickback angle",
+   "domain": "qc_kickback",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_kickback/context"
+   },
+   "new_law": "phase = k/2^m",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_KICKBACK",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_kickback/context",
+      "POST": "/language-invariant/game/qc_kickback/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_kickback/ingest",
+     "may_ingest": [
+      "m",
+      "k",
+      "phase"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-011",
+   "title": "QC-011 Phase kickback",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "continuous quantum walk",
+   "domain": "qc_walk",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_walk/context"
+   },
+   "new_law": "even return / odd flip on C2",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_WALK",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_walk/context",
+      "POST": "/language-invariant/game/qc_walk/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_walk/ingest",
+     "may_ingest": [
+      "steps",
+      "start",
+      "end"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-012",
+   "title": "QC-012 Quantum walk C2",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "variational float descent",
+   "domain": "qc_vqe",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_vqe/context"
+   },
+   "new_law": "presented 2-local energy; no search",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_VQE",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_vqe/context",
+      "POST": "/language-invariant/game/qc_vqe/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_vqe/ingest",
+     "may_ingest": [
+      "constraints",
+      "config"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "22",
+   "title": "QC-013 VQE energy",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-22-QMA-2-Local-Hamiltonian"
+  },
+  {
+   "dead_equation": "QAOA pulse schedule",
+   "domain": "qc_qaoa",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_qaoa/context"
+   },
+   "new_law": "presented Ising energy; no anneal",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_QAOA",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_qaoa/context",
+      "POST": "/language-invariant/game/qc_qaoa/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_qaoa/ingest",
+     "may_ingest": [
+      "edges",
+      "spins"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "23",
+   "title": "QC-014 QAOA energy",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-23-QMA-Spin-Glass"
+  },
+  {
+   "dead_equation": "amplitude counting",
+   "domain": "qc_count",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_count/context"
+   },
+   "new_law": "count = ones in oracle",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_COUNT",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_count/context",
+      "POST": "/language-invariant/game/qc_count/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_count/ingest",
+     "may_ingest": [
+      "oracle",
+      "count"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-015",
+   "title": "QC-015 Quantum counting",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "statevector teleport",
+   "domain": "qc_teleport",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_teleport/context"
+   },
+   "new_law": "bob = alice XOR corrections",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_TELEPORT",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_teleport/context",
+      "POST": "/language-invariant/game/qc_teleport/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_teleport/ingest",
+     "may_ingest": [
+      "alice",
+      "corrections",
+      "bob"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-016",
+   "title": "QC-016 Teleport",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "Bell-pair encoding story",
+   "domain": "qc_superdense",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_superdense/context"
+   },
+   "new_law": "decoded bits equal sent bits",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_SUPERDENSE",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_superdense/context",
+      "POST": "/language-invariant/game/qc_superdense/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_superdense/ingest",
+     "may_ingest": [
+      "bits",
+      "decoded"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-017",
+   "title": "QC-017 Superdense",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "projector sampling",
+   "domain": "qc_bell",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_bell/context"
+   },
+   "new_law": "class bits equal presented pair",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_BELL",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_bell/context",
+      "POST": "/language-invariant/game/qc_bell/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_bell/ingest",
+     "may_ingest": [
+      "ab",
+      "class"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-018",
+   "title": "QC-018 Bell measurement",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "float spectral radius",
+   "domain": "qc_topo",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_topo/context"
+   },
+   "new_law": "sealed Eisenstein (q,r) for cited words",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_TOPO",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_topo/context",
+      "POST": "/language-invariant/game/qc_topo/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_topo/ingest",
+     "may_ingest": [
+      "word",
+      "q",
+      "r"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "13",
+   "title": "QC-019 Topological word",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Study-13-Connes-Rigidity-Shear"
+  },
+  {
+   "dead_equation": "ECDLP search / derive k from bare Q / invented private keys",
+   "domain": "qc_pair",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/qc_pair/context"
+   },
+   "new_law": "presented (k, q_hex); sealed textbook is k=1 \u2192 G; empty k refused",
+   "no_float": true,
+   "proven_marker": "AFFINE_QC_PRESENTED_PAIR",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/qc_pair/context",
+      "POST": "/language-invariant/game/qc_pair/ingest"
+     },
+     "integrate": "/language-invariant/game/qc_pair/ingest",
+     "may_ingest": [
+      "k",
+      "q_hex"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "QC-021",
+   "title": "QC-021 Presented (k, Q)",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  },
+  {
+   "dead_equation": "Bitcoin k / presented pair / ECDLP search / per-CSV tool",
+   "domain": "affine_key",
+   "http": {
+    "domain": "/language-invariant/games",
+    "roles": "/language-invariant/game/affine_key/context"
+   },
+   "new_law": "Q IS the Affine key; ExposeLaw kind affine_key strobes period, emits Jordan/vQbit, seals",
+   "no_float": true,
+   "proven_marker": "AFFINE_Q_EXPOSE",
+   "roles": [
+    {
+     "http": {
+      "GET": "/language-invariant/game/affine_key/context",
+      "POST": "/language-invariant/game/affine_key/ingest"
+     },
+     "integrate": "/language-invariant/game/affine_key/ingest",
+     "may_ingest": [
+      "object",
+      "q_hex"
+     ],
+     "role": "researcher",
+     "title": "Researcher"
+    }
+   ],
+   "study": "expose",
+   "title": "Affine key expose (Q-only)",
+   "wiki": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki/Conjecture-Alignment-UUM8D"
+  }
+ ],
+ "faces": {
+  "catalog": "/language-invariant/games",
+  "context": "/language-invariant/game/{domain}/context",
+  "debit": "/language-invariant/domain-debit",
+  "ingest": "/language-invariant/game/{domain}/ingest",
+  "onboard": "/language-invariant/economics-onboard",
+  "price": "/language-invariant/economics-config"
+ },
+ "flourishing_kind": "GUIDE_PUBLIC_FLOURISHING_ALL",
+ "no_float": true,
+ "pricing_axis": "entropy_delta_dh_structural",
+ "proven": "AFFINE_MATH_COURT",
+ "role_count": 93,
+ "schema": "affine.earth.lattice.domain_role.v1",
+ "status": "CALORIE",
+ "tool": "math_court"
+}

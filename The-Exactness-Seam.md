@@ -1,5 +1,7 @@
 # The exactness seam — Affine.Earth business justification
 
+> **Where this argument leads:** [the full-grade replacement](The-Replacement-Grade) — the over-scaling law, the four verticals, and the 49-row catalog of retired instruments, rendered from the live court's own declaration.
+
 
 ## 1. The thesis, in one paragraph
 
