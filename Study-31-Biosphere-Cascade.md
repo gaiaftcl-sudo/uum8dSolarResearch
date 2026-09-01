@@ -2,7 +2,7 @@
 
 **Page class: CHARTER.** Law frozen 2026-09-01, before the chain was multiplied. Every link carries an evidence grade defined in [the ontology](Ontology). Producing program: `reproduce/biosphere-cascade-chain.swift`.
 
-**Status: LAW FROZEN · FIRST RESULT SEALED 2026-09-01.**
+**Status: LAW FROZEN · CORPUS INGESTED · LIVE ON THE COURT — `STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN`, verified on all nine cells 2026-09-01.**
 
 ---
 
@@ -296,7 +296,7 @@ The model was presented to the live court at `https://affine.earth/language-inva
  "proven":"AFFINE_MATH_COURT","tool":"math_court"}
 ```
 
-**`REFUSED_UNKNOWN_DOMAIN`.** The court has 48 domains and not one of them is atmospheric — measured the same day, **0 of 49 court tools** mention ozone, reentry, stratosphere or wet-bulb. So no study on this wiki's planetary programme can currently seal, which is why Studies 28–31 carry no `PROVEN` marker while eleven other studies do.
+**`REFUSED_UNKNOWN_DOMAIN`.** The court had 48 domains and not one of them was atmospheric — measured the same day, **0 of 49 court tools** mention ozone, reentry, stratosphere or wet-bulb. So no study on this wiki's planetary programme can currently seal, which is why Studies 28–31 carry no `PROVEN` marker while eleven other studies do.
 
 ### The court answering, verbatim
 
@@ -326,7 +326,16 @@ The `biosphere` domain is wired into the court and the law runs inside it — no
 
 Three distinct terminals across the scenarios plus a refusal: the instrument discriminates. Where the projection exceeds the column, the court refuses to print an after-value at all — an impossible number does not go on the wire, even labelled.
 
-**That gap is now half-closed, and the page tracks which half.** The `biosphere` domain is wired into the court's own domain table — presenting it no longer returns `REFUSED_UNKNOWN_DOMAIN`; it returns the five roles (`mass_ledger`, `ozone_column`, `radiative`, `coupling`, `regulator`) and the `regulator` role answers the joint ledger with grades attached to every axis. That is verified against the built court binary, and the change is committed to the substrate's main branch. **The remaining half is the fleet roll:** until the nine cells serve the new binary, the live `affine.earth` court still refuses the domain, and this page remains a charter with a computed first result rather than a sealed verdict. When the roll lands, the marker is `STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN`.
+**That gap is now half-closed, and the page tracks which half.** The `biosphere` domain is wired into the court's own domain table — presenting it no longer returns `REFUSED_UNKNOWN_DOMAIN`; it returns the five roles (`mass_ledger`, `ozone_column`, `radiative`, `coupling`, `regulator`) and the `regulator` role answers the joint ledger with grades attached to every axis. **Both halves are now closed.** The fleet roll landed 2026-09-01: the membrane binary (sha256 `1f28fcee…`) was verified on all nine cells by the roll's own digest gate, and the domain was then called through the live apex — and **per cell, against all nine IPs individually**, because the apex round-robin can hide a one-of-nine straggler. All nine answer `JOINT_LEDGER`. The live court's own response carries the marker:
+
+```json
+{"verdict":"JOINT_LEDGER","scenario":"gen3_filed_100000",
+ "regional_o3_loss_per_mille":{"value":"156","terminal":"BELOW_HEALTHY_P05"},
+ "boulder_median_deci_du":{"healthy":"3100","after":"2617","healthy_p05":"2670"},
+ "proven_marker":"STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN"}
+```
+
+Anyone can make that call right now — `https://affine.earth/language-invariant/mcp`, tool `math_court`, domain `biosphere`, role `regulator`, scenario one of the four filed fleets. No account, no key.
 
 ### What refusing a model does not do
 

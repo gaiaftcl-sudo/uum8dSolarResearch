@@ -169,7 +169,7 @@ if have curl; then
     else
         ok "live court answers 200 ($size bytes)"
         dc=$(grep -o 'domain_count[^0-9]*[0-9]*' /tmp/court.json | grep -o '[0-9]*$' | head -1)
-        [ "$dc" = "48" ] && ok "court reports 48 domains" || bad "domain_count is '$dc', pages say 48"
+        [ "$dc" = "49" ] && ok "court reports 49 domains (biosphere joined the 48)" || bad "domain_count is '$dc', pages say 49"
         if grep -q 'no_float' /tmp/court.json; then
             grep -q 'no_float[^a-z]*false' /tmp/court.json \
               && bad "court reports a no_float:false domain" \

@@ -124,7 +124,7 @@ Pages are nodes; these are the relations that make it a graph rather than a list
 
 The continuous form of a law carries excess structural entropy, always greater than one. Adopting the exact form removes precisely Δ. What remains is unity: one answer, replayable by anyone, on any machine.
 
-Across the 48-domain mesh, **nine domains currently satisfy it.** The other thirty-nine are listed as work in progress, by name.
+Across the 49-domain mesh — the biosphere domain joined the 48 on 2026-09-01 — **nine domains currently satisfy it.** The rest are listed as work in progress, by name.
 
 **The atmosphere domain does not satisfy it.** Its forcing side resolves to 1/1 by counting. Its response side is stuck at 6/1, and counting cannot finish it — because the residual is not a harder sum, it is **a measurement nobody has taken**. That is the whole planetary argument, expressed in the ontology's own terms: not "the sky is falling," but *this domain cannot be resolved because the instrument does not exist*.
 
