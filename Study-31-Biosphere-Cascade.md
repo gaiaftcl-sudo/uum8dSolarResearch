@@ -14,6 +14,73 @@ The reason is that the atmospheric literature is organised link by link. One gro
 
 That gap is not a conspiracy. It is what happens when a question spans four disciplines and no funding line spans them. But the consequence is that the cascade is unexamined, and this court examines it.
 
+
+## The ingested baseline — a measured healthy sky
+
+**Status: CORPUS INGESTED 2026-09-01. LAW FROZEN. Control arm passed.**
+
+Every other study in this programme ingests a real corpus before it grades anything. This one now does too. Producing program: `reproduce/ozone-baseline-and-state-change.swift`. Corpus: `corpus/study-31/`, pinned by sha256, provenance in `PROVENANCE.md`.
+
+**Source:** NOAA Global Monitoring Laboratory Dobson spectrophotometer total-ozone archive, fetched anonymously — no account, no key. **56,575 daily observations, five stations, 1963–2026, spanning 89.9°S to 71.3°N.** Stations were chosen to span latitude, not to favour a result.
+
+**The zero-float property:** `Total_Ozone` is published in Dobson Units at exactly one decimal place, so it is ingested as an exact integer count of **deci-Dobson** (`276.0 DU` → `2760`). No floating-point value is constructed anywhere between the archive file and the verdict. **21,618 rows admitted, 0 refused.**
+
+### The healthy range, as five instruments actually recorded it
+
+Taken from the **pre-1980** record — before the CFC depletion the Montreal Protocol was written to stop — so the healthy sky is measured rather than assumed.
+
+| station | latitude | n | p05 | median | p95 | healthy range |
+|---|---|---|---|---|---|---|
+| Barrow, Alaska | 71.32 N | 941 | 268.0 | **337.0** | 454.0 | 268.0–454.0 DU |
+| Boulder, Colorado | 40.02 N | 3,051 | 267.0 | **310.0** | 386.0 | 267.0–386.0 DU |
+| Mauna Loa, Hawaii | 19.53 N | 3,839 | 237.0 | **266.0** | 296.0 | 237.0–296.0 DU |
+| Tutuila, Samoa | 14.25 S | 1,154 | 239.0 | **254.0** | 271.0 | 239.0–271.0 DU |
+| Amundsen-Scott, South Pole | 89.90 S | 1,961 | 247.0 | **304.0** | 383.0 | 247.0–383.0 DU |
+
+### The control arm — the instrument must be able to see a real loss
+
+Before projecting anything, the ingest has to demonstrate it can detect a depletion that actually happened. The Montreal-era loss is the known case.
+
+| station | healthy median | 2015+ median | change |
+|---|---|---|---|
+| Barrow, Alaska | 337.0 DU | 365.0 DU | **+8.3%** |
+| Boulder, Colorado | 310.0 DU | 303.0 DU | −2.2% |
+| Mauna Loa, Hawaii | 266.0 DU | 263.0 DU | −1.1% |
+| Tutuila, Samoa | 254.0 DU | 249.0 DU | −1.9% |
+| **Amundsen-Scott, South Pole** | 304.0 DU | 255.0 DU | **-16.1%** |
+
+**CONTROL ARM PASSES.** The ingest independently recovers the Antarctic ozone depletion at **-16.1%**, from raw instrument rows, with no model involved and nothing about ozone chemistry encoded in the parser. **And Barrow returns +8.3%** — the instrument does not simply report loss everywhere, which is what an always-red detector would do. It discriminates.
+
+### The state change, applied to the measured baseline
+
+Worked at Boulder, whose healthy median is **310.0 DU** and whose healthy 5th percentile — the low end of a normal sky — is **267.0 DU**.
+
+| filed scenario | global mean | regional ×12 | Boulder median becomes |
+|---|---|---|---|
+| authorised 19,408 | 0.3% | 3.6% | 298.9 DU |
+| **Gen3 filed 100,000** | 1.3% | 15.6% | **261.7 DU** |
+| orbital data centres | 10.8% | 129.6% | exceeds the column |
+
+**The middle row is the finding.** At the Gen3 filing, the regional loss takes Boulder's median from **310.0 DU to 261.7 DU — below the 5th percentile of its own healthy record.**
+
+> **The median day would become worse than the worst day of the healthy era.**
+
+That is a statement about a measured baseline, not a modelled one. The baseline is what the instrument recorded; only the loss percentage is projected, and it is labelled as such.
+
+The bottom row exceeds the column entirely — which disqualifies the linear projection before it reaches that scale rather than forecasting a collapse, exactly as the cascade chain found independently.
+
+### What is measured, what is projected, what is not known
+
+- **MEASURED** — the healthy ranges, the 2015+ comparison, the recovered Antarctic depletion.
+- **PROJECTED** — the column-loss percentages and the 12× regional factor.
+- **NOT KNOWN** — the biological response. **No transfer function is applied and none is claimed.** The chain stops where the measurement stops.
+
+### One defect found and fixed in this ingest, recorded because it was silent
+
+The archive uses CRLF line endings. In Swift, `"\r\n"` is a **single Character**, so `split(separator: "\n")` matches nothing and returns a 15,837-line file as **3 lines**. The first run admitted 3 rows out of 21,618.
+
+**The control arm caught it and refused to run the projection** — it reported `CONTROL ARM FAILS: the instrument is the bug`. That is what a control arm is for, and it is why one is frozen ahead of every result in this programme.
+
 ## The frozen law
 
 > **A cascade is a product. Each link is a factor. The product is computable only where every factor carries a number. Where a link is unmeasured, the product is unmeasured — and the finding of this court is WHICH LINK BREAKS IT.**
