@@ -92,3 +92,21 @@ Paper III static imaging used lightcurve-normalized visibilities. Graded under t
 The frozen integers on this page grade EHT Stokes-I visibilities and closures. They do **not** grade ALMA CMZ slim filaments. Fetch dated **2026-08-24**: Yang et al., A&A **694** A86 (2025-02-01) — ALMA, SiO 5–4 plus eight 1.3 mm lines, length **>0.5 pc**, width **<0.03 pc**, in the 20 and 50 km s⁻¹ clouds near Sgr A\*. Full cited reading, REPORTED vs VERIFIED, and the *not known* clause: [Study 07 charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md#cited-2026-08-24--alma-slim-filaments-in-the-cmz-not-a-court). Claim stays **DARK**. Do not POST this into `physics`.
 
 Back to [Study 07 charter](Study-07-SgrA-Milky-Way-Raw-Visibilities.md) · [Corpus](Study-07-SgrA-Milky-Way-Corpus.md) · [Registry](Study-07-SgrA-Milky-Way-Registry.md)
+
+---
+
+## Public flourishing, as an exact quantity
+
+This study's law is served as domain `physics` on the live catalogue, and that domain declares an
+entropy triple which satisfies an identity anyone can check:
+
+> **4/3 − 1/3 = 1/1**
+
+The continuous form of this law carries **4/3** of structural entropy — more than one. Adopting
+the exact form removes exactly **1/3**. What remains is **unity: one answer, replayable on any
+machine, by anyone.** That is what the public gets: the appointment is clock + track + table.
+
+Verified by [`reproduce/flourishing-entropy-ledger.swift`](reproduce/flourishing-entropy-ledger.swift),
+which carries a control arm proving the identity can fail. Nine of the forty-eight served domains
+declare such a triple; the other thirty-nine do not, and are not counted.
+

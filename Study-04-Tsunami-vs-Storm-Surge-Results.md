@@ -41,3 +41,21 @@ Charter: [Study 04](Study-04-Tsunami-vs-Storm-Surge.md) · Ledger: `corpus/study
 - Standing trigger on next M≥7.5 subsea event
 
 > Partial seal is a finding, not a rename of the full Form. Full Form freezes only when the OPEN list closes.
+
+---
+
+## Public flourishing, as an exact quantity
+
+This study's law is served as domain `fluids` on the live catalogue, and that domain declares an
+entropy triple which satisfies an identity anyone can check:
+
+> **4/3 − 1/3 = 1/1**
+
+The continuous form carries **4/3** of structural entropy — more than one. Adopting the exact form
+removes exactly **1/3**. What remains is **unity: one answer, replayable on any machine, by anyone.**
+That is what the public gets: sum Φ = 0 exact, and RANS is not a certification court.
+
+Verified by [`reproduce/flourishing-entropy-ledger.swift`](reproduce/flourishing-entropy-ledger.swift),
+which carries a control arm proving the identity can fail. Nine of the forty-eight served domains
+declare such a triple; the other thirty-nine do not, and are not counted.
+

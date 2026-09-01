@@ -64,3 +64,21 @@ Raz-style quantum parallel repetition, in the UUM-8D reading: **the bound is a d
 ---
 
 **Status: LAW FROZEN — 4/4 primary WIN · 4/4 adversary MISS. Re-run: `python3 corpus/study-12/study12_grade.py`.**
+
+---
+
+## Public flourishing, as an exact quantity
+
+This study's law is served as domain `chance` on the live catalogue, and that domain declares an
+entropy triple which satisfies an identity anyone can check:
+
+> **5/4 − 1/4 = 1/1**
+
+The continuous form of this law carries **5/4** of structural entropy — more than one. Adopting
+the exact form removes exactly **1/4**. What remains is **unity: one answer, replayable on any
+machine, by anyone.** That is what the public gets: chance is Q; no float amplitude tax on consensus.
+
+Verified by [`reproduce/flourishing-entropy-ledger.swift`](reproduce/flourishing-entropy-ledger.swift),
+which carries a control arm proving the identity can fail. Nine of the forty-eight served domains
+declare such a triple; the other thirty-nine do not, and are not counted.
+

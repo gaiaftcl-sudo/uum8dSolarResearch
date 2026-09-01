@@ -63,6 +63,8 @@ check_figure unimodular-control-arms       "4000"     ""
 check_figure reentry-alumina-ledger        "374.4"    "Study-29-Continuous-Model-Shear.md"
 check_figure guadalupe-wave-ledger         "180"      ""
 check_figure rate-of-rise-common-window    "885"      ""
+check_figure flourishing-entropy-ledger    "9 resolve exactly" ""
+check_figure flourishing-entropy-ledger    "1/1"      "Home.md"
 
 echo "=== 4. the public pages carry no private reference ==="
 # grep -c prints 0 AND exits 1 on no match, so `|| echo 0` yields "0\n0" and breaks the

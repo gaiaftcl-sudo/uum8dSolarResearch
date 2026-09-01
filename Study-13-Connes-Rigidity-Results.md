@@ -66,3 +66,21 @@ Connes rigidity, in the UUM-8D reading: **the group is the Jordan-bonded walk.**
 ---
 
 **Status: LAW FROZEN — 5/5 primary WIN · 5/5 adversary MISS. Re-run: `python3 corpus/study-13/study13_grade.py`.**
+
+---
+
+## Public flourishing, as an exact quantity
+
+This study's law is served as domain `algebra` on the live catalogue, and that domain declares an
+entropy triple which satisfies an identity anyone can check:
+
+> **6/5 − 1/5 = 1/1**
+
+The continuous form of this law carries **6/5** of structural entropy — more than one. Adopting
+the exact form removes exactly **1/5**. What remains is **unity: one answer, replayable on any
+machine, by anyone.** That is what the public gets: linking (q,r) is a table, not a spectral object.
+
+Verified by [`reproduce/flourishing-entropy-ledger.swift`](reproduce/flourishing-entropy-ledger.swift),
+which carries a control arm proving the identity can fail. Nine of the forty-eight served domains
+declare such a triple; the other thirty-nine do not, and are not counted.
+

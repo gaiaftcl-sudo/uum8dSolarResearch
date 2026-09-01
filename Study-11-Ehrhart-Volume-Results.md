@@ -93,3 +93,21 @@ Ehrhart's Volume Conjecture in the UUM-8D reading: **the volume of a lattice pol
 ---
 
 **Status: LAW FROZEN — 5/5 primary WIN · 5/5 adversary MISS. Re-run: `python3 corpus/study-11/study11_grade.py`.**
+
+---
+
+## Public flourishing, as an exact quantity
+
+This study's law is served as domain `geometry` on the live catalogue, and that domain declares an
+entropy triple which satisfies an identity anyone can check:
+
+> **6/5 − 1/5 = 1/1**
+
+The continuous form of this law carries **6/5** of structural entropy — more than one. Adopting
+the exact form removes exactly **1/5**. What remains is **unity: one answer, replayable on any
+machine, by anyone.** That is what the public gets: volume is a count a regulator can replay.
+
+Verified by [`reproduce/flourishing-entropy-ledger.swift`](reproduce/flourishing-entropy-ledger.swift),
+which carries a control arm proving the identity can fail. Nine of the forty-eight served domains
+declare such a triple; the other thirty-nine do not, and are not counted.
+
