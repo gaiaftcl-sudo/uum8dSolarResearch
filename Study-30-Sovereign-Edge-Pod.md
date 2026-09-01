@@ -31,7 +31,7 @@ It is a **hardware and protocol validation charter**: a different object, whose 
 
 Whether the board admits that class alongside the numbered shear studies is not this page's call. What this page owes the board is an exact statement of which pieces it carries, and that statement is the table above.
 
-**The sibling lane.** [Study 29 — the reentry-mass ledger court](Study-29-Affine-Earth-Sovereign-Substrate.md) carries the atmospheric half of the original combined charter: Ferreira against Maloney, the exact rational counting ledger, the units artifact. That is epistemological shear on a contested continuous model. This page is the constructive architecture. The two were split so that an empirical hardware specification does not dilute the mathematical precision of an atmospheric refutation.
+**The sibling lane.** [Study 29 — the reentry-mass ledger court](Study-29-Continuous-Model-Shear.md) carries the atmospheric half of the original combined charter: Ferreira against Maloney, the exact rational counting ledger, the units artifact. That is epistemological shear on a contested continuous model. This page is the constructive architecture. The two were split so that an empirical hardware specification does not dilute the mathematical precision of an atmospheric refutation.
 
 ## Section zero — the discrimination gate
 
@@ -654,13 +654,13 @@ xcrun swiftc -O -swift-version 6 <file>.swift -o /tmp/out && /tmp/out
 | `reproduce/panel-energy-margin.swift` | supply against demand at 500 mW nominal, all conditions | the deep-winter row is the arm against the overcast-day row |
 | `reproduce/gate-checks-panel-and-flux.swift` | the cold-day panel overshoot at 500 and 450 mW across both temperature coefficients; the x₇ ring-delta defect at N = 65,536 and its fix | **Yes** — it prints the naive 65,525 beside the true 11 |
 | the live catalogue at `https://affine.earth/language-invariant/games` | the mesh spine, pinned: 24,996 bytes, sha256 `b46bb35b2d978b94206f9888ed0a741ccc26f8407501aeb2268ae0a99490261c`. 48 domains, 88 role entries, 34 role names, 122 distinct `may_ingest` fields, `no_float` true on 48 of 48 | the pinned bytes are the arm against the live endpoint, which is rewritten as domains are published |
-| `reproduce/reentry-alumina-ledger.swift`, `reproduce/z8-vs-e8-lattice.swift` | belong to [Study 29](Study-29-Affine-Earth-Sovereign-Substrate.md); noted here only as cross-links | — |
+| `reproduce/reentry-alumina-ledger.swift`, `reproduce/z8-vs-e8-lattice.swift` | belong to [Study 29](Study-29-Continuous-Model-Shear.md); noted here only as cross-links | — |
 
 **The energy, panel and cost programs are budgets, not measurements, and print their inputs for that reason.** The unimodular and airtime programs are integer-only in every law path and carry no float operation, which is the condition for byte-identical output across hosts; cross-host byte-identity is not measured here, because the programs were run on one host.
 
 ## Cross-links
 
-- [Study 29 — the reentry-mass ledger court](Study-29-Affine-Earth-Sovereign-Substrate.md) — the sibling lane, split from this page on 2026-08-31: Ferreira against Maloney, the exact rational counting ledger, the units artifact. Pure epistemological shear on a contested continuous model.
+- [Study 29 — the reentry-mass ledger court](Study-29-Continuous-Model-Shear.md) — the sibling lane, split from this page on 2026-08-31: Ferreira against Maloney, the exact rational counting ledger, the units artifact. Pure epistemological shear on a contested continuous model.
 - [Study 28 — Wet-bulb threshold court](Study-28-Wet-Bulb-Threshold-Court.md) — the Section-zero precedent this charter instantiates for an artifact: per-criterion failing observations, control arms in both directions, losses published as losses. It also holds the exact-rational psychrometric coefficients this page's farming lane names as owed.
 - [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm.md) — why the HAL takes integers, stated as program doctrine.
 - [Study 26 — Master regulator bonds](Study-26-Master-Regulator-Bonds.md) — the precedent this page inherits: a gate frozen at charter stage before any byte is scored, plus a "Claim posture" section under 21 CFR 801.4 in which the page's own wording is treated as the boundary of what it claims.

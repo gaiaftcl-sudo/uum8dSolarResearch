@@ -1,5 +1,30 @@
 # ⚛️ Affine.Earth is quantum-alive
 
+> ## Start here
+>
+> **[The exactness seam](The-Exactness-Seam.md)** — the business justification. Three markets
+> settle their central quantities in floating point, and in each one the participants document
+> the consequences themselves: Ansys, Dassault and NVIDIA all publish standing disclaimers that
+> their results shift between versions, between parallel decompositions, between platforms. ISO
+> 23247-1, the international framework standard for manufacturing digital twins, contains zero
+> occurrences of *reproducibility*, *repeatability*, *precision* or *floating point*.
+>
+> **[Study 29 — The continuous-model shear](Study-29-Continuous-Model-Shear.md)** — five published
+> models consume one satellite-reentry ledger and disagree on the **sign** of the ozone response.
+> The ledger underneath is exact integer counting, and the field's headline "28× divergence"
+> turns out to be a ratio between two different quantities.
+>
+> **[Study 30 — The sovereign edge pod](Study-30-Sovereign-Edge-Pod.md)** — the constructive
+> half: an open sensing pod, a four-tier validation gate with frozen integers, and a candid
+> account of what is chartered rather than built.
+>
+> **Check any of it yourself.** `git clone` this repository and run
+> [`reproduce/validate.sh`](reproduce/validate.sh): it verifies every corpus against its pinned
+> digest, compiles and runs all ten programs, and confirms that **every published figure appears
+> in the output of the program that produces it**. No account, no key, no access to anything
+> private. Current: 23 passed, 0 failed.
+
+
 **Twenty-four quantum courts are live on the public wire — right now, free, for anyone.** Not a simulator. Not a waitlist. A referee: you present a quantum computation's answer, and the court grades it in **exact whole-number arithmetic** — the same verdict, byte-identical, on every machine on Earth, forever. Floating-point numbers are refused at the door, because a verdict you cannot replay is not a verdict.
 
 **Proven, not promised** (all measured 2026-08-27, receipts in the open repository): the live catalog serves **43 tools** on all nine cells of the mesh; the public proof run returned **34 WIN · 0 MISS of 34** — every quantum court answered its fixture and sealed its PROVEN marker from `https://affine.earth/language-invariant/mcp`. Anyone with one JSON-RPC POST reproduces this today.

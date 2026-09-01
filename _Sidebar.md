@@ -1,7 +1,13 @@
+## ★ Start here
+
+- [**The exactness seam** — business justification](The-Exactness-Seam)
+- [**Study 29** — Continuous-model shear](Study-29-Continuous-Model-Shear)
+- [**Study 30** — Sovereign edge pod](Study-30-Sovereign-Edge-Pod)
+- [Reproduce and validate](Home)
+
 ## ⚡ Paradigm
 
 - [**⚛️ QUANTUM-ALIVE — 24 courts LIVE**](Affine-Math-Court-Glama)
-- [**🔧 QMT manifold repair v5.0**](QMT-Court-Repair-2026-08-30)
 - [**The lattice holds**](The-Lattice-Holds)
 - [**Impact study — continuum dead**](Impact-Study-Death-of-Continuous-Shear)
 - [**Death of continuous shear**](Death-of-Continuous-Shear)
@@ -78,5 +84,5 @@
 - [Study 26 — Master regulator bonds](Study-26-Master-Regulator-Bonds)
 - [Study 27 — Exact nuclear scattering](Study-27-Exact-Nuclear-Scattering)
 - [Study 28 — Wet-bulb court (Act 1 SEALED)](Study-28-Wet-Bulb-Threshold-Court)
-- [Study 29 — Continuous-model shear (OPEN)](Study-29-Affine-Earth-Sovereign-Substrate)
+- [Study 29 — Continuous-model shear (OPEN)](Study-29-Continuous-Model-Shear)
 - [Study 30 — Sovereign edge pod (OPEN)](Study-30-Sovereign-Edge-Pod)

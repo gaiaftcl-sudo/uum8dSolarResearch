@@ -60,7 +60,7 @@ check_figure lora-time-on-air              "287.744"  "Study-30-Sovereign-Edge-P
 check_figure lora-time-on-air              "1004.544" "Study-30-Sovereign-Edge-Pod.md"
 check_figure z8-vs-e8-lattice              "240"      "Study-30-Sovereign-Edge-Pod.md"
 check_figure unimodular-control-arms       "4000"     ""
-check_figure reentry-alumina-ledger        "374.4"    "Study-29-Affine-Earth-Sovereign-Substrate.md"
+check_figure reentry-alumina-ledger        "374.4"    "Study-29-Continuous-Model-Shear.md"
 check_figure guadalupe-wave-ledger         "180"      ""
 check_figure rate-of-rise-common-window    "885"      ""
 
