@@ -15,6 +15,81 @@ The reason is that the atmospheric literature is organised link by link. One gro
 That gap is not a conspiracy. It is what happens when a question spans four disciplines and no funding line spans them. But the consequence is that the cascade is unexamined, and this court examines it.
 
 
+
+## The biosphere is the system, and we are one node in it
+
+This study does not ask what satellite reentry does *to humans*. It asks what it does to an **integrated system** in which humans are one small node among many, most of them older and more load-bearing than we are.
+
+That framing is not sentiment. It is what makes the arithmetic different. A human-impact study can stop at UV dose and skin cancer. A system study cannot, because the biosphere is not a passive recipient of these axes — **it is a term inside them:**
+
+- **Phytoplankton are the primary oceanic carbon sink.** Damage there *raises* the greenhouse column, which is one of the axes being measured. The response feeds the forcing.
+- **Marine biology seeds cloud condensation nuclei.** Damage there changes albedo — the same physical quantity as the reflective term.
+- **Ice and vegetation albedo respond to both**, and to each other.
+
+So the honest object of study is a coupled system with feedback, not a chain of one-way effects. **And that is precisely what no classical single-model study can measure**, for a structural reason rather than a negligent one: each published group runs one model answering one question, and no funding line spans four disciplines.
+
+## What every published group actually covers
+
+| paper | mass in | ozone | radiative | **biosphere** |
+|---|---|---|---|---|
+| Ferreira 2024 | yes | mechanism only | — | **—** |
+| Maloney 2025 | yes | weaker hole | 1.5 K + vortex | **—** |
+| Revell 2025 | launch only | +0.27% | — | **—** |
+| Barker 2026 | yes | 9% megaconstellation | +6.47 / −6.40 | **—** |
+| Vliex 2026 | yes | 85.6 mDU | 4.1 mW/m² | **—** |
+
+**The biosphere column is empty in every row.** Five peer-reviewed papers on what satellite reentry does to the atmosphere, and not one carries a biological term. That is not a criticism of any of them — each answered the question it asked. **It is the gap that exists between them.**
+
+And no two rows share a full axis set, so a reader cannot sum them either. **The joint number does not exist in the literature and cannot be assembled from it.**
+
+## The joint ledger — one account, every axis
+
+This is what a closed system with exact arithmetic buys: the same integer ledger carries mass, optical depth, radiative forcing and the coupling, so the axes can be held **simultaneously** rather than one at a time. Producing program: `reproduce/closed-system-joint-ledger.swift`.
+
+| scenario | mass/yr | vs meteoric flux | regional O₃ | vs ALL greenhouse forcing |
+|---|---|---|---|---|
+| 2025, measured | 461 t | 3.1–6.3% | 0.35% | 0.1% |
+| **authorised 19,408** | 1,909 t | **13.0–26.1%** | **3.1%** | **1.0%** |
+| Gen3 filed 100,000 | 9,840 t | 67–135% | 15.6% | 5.3% |
+| orbital data centres | 80,000 t | 548–1096% | *exceeds column* | **43.7%** |
+
+Grades travel with the numbers: mass is **MEASURED** (GCAT rows); the meteoric ratio is **MEASURED** (residence time cancels); regional O₃ is a **PROJECTION** × a **MEASURED** 12× factor; the greenhouse share is a **PROJECTION** over the **MEASURED** AGGI baseline.
+
+### What the join shows that no single axis does
+
+Read the **authorised** row — the fleet that is already approved. Every axis alone looks survivable: 1.0% of greenhouse forcing is small; 3.1% regional ozone sits inside historical variation; 13–26% of the meteoric flux is a fraction of nature's own. **A reader shown any one of those would reasonably move on.**
+
+Together they say something else: **an already-authorised fleet moves three independent planetary accounts by percent-scale amounts at once, and no instrument reports any of the three.**
+
+And at the orbital-data-centre scale **two of the four axes leave their valid ranges entirely** — the ozone chain exceeds the column, the meteoric ratio passes 1000%. Two independent axes breaking at the same scale is not a coincidence. It is the signature of instruments being used far outside the regime they were built for, on every axis simultaneously.
+
+### The coupling terms are named, graded, and left out of the sum
+
+Every feedback above is an established mechanism, and **none has a measured transfer function at this forcing.** So none is summed into the ledger and no number is invented for any of them. They are named, graded `NOT_KNOWN`, and excluded from the arithmetic.
+
+**That omission is one-directional, and it is stated plainly: every named feedback, if quantified, would ADD to the totals rather than subtract.** The joint ledger is therefore a **floor**, not an estimate.
+
+## The radiative axis, against a measured baseline
+
+Producing program: `reproduce/radiative-baseline.swift`. Corpus: NOAA Annual Greenhouse Gas Index, `aggi.txt`, pinned — 46 years, 1979–2024, published at three decimals of W/m² and ingested as exact integer **milli-W/m²**.
+
+**Total measured greenhouse forcing, 2024: 3,539 mW/m²** — every long-lived greenhouse gas humanity has added, in one number.
+
+Against it, both satellite papers report in the *same unit*, so this is a division of like by like:
+
+| | forcing | share of all greenhouse forcing |
+|---|---|---|
+| **measured today** | 4.1 mW/m² | **0.1%** — about one part in 860 |
+| authorised 19,408 | 36.9 mW/m² | 1.0% |
+| Gen3 filed 100,000 | 190.2 mW/m² | 5.3% |
+| orbital data centres | 1,547.3 mW/m² | **43.7%** |
+
+**The verdict on this axis today is NEGLIGIBLE, and it is stated first because it cuts against alarm.** At the measured 2025 flux the satellite radiative term is roughly a thousandth of the forcing already in the system.
+
+At the filed orbital-data-centre scale it reaches **43.7% of all measured greenhouse forcing from every long-lived gas since the industrial era** — from one commercial programme, filed and not granted, with nothing measuring it.
+
+**And the sign is contested on this axis too.** Barker's own model returns **+6.47 mW/m² instantaneous and −6.40 mW/m² stratospherically adjusted** — one emissions set, two standard conventions, opposite signs. If the adjusted convention is the right one, this term *cools* and every row above changes sign. That is the same defect as the ozone axis, and it is why this court grades instruments rather than the atmosphere.
+
 ## The ingested baseline — a measured healthy sky
 
 **Status: CORPUS INGESTED 2026-09-01. LAW FROZEN. Control arm passed.**

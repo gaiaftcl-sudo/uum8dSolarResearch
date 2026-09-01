@@ -24,3 +24,26 @@ comparison circular.
 **The zero-float property:** `Total_Ozone` is published in Dobson Units at exactly one decimal
 place. It is ingested as an exact integer count of **deci-Dobson** (`276.0 DU` -> `2760`). No
 floating-point value is constructed at any point between the archive file and the sealed verdict.
+
+---
+
+# Radiative baseline — greenhouse forcing and the reflective term
+
+Ingested 2026-09-01 after the ozone baseline, because a biosphere study that grades only the
+UV axis and ignores the radiative one is incomplete. Both were fetched anonymously.
+
+| file | source | what it is |
+|---|---|---|
+| `aggi.txt` | NOAA GML Annual Greenhouse Gas Index | **measured radiative forcing in W/m², per gas, 1979–2024** |
+| `co2_gl.txt` | NOAA GML | globally averaged monthly CO₂, ppm |
+| `ch4_gl.txt` | NOAA GML | globally averaged monthly CH₄, ppb |
+| `n2o_gl.txt` | NOAA GML | globally averaged monthly N₂O, ppb |
+
+**Zero float.** AGGI publishes forcing at three decimals of W/m², ingested as exact integer
+**milli-W/m²** (`3.539` → `3539`). CO₂ is published at two decimals of ppm, ingested as exact
+integer **centi-ppm**. No floating-point value is constructed.
+
+**Why AGGI is the right baseline:** it is the measured forcing the world already uses, in the same
+unit the satellite-forcing papers report (mW/m²). Putting a projected satellite term against it is
+a division of two measured-unit quantities rather than a comparison between differently-united
+numbers — a failure this programme has already made once and corrected.

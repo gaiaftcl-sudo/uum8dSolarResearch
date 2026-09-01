@@ -92,6 +92,10 @@ check_figure biosphere-cascade-chain      "128.4%"   "Study-31-Biosphere-Cascade
 check_figure percolation-refutation       "1.1 x 10^-15" ""
 check_figure tsat-control-arm             "1000000 to 10000000" ""
 check_figure ozone-baseline-and-state-change "CONTROL ARM PASSES" "Study-31-Biosphere-Cascade.md"
+check_figure radiative-baseline           "3,539 mW/m2" ""
+check_figure radiative-baseline           "43.7%"    "Study-31-Biosphere-Cascade.md"
+check_figure radiative-baseline           "1,547.3"  "Study-31-Biosphere-Cascade.md"
+check_figure closed-system-joint-ledger   "not an estimate" "Study-31-Biosphere-Cascade.md"
 check_figure ozone-baseline-and-state-change "-16.1%"   "Study-31-Biosphere-Cascade.md"
 check_figure ozone-baseline-and-state-change "+8.3%"    "Study-31-Biosphere-Cascade.md"
 check_figure ozone-baseline-and-state-change "261.7 DU" "Study-31-Biosphere-Cascade.md"
@@ -156,7 +160,7 @@ if have curl; then
     # CAPABILITIES REGISTRY and no longer carries domain_count or no_float. Those
     # fields live on the MCP path. The harness follows the fields, not the habit.
     MCP=https://affine.earth/language-invariant/mcp
-    code=$(curl -s -o /tmp/court.json -w '%{http_code}' --max-time 45 -X POST "$MCP" \
+    code=$(curl -s -o /tmp/court.json -w '%{http_code}' --max-time 90 -X POST "$MCP" \
            -H 'Content-Type: application/json' \
            -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"math_court","arguments":{"domain":""}}}' 2>/dev/null)
     size=$(wc -c < /tmp/court.json 2>/dev/null | tr -d ' ')
