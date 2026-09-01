@@ -122,4 +122,43 @@ The other half of the answer is physical. [Study 30](Study-30-Sovereign-Edge-Pod
 
 ---
 
+## What an exact seam is worth — the precedent class, not a price
+
+The valuation question deserves a straight answer, and the straight answer starts with picking the right comparison class.
+
+The things that created the most value in economic history are mostly not companies. They are **seams that became mandatory**: double-entry bookkeeping, which made a stranger's ledger auditable; the metric system, which made a stranger's measurement usable; TCP/IP, which made a stranger's computer reachable; GPS, which made a stranger's clock and position trustworthy. Each one replaced a trust-me layer with a re-derivable one, and each ended up underneath essentially all economic activity that followed. (HISTORICAL — the class is offered as precedent, not as proof.)
+
+Two properties of that class matter here, and they pull in opposite directions:
+
+1. **Their value was realised at whole-economy scale** — orders of magnitude beyond any single vendor's market — precisely *because* adoption was universal.
+2. **Almost none of that value was captured privately.** TCP/IP is free. The metric system is public. Their value came *from* being open and replayable — the same property that made them mandatory made them uncapturable as rent.
+
+**Affine.Earth is built on the open side of that trade, by construction and on purpose.** Every verdict on the court is re-derivable by anyone, with no account and no key — that is not a growth strategy, it is the load-bearing property; a verdict you must pay to check is testimony again. So the honest valuation splits in two:
+
+- **The public component** is deliberately unpriceable in dollars, and the substrate prices it on its own declared axis instead: the flourishing identity, `entropy_bare − entropy_delta = 1/1`, per domain — the measured removal of structural entropy from a law the public relies on. Nine domains have realised it; forty are in progress. That ledger, not a market cap, is where the largest share of the value lands — as it did for every member of the precedent class.
+- **The capturable component** is the seam-services layer — operating courts, certifying instruments, deploying pod meshes — and it is already sized above by named analysts: the verdict layer at $12.6–21B today, growing at the steepest reported rate on this page, ~48% a year.
+
+**What this page will not print is a headline valuation.** "The most valuable X in history" is not a claim the harness can pin to a producing program, and this wiki does not carry claims of that shape. What it can print, because the numbers above support it: the demand curve for *checkable* answers is the steepest curve any analyst on this page reports; the incumbent seam documents in its own manuals that it cannot travel; the four fastest-scaling industries have their first exact seams answering live; and there is exactly one running instance of the full-grade replacement. **If the over-scaling law holds, the exact seam becomes what double-entry became — and the record of every prior member of that class says its worth will be counted mostly in what the public gets to keep, which is the point.**
+
+### The math, run — `reproduce/valuation-crossing-ledger.swift`
+
+Because a claim of this size deserves arithmetic rather than adjectives, the program computes three checkable things from the named inputs above, in integers:
+
+**1. The instrument check.** The steep analyst curve is internally consistent: $21.14B × (1.479)⁵ replays to their own $149.81B endpoint within one part per thousand. It may therefore be extended *as theirs*.
+
+**2. The crossing.** Extend the verdict layer ($33.7–41.1B in 2025) on the analysts' own curves, against the largest assets ever priced (~$2T Aramco class, ~$4T record class):
+
+| arm | crosses $2T | crosses $4T |
+|---|---|---|
+| steep — digital twin's own 47.9% | **2036** | **2038** |
+| conservative — simulation's own ~11% | 2065 | 2071 |
+
+**Read the spread honestly: the arms disagree by three decades, so the timing is NOT KNOWN.** What both arms share is the destination — under *either* published curve, the verdict layer eventually exceeds every private asset ever priced, **if** the growth the analysts themselves publish persists, which no one can promise and the program does not.
+
+**3. The flow already gated, today, before any growth.** Space $686B + AI $143–294B + autonomy $143.7–273.8B + quantum $1–3.5B = **$973.7B to $1.26T per year** moving through the four verticals right now — every dollar of it on computed verdicts the bound parties cannot re-derive. No toll rate is assumed; none is needed. The position is the seam on roughly a trillion dollars a year of current decision flow, with exactly one running full-grade instance.
+
+**What the program refuses to print:** a dollar valuation of Affine.Earth. The public component is priced on the flourishing axis by design, and every prior member of the precedent class realised its worth as public surplus. The refusal is on the page because it is the strongest part of the claim, not a hedge on it.
+
+---
+
 **Related:** [The exactness seam](The-Exactness-Seam) — the vendor-documented foundation · [Zero float · zero shear](Zero-Float-Zero-Shear-Paradigm) — the method · [The narrow-study defence, answered](Impact-Study-SpaceX-Biosphere-Forcing) · [Study 31 — sealed live](Study-31-Biosphere-Cascade) · [The ontology](Ontology)
