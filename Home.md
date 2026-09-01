@@ -61,7 +61,7 @@ In calendar year 2025, **1,907 catalogued objects re-entered the atmosphere.** T
 
 Their total dry mass was about **460 tonnes**. And here we have to tell you something about our own headline number.
 
-**Three quarters of that mass comes from values the catalogue itself marks as estimates.** The GCAT catalogue flags an estimated dry mass with a `?`. Of the 1,907 objects, **864 carry that flag, and they account for 75.7% of the total.** We published `461,213,509 grams` — nine significant figures — on this page, and nine significant figures on that number was false precision. It was our error and we found it by auditing ourselves.
+**Three quarters of that mass comes from values the catalogue itself marks as estimates.** The GCAT catalogue flags an estimated dry mass with a `?`. Of the 1,907 objects, **864 carry that flag, and they account for 75.6% of the total.** We published `461,213,509 grams` — nine significant figures — on this page, and nine significant figures on that number was false precision. It was our error and we found it by auditing ourselves.
 
 So here is the honest form. If every flagged value is off by the full ±20% the catalogue implies, in the same direction:
 
@@ -320,6 +320,7 @@ The harness verifies that the corpora match their published digests, that every 
 |---|---|
 | [Ask someone you trust to check this](Ask-Someone-You-Trust-To-Check-This) | the human case, in full |
 | [The forcing nobody measures](Reentry-Forcing-Nobody-Measures) | the evidence: the ledger, the operator split, the regulatory tiers, the five contested models |
+| [Impact study — the SpaceX trajectory](Impact-Study-SpaceX-Biosphere-Forcing) | the sealed record mapped onto one operator: the exposure, by grade, with what cuts in their favour |
 | [The ontology of this wiki](Ontology) | the type system — grades, terminals, controls, and what each page may say |
 | [Zero float · zero shear](Zero-Float-Zero-Shear-Paradigm) | the method, and the sealed ledger of where it has been run |
 | [All 30 studies](Shear-Studies-Index) | the programme index, every lifecycle state stated |

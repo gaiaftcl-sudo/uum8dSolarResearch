@@ -3,6 +3,7 @@
 - [**Every season, fifty tonnes**](Home)
 - [**Ask someone you trust to check this**](Ask-Someone-You-Trust-To-Check-This)
 - [**The forcing nobody measures**](Reentry-Forcing-Nobody-Measures)
+- [**Impact study — the SpaceX trajectory**](Impact-Study-SpaceX-Biosphere-Forcing)
 - [**Study 29** — continuous-model shear](Study-29-Continuous-Model-Shear)
 - [**Study 31** — the biosphere joint ledger](Study-31-Biosphere-Cascade) — **LIVE on the court, 9/9 cells**
 - [**Study 30** — sovereign edge pod](Study-30-Sovereign-Edge-Pod)

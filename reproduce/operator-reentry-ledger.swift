@@ -7,9 +7,18 @@ import Foundation
 //
 // Run from corpus/study-29/ or pass the path as argv[1].
 
-let path = CommandLine.arguments.count > 1 ? CommandLine.arguments[1] : "satcat.tsv"
-guard let raw = try? String(contentsOfFile: path, encoding: .utf8) else {
-    print("cannot read \(path) — run from corpus/study-29/ or pass the path"); exit(2)
+// resolve from any of the working directories the harness or a reader might use
+let candidates: [String] = CommandLine.arguments.count > 1
+    ? [CommandLine.arguments[1]]
+    : ["satcat.tsv", "corpus/study-29/satcat.tsv",
+       "../corpus/study-29/satcat.tsv", "../../corpus/study-29/satcat.tsv"]
+var raw = ""
+var found = false
+for c in candidates {
+    if let r = try? String(contentsOfFile: c, encoding: .utf8) { raw = r; found = true; break }
+}
+guard found else {
+    print("cannot read satcat.tsv — tried \(candidates.joined(separator: ", "))"); exit(2)
 }
 struct Y { var spxG = 0, spxN = 0, othG = 0, othN = 0 }
 var years: [Int: Y] = [:]

@@ -42,6 +42,8 @@ So the honest object of study is a coupled system with feedback, not a chain of 
 
 And no two rows share a full axis set, so a reader cannot sum them either. **The joint number does not exist in the literature and cannot be assembled from it.**
 
+**And this table is why "the studies disagree" cannot function as reassurance.** Each row is an instrument pointed at one axis; the biosphere column is empty in all five; and their disagreements trace to their own arithmetic — a units artifact here, a forcing-convention sign flip there, a global mean that is twelve times kinder than the regional record. A study that never modelled the coupled system cannot find it safe. It can only fail to mention it, and silence quoted as safety is the failure mode this joint ledger exists to close. The full argument: [the narrow-study defence, answered](Impact-Study-SpaceX-Biosphere-Forcing).
+
 ## The joint ledger — one account, every axis
 
 This is what a closed system with exact arithmetic buys: the same integer ledger carries mass, optical depth, radiative forcing and the coupling, so the axes can be held **simultaneously** rather than one at a time. Producing program: `reproduce/closed-system-joint-ledger.swift`.
@@ -352,4 +354,4 @@ xcrun swiftc -O -swift-version 5 reproduce/biosphere-cascade-chain.swift -o /tmp
 bash reproduce/validate.sh
 ```
 
-**Related:** [the closed-system box model](Home) · [Study 29 — continuous model shear](Study-29-Continuous-Model-Shear) · [Study 28 — wet-bulb court](Study-28-Wet-Bulb-Threshold-Court) · [the ontology](Ontology)
+**Related:** [Impact study — the SpaceX trajectory](Impact-Study-SpaceX-Biosphere-Forcing) · [the closed-system box model](Home) · [Study 29 — continuous model shear](Study-29-Continuous-Model-Shear) · [Study 28 — wet-bulb court](Study-28-Wet-Bulb-Threshold-Court) · [the ontology](Ontology)

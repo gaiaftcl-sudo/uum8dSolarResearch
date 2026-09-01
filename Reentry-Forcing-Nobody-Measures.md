@@ -48,7 +48,7 @@ Computed from the GCAT catalogue, pinned at `corpus/study-29/` by sha256 `090ce0
 | 2024 | 334 | 112.7 t | 26.2% |
 | **2025** | **679** | **211.6 t** | **45.8%** |
 
-One operator went from nothing to **45.8% of all mass entering Earth's atmosphere** in six years.
+One operator went from nothing to **45.8% of all catalogued human-made mass reentering Earth's atmosphere** in six years. (Scope corrected 2026-09-01: an earlier version omitted “catalogued human-made” — against the natural meteoric flux, all human injection combined is 3.1–6.3%.)
 
 **Two honesty constraints on that table.** The 2026 row is a partial year: 124.2 t through day 242, which annualises to **187.3 t/yr — 0.89× of 2025, flat to slightly down**, not continuing the climb. And GCAT's `DryMass` column carries an estimate flag: **±20%**. The launch-mass column is unflagged and reliable; the dry-mass figures inherit that band.
 
@@ -174,6 +174,11 @@ That any life was or will be lost. That any disaster is imminent. That any ecolo
 **A presented configuration is verified; an unknown configuration is not searched.**
 
 *Every figure above is reproducible from this repository or quoted verbatim from a cited primary source. Corrections are recorded on the page rather than applied silently.*
+
+
+## The exclusion, graded
+
+The claim "the environmental review was formally skipped" is load-bearing on the landing page and the impact study, so it is grounded here. The FCC's environmental rules implement NEPA at 47 CFR §§1.1301–1.1319, and §1.1306 categorically excludes most licensing actions — including satellite authorisations — from environmental review unless an interested party forces the question (REPORTED — the rule text is public; not re-fetched this session). The U.S. Government Accountability Office examined exactly this in report **GAO-23-105005** (September 2022) and recommended the FCC **review whether its categorical exclusion remains appropriate for large constellations**; the review it recommended has not produced a rule change as of this page's date (REPORTED). So "formally skipped" means: skipped *by standing rule*, lawfully, with the government's own auditor on record questioning whether the rule still fits the scale. It does not mean anyone broke a law. That distinction is the difference between a ledger and an accusation, and this wiki is a ledger.
 
 ## The axes, joined — and answerable live
 

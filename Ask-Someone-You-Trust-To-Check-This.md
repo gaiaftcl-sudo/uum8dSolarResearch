@@ -148,7 +148,7 @@ So: the quantity is rising, the science is unresolved, and the rules that might 
 
 In 2019, one company accounted for none of the mass falling into Earth's atmosphere.
 
-In 2025, it accounted for **45.8% of all of it.** Not 45.8% of satellites — 45.8% of the total mass, natural and human-made, entering the atmosphere. Nearly half.
+In 2025, it accounted for **45.8% of all catalogued human-made reentering mass.** Nearly half — from zero, in six years. (An earlier version of this sentence said "natural and human-made combined," which was wrong by our own arithmetic: against the natural meteoric flux, *all* human injection together is currently 3 to 6 percent. The correction is dated 2026-09-01, and it is exactly the kind our validation harness exists to force.)
 
 Six years.
 
