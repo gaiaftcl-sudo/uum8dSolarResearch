@@ -62,13 +62,27 @@ So the honest statement of the situation is not "the science is unsettled, relax
 
 That is also why this programme computes in exact integers, on the complete account, with the unmeasured couplings named rather than averaged away. Not because exactness is elegant — because **when instruments cannot be reconciled, the loudest institution wins by default**, and the sky should not be governed by default.
 
+## The question before the comparison
+
+Every bullet in the next section compares this operator favourably *within* an activity. **Public flourishing as the first principle imposes an ordering the comparisons must not be allowed to skip:**
+
+> **1. Is the service needed? 2. Is it deliverable without the atmospheric flux? 3. Only for the remainder that survives both questions do the harm comparisons apply.**
+
+A cleaner propellant answers *which rocket*. It silently concedes *whether the rocket* — and a slightly safer version of an unnecessary activity is harm reduction, not engineering. The substitutability question is answerable per service, with grades:
+
+- **Orbital AI compute: fully substitutable.** Ground data centres perform this workload today; the orbital filing is an energy-economics bet, not a capability the ground lacks. For this service the propellant comparison is moot — **the flux itself is the choice.** (MEASURED against the alternative: the verification workload runs at 3.240 J/hour on the ground, and the [ownership math](The-Replacement-Grade) is published both ways.)
+- **Mass-market connectivity: substantially substitutable.** Fibre, fixed wireless and community-owned mesh serve the overwhelming majority of the subscriber base the constellations bill; for the *verdict layer* — gauges, warnings, court calls — the ground mesh delivers it with zero rent and zero reentry mass. (MEASURED for the verdict layer; the broadband scope refusal stands in capitals in the producing program.)
+- **The genuine remainder: maritime, polar, disaster-cut and truly unreachable users.** This is the fraction of the service that is *not* currently deliverable from the ground at comparable capability, and this page does not pretend otherwise. (STATED AS THE REMAINDER — unquantified here; quantifying it is exactly the kind of measurement nobody is required to produce.)
+
+**So the favours below are read at their true size: they are facts about the remainder, not licences for the whole.** The chlorine advantage is real *for launches that survive questions 1 and 2*. For the fully substitutable services — the million-satellite compute filing above all — the flourishing-first answer precedes chemistry: **the cleanest reentry is the one that does not happen, and for that service, it does not have to.**
+
 ## What cuts in SpaceX's favour, with the same weight
 
-- **Their engines burn kerosene, which emits no chlorine** — and the sharpest recent analysis puts the dominant depletion driver at solid-propellant chlorine. On the axis that paper says matters most, this operator scores *well*. (CITED, NOT MEASURED — Barker 2026, carried as published.)
+- **Their engines burn kerosene, which emits no chlorine** — and the sharpest recent analysis puts the dominant depletion driver at solid-propellant chlorine. On the axis that paper says matters most, this operator scores *well*. (CITED, NOT MEASURED — Barker 2026, carried as published. **Conditional per the ordering above:** a fact about launches that survive the necessity and substitutability questions, not a licence for the ones that do not.)
 - **One peer-reviewed model finds the opposite sign** (a weaker ozone hole); another finds a small ozone *increase*. (CITED, NOT MEASURED — Maloney 2025; Revell 2025, whose alumina is launch alumina.)
 - **The radiative term today is negligible: 0.1% of all greenhouse forcing — one part in 860.** It becomes large only at the filed, unbuilt scales. (PROJECTION over a MEASURED baseline — `reproduce/radiative-baseline.swift`.)
 - **The most recent year is not continuing the climb.** 2026 to date annualises to 187.3 t/yr against 2025's 211.6 t — **0.89×, flat to slightly down** — and the 2026 mass share reads 44.5% against 2025's 45.8%. (MEASURED — the same program as the headline figure, `reproduce/operator-reentry-ledger.swift`, which states this itself rather than glossing it.)
-- **On cost, they win**: our own matrix has the orbital path cheaper than our terrestrial alternative at like-for-like aggregation. (MEASURED — `reproduce/cost-matrix.swift`.)
+- **On cost at the moment of purchase, they win**: $1,594,900 against our $1,825,000 at like-for-like aggregation. (MEASURED — `reproduce/cost-matrix.swift`.) Completed over time on their own SEC-filed five-year hardware life, the ownership path overtakes at the first replacement cycle and wins every year after ($4,784,700 vs $3,193,750 through year fifteen at our worst maintenance band) — both readings published, because a t=0 price and a lifetime cost are different quantities and quoting only the favourable one, in either direction, is the units error this programme keeps a memory about. (MEASURED — `reproduce/cost-ownership-horizon.swift`.)
 - The catastrophic models we were offered against them **failed our own control arms** and are refused on their own arithmetic, on [the study page](Study-31-Biosphere-Cascade), in public. (MEASURED — both refutations are programs anyone can run.)
 
 A page that hid any of this would be advocacy. This one is a ledger.
