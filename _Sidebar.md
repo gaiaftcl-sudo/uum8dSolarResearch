@@ -83,6 +83,9 @@
 ## ⚛️ Run a court yourself
 
 - [**Explore the live courts**](Affine-Earth-Lattice-Endpoints)
+- [MCP user guide — all 49 tools](Affine-Earth-MCP-User-Guide)
+- [Court Client — generic wasm IDE for every court](Affine-Court-Client-Template)
+- [Coding Court — the verdict IS the artifact](Affine-Coding-Court-Architecture)
 - [Math Court on Glama](Affine-Math-Court-Glama)
 - [Math Court user guide](Math-Court-User-Guide)
 - [Example app — entire court](Math-Court-Example-App)

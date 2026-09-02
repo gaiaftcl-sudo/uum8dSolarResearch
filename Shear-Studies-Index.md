@@ -10,6 +10,8 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 *Eight panels, one recipe: each study pairs a forcing that carries its own clock — ephemeris second, launch manifest, X-ray peak, origin second, L1 minute, catalog entry, Earth-rotation VLBI track, Gaia sampling clock — and its own track with a public raw archive and a sealed look-alike adversary.*
 
 > [!NOTE]
+> **CHECKPOINT 2026-09-02 — every study with a court replayed through the [Court Client](Shear-Studies-Court-Client-Checkpoint.md): 50 LIVE · 2 LEARN · 12 NOT_ON_MCP of 64 rows, from one browser page to the live nine-cell apex.** The two LEARN rows are one forwarder defect (`health`, `cs`), named with its fix; the twelve NOT_ON_MCP rows are the studies with no court domain, listed rather than omitted.
+
 > One method, many skies. **Zero float · zero shear** is the program doctrine. `OPEN` means we do **not** have the data — **03, 05, 08, 26, 27, 29, 30** (28 sealed its Act 1 gate 2026-08-27). 01 / 06 / 07 carry PROVEN markers on the live courts table (`STUDY01_ECLIPSE_CONE_PROVEN` · `STUDY06_EXPLOSION_LADDER_PROVEN` · `STUDY07_EHT_CSV_PROVEN`); 04 is PARTIAL_CORPUS_SEAL. 10 is CHARTER WITH ARCHIVE, not OPEN. 02 / 09 are LIVE CLAIM — 02 is sealing receipts on Starlink 10-49; 11 / 12 / 13 are LAW FROZEN + LIVE CLAIM with PROVEN markers. **Studies 22–25 are live on Glama** — [user guide](Math-Court-User-Guide.md) · [example app](Math-Court-Example-App.md) · [Math Court](Affine-Math-Court-Glama.md).
 
 ## Program status
