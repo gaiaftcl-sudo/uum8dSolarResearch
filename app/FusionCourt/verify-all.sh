@@ -31,6 +31,7 @@ step "4. app self-checks"
 BIN=.build/release/FusionCourt
 "$BIN" --selftest-clock 2>/dev/null | grep -q "skipped=0" && ok "clock: 0 skipped ticks at 1 kHz" || bad "clock skipped a deadline"
 "$BIN" --selftest-lattice 2>/dev/null | grep -q "axis_bits=128" && ok "lattice: Int128" || bad "lattice"
+"$BIN" --grade ne14=1000000 ipAmp=15000000 aMm=2000 betaNMilli=1800 qMinMilli=3000 2>/dev/null | grep -q "verdict:        WIN" && ok "grade: ITER-safe -> WIN" || bad "grade produced wrong verdict"
 "$BIN" --selftest-coldstart >/dev/null 2>&1 && ok "cold start within budget" || bad "cold start over budget"
 if "$BIN" --selftest-crossover 2>/dev/null | grep -q "BIT-EXACT"; then ok "GPU parity: bit-exact"; else ok "GPU parity: skipped (no device)"; fi
 

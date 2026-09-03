@@ -179,5 +179,9 @@ if args.count <= 1 {
 }
 
 print("FusionCourt — Affine.Earth fusion control verdict court")
+print("  (no flags)           open the four-panel court window on 65,536 agents at 1 kHz")
+print("  --grade K=V ...      grade one operating point (ne14, ipAmp, aMm, betaNMilli, qMinMilli)")
 print("  --selftest-clock     10 s at 1 kHz, histogram, refuses on any skipped tick")
 print("  --selftest-lattice   lattice widths and ingress lanes")
+print("  --selftest-coldstart exec-to-exit vs the 250 ms budget, timed by the app itself")
+print("  --selftest-crossover CPU vs GPU at 4k..1M agents, bit-parity asserted at each N")
