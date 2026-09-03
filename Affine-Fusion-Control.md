@@ -2,6 +2,8 @@
 
 **Page class: STUDY (app realization of [Study 33](Study-33-Fusion-Control-Verdict-Court)).** Every figure below is produced by a program in `reproduce/` or by the app itself, dated where it is a timing. Grades per [the ontology](Ontology): **MEASURED**, **PROJECTION**, **REPORTED**, **NOT_KNOWN**. Read the limits section first — it says exactly what this is and is not.
 
+> **Public release:** [Affine Fusion Control — the plasma operating-point verdict a safety authority can re-derive by hand](Affine-Fusion-Control-Release) — the measured, claim-graded case, every figure re-derivable from source.
+
 ---
 
 ## What this is, in one honest paragraph
