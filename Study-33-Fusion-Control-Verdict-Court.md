@@ -254,6 +254,20 @@ $$\mathcal{I}_\rho = \frac{\Phi_q}{\det(\Lambda)}$$
 
 What is **proven** here is a property of the *arithmetic*: the invariant is π-free, exact, and observer-invariant. What is **not proven** — the honest boundary — is that $\mathcal{I}_\rho$ is the physically *correct* density bound: that it tracks real disruptions better than the empirical Greenwald limit, or predicts the regimes that exceed it. That is a **falsifiable HYPOTHESIS**, and this study is `PENDING` precisely because there is no device behind it. Like Greenwald's own empirical constant, the invariant's threshold is set by data; what the affine form changes is that the *arithmetic underneath it is exact and auditable*, not that the physics is settled. The regime where conductively-walled plasmas exceed $n_G$ is the test — against measurements this study does not yet hold.
 
+### The invariant in action — the meaning survives any magnitude
+
+The physics of the Greenwald limit was written and published in the continuous 2-D mathematics of a circle. Converting it to the affine invariant $\Phi_q/\det(\Lambda)$ does more than remove π — it changes *where the precision lives*. A floating-point number's precision is **relative to its magnitude** (24 significant bits in single precision, 53 in double), so as the numbers grow its absolute resolution decays. The integer invariant's precision is **absolute**: adjacent states differ by one, at any scale.
+
+![The invariant in action — float goes blind as the numbers grow; the affine invariant carries the meaning at every magnitude](images/study33-invariant-in-action.svg)
+
+Measured (`reproduce/fusion-affine-magnitude-invariance.swift`) — take two adjacent physical states, one inside the density bound and one over it, and ask each number system to tell them apart as the magnitude grows:
+
+- **float32 goes blind at $2^{24} = 16{,}777{,}216$** — below a single plasma current expressed in amperes. Past that, the two states are the *same float*: the safety verdict is not wrong, it is **undefined**. **MEASURED.**
+- **float64 goes blind at $2^{53} \approx 9\times10^{15}$** — a fine charge-flux count crosses it. **MEASURED.**
+- **The affine `Int128` invariant separates them at $10^{3}$ and at $10^{30}$ alike**, exact past $2^{126}\approx10^{38}$, which no physical plasma quantity reaches. **VERIFIED** — marker `AFFINE_INVARIANT_CARRIES_MEANING_AT_ANY_MAGNITUDE`, pinned in `reproduce/validate.sh`.
+
+That is the whole meaning of *no float upstream of a verdict*: the physical distinction — inside the bound versus over it — is carried no matter what magnitude the numbers are written at. A continuous instrument loses the meaning exactly when the plasma gets big enough to matter.
+
 ## The domain declaration — in the court's own shape
 
 ```

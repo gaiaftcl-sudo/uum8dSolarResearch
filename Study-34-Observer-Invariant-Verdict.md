@@ -76,7 +76,7 @@ git clone https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git
 cd uum8dSolarResearch
 
 # the same corpus, one sha256, identical on every machine:
-bash reproduce/validate.sh                    # 143 checks, digest-pinned
+bash reproduce/validate.sh                    # 147 checks, digest-pinned
 
 # the observer-dependence of the float verdict, machine by machine:
 #   (staged and run the way validate.sh runs every reproduce script)

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+ <defs>
+  <style>
+   .bg{fill:#0a0e14}
+   .kick{font-size:12px;letter-spacing:2.5px;fill:#5f7285}
+   .h{font-size:26px;fill:#e8eef6}.serif{font-family:Georgia,'Times New Roman',serif}
+   .sub{font-size:13px;fill:#8195aa}.tiny{font-size:11px;fill:#5f7285}.lbl{font-size:10.5px;fill:#8aa0b6;letter-spacing:.3px}
+   .win{fill:#3fb950}.miss{fill:#f85149}.blind{fill:#2b3440}.acc{fill:#58a6ff}.dim{fill:#5f7285}
+   .sweep{animation:sweep 7s linear infinite}
+   @keyframes sweep{0%{transform:translateX(0)}100%{transform:translateX(720px)}}
+   .rd{animation:rd 7s linear infinite}
+   @keyframes rd{
+     0%,24%{opacity:1}25%,100%{opacity:1}
+   }
+   /* the two live states pulse while distinct; the blind zone is static */
+   .live{animation:live 2.6s ease-in-out infinite}
+   @keyframes live{0%,100%{opacity:1}50%{opacity:.72}}
+   @media (prefers-reduced-motion:reduce){.sweep,.live{animation:none}}
+  </style>
+ </defs>
+ <rect class="bg" width="900" height="560"/>
+
+ <text x="42" y="44" class="kick">AFFINE.EARTH · STUDY 33 · THE INVARIANT IN ACTION</text>
+ <text x="40" y="84" class="h serif">The physics was written in continuous 2-D math.</text>
+ <text x="40" y="114" class="h serif">The affine invariant carries it — exactly, at any magnitude.</text>
+ <text x="42" y="146" class="sub">n_G = I_p / (pi a^2)   converted to   I_rho = Phi_q / det(Lambda).   A float's precision is relative to its size; the</text>
+ <text x="42" y="164" class="sub">integer invariant's is absolute — so the meaning survives no matter how large the numbers grow.</text>
+
+ <!-- magnitude axis: x = 90 (10^3) .. 810 (10^30), linear in the exponent -->
+ <g>
+  <line x1="90" y1="210" x2="810" y2="210" stroke="#1e2936"/>
+  <text x="90" y="200" text-anchor="middle" class="tiny">10³</text>
+  <text x="250" y="200" text-anchor="middle" class="tiny">10⁹</text>
+  <text x="410" y="200" text-anchor="middle" class="tiny">10¹⁵</text>
+  <text x="570" y="200" text-anchor="middle" class="tiny">10²¹</text>
+  <text x="810" y="200" text-anchor="middle" class="tiny">10³⁰</text>
+  <text x="42" y="200" class="tiny">magnitude of the numbers →</text>
+
+  <!-- the two adjacent physical states: one INSIDE the bound (green), one OVER it (red).
+       Green top / red bottom = the system can still tell them apart. Grey = blind. -->
+
+  <!-- float32: distinct to x=203 (1.7e7), then blind -->
+  <text x="42" y="248" class="lbl">float32</text>
+  <rect class="live" x="90" y="234" width="113" height="12" fill="#3fb950"/>
+  <rect class="live" x="90" y="246" width="113" height="12" fill="#f85149"/>
+  <rect x="203" y="234" width="607" height="24" fill="#2b3440"/>
+  <text x="500" y="251" text-anchor="middle" class="tiny" fill="#7a8896">BLIND — the two states are the same number</text>
+
+  <!-- float64: distinct to x=435 (9e15), then blind -->
+  <text x="42" y="300" class="lbl">float64</text>
+  <rect class="live" x="90" y="286" width="345" height="12" fill="#3fb950"/>
+  <rect class="live" x="90" y="298" width="345" height="12" fill="#f85149"/>
+  <rect x="435" y="286" width="375" height="24" fill="#2b3440"/>
+  <text x="622" y="303" text-anchor="middle" class="tiny" fill="#7a8896">BLIND</text>
+
+  <!-- affine vQbit Int128: distinct the whole way -->
+  <text x="42" y="352" class="lbl" fill="#58a6ff">affine</text>
+  <rect class="live" x="90" y="338" width="720" height="12" fill="#3fb950"/>
+  <rect class="live" x="90" y="350" width="720" height="12" fill="#f85149"/>
+  <text x="450" y="355" text-anchor="middle" class="tiny" fill="#0a0e14" font-weight="bold">inside the bound vs over it — carried at every magnitude</text>
+
+  <!-- blind-threshold markers -->
+  <line x1="203" y1="228" x2="203" y2="368" stroke="#f85149" stroke-width="1" stroke-dasharray="3 3" opacity=".7"/>
+  <text x="203" y="384" text-anchor="middle" class="tiny" fill="#f85149">1.7×10⁷</text>
+  <line x1="435" y1="228" x2="435" y2="368" stroke="#e3b341" stroke-width="1" stroke-dasharray="3 3" opacity=".7"/>
+  <text x="435" y="384" text-anchor="middle" class="tiny" fill="#e3b341">9×10¹⁵</text>
+
+  <!-- animated magnitude sweep -->
+  <g class="sweep"><line x1="90" y1="222" x2="90" y2="366" stroke="#eef4ff" stroke-width="1.5" opacity=".55"/>
+   <circle cx="90" cy="222" r="3" fill="#eef4ff"/></g>
+ </g>
+
+ <line x1="42" y1="418" x2="858" y2="418" stroke="#1e2936"/>
+ <text x="42" y="446" class="tiny" fill="#8195aa">float32 loses the meaning at 2²⁴ = 16,777,216 — below a single plasma current in amperes. float64 loses it at 2⁵³ ≈ 9×10¹⁵.</text>
+ <text x="42" y="466" class="tiny" fill="#8195aa">The affine vQbit invariant is exact past 2¹²⁶ ≈ 10³⁸ — no physical plasma quantity reaches it.</text>
+ <text x="42" y="498" class="serif" font-size="16" fill="#e8eef6">Below a current in amperes, float can no longer tell a safe plasma from a disrupting one.</text>
+ <text x="42" y="520" class="serif" font-size="16"><tspan class="acc">The affine invariant never loses it.</tspan></text>
+ <text x="42" y="544" class="tiny" fill="#47576a">Replay:  swift reproduce/fusion-affine-magnitude-invariance.swift  ·  AFFINE_INVARIANT_CARRIES_MEANING_AT_ANY_MAGNITUDE</text>
+</svg>
