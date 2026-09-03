@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Affine.Earth — Fusion Control Verdict Court</title>
+<style>
+:root{--bg:#0a0e14;--panel:#111823;--line:#1e2936;--ink:#c9d6e4;--dim:#5f7285;
+--nom:#3fb950;--mit:#e3b341;--ref:#f85149;--acc:#58a6ff;--grid:#16202b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+header{padding:14px 20px;border-bottom:1px solid var(--line);display:flex;
+gap:20px;align-items:baseline;flex-wrap:wrap}
+h1{font-size:15px;margin:0;font-weight:600;letter-spacing:.02em}
+.tag{color:var(--dim);font-size:11px}
+.wrap{padding:18px 20px;max-width:1200px}
+canvas{width:100%;height:300px;display:block;background:var(--panel);
+border:1px solid var(--line);border-radius:4px}
+.row{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;
+padding:11px 14px;min-width:150px}
+.k{color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.v{font-size:19px;margin-top:3px;font-variant-numeric:tabular-nums}
+.verdict{font-size:22px;font-weight:600;letter-spacing:.02em}
+.NOMINAL{color:var(--nom)}.MITIGATE{color:var(--mit)}
+.REFUSED_OUT_OF_ENVELOPE,.REFUSED_MALFORMED{color:var(--ref)}
+table{border-collapse:collapse;width:100%;margin-top:6px;font-size:12px}
+td,th{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--dim);font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.07em}
+.law{color:var(--acc)}
+button{background:var(--panel);color:var(--ink);border:1px solid var(--line);
+border-radius:3px;padding:6px 13px;cursor:pointer;font:inherit}
+button:hover{border-color:var(--acc)}
+.log{background:#060a0f;border:1px solid var(--line);border-radius:4px;padding:10px 13px;
+height:150px;overflow-y:auto;font-size:11.5px;line-height:1.7}
+.log div{white-space:pre}
+.note{color:var(--dim);font-size:11.5px;margin-top:14px;line-height:1.6;max-width:76ch}
+</style></head><body>
+<header>
+  <h1>AFFINE.EARTH — FUSION CONTROL VERDICT COURT</h1>
+  <span class="tag">Study 33 · exact-integer mitigation law · zero float</span>
+  <span class="tag" id="src">loading…</span>
+</header>
+<div class="wrap">
+  <canvas id="c" width="2200" height="600"></canvas>
+  <div class="row">
+    <div class="card"><div class="k">shot time</div><div class="v" id="t">—</div></div>
+    <div class="card"><div class="k">verdict</div><div class="v verdict" id="v">—</div></div>
+    <div class="card"><div class="k">|amplitude| counts</div><div class="v" id="a">—</div></div>
+    <div class="card"><div class="k">peak growth / window</div><div class="v" id="g">—</div></div>
+    <div class="card"><div class="k">warning lead</div><div class="v" id="w">—</div></div>
+    <div class="card"><div class="k"> </div><div class="v"><button id="b">replay</button></div></div>
+  </div>
+  <table id="lawtbl"><thead><tr><th>frozen law constant</th><th>value</th></tr></thead><tbody></tbody></table>
+  <div class="k" style="margin-top:16px">affine log — verdict transitions</div>
+  <div class="log" id="log"></div>
+  <div class="note">Swift owns the law; this page draws only what the law produced.
+  The verdict stream is emitted by <span class="law">reproduce/fusion-verdict-stream.swift</span>
+  into a digest-pinned corpus — the client re-implements nothing, so the two cannot drift.
+  Trace is synthetic 14-bit integer telemetry at the DIII-D magnetic-probe rate (2 MHz);
+  this programme operates no reactor.</div>
+</div>
+<script>
+const C=document.getElementById('c'),X=C.getContext('2d');
+let D=null,k=0,timer=null;
+const col={NOMINAL:'#3fb950',MITIGATE:'#e3b341',REFUSED_OUT_OF_ENVELOPE:'#f85149',REFUSED_MALFORMED:'#f85149'};
+fetch('verdict-stream.json').then(r=>r.json()).then(d=>{
+  D=d;
+  document.getElementById('src').textContent =
+    d.shot_samples.toLocaleString()+' samples · '+(d.sample_rate_hz/1e6)+' MHz · '+d.verdicts.length+' verdict windows';
+  const tb=document.querySelector('#lawtbl tbody');
+  const L=d.law, rows=[['ADC domain',L.adc_min+' … '+L.adc_max+'  (14-bit signed)'],
+    ['declared envelope','|count| ≤ '+L.envelope_abs],['growth window',L.growth_window+' samples'],
+    ['growth trigger',L.growth_trigger+' counts'],['persistence',L.persist+' consecutive windows'],
+    ['arithmetic','integer add · subtract · compare']];
+  tb.innerHTML=rows.map(r=>`<tr><td>${r[0]}</td><td class="law">${r[1]}</td></tr>`).join('');
+  const m=d.verdicts.find(v=>v.v==='MITIGATE'), rf=d.verdicts.find(v=>v.v.startsWith('REFUSED'));
+  if(m&&rf) document.getElementById('w').textContent=((rf.i-m.i)/2)+' µs';
+  run();
+});
+function run(){k=0;clearInterval(timer);timer=setInterval(step,16);}
+document.getElementById('b').onclick=run;
+function step(){
+  if(!D||k>=D.verdicts.length){clearInterval(timer);return;}
+  const v=D.verdicts[k];
+  document.getElementById('t').textContent=(v.i/2).toFixed(0)+' µs';
+  const ve=document.getElementById('v');ve.textContent=v.v;ve.className='v verdict '+v.v;
+  document.getElementById('a').textContent=v.amp.toLocaleString();
+  document.getElementById('g').textContent=v.peak.toLocaleString();
+  if(k>0&&D.verdicts[k-1].v!==v.v){
+    const lg=document.getElementById('log'),e=document.createElement('div');
+    e.innerHTML=`<span style="color:#5f7285">t=${String((v.i/2).toFixed(0)).padStart(5)} µs</span>  `+
+      `<span style="color:${col[v.v]}">${v.v.padEnd(24)}</span>`+
+      `<span style="color:#5f7285">|amp|=${String(v.amp).padStart(5)}  peak_growth=${String(v.peak).padStart(5)}</span>`;
+    lg.appendChild(e);lg.scrollTop=lg.scrollHeight;
+  }
+  draw(k);k++;
+}
+function draw(upto){
+  const W=C.width,H=C.height,T=D.trace_decimated_8x,mid=H/2,sc=(H/2-30)/8192;
+  X.fillStyle='#111823';X.fillRect(0,0,W,H);
+  X.strokeStyle='#16202b';X.lineWidth=1;
+  for(let i=0;i<=8;i++){const y=i*H/8;X.beginPath();X.moveTo(0,y);X.lineTo(W,y);X.stroke();}
+  const env=D.law.envelope_abs*sc;
+  X.strokeStyle='#f85149';X.setLineDash([7,7]);X.lineWidth=1.5;
+  [mid-env,mid+env].forEach(y=>{X.beginPath();X.moveTo(0,y);X.lineTo(W,y);X.stroke();});
+  X.setLineDash([]);
+  X.fillStyle='#f85149';X.font='16px ui-monospace';
+  X.fillText('declared envelope ±'+D.law.envelope_abs,10,mid-env-9);
+  const n=T.length,shown=Math.floor(n*upto/D.verdicts.length);
+  X.strokeStyle='#58a6ff';X.lineWidth=1.2;X.beginPath();
+  for(let i=0;i<shown;i++){const x=i*W/n,y=mid-T[i]*sc;i?X.lineTo(x,y):X.moveTo(x,y);}
+  X.stroke();
+  const cur=D.verdicts[upto];
+  if(cur){const x=shown*W/n;X.strokeStyle=col[cur.v];X.lineWidth=2.5;
+    X.beginPath();X.moveTo(x,0);X.lineTo(x,H);X.stroke();}
+}
+</script></body></html>

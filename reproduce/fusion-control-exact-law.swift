@@ -23,65 +23,41 @@
 func pad(_ s:String,_ w:Int)->String{var r=s;while r.count<w{r+=" "};return r}
 func rp(_ s:String,_ w:Int)->String{var r=s;while r.count<w{r=" "+r};return r}
 
-// ── THE FROZEN LAW ────────────────────────────────────────────────────────
-// 14-bit signed ADC: counts in [-8192, 8191]. All bounds are integer counts.
-let ADC_MIN = -8192, ADC_MAX = 8191
-let ENVELOPE_ABS   = 6000   // |count| above this is outside the declared envelope
-let GROWTH_WINDOW  = 8      // samples compared for mode growth
-let GROWTH_TRIGGER = 900    // integer growth in |amplitude| across the window
-let PERSIST        = 3      // consecutive windows required — one spike is not a mode
+// THE LAW IS NOT DEFINED HERE. It lives in
+// app/FusionCourt/Sources/FusionLaw/ and is compiled in alongside this file:
+//   xcrun swiftc -O -swift-version 5 app/FusionCourt/Sources/FusionLaw/*.swift <this> -o /tmp/x
+// A law written twice IS a hop. On 2026-09-02 this programme found it had
+// written this law THREE times, and the copies disagreed — one returned NOMINAL
+// where the others returned REFUSED_MALFORMED. Enforced by
+// app/FusionCourt/Tools/one-law-one-home.sh.
 
-enum Verdict: String { case NOMINAL, MITIGATE, REFUSED_OUT_OF_ENVELOPE, REFUSED_MALFORMED }
-
-// The whole law. Integer in, verdict out. No float, no interpolation, no model.
-func verdict(_ counts:[Int]) -> (Verdict, Int, Int) {
-    guard counts.count > GROWTH_WINDOW else { return (.REFUSED_MALFORMED, 0, 0) }
-    for c in counts where c < ADC_MIN || c > ADC_MAX { return (.REFUSED_MALFORMED, 0, 0) }
-    var run = 0, peakGrowth = 0, firstTrip = -1
-    for i in GROWTH_WINDOW..<counts.count {
-        let a = counts[i] < 0 ? -counts[i] : counts[i]
-        let b = counts[i-GROWTH_WINDOW] < 0 ? -counts[i-GROWTH_WINDOW] : counts[i-GROWTH_WINDOW]
-        // OUTSIDE THE DECLARED ENVELOPE THE LAW REFUSES. It does not extrapolate
-        // a verdict from data it was never frozen against -- the exact behaviour
-        // a statistical interpolator cannot offer, because it always returns a number.
-        if a > ENVELOPE_ABS { return (.REFUSED_OUT_OF_ENVELOPE, i, a) }
-        let g = a - b
-        if g > peakGrowth { peakGrowth = g }
-        if g >= GROWTH_TRIGGER {
-            run += 1
-            if firstTrip < 0 { firstTrip = i }
-            if run >= PERSIST { return (.MITIGATE, firstTrip, peakGrowth) }
-        } else { run = 0; firstTrip = -1 }
-    }
-    return (.NOMINAL, -1, peakGrowth)
-}
 
 // ── SYNTHETIC TRACES, integer counts only ────────────────────────────────
-func quiescent(_ n:Int)->[Int]{ (0..<n).map{ i in ((i &* 2246822519) >> 22) % 140 - 70 } }
+func quiescent(_ n:Int)->[Int32]{ (0..<n).map{ i in Int32(((i &* 2246822519) >> 22) % 140 - 70) } }
 // NOTE, kept because the control arms caught it: the first versions of these
 // generators produced values OUTSIDE the 14-bit ADC domain, so the malformed
 // guard fired before the arm under test and two arms failed. The law was right
 // and the TEST DATA was wrong — which is the arms doing exactly their job.
-// Every generator below now stays inside [ADC_MIN, ADC_MAX] by construction.
-func growingMode(_ n:Int)->[Int]{ (0..<n).map{ i in
+// Every generator below now stays inside [LawConstants.adcMin, LawConstants.adcMax] by construction.
+func growingMode(_ n:Int)->[Int32]{ (0..<n).map{ i in
     let env = i < 200 ? 60 : 60 + (i-200)*120            // integer linear growth, bounded
-    return (i % 2 == 0 ? env : -env) } }
-func singleSpike(_ n:Int)->[Int]{ var v=quiescent(n); if n>60 { v[60] = 3400 }; return v }
+    return Int32(i % 2 == 0 ? env : -env) } }
+func singleSpike(_ n:Int)->[Int32]{ var v=quiescent(n); if n>60 { v[60] = 3400 }; return v }
 // high, FLAT drive: outside the declared envelope with no sustained growth, so
 // it isolates the REFUSED terminal instead of tripping MITIGATE first.
-func highOffset(_ n:Int)->[Int]{ (0..<n).map{ _ in 6500 } }
+func highOffset(_ n:Int)->[Int32]{ (0..<n).map{ _ in Int32(6500) } }
 
 print("╔══ THE EXACT LAW, FROZEN ══╗")
-print("  ADC domain           [\(ADC_MIN), \(ADC_MAX)]  (14-bit signed, as DIII-D acquires)")
-print("  declared envelope    |count| <= \(ENVELOPE_ABS)")
-print("  growth window        \(GROWTH_WINDOW) samples")
-print("  growth trigger       \(GROWTH_TRIGGER) counts")
-print("  persistence          \(PERSIST) consecutive windows")
+print("  ADC domain           [\(LawConstants.adcMin), \(LawConstants.adcMax)]  (14-bit signed, as DIII-D acquires)")
+print("  declared envelope    |count| <= \(LawConstants.envelopeAbs)")
+print("  growth window        \(LawConstants.growthWindow) samples")
+print("  growth trigger       \(LawConstants.growthTrigger) counts")
+print("  persistence          \(LawConstants.persist) consecutive windows")
 print("  ARITHMETIC: integer add, subtract, compare. NOTHING ELSE.")
 print("")
 
 print("╔══ CONTROL ARMS — the law must be able to fail in every direction ══╗")
-let cases:[(String,[Int],Verdict)] = [
+let cases:[(String,[Int32],Verdict)] = [
   ("quiescent plasma",            quiescent(400),   .NOMINAL),
   ("growing tearing-mode shape",  growingMode(260), .MITIGATE),
   ("single spike, not a mode",    singleSpike(400), .NOMINAL),
@@ -91,7 +67,7 @@ let cases:[(String,[Int],Verdict)] = [
 var pass = 0
 print("  \(pad("arm",32))\(pad("expected",26))\(pad("got",26))result")
 for (n, trace, want) in cases {
-    let (got, idx, peak) = verdict(trace)
+    let r = FusionLaw.screen(trace); let got = r.verdict; let idx = r.atIndex; let peak = r.peakGrowth
     let ok = got == want
     if ok { pass += 1 }
     print("  \(pad(n,32))\(pad(want.rawValue,26))\(pad(got.rawValue,26))\(ok ? "PASS" : "FAIL")  idx=\(idx) peak=\(peak)")
@@ -112,8 +88,8 @@ print("  guess, and it is the entire content of this study.")
 print("")
 
 print("╔══ RE-DERIVABILITY, the frozen question answered ══╗")
-let (v1,i1,p1) = verdict(growingMode(260))
-let (v2,i2,p2) = verdict(growingMode(260))
+let s1 = FusionLaw.screen(growingMode(260)); let v1 = s1.verdict, i1 = s1.firstTrip, p1 = s1.peakGrowth
+let s2 = FusionLaw.screen(growingMode(260)); let v2 = s2.verdict, i2 = s2.firstTrip, p2 = s2.peakGrowth
 print("  same input, twice        \(v1.rawValue) idx=\(i1) peak=\(p1)  |  \(v2.rawValue) idx=\(i2) peak=\(p2)")
 print("  identical                \(v1==v2 && i1==i2 && p1==p2)")
 print("")

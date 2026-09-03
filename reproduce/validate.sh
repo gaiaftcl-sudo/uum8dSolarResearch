@@ -29,13 +29,22 @@ done
 echo "=== 2. every program compiles and runs ==="
 if have xcrun || have swiftc; then
     SC=$(have xcrun && echo "xcrun swiftc" || echo "swiftc")
+    # THE LAW IS COMPILED IN, NEVER COPIED. A script that consumes FusionLaw is
+    # built multi-file against its single home — which is why the law cannot fork
+    # again. Top-level code must be named main.swift, so the script is staged.
+    LAWSRC="$ROOT/app/FusionCourt/Sources/FusionLaw"
     for p in "$HERE"/*.swift; do
         n=$(basename "$p" .swift)
+        extra=""
+        if grep -q "FusionLaw\.\|LawConstants\." "$p" 2>/dev/null; then
+            extra="$(ls "$LAWSRC"/*.swift 2>/dev/null | tr '\n' ' ')"
+        fi
+        stage="$(mktemp -d)"; cp "$p" "$stage/main.swift"
         out="$(cd "$ROOT/corpus/flood-lead-time" 2>/dev/null || cd "$HERE"; \
-               $SC -O -swift-version 5 "$p" -o "/tmp/val_$n" 2>/dev/null && "/tmp/val_$n" 2>/dev/null)"
+               $SC -O -swift-version 5 $extra "$stage/main.swift" -o "/tmp/val_$n" 2>/dev/null && "/tmp/val_$n" 2>/dev/null)"
         if [ -n "$out" ]; then ok "$n runs"; printf '%s\n' "$out" > "/tmp/out_$n.txt"
         else bad "$n produced no output"; fi
-        rm -f "/tmp/val_$n"
+        rm -f "/tmp/val_$n"; rm -rf "$stage"
     done
 else
     echo "  SKIP — no Swift toolchain on this host; the programs are the evidence, install Swift to run them"
@@ -101,6 +110,11 @@ check_figure cost-ownership-horizon       "year 5"   "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "4,784,700" "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "2,160,000" "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "NOT BROADBAND" ""
+check_figure fusion-verdict-stream       "FIRST MITIGATE at sample 7016" ""
+check_figure fusion-verdict-figure       "warning lead 140 us" ""
+check_figure fusion-verdict-figure       "140 µs" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-benchmark    "HEADROOM_EXCEEDS_50X            TRUE" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-benchmark    "VERDICT_DETERMINISTIC_10K       TRUE" ""
 check_figure fusion-control-exact-law     "5 of 5 arms hold" "Study-33-Fusion-Control-Verdict-Court.md"
 check_figure fusion-control-exact-law     "REFUSED_OUT_OF_ENVELOPE" "Study-33-Fusion-Control-Verdict-Court.md"
 check_figure fusion-control-exact-law     "idx=208 peak=960" ""
