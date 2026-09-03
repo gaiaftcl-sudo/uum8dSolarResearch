@@ -1,4 +1,0 @@
-module FusionLaw {
-header "FusionLaw-Swift.h"
-export *
-}

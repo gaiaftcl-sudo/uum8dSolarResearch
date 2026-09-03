@@ -1,4 +1,0 @@
-module FusionOperatingPoint {
-header "FusionOperatingPoint-Swift.h"
-export *
-}
