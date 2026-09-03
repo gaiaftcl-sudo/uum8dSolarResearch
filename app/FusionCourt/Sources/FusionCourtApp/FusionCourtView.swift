@@ -24,6 +24,7 @@ public struct FusionCourtView: View {
                 VerdictWall(snapshot: snapshot)
                 CadencePanel(snapshot: snapshot, coldStartNanos: coldStart)
             }
+            OperatingPointPanel(machines: snapshot.machines)
             ChannelScope(window: snapshot.scope,
                          channel: snapshot.scopeChannel,
                          terminal: snapshot.hottest.first(where: { $0.channel == snapshot.scopeChannel })?.terminal ?? 0)

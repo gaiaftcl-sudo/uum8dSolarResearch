@@ -10,7 +10,7 @@ A fully-compiled **Swift 6.4 macOS app** that grades a fusion reactor's telemetr
 
 ## What you can hold
 
-**The app, running — 65,536 agents at 1 kHz, four panels, all four verdicts live:**
+**The app, running — 65,536 agents at 1 kHz, five panels, both courts live:**
 
 ![The Affine Fusion Control app running on 65,536 agents](images/fusion-court-app.png)
 
@@ -20,6 +20,11 @@ A fully-compiled **Swift 6.4 macOS app** that grades a fusion reactor's telemetr
   ![The verdict wall — 65,536 agents, four terminals](images/fusion-court-verdict-wall.png)
 
   In this shot: NOMINAL 54,272 · MITIGATE 8,192 · REFUSED-envelope 2,048 · REFUSED-malformed 1,024 (sums to 65,536). The regular bands are the demo's channel classes; a real feed produces whatever the sensors do.
+- **OPERATING-POINT COURT** — the *second* law, live on five real published machines, graded every tick through the same `FusionOperatingPointLaw` the reproduce scripts call. Each machine sits at its own fraction of its own Greenwald limit; a shared drift walks them across the 0.85 line, so a single frame shows genuine discrimination rather than a synchronized alarm:
+
+  ![The operating-point court on five real machines](images/fusion-court-operating-point.png)
+
+  In this frame: **ITER 72 % WIN · SPARC 80 % WIN · JET 86 % MISS · DIII-D 94 % MISS · W7-X N/A**. The stellarator carries no plasma current, so it never enters the density court at all — `NOT_APPLICABLE_NO_PLASMA_CURRENT`, permanently, which is the thesis in one tile (a trained surrogate divides by ~0 and extrapolates; this court refuses to invent an `n_G` that does not exist).
 - **CADENCE** — the panel where the app tells on itself: the latency histogram, `skippedTicks`, p50/p99. Red the instant a deadline is missed.
 - **CHANNEL SCOPE** — one channel's window against the ±6000 envelope and the growth trigger.
 

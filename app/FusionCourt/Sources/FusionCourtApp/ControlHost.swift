@@ -11,6 +11,7 @@ import Foundation
 import FusionLaw
 import FusionAffine
 import FusionClock
+import FusionOperatingPoint
 
 final class ControlHost: @unchecked Sendable {
     let agents: Int
@@ -77,6 +78,32 @@ final class ControlHost: @unchecked Sendable {
             // one representative channel for the scope panel: a growing-mode
             // channel (cls in 3..10) so the viewer sees a real precursor, read
             // from the arena's own ring in chronological order.
+            // the operating-point court, live on real published machine geometries.
+            // Each machine sits at its OWN operating fraction of its OWN Greenwald
+            // limit; a shared integer triangle drift moves them together across the
+            // 0.85 line. Because their bases differ they cross at DIFFERENT phases —
+            // so a single frame shows some WIN and some MISS, real discrimination,
+            // never a synchronized all-green / all-red. W7-X carries no current and
+            // never enters the density court at all: NOT_APPLICABLE, permanently.
+            //  (ip in A, minor radius a in mm, base = % of that machine's own n_GW)
+            let machines: [(String, Int64, Int64, Int64)] = [
+                ("ITER",   15_000_000, 2000, 74), ("SPARC", 8_700_000, 570, 82),
+                ("JET",     4_800_000, 1250, 88), ("DIII-D", 2_000_000, 670, 96),
+                ("W7-X",            0,  530,  0),
+            ]
+            // integer triangle drift in [-14, +14], period ~10 s at 1 kHz
+            let phase = Int(t / 360) % 56
+            let drift = (phase <= 28 ? phase : 56 - phase) - 14
+            var mverdicts: [MachineVerdict] = []
+            for (nm, ip, a, base) in machines {
+                let frac = Int(base) + drift
+                let ng: Int64 = ip == 0 ? 0 : Int64(Int128(ip) * 113 * 1_000_000 / (Int128(355) * Int128(a) * Int128(a)))
+                let ne = ip == 0 ? 5_000_000 : ng * Int64(frac) / 100
+                let v = FusionOperatingPointLaw.grade(OperatingEnvelope(
+                    ne14: ne, ipAmp: ip, minorRadiusMm: a, betaNMilli: 1800, qMinMilli: 3000))
+                mverdicts.append(MachineVerdict(name: nm, verdict: v.verdict,
+                                                fGwPct: ip == 0 ? 0 : frac))
+            }
             let scopeCh = 5
             let scopeWin = arena.windowSnapshot(agent: scopeCh)
             ring.publish(ControlSnapshot(
@@ -85,7 +112,7 @@ final class ControlHost: @unchecked Sendable {
                                  UInt32(c.refusedEnv), UInt32(c.refusedMal)),
                 histogram: latency, skippedTicks: 0, tickCostNanos: cost,
                 path: .cpuGolden, agentCount: agents, hottest: hottest,
-                scope: scopeWin, scopeChannel: UInt32(scopeCh)))
+                scope: scopeWin, scopeChannel: UInt32(scopeCh), machines: mverdicts))
         }
     }
 }
