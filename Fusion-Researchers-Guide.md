@@ -34,6 +34,19 @@ Builds clean, runs every test, every gate (each self-testing that it *can* fail)
 
 You should see the verdict wall discriminating across four terminals, a live cadence histogram, and a channel scope. Every number in the panels is read from a published snapshot — **the UI computes nothing it displays.** (Launched as a bare binary it runs but may not open a window; the study page shows how to wrap it in a `.app` bundle if your window server needs one.)
 
+## Grade your own machine
+
+The operating-point court is usable directly, no test harness needed:
+
+```bash
+# grade an operating point — all integers: ne14 = n_e/1e14 m^-3, ipAmp = A,
+# aMm = minor radius in mm, betaNMilli = beta_N x1000, qMinMilli = q_min x1000
+.build/release/FusionCourt --grade ne14=1000000 ipAmp=15000000 aMm=2000 betaNMilli=1800 qMinMilli=3000
+#   -> verdict: WIN   pi-independent: true   exact path: int128
+```
+
+Set `ipAmp=0` for a currentless stellarator and it returns `NOT_APPLICABLE_NO_PLASMA_CURRENT` — it will not invent a Greenwald limit for a machine that has none. Push the density up and it returns `MISS` with `binding branch: greenwald`. **Every verdict is an exact integer comparison you can re-derive by hand from the same inputs** — that is the whole claim, in a form you can hold.
+
 ## Re-derive each claim on the study page
 
 | claim | command | what it proves |

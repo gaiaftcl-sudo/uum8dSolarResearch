@@ -104,6 +104,8 @@ The honest question: does this law belong on a GPU? Measured on an M4 Max (40 GP
 | 65,536 | 1,966 µs | 4,349 µs | CPU |
 | 1,048,576 | 29,301 µs | 58,969 µs | CPU |
 
+*(One representative run. The **winner** and **bit-exact parity** are what hold on any machine and are pinned in the test suite; the exact microseconds vary run to run and are not a claim.)*
+
 **The GPU never wins up to a million agents, ~2× slower everywhere, and bit-for-bit correct throughout.** A kernel launch is a fixed ~1 ms; the law has no multiply for a GPU's float lanes to accelerate. *"We needed it for floating point, but we are not that now"* — measured, not assumed. The full account, including the two broken benchmarks that flattered the GPU before the instrument was fixed, is in the app's `CROSSOVER.md`.
 
 ## The limits — stated plainly, because a court states its own

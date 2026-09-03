@@ -7,6 +7,7 @@ import FusionAffine
 import FusionClock
 import FusionLattice
 import FusionGPU
+import FusionOperatingPoint
 
 let args = CommandLine.arguments
 if args.contains("--selftest-clock") {
@@ -41,6 +42,34 @@ if args.contains("--selftest-coldstart") {
     let budget = UInt64(ProcessInfo.processInfo.environment["FUSION_COLDSTART_BUDGET_NS"] ?? "") ?? 250_000_000
     print("coldstart_ns=\(best) budget_ns=\(budget) ms=\(best / 1_000_000)")
     exit(best > budget ? 1 : 0)
+}
+if args.contains("--grade") {
+    // Grade YOUR machine's operating point from the command line, exact and
+    // re-derivable. Units are integers: ne14=n_e/1e14 m^-3, ipAmp=amperes,
+    // aMm=minor radius mm, betaNMilli=beta_N x1000, qMinMilli=q_min x1000.
+    // Optional piNum/piDen declare pi for an exact (rather than pi-independent)
+    // verdict. Example:
+    //   FusionCourt --grade ne14=1000000 ipAmp=15000000 aMm=2000 betaNMilli=1800 qMinMilli=3000
+    func arg(_ k: String) -> Int64? {
+        for a in args where a.hasPrefix("\(k)=") { return Int64(a.dropFirst(k.count + 1)) }
+        return nil
+    }
+    guard let ne = arg("ne14"), let ip = arg("ipAmp"), let a = arg("aMm"),
+          let bn = arg("betaNMilli"), let qm = arg("qMinMilli") else {
+        print("usage: FusionCourt --grade ne14=N ipAmp=N aMm=N betaNMilli=N qMinMilli=N [piNum=N piDen=N]")
+        print("  all integers. ne14=n_e/1e14 m^-3, ipAmp=A, aMm=mm, ratios x1000.")
+        exit(2)
+    }
+    let e = OperatingEnvelope(ne14: ne, ipAmp: ip, minorRadiusMm: a, betaNMilli: bn,
+                              qMinMilli: qm, piNum: arg("piNum") ?? 0, piDen: arg("piDen") ?? 0)
+    let v = FusionOperatingPointLaw.grade(e)
+    print("verdict:        \(v.verdict)")
+    if let b = v.bindingBranch { print("binding branch: \(b.rawValue)") }
+    if !v.openBranches.isEmpty { print("open branches:  \(v.openBranches.map { $0.rawValue }.joined(separator: ", "))") }
+    print("pi-independent: \(v.piIndependent)")
+    print("exact path:     \(v.exactPath)")
+    print("(this verdict is an exact integer comparison; re-derive it by hand from the same inputs)")
+    exit(v.verdict == "REFUSED_NONPHYSICAL" ? 1 : 0)
 }
 if args.contains("--selftest-crossover") {
     // The measured crossover: at what N does the GPU round-trip beat 12 CPU
