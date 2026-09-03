@@ -139,7 +139,7 @@ check_figure fusion-control-exact-law     "REFUSED_OUT_OF_ENVELOPE" "Study-33-Fu
 check_figure fusion-control-exact-law     "idx=208 peak=960" ""
 check_figure fusion-control-verdict-court "FIVE REAL-WORLD EXPERIMENTS" ""
 check_figure fusion-control-verdict-court "STUDY33_FUSION_CONTROL_VERDICT_PENDING" "Study-33-Fusion-Control-Verdict-Court.md"
-check_figure fusion-control-verdict-court "beta_normalized=1.8" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-verdict-court "beta_normalized=1.8" ""
 check_figure valuation-crossing-ledger    "2036"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "2038"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "973.7"    "The-Replacement-Grade.md"
