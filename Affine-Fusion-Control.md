@@ -15,7 +15,11 @@ A fully-compiled **Swift 6.4 macOS app** that grades a fusion reactor's telemetr
 ![The Affine Fusion Control app running on 65,536 agents](images/fusion-court-app.png)
 
 - **THE LAW, FROZEN** — the six constants, *rendered from the law's own source, not transcribed into the view*. The panel's own footer says so. This is the app's claim to being a court rather than a dashboard.
-- **VERDICT WALL** — every agent as one cell, coloured by terminal. In this shot: NOMINAL 54,272 · MITIGATE 8,192 · REFUSED-envelope 2,048 · REFUSED-malformed 1,024 (sums to 65,536). The instrument is visibly **discriminating** — four distinct verdicts on screen at once, not one alarm.
+- **VERDICT WALL** — every agent as one cell, coloured by terminal (NOMINAL green, MITIGATE amber, REFUSED red). The instrument is visibly **discriminating** — four distinct verdicts on screen at once, not one alarm:
+
+  ![The verdict wall — 65,536 agents, four terminals](images/fusion-court-verdict-wall.png)
+
+  In this shot: NOMINAL 54,272 · MITIGATE 8,192 · REFUSED-envelope 2,048 · REFUSED-malformed 1,024 (sums to 65,536). The regular bands are the demo's channel classes; a real feed produces whatever the sensors do.
 - **CADENCE** — the panel where the app tells on itself: the latency histogram, `skippedTicks`, p50/p99. Red the instant a deadline is missed.
 - **CHANNEL SCOPE** — one channel's window against the ±6000 envelope and the growth trigger.
 
@@ -75,6 +79,20 @@ COURT TERMINALS REACHED: 5 of 5
 | spheromak | 1 | **no** | 481 | 960 |
 
 — and the **same operating envelope grades to byte-identical verdict signatures across all three**. The verdict moves only when a *physics* input changes (Ip 15 MA → 0 flips WIN → NOT_APPLICABLE), never on the topology descriptor. **Negative control, and it can fail:** the spheromak, having no toroidal circuit, emits **zero** toroidal-closure edges — a toroidal disagreement is not even representable in its layout, and the check prints FAIL if that count is ever > 0. That is "we run on any reactor topology" made checkable rather than asserted.
+
+## The court on real published machines
+
+The operating-point court is not only exercised on synthetic points — it grades **real machine geometries** whose parameters are public (`reproduce/fusion-real-machines.swift`). Using **only each machine's published plasma current and minor radius**, it computes that machine's own Greenwald density limit and places the 0.85 boundary:
+
+| machine | Ip | a | Greenwald limit (computed) | at 0.80× | at 0.90× |
+|---|---|---|---|---|---|
+| ITER | 15 MA | 2.0 m | 1.19×10²⁰ m⁻³ | **WIN** | **MISS** (greenwald) |
+| SPARC | 8.7 MA | 0.57 m | 8.52×10²⁰ m⁻³ | **WIN** | **MISS** (greenwald) |
+| JET | 4.8 MA | 1.25 m | 0.98×10²⁰ m⁻³ | **WIN** | **MISS** (greenwald) |
+| DIII-D | 2.0 MA | 0.67 m | 1.42×10²⁰ m⁻³ | **WIN** | **MISS** (greenwald) |
+| W7-X (stellarator) | **0** (currentless) | 0.53 m | — | `NOT_APPLICABLE` | — |
+
+(REPORTED — Ip and a from iter.org, Creely et al. 2020, EUROfusion, General Atomics, IPP Greifswald.) The computed limits **match the published Greenwald densities** for each machine — SPARC's is high precisely because its minor radius is small and its current large, exactly as the literature reports. **The court reproduces real machine physics from two public numbers**, places the density boundary correctly on every one, and refuses W7-X because a currentless machine has no Greenwald limit to place. That is the difference between an exact law and a surrogate: the law is *right for a reason a physicist can check*, not confident for a reason no one can.
 
 ## The GPU crossover — measured, and it goes the way the founder said
 
