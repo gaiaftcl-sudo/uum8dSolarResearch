@@ -96,6 +96,11 @@
   },
   {
     "isFramework" : false,
+    "moduleName" : "FusionGPU",
+    "modulePath" : "\/Users\/richardgillespie\/.gaiaftcl\/franklin\/wiki-publish\/standalone\/app\/FusionCourt\/.build\/out\/Products\/Debug\/FusionGPU.swiftmodule\/arm64-apple-macos.swiftmodule"
+  },
+  {
+    "isFramework" : false,
     "moduleName" : "FusionLattice",
     "modulePath" : "\/Users\/richardgillespie\/.gaiaftcl\/franklin\/wiki-publish\/standalone\/app\/FusionCourt\/.build\/out\/Products\/Debug\/FusionLattice.swiftmodule\/arm64-apple-macos.swiftmodule"
   },

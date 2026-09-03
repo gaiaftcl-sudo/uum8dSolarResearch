@@ -1,0 +1,21 @@
+{
+  "" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/FusionGPU-primary.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/FusionGPU-primary.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/FusionGPU-primary.dia",
+    "emit-module-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/FusionGPU-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/FusionGPU-primary-emit-module.dia",
+    "pch" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/FusionGPU-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/FusionGPU-primary.swiftdeps"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionGPU/VerdictScreenGPU.swift" : {
+    "index-unit-output-path" : "/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/VerdictScreenGPU.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/VerdictScreenGPU.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionGPU-t.build/Objects-normal/arm64/VerdictScreenGPU.o"
+  }
+}

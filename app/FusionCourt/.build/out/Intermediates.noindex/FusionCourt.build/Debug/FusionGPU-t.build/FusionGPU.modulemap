@@ -1,0 +1,4 @@
+module FusionGPU {
+header "FusionGPU-Swift.h"
+export *
+}

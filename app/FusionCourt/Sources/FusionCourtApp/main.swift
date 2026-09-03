@@ -6,6 +6,7 @@ import FusionLaw
 import FusionAffine
 import FusionClock
 import FusionLattice
+import FusionGPU
 
 let args = CommandLine.arguments
 if args.contains("--selftest-clock") {
@@ -40,6 +41,87 @@ if args.contains("--selftest-coldstart") {
     let budget = UInt64(ProcessInfo.processInfo.environment["FUSION_COLDSTART_BUDGET_NS"] ?? "") ?? 250_000_000
     print("coldstart_ns=\(best) budget_ns=\(budget) ms=\(best / 1_000_000)")
     exit(best > budget ? 1 : 0)
+}
+if args.contains("--selftest-crossover") {
+    // The measured crossover: at what N does the GPU round-trip beat 12 CPU
+    // cores on this branchy, no-multiply law? Prior: the GPU loses until N is
+    // very large, because a kernel launch is fixed hundreds of microseconds and
+    // the per-agent CPU cost is ~2 ns. The deliverable is the MEASUREMENT,
+    // including the honest outcome that the GPU never wins in a realistic range.
+    guard let gpu = VerdictScreenGPU() else {
+        print("GPU_UNAVAILABLE — metallib missing or no device; CPU path is authoritative"); exit(0)
+    }
+    let W = 256
+    func makeWindows(_ n: Int) -> [Int16] {
+        var w = [Int16](repeating: 0, count: n * W)
+        for a in 0..<n {
+            let onset = 100 + (a % 120)
+            for i in 0..<W {
+                let e = i < onset ? 60 : 60 + (i - onset) * 120
+                w[a*W + i] = Int16(clamping: i % 2 == 0 ? e : -e)
+            }
+        }
+        return w
+    }
+    func medianNanos(_ reps: Int, _ body: () -> Void) -> UInt64 {
+        var xs = [UInt64](); for _ in 0..<reps {
+            let t0 = ControlClock.now().raw; body()
+            xs.append(ControlClock.nanoseconds(ticks: ControlClock.now().raw &- t0))
+        }; xs.sort(); return xs[reps/2]
+    }
+    print("N          CPU(12core)   GPU(roundtrip)   parity   winner")
+    var crossover = "GPU never wins in this range"
+    for n in [4_096, 16_384, 65_536, 262_144, 1_048_576] {
+        let w = makeWindows(n)
+        // FAIR CPU ARM: the SAME flat row-major layout the GPU is handed, the
+        // SAME law (CPUGolden), one terminal per agent, parallel across 12 cores.
+        // (The first version of this benchmark transposed the data column-by-
+        // column with a fresh allocation per sample and charged the CPU 560x the
+        // law's real cost — 72 ms where the law is 128 us — which falsely handed
+        // every N to the GPU. That is a broken instrument flattering one side,
+        // and the 72 ms vs 128 us gap was the tell.)
+        var cpuOut = [UInt32](repeating: 0, count: n)
+        let cpu = w.withUnsafeBufferPointer { wp -> UInt64 in
+            medianNanos(5) {
+                cpuOut.withUnsafeMutableBufferPointer { op in
+                    let opp = op
+                    DispatchQueue.concurrentPerform(iterations: 12) { slab in
+                        let lo = slab * n / 12, hi = (slab + 1) * n / 12
+                        // ONE reused Int32 scratch per slab (12 total, not N) —
+                        // widen Int16 -> Int32 into it and feed the SINGLE law.
+                        // No per-agent allocation, and no second copy of the law
+                        // (an Int16 overload would re-fork the very logic just merged).
+                        var scratch = [Int32](repeating: 0, count: W)
+                        scratch.withUnsafeMutableBufferPointer { sp in
+                            for a in lo..<hi {
+                                let bA = a * W
+                                for i in 0..<W { sp[i] = Int32(wp[bA + i]) }
+                                opp[a] = { switch FusionLaw.screen(UnsafeBufferPointer(sp)).verdict {
+                                    case .NOMINAL: return 0; case .MITIGATE: return 1
+                                    case .REFUSED_OUT_OF_ENVELOPE: return 2
+                                    case .REFUSED_MALFORMED: return 3 } }()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        var gpuOut: [UInt32] = []
+        let gpuT = medianNanos(5) { gpuOut = gpu.screen(windows: w, windowLen: W, agentCount: n) ?? [] }
+        // PARITY: GPU must match CPU golden bit-for-bit
+        var parity = true
+        for a in 0..<n {
+            let want = CPUGolden.terminalOrdinal(w[(a*W)..<(a*W+W)])
+            if gpuOut.isEmpty || gpuOut[a] != want { parity = false; break }
+        }
+        let winner = gpuT < cpu ? "GPU" : "CPU"
+        if winner == "GPU" && crossover.hasPrefix("GPU never") { crossover = "GPU first wins at N=\(n)" }
+        print(String(format: "%-10d %8llu us   %8llu us   %@   %@",
+                     n, cpu/1000, gpuT/1000, parity ? "BIT-EXACT" : "MISMATCH!", winner))
+        if !parity { print("PARITY FAILED at N=\(n) — GPU disabled, CPU authoritative"); exit(1) }
+    }
+    print("CROSSOVER: \(crossover)")
+    exit(0)
 }
 if args.contains("--selftest-lattice") {
     print("axis_bits=\(LatticeWidth.axisBits) point_bytes=\(LatticeWidth.pointBytes)")
