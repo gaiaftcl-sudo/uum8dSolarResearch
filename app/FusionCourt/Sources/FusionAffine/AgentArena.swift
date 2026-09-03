@@ -38,8 +38,16 @@ public final class AgentArena: @unchecked Sendable {
 
         states.withUnsafeMutableBufferPointer { st in
             ring.withUnsafeMutableBufferPointer { rg in
-                let stBase = st.baseAddress!
-                let rgBase = rg.baseAddress!
+                // nonisolated(unsafe): concurrentPerform's closure is @Sendable, and
+                // these raw pointers are not Sendable. The capture is SAFE because
+                // each slab writes a DISJOINT half-open agent range [lo,hi) and the
+                // ranges tile [0,n) without overlap (per = ceil(n/slabs), hi clamped).
+                // No two slabs ever touch the same agent's state or ring bytes, so
+                // there is no data race despite the shared base pointer. The
+                // invariant is the disjoint tiling, asserted below.
+                nonisolated(unsafe) let stBase = st.baseAddress!
+                nonisolated(unsafe) let rgBase = rg.baseAddress!
+                nonisolated(unsafe) let samplesLocal = samples
                 DispatchQueue.concurrentPerform(iterations: slabs) { slab in
                     let lo = slab * per
                     let hi = min(lo + per, n)
@@ -47,7 +55,7 @@ public final class AgentArena: @unchecked Sendable {
                     while i < hi {
                         let base = i * W
                         var a = stBase[i]
-                        let s = samples[i]
+                        let s = samplesLocal[i]
                         rgBase[base + Int(a.head & mask)] = s
                         let lagIdx = Int((a.head &+ UInt32(W) &- UInt32(LawConstants.growthWindow)) & mask)
                         let cur = Int(s)
@@ -98,6 +106,18 @@ public final class AgentArena: @unchecked Sendable {
     }
 
     /// Terminal census, in FIXED index order.
+    /// One agent's window in CHRONOLOGICAL order (oldest first), for display.
+    /// Reads the ring; does not mutate. head points one past the newest sample.
+    public func windowSnapshot(agent: Int) -> [Int16] {
+        guard agent >= 0, agent < agentCount else { return [] }
+        let W = window
+        let base = agent * W
+        let head = Int(states[agent].head)
+        var out = [Int16](repeating: 0, count: W)
+        for j in 0..<W { out[j] = ring[base + ((head + j) % W)] }
+        return out
+    }
+
     public func census() -> (nominal: Int, mitigate: Int, refusedEnv: Int, refusedMal: Int) {
         var c = (0, 0, 0, 0)
         for s in states {

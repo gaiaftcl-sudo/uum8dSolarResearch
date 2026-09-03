@@ -9,7 +9,6 @@ import FusionLattice
 
 public struct FusionCourtView: View {
     @State private var snapshot: ControlSnapshot = .empty
-    @State private var scope: [Int16] = []
     private let ring: SnapshotRing
     private let coldStart: UInt64
     private let periodNanos: UInt64
@@ -25,9 +24,9 @@ public struct FusionCourtView: View {
                 VerdictWall(snapshot: snapshot)
                 CadencePanel(snapshot: snapshot, coldStartNanos: coldStart)
             }
-            ChannelScope(window: scope,
-                         channel: snapshot.hottest.first?.channel ?? 0,
-                         terminal: snapshot.hottest.first?.terminal ?? 0)
+            ChannelScope(window: snapshot.scope,
+                         channel: snapshot.scopeChannel,
+                         terminal: snapshot.hottest.first(where: { $0.channel == snapshot.scopeChannel })?.terminal ?? 0)
             statusStrip
         }
         .padding(12).background(Palette.bg)

@@ -30,17 +30,21 @@ public struct ControlSnapshot: Sendable {
     public let path: EvaluationPath
     public let agentCount: Int
     public let hottest: [AgentDigest]            // fixed capacity, no per-frame allocation
+    public let scope: [Int16]                    // one selected channel's window
+    public let scopeChannel: UInt32
 
     public init(tick: UInt64, terminals: SIMD4<UInt32>, histogram: LatencyHistogram,
                 skippedTicks: UInt64, tickCostNanos: UInt64, path: EvaluationPath,
-                agentCount: Int, hottest: [AgentDigest]) {
+                agentCount: Int, hottest: [AgentDigest],
+                scope: [Int16] = [], scopeChannel: UInt32 = 0) {
         self.tick = tick; self.terminals = terminals; self.histogram = histogram
         self.skippedTicks = skippedTicks; self.tickCostNanos = tickCostNanos
         self.path = path; self.agentCount = agentCount; self.hottest = hottest
+        self.scope = scope; self.scopeChannel = scopeChannel
     }
     public static let empty = ControlSnapshot(
         tick: 0, terminals: .zero, histogram: LatencyHistogram(), skippedTicks: 0,
-        tickCostNanos: 0, path: .cpuGolden, agentCount: 0, hottest: [])
+        tickCostNanos: 0, path: .cpuGolden, agentCount: 0, hottest: [], scope: [], scopeChannel: 0)
 }
 
 /// Three slots and a publish index. The writer fills the slot the reader is not

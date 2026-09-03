@@ -81,10 +81,11 @@ if args.contains("--selftest-crossover") {
         // every N to the GPU. That is a broken instrument flattering one side,
         // and the 72 ms vs 128 us gap was the tell.)
         var cpuOut = [UInt32](repeating: 0, count: n)
-        let cpu = w.withUnsafeBufferPointer { wp -> UInt64 in
-            medianNanos(5) {
+        let cpu = w.withUnsafeBufferPointer { wpRaw -> UInt64 in
+            nonisolated(unsafe) let wp = wpRaw   // disjoint slab ranges; see AgentArena
+            return medianNanos(5) {
                 cpuOut.withUnsafeMutableBufferPointer { op in
-                    let opp = op
+                    nonisolated(unsafe) let opp = op.baseAddress!
                     DispatchQueue.concurrentPerform(iterations: 12) { slab in
                         let lo = slab * n / 12, hi = (slab + 1) * n / 12
                         // ONE reused Int32 scratch per slab (12 total, not N) —
