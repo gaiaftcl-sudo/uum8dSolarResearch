@@ -18,6 +18,14 @@ swift test                      # 27 tests across 4 suites
 
 A clean build with **zero warnings** and a green test run is the first thing to confirm. If either fails, stop and tell us — it should not.
 
+### One command that proves everything
+
+```bash
+./verify-all.sh
+```
+
+Builds clean, runs every test, every gate (each self-testing that it *can* fail), every app self-check, and the repo's figure harness — stopping at the first failure. **`VERIFY_ALL_PROVEN`** means every claim on the study page re-derives on *your* machine, not just ours. This is the fastest way to gain or destroy confidence in the whole thing.
+
 ## Run the app
 
 ```bash

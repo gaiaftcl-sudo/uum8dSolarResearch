@@ -15,7 +15,7 @@ PAT='(^|[^[:alnum:]_#])(python3?|node|npm|npx|ruby|perl|pip3?)([[:space:]]|$)'
 
 detect() {
     grep -rnE "$PAT" --include="*.sh" --include="*.swift" --include="Package.swift" \
-        "$PKG/Tools" "$PKG/Sources" "$PKG/Package.swift" 2>/dev/null |
+        "$PKG/Tools" "$PKG/Sources" "$PKG/Package.swift" "$PKG/verify-all.sh" 2>/dev/null |
         grep -vE ':[0-9]+:[[:space:]]*#' |          # shell comment
         grep -vE ':[0-9]+:[[:space:]]*(//|///|\*)' |   # swift comment
         grep -v 'Tools/swift-only.sh:' || true
