@@ -7,7 +7,7 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 SRC="$HERE/../Sources"
-SCOPED="FusionLaw FusionLattice FusionAffine FusionClock"
+SCOPED="FusionLaw FusionLattice FusionAffine FusionClock FusionOperatingPoint"
 PAT='\b(Float|Double|CGFloat)\b'
 
 detect() {  # detect <dir...> — prints offending "file:line:text", ignoring comments

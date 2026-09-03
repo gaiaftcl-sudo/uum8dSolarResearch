@@ -1,0 +1,29 @@
+{
+  "" : {
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/FusionOperatingPointTests-primary.dia",
+    "emit-module-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/FusionOperatingPointTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/FusionOperatingPointTests-primary-emit-module.dia",
+    "pch" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/FusionOperatingPointTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/FusionOperatingPointTests-primary.swiftdeps"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/DerivedSources/test_entry_point.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/test_entry_point~partial.swiftmodule"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Tests/FusionOperatingPointTests/CourtTerminals.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionOperatingPointTests-p.build/Objects-normal/arm64/CourtTerminals~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "" : {
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary.dia",
+    "emit-module-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary-emit-module.dia",
+    "pch" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary.swiftdeps"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice/LatticeCoordinate.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/LatticeCoordinate~partial.swiftmodule"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice/Modality.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/Modality~partial.swiftmodule"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice/TendingSwarm.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLattice-t.build/Objects-normal/arm64/TendingSwarm~partial.swiftmodule"
+  }
+}

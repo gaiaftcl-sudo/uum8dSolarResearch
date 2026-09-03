@@ -1,0 +1,21 @@
+{
+  "" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPoint-primary.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPoint-primary.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPoint-primary.dia",
+    "emit-module-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPoint-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPoint-primary-emit-module.dia",
+    "pch" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPoint-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPoint-primary.swiftdeps"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionOperatingPoint/FusionOperatingPointLaw.swift" : {
+    "index-unit-output-path" : "/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPointLaw.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPointLaw.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/FusionOperatingPointLaw.o"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionOperatingPoint/OperatingEnvelope.swift" : {
+    "index-unit-output-path" : "/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/OperatingEnvelope.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/OperatingEnvelope.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionOperatingPoint-t.build/Objects-normal/arm64/OperatingEnvelope.o"
+  }
+}

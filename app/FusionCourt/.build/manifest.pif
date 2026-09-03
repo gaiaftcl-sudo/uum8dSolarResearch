@@ -5,11 +5,11 @@
       "name" : "FusionCourt",
       "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt",
       "projects" : [
-        "618e4b7704449a1e72a4a9c2af921fcb51fcfd6aad52ae8d8d2407bafd32d4fa",
-        "47fe1401f68223ff8e8a68739262ae04657826a122ad67c14544f2f02ca830e8"
+        "8072aaf2465153fed47d9ad568da6796492c9e28b52a6009c5d256dc7dad15a2",
+        "a7738109be1b8b1f6f440f67420681735c5b2043900387e9e186b19df9dfa423"
       ]
     },
-    "signature" : "63918248eafd0586a0b93c0facbb432c79afb3dcaa202462a2ceebd3f0fc5b55",
+    "signature" : "f24bc4cf76d8026e0543ad4ad05f140cde4deb4f075feb7754ca1ab8cb58ef2a",
     "type" : "workspace"
   },
   {
@@ -201,13 +201,30 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_2::REF_0",
+                "name" : "CourtTerminals.swift",
+                "path" : "CourtTerminals.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_2",
+            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Tests/FusionOperatingPointTests",
+            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Tests/FusionOperatingPointTests",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_3::REF_0",
                 "name" : "ConformanceVectors.swift",
                 "path" : "ConformanceVectors.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_2",
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_3",
             "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Tests/FusionLawTests",
             "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Tests/FusionLawTests",
             "sourceTree" : "<absolute>",
@@ -217,97 +234,16 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_3::REF_0",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_0",
                 "name" : "LatticeAndArena.swift",
                 "path" : "LatticeAndArena.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_3",
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4",
             "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Tests/FusionLatticeTests",
             "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Tests/FusionLatticeTests",
-            "sourceTree" : "<absolute>",
-            "type" : "group"
-          },
-          {
-            "children" : [
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_0",
-                "name" : "ControlHost.swift",
-                "path" : "ControlHost.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_1",
-                "name" : "FusionCourtView.swift",
-                "path" : "FusionCourtView.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_2",
-                "name" : "Palette.swift",
-                "path" : "Palette.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_3",
-                "name" : "Panels/CadencePanel.swift",
-                "path" : "Panels/CadencePanel.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_4",
-                "name" : "Panels/ChannelScope.swift",
-                "path" : "Panels/ChannelScope.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_5",
-                "name" : "Panels/LawPanel.swift",
-                "path" : "Panels/LawPanel.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_6",
-                "name" : "Panels/VerdictWall.swift",
-                "path" : "Panels/VerdictWall.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_7",
-                "name" : "SnapshotRing.swift",
-                "path" : "SnapshotRing.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_8",
-                "name" : "main.swift",
-                "path" : "main.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              }
-            ],
-            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_4",
-            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionCourtApp",
-            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionCourtApp",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -397,31 +333,79 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_0",
-                "name" : "Law.swift",
-                "path" : "Law.swift",
+                "name" : "ControlHost.swift",
+                "path" : "ControlHost.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_1",
-                "name" : "LawConstants.swift",
-                "path" : "LawConstants.swift",
+                "name" : "FusionCourtView.swift",
+                "path" : "FusionCourtView.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_2",
-                "name" : "Verdict.swift",
-                "path" : "Verdict.swift",
+                "name" : "Palette.swift",
+                "path" : "Palette.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_3",
+                "name" : "Panels/CadencePanel.swift",
+                "path" : "Panels/CadencePanel.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_4",
+                "name" : "Panels/ChannelScope.swift",
+                "path" : "Panels/ChannelScope.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_5",
+                "name" : "Panels/LawPanel.swift",
+                "path" : "Panels/LawPanel.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_6",
+                "name" : "Panels/VerdictWall.swift",
+                "path" : "Panels/VerdictWall.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_7",
+                "name" : "SnapshotRing.swift",
+                "path" : "SnapshotRing.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_8",
+                "name" : "main.swift",
+                "path" : "main.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_6",
-            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLaw",
-            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLaw",
+            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionCourtApp",
+            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionCourtApp",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -463,23 +447,31 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_0",
-                "name" : "AgentArena.swift",
-                "path" : "AgentArena.swift",
+                "name" : "Law.swift",
+                "path" : "Law.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_1",
-                "name" : "AgentState.swift",
-                "path" : "AgentState.swift",
+                "name" : "LawConstants.swift",
+                "path" : "LawConstants.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_2",
+                "name" : "Verdict.swift",
+                "path" : "Verdict.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_8",
-            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionAffine",
-            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionAffine",
+            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLaw",
+            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLaw",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -513,31 +505,23 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_0",
-                "name" : "LatticeCoordinate.swift",
-                "path" : "LatticeCoordinate.swift",
+                "name" : "AgentArena.swift",
+                "path" : "AgentArena.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_1",
-                "name" : "Modality.swift",
-                "path" : "Modality.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_2",
-                "name" : "TendingSwarm.swift",
-                "path" : "TendingSwarm.swift",
+                "name" : "AgentState.swift",
+                "path" : "AgentState.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_10",
-            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice",
-            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice",
+            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionAffine",
+            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionAffine",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -579,6 +563,89 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_0",
+                "name" : "LatticeCoordinate.swift",
+                "path" : "LatticeCoordinate.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_1",
+                "name" : "Modality.swift",
+                "path" : "Modality.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_2",
+                "name" : "TendingSwarm.swift",
+                "path" : "TendingSwarm.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_12",
+            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice",
+            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_0",
+                "name" : "FusionOperatingPointLaw.swift",
+                "path" : "FusionOperatingPointLaw.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_1",
+                "name" : "OperatingEnvelope.swift",
+                "path" : "OperatingEnvelope.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_13",
+            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionOperatingPoint",
+            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionOperatingPoint",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_14::REF_0",
+                "name" : "FusionOperatingPointLaw.swift",
+                "path" : "FusionOperatingPointLaw.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_14::REF_1",
+                "name" : "OperatingEnvelope.swift",
+                "path" : "OperatingEnvelope.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_14",
+            "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionOperatingPoint",
+            "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionOperatingPoint",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_15::REF_0",
                 "name" : "ControlClock.swift",
                 "path" : "ControlClock.swift",
                 "sourceTree" : "<group>",
@@ -586,7 +653,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_1",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_15::REF_1",
                 "name" : "FixedStepDriver.swift",
                 "path" : "FixedStepDriver.swift",
                 "sourceTree" : "<group>",
@@ -594,14 +661,14 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_2",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_15::REF_2",
                 "name" : "LatencyHistogram.swift",
                 "path" : "LatencyHistogram.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_12",
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_15",
             "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionClock",
             "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionClock",
             "sourceTree" : "<absolute>",
@@ -611,7 +678,7 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_0",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_16::REF_0",
                 "name" : "ControlClock.swift",
                 "path" : "ControlClock.swift",
                 "sourceTree" : "<group>",
@@ -619,7 +686,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_1",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_16::REF_1",
                 "name" : "FixedStepDriver.swift",
                 "path" : "FixedStepDriver.swift",
                 "sourceTree" : "<group>",
@@ -627,14 +694,14 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_2",
+                "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_16::REF_2",
                 "name" : "LatencyHistogram.swift",
                 "path" : "LatencyHistogram.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_13",
+            "guid" : "PACKAGE:fusioncourt::MAINGROUP::REF_16",
             "name" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionClock",
             "path" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionClock",
             "sourceTree" : "<absolute>",
@@ -653,28 +720,311 @@
       "projectIsPackage" : "true",
       "projectName" : "FusionCourt",
       "targets" : [
-        "f9c79baad79de372b7932da7ec582e93ee01b8f4533add9e4a9364526c18e009",
+        "5b32b85bde2fa8763eac85b04f914fb8dcfe4e98f264c714a6af8aa965062d59",
+        "e0783cd477dc01d5205d1018f3cc3840eb07a80a68f0e31de40e0f60512acc06",
+        "0e2bdd3d375e2fb49275b8c41954ed6ab8d17df2febee5b1d7a1641c58c59c9d",
         "3d480656852390f9ae496848cc74c508c80239c54cd84bddd0ca8721608e8823",
-        "87c5d56627012e9a75d41ec877f50e4114de70670331a91915e0c3cf9a6c2beb",
+        "b9749ceeffa6f81e1d151451f0fc4bfa9b01c8cdffeecb9195977be1780121ed",
         "b8e381010e02860a7ccd1f474c6f170150d65d9c07024a014bf20ae9994d6884",
-        "8353d0cbcbfbf2da46a325e23da16e353e644258901cf9b6889e19a39e3a5dd7",
+        "65b53c62d8f8ee2a0b9420100368d40f7876bb33af0df338f004356afc006887",
         "6d4a4e5997d2b627e4bdb51ac34a8c1dd42815549081b74062f9078c1bfd2914",
         "994d0e1e9640c34b9bff91e50c6bb844ddc5007ca6498fe55536f9b7f02db28a",
         "e00bffe2b21ce06770829e466b4529cb3517a04602c25374784520c03877fcad",
-        "46d7cfce560305d5f8e61b01bdcb4c5dae9a297c9305f19d774661cbb2aec97d",
-        "ec0218fd94164a8e11b4f218173c6026736f53f560a8edc8407143116068a56a",
-        "c1a19559a0a4304ee55415f0fa264954f7d946218d116103eb03c8521bab8010",
-        "2166ec76fcb30dadb48f85942f402308d89cb4e769067b61173b4a7875809d44",
-        "906c64621aa20839252d61b9209adf494c681b5a2e6e82640e7c96166b120c33",
-        "0ef964af06e925f14994a17504fc1042623086dd13e125a832865d4c50b04eaf",
-        "defe3d6d62880bc3e7bbd8de5a8c013395f630aa69567d34180c93025601c69b",
-        "a0e0c77a862ed9c034b04ab6a690880a13c9d5a9029a241f08d4812035e876ab",
-        "977fc36721dbf2265e800126c21c09cba557906df164cc8796547b78ccb7aa97",
-        "b9a09a6e72f18342bafb4fe0f6b1b6a3cba76166c597121f42f45d7d375a9f8a"
+        "3aa0f50bb80d7c21952697be228f9c29c6544202836b6f612fe5ad9a22279b8b",
+        "d3c6ca4d69baadcb2a25d0ad13a07fa06fc9388f5f3618669ff87ea07ef7f916",
+        "ec53fb8a1598ffbb07bf7639e185ee5b829dbab8cf5e121d6992ad53e3a98e89",
+        "1add03303f9fc927f0668efc4d96345fea290be9d78d259d48f5fd5d93e8d896",
+        "4bb5c5093c928952f6c25a0445283eecdf298046201ee2b65962e5be053e0ce8",
+        "9035cd20fd15de4b749943321342fd87ac8a3f32c0e386133c68226ec25c1faa",
+        "f7f53b2a1cc1b6fff701291f965b9e769d2b5b2f33a2b75807086cf4f9beaf1e",
+        "68db608ba31cd8fbf91bcdbf3cd0fa91e681d6b341ecf47a70c4db7f2e4d5304",
+        "2dba47258f33cae1229f07414a6e65376e339be9a234263d5390838b2f04d426",
+        "4b4b56402747716f287f2d1ebd9cc6bc67714d71e5ed93d51d5d51e6bb7fe53e",
+        "0830096e55daafdfb3be38bd76228c290b96f5b1ad7873aa3a9943b264c90682",
+        "f1208d46cf329403e0fc6d55ef10761cf1e1fad1ef9cff6c893761323ac07a30",
+        "84c0b82b1a66e0afb12428ab89d77bcdf65888b83bca7a23db677985aa3d2964"
       ]
     },
-    "signature" : "618e4b7704449a1e72a4a9c2af921fcb51fcfd6aad52ae8d8d2407bafd32d4fa",
+    "signature" : "8072aaf2465153fed47d9ad568da6796492c9e28b52a6009c5d256dc7dad15a2",
     "type" : "project"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "BUILD_SERVER_PROTOCOL_TARGET_TAGS" : [
+              "$(inherited)",
+              "test"
+            ],
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_INFOPLIST_FILE" : "YES",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(RPATH_ORIGIN)/Frameworks",
+              "$(RPATH_ORIGIN)/../Frameworks",
+              "$(inherited)"
+            ],
+            "MACOSX_DEPLOYMENT_TARGET" : "26.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPointTests",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPointTests",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "fusioncourt",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/FusionOperatingPointTests.symbolgraphs",
+            "TARGET_NAME" : "FusionOperatingPointTests",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "BUILD_SERVER_PROTOCOL_TARGET_TAGS" : [
+              "$(inherited)",
+              "test"
+            ],
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_INFOPLIST_FILE" : "YES",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(RPATH_ORIGIN)/Frameworks",
+              "$(RPATH_ORIGIN)/../Frameworks",
+              "$(inherited)"
+            ],
+            "MACOSX_DEPLOYMENT_TARGET" : "26.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPointTests",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPointTests",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "fusioncourt",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/FusionOperatingPointTests.symbolgraphs",
+            "TARGET_NAME" : "FusionOperatingPointTests",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_2::REF_0",
+              "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:FusionOperatingPoint"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests",
+      "name" : "FusionOperatingPointTests-product",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.bundle.unit-test",
+      "type" : "standard"
+    },
+    "signature" : "5b32b85bde2fa8763eac85b04f914fb8dcfe4e98f264c714a6af8aa965062d59",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(inherited)",
+              "$(RPATH_ORIGIN)"
+            ],
+            "LINKER_DRIVER" : "swiftc",
+            "MACOSX_DEPLOYMENT_TARGET" : "26.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPointTests-test-runner",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPointTests_test_runner",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_VERSION" : "5.0",
+            "TARGET_NAME" : "FusionOperatingPointTests-test-runner",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "17.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "17.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(inherited)",
+              "$(RPATH_ORIGIN)"
+            ],
+            "LINKER_DRIVER" : "swiftc",
+            "MACOSX_DEPLOYMENT_TARGET" : "26.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPointTests-test-runner",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPointTests_test_runner",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_VERSION" : "5.0",
+            "TARGET_NAME" : "FusionOperatingPointTests-test-runner",
+            "TVOS_DEPLOYMENT_TARGET" : "17.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "26.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+
+          ],
+          "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner",
+      "name" : "FusionOperatingPointTests-test-runner",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:FusionOperatingPointTests_test_runner",
+        "name" : "FusionOperatingPointTests-test-runner",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.tool.swiftpm-test-runner",
+      "type" : "standard"
+    },
+    "signature" : "e0783cd477dc01d5205d1018f3cc3840eb07a80a68f0e31de40e0f60512acc06",
+    "type" : "target"
   },
   {
     "contents" : {
@@ -784,7 +1134,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_2::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_3::REF_0",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionLawTests.FusionLawTests::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -833,7 +1183,7 @@
       "productTypeIdentifier" : "com.apple.product-type.bundle.unit-test",
       "type" : "standard"
     },
-    "signature" : "f9c79baad79de372b7932da7ec582e93ee01b8f4533add9e4a9364526c18e009",
+    "signature" : "0e2bdd3d375e2fb49275b8c41954ed6ab8d17df2febee5b1d7a1641c58c59c9d",
     "type" : "target"
   },
   {
@@ -1062,7 +1412,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_3::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_0",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionLatticeTests.FusionLatticeTests::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1150,7 +1500,7 @@
       "productTypeIdentifier" : "com.apple.product-type.bundle.unit-test",
       "type" : "standard"
     },
-    "signature" : "87c5d56627012e9a75d41ec877f50e4114de70670331a91915e0c3cf9a6c2beb",
+    "signature" : "b9749ceeffa6f81e1d151451f0fc4bfa9b01c8cdffeecb9195977be1780121ed",
     "type" : "target"
   },
   {
@@ -1371,7 +1721,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_0",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1380,7 +1730,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_1",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -1389,7 +1739,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_2",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -1398,7 +1748,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_3",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_3",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -1407,7 +1757,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_4",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_4",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::4",
               "platformFilters" : [
 
@@ -1416,7 +1766,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_5",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_5",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::5",
               "platformFilters" : [
 
@@ -1425,7 +1775,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_6",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_6",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::6",
               "platformFilters" : [
 
@@ -1434,7 +1784,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_7",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_7",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::7",
               "platformFilters" : [
 
@@ -1443,7 +1793,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_4::REF_8",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_8",
               "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_0::8",
               "platformFilters" : [
 
@@ -1483,6 +1833,13 @@
 
               ],
               "targetReference" : "PACKAGE-TARGET:FusionLattice"
+            },
+            {
+              "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_1::4",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:FusionOperatingPoint"
             }
           ],
           "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt::BUILDPHASE_1",
@@ -1519,6 +1876,12 @@
           "platformFilters" : [
 
           ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
         }
       ],
       "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionCourt.FusionCourt",
@@ -1531,7 +1894,7 @@
       "productTypeIdentifier" : "com.apple.product-type.tool",
       "type" : "standard"
     },
-    "signature" : "8353d0cbcbfbf2da46a325e23da16e353e644258901cf9b6889e19a39e3a5dd7",
+    "signature" : "65b53c62d8f8ee2a0b9420100368d40f7876bb33af0df338f004356afc006887",
     "type" : "target"
   },
   {
@@ -1829,6 +2192,98 @@
       "buildConfigurations" : [
         {
           "buildSettings" : {
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "PRODUCT_NAME" : "FusionOperatingPoint",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "TARGET_NAME" : "FusionOperatingPoint-product",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "USES_SWIFTPM_UNSAFE_FLAGS" : "NO"
+          },
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "PRODUCT_NAME" : "FusionOperatingPoint",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "TARGET_NAME" : "FusionOperatingPoint-product",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "USES_SWIFTPM_UNSAFE_FLAGS" : "NO"
+          },
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:FusionOperatingPoint"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.frameworks"
+        },
+        {
+          "buildFiles" : [
+
+          ],
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint",
+      "name" : "FusionOperatingPoint-product",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.library.static",
+      "type" : "standard"
+    },
+    "signature" : "3aa0f50bb80d7c21952697be228f9c29c6544202836b6f612fe5ad9a22279b8b",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
             "DEFINES_MODULE" : "YES",
             "GENERATE_EMBED_IN_CODE_ACCESSORS" : "YES",
             "GENERATE_PRELINK_OBJECT_FILE" : "NO",
@@ -1954,7 +2409,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_0",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1963,7 +2418,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_1",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -1972,7 +2427,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_2",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -1981,7 +2436,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_3",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_3",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -1990,7 +2445,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_4",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_4",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::4",
               "platformFilters" : [
 
@@ -1999,7 +2454,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_5",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_5",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::5",
               "platformFilters" : [
 
@@ -2008,7 +2463,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_6",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_6",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::6",
               "platformFilters" : [
 
@@ -2017,7 +2472,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_7",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_7",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::7",
               "platformFilters" : [
 
@@ -2026,7 +2481,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_5::REF_8",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_8",
               "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable::BUILDPHASE_0::8",
               "platformFilters" : [
 
@@ -2068,6 +2523,12 @@
           "platformFilters" : [
 
           ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
         }
       ],
       "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable",
@@ -2080,7 +2541,7 @@
       "productTypeIdentifier" : "org.swift.product-type.common.object",
       "type" : "standard"
     },
-    "signature" : "46d7cfce560305d5f8e61b01bdcb4c5dae9a297c9305f19d774661cbb2aec97d",
+    "signature" : "d3c6ca4d69baadcb2a25d0ad13a07fa06fc9388f5f3618669ff87ea07ef7f916",
     "type" : "target"
   },
   {
@@ -2194,7 +2655,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_7::REF_0",
               "guid" : "PACKAGE-TARGET:FusionLaw::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2203,7 +2664,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_7::REF_1",
               "guid" : "PACKAGE-TARGET:FusionLaw::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2212,7 +2673,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_6::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_7::REF_2",
               "guid" : "PACKAGE-TARGET:FusionLaw::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -2244,7 +2705,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "ec0218fd94164a8e11b4f218173c6026736f53f560a8edc8407143116068a56a",
+    "signature" : "ec53fb8a1598ffbb07bf7639e185ee5b829dbab8cf5e121d6992ad53e3a98e89",
     "type" : "target"
   },
   {
@@ -2358,7 +2819,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_9::REF_0",
               "guid" : "PACKAGE-TARGET:FusionAffine::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2367,7 +2828,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_9::REF_1",
               "guid" : "PACKAGE-TARGET:FusionAffine::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2404,7 +2865,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "2166ec76fcb30dadb48f85942f402308d89cb4e769067b61173b4a7875809d44",
+    "signature" : "4bb5c5093c928952f6c25a0445283eecdf298046201ee2b65962e5be053e0ce8",
     "type" : "target"
   },
   {
@@ -2518,7 +2979,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_11::REF_0",
               "guid" : "PACKAGE-TARGET:FusionLattice::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2527,7 +2988,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_11::REF_1",
               "guid" : "PACKAGE-TARGET:FusionLattice::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2536,7 +2997,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_11::REF_2",
               "guid" : "PACKAGE-TARGET:FusionLattice::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -2568,7 +3029,162 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "0ef964af06e925f14994a17504fc1042623086dd13e125a832865d4c50b04eaf",
+    "signature" : "f7f53b2a1cc1b6fff701291f965b9e769d2b5b2f33a2b75807086cf4f9beaf1e",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "MODULEMAP_FILE_CONTENTS" : "module FusionOperatingPoint {\nheader \"FusionOperatingPoint-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPoint",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPoint",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "FusionOperatingPoint-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "fusioncourt",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/FusionOperatingPoint.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "FusionOperatingPoint",
+            "TARGET_NAME" : "FusionOperatingPoint",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "MODULEMAP_FILE_CONTENTS" : "module FusionOperatingPoint {\nheader \"FusionOperatingPoint-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPoint",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPoint",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "FusionOperatingPoint-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "fusioncourt",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/FusionOperatingPoint.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "FusionOperatingPoint",
+            "TARGET_NAME" : "FusionOperatingPoint",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_0",
+              "guid" : "PACKAGE-TARGET:FusionOperatingPoint::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_1",
+              "guid" : "PACKAGE-TARGET:FusionOperatingPoint::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "dynamicTargetVariantGuid" : "PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic",
+      "guid" : "PACKAGE-TARGET:FusionOperatingPoint",
+      "name" : "FusionOperatingPoint",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:FusionOperatingPoint",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "org.swift.product-type.library.static",
+      "type" : "standard"
+    },
+    "signature" : "2dba47258f33cae1229f07414a6e65376e339be9a234263d5390838b2f04d426",
     "type" : "target"
   },
   {
@@ -2682,7 +3298,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_15::REF_0",
               "guid" : "PACKAGE-TARGET:FusionClock::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2691,7 +3307,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_15::REF_1",
               "guid" : "PACKAGE-TARGET:FusionClock::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2700,7 +3316,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_15::REF_2",
               "guid" : "PACKAGE-TARGET:FusionClock::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -2737,7 +3353,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "a0e0c77a862ed9c034b04ab6a690880a13c9d5a9029a241f08d4812035e876ab",
+    "signature" : "0830096e55daafdfb3be38bd76228c290b96f5b1ad7873aa3a9943b264c90682",
     "type" : "target"
   },
   {
@@ -2779,6 +3395,18 @@
       ],
       "dependencies" : [
         {
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionLawTests.FusionLawTests",
           "platformFilters" : [
 
@@ -2807,7 +3435,7 @@
       "name" : "FusionCourtPackageTests-product",
       "type" : "aggregate"
     },
-    "signature" : "b9a09a6e72f18342bafb4fe0f6b1b6a3cba76166c597121f42f45d7d375a9f8a",
+    "signature" : "84c0b82b1a66e0afb12428ab89d77bcdf65888b83bca7a23db677985aa3d2964",
     "type" : "target"
   },
   {
@@ -2919,7 +3547,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_7::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_0",
               "guid" : "PACKAGE-TARGET:FusionLaw-1B37269BD985B7A1-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2928,7 +3556,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_7::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_1",
               "guid" : "PACKAGE-TARGET:FusionLaw-1B37269BD985B7A1-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2937,7 +3565,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_7::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_8::REF_2",
               "guid" : "PACKAGE-TARGET:FusionLaw-1B37269BD985B7A1-dynamic::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -2968,7 +3596,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "c1a19559a0a4304ee55415f0fa264954f7d946218d116103eb03c8521bab8010",
+    "signature" : "1add03303f9fc927f0668efc4d96345fea290be9d78d259d48f5fd5d93e8d896",
     "type" : "target"
   },
   {
@@ -3080,7 +3708,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_9::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_0",
               "guid" : "PACKAGE-TARGET:FusionAffine--6959EA11A9F80837-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -3089,7 +3717,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_9::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_10::REF_1",
               "guid" : "PACKAGE-TARGET:FusionAffine--6959EA11A9F80837-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -3138,7 +3766,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "906c64621aa20839252d61b9209adf494c681b5a2e6e82640e7c96166b120c33",
+    "signature" : "9035cd20fd15de4b749943321342fd87ac8a3f32c0e386133c68226ec25c1faa",
     "type" : "target"
   },
   {
@@ -3250,7 +3878,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_11::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_0",
               "guid" : "PACKAGE-TARGET:FusionLattice--3671CC2832526BB9-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -3259,7 +3887,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_11::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_1",
               "guid" : "PACKAGE-TARGET:FusionLattice--3671CC2832526BB9-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -3268,7 +3896,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_11::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_12::REF_2",
               "guid" : "PACKAGE-TARGET:FusionLattice--3671CC2832526BB9-dynamic::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -3299,7 +3927,159 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "defe3d6d62880bc3e7bbd8de5a8c013395f630aa69567d34180c93025601c69b",
+    "signature" : "68db608ba31cd8fbf91bcdbf3cd0fa91e681d6b341ecf47a70c4db7f2e4d5304",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "MODULEMAP_FILE_CONTENTS" : "module FusionOperatingPoint {\nheader \"FusionOperatingPoint-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPoint",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPoint",
+            "PRODUCT_NAME" : "FusionOperatingPoint",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "FusionOperatingPoint-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "fusioncourt",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/FusionOperatingPoint.symbolgraphs",
+            "TARGET_NAME" : "FusionOperatingPoint",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "MODULEMAP_FILE_CONTENTS" : "module FusionOperatingPoint {\nheader \"FusionOperatingPoint-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "fusioncourt.FusionOperatingPoint",
+            "PRODUCT_MODULE_NAME" : "FusionOperatingPoint",
+            "PRODUCT_NAME" : "FusionOperatingPoint",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "FusionOperatingPoint-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "fusioncourt",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/FusionOperatingPoint.symbolgraphs",
+            "TARGET_NAME" : "FusionOperatingPoint",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/FusionOperatingPoint.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_14::REF_0",
+              "guid" : "PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_14::REF_1",
+              "guid" : "PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "guid" : "PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic",
+      "name" : "FusionOperatingPoint",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:FusionOperatingPoint--6B6913680FDBE9C5-dynamic",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
+      "type" : "standard"
+    },
+    "signature" : "4b4b56402747716f287f2d1ebd9cc6bc67714d71e5ed93d51d5d51e6bb7fe53e",
     "type" : "target"
   },
   {
@@ -3411,7 +4191,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_0",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_16::REF_0",
               "guid" : "PACKAGE-TARGET:FusionClock-524341C2416B766B-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -3420,7 +4200,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_1",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_16::REF_1",
               "guid" : "PACKAGE-TARGET:FusionClock-524341C2416B766B-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -3429,7 +4209,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_13::REF_2",
+              "fileReference" : "PACKAGE:fusioncourt::MAINGROUP::REF_16::REF_2",
               "guid" : "PACKAGE-TARGET:FusionClock-524341C2416B766B-dynamic::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -3478,7 +4258,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "977fc36721dbf2265e800126c21c09cba557906df164cc8796547b78ccb7aa97",
+    "signature" : "f1208d46cf329403e0fc6d55ef10761cf1e1fad1ef9cff6c893761323ac07a30",
     "type" : "target"
   },
   {
@@ -3539,11 +4319,11 @@
       "projectIsPackage" : "true",
       "projectName" : "Aggregate",
       "targets" : [
-        "69896dc841451ea61031f450cfafe8be1bbc0fab46a462869ec252608c1fd733",
-        "8526be55f7bb7fdbe66d957bfc7ff21a45513b873f43e7e29e82b5f756a20aef"
+        "bc03f1e896b567ef0c89de21995caef962b5c6163314f63cfd882168266cd699",
+        "158b7411d55062e01fd0706817f18ef914611be192bb894010c918bb13542b0a"
       ]
     },
-    "signature" : "47fe1401f68223ff8e8a68739262ae04657826a122ad67c14544f2f02ca830e8",
+    "signature" : "a7738109be1b8b1f6f440f67420681735c5b2043900387e9e186b19df9dfa423",
     "type" : "project"
   },
   {
@@ -3584,6 +4364,18 @@
 
       ],
       "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPointTests.FusionOperatingPointTests",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPointTests_test_runner",
+          "platformFilters" : [
+
+          ]
+        },
         {
           "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionLawTests.FusionLawTests",
           "platformFilters" : [
@@ -3633,6 +4425,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable",
           "platformFilters" : [
 
@@ -3657,6 +4455,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:FusionClock",
           "platformFilters" : [
 
@@ -3667,7 +4471,7 @@
       "name" : "AllIncludingTests",
       "type" : "aggregate"
     },
-    "signature" : "69896dc841451ea61031f450cfafe8be1bbc0fab46a462869ec252608c1fd733",
+    "signature" : "bc03f1e896b567ef0c89de21995caef962b5c6163314f63cfd882168266cd699",
     "type" : "target"
   },
   {
@@ -3733,6 +4537,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-PRODUCT:fusioncourt_FusionOperatingPoint.FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:FusionCourtApp--318244C7CCCDFC50-testable",
           "platformFilters" : [
 
@@ -3757,6 +4567,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:FusionOperatingPoint",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:FusionClock",
           "platformFilters" : [
 
@@ -3767,7 +4583,7 @@
       "name" : "AllExcludingTests",
       "type" : "aggregate"
     },
-    "signature" : "8526be55f7bb7fdbe66d957bfc7ff21a45513b873f43e7e29e82b5f756a20aef",
+    "signature" : "158b7411d55062e01fd0706817f18ef914611be192bb894010c918bb13542b0a",
     "type" : "target"
   }
 ]
