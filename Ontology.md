@@ -1,6 +1,6 @@
 # The ontology of this wiki
 
-**Why an ontology page exists at all:** this wiki holds 30 studies across black holes, protein structure, seismology, density functional theory, quantum complexity, heat mortality, and the stratosphere. Without a stated type system that reads as a pile of unrelated enthusiasms. With one, it reads as what it is — **one method, applied 30 times, with its losses published** — and that is the difference between a body of evidence and a body of opinion.
+**Why an ontology page exists at all:** this wiki holds 34 studies across black holes, protein structure, seismology, density functional theory, quantum complexity, heat mortality, and the stratosphere. Without a stated type system that reads as a pile of unrelated enthusiasms. With one, it reads as what it is — **one method, applied 34 times, with its losses published** — and that is the difference between a body of evidence and a body of opinion.
 
 Every claim on these pages carries a type. The types are not decorative. They constrain what a page is allowed to say, and they are the reason a stranger can grade us without trusting us.
 
@@ -142,4 +142,4 @@ Two audiences, and the type system serves both.
 
 ---
 
-**Start here:** [The planetary case](Home) · [Ask someone you trust to check this](Ask-Someone-You-Trust-To-Check-This) · [The evidence](Reentry-Forcing-Nobody-Measures) · [The method](Zero-Float-Zero-Shear-Paradigm) · [All 30 studies](Shear-Studies-Index)
+**Start here:** [The planetary case](Home) · [Ask someone you trust to check this](Ask-Someone-You-Trust-To-Check-This) · [The evidence](Reentry-Forcing-Nobody-Measures) · [The method](Zero-Float-Zero-Shear-Paradigm) · [All 34 studies](Shear-Studies-Index)

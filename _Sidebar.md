@@ -1,15 +1,16 @@
 ## ★ The planetary case
 
-- [**Every season, fifty tonnes**](Home)
+- [**We need fusion — the verdict every machine can check**](Home)
+- [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — **why fusion needs an exact law, not a bigger computer**
+- [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
+- [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
+- [**Fusion researcher's guide**](Fusion-Researchers-Guide)
+- [**Study 33** — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court)
+- [**Every season, fifty tonnes** — the biosphere-safety case](SpaceX-Biosphere-Safety)
 - [**Ask someone you trust to check this**](Ask-Someone-You-Trust-To-Check-This)
 - [**The forcing nobody measures**](Reentry-Forcing-Nobody-Measures)
 - [**Impact study — the SpaceX trajectory**](Impact-Study-SpaceX-Biosphere-Forcing)
 - [**Study 29** — continuous-model shear](Study-29-Continuous-Model-Shear)
-- [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — **why fusion needs an exact law, not a bigger computer**
-- [**Study 33** — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court)
-- [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
-- [**Fusion researcher's guide**](Fusion-Researchers-Guide)
-- [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Study 32** — the taxi-out floor court](Study-32-Taxi-Out-Floor-Court)
 - [**Study 31** — the biosphere joint ledger](Study-31-Biosphere-Cascade) — **LIVE on the court, 9/9 cells**
 - [**Study 30** — sovereign edge pod](Study-30-Sovereign-Edge-Pod)
@@ -20,7 +21,7 @@
 - [**The ontology**](Ontology) — grades, terminals, controls
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm) — the method
 - [**The full-grade replacement**](The-Replacement-Grade) — 49 retired instruments, 4 verticals
-- [Program index — all 30 studies](Shear-Studies-Index)
+- [Program index — all 34 studies](Shear-Studies-Index)
 - [Readers’ guide](Shear-Studies-Readers-Guide)
 - [White paper](Shear-Studies-White-Paper)
 - [Roadmap — what comes next](Shear-Studies-Roadmap)

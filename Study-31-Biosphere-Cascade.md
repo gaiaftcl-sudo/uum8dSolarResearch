@@ -354,4 +354,4 @@ xcrun swiftc -O -swift-version 5 reproduce/biosphere-cascade-chain.swift -o /tmp
 bash reproduce/validate.sh
 ```
 
-**Related:** [Impact study — the SpaceX trajectory](Impact-Study-SpaceX-Biosphere-Forcing) · [the closed-system box model](Home) · [Study 29 — continuous model shear](Study-29-Continuous-Model-Shear) · [Study 28 — wet-bulb court](Study-28-Wet-Bulb-Threshold-Court) · [the ontology](Ontology)
+**Related:** [Impact study — the SpaceX trajectory](Impact-Study-SpaceX-Biosphere-Forcing) · [the closed-system box model](SpaceX-Biosphere-Safety) · [Study 29 — continuous model shear](Study-29-Continuous-Model-Shear) · [Study 28 — wet-bulb court](Study-28-Wet-Bulb-Threshold-Court) · [the ontology](Ontology)
