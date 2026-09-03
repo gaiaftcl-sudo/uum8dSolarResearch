@@ -1,0 +1,4 @@
+module FusionAffine {
+header "FusionAffine-Swift.h"
+export *
+}

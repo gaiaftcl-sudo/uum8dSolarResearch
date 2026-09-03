@@ -1,3 +1,4 @@
+import FusionLaw
 // An agent is a STRUCT IN A BUFFER, not an actor. 240 actors exist in the
 // substrate and they are the wrong primitive for a 1 ms tick: child-task
 // overhead is hundreds of nanoseconds and the scheduler is not deadline-aware.

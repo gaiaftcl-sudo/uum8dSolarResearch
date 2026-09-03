@@ -1,0 +1,39 @@
+{
+  "" : {
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FusionClock-primary.dia",
+    "emit-module-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FusionClock-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FusionClock-primary-emit-module.dia",
+    "pch" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FusionClock-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FusionClock-primary.swiftdeps"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionClock/ControlClock.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/ControlClock~partial.swiftmodule"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionClock/FixedStepDriver.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/FixedStepDriver~partial.swiftmodule"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionClock/LatencyHistogram.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionClock-t.build/Objects-normal/arm64/LatencyHistogram~partial.swiftmodule"
+  }
+}

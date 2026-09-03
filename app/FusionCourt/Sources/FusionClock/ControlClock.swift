@@ -1,3 +1,4 @@
+import FusionLaw
 // The clock. Integer ticks, integer nanoseconds, no float anywhere.
 import Darwin
 

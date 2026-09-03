@@ -1,0 +1,4 @@
+module FusionLattice {
+header "FusionLattice-Swift.h"
+export *
+}

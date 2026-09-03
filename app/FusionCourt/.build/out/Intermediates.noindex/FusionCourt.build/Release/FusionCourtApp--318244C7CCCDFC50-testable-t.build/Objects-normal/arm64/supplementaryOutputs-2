@@ -1,0 +1,12 @@
+{
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionCourtApp/ControlHost.swift" : {
+    "abi-baseline-json" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp.abi.json",
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp--318244C7CCCDFC50-testable-primary.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp--318244C7CCCDFC50-testable-primary.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp--318244C7CCCDFC50-testable-primary.dia",
+    "objc-header" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp-Swift.h",
+    "swiftdoc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp.swiftdoc",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp.swiftmodule",
+    "swiftsourceinfo" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourtApp--318244C7CCCDFC50-testable-t.build/Objects-normal/arm64/FusionCourtApp.swiftsourceinfo"
+  }
+}

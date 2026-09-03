@@ -1,3 +1,4 @@
+import FusionLaw
 // Integer buckets. No mean, no float. A percentile reports its bucket's UPPER
 // BOUND, because a histogram cannot resolve finer than its buckets and
 // interpolating with a float to pretend otherwise is the same error class as an

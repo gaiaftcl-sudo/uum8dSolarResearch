@@ -1,0 +1,12 @@
+{
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLattice/LatticeCoordinate.swift" : {
+    "abi-baseline-json" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice.abi.json",
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-primary.dia",
+    "objc-header" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice-Swift.h",
+    "swiftdoc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice.swiftdoc",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice.swiftmodule",
+    "swiftsourceinfo" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionLattice-t.build/Objects-normal/arm64/FusionLattice.swiftsourceinfo"
+  }
+}

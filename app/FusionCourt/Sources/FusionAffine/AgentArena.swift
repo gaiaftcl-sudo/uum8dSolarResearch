@@ -1,3 +1,4 @@
+import FusionLaw
 // The arena. One flat Int16 window buffer for every agent — a 14-bit sample
 // fits in Int16, halving bandwidth against Int32.
 //

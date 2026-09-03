@@ -1,0 +1,39 @@
+{
+  "" : {
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/FusionLaw-primary.dia",
+    "emit-module-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/FusionLaw-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/FusionLaw-primary-emit-module.dia",
+    "pch" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/FusionLaw-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/FusionLaw-primary.swiftdeps"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLaw/Law.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Law~partial.swiftmodule"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLaw/LawConstants.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/LawConstants~partial.swiftmodule"
+  },
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionLaw/Verdict.swift" : {
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict.dia",
+    "index-unit-output-path" : "/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict.o",
+    "llvm-bc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict.bc",
+    "object" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict.o",
+    "swift-dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict.swiftdeps",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Debug/FusionLaw-t.build/Objects-normal/arm64/Verdict~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,4 @@
+module FusionClock {
+header "FusionClock-Swift.h"
+export *
+}

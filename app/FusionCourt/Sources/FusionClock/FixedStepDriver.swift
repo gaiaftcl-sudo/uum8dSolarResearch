@@ -1,3 +1,4 @@
+import FusionLaw
 // The fixed-timestep control driver.
 //
 // PRIMITIVE CHOICE, and why the alternatives were rejected:

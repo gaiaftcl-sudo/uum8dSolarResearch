@@ -1,0 +1,11 @@
+{
+  "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/Sources/FusionCourtApp/ControlHost.swift" : {
+    "abi-baseline-json" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourt-p.build/Objects-normal/arm64/FusionCourtApp.abi.json",
+    "const-values" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourt-p.build/Objects-normal/arm64/FusionCourt-primary.swiftconstvalues",
+    "dependencies" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourt-p.build/Objects-normal/arm64/FusionCourt-primary.d",
+    "diagnostics" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourt-p.build/Objects-normal/arm64/FusionCourt-primary.dia",
+    "swiftdoc" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourt-p.build/Objects-normal/arm64/FusionCourtApp.swiftdoc",
+    "swiftmodule" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourt-p.build/Objects-normal/arm64/FusionCourtApp.swiftmodule",
+    "swiftsourceinfo" : "/Users/richardgillespie/.gaiaftcl/franklin/wiki-publish/standalone/app/FusionCourt/.build/out/Intermediates.noindex/FusionCourt.build/Release/FusionCourt-p.build/Objects-normal/arm64/FusionCourtApp.swiftsourceinfo"
+  }
+}
