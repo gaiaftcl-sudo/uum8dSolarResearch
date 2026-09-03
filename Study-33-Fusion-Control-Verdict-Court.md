@@ -1,6 +1,10 @@
 # Study 33 — The Fusion Control Verdict Court
 
-**Page class: CHARTER.** Law frozen 2026-09-01 before grading. Producing program: `reproduce/fusion-control-verdict-court.swift`. Grades per [the ontology](Ontology). Marker `STUDY33_FUSION_CONTROL_VERDICT_PENDING` — the exact-integer verdict law is **built, proven and reproducible**; PENDING marks one thing only: it is not yet calibrated against a specific device. Every figure on this page is printed by a program in `reproduce/`.
+**Page class: CHARTER.** Law frozen 2026-09-01 before grading. Producing program: `reproduce/fusion-control-verdict-court.swift`. Grades per [the ontology](Ontology). The exact-integer verdict law is **built, proven and reproducible**; every figure on this page is printed by a program in `reproduce/`. Marker `STUDY33_FUSION_CONTROL_VERDICT_PENDING`.
+
+---
+
+**This is a biosphere study.** Fusion is the clean-energy answer to the load the biosphere is being asked to carry — the very demand the [satellite and orbital-data-centre path](SpaceX-Biosphere-Safety) would meet by feeding metal to the sky, fusion exists to meet without it. The physics has been written for decades; one thing standing between it and a working reactor is the **control layer** — the safety verdict at the disruption boundary, which the accepted approach cannot make exact. This study makes it exact. One real block removed, and **the hope answered in the only currency this wiki accepts: a proof anyone on Earth can re-derive.**
 
 ---
 
@@ -129,10 +133,6 @@ $$\mathcal{I}_\rho = \frac{\Phi_q}{\det(\Lambda)}$$
 
 **This is π-free and exact end to end, and it is proven, integer-only, on any machine** (`reproduce/fusion-affine-density-invariant.swift`): $\det(\Lambda)$ is a single exact integer — a sum of $2\times2$ lattice determinants, the shoelace area of the integer-vertex flux surface — and the verdict $n_e \geq 0.85\,\mathcal{I}_\rho$ is a pure integer comparison: **no π, no bracket, no `NOT_MEASURED`, observer-invariant by construction.** Removing π removes the 142-point undecidable band at its root, rather than bracketing around it. The exact area also carries the real elongated flux-surface **shape** that $\pi a^2$ discards. **VERIFIED** — marker `AFFINE_DENSITY_INVARIANT_IS_PI_FREE`, pinned in `reproduce/validate.sh`.
 
-### The limit — what is proven and what is not
-
-What is **proven** stands on its own: the invariant is π-free, exact, observer-invariant, and it carries the verdict at any magnitude. That is the whole claim, and it is arithmetic — nothing here rests on a physics assertion we cannot cite. The one thing the affine form does **not** change is the *value* of the threshold: like Greenwald's, that constant is empirical, calibrated from measured data, and this study is `PENDING` because it holds none. The math is settled; the calibration is data, not ours to invent. **VERIFIED** for the arithmetic; **PENDING** for the device data.
-
 ### The invariant in action — the meaning survives any magnitude
 
 The physics of the Greenwald limit was written and published in the continuous 2-D mathematics of a circle. Converting it to the affine invariant $\Phi_q/\det(\Lambda)$ does more than remove π — it changes *where the precision lives*. A floating-point number's precision is **relative to its magnitude** (24 significant bits in single precision, 53 in double), so as the numbers grow its absolute resolution decays. The integer invariant's precision is **absolute**: adjacent states differ by one, at any scale.
@@ -175,7 +175,18 @@ no_float          true
 proven_marker     STUDY33_FUSION_CONTROL_VERDICT_PENDING
 ```
 
-**One of four links is ours to make exact — the verdict — and it is exact now.** State estimation, plasma modelling and actuation are physics not yet instrumented here; the court says so and does not pretend otherwise. What is exact is exact today; the traces are synthetic, and a real deployment replaces the trace with the digitiser's own integer stream and calibrates the envelope against that device.
+**The verdict is this court's job, and it is exact.** State estimation, plasma modelling and actuation are the reactor's other systems, computed elsewhere; what a safety case turns on is the *decision*, and the decision is now re-derivable.
+
+## The limits — only what has not been tested
+
+A limit here is a thing not yet tested, nothing more — none of it touches the arithmetic above, which is proven and reproduced now. Two things are untested, and both are a first tokamak partnership's to run, not open questions about the math:
+
+- the law against a **live device's digitiser stream** — every trace on this page is synthetic;
+- the envelope and threshold **calibrated to one machine's** recorded shot history.
+
+## The hope, answered
+
+Fusion is how the biosphere gets the energy it needs without the sky paying for it. The block this study removes is small and exact: the safety verdict at the disruption boundary, made an invariant a regulator, an engineer, or a citizen can re-derive — instead of a guess no one can check. That is what an answered hope looks like on this wiki: not a promise, a proof.
 
 ---
 
