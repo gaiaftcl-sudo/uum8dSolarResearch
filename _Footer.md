@@ -1,0 +1,2 @@
+---
+**Rights — source-available, all rights reserved.** This wiki and its repository are published for public inspection and to let anyone re-derive the figures. They carry **no LICENSE**; under default copyright, **all rights are reserved**. No right is given or intended to use, run, or deploy it for any purpose other than re-deriving the published figures, nor to modify or build on it — **any other use requires a written licensing agreement with the authors.** · *Affine.Earth · zero float · zero shear*

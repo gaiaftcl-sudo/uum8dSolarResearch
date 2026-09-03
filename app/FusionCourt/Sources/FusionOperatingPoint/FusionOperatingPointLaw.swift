@@ -17,7 +17,8 @@ public enum FusionOperatingPointLaw {
 
     public static let marker = "FUSION_OPERATING_POINT_IS_THREE_EXACT_INEQUALITIES"
 
-    // pi brackets: 333/106 (low) < pi < 355/113 (high). ~2.7e-7 wide.
+    // pi brackets: 333/106 (low) < pi < 355/113 (high). Width 1/11978 ~ 8.35e-5.
+    // (2.7e-7 is the error of 355/113 alone, NOT the width of the bracket — corrected 2026-09-03.)
     static let piLo = (num: Int128(333), den: Int128(106))
     static let piHi = (num: Int128(355), den: Int128(113))
 

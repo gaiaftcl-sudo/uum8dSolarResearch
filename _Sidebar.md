@@ -5,6 +5,7 @@
 - [**The forcing nobody measures**](Reentry-Forcing-Nobody-Measures)
 - [**Impact study — the SpaceX trajectory**](Impact-Study-SpaceX-Biosphere-Forcing)
 - [**Study 29** — continuous-model shear](Study-29-Continuous-Model-Shear)
+- [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — **why fusion needs an exact law, not a bigger computer**
 - [**Study 33** — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court)
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)
