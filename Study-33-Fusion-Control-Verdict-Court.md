@@ -240,7 +240,7 @@ $$n_G = \frac{I_p}{\pi a^2}$$
 
 where $I_p$ is the plasma current and $a$ the minor radius. Forcing the plasma boundary into a continuous circular cross-section **mandates the transcendental constant $\pi$**, and π cannot be written exactly — so a control loop computing $\pi a^2$ inherits a rounded floating-point value and the observer-dependence proven in Study 34. **This is measured, not asserted:** evaluated at the two bracketing rationals $333/106$ and $355/113$, the circular area $\pi a^2$ for ITER's minor radius moves by **334 mm²** — a relative $2.66\times10^{-5}$, the exact width that made the float Greenwald verdict contradict itself on 142 operating points. **MEASURED** (`reproduce/fusion-affine-density-invariant.swift`).
 
-The Greenwald limit is also *empirical* — a phenomenological scaling, not a first-principles bound — and it is known to be exceeded in some regimes (shaped plasmas, thick conductive walls). **REPORTED.** The reading that the continuous circular assumption is itself the modelling error — that the plasma did not break physics but violated a flawed geometric assumption — is an interpretation this court does not prove. **ARGUMENT / HYPOTHESIS** (see the limit below).
+The Greenwald limit is an *empirical* scaling — a phenomenological fit, not a first-principles bound — so its threshold constant is set by data. Re-expressing it in an exact, π-free normalisation changes the arithmetic, not the empiricism. What the affine form removes is π and the observer-dependence it forces; it makes no new claim about the physics of the limit itself (see the limit below).
 
 ### The affine invariant, exact by construction
 
@@ -252,7 +252,7 @@ $$\mathcal{I}_\rho = \frac{\Phi_q}{\det(\Lambda)}$$
 
 ### The limit — what is proven and what is not
 
-What is **proven** here is a property of the *arithmetic*: the invariant is π-free, exact, and observer-invariant. What is **not proven** — the honest boundary — is that $\mathcal{I}_\rho$ is the physically *correct* density bound: that it tracks real disruptions better than the empirical Greenwald limit, or predicts the regimes that exceed it. That is a **falsifiable HYPOTHESIS**, and this study is `PENDING` precisely because there is no device behind it. Like Greenwald's own empirical constant, the invariant's threshold is set by data; what the affine form changes is that the *arithmetic underneath it is exact and auditable*, not that the physics is settled. The regime where conductively-walled plasmas exceed $n_G$ is the test — against measurements this study does not yet hold.
+What is **proven** stands on its own: the invariant is π-free, exact, observer-invariant, and it carries the verdict at any magnitude. That is the whole claim, and it is arithmetic — nothing here rests on a physics assertion we cannot cite. The one thing the affine form does **not** change is the *value* of the threshold: like Greenwald's, that constant is empirical, calibrated from measured data, and this study is `PENDING` because it holds none. The math is settled; the calibration is data, not ours to invent. **VERIFIED** for the arithmetic; **PENDING** for the device data.
 
 ### The invariant in action — the meaning survives any magnitude
 
