@@ -111,6 +111,7 @@ The honest question: does this law belong on a GPU? Measured on an M4 Max (40 GP
 ## The limits — stated plainly, because a court states its own
 
 - **No reactor. No real machine data.** Every trace here is synthetic; every operating point is presented. The app grades telemetry; it does not read a tokamak. (**NOT a measurement of any device.**)
+- **Determinism is checkable, not asserted.** A single sha256 over ~3,000 verdicts (`reproduce/fusion-determinism-digest.swift`) is identical on every machine — `f49b576e…` — because every verdict is an exact integer comparison with no floating point anywhere. Run it on your hardware; a different digest means the law diverged, which is the failure this architecture exists to make impossible.
 - **Timings are dated, not constant.** The latency and crossover numbers are this machine on this date. The harness pins the *claims* that must hold on any machine (5-of-5 terminals, byte-identical cross-topology verdicts, bit-exact GPU parity), never the wall-clock microseconds.
 - **The disruption thresholds are illustrative and frozen for demonstration.** A real deployment re-freezes them against its own device before grading anything. What is not illustrative is the *architecture*: exact, re-derivable, refusing where it has no answer.
 - **Mac-only.** This is the local app, deliberately not the build that ships to the Affine.Earth cells.

@@ -123,6 +123,7 @@ check_figure fusion-topology-agnostic     "all three signatures byte-identical: 
 check_figure fusion-topology-agnostic     "spheromak toroidal-closure edges == 0: true" ""
 check_figure fusion-real-machines         "REAL-MACHINE GEOMETRY GRADED: 4 WIN / 4 MISS-greenwald / 1 NOT_APPLICABLE" ""
 check_figure fusion-real-machines         "1193661" ""
+check_figure fusion-determinism-digest    "f49b576e073835bcab17bee10fe0eee1938774643d900b8ffe1a583b159ab3d7" ""
 check_figure fusion-control-benchmark    "HEADROOM_EXCEEDS_50X            TRUE" "Study-33-Fusion-Control-Verdict-Court.md"
 check_figure fusion-control-benchmark    "VERDICT_DETERMINISTIC_10K       TRUE" ""
 check_figure fusion-control-exact-law     "5 of 5 arms hold" "Study-33-Fusion-Control-Verdict-Court.md"
