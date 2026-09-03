@@ -58,7 +58,7 @@ Read the `float32 flips = 0` column precisely: **this is not a claim that floati
 
 ## The limits — a court states its own
 
-- **The π-bracket band is narrow — 0.0007%–0.0023% of the Greenwald limit across the four machines (0.0023% at ITER, the exhibit machine) — and sits below plasma-density measurement uncertainty (a few %).** So this is a demonstration of *kind*, not a claim that ITER's disruptions turn on the sixth digit of π. A tighter bracket would shrink the band; it would not change the guarantee, which is *interval-valid, or refuse*. The stakes are compositional — a verdict that is observer-dependent at any width cannot be the shared, auditable authority a planet-scale safety case needs. **ARGUMENT.**
+- **The π-bracket band is narrow — 0.0007%–0.0023% of the Greenwald limit across the four machines (0.0023% at ITER, the exhibit machine) — and sits below plasma-density measurement uncertainty (a few %).** So this is a demonstration of *kind*, not a claim that ITER's disruptions turn on the sixth digit of π. A tighter bracket would shrink the band; removing π entirely — the affine density invariant Φ_q/det(Λ) in [Study 33](Study-33-Fusion-Control-Verdict-Court#the-greenwald-limit-versus-the-uum-8d-rational-density-invariant) — removes it. The guarantee either way is *interval-valid, or refuse*, and the affine form has no interval to bracket. The stakes are compositional — a verdict that is observer-dependent at any width cannot be the shared, auditable authority a planet-scale safety case needs. **ARGUMENT.**
 - **This court operates no reactor.** Every trace is synthetic and every operating point is presented; there is no actuation and no diagnostic feed. The only real numbers are the four machines' *published* current and minor radius. **REPORTED.**
 - **The bracket-width figure was itself corrected in the making of this study.** The law's comment and an earlier page called the `333/106 … 355/113` bracket "~2.7×10⁻⁷ wide." It is not: `355/113 − 333/106 = 1/11978 ≈ 8.35×10⁻⁵`. The `2.7×10⁻⁷` is the error of `355/113` *alone*, not the width of the interval. The integer identity is printed by the proof program and pinned in the harness. **VERIFIED.**
 - **The parent study is `PENDING`.** [Study 33](Study-33-Fusion-Control-Verdict-Court) carries `STUDY33_FUSION_CONTROL_VERDICT_PENDING`: a law graded on synthetic traces, with no device behind it, has not earned more. This study proves a property of the *verdict*, not a fusion result. **VERIFIED.**
@@ -76,7 +76,7 @@ git clone https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git
 cd uum8dSolarResearch
 
 # the same corpus, one sha256, identical on every machine:
-bash reproduce/validate.sh                    # 140 checks, digest-pinned
+bash reproduce/validate.sh                    # 143 checks, digest-pinned
 
 # the observer-dependence of the float verdict, machine by machine:
 #   (staged and run the way validate.sh runs every reproduce script)

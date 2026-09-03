@@ -228,6 +228,32 @@ Not measured on control hardware, not through real I/O, no actuation, one channe
 
 **The last row is the honest one and it is not in our favour.**
 
+## The Greenwald limit versus the UUM-8D rational density invariant
+
+The operating-point court above computes the Greenwald density limit *exactly*, by bracketing π between two rationals and refusing where the verdict is not π-independent ([Study 34](Study-34-Observer-Invariant-Verdict), the 142 contradiction points). This section states the deeper move: **removing π from the bound entirely.**
+
+### The classical instrument, and where it shears
+
+Classical fusion control defines the empirical operational density limit with continuous Euclidean geometry:
+
+$$n_G = \frac{I_p}{\pi a^2}$$
+
+where $I_p$ is the plasma current and $a$ the minor radius. Forcing the plasma boundary into a continuous circular cross-section **mandates the transcendental constant $\pi$**, and π cannot be written exactly — so a control loop computing $\pi a^2$ inherits a rounded floating-point value and the observer-dependence proven in Study 34. **This is measured, not asserted:** evaluated at the two bracketing rationals $333/106$ and $355/113$, the circular area $\pi a^2$ for ITER's minor radius moves by **334 mm²** — a relative $2.66\times10^{-5}$, the exact width that made the float Greenwald verdict contradict itself on 142 operating points. **MEASURED** (`reproduce/fusion-affine-density-invariant.swift`).
+
+The Greenwald limit is also *empirical* — a phenomenological scaling, not a first-principles bound — and it is known to be exceeded in some regimes (shaped plasmas, thick conductive walls). **REPORTED.** The reading that the continuous circular assumption is itself the modelling error — that the plasma did not break physics but violated a flawed geometric assumption — is an interpretation this court does not prove. **ARGUMENT / HYPOTHESIS** (see the limit below).
+
+### The affine invariant, exact by construction
+
+The UUM-8D substrate holds no continuous circle and no π. Spatial separation is exact rational **quadrance** (squared distance, no √); the cross-sectional bound is the exact integer **determinant of the lattice vectors** of the flux-surface slice, $\det(\Lambda)$; and the plasma current is a discrete integer count of charge flux, $\Phi_q$, from vQbit state transitions. The empirical limit is replaced by the exact rational density invariant:
+
+$$\mathcal{I}_\rho = \frac{\Phi_q}{\det(\Lambda)}$$
+
+**This is π-free and exact end to end, and it is proven, integer-only, on any machine** (`reproduce/fusion-affine-density-invariant.swift`): $\det(\Lambda)$ is a single exact integer — a sum of $2\times2$ lattice determinants, the shoelace area of the integer-vertex flux surface — and the verdict $n_e \geq 0.85\,\mathcal{I}_\rho$ is a pure integer comparison: **no π, no bracket, no `NOT_MEASURED`, observer-invariant by construction.** Removing π removes the 142-point undecidable band at its root, rather than bracketing around it. The exact area also carries the real elongated flux-surface **shape** that $\pi a^2$ discards. **VERIFIED** — marker `AFFINE_DENSITY_INVARIANT_IS_PI_FREE`, pinned in `reproduce/validate.sh`.
+
+### The limit — what is proven and what is not
+
+What is **proven** here is a property of the *arithmetic*: the invariant is π-free, exact, and observer-invariant. What is **not proven** — the honest boundary — is that $\mathcal{I}_\rho$ is the physically *correct* density bound: that it tracks real disruptions better than the empirical Greenwald limit, or predicts the regimes that exceed it. That is a **falsifiable HYPOTHESIS**, and this study is `PENDING` precisely because there is no device behind it. Like Greenwald's own empirical constant, the invariant's threshold is set by data; what the affine form changes is that the *arithmetic underneath it is exact and auditable*, not that the physics is settled. The regime where conductively-walled plasmas exceed $n_G$ is the test — against measurements this study does not yet hold.
+
 ## The domain declaration — in the court's own shape
 
 ```

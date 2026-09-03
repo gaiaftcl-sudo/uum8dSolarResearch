@@ -89,7 +89,7 @@ No account. No key. No dependency on us.
 ```bash
 git clone https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git
 cd uum8dSolarResearch
-bash reproduce/validate.sh                    # 140 checks, digest-pinned
+bash reproduce/validate.sh                    # 143 checks, digest-pinned
 ```
 
 The harness verifies that every figure quoted on these pages appears in the output of the program that claims to produce it, that the corpora match their published digests, and that no page cites a path you cannot reach. **If a check fails, we want the issue.** As we did the day we found a 300× error in our own π-bracket figure — `355/113 − 333/106 = 1/11978 ≈ 8.35×10⁻⁵`, not the `2.7×10⁻⁷` an earlier page claimed — the correction is published with a date on it.
