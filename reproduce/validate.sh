@@ -37,7 +37,11 @@ if have xcrun || have swiftc; then
         n=$(basename "$p" .swift)
         extra=""
         if grep -q "FusionLaw\.\|LawConstants\." "$p" 2>/dev/null; then
-            extra="$(ls "$LAWSRC"/*.swift 2>/dev/null | tr '\n' ' ')"
+            extra="$extra $(ls "$LAWSRC"/*.swift 2>/dev/null | tr '\n' ' ')"
+        fi
+        # A script consuming the operating-point court links that target too.
+        if grep -q "FusionOperatingPointLaw\.\|OperatingEnvelope(" "$p" 2>/dev/null; then
+            extra="$extra $(ls "$ROOT/app/FusionCourt/Sources/FusionOperatingPoint"/*.swift 2>/dev/null | tr '\n' ' ')"
         fi
         stage="$(mktemp -d)"; cp "$p" "$stage/main.swift"
         out="$(cd "$ROOT/corpus/flood-lead-time" 2>/dev/null || cd "$HERE"; \
@@ -113,6 +117,10 @@ check_figure cost-ownership-horizon       "NOT BROADBAND" ""
 check_figure fusion-verdict-stream       "FIRST MITIGATE at sample 7016" ""
 check_figure fusion-verdict-figure       "warning lead 140 us" ""
 check_figure fusion-verdict-figure       "140 µs" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-operating-court       "COURT TERMINALS REACHED: 5 of 5" ""
+check_figure fusion-operating-court       "NOT_APPLICABLE_NO_PLASMA_CURRENT" ""
+check_figure fusion-topology-agnostic     "all three signatures byte-identical: true" ""
+check_figure fusion-topology-agnostic     "spheromak toroidal-closure edges == 0: true" ""
 check_figure fusion-control-benchmark    "HEADROOM_EXCEEDS_50X            TRUE" "Study-33-Fusion-Control-Verdict-Court.md"
 check_figure fusion-control-benchmark    "VERDICT_DETERMINISTIC_10K       TRUE" ""
 check_figure fusion-control-exact-law     "5 of 5 arms hold" "Study-33-Fusion-Control-Verdict-Court.md"
