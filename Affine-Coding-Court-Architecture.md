@@ -110,7 +110,7 @@ clean result reads *"nothing detectable"*, never *"proven compliant"*.
 ## Status
 
 **95 tests, 0 failures, 0 skipped** — re-measured 2026-09-01 with
-`swift test --filter 'Court|Crucible|Judgment'` in `cells/xcode`, so the number is reproducible
+`swift test --filter 'Court|Crucible|Judgment'` in the substrate checkout, so the number is reproducible
 rather than remembered. Per suite: crucible 30, judgment 21, brief 11, whole-file 16, IR-equiv 7,
 reach 5, classical-vs-affine 4, MCP JSON-RPC 1. Both arms of every detector.
 

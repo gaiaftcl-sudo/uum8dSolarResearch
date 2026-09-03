@@ -101,6 +101,12 @@ check_figure cost-ownership-horizon       "year 5"   "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "4,784,700" "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "2,160,000" "The-Replacement-Grade.md"
 check_figure cost-ownership-horizon       "NOT BROADBAND" ""
+check_figure fusion-control-exact-law     "5 of 5 arms hold" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-exact-law     "REFUSED_OUT_OF_ENVELOPE" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-exact-law     "idx=208 peak=960" ""
+check_figure fusion-control-verdict-court "FIVE REAL-WORLD EXPERIMENTS" ""
+check_figure fusion-control-verdict-court "STUDY33_FUSION_CONTROL_VERDICT_PENDING" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-verdict-court "beta_normalized=1.8" "Study-33-Fusion-Control-Verdict-Court.md"
 check_figure valuation-crossing-ledger    "2036"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "2038"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "973.7"    "The-Replacement-Grade.md"
@@ -135,7 +141,11 @@ echo "=== 4. the public pages carry no private reference ==="
 BREACH=0
 PAGES=$(ls "$ROOT"/*.md 2>/dev/null | wc -l | tr -d ' ')
 [ "$PAGES" -gt 0 ] || { bad "no pages found to scan — refusing to report a clean boundary"; BREACH=1; }
-for pat in 'cells/' 'Sources/' '\.gaiaftcl' '/Users/' '\.swift:[0-9]' 'mortonBits' 'CapabilityRegistry'; do
+# 'Sources/' alone is AMBIGUOUS: this public repo legitimately contains
+# clients/math-court-mcp/swift-example/Sources/main.swift. The pattern must name the
+# PRIVATE parents only, or it fires on our own public tree and trains readers to
+# ignore it — an always-red gate is as useless as an always-green one.
+for pat in 'cells/' 'cells/xcode/Sources/' 'LatticeRender/Sources/' '\.gaiaftcl' '/Users/' '\.swift:[0-9]' 'mortonBits' 'CapabilityRegistry'; do
     hits=$(grep -lE "$pat" "$ROOT"/*.md 2>/dev/null | wc -l | tr -d ' ')
     if [ "${hits:-0}" -gt 0 ]; then
         bad "private reference '$pat' in $hits page(s): $(grep -lE "$pat" "$ROOT"/*.md 2>/dev/null | xargs -n1 basename | tr '\n' ' ')"

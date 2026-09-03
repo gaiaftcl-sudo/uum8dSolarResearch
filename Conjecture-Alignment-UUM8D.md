@@ -7,7 +7,7 @@ Three pillars of continuous mathematics — volume, probability, rigidity — we
 
 Live MCP: `https://affine.earth/language-invariant/mcp` · Registry: `earth.affine/math-court`  
 Caller: `bash clients/math-court-mcp/prove-live-court.sh`  
-Law: `LatticeRender/Sources/LatticeRender/QCCourtLaw.swift` + `QMACourtLaw.swift`
+Law: the QC court law module (private repo) 
 
 **Live `tools/list` is 49**, measured 2026-09-02 per-cell against all nine A records with SNI pinned (it read 48 on 2026-08-29 and 23 on 2026-08-27; the 43/44/45 projections were forecasts, superseded). QC-001…019, QC-021, the two projection tools and generic `expose` are all **LIVE on the apex** — every `verify_*`, `project_*` and `expose` call below was replayed against the served surface on 2026-09-02 (`bash clients/math-court-mcp/prove-live-court.sh`: 40 WIN of 41 study rows, the single MISS being the fixture count 48 that this page and the fixture file now carry as 49). The 49th tool is `execute_artifact_crucible`, the Coding Court — see [Affine Coding Court](Affine-Coding-Court-Architecture.md): `kind` selects the law (`affine_key`, `jordan`, `lattice`, `qc_*`, `qma_*`). The act is strobe → emit → seal. After QC-001…019 deploy, count is **43**. After `verify_presented_pair`, **44**. After `expose`, **45**. Local proof: `swift test --package-path LatticeRender --filter ExposeLaw`.
 

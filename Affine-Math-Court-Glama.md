@@ -45,7 +45,7 @@ Full algorithm map: [Quantum algorithms inventory](Quantum-Algorithms-Inventory.
 ## The 49 live tools (measured 2026-09-02) — and the 23 of 2026-08-27
 
 Live HTTP: `POST https://affine.earth/language-invariant/mcp` `tools/list` → HTTP 200, **49** names, identical on every one of the nine cells with SNI pinned.  
-In-repo mirror: `cells/xcode/Resources/language-game/mcp-tools.json` (regenerated from the live list 2026-09-02) · `CapabilityRegistry.servableEntries` · `.well-known/glama.json` (all 49).  
+In-repo mirror: an in-repo tool manifest (private repo) (regenerated from the live list 2026-09-02) · the registry's served-entry table (private repo) · `.well-known/glama.json` (all 49).  
 If those disagree with the live HTTP, the live HTTP wins. Re-measure: `bash clients/math-court-mcp/prove-live-court.sh`.
 
 The 26 that joined since the table below was captured: the 21 QC verifiers (`verify_shor_witness` … `verify_presented_pair`), generic `expose`, the two projection tools `project_shor_twin` and `project_affine_key`, and the Coding Court pair `code_ir_equiv` and `execute_artifact_crucible`. Full table with every tool: [MCP user guide](Affine-Earth-MCP-User-Guide.md).
@@ -112,7 +112,7 @@ PRIME group order, so the required bond dimension is n itself (~1.16e77) against
 Measured 2026-09-02, that answers verdict **CHI_EXHAUSTED**: `energy_num` = n (the bond dimension this instance requires, ~1.16e77) over `energy_den` = 4096 (the ceiling), and the detail names the PROBE as the limit — an n² enumeration that closes to n=17 — rather than the group. It is a cost report, not a claim of impossibility and not a graded pair (the wire `status` reads MISS today; the `verdict` field is the one to read).
 `x(Q)` is returned as ground because it is real and derivable, and it is PUBLIC; it is never
 promoted into the private face. A court that backfilled it would announce a bonded pair for every
-pubkey Bitcoin has ever exposed. Membrane: `CapabilityRegistry` + `CertifiedUserMCPMembrane`. `tools/list` on the live apex is **49**, measured 2026-09-02 against every one of the nine A records, not through the round-robin alone. The count grew past 45 with the two PROJECTION tools and reached 49 with the Coding Court, which are the only ones on this surface that hand back a value you did not post: `project_shor_twin` and `project_affine_key`. `expose` `kind` selects the law (`affine_key` is Q-only Affine period strobe, no k). The act is strobe → emit → seal. Named `verify_*` tools replay a sealed emit. Call table: [Conjecture Alignment](Conjecture-Alignment-UUM8D.md). They do not search an unknown period, marked item, variational landscape, or k from a bare Q. `vmNotConnected` catalog bodies are not this surface.
+pubkey Bitcoin has ever exposed. Membrane: the capability registry (private repo) + the certified-user membrane (private repo). `tools/list` on the live apex is **49**, measured 2026-09-02 against every one of the nine A records, not through the round-robin alone. The count grew past 45 with the two PROJECTION tools and reached 49 with the Coding Court, which are the only ones on this surface that hand back a value you did not post: `project_shor_twin` and `project_affine_key`. `expose` `kind` selects the law (`affine_key` is Q-only Affine period strobe, no k). The act is strobe → emit → seal. Named `verify_*` tools replay a sealed emit. Call table: [Conjecture Alignment](Conjecture-Alignment-UUM8D.md). They do not search an unknown period, marked item, variational landscape, or k from a bare Q. `vmNotConnected` catalog bodies are not this surface.
 
 **STILL NOT TOOLS.** `run_quantum_algorithm`, miner verbs, ECDLP-from-Q, VQE optimizer, QAOA pulses. Lean / substrate stay the research engines. Typed `AlgorithmCatalog` shells still throw `vmNotConnected` — do not expose those.
 
@@ -120,7 +120,7 @@ pubkey Bitcoin has ever exposed. Membrane: `CapabilityRegistry` + `CertifiedUser
 |---|---|
 | Shor / period / Grover / QFT / QPE court | Named MCP tools above (LIVE) · local `swift test --package-path LatticeRender --filter QCCourtLaw` |
 | Shor witness Lean | `cd proof/lean && lake build FirstRoars.ShorWitnessCertifier` · [Lion-Shor-Witness-Certifier](Lion-Shor-Witness-Certifier.md) |
-| Shor ECDLP substrate | `cells/xcode/Sources/ShorECDLPSubstrate/` · Lean `ShorECDLP.lean` |
+| Shor ECDLP substrate | the ECDLP substrate module (private repo)|
 | Studies 12–13 local prover | `gaiaftcl prove conjecture-workload` |
 | Miner verbs | `mine`, `isolate`, `sha256d`, `submitblock`, `nphard` — unproven, off `tools/list` |
 

@@ -9,12 +9,12 @@ Canonical sources:
 
 | Surface | Path |
 |---|---|
-| Public MCP (`tools/list`) | Live: `POST https://affine.earth/language-invariant/mcp` · evidence `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw` · **count 23** (pre-roll) · HTTP 200 edge `nbg-01` · in-repo live mirror `cells/xcode/Resources/language-game/mcp-tools.json` · wired QC law `LatticeRender/Sources/LatticeRender/QCCourtLaw.swift` |
+| Public MCP (`tools/list`) | Live: `POST https://affine.earth/language-invariant/mcp` · evidence `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw` · **count 23** (pre-roll) · HTTP 200 edge `nbg-01` · in-repo live mirror an in-repo tool manifest (private repo) · wired QC law the QC court law module (private repo) |
 | Registry | `docs/mcp/server.json` · `earth.affine/math-court` |
-| Served names | `CapabilityRegistry.servableEntries` in `cells/xcode/Sources/InvariantCompiler/CapabilityRegistry.swift` |
-| Typed QC-001…019 shells | `cells/xcode/Sources/VQbitMath/Algorithms/AlgorithmCatalog.swift` |
-| Literature shear map | `cells/xcode/Sources/InvariantCompiler/QuantumShearMap.swift` |
-| QMA court law | `LatticeRender/Sources/LatticeRender/QMACourtLaw.swift` |
+| Served names | the registry's served-entry table (private repo) in the capability registry (private repo) |
+| Typed QC-001…019 shells | the algorithm catalogue (private repo) |
+| Literature shear map | the literature shear map (private repo) |
+| QMA court law | the QMA court law module (private repo) |
 | Lean gates | [Research Lean gates](Research-Lean-Gates.md) · `proof/lean/FirstRoars/` |
 | Public court | [Math Court on Glama](Affine-Math-Court-Glama.md) |
 
@@ -95,7 +95,7 @@ Call names and fixtures: [Conjecture Alignment](Conjecture-Alignment-UUM8D.md). 
 | `GaiaCellMCPServer` (`run_quantum_algorithm`, `distribute-shor`) | `d1a00b7b` / `068a548a` | Scripts still *mention* those names (`install-mcp-server.sh`, `franklin-mesh-orchestrator-loop.sh`). They are **not** on `https://affine.earth/language-invariant/mcp`. |
 | Old Franklin teaching catalog | `wiki/Quantum-Algorithm-Catalog.md` deleted `ff85c3b0` (2026-07-15) | Archive copy: `evidence/wiki-archive-20260612T140113Z/wiki/Quantum-Algorithm-Catalog.md` — operator narration, not a live tool list. This page replaces it. |
 
-Python leftover: `cells/python/gaiaftcl/src/gaiaftcl/shor.py` still shells `gaiaftcl prove shor`. The Swift `prove` dispatcher no longer registers that subcommand.
+Python leftover: a legacy Python shim (private repo) still shells `gaiaftcl prove shor`. The Swift `prove` dispatcher no longer registers that subcommand.
 
 ---
 
@@ -116,7 +116,7 @@ Results: [11](Study-11-Ehrhart-Volume-Results.md) · [12](Study-12-Quantum-Paral
 | Tree | Role |
 |---|---|
 | `wiki/` | Steward / git wiki |
-| `cells/xcode/Resources/language-game/press/wiki/` | Copy served with the language-game press surface |
+| the press-surface copy directory (private repo) | Copy served with the language-game press surface |
 
 This inventory belongs in both. If they drift, the live `tools/list` HTTP response wins. `prove-live-court.sh` fails loud when the count or names move.
 

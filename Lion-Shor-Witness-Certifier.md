@@ -89,7 +89,7 @@ cd proof/lean && lake build FirstRoars.ShorWitnessCertifier
 # → ✔ Built FirstRoars.ShorWitnessCertifier (native_decide closes the seal)
 
 # 2. Swift S4 recompute matches bit-for-bit
-cd ../../cells/xcode
+cd <substrate checkout>
 swift run M8ShorCertifierSmokeTest
 # → Tier 1 PASS: 35 / 35  Wall: ~0.6 ms
 # → Tier 2/3 PASS: 13 / 13  Wall: ~0.2 ms
@@ -124,7 +124,7 @@ This page exists so the seal's meaning equals what the kernel proved — no more
 | Lean witness certifier | `proof/lean/FirstRoars/ShorWitnessCertifier.lean` | In tree |
 | Lean textbook / large factor | `ShorFactor15.lean`, `ShorFactorLarge.lean` | In tree |
 | Lean ECDLP | `ShorECDLP.lean` · couplings `QFTToShorCoupling.lean`, `QPEToShorCoupling.lean` | In tree |
-| ECDLP substrate | `cells/xcode/Sources/ShorECDLPSubstrate/` (`ShorECDLPSubstrate.swift`, curve, group-law MPO probe, target descriptor) | Live 3D path: `Secp256k1ECDLPVerificationDispatcher` |
+| ECDLP substrate | the ECDLP substrate module (private repo)| Live 3D path: `Secp256k1ECDLPVerificationDispatcher` |
 | Typed QC-001 shell | `AlgorithmCatalog.swift` `QC001Shor` / `QC001ECDLPShor` | Throws `vmNotConnected` until a VM is moored |
 | Inventory | [Quantum algorithms inventory](Quantum-Algorithms-Inventory.md) | Maps Glama vs Lean vs stripped |
 
@@ -145,7 +145,7 @@ This page exists so the seal's meaning equals what the kernel proved — no more
 
 ## Leftover Python wrapper
 
-`cells/python/gaiaftcl/src/gaiaftcl/shor.py` and `cells/python/gaiaftcl/src/gaiaftcl/cli.py` still invoke `gaiaftcl prove shor`. The Swift `prove` dispatcher (`GaiaFTCLCLIEntry.swift` case `"prove"`) lists `language-games`, `poly-n`, `substrate-oo`, `conjecture-workload`, `qc020-verifier` — **not `shor`**. Treat the Python verb as leftover, not a live compute path.
+a legacy Python shim (private repo) and the legacy CLI shim (private repo) still invoke `gaiaftcl prove shor`. The Swift `prove` dispatcher (`GaiaFTCLCLIEntry.swift` case `"prove"`) lists `language-games`, `poly-n`, `substrate-oo`, `conjecture-workload`, `qc020-verifier` — **not `shor`**. Treat the Python verb as leftover, not a live compute path.
 
 ## Honest bound
 

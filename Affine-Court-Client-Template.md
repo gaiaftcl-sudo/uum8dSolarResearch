@@ -83,7 +83,7 @@ A returned `wasm.module` is:
 
 1. **digest-checked** — the blob is decoded and re-hashed; a mismatch with the declared `sha256` stops here, by name;
 2. **magic-checked** — the bytes must begin `00 61 73 6d 01`; an `artifact_kind` is an assertion and the magic is a fact;
-3. **instantiated** — the module's declared imports are read; `box_camera.*` is wired to the served law module `AffineWasmClient.wasm` when it is reachable from this origin, otherwise to a declared identity stub and the log says so (a stub is not a projection law, so a refused vertex stays visible rather than being invented);
+3. **instantiated** — the module's declared imports are read; `box_camera.project_x` and `project_y` are wired to `BoxCamera` in the served law module `AffineWasmClient.wasm` through the same adapter the landing page uses (`box_camera_project(x,y,z)` then lanes 4 and 5 of the law's Int32 out buffer; a return other than 1 crosses the boundary as `i32::MIN`), so the cell raster and this canvas cannot project differently. When the law module is not reachable the import is a **refusing** stub — every call answers `i32::MIN` and the shell parks the vertex — and the log says so; a stub never invents a coordinate;
 4. **driven** — if it exports the IDE shell contract (`get_code_buffer_ptr`, `set_code_length`, `validate_edge_code`, `ingest_intent_vector`, `get_frame_buffer_ptr`, `memory`), the page writes your prompt into the 64 KB code buffer, asks the module to validate it as UTF-8, posts one intent vector under a monotonic sequence id, and paints the 600×600 frame onto the canvas. Any other module has its zero-argument exports listed and called.
 
 Measured on the live apex, posting the served 4,946-byte `affine_wasm_ide.wasm` as base64 with the
@@ -95,7 +95,7 @@ template brief:
 | returned resource | `affine://artifact/affine_wasm_ide.wasm`, `application/wasm`, `artifact_kind wasm.module`, 4,946 bytes |
 | digest | recomputed in the page equals the declared `sha256`; bytes identical to what was posted |
 | instantiate | imports `box_camera.project_x`, `box_camera.project_y`; exports the full IDE shell contract |
-| drive | `validate_edge_code → 1`, `ingest_intent_vector` accepted, frame painted on the canvas |
+| drive | `validate_edge_code → 1`, `ingest_intent_vector` accepted, frame painted on the canvas — 800 lit pixels with `box_camera` resolved to the served law module (725 with the refusing stub, cross-origin from a dev box) |
 
 **The brief declares `Target Architecture: Rust no_std wasm32`**, because that is what the client
 shell is. That value is **committed and not yet serving**: the fleet binary at the time of writing
@@ -106,8 +106,11 @@ with the next binary roll, and this sentence is replaced by its per-cell measure
 ### 4. A coding Long Play
 
 `umc_direct` with `domain coding` starts a Universal Manifold Controller session under a
-`session_id` the page keeps; `umc_resume` resumes it from the latest tip. The buttons are next to
-the brief. These are the same two tools any MCP host can call; the page adds nothing but the id.
+`session_id` the page keeps; `umc_resume` resumes it from the latest tip. Both are **grant class
+mesh**: an anonymous call is `REFUSED_GRANT_MESH_IDENTITY_REQUIRED` (measured 2026-09-02), so the
+page sends `user_vqbit_hash` derived by the one identity law it loads, `GameNATS.userVQbitHash` in
+`game-nats.js` — byte-identical to the cell's — over the entity `court-client:<session_id>`. The page
+carries no second copy of that hash. Measured 2026-09-02 through the page: `umc_direct` → `CALORIE_GAV_LONG_PLAY`, tip `turn_index 3 · tau_height 3 · torsion 0/1 · amplitudes 3/5, 4/5`, sealed to KV key `coding.<session>.court-client` and subject `gaiaftcl.umc.state.coding.<session>.court-client`; `umc_resume` → `CALORIE_GAV_LONG_PLAY_RESUME`, `turn_index 4 · tau_height 7`. These are the same two tools any MCP host can call.
 
 ---
 
@@ -149,9 +152,9 @@ await CourtClient.instantiate(bytes, name)       // digest-checked module → ca
 
 | file | role |
 |---|---|
-| `cells/xcode/Resources/language-game/court-client.html` | the page |
-| `cells/xcode/Resources/language-game/court-client.js` | tools/list → forms; files → games; prompt → brief → crucible; module receive/instantiate/drive |
-| `cells/xcode/Resources/language-game/court-client.brief.txt` | the twelve-field brief for the generic client (fetched by the page) |
+| the court client page (private repo) | the page |
+| the court client script (private repo) | tools/list → forms; files → games; prompt → brief → crucible; module receive/instantiate/drive |
+| the client brief (private repo) | the twelve-field brief for the generic client (fetched by the page) |
 | `clients/math-court-mcp/briefs/generic-wasm-ide-client.brief.txt` | the same brief, for agents working from the clients tree |
 | `apps/AffineWasmIDE` | the Rust `#![no_std]` shell the brief describes; `affine_wasm_ide.wasm` is its built artifact |
 
