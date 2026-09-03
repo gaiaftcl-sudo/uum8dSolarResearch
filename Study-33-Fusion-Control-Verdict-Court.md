@@ -8,21 +8,24 @@
 
 This is not a contest between two models. It is a contest between two *kinds* of computation.
 
-The accepted approach runs on **GPUs** and is **backward-looking**: a statistical model trained on a corpus of past shots, which in real time interpolates from that corpus. It is **not invariant-based.** Off the corpus it has no defined behaviour — and off-distribution is precisely where disruptions live. Trained on yesterday, it decides today by resemblance.
+The accepted approach runs on **GPUs** and is **backward-looking**: on a fixed **system tick** it samples the plasma and **guesses** — a statistical model, trained on past shots, interpolating today's state from yesterday's corpus. **Tick and guess.** It is *not invariant-based*: off the corpus it has no defined behaviour, and off-distribution is precisely where disruptions live. Trained on yesterday, it decides today by resemblance.
 
-The affine court computes an **invariant** — an exact quantity, true by construction, the same on every machine, at any magnitude — and **projects the magnetics-control verdict in real time: no floating point, no heap, deterministic, over the substrate's NATS mesh rather than a GPU batch.** Forward, exact, re-derivable. Not trained. Not interpolated. Not float.
+The affine court does neither. It computes an **invariant** — an exact quantity, true by construction, the same on every machine, at any magnitude — and **projects** it over **τ**, the substrate's shared causal coordinate: no tick-gap to guess across, no floating point, no heap, deterministic, over the NATS mesh rather than a GPU batch. **τ and projection, not tick and guess.** Forward, exact, re-derivable — nothing trained, interpolated, or floated.
 
 > **The frozen question: when the mitigation system fires, can the verdict be re-derived by a party that does not trust the operator?**
 
-## Why the trained, floating-point verdict cannot carry a safety case
+## Why a tick-and-guess controller cannot be successful
 
-A GPU-trained controller fails the safety verdict on three counts, and each is proven on this wiki, not asserted:
+A safety verdict — the object a licensed facility's protection case is *made of* — must be four things at once. A backward-looking, floating-point, tick-and-guess controller is **none** of them, and each failure is proven on this wiki, not asserted. These are **structural**, not tuning: no better model, no bigger GPU, no faster tick removes them.
 
-- **Shear — it is observer-dependent.** The Greenwald density test computed in floating point contradicts itself on **142 operating points** across ITER, SPARC, JET and DIII-D: the value of π the implementation rounds to decides whether the plasma is safe or over the line ([Study 34](Study-34-Observer-Invariant-Verdict)). A verdict that changes with the observer's arithmetic is not a safety case.
-- **Magnitude — it goes blind.** A float's precision is relative to its size, so past 2²⁴ (single) and 2⁵³ (double) it can no longer separate two adjacent physical states. float32 goes blind **below a single plasma current in amperes** — beyond that the verdict is not wrong, it is *undefined*. The affine integer invariant separates the states at every scale ([the magnitude proof below](#the-invariant-in-action--the-meaning-survives-any-magnitude)).
-- **Off-distribution — it interpolates where it must refuse.** A statistical model has no terminal for "outside what I was trained on." Fed a trace off its manifold it returns a number, extrapolated from data it never saw, and cannot be re-derived from the trace alone — it needs the weights, the state, and trust in whoever produced them.
+1. **Bounded where it matters — it is not.** A disruption is an *off-distribution* event, and a statistical interpolator has no defined behaviour and no error bound off its training manifold. Fed a state it never saw, it returns a confident number with no basis — it has no terminal for *"outside what I was trained on."* It guesses hardest exactly where the guess is worthless.
+2. **The same for every observer — it is not.** The Greenwald test computed in floating point contradicts itself on **142 operating points** across ITER, SPARC, JET and DIII-D: the value of π the implementation rounds to decides whether the plasma is safe or over the line ([Study 34](Study-34-Observer-Invariant-Verdict)).
+3. **Intact at scale — it is not.** A float's precision is relative to its magnitude, so it goes blind **below a single plasma current in amperes** ([the magnitude proof below](#the-invariant-in-action--the-meaning-survives-any-magnitude)); past that the two states are the same number and the verdict is *undefined*.
+4. **Re-derivable by a safety authority — it is not.** A trained model's output cannot be reconstructed from the trace: it needs the weights, the internal state, and trust in whoever produced them. After an incident there is nothing to re-derive.
 
-Real-time disruption control is an open problem. If a backward-looking, floating-point controller could carry an exact, re-derivable safety verdict, it would not be one. The three failures above are why it cannot close it — and why the verdict has to be an invariant.
+**Four requirements, four structural failures.** That is the proof — not that a tick-and-guess controller performs *worse*, but that it cannot produce the object a safety case requires. It is why real-time disruption control, attempted this way, remains an open problem: if the approach could yield a bounded, observer-invariant, scale-intact, re-derivable verdict, it would already have.
+
+**The affine court provides all four by construction.** It does not guess — it projects an exact invariant over τ: bounded (exact, with a named `REFUSED` terminal off-envelope), observer-invariant (proven), scale-intact (proven at any magnitude), and re-derivable (integers — no weights, no trust). That is the whole difference, and it is the difference between a court and a guess.
 
 ## The exact law, built and running
 
@@ -148,7 +151,7 @@ That is the whole meaning of *no float upstream of a verdict*: the physical dist
 
 | property | trained float model (GPU) | affine invariant court |
 |---|---|---|
-| basis | backward-looking — interpolates past shots | invariant — exact by construction |
+| basis | a system tick, then a guess — interpolate a trained model | an invariant — projected over τ, no guess |
 | verdict re-derivable by a third party | no — needs weights + state | **yes — integers** |
 | behaviour outside training data | undefined; returns a number anyway | refuses, or `NOT_KNOWN` |
 | same answer on two machines | platform-dependent | byte-identical |
