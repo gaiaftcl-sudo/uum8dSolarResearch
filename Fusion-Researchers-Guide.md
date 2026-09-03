@@ -29,10 +29,10 @@ Builds clean, runs every test, every gate (each self-testing that it *can* fail)
 ## Run the app
 
 ```bash
-.build/release/FusionCourt      # opens the four-panel court on 65,536 agents at 1 kHz
+.build/release/FusionCourt      # opens the five-panel court, both laws live, on 65,536 agents at 1 kHz
 ```
 
-You should see the verdict wall discriminating across four terminals, a live cadence histogram, and a channel scope. Every number in the panels is read from a published snapshot — **the UI computes nothing it displays.** (Launched as a bare binary it runs but may not open a window; the study page shows how to wrap it in a `.app` bundle if your window server needs one.)
+You should see the verdict wall discriminating across four terminals, the operating-point court grading five real machines (ITER/SPARC/JET/DIII-D/W7-X) with WIN, MISS and NOT_APPLICABLE all on screen at once, a live cadence histogram, and a channel scope. Every number in the panels is read from a published snapshot — **the UI computes nothing it displays.** (Launched as a bare binary it runs but may not open a window; the study page shows how to wrap it in a `.app` bundle if your window server needs one.)
 
 ## Grade your own machine
 
