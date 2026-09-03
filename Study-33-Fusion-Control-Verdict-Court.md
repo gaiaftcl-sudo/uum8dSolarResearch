@@ -128,6 +128,9 @@ Same input twice: identical verdict, identical index, identical peak. A third pa
 
 ## The app, running
 
+> **The app has since been built as a full local Swift 6.4 macOS application** — 65,536 agents at 1 kHz, four panels, the operating-point court with all five terminals, topology-agnosticism, and a measured GPU crossover. Its own study page and a build-and-check guide: **[Affine Fusion Control](Affine-Fusion-Control)** · **[Fusion researcher's guide](Fusion-Researchers-Guide)**.
+
+
 ![Study 33 — the exact law's verdicts over a simulated shot](images/study33-verdict-shot.svg)
 
 **The bands in that figure are the law's own verdicts, not annotations drawn over it.** Green is `NOMINAL`, amber `MITIGATE`, red `REFUSED_OUT_OF_ENVELOPE`. Producing programs: `reproduce/fusion-verdict-stream.swift` emits the verdict stream; `reproduce/fusion-verdict-figure.swift` draws it.
