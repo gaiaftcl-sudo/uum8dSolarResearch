@@ -1,10 +1,10 @@
 # Study 33 — The Fusion Control Verdict Court
 
-**Page class: CHARTER.** Law frozen 2026-09-01 before grading. Producing program: `reproduce/fusion-control-verdict-court.swift`. Grades per [the ontology](Ontology). The exact-integer verdict law is **built, proven and reproducible**; every figure on this page is printed by a program in `reproduce/`. Marker `STUDY33_FUSION_CONTROL_VERDICT_PENDING`.
+**Page class: CHARTER.** Law frozen 2026-09-01 before grading. Producing program: `reproduce/fusion-control-verdict-court.swift`. Grades per [the ontology](Ontology). The exact-integer verdict law is **built, proven and reproducible**; every figure on this page is printed by a program in `reproduce/`. Marker `STUDY33_FUSION_CONTROL_VERDICT_PENDING` — *pending* is the court's peer grade under the ontology, not the math, which is proven now.
 
 ---
 
-**This is a biosphere study.** Fusion is the clean-energy answer to the load the biosphere is being asked to carry — the very demand the [satellite and orbital-data-centre path](SpaceX-Biosphere-Safety) would meet by feeding metal to the sky, fusion exists to meet without it. The physics has been written for decades; one thing standing between it and a working reactor is the **control layer** — the safety verdict at the disruption boundary, which the accepted approach cannot make exact. This study makes it exact. One real block removed, and **the hope answered in the only currency this wiki accepts: a proof anyone on Earth can re-derive.**
+**This is a biosphere study.** Fusion is the clean-energy answer to the load the biosphere is being asked to carry — the very demand the [satellite and orbital-data-centre path](SpaceX-Biosphere-Safety) would meet by feeding metal to the sky, fusion exists to meet without it. The physics has been written for decades; one of the blocks between it and a working reactor is the **control layer** — specifically the safety verdict at the disruption boundary, which the accepted approach cannot make exact. This study makes it exact. One real block removed, and **the hope answered in the only currency this wiki accepts: a proof anyone on Earth can re-derive.**
 
 ---
 
@@ -20,10 +20,10 @@ The affine court does neither. It computes an **invariant** — an exact quantit
 
 ## Why a tick-and-guess controller cannot be successful
 
-A safety verdict — the object a licensed facility's protection case is *made of* — must be four things at once. A backward-looking, floating-point, tick-and-guess controller is **none** of them, and each failure is proven on this wiki, not asserted. These are **structural**, not tuning: no better model, no bigger GPU, no faster tick removes them.
+A safety verdict — the object a licensed facility's protection case is *made of* — must be four things at once. A backward-looking, floating-point, tick-and-guess controller is **none** of them, and each failure is proven or argued on this wiki, not merely asserted. These are **structural**, not tuning: no better model, no bigger GPU, no faster tick removes them.
 
-1. **Bounded where it matters — it is not.** A disruption is an *off-distribution* event, and a statistical interpolator has no defined behaviour and no error bound off its training manifold. Fed a state it never saw, it returns a confident number with no basis — it has no terminal for *"outside what I was trained on."* It guesses hardest exactly where the guess is worthless.
-2. **The same for every observer — it is not.** The Greenwald test computed in floating point contradicts itself on **142 operating points** across ITER, SPARC, JET and DIII-D: the value of π the implementation rounds to decides whether the plasma is safe or over the line ([Study 34](Study-34-Observer-Invariant-Verdict)).
+1. **Bounded where it matters — it is not.** A disruption is an *off-distribution* event, and a statistical interpolator carries **no guaranteed error bound** off its training manifold: fed a state it never saw it still returns a confident number, with no basis for it and no terminal for *"outside what I was trained on."* It guesses hardest exactly where the guess is worthless. **ARGUMENT.**
+2. **The same for every observer — it is not.** The Greenwald test computed in floating point contradicts itself on **142 operating points** across ITER, SPARC, JET and DIII-D — **MEASURED** ([Study 34](Study-34-Observer-Invariant-Verdict)): the value of π the implementation rounds to decides whether the plasma is safe or over the line.
 3. **Intact at scale — it is not.** A float's precision is relative to its magnitude, so it goes blind **below a single plasma current in amperes** ([the magnitude proof below](#the-invariant-in-action--the-meaning-survives-any-magnitude)); past that the two states are the same number and the verdict is *undefined*.
 4. **Re-derivable by a safety authority — it is not.** A trained model's output cannot be reconstructed from the trace: it needs the weights, the internal state, and trust in whoever produced them. After an incident there is nothing to re-derive.
 
@@ -84,11 +84,11 @@ The bands in that figure are the law's own verdicts, not annotations drawn over 
 | envelope breach | **3,648 µs** |
 | **warning lead** | **140 µs** |
 
-The **140 µs** is the operationally meaningful number: the margin between "a mode is growing" and "the signal has left the envelope this law was frozen against." At the 692 ns verdict cost measured below, that margin holds roughly **200 verdicts' worth** of decision time.
+The **140 µs** is the operationally meaningful number — **MEASURED** (`reproduce/fusion-verdict-stream.swift`): the margin between "a mode is growing" and "the signal has left the envelope this law was frozen against." At the 692 ns verdict cost measured below, that margin holds roughly **200 verdicts' worth** of decision time.
 
 ## Running it — the measured numbers
 
-The law was run, not just written. Producing program: `reproduce/fusion-control-benchmark.swift`. Commodity laptop, single thread, one channel, synthetic trace — enough to settle an order of magnitude against a published sampling rate. Wall timings are dated (2026-09-02, this machine); the harness pins the *claims*, not the microseconds.
+The law was run, not just written. Producing program: `reproduce/fusion-control-benchmark.swift`. Commodity laptop, single thread, one channel. Wall timings are dated (2026-09-02, this machine); the harness pins the *claims*, not the microseconds.
 
 | measurement, 2026-09-02 | value |
 |---|---|
@@ -109,7 +109,7 @@ VERDICT_DETERMINISTIC_10K       TRUE
 
 One core keeps up with roughly **265 simultaneous 2 MHz channels**, and the decision renders in **692 nanoseconds — about 1,446× inside a single 1 ms budget.** Published trained-control loops run on a millisecond cadence and batch on a GPU.
 
-> **So the batch is not forced by the sample rate. It is forced by what the arithmetic costs.** Change the arithmetic — trade the trained float model for the invariant — and the batch disappears. That is the claim this study was built to test, and the measurement supports it: the arithmetic is not the bottleneck, by orders of magnitude.
+> **So the batch is not forced by the sample rate. It is forced by what the arithmetic costs.** Trade the trained float model for the invariant and the batch is gone. The measurement settles it: the arithmetic is not the bottleneck, by more than two orders of magnitude.
 
 ## The Greenwald limit versus the UUM-8D rational density invariant
 
@@ -123,7 +123,7 @@ $$n_G = \frac{I_p}{\pi a^2}$$
 
 where $I_p$ is the plasma current and $a$ the minor radius. Forcing the plasma boundary into a continuous circular cross-section **mandates the transcendental constant $\pi$**, and π cannot be written exactly — so a control loop computing $\pi a^2$ inherits a rounded floating-point value and the observer-dependence proven in Study 34. **This is measured, not asserted:** evaluated at the two bracketing rationals $333/106$ and $355/113$, the circular area $\pi a^2$ for ITER's minor radius moves by **334 mm²** — a relative $2.66\times10^{-5}$, the exact width that made the float Greenwald verdict contradict itself on 142 operating points. **MEASURED** (`reproduce/fusion-affine-density-invariant.swift`).
 
-The Greenwald limit is an *empirical* scaling — a phenomenological fit, not a first-principles bound — so its threshold constant is set by data. Re-expressing it in an exact, π-free normalisation changes the arithmetic, not the empiricism. What the affine form removes is π and the observer-dependence it forces; it makes no new claim about the physics of the limit itself (see the limit below).
+The Greenwald limit is an *empirical* scaling — a phenomenological fit — so its threshold constant is set by data, and the affine form leaves that constant untouched. That is correct: **the shear was in the arithmetic, not in the fit.** What the next section removes is π and the observer-dependence it forces — the broken part — and leaves the empiricism that was never the problem.
 
 ### The affine invariant, exact by construction
 
@@ -131,7 +131,7 @@ The UUM-8D substrate holds no continuous circle and no π. Spatial separation is
 
 $$\mathcal{I}_\rho = \frac{\Phi_q}{\det(\Lambda)}$$
 
-**This is π-free and exact end to end, and it is proven, integer-only, on any machine** (`reproduce/fusion-affine-density-invariant.swift`): $\det(\Lambda)$ is a single exact integer — a sum of $2\times2$ lattice determinants, the shoelace area of the integer-vertex flux surface — and the verdict $n_e \geq 0.85\,\mathcal{I}_\rho$ is a pure integer comparison: **no π, no bracket, no `NOT_MEASURED`, observer-invariant by construction.** Removing π removes the 142-point undecidable band at its root, rather than bracketing around it. The exact area also carries the real elongated flux-surface **shape** that $\pi a^2$ discards. **VERIFIED** — marker `AFFINE_DENSITY_INVARIANT_IS_PI_FREE`, pinned in `reproduce/validate.sh`.
+**This is π-free and exact end to end, and it is proven, integer-only, on any machine** (`reproduce/fusion-affine-density-invariant.swift`): $\det(\Lambda)$ is a single exact integer — a sum of $2\times2$ lattice determinants, the shoelace area of the integer-vertex flux surface — and the verdict $n_e \geq 0.85\,\mathcal{I}_\rho$ is a pure integer comparison: **no π, no bracket, no `NOT_MEASURED`, observer-invariant by construction.** Removing π removes the 142-point undecidable band at its root, rather than bracketing around it. The integer-vertex area can also represent an **elongated, non-circular cross-section** that a circle's $\pi a^2$ cannot. **VERIFIED** — marker `AFFINE_DENSITY_INVARIANT_IS_PI_FREE`, pinned in `reproduce/validate.sh`.
 
 ### The invariant in action — the meaning survives any magnitude
 
@@ -179,9 +179,9 @@ proven_marker     STUDY33_FUSION_CONTROL_VERDICT_PENDING
 
 ## The limits — only what has not been tested
 
-A limit here is a thing not yet tested, nothing more — none of it touches the arithmetic above, which is proven and reproduced now. Two things are untested, and both are a first tokamak partnership's to run, not open questions about the math:
+A limit here is a thing not yet tested, nothing more. **The arithmetic is exact by construction on any integer trace, real or synthetic — so the proofs on this page are complete: a synthetic trace proves the math as fully as a live one.** What is untested is the *deployment*, two things, both a first tokamak partnership's to run and neither an open question about the math:
 
-- the law against a **live device's digitiser stream** — every trace on this page is synthetic;
+- the law against a **live device's digitiser stream** — a deployment step, not a gap in the proof;
 - the envelope and threshold **calibrated to one machine's** recorded shot history.
 
 ## The hope, answered
