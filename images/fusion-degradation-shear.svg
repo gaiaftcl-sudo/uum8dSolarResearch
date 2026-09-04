@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+ <defs>
+  <style>
+   .bg{fill:#0a0e14}
+   .kick{font-size:12px;letter-spacing:2.5px;fill:#5f7285}
+   .h{font-size:26px;fill:#e8eef6}.serif{font-family:Georgia,'Times New Roman',serif}
+   .sub{font-size:13px;fill:#8195aa}.tiny{font-size:11px;fill:#5f7285}.lbl{font-size:10.5px;fill:#8aa0b6;letter-spacing:.3px}
+   .acc{fill:#58a6ff}
+   .held{animation:held 2.6s ease-in-out infinite}
+   @keyframes held{0%,100%{opacity:1}50%{opacity:.62}}
+   .sweep{animation:sweep 7s linear infinite}
+   @keyframes sweep{0%{transform:translateX(0)}100%{transform:translateX(720px)}}
+   .cascade{animation:pulse 3.2s ease-in-out infinite}
+   @keyframes pulse{0%,100%{opacity:.14}50%{opacity:.30}}
+   @media (prefers-reduced-motion:reduce){.sweep,.held,.cascade{animation:none}}
+  </style>
+ </defs>
+ <rect class="bg" width="900" height="560"/>
+
+ <text x="42" y="44" class="kick">AFFINE.EARTH · FUSION · THE DEGRADATION OVER TIME</text>
+ <text x="40" y="84" class="h serif">A trained float controller degrades in time.</text>
+ <text x="40" y="114" class="h serif">The affine invariant holds the line — at any horizon.</text>
+ <text x="42" y="146" class="sub">Error vs how long the loop has run, at 2 MHz. A float running state stops tracking once it</text>
+ <text x="42" y="164" class="sub">passes its mantissa; then every update is lost and error cascades. The invariant never leaves 0.</text>
+
+ <!-- plot: x = log10(seconds) 0..10.5 over 90..810 ; y = error, baseline (0) at 398, top at 236 -->
+ <g>
+  <line x1="90" y1="398" x2="810" y2="398" stroke="#1e2936"/>
+  <line x1="90" y1="236" x2="90" y2="398" stroke="#1e2936"/>
+  <text x="42" y="232" class="tiny">error →</text>
+  <text x="42" y="414" class="tiny">time →</text>
+
+  <!-- time ticks -->
+  <text x="90"  y="414" text-anchor="middle" class="tiny">1 s</text>
+  <text x="212" y="414" text-anchor="middle" class="tiny">1 min</text>
+  <text x="334" y="414" text-anchor="middle" class="tiny">1 hr</text>
+  <text x="428" y="414" text-anchor="middle" class="tiny">1 day</text>
+  <text x="604" y="414" text-anchor="middle" class="tiny">1 yr</text>
+  <text x="741" y="414" text-anchor="middle" class="tiny">100 yr</text>
+
+  <!-- float32 error region: flat to 8.4 s (x=153), then cascades up -->
+  <path class="cascade" d="M90,398 L153,398 C168,398 176,330 200,300 L810,246 L810,398 Z" fill="#f85149" opacity=".2"/>
+  <path d="M90,398 L153,398 C168,398 176,330 200,300 L810,246" fill="none" stroke="#f85149" stroke-width="2.4"/>
+  <text x="250" y="286" class="lbl" fill="#f85149">float32 — every tick after freeze is lost</text>
+
+  <!-- float64 error region: flat to 143 yr (x=752), only then begins to shear -->
+  <path d="M90,398 L752,398 C760,398 766,360 780,342 L810,308 L810,398 Z" fill="#e3b341" opacity=".12"/>
+  <path d="M90,398 L752,398 C760,398 766,360 780,342 L810,308" fill="none" stroke="#e3b341" stroke-width="2"/>
+  <text x="612" y="356" class="lbl" fill="#e3b341">float64 — a longer fuse, not a fix</text>
+
+  <!-- affine invariant: welded to zero the whole way -->
+  <line class="held" x1="90" y1="398" x2="810" y2="398" stroke="#58a6ff" stroke-width="3"/>
+  <text x="300" y="390" class="lbl" fill="#58a6ff">affine invariant — error 0, welded to the line, any horizon</text>
+
+  <!-- freeze markers -->
+  <line x1="153" y1="252" x2="153" y2="404" stroke="#f85149" stroke-width="1" stroke-dasharray="3 3" opacity=".75"/>
+  <text x="153" y="432" text-anchor="middle" class="tiny" fill="#f85149">2²⁴ · 8.4 s</text>
+  <line x1="752" y1="312" x2="752" y2="404" stroke="#e3b341" stroke-width="1" stroke-dasharray="3 3" opacity=".75"/>
+  <text x="752" y="432" text-anchor="middle" class="tiny" fill="#e3b341">2⁵³ · 143 yr</text>
+
+  <!-- animated time sweep -->
+  <g class="sweep"><line x1="90" y1="240" x2="90" y2="398" stroke="#eef4ff" stroke-width="1.5" opacity=".5"/>
+   <circle cx="90" cy="398" r="3" fill="#eef4ff"/></g>
+ </g>
+
+ <line x1="42" y1="452" x2="858" y2="452" stroke="#1e2936"/>
+ <text x="42" y="476" class="tiny" fill="#8195aa">The freeze is a theorem, not a measurement:  (2²⁴)+1 == 2²⁴  in float32,  (2⁵³)+1 == 2⁵³  in float64.</text>
+ <text x="42" y="494" class="tiny" fill="#47576a">float64 onset shown for a bare sum; a real controller's is far earlier — millions of float ops per tick.</text>
+ <text x="42" y="524" class="serif" font-size="16" fill="#e8eef6">A bigger mantissa moves the freeze. It does not remove it. <tspan class="acc">The invariant has none.</tspan></text>
+ <text x="42" y="548" class="tiny" fill="#47576a">Replay:  swift float-degradation-demo.swift  ·  FLOAT_STATE_DEGRADES_OVER_TIME_INVARIANT_DOES_NOT</text>
+</svg>

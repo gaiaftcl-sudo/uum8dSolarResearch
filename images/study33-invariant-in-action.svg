@@ -71,9 +71,9 @@
  </g>
 
  <line x1="42" y1="418" x2="858" y2="418" stroke="#1e2936"/>
- <text x="42" y="446" class="tiny" fill="#8195aa">float32 loses the meaning at 2²⁴ = 16,777,216 — below a single plasma current in amperes. float64 loses it at 2⁵³ ≈ 9×10¹⁵.</text>
+ <text x="42" y="446" class="tiny" fill="#8195aa">float32 blinds at 2²⁴ = 16,777,216 — the order of a plasma current in amperes (ITER 15 MA). float64 at 2⁵³ ≈ 9×10¹⁵.</text>
  <text x="42" y="466" class="tiny" fill="#8195aa">The affine vQbit invariant is exact past 2¹²⁶ ≈ 10³⁸ — no physical plasma quantity reaches it.</text>
- <text x="42" y="498" class="serif" font-size="16" fill="#e8eef6">Below a current in amperes, float can no longer tell a safe plasma from a disrupting one.</text>
+ <text x="42" y="498" class="serif" font-size="16" fill="#e8eef6">At a plasma current's magnitude, float can no longer tell a safe plasma from a disrupting one.</text>
  <text x="42" y="520" class="serif" font-size="16"><tspan class="acc">The affine invariant never loses it.</tspan></text>
  <text x="42" y="544" class="tiny" fill="#47576a">Replay:  swift reproduce/fusion-affine-magnitude-invariance.swift  ·  AFFINE_INVARIANT_CARRIES_MEANING_AT_ANY_MAGNITUDE</text>
 </svg>

@@ -2,6 +2,7 @@
 
 - [**We need fusion — the verdict every machine can check**](Home)
 - [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — **why fusion needs an exact law, not a bigger computer**
+- [**Study 35** — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) — **why the floating-point safety brain is doomed, not just behind**
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)

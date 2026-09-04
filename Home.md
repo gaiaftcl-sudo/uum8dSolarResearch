@@ -12,6 +12,22 @@ A fusion reactor decides, thousands of times a second, whether its plasma is ins
 
 ---
 
+## A wake-up call — and a hopeful one
+
+Fusion is the nearest thing to clean, abundant, always-available power the human population has ever had a real path to — the energy that could carry billions into a flourishing future without spending the biosphere to get there. The quest is a race, and the window is not open forever.
+
+So it matters, urgently, what the field is building for the reactor's safety brain: a floating-point, trained AI that learns from past shots and guesses on the next. We proved — in arithmetic anyone can re-run — that a brain built that way does three things no safety brain may do.
+
+- **It goes deaf over time.** A 32-bit running state stops taking in new data after 16,777,216 updates — **8.4 seconds** at a fast diagnostic's rate — and reports the stale number as if it were live, with no alarm.
+- **It forgets when you move it.** Trained on one machine it scores well; on a machine it has never seen it drops to a **coin toss**; retrained there, it forgets the first.
+- **It disagrees with itself.** The **142** contradictions above — the same plasma called safe or over the line by which rounding of π the program used.
+
+None of the three is fixed by a bigger computer, because the flaw is the *kind* of arithmetic, not the amount. Every research-year poured into scaling that brain buys a longer fuse, not a fix — and in a race this important, a longer fuse is the choice to lose slowly. The exact version does none of the three, runs on a laptop, and hands its verdict to a regulator to re-derive. The block was never only the physics; part of it was the arithmetic the software was written in, and **that part is answered now**. The full case is **[Study 35 — The safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets)**.
+
+*(The clean-energy stakes and this reading are interpretation — ARGUMENT; the three failures are proven below and in the linked studies, each carrying its own grade.)*
+
+---
+
 ## The proof, in full, because you should not take it from us
 
 Two programs carry it, and both are replayable with no account, no key, and no trust in us.
@@ -68,6 +84,32 @@ The most urgent place that difference is already deciding something: the sky. A 
 
 ---
 
+## For the history buffs — the road not taken
+
+*An essay by Rick Gillespie, founder. This is the lineage and the argument behind the affine approach — history and thesis, stated as such, not a graded measurement.*
+
+Ferdinand Eisenstein died at 29 in 1852, and that is exactly the moment the timeline fractured.
+
+Gauss ranked Eisenstein alongside Archimedes and Newton for a reason. If Eisenstein had lived to establish his discrete lattice mathematics as the fundamental base layer of modern physics, the 20th century would never have fallen into the continuous probabilistic trap of Boltzmann or the Riemannian metric paradigm. We would have bypassed the statistical curve-fitters entirely and built the technological future decades ago on exact, discrete invariants.
+
+**The Eisenstein integer substrate.** Eisenstein integers ($\mathbb{Z}[\omega]$) form an exact triangular lattice in the complex plane. This is not an unbounded continuous Euclidean stage that requires floating-point truncation; it is a rigidly bounded, discrete coordinate system.
+
+- **Zero-float kinematics.** An Eisenstein lattice needs no transcendental functions and no probabilistic variables to fix a state. The geometry maps perfectly onto an exact integer constraint framework.
+- **The blueprint for UUM-8D.** The C⁴ Affine Quanta rules and the orientable 8-D flat torus are the direct operational successors to this discrete mathematical reality — a substrate where state transitions are absolute, not approximated.
+
+**Goddard lattices and discrete symmetries.** Project this forward to Peter Goddard's work on lattice vertex operator algebras and self-dual lattices in string theory, and the architectural necessity of the discrete state becomes absolute.
+
+- **Topological rigidity.** Goddard's lattice formulations showed that the physical limits of a state space are governed by exact discrete symmetries, not continuous statistical smearing.
+- **Invariant execution.** In a Goddard lattice formulation the algebraic states are fixed strictly by the discrete points of the lattice. You do not calculate an infinite regression to guess a physical state; you compute a discrete algebraic transition.
+
+If the theoretical-physics community had adopted the Eisenstein/Goddard discrete-lattice frameworks instead of forcing continuous calculus onto quantum mechanics, they would not be patching "magic" and "dark energy" into their failing continuous simulators today. They would have built the exact, sovereign execution planes we are engineering now.
+
+**The Affine.Earth Math Court is executing the precise mathematical reality that classical physics abandoned.** Every study on this wiki is one move in that resumption: take a continuous, floating-point instrument, recompute the same quantity as the exact discrete invariant it should always have been, and seal the difference. Fusion is the sharpest case because the stakes are the clearest — but the road is the same one Eisenstein was walking when it ended in 1852.
+
+— *Rick Gillespie*
+
+---
+
 ## The limits — a court states its own
 
 - **This court operates no reactor.** Every trace is synthetic and every operating point is presented; there is no actuation and no diagnostic feed. The only real numbers are the four machines' *published* current and minor radius. The fusion study, [Study 33](Study-33-Fusion-Control-Verdict-Court), is `PENDING`: a law graded on synthetic traces, with no device behind it, has not earned more. This proves a property of the *verdict*, not a fusion result. **REPORTED / VERIFIED.**
@@ -101,6 +143,7 @@ The harness verifies that every figure quoted on these pages appears in the outp
 | page | what it is |
 |---|---|
 | [Study 34 — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) | the proof on this page, in full — why a fusion safety verdict must be exact |
+| [Study 35 — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) | why a floating-point safety brain is doomed, not just behind — it deafens in seconds, forgets across machines, disagrees with itself; the exact one does none of it |
 | [Affine Fusion Control](Affine-Fusion-Control) | the local exact-integer fusion court — five panels, both laws live, 65,536 agents on one laptop |
 | [Affine Fusion Control — public release](Affine-Fusion-Control-Release) | the measured, claim-graded public case for the app |
 | [Study 33 — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court) | the charter, and the three-way fork it retired |
