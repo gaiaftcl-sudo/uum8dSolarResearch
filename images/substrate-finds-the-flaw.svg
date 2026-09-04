@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+ <defs>
+  <style>
+   .bg{fill:#0a0e14}
+   .kick{font-size:12px;letter-spacing:2.5px;fill:#5f7285}
+   .h{font-size:24px;fill:#e8eef6}.serif{font-family:Georgia,'Times New Roman',serif}
+   .sub{font-size:13px;fill:#8195aa}.tiny{font-size:11px;fill:#5f7285}.lbl{font-size:10.5px;fill:#8aa0b6;letter-spacing:.3px}
+   .bead{opacity:0;transform-box:fill-box;transform-origin:center;animation:pop 5s ease-in-out infinite}
+   @keyframes pop{0%{opacity:0;transform:scale(.3)}7%{opacity:1;transform:scale(1)}90%{opacity:1}100%{opacity:1}}
+   .inv{transform-box:fill-box;transform-origin:center;animation:inv 2.4s ease-in-out infinite}
+   @keyframes inv{0%,100%{opacity:.5;transform:scale(.9)}50%{opacity:1;transform:scale(1.12)}}
+   .fold{transform-box:fill-box;transform-origin:430px 300px;animation:breathe 4s ease-in-out infinite}
+   @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+   .good{animation:good 5s ease-in-out infinite}
+   @keyframes good{0%,60%{opacity:0;transform:translate(0,0)}75%{opacity:1;transform:translate(90px,-46px)}100%{opacity:1;transform:translate(90px,-46px)}}
+   .bad{animation:bad 5s ease-in-out infinite}
+   @keyframes bad{0%,60%{opacity:0;transform:translate(0,0)}75%{opacity:1;transform:translate(92px,64px)}100%{opacity:1;transform:translate(92px,64px)}}
+   .pulse{animation:pl 2.4s ease-in-out infinite}
+   @keyframes pl{0%,100%{opacity:1}50%{opacity:.72}}
+   @media (prefers-reduced-motion:reduce){.bead,.inv,.fold,.good,.bad,.pulse{animation:none;opacity:1}}
+  </style>
+ </defs>
+ <rect class="bg" width="900" height="560"/>
+
+ <text x="42" y="40" class="kick">AFFINE.EARTH · THE HUMAN SUBSTRATE · ONLY A FOLD THE BODY CAN USE</text>
+ <text x="40" y="76" class="h serif">A protein folds one way the body can use — and countless ways it cannot.</text>
+ <text x="40" y="104" class="h serif">The substrate holds the health invariants, and passes only the one.</text>
+ <text x="42" y="130" class="sub">Watch it happen: the compound is built, it folds, and the fold is measured against what a body can safely use.</text>
+ <text x="42" y="147" class="sub">The usable fold passes. The harmful one is stopped here — on the grid — instead of being found in a patient.</text>
+
+ <!-- (1) BUILD: the compound assembles, bead by bead -->
+ <path d="M60,318 Q145,300 230,302" fill="none" stroke="#1d3b57" stroke-width="2"/>
+ <g fill="#58a6ff" stroke="#0a0e14" stroke-width="1.5">
+  <circle class="bead" cx="60"  cy="318" r="8" style="animation-delay:0s"/>
+  <circle class="bead" cx="88"  cy="309" r="8" style="animation-delay:.35s"/>
+  <circle class="bead" cx="116" cy="305" r="8" style="animation-delay:.7s"/>
+  <circle class="bead" cx="145" cy="301" r="8" style="animation-delay:1.05s"/>
+  <circle class="bead" cx="174" cy="302" r="8" style="animation-delay:1.4s"/>
+  <circle class="bead" cx="202" cy="303" r="8" style="animation-delay:1.75s"/>
+  <circle class="bead" cx="230" cy="302" r="8" style="animation-delay:2.1s"/>
+ </g>
+ <text x="60" y="360" class="tiny">1 · the compound is built</text>
+
+ <path d="M244,306 L292,304" fill="none" stroke="#3a4653" stroke-width="2" marker-end="url(#a)"/>
+
+ <!-- (2) FOLD inside the ring of health invariants -->
+ <text x="430" y="196" text-anchor="middle" class="lbl" fill="#7bcf8a">HEALTH INVARIANTS · held in the substrate</text>
+ <circle cx="430" cy="300" r="85" fill="none" stroke="#20362a" stroke-width="1" stroke-dasharray="4 5"/>
+ <g fill="#3fb950" stroke="#0a0e14" stroke-width="1">
+  <circle class="inv" cx="515" cy="300" r="6" style="animation-delay:0s"/>
+  <circle class="inv" cx="490" cy="360" r="6" style="animation-delay:.3s"/>
+  <circle class="inv" cx="430" cy="385" r="6" style="animation-delay:.6s"/>
+  <circle class="inv" cx="370" cy="360" r="6" style="animation-delay:.9s"/>
+  <circle class="inv" cx="345" cy="300" r="6" style="animation-delay:1.2s"/>
+  <circle class="inv" cx="370" cy="240" r="6" style="animation-delay:1.5s"/>
+  <circle class="inv" cx="430" cy="215" r="6" style="animation-delay:1.8s"/>
+  <circle class="inv" cx="490" cy="240" r="6" style="animation-delay:2.1s"/>
+ </g>
+ <path class="fold" d="M402,272 C424,250 474,258 462,292 C453,322 408,326 416,300 C421,281 448,286 442,306" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+ <text x="310" y="412" class="tiny">2 · it folds — only a shape the body can use passes</text>
+
+ <!-- routing arrows out of the gate -->
+ <path d="M516,278 L596,250" fill="none" stroke="#2f6f3f" stroke-width="2" marker-end="url(#g)"/>
+ <path d="M516,322 L598,360" fill="none" stroke="#6f2f2f" stroke-width="2" marker-end="url(#r)"/>
+
+ <!-- travelling tokens: usable fold up (green), harmful fold down (red) -->
+ <circle class="good" cx="512" cy="288" r="6" fill="#3fb950"/>
+ <circle class="bad"  cx="512" cy="312" r="6" fill="#f85149"/>
+
+ <!-- (3) outcomes -->
+ <circle cx="626" cy="250" r="15" fill="none" stroke="#3fb950" stroke-width="2"/>
+ <path d="M619,250 l5,6 l10,-13" fill="none" stroke="#3fb950" stroke-width="2.5"/>
+ <text x="652" y="245" class="lbl" fill="#7bcf8a">a fold the body can use</text>
+ <text x="652" y="267" class="serif" font-size="18" fill="#3fb950">ACCEPTED</text>
+
+ <circle class="pulse" cx="626" cy="362" r="15" fill="none" stroke="#f85149" stroke-width="2"/>
+ <path d="M620,356 l12,12 M632,356 l-12,12" stroke="#f85149" stroke-width="2.5"/>
+ <text x="652" y="357" class="lbl" fill="#f0a6a2">a harmful misfold — the critical flaw</text>
+ <text class="pulse serif" x="652" y="379" font-size="18" fill="#f85149">REFUSED — before a patient</text>
+
+ <defs>
+  <marker id="a" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L6,3.5 L0,7 Z" fill="#3a4653"/></marker>
+  <marker id="g" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L6,3.5 L0,7 Z" fill="#2f6f3f"/></marker>
+  <marker id="r" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L6,3.5 L0,7 Z" fill="#6f2f2f"/></marker>
+ </defs>
+
+ <line x1="42" y1="452" x2="858" y2="452" stroke="#1e2936"/>
+ <text x="42" y="478" class="serif" font-size="16" fill="#e8eef6">A protein folds one way the body can use, and countless ways it cannot. The substrate passes only the one — before a person.</text>
+ <text x="42" y="502" class="tiny" fill="#8195aa">The health invariants run in the substrate today; the court that ranks a whole folded construct is the next to build. We do not test on people to find the harmful fold — we refuse it here.</text>
+ <text x="42" y="524" class="tiny" fill="#47576a">Study 14 — Protein lattice manifold · the subject under grading is the instrument, never the medicine and never a person.</text>
+</svg>

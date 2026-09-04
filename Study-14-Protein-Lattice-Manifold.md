@@ -1,17 +1,17 @@
 # Study 14 — Protein lattice manifold
 
 **Status: LAW FROZEN + LIVE CLAIM — 2026-08-24 · PDB id court · occupancy DARK**  
-**Program:** [Language-games study board](Language-Games-Study-Board.md) · [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear.md) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm.md)
+**Program:** [Language-games study board](Language-Games-Study-Board) · [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear) · [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm)
 
 | Surface | URL / key | Cited vs sealed |
 |---|---|---|
 | Claim UI | https://affine.earth/language-game/study-14-pdb.html | POST `pdb` ingest · `pdb_id` |
 | IDE | https://affine.earth/language-game/ide.html#pdb-holdings | GET catalog · POST a presented 4-char id |
 | Look | https://affine.earth/language-game/#researcher · [catalog GET](https://affine.earth/language-game/discoveries/catalog.json) | GET only. credentials omit. Holdings **N=258616**. |
-| Review ledger | [Known molecular discoveries](Known-Molecular-Discoveries.md) · IDE `#discovery-review` | **LOOK LIVE** — play the id on `#pdb-holdings`. |
+| Review ledger | [Known molecular discoveries](Known-Molecular-Discoveries) · IDE `#discovery-review` | **LOOK LIVE** — play the id on `#pdb-holdings`. |
 | Court | `POST /language-invariant/game/pdb/ingest` | format + holdings membership of a **presented** id. Unknown id → `REFUSED_NO_STD`. |
 | Occupancy / pocket | complementary occupancy is the grammar, not a dock | **DARK** |
-| Industry siblings | [Study 16 ICD](Study-16-Disease-Type.md) · [Study 17 InChIKey](Study-17-Chemistry-InChIKey.md) · [Study 18 material STD](Study-18-Material-STD.md) · [user doors](Discoveries-By-User.md) | **LAW FROZEN** — generated nicknames are not these keys |
+| Industry siblings | [Study 16 ICD](Study-16-Disease-Type) · [Study 17 InChIKey](Study-17-Chemistry-InChIKey) · [Study 18 material STD](Study-18-Material-STD) · [user doors](Discoveries-By-User) | **LAW FROZEN** — generated nicknames are not these keys |
 | `health` court | `mass_milli` / `vol_milli` | PK **dose**. Not a binding pocket. Not ozone. |
 | Study 11 `geometry` | `polytope_id` + `dilation` | Ehrhart volume. **Not** a protein fold. |
 | Humanity | Small- and large-molecule discovery without a moving DFT baseline | **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.** |
@@ -25,6 +25,24 @@ The win is the **verified bond**, not custody of a fold and not a true/false “
 A protein on this court is a **presented 4-character PDB accession** that is a member of the hosted holdings (N=258616). The win is that membership — the verified bond to a public RCSB id — not custody of a fold and not a true/false “discovery” bit. Occupancy (each voxel 0 or 1) and complementary pocket geometry are the *intended* lattice game and stay DARK until an integer occupancy key exists. AlphaFold / float MD remain the named adversary. Play **4HHB** or **2HYY** on `#pdb-holdings`; the hologram that appears is the existing proteins/frame, not a dock of that id.
 
 **Using something that is not accurate (because it shears) may not be useless — it may be dangerous.** A kcal/mol miss or a moving XC baseline treated as the molecule is a spatial collision: wrong pocket, wrong bond, wrong dose.
+
+---
+
+## Three people died in August. The math that would have spared them already exists.
+
+**The full deep dive, written for the pharma and research industries: [This would have been flagged](The-Verdict-a-Regulator-Could-Re-Derive).**
+
+In August 2026, three people in clinical trials died, and two of the largest drug companies on Earth stopped their programs overnight. Novartis halted eight trials of a cell therapy for lupus, MS, rheumatoid arthritis and other autoimmune diseases; Bristol Myers Squibb paused its own. The therapy was meant to retrain the immune system to stop attacking the patient's own body. Instead the engineered cells multiplied out of control, and the immune system turned on the people it was built to save. *([FierceBiotech](https://www.fiercebiotech.com/biotech/novartis-bristol-myers-squibb-halt-car-t-cell-trials-due-immune-events) · [Endpoints](https://endpoints.news/three-deaths-in-car-t-trials-prompt-halt-by-novartis-bristol-myers-programs-also-paused/) · [BioPharma Dive](https://www.biopharmadive.com/news/novartis-bristol-myers-autoimmune-cell-therapy-trial-halt/829218/))*
+
+They did not die because the biology is unknowable. They died because of **how their safety was decided** — as a statistical average, judged over a trial, that could be confirmed only by putting the therapy into a human being and waiting. The misfit was there from the first day, written into the exact shape of how the therapy meets the body. The tools in standard use blur that shape into a probability, so no one could see it — and that kind of math only ever gives its answer one way: in a patient.
+
+**There is another way to decide it, and it is not a someday.** Whether one molecule fits another is not a probability — it is an exact geometric fact, a key meeting a lock, and it can be computed before a single cell is made. Computed exactly, the therapies that do not fit are **refused on a screen, not discovered in a person.** That is the whole of what this wiki does, in every field it touches: take a blurred statistical instrument and replace it with an exact one that refuses when the fit is wrong, instead of guessing and hoping.
+
+**We could be saving lives with this today.** The method is built and proven — anyone can run the exact court on a laptop right now and get the same answer as every other machine on Earth. The one thing that was not standing between those three people and that therapy is the exact geometric court for this class of molecule, which no one has built yet. That is engineering, not a missing discovery — and three deaths are the argument for building it now.
+
+*Said plainly, so nothing is oversold: this page does not claim it already caught this case, and the molecular fold court is what this study is chartered to build, not something already running. The claim is smaller and heavier — that the misfit did not have to be found in a body. The proof that an exact court refuses where a statistical one only guesses is measured on other substrates ([Study 34](Study-34-Observer-Invariant-Verdict), [Study 35](Study-35-The-Safety-Brain-That-Forgets)); here, the subject under grading is the instrument — never the medicine, and never a person.*
+
+![The substrate builds a compound, folds it the one way the body can use, and refuses the harmful misfold — before it reaches a patient](images/substrate-finds-the-flaw.svg)
 
 ---
 
@@ -114,15 +132,15 @@ This is Look → Claim → Build → Share applied to a **public discovery ledge
 
 **Instructions** means public, labeled, cited: INN, indication (on the source document), PDB / PubChem / ChEMBL / DailyMed id, manufacture *class* (recombinant / chemical / extracted) from FDA / EMA / label / PDB, and links to that document. It does **not** mean a step-by-step synthesis. C-007: no pathogen enhancement, no military, no unpublished manufacture.
 
-Low-friction walk (chooser → **4HHB** / **2HYY** → WIN + hologram): [Low-friction user flows](Low-Friction-User-Flows.md#protein). Hologram is the existing proteins/frame, not a dock: [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+Low-friction walk (chooser → **4HHB** / **2HYY** → WIN + hologram): [Low-friction user flows](Low-Friction-User-Flows.md#protein). Hologram is the existing proteins/frame, not a dock: [How the IDE hologram works](How-the-IDE-Hologram-Works).
 
-Walk: [Known molecular discoveries](Known-Molecular-Discoveries.md) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) · claim [study-14-pdb.html](https://affine.earth/language-game/study-14-pdb.html) · Look panel [\#researcher](https://affine.earth/language-game/#researcher). Generated-candidate hashes (not playable without an industry key): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) · IDE [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look).
+Walk: [Known molecular discoveries](Known-Molecular-Discoveries) · [catalog JSON](https://affine.earth/language-game/discoveries/catalog.json) · [IDE `#pdb-holdings`](https://affine.earth/language-game/ide.html#pdb-holdings) · claim [study-14-pdb.html](https://affine.earth/language-game/study-14-pdb.html) · Look panel [\#researcher](https://affine.earth/language-game/#researcher). Generated-candidate hashes (not playable without an industry key): [protein-material-aggregates.json](https://affine.earth/language-game/discoveries/protein-material-aggregates.json) · IDE [`#protein-material-look`](https://affine.earth/language-game/ide.html#protein-material-look).
 
-**Combinations (pdb + CID):** appoint two keys that already pass their own courts. [Combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · IDE [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) · [Study 17](Study-17-Chemistry-InChIKey.md). 1N8Z has no small-molecule CID. Occupancy stays DARK.
+**Combinations (pdb + CID):** appoint two keys that already pass their own courts. [Combinations](Discoveries-By-User.md#combinations--small-molecule--protein) · IDE [`#complex-pair`](https://affine.earth/language-game/ide.html#complex-pair) · [Study 17](Study-17-Chemistry-InChIKey). 1N8Z has no small-molecule CID. Occupancy stays DARK.
 
-**Hologram after WIN:** existing lattice frame GET `/language-invariant/game/proteins/frame?w=512&h=512&t=800`, not a dock. This hour sha256 `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266`. [How the IDE hologram works](How-the-IDE-Hologram-Works.md).
+**Hologram after WIN:** existing lattice frame GET `/language-invariant/game/proteins/frame?w=512&h=512&t=800`, not a dock. This hour sha256 `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266`. [How the IDE hologram works](How-the-IDE-Hologram-Works).
 
-**Manufacture contract:** [Manufacture contracts](Manufacture-Contracts.md) · `#manufacture-look`. CLASS_ABSENT for the PDB archive row.
+**Manufacture contract:** [Manufacture contracts](Manufacture-Contracts) · `#manufacture-look`. CLASS_ABSENT for the PDB archive row.
 
 ### Skala contrast (one paragraph)
 
@@ -141,7 +159,7 @@ Sheared tools — Skala, float MD, AlphaFold — are **not accurate due to shear
 - Does not invent discovery rows or IC50
 - Does not write a synthesis cookbook — instructions are source links + cited manufacture class
 
-Cross-link: [Study 15](Study-15-Skala-DFT-Shear.md) · [Known molecular discoveries](Known-Molecular-Discoveries.md) measures Skala 1.1 from their pages and contrasts methods. Edge word on unbound mass / fold remains ***not known***.
+Cross-link: [Study 15](Study-15-Skala-DFT-Shear) · [Known molecular discoveries](Known-Molecular-Discoveries) measures Skala 1.1 from their pages and contrasts methods. Edge word on unbound mass / fold remains ***not known***.
 
 ---
 

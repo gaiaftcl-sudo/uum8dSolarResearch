@@ -1,3 +1,15 @@
+# We can save lives with this today.
+
+In August 2026, three people in clinical trials died, and two of the world's largest drug companies halted their programs overnight — a therapy meant to heal turned the immune system against the patients, and the misfit was found only once it was already inside a human body.
+
+It did not have to be. Whether a therapy fits the body is **exact geometry — a key in a lock — not a statistical guess.** Computed exactly, a dangerous misfit is refused on a screen instead of discovered in a person. That is the one idea behind every study on this wiki, and **the math to do it exists now.** **[Read the full deep dive, for the pharma and research industries →](The-Verdict-a-Regulator-Could-Re-Derive)**
+
+![The substrate builds a compound, folds it the one way the body can use, and refuses the harmful misfold — before it reaches a patient](images/substrate-finds-the-flaw.svg)
+
+The sharpest proof that an exact instrument beats a confident one is the reactor floor. The same fusion safety verdict, computed both ways, **disagrees with itself in floating point and holds exactly in integers** — and you can re-derive every number of it yourself, below.
+
+---
+
 # We need fusion. Its safety verdict is computed in arithmetic that disagrees with itself — here is the exact one that every machine on Earth agrees on.
 
 Not a slogan. A measurement, with integers.
