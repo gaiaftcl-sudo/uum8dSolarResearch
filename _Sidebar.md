@@ -13,6 +13,7 @@
 - [**We need fusion — the verdict every machine can check**](Home)
 - [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — **why fusion needs an exact law, not a bigger computer**
 - [**Study 35** — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) — **why the floating-point safety brain is doomed, not just behind**
+- [**Study 36** — the language game of Fermat's Last Theorem](Study-36-The-Language-Game-of-Fermats-Last-Theorem) — **guess and shear, or project: the near-miss the float never stops seeing**
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)

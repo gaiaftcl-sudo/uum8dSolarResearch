@@ -153,6 +153,9 @@ check_figure drift-barrier-demo     "DRIFT_BARRIER_TRAINED_MODEL_STALE_INVARIANT
 # --- Zilganersen / Alexander disease: the exact ASO off-target screen ---
 check_figure aso-offtarget-exact-vs-float "ASO_OFFTARGET_EXACT_IS_OBSERVER_INVARIANT" "The-Safety-Question-Made-Exact.md"
 check_figure crispr-guide-offtarget-exact-vs-float "CRISPR_OFFTARGET_EXACT_IS_OBSERVER_INVARIANT" "PM359-Prime-Editing-Certified-Before-Anyone-Is-Dosed.md"
+check_figure flt-nearmiss-fractal-shear "FLT_NEARMISS_FRACTAL_SHEAR__EXACT_IS_OBSERVER_INVARIANT" "Study-36-The-Language-Game-of-Fermats-Last-Theorem.md"
+check_figure flt-nearmiss-fractal-shear "1bba2839c16677070a986d49eb978dcd8a822c7dee30c769500d67544e861998" "Study-36-The-Language-Game-of-Fermats-Last-Theorem.md"
+check_figure flt-nearmiss-fractal-shear "700212234530608691501223040959" "Study-36-The-Language-Game-of-Fermats-Last-Theorem.md"
 check_figure valuation-crossing-ledger    "2036"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "2038"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "973.7"    "The-Replacement-Grade.md"

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 720" font-family="ui-monospace,'SF Mono',Menlo,monospace">
+ <defs><style>
+  .serif{font-family:Georgia,'Times New Roman',serif}
+  .k{font-size:12px;letter-spacing:2.5px;fill:#5f7285}
+  .cap{font-size:12px;fill:#7a8896}.lab{font-size:12px;fill:#8aa0b6}
+  .amber{fill:#c98a2b}.green{fill:#3fb950}.red{fill:#f85149}
+ </style></defs>
+ <rect width="820" height="720" fill="#0a0e14"/>
+ <text x="60" y="52" class="k">STUDY 36 · THE LANGUAGE GAME OF FERMAT'S LAST THEOREM</text>
+ <text x="58" y="92" class="serif" font-size="27" fill="#e8eef6">The float sees a solution that isn't there.</text>
+ <text x="58" y="122" class="serif" font-size="19" fill="#8195aa">Every finite precision has a horizon. The exact court has none.</text>
+
+ <!-- ===== PANEL A: agreement horizon ===== -->
+ <text x="60" y="172" class="lab" fill="#c9d4df">A · THE AGREEMENT HORIZON — an observer left of the cliff is fooled</text>
+ <!-- axis -->
+ <line x1="150" y1="196" x2="150" y2="360" stroke="#1e2936"/>
+ <!-- scale ticks 0..18 -->
+ <g class="cap" text-anchor="middle">
+  <text x="150" y="380">0</text><text x="332" y="380">7</text><text x="410" y="380">10</text><text x="566" y="380">16</text><text x="700" y="380">18</text>
+ </g>
+ <text x="410" y="400" class="cap" text-anchor="middle" fill="#5f7285">significant figures the observer resolves →</text>
+ <!-- observer verticals: single@7 (x=332), calc@10 (x=410), double@16 (x=566). scale: x = 150 + fig*26 -->
+ <g stroke-dasharray="3 4" stroke-width="1.4">
+  <line x1="332" y1="196" x2="332" y2="366" stroke="#4a5a6e"/>
+  <line x1="410" y1="196" x2="410" y2="366" stroke="#4a5a6e"/>
+  <line x1="566" y1="196" x2="566" y2="366" stroke="#4a5a6e"/>
+ </g>
+ <g class="cap" text-anchor="middle" fill="#6b7a8c">
+  <text x="332" y="192">single ~7</text><text x="410" y="192">calc ~10</text><text x="566" y="192">double ~16</text>
+ </g>
+ <!-- rows: bar of false agreement (amber) 0..H, then green 'exact refutes' tick -->
+ <!-- row1: Simpsons 1995, H=9 -> x_end=150+9*26=384 -->
+ <text x="60" y="228" class="cap">1995 near-miss</text>
+ <rect x="150" y="214" width="234" height="18" rx="3" class="amber" opacity="0.85"/>
+ <rect x="384" y="210" width="4" height="26" class="green"/>
+ <text x="398" y="228" class="cap" fill="#7bcf8a">exact refutes</text>
+ <!-- row2: Simpsons 1998, H=10 -> x_end=410 -->
+ <text x="60" y="270" class="cap">1998 near-miss</text>
+ <rect x="150" y="256" width="260" height="18" rx="3" class="amber" opacity="0.85"/>
+ <rect x="410" y="252" width="4" height="26" class="green"/>
+ <text x="424" y="270" class="cap" fill="#7bcf8a">exact refutes</text>
+ <!-- row3: constructed, H=16 -> x_end=566 -->
+ <text x="60" y="312" class="cap">constructed</text>
+ <rect x="150" y="298" width="416" height="18" rx="3" class="amber" opacity="0.85"/>
+ <rect x="566" y="294" width="4" height="26" class="green"/>
+ <text x="580" y="312" class="cap" fill="#7bcf8a">exact refutes</text>
+ <text x="150" y="344" class="cap" fill="#9a7b3a">amber = the observer sees a FALSE closure · single fooled by all three · calculator by two · double by the deepest</text>
+
+ <!-- ===== PANEL B: infinite zoom ===== -->
+ <text x="60" y="454" class="lab" fill="#c9d4df">B · INFINITE ZOOM — dilate the 1998 near-miss by k; the horizon is scale-invariant</text>
+ <!-- depth columns -->
+ <g text-anchor="middle">
+  <text x="120" y="500" class="cap" fill="#5f7285" text-anchor="start">depth k</text>
+ </g>
+ <!-- x positions for k=10^0..10^6 -->
+ <!-- header ticks -->
+ <g class="cap" text-anchor="middle" fill="#7a8896">
+  <text x="250" y="500">1</text><text x="330" y="500">10</text><text x="410" y="500">10²</text><text x="490" y="500">10³</text><text x="570" y="500">10⁴</text><text x="650" y="500">10⁵</text><text x="730" y="500">10⁶</text>
+ </g>
+ <!-- EXACT row: all green refuted -->
+ <text x="60" y="540" class="cap" fill="#7bcf8a">EXACT</text>
+ <g class="green">
+  <circle cx="250" cy="535" r="8"/><circle cx="330" cy="535" r="8"/><circle cx="410" cy="535" r="8"/><circle cx="490" cy="535" r="8"/><circle cx="570" cy="535" r="8"/><circle cx="650" cy="535" r="8"/><circle cx="730" cy="535" r="8"/>
+ </g>
+ <g stroke="#0a0e14" stroke-width="1.8" fill="none">
+  <path d="M246,535 l3,3 l6,-7"/><path d="M326,535 l3,3 l6,-7"/><path d="M406,535 l3,3 l6,-7"/><path d="M486,535 l3,3 l6,-7"/><path d="M566,535 l3,3 l6,-7"/><path d="M646,535 l3,3 l6,-7"/><path d="M726,535 l3,3 l6,-7"/>
+ </g>
+ <text x="60" y="560" class="cap" fill="#4d5b6a" font-size="10">refuted; gap 34→106 digits</text>
+ <!-- FLOAT row: all red false-closure -->
+ <text x="60" y="596" class="cap" fill="#f0a6a2">calculator</text>
+ <g class="red" opacity="0.9">
+  <circle cx="250" cy="591" r="8"/><circle cx="330" cy="591" r="8"/><circle cx="410" cy="591" r="8"/><circle cx="490" cy="591" r="8"/><circle cx="570" cy="591" r="8"/><circle cx="650" cy="591" r="8"/><circle cx="730" cy="591" r="8"/>
+ </g>
+ <g stroke="#0a0e14" stroke-width="1.8">
+  <line x1="246" y1="587" x2="254" y2="595"/><line x1="254" y1="587" x2="246" y2="595"/>
+  <line x1="326" y1="587" x2="334" y2="595"/><line x1="334" y1="587" x2="326" y2="595"/>
+  <line x1="406" y1="587" x2="414" y2="595"/><line x1="414" y1="587" x2="406" y2="595"/>
+  <line x1="486" y1="587" x2="494" y2="595"/><line x1="494" y1="587" x2="486" y2="595"/>
+  <line x1="566" y1="587" x2="574" y2="595"/><line x1="574" y1="587" x2="566" y2="595"/>
+  <line x1="646" y1="587" x2="654" y2="595"/><line x1="654" y1="587" x2="646" y2="595"/>
+  <line x1="726" y1="587" x2="734" y2="595"/><line x1="734" y1="587" x2="726" y2="595"/>
+ </g>
+ <text x="60" y="616" class="cap" fill="#7a5b58" font-size="10">false closure at every depth</text>
+
+ <line x1="60" y1="654" x2="760" y2="654" stroke="#1e2936"/>
+ <text x="60" y="682" class="cap">The float shears — its verdict flips with the width you resolve to. The exact court projects one verdict, on every machine.</text>
+ <text x="60" y="702" class="cap" fill="#47576a">Refutes presented near-misses exactly, at every scale. Not a proof of universal FLT — that is the discovery move, not known here.</text>
+</svg>
