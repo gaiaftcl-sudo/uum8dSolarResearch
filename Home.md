@@ -1,3 +1,13 @@
+# Stochastic AI guesses. This machine doesn't.
+
+**The industry bet the future on machines that guess.** Trillion-parameter models that sample an answer and lean on a checker to catch the misses; floating-point silicon that truncates the truth the moment the numbers run long. Fast — and blurred. When the frontier's best threw **dozens of AI agents, six billion tokens, and eleven days** at a single theorem — needing a bolted-on coordinator to keep the agents from losing their place, and a classical kernel to catch their mistakes — the industry called it a triumph of intelligence. It is a triumph of *guessing.* **And a verdict that changes when you run it again is not a verdict.**
+
+**Affine.Earth is a deterministic truth engine — it refuses to guess, and it refuses to round.** Present it a question and it *projects* the exact answer: no sampling, no search, no floating-point blur — sealed to a single SHA-256 that reads **identically on every machine, forever.** Not an AI that sounds certain. A result anyone can re-derive and get the same integer everyone else gets.
+
+Watch it on the oldest trap in mathematics. Shown the *Simpsons'* famous fake counterexample to Fermat's Last Theorem, a floating-point processor **reports a solution that does not exist** — it hits its precision horizon and lies. The exact court measures the true **34-digit gap**, returns `REFUTED`, and seals it — on every machine, at every depth of zoom. The guess shears; the projection holds, and **every digit is yours to re-run.** Computational certainty was never going to come from scaling the noise — it comes from eliminating the shear. **→ [Study 36 — Guess, or Project](Study-36-The-Language-Game-of-Fermats-Last-Theorem)**
+
+---
+
 # We can save lives with this today.
 
 ![The substrate builds a compound, folds it the one way the body can use, and refuses the harmful misfold — before it reaches a patient](images/substrate-finds-the-flaw.svg)
