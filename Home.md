@@ -1,10 +1,10 @@
 # We can save lives with this today.
 
+![The substrate builds a compound, folds it the one way the body can use, and refuses the harmful misfold — before it reaches a patient](images/substrate-finds-the-flaw.svg)
+
 In August 2026, three people in clinical trials died, and two of the world's largest drug companies halted their autoimmune programs — a cell therapy meant to heal expanded out of control and turned the immune system against the patients. It was found the only way today's safety tools allow: in a human body.
 
 **It did not have to be — and that is the result of the study, not a wish.** The Affine.Earth shear studies prove a safety verdict can carry a bounded envelope and *refuse* a system it cannot bound, where a statistical model stays confident and wrong ([Study 33](Study-33-Fusion-Control-Verdict-Court), [Study 35](Study-35-The-Safety-Brain-That-Forgets)). A therapy engineered to expand *without a brake* is exactly that unbounded system — flagged at the design stage, before a Phase 1 trial enrols a single patient. It never had to run through years of trials, hundreds of millions of dollars, and three lives to confirm what its own design already said on paper. **The instrument that returns that refusal is proven today and buildable now — all of it could be done differently. [Read the full deep dive, for the pharma and research industries →](The-Verdict-a-Regulator-Could-Re-Derive)**
-
-![The substrate builds a compound, folds it the one way the body can use, and refuses the harmful misfold — before it reaches a patient](images/substrate-finds-the-flaw.svg)
 
 The sharpest proof that an exact instrument beats a confident one is the reactor floor. The same fusion safety verdict, computed both ways, **disagrees with itself in floating point and holds exactly in integers** — and you can re-derive every number of it yourself, below.
 
