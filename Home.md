@@ -10,7 +10,15 @@ And it is not only a veto — the same exactness is a **seal on a drug that work
 
 Both belong in the same place: **before a first patient is dosed**, at the design stage, where changing course is still cheap — and for a molecule already in the pipeline, the same exact verdict helps decide the path forward. The instrument that returns it is proven today and buildable now. All of it could be done differently.
 
-The sharpest proof that an exact instrument beats a confident one is the reactor floor. The same fusion safety verdict, computed both ways, **disagrees with itself in floating point and holds exactly in integers** — and you can re-derive every number of it yourself, below.
+**Six cures now, gathered in one place — and the reason we are giving the method away.** The veto and the seal are two of six real, in-the-news medicines we put the exact off-target screen against: the first-ever Alexander-disease drug, a halted CAR-T, a base editor for heart disease, a prime editor for chronic granulomatous disease, an antibody-oligo conjugate for Duchenne, and a therapy written for a single child whose disease has a population of one. **[Cures Without the Gatekeeper →](Cures-Without-The-Gatekeeper)**
+
+*Why we did it.* The one question that decides whether a written medicine heals or harms — where else in the genome it strikes — is not a guess. It is discrete counting, and counting returns one answer that reads the same on every machine and can be re-derived by a regulator. A safety screen that used to need a big lab's pipeline becomes arithmetic.
+
+*Why we shared it, in the open.* Because that pipeline — one only a large, funded institution could run — is a real reason cures cluster inside big labs, and why a disease with a population of one usually has nothing at all. In the open, a small company, a rare-disease foundation, or one determined scientist can pick a cure and carry it — safer than the old way, and for a disease of one, the only way there is.
+
+*What you can do to push it forward.* Re-derive any figure on these pages yourself — no account, no key. If you are building a written medicine, the exact off-target screen is a foundation to build on. If you carry a cure that has no home, this is the safety instrument that lets you carry it. The method is here to be used, under license, to save lives.
+
+The same exact-versus-approximate divide runs through a very different domain, where we could measure it head-on: the reactor floor. The same fusion safety verdict, computed both ways, **disagrees with itself in floating point and holds exactly in integers** — and you can re-derive every number of it yourself, below.
 
 ---
 
@@ -158,6 +166,7 @@ The harness verifies that every figure quoted on these pages appears in the outp
 
 | page | what it is |
 |---|---|
+| [Cures Without the Gatekeeper](Cures-Without-The-Gatekeeper) | **the medicine front door** — six real written medicines and the exact off-target screen that makes each one's safety re-derivable by anyone |
 | [Study 34 — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) | the proof on this page, in full — why a fusion safety verdict must be exact |
 | [Study 35 — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) | why a floating-point safety brain is doomed, not just behind — it deafens in seconds, forgets across machines, disagrees with itself; the exact one does none of it |
 | [Affine Fusion Control](Affine-Fusion-Control) | the local exact-integer fusion court — five panels, both laws live, 65,536 agents on one laptop |

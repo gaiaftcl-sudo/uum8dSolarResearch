@@ -14,6 +14,9 @@ The sky writes geometry, and geometry cannot lie. Every study on this wiki begin
 
 > One method, many skies. **Zero float · zero shear** is the program doctrine. `OPEN` means we do **not** have the data — **03, 05, 08, 26, 27, 29, 30** (28 sealed its Act 1 gate 2026-08-27). 01 / 06 / 07 carry PROVEN markers on the live courts table (`STUDY01_ECLIPSE_CONE_PROVEN` · `STUDY06_EXPLOSION_LADDER_PROVEN` · `STUDY07_EHT_CSV_PROVEN`); 04 is PARTIAL_CORPUS_SEAL. 10 is CHARTER WITH ARCHIVE, not OPEN. 02 / 09 are LIVE CLAIM — 02 is sealing receipts on Starlink 10-49; 11 / 12 / 13 are LAW FROZEN + LIVE CLAIM with PROVEN markers. **Studies 22–25 are live on Glama** — [user guide](Math-Court-User-Guide) · [example app](Math-Court-Example-App) · [Math Court](Affine-Math-Court-Glama).
 
+> [!NOTE]
+> **Cures — the exact off-target screen, applied to written medicines.** Six real, in-the-news medicines, each grading the safety *instrument* and never the drug: **[Cures Without the Gatekeeper](Cures-Without-The-Gatekeeper)** (the front door) · [Zilganersen — first treatment for Alexander disease](The-Safety-Question-Made-Exact) · [CAR-T, halted](The-Verdict-a-Regulator-Could-Re-Derive) · [N-of-1 antisense](N-of-1-Antisense-The-Exact-Off-Target-Map) · [VERVE-102](VERVE-102-The-Verdict-A-Stranger-Can-Re-Derive) · [PM359](PM359-Prime-Editing-Certified-Before-Anyone-Is-Dosed) · [Del-Zota](Del-Zota-The-One-Safety-Question-Made-Exact).
+
 ## Program status
 
 | # | Study | Status | The forcing and the shear |

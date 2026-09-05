@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="ui-monospace,'SF Mono',Menlo,monospace">
+ <defs>
+  <style>
+   .serif{font-family:Georgia,'Times New Roman',serif}
+   .k{font-size:13px;letter-spacing:3px;fill:#5f7285}.cap{font-size:12px;fill:#5f7285}
+   .lift{animation:lift 7s ease-in-out infinite}
+   @keyframes lift{0%,25%{transform:translateY(0)}45%,80%{transform:translateY(-118px)}100%{transform:translateY(0)}}
+   .glow{animation:glow 7s ease-in-out infinite}
+   @keyframes glow{0%,28%{opacity:0}48%,80%{opacity:1}92%,100%{opacity:0}}
+   .pass{animation:pass 7s ease-in-out infinite}
+   @keyframes pass{0%,40%{opacity:0;transform:translateX(0)}46%{opacity:1}82%{opacity:1;transform:translateX(360px)}88%,100%{opacity:0}}
+   .seal{animation:seal 7s ease-out infinite}
+   @keyframes seal{0%,18%{opacity:0;transform:translateY(-14px)}30%,90%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+   @media(prefers-reduced-motion:reduce){.lift{transform:translateY(-118px)}.glow,.pass,.seal{animation:none;opacity:1}}
+  </style>
+ </defs>
+ <rect width="800" height="700" fill="#0a0e14"/>
+ <text x="60" y="64" class="k">WHY THIS MATTERS · CURES WITHOUT THE GATEKEEPER</text>
+ <text x="58" y="118" class="serif" font-size="30" fill="#e8eef6">The gate that keeps cures inside big labs —</text>
+ <text x="58" y="152" class="serif" font-size="30" fill="#8195aa">an exact certificate opens it.</text>
+
+ <!-- the wall + gateway -->
+ <rect x="120" y="250" width="560" height="26" fill="#161d27"/>            <!-- lintel -->
+ <rect x="300" y="276" width="26" height="230" fill="#161d27"/>           <!-- left pillar -->
+ <rect x="474" y="276" width="26" height="230" fill="#161d27"/>           <!-- right pillar -->
+ <!-- open doorway glow (behind bars) -->
+ <rect class="glow" x="326" y="276" width="148" height="230" fill="#123020"/>
+ <path class="glow" d="M326,506 L400,300 L474,506 Z" fill="#1c5030" opacity=".5"/>
+ <!-- the bars that lift to open -->
+ <g class="lift" fill="#2b3440">
+  <rect x="326" y="300" width="148" height="12"/><rect x="326" y="330" width="148" height="12"/>
+  <rect x="326" y="360" width="148" height="12"/><rect x="326" y="390" width="148" height="12"/>
+  <rect x="326" y="420" width="148" height="12"/><rect x="326" y="450" width="148" height="12"/><rect x="326" y="480" width="148" height="12"/>
+ </g>
+ <text x="400" y="242" class="cap" text-anchor="middle" fill="#8aa0b6">THE SAFETY GATE</text>
+
+ <!-- cures waiting on the left -->
+ <g>
+  <rect x="140" y="360" width="34" height="20" rx="10" fill="#0f1620" stroke="#5aa9e6"/>
+  <rect x="150" y="392" width="34" height="20" rx="10" fill="#0f1620" stroke="#5aa9e6"/>
+  <rect x="138" y="424" width="34" height="20" rx="10" fill="#0f1620" stroke="#5aa9e6"/>
+  <text x="158" y="352" class="cap" text-anchor="middle">cures waiting</text>
+ </g>
+
+ <!-- the certificate seal that opens it -->
+ <g class="seal" transform-origin="400px 200px">
+  <circle cx="400" cy="200" r="22" fill="#0d1f16" stroke="#3fb950" stroke-width="2"/>
+  <path d="M390,200 l7,7 l13,-15" fill="none" stroke="#3fb950" stroke-width="2.6"/>
+ </g>
+ <text x="400" y="536" class="cap" text-anchor="middle" fill="#7bcf8a">re-derivable · anyone can verify it</text>
+
+ <!-- a cure carried through -->
+ <g class="pass">
+  <rect x="222" y="392" width="40" height="22" rx="11" fill="#0d1f16" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="232" cy="403" r="4" fill="#3fb950"/>
+ </g>
+ <!-- a lone carrier on the far right -->
+ <g stroke="#6ea8e6" stroke-width="2" fill="none">
+  <circle cx="636" cy="380" r="11"/><path d="M636,392 v34 M636,400 h-16 M636,400 h16 M636,426 l-12,20 M636,426 l12,20"/>
+ </g>
+ <text x="636" y="472" class="cap" text-anchor="middle" fill="#8aa0b6">one scientist</text>
+
+ <line x1="60" y1="586" x2="740" y2="586" stroke="#1e2936"/>
+ <text x="60" y="626" class="serif" font-size="22" fill="#e8eef6">The certificate is <tspan fill="#7bcf8a">computed, not bought</tspan> — so a small lab,</text>
+ <text x="60" y="658" class="serif" font-size="22" fill="#e8eef6">a foundation, or one scientist can carry the cure.</text>
+ <text x="60" y="686" class="cap" fill="#47576a">Scoped to the sequence-safety question (measured); chemistry, immune and dosing risks still need the lab and the clinic.</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="ui-monospace,'SF Mono',Menlo,monospace">
+ <defs>
+  <style>
+   .serif{font-family:Georgia,'Times New Roman',serif}
+   .k{font-size:13px;letter-spacing:3px;fill:#5f7285}.cap{font-size:12px;fill:#5f7285}
+   .A{animation:A 18s ease-in-out infinite}@keyframes A{0%,28%{opacity:1}34%,94%{opacity:0}100%{opacity:1}}
+   .B{animation:B 18s ease-in-out infinite}@keyframes B{0%,30%{opacity:0}38%,60%{opacity:1}66%,100%{opacity:0}}
+   .C{animation:C 18s ease-in-out infinite}@keyframes C{0%,62%{opacity:0}70%,94%{opacity:1}100%{opacity:0}}
+   .life{animation:life 3s ease-in-out infinite}@keyframes life{0%,100%{opacity:1}50%{opacity:.7}}
+   .scan{animation:scanb 18s linear infinite}@keyframes scanb{0%,38%{opacity:0;transform:translateX(0)}44%{opacity:1}58%{opacity:1;transform:translateX(300px)}60%,100%{opacity:0}}
+   .seal{animation:seal 18s ease-out infinite}@keyframes seal{0%,54%{opacity:0;transform:scale(.6)}60%,100%{opacity:1;transform:scale(1)}}
+   @media(prefers-reduced-motion:reduce){.A,.B,.C,.life,.scan,.seal{animation:none}.A{opacity:0}.C{opacity:1}}
+  </style>
+ </defs>
+ <rect width="800" height="700" fill="#0a0e14"/>
+ <text x="60" y="64" class="k">WHY THIS MATTERS · A CURE FOR ONE</text>
+
+ <!-- SCENE A: a population of one; a trial needs a crowd -->
+ <g class="A">
+  <g fill="none" stroke="#1e2936" stroke-width="1.5">
+   <circle cx="250" cy="250" r="9"/><circle cx="320" cy="215" r="9"/><circle cx="540" cy="230" r="9"/>
+   <circle cx="600" cy="285" r="9"/><circle cx="230" cy="320" r="9"/><circle cx="560" cy="330" r="9"/>
+   <circle cx="300" cy="360" r="9"/><circle cx="520" cy="360" r="9"/>
+  </g>
+  <circle class="life" cx="400" cy="290" r="16" fill="#5aa9e6"/>
+  <circle class="life" cx="400" cy="290" r="30" fill="none" stroke="#5aa9e6" stroke-opacity=".35"/>
+  <text x="400" y="420" class="serif" font-size="27" fill="#e8eef6" text-anchor="middle">A cure for one child.</text>
+  <text x="400" y="456" class="serif" font-size="21" fill="#8195aa" text-anchor="middle">A trial needs a crowd. There is only one.</text>
+ </g>
+
+ <!-- SCENE B: no trial — compute the safety first -->
+ <g class="B">
+  <circle class="life" cx="400" cy="210" r="14" fill="#5aa9e6"/>
+  <!-- the sequence being written -->
+  <g transform="translate(250,270)">
+   <rect x="0" y="0" width="300" height="26" rx="5" fill="#0f1620" stroke="#1e2936"/>
+   <rect x="8" y="4" width="18" height="18" rx="2" fill="#5aa9e6"/><rect x="30" y="4" width="18" height="18" rx="2" fill="#5ac48a"/>
+   <rect x="52" y="4" width="18" height="18" rx="2" fill="#d6a24a"/><rect x="74" y="4" width="18" height="18" rx="2" fill="#b57edc"/>
+   <rect x="96" y="4" width="18" height="18" rx="2" fill="#5ac48a"/><rect x="118" y="4" width="18" height="18" rx="2" fill="#5aa9e6"/>
+   <g class="scan"><rect x="4" y="-4" width="6" height="34" rx="2" fill="#eef4ff" opacity=".7"/></g>
+  </g>
+  <text x="400" y="256" class="cap" text-anchor="middle">read the gene · write the sequence · map every off-target, exactly</text>
+  <g class="seal" transform-origin="400px 350px">
+   <circle cx="400" cy="350" r="30" fill="#0d1f16" stroke="#3fb950" stroke-width="2"/>
+   <path d="M386,350 l9,10 l18,-21" fill="none" stroke="#3fb950" stroke-width="3"/>
+  </g>
+  <text x="400" y="440" class="serif" font-size="24" fill="#e8eef6" text-anchor="middle">No trial can be built. So the safety is</text>
+  <text x="400" y="472" class="serif" font-size="24" fill="#e8eef6" text-anchor="middle"><tspan fill="#7bcf8a">computed, exactly, before the first dose.</tspan></text>
+ </g>
+
+ <!-- SCENE C: the only safety net that can exist -->
+ <g class="C">
+  <circle class="life" cx="400" cy="280" r="20" fill="#7bcf8a"/>
+  <circle class="life" cx="400" cy="280" r="40" fill="none" stroke="#3fb950" stroke-opacity=".4"/>
+  <circle cx="400" cy="280" r="58" fill="none" stroke="#3fb950" stroke-opacity=".18"/>
+  <text x="400" y="416" class="serif" font-size="26" fill="#e8eef6" text-anchor="middle">At a population of one,</text>
+  <text x="400" y="452" class="serif" font-size="26" fill="#e8eef6" text-anchor="middle">this is the <tspan fill="#7bcf8a">only safety net that can exist.</tspan></text>
+ </g>
+
+ <line x1="60" y1="600" x2="740" y2="600" stroke="#1e2936"/>
+ <text x="400" y="640" class="cap" text-anchor="middle">The off-target map is a discrete, re-derivable computation. Chemistry, immune and dosing risks still need the lab.</text>
+ <text x="400" y="672" class="cap" fill="#47576a" text-anchor="middle">Affine.Earth · the safety instrument, never the medicine or the child.</text>
+</svg>
