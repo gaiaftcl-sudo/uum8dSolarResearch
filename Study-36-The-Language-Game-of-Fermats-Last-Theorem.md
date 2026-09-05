@@ -2,6 +2,8 @@
 
 *A probability engine stumbled into Fermat's Last Theorem in eleven days and six billion tokens. An exact-integer court measures the same class of truth deterministically, in microseconds, and seals it to one digest that reads the same on every machine. This study grades the **method** — never the theorem, and never the people who proved it.*
 
+![The guess never stops being fooled; the exact never wavers — a floating-point processor reports a false Fermat solution at every zoom depth while the exact integer court refutes it, the gap only growing](images/short-guess-or-project.svg)
+
 ## The consensus that surrendered to a blur
 
 **ARGUMENT** — the framing below is this study's thesis, not a measurement; the measurements are further down and graded.
