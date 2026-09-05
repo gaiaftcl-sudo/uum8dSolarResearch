@@ -149,6 +149,9 @@ check_figure drift-barrier-demo     "96.5%"     "Study-35-The-Safety-Brain-That-
 check_figure drift-barrier-demo     "49.6%"     "Study-35-The-Safety-Brain-That-Forgets.md"
 check_figure drift-barrier-demo     "50.3%"     "Study-35-The-Safety-Brain-That-Forgets.md"
 check_figure drift-barrier-demo     "DRIFT_BARRIER_TRAINED_MODEL_STALE_INVARIANT_FIXED" "Study-35-The-Safety-Brain-That-Forgets.md"
+
+# --- Zilganersen / Alexander disease: the exact ASO off-target screen ---
+check_figure aso-offtarget-exact-vs-float "ASO_OFFTARGET_EXACT_IS_OBSERVER_INVARIANT" "The-Safety-Question-Made-Exact.md"
 check_figure valuation-crossing-ledger    "2036"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "2038"     "The-Replacement-Grade.md"
 check_figure valuation-crossing-ledger    "973.7"    "The-Replacement-Grade.md"

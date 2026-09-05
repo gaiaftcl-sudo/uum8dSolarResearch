@@ -30,7 +30,7 @@ A protein on this court is a **presented 4-character PDB accession** that is a m
 
 ## Three people died in August. The math that would have spared them already exists.
 
-**The full deep dive, written for the pharma and research industries: [This would have been flagged](The-Verdict-a-Regulator-Could-Re-Derive).**
+**Applied — the safety instrument in real drug decisions: [This would have been flagged](The-Verdict-a-Regulator-Could-Re-Derive) (CAR-T, a veto before Phase 1) · [The safety question made exact](The-Safety-Question-Made-Exact) (zilganersen for Alexander disease, a re-derivable seal).**
 
 In August 2026, three people in clinical trials died, and two of the largest drug companies on Earth stopped their programs overnight. Novartis halted eight trials of a cell therapy for lupus, MS, rheumatoid arthritis and other autoimmune diseases; Bristol Myers Squibb paused its own. The therapy was meant to retrain the immune system to stop attacking the patient's own body. Instead the engineered cells multiplied out of control, and the immune system turned on the people it was built to save. *([FierceBiotech](https://www.fiercebiotech.com/biotech/novartis-bristol-myers-squibb-halt-car-t-cell-trials-due-immune-events) · [Endpoints](https://endpoints.news/three-deaths-in-car-t-trials-prompt-halt-by-novartis-bristol-myers-programs-also-paused/) · [BioPharma Dive](https://www.biopharmadive.com/news/novartis-bristol-myers-autoimmune-cell-therapy-trial-halt/829218/))*
 

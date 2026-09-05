@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+ <defs>
+  <style>
+   .bg{fill:#0a0e14}
+   .kick{font-size:12px;letter-spacing:2.5px;fill:#5f7285}
+   .h{font-size:23px;fill:#e8eef6}.serif{font-family:Georgia,'Times New Roman',serif}
+   .sub{font-size:13px;fill:#8195aa}.tiny{font-size:11px;fill:#5f7285}.lbl{font-size:10.5px;fill:#8aa0b6;letter-spacing:.3px}
+   .mono{font-size:12px;fill:#8195aa}
+   .flipA{animation:flipA 4s steps(1) infinite}@keyframes flipA{0%,50%{opacity:1}50.01%,100%{opacity:0}}
+   .flipB{animation:flipB 4s steps(1) infinite}@keyframes flipB{0%,50%{opacity:0}50.01%,100%{opacity:1}}
+   .held{animation:held 2.6s ease-in-out infinite}@keyframes held{0%,100%{opacity:1}50%{opacity:.7}}
+   @media (prefers-reduced-motion:reduce){.flipA,.flipB,.held{animation:none}.flipB{opacity:1}}
+  </style>
+ </defs>
+ <rect class="bg" width="900" height="620"/>
+
+ <text x="42" y="38" class="kick">AFFINE.EARTH · ANTISENSE SAFETY · THE QUESTION YOU CAN MAKE EXACT</text>
+ <text x="40" y="74" class="h serif">For an antisense drug, off-target danger is a discrete question.</text>
+ <text x="40" y="101" class="h serif">Exact, it is one answer on every machine. Float, it shears.</text>
+ <text x="42" y="126" class="sub">An ASO can also cut transcripts its sequence partly matches. "Where else does it bind?" is base pairing —</text>
+ <text x="42" y="143" class="sub">A·U, G·C — a counting problem. We ran the same screen both ways on representative sequences.</text>
+
+ <!-- FINDING table -->
+ <g>
+  <text x="42" y="176" class="lbl">candidate window</text>
+  <text x="330" y="176" class="lbl" text-anchor="middle">match</text>
+  <text x="470" y="176" class="lbl" text-anchor="middle">EXACT</text>
+  <text x="650" y="176" class="lbl" text-anchor="middle">FLOAT · <tspan fill="#d0a54f">paramset A &#8646; B</tspan></text>
+  <line x1="42" y1="186" x2="820" y2="186" stroke="#1e2936"/>
+
+  <g class="mono">
+   <text x="42" y="210">the intended target</text><text x="330" y="210" text-anchor="middle">20/20</text>
+   <text x="470" y="210" text-anchor="middle" fill="#3fb950">ON-TARGET</text><text x="650" y="210" text-anchor="middle" fill="#3fb950">ON-TARGET</text>
+
+   <text x="42" y="238">off-target · 2 mismatch</text><text x="330" y="238" text-anchor="middle">18/20</text>
+   <text x="470" y="238" text-anchor="middle" fill="#f85149">FLAGGED</text><text x="650" y="238" text-anchor="middle" fill="#f85149">FLAGGED</text>
+
+   <text x="42" y="266">off-target · 2 mismatch</text><text x="330" y="266" text-anchor="middle">18/20</text>
+   <text x="470" y="266" text-anchor="middle" fill="#f85149">FLAGGED</text><text x="650" y="266" text-anchor="middle" fill="#f85149">FLAGGED</text>
+
+   <rect x="42" y="278" width="778" height="26" fill="#161d13" opacity=".5"/>
+   <text x="42" y="296" fill="#c9d4df">borderline · 3 mismatch</text><text x="330" y="296" text-anchor="middle" fill="#c9d4df">17/20</text>
+   <text x="470" y="296" text-anchor="middle" fill="#7bcf8a">CLEAR</text>
+   <text class="flipA" x="650" y="296" text-anchor="middle" fill="#f85149">FLAGGED</text>
+   <text class="flipB" x="650" y="296" text-anchor="middle" fill="#7bcf8a">CLEAR</text>
+
+   <text x="42" y="324">decoy · 6 mismatch</text><text x="330" y="324" text-anchor="middle">14/20</text>
+   <text x="470" y="324" text-anchor="middle" fill="#5f7285">CLEAR</text><text x="650" y="324" text-anchor="middle" fill="#5f7285">CLEAR</text>
+  </g>
+  <line x1="42" y1="338" x2="820" y2="338" stroke="#1e2936"/>
+  <text x="42" y="360" class="sub" fill="#7bcf8a">EXACT — one off-target set, no parameter to choose, re-derivable byte-for-byte by a regulator.</text>
+  <text x="42" y="378" class="sub" fill="#f0a6a2">FLOAT — the same screen reclassifies the borderline site on which defensible parameter set it rounds to.</text>
+ </g>
+
+ <line x1="42" y1="404" x2="858" y2="404" stroke="#1e2936"/>
+
+ <!-- VALUE band -->
+ <g>
+  <text x="42" y="428" class="lbl" fill="#8aa0b6">FOR THE PATIENTS</text>
+  <text x="42" y="448" class="tiny" fill="#8195aa">Alexander disease: one drug,</text>
+  <text x="42" y="463" class="tiny" fill="#8195aa">no alternative. What we found</text>
+  <text x="42" y="478" class="tiny" fill="#8195aa">is not a rival — it is how to</text>
+  <text x="42" y="493" class="tiny" fill="#8195aa">design a safer next one, before</text>
+  <text x="42" y="508" class="tiny" fill="#8195aa">it reaches a child.</text>
+
+  <line x1="312" y1="422" x2="312" y2="510" stroke="#1e2936"/>
+  <text x="330" y="428" class="lbl" fill="#8aa0b6">WHY PHARMA RESETS</text>
+  <text x="330" y="448" class="tiny" fill="#8195aa">A safety verdict a regulator</text>
+  <text x="330" y="463" class="tiny" fill="#8195aa">can re-derive — not a number</text>
+  <text x="330" y="478" class="tiny" fill="#8195aa">that moves with the parameters.</text>
+  <text x="330" y="493" class="tiny" fill="#8195aa">It belongs at the design stage,</text>
+  <text x="330" y="508" class="tiny" fill="#8195aa">not the clinic.</text>
+
+  <line x1="600" y1="422" x2="600" y2="510" stroke="#1e2936"/>
+  <text x="618" y="428" class="lbl" fill="#58a6ff">THE VALUE — LICENSED</text>
+  <text x="618" y="448" class="tiny" fill="#8aa0b6">Paid in what a late failure</text>
+  <text x="618" y="463" class="tiny" fill="#8aa0b6">burns: lives, and the hundreds</text>
+  <text x="618" y="478" class="tiny" fill="#8aa0b6">of millions a Phase-3 collapse</text>
+  <text x="618" y="493" class="tiny" fill="#8aa0b6">costs. License the exact method</text>
+  <text x="618" y="508" class="tiny" fill="#8aa0b6">against those savings.</text>
+ </g>
+
+ <text x="42" y="534" class="serif" font-size="16" fill="#e8eef6">The exact answer costs nothing a stranger cannot re-derive. <tspan class="held" fill="#58a6ff">The shearing one costs lives and years.</tspan></text>
+ <line x1="42" y1="552" x2="858" y2="552" stroke="#1e2936"/>
+ <text x="42" y="573" class="tiny" fill="#8195aa">A synthetic, representative screen — it shows the KIND of divergence, it did not screen zilganersen or any real GFAP sequence.</text>
+ <text x="42" y="590" class="tiny" fill="#47576a">Measured here (aso-offtarget-exact-vs-float.swift) and on the fusion court (Study 34/35); the real-drug molecular court is a charter to build.</text>
+ <text x="42" y="607" class="tiny" fill="#47576a">The subject under grading is the safety instrument — never the medicine, the company, or a child.</text>
+</svg>
