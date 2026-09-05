@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" font-family="ui-monospace,'SF Mono',Menlo,monospace">
+ <defs><style>
+  .serif{font-family:Georgia,'Times New Roman',serif}
+  .k{font-size:12px;letter-spacing:3px;fill:#5f7285}
+  .lab{font-size:12px;letter-spacing:2px}.cap{font-size:12px;fill:#7a8896}
+  .ring{fill:none;stroke:#1c2c3e;stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:ring 3s ease-out infinite}
+  @keyframes ring{0%{transform:scale(.08);opacity:0}18%{opacity:.85}100%{transform:scale(2.6);opacity:0}}
+  .flick{animation:flick 0.5s steps(1) infinite}
+  @keyframes flick{0%,62%{opacity:1}63%,72%{opacity:.28}73%,100%{opacity:1}}
+  .shear{transform-box:fill-box;transform-origin:center;animation:shear 0.7s ease-in-out infinite}
+  @keyframes shear{0%,100%{transform:translateX(0)}25%{transform:translateX(2.5px)}60%{transform:translateX(-2px)}}
+  .tag{animation:tag 2s ease-in-out infinite}
+  @keyframes tag{0%,100%{opacity:.55}50%{opacity:1}}
+  .beat{opacity:0;animation:beat 14s linear infinite}
+  @keyframes beat{0%,12%{opacity:1}12.5%,100%{opacity:0}}
+  .b1{animation-delay:2s}.b2{animation-delay:4s}.b3{animation-delay:6s}.b4{animation-delay:8s}.b5{animation-delay:10s}.b6{animation-delay:12s}
+  .steady{animation:steady 2.4s ease-in-out infinite}
+  @keyframes steady{0%,100%{opacity:1}50%{opacity:.82}}
+  @media(prefers-reduced-motion:reduce){.ring,.flick,.shear,.tag,.beat,.steady{animation:none}.beat{opacity:0}.b6{opacity:1}}
+ </style></defs>
+ <rect width="880" height="520" fill="#0a0e14"/>
+ <text x="60" y="52" class="k">THE ANCHOR PROOF · INFINITE ZOOM ON A FERMAT NEAR-MISS</text>
+ <text x="58" y="92" class="serif" font-size="26" fill="#e8eef6">The guess never stops being fooled.</text>
+ <text x="58" y="122" class="serif" font-size="26" fill="#7bcf8a">The exact never wavers.</text>
+
+ <!-- equation + zoom depth -->
+ <g transform="translate(0,-6)">
+  <text x="440" y="176" class="serif" font-size="22" fill="#c9d4df" text-anchor="middle">3987¹² + 4365¹²  <tspan fill="#8195aa">=?</tspan>  4472¹²</text>
+  <text x="440" y="204" class="cap" text-anchor="middle" fill="#5f7285">integer dilation — zoom the near-miss deeper:</text>
+  <g text-anchor="middle" font-size="15" fill="#8aa0b6">
+   <text x="440" y="230" class="beat">×10⁰</text><text x="440" y="230" class="beat b1">×10¹</text><text x="440" y="230" class="beat b2">×10²</text>
+   <text x="440" y="230" class="beat b3">×10³</text><text x="440" y="230" class="beat b4">×10⁴</text><text x="440" y="230" class="beat b5">×10⁵</text><text x="440" y="230" class="beat b6">×10⁶</text>
+  </g>
+ </g>
+
+ <!-- zoom rings behind the lanes -->
+ <g transform="translate(440,360)">
+  <circle class="ring" r="60"/><circle class="ring" r="60" style="animation-delay:1s"/><circle class="ring" r="60" style="animation-delay:2s"/>
+ </g>
+
+ <!-- FLOAT lane -->
+ <g transform="translate(60,268)">
+  <rect width="360" height="176" rx="12" fill="#1a0f10" stroke="#5a2a2a"/>
+  <text x="24" y="34" class="lab" fill="#f0a6a2">FLOATING-POINT</text>
+  <text x="24" y="56" class="cap" fill="#7a5b58">truncates the tail · reads a false closure</text>
+  <g transform="translate(180,108)">
+   <g class="shear"><g class="flick">
+    <text x="0" y="0" text-anchor="middle" font-size="30" fill="#f85149">= SOLUTION ✓</text>
+   </g></g>
+   <text x="0" y="34" text-anchor="middle" font-size="13" fill="#f8b0ac" class="tag">…a Fermat counterexample that does not exist</text>
+  </g>
+  <text x="24" y="162" class="cap" fill="#7a5b58">still fooled at every depth ↻</text>
+ </g>
+
+ <!-- EXACT lane -->
+ <g transform="translate(460,268)">
+  <rect width="360" height="176" rx="12" fill="#0d1f16" stroke="#265c3a"/>
+  <text x="24" y="34" class="lab" fill="#7bcf8a">EXACT INTEGER COURT</text>
+  <text x="24" y="56" class="cap" fill="#4d7a5e">measures the true gap · no precision horizon</text>
+  <g transform="translate(180,104)">
+   <g class="steady"><text x="0" y="0" text-anchor="middle" font-size="30" fill="#3fb950">≠ REFUTED</text></g>
+   <g text-anchor="middle" font-size="14" fill="#7bcf8a">
+    <text x="0" y="30" class="beat">exact gap: 34 digits</text><text x="0" y="30" class="beat b1">exact gap: 46 digits</text><text x="0" y="30" class="beat b2">exact gap: 58 digits</text>
+    <text x="0" y="30" class="beat b3">exact gap: 70 digits</text><text x="0" y="30" class="beat b4">exact gap: 82 digits</text><text x="0" y="30" class="beat b5">exact gap: 94 digits</text><text x="0" y="30" class="beat b6">exact gap: 106 digits</text>
+   </g>
+  </g>
+  <text x="24" y="162" class="cap" fill="#4d7a5e">the gap only grows — never zero ↻</text>
+ </g>
+
+ <line x1="60" y1="470" x2="820" y2="470" stroke="#1e2936"/>
+ <text x="60" y="498" class="cap" fill="#8195aa">One observer-invariant seal · <tspan fill="#5f7285">sha256 1bba2839…861998</tspan> · the same integer on every machine — re-run every digit yourself.</text>
+</svg>

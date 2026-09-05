@@ -1,5 +1,7 @@
 # Stochastic AI guesses. This machine doesn't.
 
+![The guess never stops being fooled; the exact never wavers — a floating-point processor reports a false Fermat solution at every zoom depth while the exact integer court refutes it, the gap only growing](images/short-guess-or-project.svg)
+
 **The industry bet the future on machines that guess.** Trillion-parameter models that sample an answer and lean on a checker to catch the misses; floating-point silicon that truncates the truth the moment the numbers run long. Fast — and blurred. When the frontier's best threw **dozens of AI agents, six billion tokens, and eleven days** at a single theorem — needing a bolted-on coordinator to keep the agents from losing their place, and a classical kernel to catch their mistakes — the industry called it a triumph of intelligence. It is a triumph of *guessing.* **And a verdict that changes when you run it again is not a verdict.**
 
 **Affine.Earth is a deterministic truth engine — it refuses to guess, and it refuses to round.** Present it a question and it *projects* the exact answer: no sampling, no search, no floating-point blur — sealed to a single SHA-256 that reads **identically on every machine, forever.** Not an AI that sounds certain. A result anyone can re-derive and get the same integer everyone else gets.
