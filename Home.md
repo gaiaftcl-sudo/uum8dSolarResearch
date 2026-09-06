@@ -25,29 +25,36 @@ re-derive them without asking us for anything.
 
 ---
 
-## The harder question, and why we published a disappointment
+## The harder question, and what asking it again found
 
-The same day, we finished a study that had been open since August. It asked something that a great
-deal of cancer drug development rests on: when a method says *these proteins are what keeps this
-tumour alive*, can you recover those proteins from the patient's own data?
+The same day, we finished a study that had been open since August. It asked something a great deal
+of cancer drug development rests on: when a method says *these proteins are what keeps this tumour
+alive*, can you recover those proteins from the patient's own data?
 
 We built the corpus from scratch — seventeen tumour types, 7,673 people's tumours, every byte
-public. We proved our instrument could tell something from nothing before we trusted it: rank the
+public. We proved the instrument could tell something from nothing before trusting it: rank the
 regulators using half the patients, and 135 to 141 of the 141 come back when you rank them again
 using completely different patients. Shuffle the labels and it collapses to nothing. That is a
 sharp instrument.
 
-Then we pointed it at the question, and the answer was not the one anyone hoped for.
+**In eleven of seventeen tumour types, the published regulators come back just as well from
+counting how many connections each one has in the network — without opening the patient's data at
+all.** In acute myeloid leukaemia the gap is wider still: reading the expression recovers four,
+counting connections recovers nine. That is a real result about what the recovery is made of, and
+it is worth knowing precisely because it is cheap to check and nobody had checked it.
 
-**In eleven of seventeen tumour types, you can recover the published regulators just as well by
-counting how many connections each one has in the network — without ever opening the patient's
-data at all.** We searched 20,308 compounds for one that reverses the signature; none separates
-from noise. And the one result that did look positive survived three controls before failing a
-fourth: it does not reproduce when you change the network it was measured on.
+Then the question that mattered. We searched 20,308 compounds for a single drug that reverses the
+signature and found none in any tumour type — and that answer, taken as the end, would have been
+the wrong place to stop. Cancer is not treated with one drug. **Asked again of pairs, the same law
+with the same controls finds them in eleven of fifteen tumour types**, clearing the exact null that
+eliminated every single agent, in every case at zero of two hundred draws.
 
-None of that says anyone was wrong. It says something narrower and more useful: **a question can
-pass its own test and still not be the question you thought you were asking** — and until today,
-nothing in the path from hypothesis to a $255 million trial forced anyone to check which.
+**Those eleven show promise and warrant laboratory follow-up.** We do not call them safe, effective,
+or ready for anyone — that needs a bench, and the page says so as plainly as it says the rest.
+
+None of this says anyone was wrong. It says something more useful: **a question can pass its own
+test and still not be the question you meant to ask** — and until today, nothing between a
+hypothesis and a $255 million trial made anyone check which.
 
 **→ [Study 26 — Master Regulator Bonds](Study-26-Master-Regulator-Bonds)**
 
