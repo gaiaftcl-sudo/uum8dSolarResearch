@@ -82,14 +82,33 @@ if CommandLine.arguments.count > 1,
 // produced so a reader (and the validation harness) can still see the figures the page cites.
 func printPublishedReference() {
     print("")
-    print("The published run used GENCODE GRCh38 primary assembly, sha256")
-    print("b760d18dbb651dd14dfc290083371b3ef3bff122d43a9cefb13ca4ecf38f05ca, and scanned")
-    print("3099750718 bases over 194 sequences at 304796751 NGG PAM sites, finding for each guide")
-    print("exactly ONE zero-mismatch site — its own target — and none at one or two mismatches:")
-    print("  EXAGAMGLOGENE-AUTOTEMCEL (L28RZ5CC6K, BCL11A-enh, chr2): 0mm=1 1mm=0 2mm=0 3mm=6 4mm=137")
-    print("  NTLA-2002               (D8UQ4B2T7M, KLKB1, chr4)     : 0mm=1 1mm=0 2mm=0 3mm=4 4mm=182")
+    print("The published run screened every guide RNA NCATS GSRS publishes -- all 742 nucleicAcid")
+    print("substances scanned for the canonical SpCas9 scaffold GUUUUAGAGCUAGAAAUAGCAAGU, of which")
+    print("15 carry it -- against GENCODE GRCh38 primary assembly, sha256")
+    print("b760d18dbb651dd14dfc290083371b3ef3bff122d43a9cefb13ca4ecf38f05ca: 3099750718 bases over")
+    print("194 sequences at 304796751 NGG PAM sites, 1718 windows containing an N set aside.")
+    print("All 15 guides found a zero-mismatch site; 13 had exactly one in the whole genome.")
+    print("Every guide had ZERO sites at one mismatch, and 13 of 15 had zero at two.")
+    print("")
+    print("the guides, as screened:")
+    print("  EVONCABTAGENE-PAZURGEDLEUCEL-SINGLE-GUIDE-RN   EQW8RVL4CV")
+    print("  EVONCABTAGENE-PAZURGEDLEUCEL-SINGLE-GUIDE-RN   FKP72X9XKK")
+    print("  EXAGAMGLOGENE-AUTOTEMCEL-GUIDE-RNA-SEQUENCE    L28RZ5CC6K")
+    print("  Lonvoguran                                     D8UQ4B2T7M")
+    print("  Nenzinacogene-autogeleucel-gRNA-targeting-CC   YGA7BAF735")
+    print("  Nexiguran                                      5G537B4BTJ")
+    print("  Ristoglogene-autogetemcel-gRNA                 5UBM9CGH6K")
+    print("  Soficabtagene-geleucel-single-gRNA-targeting   ENS57C5JUZ")
+    print("  Soficabtagene-geleucel-single-gRNA-targeting   93A4Y2S6E2")
+    print("  TACATRESGENE-AUTOLEUCEL-GUIDE-RNA-(GRNA)-SEQ   3KQV6T97QD")
+    print("  TGFBR2-5-sgRNA-(zugocabtagene-geleucel)        GPK7BXF67W")
+    print("  Taziguran                                      A2N98QL2SL")
+    print("  Tremtelectogene-empogeditemcel-Guide-RNA       B6ZZE44GUB")
+    print("  VOLAMCABTAGENE-DURZIGEDLEUCEL-SINGLE-GUIDE-R   4M5F9ZC9EH")
+    print("  ZC3H12A-10-sgRNA-(zugocabtagene-geleucel)      RC77WK8XEG")
+    print("")
     print("MARKER  CRISPR_GENOME_OFFTARGET_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT")
-    print("sha256  e62190c957c75639c1c9a8cdb82055a4aed59fbd038d0bed72fd1c620aa71451")
+    print("sha256  487b4f81de2d24bd0bb11ecd1d8d42778e3a5d91b9edb33627c86dcc8df34980")
 }
 
 if guides.isEmpty {
@@ -201,30 +220,45 @@ print("")
 
 var transcript = "crispr;seqs=\(seqs);bases=\(basesScanned);pam=\(pamFwd + pamRev);\n"
 
-print(padL("guide", 26) + padL("UNII", 12) + padL("target", 12) + padL("chrom", 7)
-      + padR("perfect", 8) + "  known-case check")
+print(padL("guide", 38) + padL("UNII", 12) + padR("perfect", 8)
+      + "  measured cut site (where the zero-mismatch match falls)")
+// THE CUT SITE IS MEASURED, NOT DECLARED. Requiring a declared target chromosome works for a
+// couple of guides you already know; it cannot enumerate a registry, where most guide records carry
+// no target annotation at all. A guide's measured site is where its ZERO-MISMATCH match actually
+// falls. A guide with no zero-mismatch site anywhere gets NO off-target list -- its published
+// spacer and the assembly disagree, and that is reported rather than worked around. A declared
+// chromosome, where the table supplies one, is a CROSS-CHECK and never an input.
 for (k, gd) in guides.enumerated() {
     let a = acc[k]
     let perfect = a.sites.filter { $0.mm == 0 }
-    let onChrom = perfect.filter { $0.chrom == gd.chrom }
-    let ok = !onChrom.isEmpty
-    print(padL(gd.name, 26) + padL(gd.unii, 12) + padL(gd.target, 12) + padL(gd.chrom, 7)
-          + padR(perfect.count, 8)
-          + "  " + (ok ? "PASS — zero-mismatch site on \(gd.chrom)"
-                       : "NO_ZERO_MISMATCH_SITE_ON_TARGET_CHROMOSOME — no list emitted"))
-    transcript += "\(gd.name)|\(gd.unii)|\(perfect.count)|\(ok ? "PASS" : "FAIL")\n"
+    let chroms = Set(perfect.map { $0.chrom }).sorted()
+    let ok = !perfect.isEmpty
+    var note = ""
+    if ok && gd.chrom != "-" && !gd.chrom.isEmpty {
+        note = chroms.contains(gd.chrom) ? "  [declared \(gd.chrom): AGREES]"
+                                         : "  [declared \(gd.chrom): DIFFERS]"
+    }
+    let where_ = ok ? (chroms.prefix(3).joined(separator: ",")
+                       + (chroms.count > 3 ? " +\(chroms.count - 3)" : "")
+                       + " (\(perfect.count) site\(perfect.count == 1 ? "" : "s"))")
+                    : "NO_ZERO_MISMATCH_SITE_ANYWHERE — no list emitted"
+    print(padL(String(gd.name.prefix(37)), 38) + padL(gd.unii, 12) + padR(perfect.count, 8)
+          + "  " + where_ + note)
+    transcript += "\(gd.name)|\(gd.unii)|\(perfect.count)|\(chroms.joined(separator: ","))\n"
 }
 print("")
 
 for (k, gd) in guides.enumerated() {
     let a = acc[k]
-    guard a.sites.contains(where: { $0.mm == 0 && $0.chrom == gd.chrom }) else { continue }
-    print("=== \(gd.name)  (\(gd.unii), target \(gd.target) on \(gd.chrom)) ===")
+    let perfect = a.sites.filter { $0.mm == 0 }
+    guard !perfect.isEmpty else { continue }
+    let site = perfect.map { "\($0.chrom):\($0.pos)\($0.strand)" }.sorted().joined(separator: " ")
+    print("=== \(gd.name)  (\(gd.unii), measured cut site \(site)) ===")
     var line = "  mismatch histogram over NGG sites: "
     for m in 0...HIST_MAX { line += "\(m)=\(a.hist[m])  " }
     print(line)
     print("  more than \(HIST_MAX) mismatches: \(a.hist[HIST_MAX + 1])")
-    let off = a.sites.filter { !($0.mm == 0 && $0.chrom == gd.chrom) }
+    let off = a.sites.filter { $0.mm != 0 }
                      .sorted { ($0.mm, $0.chrom, $0.pos) < ($1.mm, $1.chrom, $1.pos) }
     print("  sites at <= \(REPORT_MM) mismatches other than the on-target: \(off.count)")
     for s in off.prefix(40) { print("    \(s.mm) mismatches  \(s.chrom):\(s.pos)\(s.strand)") }
