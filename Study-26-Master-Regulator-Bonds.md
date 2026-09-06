@@ -152,7 +152,7 @@ The same discipline protects the commons downstream: public archives (GEO, GDC, 
 - **TCGA via GDC open API: SERVED, anonymous.** `api.gdc.cancer.gov/status` reports Data Release 46.0 (2026-08-10); a filtered files query returned 1,231 open-access TCGA-BRCA gene-expression files; a real file answered an anonymous range request with genuine GENCODE-v36 TSV content.
 - **LINCS: one door gated, one open.** `api.clue.io` refuses without a user key (HTTP 401 — recorded as GATED; this study does not route through it). The open door is GEO series GSE92742 at `ftp.ncbi.nlm.nih.gov` — directory listable, all 18 supplementary files served, SHA512SUMS present; the Level-5 signature matrix is 20 GB and the metadata sidecars under 25 MB were fetched as proof. The regulon corpus ingest is unblocked through the open doors only.
 
-**Status: FINDINGS SEALED 2026-09-06** — S1 (regulon recovery), S3 (inversion lookup) and every control run and published; S2 (subtype appointment) ruled NOT RUNNABLE by measurement. — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
+**Status: FINDINGS SEALED 2026-09-06** — S1 (regulon recovery), S3 (inversion lookup) and S5 (byte identity) all run and published, with every control; S2 (subtype appointment) ruled NOT RUNNABLE, with the blocker measured and shown. — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
 
 ---
 
@@ -589,6 +589,58 @@ does, reports **489 of 1,000** on the same cohort. A factor of five hundred, and
 That is the same defect this study found in the incumbent method, committed by us, one stage later:
 **a null that does not match the shape of the observed statistic manufactures significance.** It is
 recorded because a study that publishes only its clean runs is not publishing a method.
+
+
+## S5 — byte identity, re-verified today rather than trusted
+
+The charter's fifth stage asks whether a stranger with curl reproduces this corpus byte-exact, or
+the seal does not stand. It is the stage that makes every other number checkable by someone who
+does not trust us.
+
+**It was verified by re-reading the corpus, not by reading our own logs.** Eleven of the seventeen
+cohorts carry an ingest manifest recording per-file GDC md5 verification; the first six were
+ingested before that manifest was added. Reporting the stage from that bookkeeping would have meant
+reporting 11 of 17 and calling it a seal. So every scored artefact was re-verified directly instead
+— gzip integrity, declared shape, and digest — because **a corpus that cannot be re-verified today
+is not sealed, whatever a log said while it was being built.**
+
+| | result |
+|---|---|
+| count matrices verified | **17 of 17** |
+| gzip integrity failures | **0** |
+| shape agreement | every cohort 60,660 rows, identical |
+| patient samples across the corpus | **7,673** |
+| cohorts failing verification | **0** |
+| files md5-verified at ingest (where a manifest exists) | **4,377**, 0 skipped |
+
+**The LINCS archive checks against its own publisher.** The 21.3 GB Level-5 archive was streamed
+twice and never stored, and the SHA-512 of the compressed stream matches the digest GEO publishes
+for that file:
+
+```
+GEO publishes  6a3115cf3aaa402bb1bc098678b52b9c…
+we streamed    6a3115cf3aaa402bb1bc098678b52b9c…
+```
+
+Every derived artefact carries its own digest, so a reader can confirm they hold the same bytes
+before re-running anything:
+
+| artefact | bytes | sha256 |
+|---|---|---|
+| GSE70138 landmark ordinals | 230,905,800 | `706a4e9f3bdec276…` |
+| GSE92742 landmark ordinals | 926,453,532 | `9e1d4b74349c11c3…` |
+| GENCODE v50 transcripts | 183,554,921 | `5a320f524d73b579…` |
+| GRCh38 primary assembly | 845,635,028 | `b760d18dbb651dd1…` |
+| TRRUST v2 | 297,659 | `9b909319ccc8e365…` |
+| MSigDB Hallmark | 48,690 | `ee2463540042078b…` |
+
+**S5 PASSES.** Every artefact this study was scored on re-verifies today, from public bytes, with
+no account and no key.
+
+One upstream inconsistency is carried in the seal rather than smoothed over, exactly as the charter
+required: the regulon package's `datalist` names a 26th object, `regulonskcm`, for which no `.rda`
+and no manual page exist in the release. It is named here so that a stranger reproducing the corpus
+reads the discrepancy as upstream rather than as damage to what we built.
 
 ## Is any of this an artifact of sequencing depth?
 
