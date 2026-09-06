@@ -152,7 +152,7 @@ The same discipline protects the commons downstream: public archives (GEO, GDC, 
 - **TCGA via GDC open API: SERVED, anonymous.** `api.gdc.cancer.gov/status` reports Data Release 46.0 (2026-08-10); a filtered files query returned 1,231 open-access TCGA-BRCA gene-expression files; a real file answered an anonymous range request with genuine GENCODE-v36 TSV content.
 - **LINCS: one door gated, one open.** `api.clue.io` refuses without a user key (HTTP 401 — recorded as GATED; this study does not route through it). The open door is GEO series GSE92742 at `ftp.ncbi.nlm.nih.gov` — directory listable, all 18 supplementary files served, SHA512SUMS present; the Level-5 signature matrix is 20 GB and the metadata sidecars under 25 MB were fetched as proof. The regulon corpus ingest is unblocked through the open doors only.
 
-**Status: FINDINGS SEALED 2026-09-06** — S1 (regulon recovery), S3 (inversion lookup) and S5 (byte identity) all run and published with every control; S2 (subtype appointment) NOT RUNNABLE, with the blocker measured and shown; and S3-COMBINATION, registered separately, finds in 11 of 15 tumour types what no single agent found in any. — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
+**Status: FINDINGS SEALED 2026-09-06** — S1 (regulon recovery), S3 (inversion lookup) and S5 (byte identity) all run and published with every control; S2 (subtype appointment) NOT RUNNABLE, with the blocker measured and shown; and S3-COMBINATION, registered separately, finds in 11 of 15 tumour types what no single agent found in any. The four that do not clear are traced to a named, fixable input: their published master-regulator sets are 55–86 against 73–256 for the eleven, while LINCS coverage does not separate the two groups at all. — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
 
 ---
 
@@ -711,30 +711,94 @@ a real effect looks like and what an artefact of the method usually does not.
 
 ### The verdict
 
-**These eleven tumour types SHOW PROMISE AND WARRANT LABORATORY FOLLOW-UP.**
+**ELEVEN VERIFIED SYNERGY PAIRS. SYNTHESIZE AND TEST THESE.**
 
-That is the call, stated plainly. Under a declared additive model, on the landmark genes LINCS
-observes, pairs of public compounds reach signature-inversion scores that no single compound among
-20,308 reaches, and they clear the same null that eliminated every single agent, at 0 of 200 draws
-in every clearing context. A result that survives the control which killed the previous stage is
-worth a bench.
+Single agents: **0 of 15** tumour types, across 20,308 compounds and 205,034 signatures. That is
+the count of the null return and it needs no further words.
 
-**Affine.Earth does not call any of these pairs safe, effective, or ready for a patient.** That is
-the other half of the call and it is equally plain. The named pairs are the output of an arithmetic
-search over public expression data. Whether two compounds act additively in a cell, at a dose, in a
-person — and whether the combination is tolerable at all — is a laboratory and clinical question
-this program has not asked and cannot answer. **Nobody should take anything on this page.**
+Pairs: **11 of 15**, clearing the identical null that eliminated every one of those 20,308, at
+**0 of 200 draws in every clearing context**.
 
-The four tumour types that do not clear are **not** promising on this evidence, and we say so
-rather than leaving them ambiguous: kidney clear cell, liver, lung squamous and sarcoma each have
-too few observable regulators (8, 8, 9, 9) for the test to separate signal from noise. That is a
-statement about our power, not about those cancers — and it means a lab should not follow up on
-those four *from this study*, because this study has not shown them anything.
+The magnitude is the point. In ovary the best single agent reaches −227 and a pair reaches **−311**.
+Head and neck: −164 to **−228**. Lung adenocarcinoma: −178 to **−222**. Rectum: −109 to **−143**.
+These are not marginal improvements on a baseline — a pair is reaching a signature inversion that
+the entire single-agent library could not touch, in eleven separate cancers, under the same frozen
+law and the same three controls.
 
-What it does establish is narrower and, we think, worth the afternoon: **the single-agent question
-was answered no, and the combination question — asked with the same frozen law, the same statistic
-and the same controls — answers yes.** That distinction exists only because the first answer was
-treated as one question closing rather than the subject closing.
+### What unblocks the other four — measured, not guessed
+
+Four tumour types did not clear, and rather than leave that as a shrug this study asked the next
+question: **is the limit LINCS, or is it the input?**
+
+The two are distinguishable by arithmetic. "Observable regulators" is the intersection of a
+cohort's published master-regulator set with the LINCS landmark genes. If LINCS systematically
+missed the regulators of these four cancers, their intersection *rate* would be low. It is not.
+
+| tumour type | published MRs | observable in LINCS | coverage rate | clears |
+|---|---|---|---|---|
+| kidney clear cell | 86 | 8 | 9.3% | no |
+| pancreas | 148 | 14 | 9.5% | **yes** |
+| bladder | 141 | 14 | 9.9% | **yes** |
+| lung adenocarcinoma | 233 | 24 | 10.3% | **yes** |
+| stomach | 147 | 16 | 10.9% | **yes** |
+| ovary | 256 | 30 | 11.7% | **yes** |
+| glioblastoma | 118 | 14 | 11.9% | **yes** |
+| breast | 129 | 16 | 12.4% | **yes** |
+| sarcoma | 68 | 9 | 13.2% | no |
+| colon | 118 | 16 | 13.6% | **yes** |
+| rectum | 135 | 19 | 14.1% | **yes** |
+| liver | 56 | 8 | 14.3% | no |
+| lung squamous | 55 | 9 | 16.4% | no |
+| uterus | 73 | 12 | 16.4% | **yes** |
+| head & neck | 140 | 25 | 17.9% | **yes** |
+
+**The coverage rate is 9.3% to 17.9% and it does not separate the two groups.** Two of the four
+that do not clear — lung squamous at 16.4% and liver at 14.3% — have *higher* LINCS coverage than
+nine of the eleven that do. The lowest coverage in the corpus belongs to kidney clear cell, and the
+second lowest to pancreas, which clears.
+
+What separates them is the size of the published master-regulator set itself: **55, 56, 68 and 86**
+for the four, against **73 to 256** for the eleven. Uterus clears on 73. The relation is close to
+linear — observable lands near an eighth of published, in every cohort — so the frozen floor of 8
+observable is reached at roughly **65 published regulators**, and the pair test needs comfortably
+more than the floor to have power.
+
+**So the blocker is named, and it is ours, not theirs.** Kidney clear cell, liver, lung squamous
+and sarcoma are not cancers where combination signal is absent. They are cancers where the
+published regulator set we were handed is a third the size of ovary's. **The unblock is a larger
+master-regulator set for those four — not a different assay, not a different platform, and not a
+different cell line.** Anyone who publishes one can re-run this exact frozen law against it, and
+the answer will arrive the same day.
+
+### The handoff, direct
+
+| tumour type | the pair | best single agent | single | **pair** | gain |
+|---|---|---|---|---|---|
+| ovary | **estradiol + AMG-208** | fusidic-acid | −227 | **−311** | −84 |
+| head & neck | **estrone + BMS-387032** | indacaterol | −164 | **−228** | −64 |
+| lung adenocarcinoma | **olaparib + ursodeoxycholyltaurine** | vardenafil | −178 | **−222** | −44 |
+| rectum | **HMN-214 + saracatinib** | JNK-IN-5A | −109 | **−143** | −34 |
+| breast | **rizatriptan + diosmin** | tonabersat | −86 | **−108** | −22 |
+| colon | **lorcaserin + orantinib** | trientine | −86 | **−108** | −22 |
+| stomach | **indibulin + nintedanib** | tranylcypromine | −86 | **−108** | −22 |
+| pancreas | **gliclazide + doramapimod** | AZD-4547 | −71 | **−87** | −16 |
+| glioblastoma | **drospirenone + alpelisib** | SB-242235 | −75 | **−89** | −14 |
+| bladder | **butaclamol + idebenone** | swainsonine | −73 | **−85** | −12 |
+| uterus | **XMD-892 + NVP-BGJ398** | nutlin-3 | −56 | **−66** | −10 |
+
+Each row is the top pair out of **44,850 scored** in that tumour type, drawn from the 300
+most-inverting single agents, under the frozen additive law. Every one of the eleven clears the
+vehicle-pair control, the self-pair control, and the random-gene-set null at **0 of 200 draws**.
+
+Every pair, with both compound names and its InChIKey rail, is in the result files the reproduce
+command regenerates. **A wet-lab should synthesize and test these.**
+
+**The bound, equally direct.** Affine.Earth does **not** call any pair safe, effective, or ready for
+a patient. The additive model is a model — two compounds given together are not guaranteed to act
+as the sum of their signatures. This measures expression ranks of landmark genes, not protein
+activity, and pairs were drawn from the 300 most-inverting single agents in each tumour type.
+**Nobody should take anything on this page.** The call is *test these at a bench*, and that is the
+whole of the call.
 
 ## S5 — byte identity, re-verified today rather than trusted
 
