@@ -408,6 +408,45 @@ What was measured is the opposite shape: **the same handful of regulators recurr
 different tumour types.** Cross-tumour consistency is evidence for a shared programme, not for a
 type-specific one.
 
+### Does the recurring set replicate on a second network? No.
+
+The section above established three things about the ARCHS4 recurrence: it is beyond that network's
+own null, it is not an artefact of the shared topology (unpublished regulators scored through the
+identical network never reach it, 0 of 2,000 draws), and it is not the proliferation programme
+(removing every Hallmark proliferation gene from every regulon — a third of the targets of the
+regulators that recur — leaves it essentially intact).
+
+None of that establishes it is a **network-independent** fact about the biology. The obvious test
+is whether the same regulators recur on a second co-expression network built by different people
+from different samples. GTEx is exactly that, and it was already scored.
+
+| network | regulators reaching the top-N in ≥3 tumour types |
+|---|---|
+| **ARCHS4** | DRAP1, E2F1, FOXM1, HSF1, MAZ, MYBL2, NME2, NR2F6, TCF3, ZNF687 |
+| **GTEx** | ADNP, ETV4, NME2, SETDB1, TP53 |
+| **both** | **NME2** — one |
+
+Against a null that draws same-size sets from the 482 regulators eligible on both networks,
+**1,969 of 20,000 draws reach an overlap of one or more.** The observed overlap is what chance
+gives.
+
+**So the recurrence does not replicate.** It is real inside ARCHS4 and it is not explained by the
+shared topology or by proliferation — but the specific regulators carrying it are a property of
+that network's co-expression structure rather than a fact that survives changing the network.
+
+This qualifies the reading of the previous section, and the qualification is the point. An earlier
+version of this page called the ARCHS4 result "the first positive signal in this study." That was
+true of what had been measured at the time and it is too strong for what is measured now. The
+honest statement is narrower:
+
+> The published master regulators are recoverable on ARCHS4 beyond what unpublished regulators
+> achieve through the same network. That recovery does not survive changing the co-expression
+> network, so it is **not** evidence for a network-independent set of master regulators, and it is
+> recorded **NOT_KNOWN** whether any such set exists.
+
+Two independently built co-expression networks agreeing on one regulator out of ten is the kind of
+result that is easy not to look for once a positive is in hand. It was looked for.
+
 ### What this section concludes, and what it does not
 
 Stated as narrowly as the measurement allows:
@@ -416,7 +455,8 @@ Stated as narrowly as the measurement allows:
 > what unpublished regulators achieve through the same network — and what recurs is a small,
 > pan-cancer set of proliferation and stress regulators rather than a per-tumour-type set.
 
-That is a real signal, and it is the first positive one in this study. It is **not** a
+That is a real signal within this network. It does **not** replicate on a second
+co-expression network — see the section above — and it is **not** a
 demonstration of type-specific master regulation, and this study does not claim one. Separating
 "these proteins matter in cancer" from "these proteins are the appointment for *this* cancer"
 requires a proliferation-matched control that this corpus cannot supply — the frozen universe holds
