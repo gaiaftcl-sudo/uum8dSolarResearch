@@ -423,6 +423,54 @@ requires a proliferation-matched control that this corpus cannot supply — the 
 Primary Tumour samples only, with no normal tissue to hold proliferation constant against.
 Recorded **NOT_KNOWN**, and named as the single most useful thing a successor charter could add.
 
+
+## S2 — the stage that could not run, and exactly why
+
+The charter's second stage asks whether the master-regulator sets separate two subtypes *within* a
+tumour type where the mutation lists do not. It is the sharpest of the three stages, because it is
+the one where shape and magnitude are made to disagree on the same patients.
+
+It did not run. The status line above says so, and this section is the measurement behind that
+claim rather than an assertion of it.
+
+**The regulator half is present.** The published subtype sets give **112 subtype rows across 20
+tumour types**, and every one of the 20 has at least two subtypes — so the pairing S2 needs exists:
+bladder has 6, colon 8, head and neck 6, glioblastoma 5.
+
+**The mutation half cannot be partitioned.** S2 requires, for each subtype, the top-*t* mutated
+genes among *that subtype's* cases. The published subtype sets identify a subtype by an **integer
+index and a member count**, and nothing more:
+
+```
+cohort  subtype   n
+blca    1        78
+blca    2        49
+blca    3        45
+blca    4        60
+blca    5        72
+blca    6        37
+```
+
+There is no public mapping from that index to GDC case identifiers. Without it there is no way to
+say which patients are in subtype 1 and which in subtype 2, and therefore no way to build the two
+mutation lists the comparison is made of. The 78 and the 49 are counts of people whose identities
+the published set does not carry.
+
+**This is a property of the published corpus, not a limitation we could engineer around.** A more
+careful ingest would not help: the mutation data can be partitioned any number of ways, and none of
+them is *the* subtype partition unless the subtype membership is known. Nor is it a licensing
+barrier we declined to cross — the missing object is not gated, it is absent.
+
+So S2 is recorded **NOT RUNNABLE**, with the reason named and checkable, and every downstream
+criterion that depended on it is void rather than quietly reported. It is not a FAIL: nothing was
+measured and found wanting. The distinction between *absent* and *refuted* is one this program
+keeps, and this is a case of the first.
+
+**What would make it runnable.** A published mapping from each subtype index to its member case
+identifiers — a single column that the original analysisnecessarily had in hand — and S2 runs
+against the corpus already built here, unchanged. That is the smallest addition anyone could make
+to the public record that would turn a stage that cannot run into one that can.
+
 ## S3 — the inversion lookup, and what it found
 
 The charter's third stage asks the question a patient would want asked: **is there a public compound
