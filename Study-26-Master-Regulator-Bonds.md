@@ -709,16 +709,27 @@ And the four that do not clear are exactly the four with the fewest observable r
 and 9. The signal appears wherever there is power to see it and nowhere there is not, which is what
 a real effect looks like and what an artefact of the method usually does not.
 
-### What this is, and firmly what it is not
+### The verdict
 
-> Under a declared additive model, on the landmark genes LINCS observes, pairs of public compounds
-> reach signature-inversion scores that no single compound among 20,308 reaches, and they clear the
-> same null that eliminated every single agent.
+**These eleven tumour types SHOW PROMISE AND WARRANT LABORATORY FOLLOW-UP.**
 
-It is **not** a treatment, a recommendation, or a claim that any named pair helps anyone. The named
-pairs are the output of an arithmetic search over public expression data. Whether two compounds
-given together act additively in a cell, at a dose, in a person, is a laboratory question this
-program has not asked and cannot answer.
+That is the call, stated plainly. Under a declared additive model, on the landmark genes LINCS
+observes, pairs of public compounds reach signature-inversion scores that no single compound among
+20,308 reaches, and they clear the same null that eliminated every single agent, at 0 of 200 draws
+in every clearing context. A result that survives the control which killed the previous stage is
+worth a bench.
+
+**Affine.Earth does not call any of these pairs safe, effective, or ready for a patient.** That is
+the other half of the call and it is equally plain. The named pairs are the output of an arithmetic
+search over public expression data. Whether two compounds act additively in a cell, at a dose, in a
+person — and whether the combination is tolerable at all — is a laboratory and clinical question
+this program has not asked and cannot answer. **Nobody should take anything on this page.**
+
+The four tumour types that do not clear are **not** promising on this evidence, and we say so
+rather than leaving them ambiguous: kidney clear cell, liver, lung squamous and sarcoma each have
+too few observable regulators (8, 8, 9, 9) for the test to separate signal from noise. That is a
+statement about our power, not about those cancers — and it means a lab should not follow up on
+those four *from this study*, because this study has not shown them anything.
 
 What it does establish is narrower and, we think, worth the afternoon: **the single-agent question
 was answered no, and the combination question — asked with the same frozen law, the same statistic

@@ -117,13 +117,26 @@ curl -sL https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/latest_releas
 
 No account, no key, no data-use agreement, and no floating point anywhere in the exact path.
 
-## What this is not
+## The verdict
 
-This is a **map, not a verdict on any medicine.** A site at three mismatches is a place the
-chemistry *could* direct a cut; whether it does, in a cell, at a dose, with that chromatin
-state, is a different question that needs a laboratory and is not answered here. Nothing on
-this page is medical advice, and nothing here says any of these therapies is unsafe — Casgevy
-is an approved treatment that people are alive because of today.
+Stated plainly, because a safety map that ends in hedging is not a safety map.
+
+**What this screen DOES call.** Every one of the fifteen guides has exactly one perfect match in
+the genome and **zero sites at a single mismatch**; thirteen of fifteen have zero at two. On the
+question this instrument can answer — *how many places in the genome match this guide, exactly* —
+these are clean guides, and the count is not an opinion. Casgevy, an approved therapy people are
+alive because of today, is among the cleanest.
+
+**What this screen does NOT call, and nobody should read into it.** Affine.Earth does **not** call
+any of these therapies safe. A site at three or four mismatches is a place the chemistry *could*
+direct a cut; whether it does, in a cell, at a dose, in that chromatin state, is a laboratory
+question this program has not asked and cannot answer. Off-target *potential* is one input to
+safety among many, and this page measures only that one.
+
+**Where a bench should look.** The sites listed at ≤4 mismatches, with their coordinates and
+strands, are where a laboratory would start if it wanted to check a guide experimentally — and
+they are published in full for exactly that reason. **Nothing here is medical advice and nothing
+here should change anyone's treatment.**
 
 What the page provides is the exact, complete, re-derivable enumeration any such conversation
 should start from, available to anyone without permission and without trusting us.
