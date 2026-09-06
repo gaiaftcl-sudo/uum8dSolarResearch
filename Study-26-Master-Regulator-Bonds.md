@@ -152,7 +152,7 @@ The same discipline protects the commons downstream: public archives (GEO, GDC, 
 - **TCGA via GDC open API: SERVED, anonymous.** `api.gdc.cancer.gov/status` reports Data Release 46.0 (2026-08-10); a filtered files query returned 1,231 open-access TCGA-BRCA gene-expression files; a real file answered an anonymous range request with genuine GENCODE-v36 TSV content.
 - **LINCS: one door gated, one open.** `api.clue.io` refuses without a user key (HTTP 401 — recorded as GATED; this study does not route through it). The open door is GEO series GSE92742 at `ftp.ncbi.nlm.nih.gov` — directory listable, all 18 supplementary files served, SHA512SUMS present; the Level-5 signature matrix is 20 GB and the metadata sidecars under 25 MB were fetched as proof. The regulon corpus ingest is unblocked through the open doors only.
 
-**Status: FINDINGS SEALED 2026-09-06** — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
+**Status: FINDINGS SEALED 2026-09-06** — S1 (regulon recovery), S3 (inversion lookup) and every control run and published; S2 (subtype appointment) ruled NOT RUNNABLE by measurement. — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
 
 ---
 
@@ -352,6 +352,86 @@ pools hold 118 to 296 regulators against ARACNe's ~5,900, so the smallest of the
 2 to 19 published regulators in the pool at all. A zero there is a weak zero, and it is reported
 as one rather than counted as a refutation.
 
+
+
+## S3 — the inversion lookup, and what it found
+
+The charter's third stage asks the question a patient would want asked: **is there a public compound
+whose transcriptional signature runs opposite to the tumour on that cohort's master regulators?**
+
+The rank corpus carries every one of the archive's **118,050 signatures** as integer ordinals —
+extracted by streaming the 21.3 GB archive without ever storing it, with the SHA-512 of the
+compressed stream checked against GEO's own published `SHA512SUMS`. Of those, **107,404 are compound
+treatments covering 1,792 distinct drugs by InChIKey across 41 cell lines**, and **6,467 are vehicle
+(DMSO) controls** — a negative control arm sitting inside the data itself.
+
+### Two narrowings, both declared before scoring
+
+**We test a different quantity than the method under examination claims.** LINCS measures 978
+landmark genes, so this tests inversion of the **master-regulator genes' own expression ranks** —
+not their inferred protein activity, which is what OncoTreat scores and which LINCS does not carry.
+Different quantities. Nothing below speaks to the second.
+
+**The coverage is a minority, and a biased one.** Only **53 of the 407** recurrent master regulators
+are LINCS landmarks — 5 to 30 per cohort, 5–17% — and that fraction is enriched for well-studied
+genes, because LINCS chose its landmarks partly on prior knowledge. Any result here speaks about the
+famous fraction of a set, never the whole set. Cohorts with fewer than 8 observable regulators are
+refused outright rather than reported: **prostate (7), thyroid (5)**.
+
+### The law
+
+Over the *m* observable regulators, the exact **Kendall numerator** between the cohort's ordinal
+vector and each signature's ordinal vector: concordant pairs minus discordant pairs, a pure integer
+over *m*(*m*−1)/2 pairs. No division, no normalisation, no float. Inversion is the *minimum* of that
+integer. Two independent implementations — one scalar, one vectorised — are cross-checked on probe
+rows, and the program refuses rather than reports if they disagree.
+
+### The result
+
+| tumour type | observable MRs | pairs | best drug K | random-set median K | random sets reaching it | vehicle control |
+|---|---|---|---|---|---|---|
+| bladder | 14 | 91 | -73 | **-71** | **489 / 1000** | does not clear |
+| breast | 16 | 120 | -86 | **-88** | **797 / 1000** | does not clear |
+| colon | 16 | 120 | -86 | **-90** | **830 / 1000** | does not clear |
+| glioblastoma | 14 | 91 | -75 | **-71** | **269 / 1000** | does not clear |
+| head & neck | 25 | 300 | -164 | **-182** | **972 / 1000** | does not clear |
+| kidney clear cell | 8 | 28 | -28 | **-28** | **886 / 1000** | does not clear |
+| liver | 8 | 28 | -28 | **-28** | **900 / 1000** | does not clear |
+| lung adeno | 24 | 276 | -178 | **-170** | **237 / 1000** | does not clear |
+| lung squamous | 9 | 36 | -34 | **-34** | **890 / 1000** | does not clear |
+| ovary | 30 | 435 | -227 | **-243** | **858 / 1000** | does not clear |
+| pancreas | 14 | 91 | -71 | **-71** | **673 / 1000** | clears |
+| rectum | 19 | 171 | -109 | **-117** | **935 / 1000** | does not clear |
+| sarcoma | 9 | 36 | -34 | **-34** | **917 / 1000** | does not clear |
+| stomach | 16 | 120 | -86 | **-88** | **818 / 1000** | clears |
+| uterus | 12 | 66 | -56 | **-56** | **653 / 1000** | does not clear |
+
+**No cohort clears both control arms. Not one of 15.**
+
+And the null is not marginal — it is inverted. In most tumour types the **median** random set of the
+same size inverts *better* than the best of 1,792 real drugs: head and neck −182 against −164,
+ovary −243 against −227. Between 237 and 972 of every 1,000 random gene sets reach what the best
+real compound reached.
+
+Read plainly: **on this quantity, at this coverage, there is no inversion signal to find.** The
+compounds that top the list are where noise put them, and no drug list is published from this stage.
+
+One further observation, offered as an observation rather than a claim: the published
+master-regulator genes appear **harder** to invert than random landmark genes. A mechanism is
+available — these are well-expressed, mutually correlated, functionally constrained genes whose
+ranks have less room to move — but this study did not test it, and it is recorded **NOT_KNOWN**.
+
+### A defect in our own null, found and fixed
+
+The first null scored random gene sets against a **single** signature, while the observed statistic
+was a best-of-107,404 minimum. It reported **0 of 1,000** — apparently overwhelming. The
+structurally-correct null, which takes the best across every signature exactly as the observed value
+does, reports **489 of 1,000** on the same cohort. A factor of five hundred, and it turns
+"significant" into "nothing".
+
+That is the same defect this study found in the incumbent method, committed by us, one stage later:
+**a null that does not match the shape of the observed statistic manufactures significance.** It is
+recorded because a study that publishes only its clean runs is not publishing a method.
 
 ## Is any of this an artifact of sequencing depth?
 
