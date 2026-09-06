@@ -98,4 +98,5 @@ Size is cheap in geophysics: storms, surges, pressure systems, and radio bursts 
 
 | page | what it is |
 |---|---|
+| [The exact off-target atlas of the nucleic-acid medicines](Oligonucleotide-Off-Target-Atlas) | Every nucleic-acid substance NCATS GSRS publishes a usable sequence for -- the registry enumerated rather than a list recalled -- screened against every window of the human transcriptome. The target is measured from the transcriptome rather than declared, and a strand with no perfect complement gets no off-target list. |
 | [Where else could this guide cut? The whole genome, counted](CRISPR-Genome-Off-Target-Map) | The two CRISPR medicines whose guide sequence NCATS GSRS publishes — Casgevy, an approved therapy for sickle cell disease and beta-thalassemia, and NTLA-2002 — screened against all 304,796,751 NGG sites on both strands of GRCh38. Each has exactly one perfect site in the genome and none at one or two mismatches. Every site at four mismatches or fewer is named with its coordinates. |

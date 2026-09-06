@@ -105,6 +105,11 @@ check_figure crispr-genome-offtarget-exact "3099750718" "CRISPR-Genome-Off-Targe
 check_figure crispr-genome-offtarget-exact "L28RZ5CC6K" "CRISPR-Genome-Off-Target-Map.md"
 check_figure crispr-genome-offtarget-exact "D8UQ4B2T7M" "CRISPR-Genome-Off-Target-Map.md"
 
+# --- the oligonucleotide off-target atlas ---
+check_figure oligo-offtarget-atlas-exact "OLIGO_OFFTARGET_ATLAS_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT" "Oligonucleotide-Off-Target-Atlas.md"
+check_figure oligo-offtarget-atlas-exact "321b36c694b89a45bb81668d7ea62b9c85cf0b3087e18bba586f43b230274b08" "Oligonucleotide-Off-Target-Atlas.md"
+check_figure oligo-offtarget-atlas-exact "TGCTCCGTTGGTGCTTGTTC" "Oligonucleotide-Off-Target-Atlas.md"
+
 # --- the landing page's own headline figures ---
 check_figure seasonal-and-alternative      "About fifty tonnes" "SpaceX-Biosphere-Safety.md"
 check_figure seasonal-and-alternative      "477 tonnes a season" "SpaceX-Biosphere-Safety.md"
