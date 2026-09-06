@@ -1,5 +1,6 @@
 ## 🧬 Cures — the exact safety screen
 
+- [**Where else could this guide cut?** — the whole genome, counted](CRISPR-Genome-Off-Target-Map)
 - [**Cures Without the Gatekeeper** — the medicine front door](Cures-Without-The-Gatekeeper)
 - [**Zilganersen** — the first treatment for Alexander disease](The-Safety-Question-Made-Exact)
 - [**CAR-T, halted** — the verdict a regulator could re-derive](The-Verdict-a-Regulator-Could-Re-Derive)

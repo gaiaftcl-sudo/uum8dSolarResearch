@@ -96,6 +96,13 @@ check_figure pelacarsen-offtarget-whole-transcriptome "670670" "Study-26-Master-
 check_figure pelacarsen-offtarget-whole-transcriptome "1467336203" "Study-26-Master-Regulator-Bonds.md"
 check_figure pelacarsen-offtarget-whole-transcriptome "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "Study-26-Master-Regulator-Bonds.md"
 
+# --- the genome-wide CRISPR off-target map ---
+check_figure crispr-genome-offtarget-exact "e62190c957c75639c1c9a8cdb82055a4aed59fbd038d0bed72fd1c620aa71451" "CRISPR-Genome-Off-Target-Map.md"
+check_figure crispr-genome-offtarget-exact "CRISPR_GENOME_OFFTARGET_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT" "CRISPR-Genome-Off-Target-Map.md"
+check_figure crispr-genome-offtarget-exact "b760d18dbb651dd14dfc290083371b3ef3bff122d43a9cefb13ca4ecf38f05ca" "CRISPR-Genome-Off-Target-Map.md"
+check_figure crispr-genome-offtarget-exact "304796751" "CRISPR-Genome-Off-Target-Map.md"
+check_figure crispr-genome-offtarget-exact "3099750718" "CRISPR-Genome-Off-Target-Map.md"
+
 # --- the landing page's own headline figures ---
 check_figure seasonal-and-alternative      "About fifty tonnes" "SpaceX-Biosphere-Safety.md"
 check_figure seasonal-and-alternative      "477 tonnes a season" "SpaceX-Biosphere-Safety.md"
