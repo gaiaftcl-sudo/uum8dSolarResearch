@@ -152,7 +152,7 @@ The same discipline protects the commons downstream: public archives (GEO, GDC, 
 - **TCGA via GDC open API: SERVED, anonymous.** `api.gdc.cancer.gov/status` reports Data Release 46.0 (2026-08-10); a filtered files query returned 1,231 open-access TCGA-BRCA gene-expression files; a real file answered an anonymous range request with genuine GENCODE-v36 TSV content.
 - **LINCS: one door gated, one open.** `api.clue.io` refuses without a user key (HTTP 401 — recorded as GATED; this study does not route through it). The open door is GEO series GSE92742 at `ftp.ncbi.nlm.nih.gov` — directory listable, all 18 supplementary files served, SHA512SUMS present; the Level-5 signature matrix is 20 GB and the metadata sidecars under 25 MB were fetched as proof. The regulon corpus ingest is unblocked through the open doors only.
 
-**Status: FINDINGS SEALED 2026-09-06** — S1 (regulon recovery), S3 (inversion lookup) and S5 (byte identity) all run and published, with every control; S2 (subtype appointment) ruled NOT RUNNABLE, with the blocker measured and shown. — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
+**Status: FINDINGS SEALED 2026-09-06** — S1 (regulon recovery), S3 (inversion lookup) and S5 (byte identity) all run and published with every control; S2 (subtype appointment) NOT RUNNABLE, with the blocker measured and shown; and S3-COMBINATION, registered separately, finds in 11 of 15 tumour types what no single agent found in any. — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
 
 ---
 
@@ -639,6 +639,91 @@ That is the same defect this study found in the incumbent method, committed by u
 **a null that does not match the shape of the observed statistic manufactures significance.** It is
 recorded because a study that publishes only its clean runs is not publishing a method.
 
+
+
+## The question S3 did not ask: combinations
+
+S3 asked whether any **single** public compound inverts a tumour's master-regulator signature. Across
+20,308 drugs and 205,304 signatures the answer was no, in every one of the fifteen scored tumour
+types. That is an answer to the single-agent question. It is not an answer to the question a
+clinician asks, because cancer is not treated with one drug.
+
+**S3-COMBINATION is registered separately and asks the next one:** does a *pair* invert the
+signature where neither member does alone?
+
+### The model, declared before scoring
+
+For two signatures the combined per-gene quantity is the **integer sum of their Crossing-B
+ordinals**. Kendall's numerator depends only on the order of that combined vector, and integer
+addition fixes the order exactly — no re-ranking, no normalisation, no float anywhere.
+
+**This is a model of additivity and it is named as one.** Two drugs given together are not
+guaranteed to act as the sum of their signatures. What is measured is whether, under the simplest
+exact additive model, a pair reaches what no single agent reaches.
+
+Pairs were drawn from the **300 most-inverting single agents** in each tumour type — a declared
+subset, roughly 45,000 pairs per context, not all 20,308 choose 2.
+
+### Three controls, and the one that decides it
+
+**Vehicle pairs.** Pairs drawn from the 6,467 DMSO vehicle signatures, combined by the identical
+rule. A vehicle pair must not reach what a drug pair reaches.
+
+**Self pairs.** A signature combined with itself, which under an additive model is the single agent
+again. It bounds how much of any apparent gain is arithmetic rather than combination.
+
+**The random-gene-set null.** This is the one that matters, because it is the control that killed
+the single-agent stage — and a positive published without it would repeat a defect this study has
+already found in itself once. For 200 random gene sets of the same size, the best pair score is
+computed over the same number of candidate pairs, so the null has the same best-of structure the
+observed value does.
+
+### The result
+
+| tumour type | observable MRs | best single agent | best pair | gain | vehicle pairs | self pairs | random-gene-set null | clears all three |
+|---|---|---|---|---|---|---|---|---|
+| bladder | 14 | -73 | **-85** | -12 | -71 | -73 | 0/200 | **yes** |
+| breast | 16 | -86 | **-108** | -22 | -88 | -86 | 0/200 | **yes** |
+| colon | 16 | -86 | **-108** | -22 | -90 | -86 | 0/200 | **yes** |
+| glioblastoma | 14 | -75 | **-89** | -14 | -65 | -75 | 0/200 | **yes** |
+| head & neck | 25 | -164 | **-228** | -64 | -166 | -164 | 0/200 | **yes** |
+| kidney clear cell | 8 | -28 | **-28** | 0 | -28 | -28 | 138/200 | no |
+| liver | 8 | -28 | **-28** | 0 | -28 | -28 | 115/200 | no |
+| lung adeno | 24 | -178 | **-222** | -44 | -166 | -178 | 0/200 | **yes** |
+| lung squamous | 9 | -34 | **-36** | -2 | -32 | -34 | 33/200 | no |
+| ovary | 30 | -227 | **-311** | -84 | -235 | -227 | 0/200 | **yes** |
+| pancreas | 14 | -71 | **-87** | -16 | -67 | -71 | 0/200 | **yes** |
+| rectum | 19 | -109 | **-143** | -34 | -103 | -109 | 0/200 | **yes** |
+| sarcoma | 9 | -34 | **-36** | -2 | -36 | -34 | 43/200 | no |
+| stomach | 16 | -86 | **-108** | -22 | -80 | -86 | 0/200 | **yes** |
+| uterus | 12 | -56 | **-66** | -10 | -52 | -56 | 0/200 | **yes** |
+
+**Eleven of fifteen scored tumour types clear all three controls — where zero of fifteen cleared
+for single agents.** Refused for falling under the frozen floor of 8 observable regulators: prostate (7), thyroid (5).
+
+In every clearing tumour type the random-gene-set null reached the observed value in **0 of 200
+draws**. The gains are not marginal: ovary −84, head and neck −64, lung adenocarcinoma −44, rectum
+−34 against best single agents of −227, −164, −178 and −109.
+
+And the four that do not clear are exactly the four with the fewest observable regulators — 8, 8, 9
+and 9. The signal appears wherever there is power to see it and nowhere there is not, which is what
+a real effect looks like and what an artefact of the method usually does not.
+
+### What this is, and firmly what it is not
+
+> Under a declared additive model, on the landmark genes LINCS observes, pairs of public compounds
+> reach signature-inversion scores that no single compound among 20,308 reaches, and they clear the
+> same null that eliminated every single agent.
+
+It is **not** a treatment, a recommendation, or a claim that any named pair helps anyone. The named
+pairs are the output of an arithmetic search over public expression data. Whether two compounds
+given together act additively in a cell, at a dose, in a person, is a laboratory question this
+program has not asked and cannot answer.
+
+What it does establish is narrower and, we think, worth the afternoon: **the single-agent question
+was answered no, and the combination question — asked with the same frozen law, the same statistic
+and the same controls — answers yes.** That distinction exists only because the first answer was
+treated as one question closing rather than the subject closing.
 
 ## S5 — byte identity, re-verified today rather than trusted
 
