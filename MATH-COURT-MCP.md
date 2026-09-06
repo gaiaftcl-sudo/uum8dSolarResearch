@@ -10,7 +10,8 @@ Three courts on one endpoint, **49 tools** (measured 2026-09-02 per cell on all 
 - **Registry name:** `earth.affine/math-court`
 - **Public bind tree:** [`clients/math-court-mcp/`](clients/math-court-mcp/)
 - **Swift example (entire court):** [`clients/math-court-mcp/swift-example/`](clients/math-court-mcp/swift-example/)
-- **User guides:** [bind](Math-Court-User-Guide.md) · [example app](Math-Court-Example-App.md) · [Glama](Affine-Math-Court-Glama.md)
+- **User guides:** [MCP user guide — every tool](Affine-Earth-MCP-User-Guide.md) · [bind](Math-Court-User-Guide.md) · [example app](Math-Court-Example-App.md) · [Glama](Affine-Math-Court-Glama.md) · [Coding Court](Affine-Coding-Court-Architecture.md) · [Court Client — generic wasm IDE](Affine-Court-Client-Template.md)
+- **Court Client (browser):** https://affine.earth/language-game/court-client.html
 - **Look path:** https://affine.earth/language-game/#researcher
 
 Cursor / Claude:

@@ -1,9 +1,9 @@
-# Shear Studies White Paper — Shape Against Magnitude Across Thirty Studies
+# Shear Studies White Paper — Shape Against Magnitude Across Thirty-Six Studies
 
 **Program:** UUM-8D Solar Research / Shear Studies  
 **Surface:** [uum8dSolarResearch wiki](https://github.com/gaiaftcl-sudo/uum8dSolarResearch/wiki)  
-**Date:** 2026-08-31 (Version 3.4 — Study 29 re-framed as the continuous-model shear and Study 30 split out as the sovereign edge pod; v3.3 Study 29 added; v3.2 2026-08-27 Study 28 added; v3.1 2026-08-26; v3.0 2026-08-26; v2.0 2026-08-13; first version 2026-07-23)  
-**Status of this document:** Public synthesis of the thirty-study board. Study 1: **DATA SEALED** — first look 2026-08-12, frozen integers + 82-row corpus; claim on apex not served yet; pinned-archive verdict ~2026-08-30. Studies 06/07: **LAW FROZEN**. Study 04: **PARTIAL_CORPUS_SEAL**. Study 02: **LIVE CLAIM**. Studies 11, 14, 16–21: **LAW FROZEN + LIVE CLAIM**. Study 15: **CITED** (court DARK). Studies 22–25: **LIVE ON GLAMA**. OPEN (data absent) is confined to 03, 05, 08 and Studies 26–27 (both chartered 2026-08-26). Study 28 (chartered 2026-08-27) sealed its Act 1 gate the same day — 17 flips at the survivability line on the pinned 2025 Gulf slice. Study 29 (chartered 2026-08-31) is **OPEN** and is the board's first page that is deliberately not a shear study: a hardware-and-protocol validation charter carrying one of the recipe's four pieces and naming the three it lacks. The live [index](Shear-Studies-Index.md) and the study pages are the single source of truth for every status; where this paper and a study page disagree, the study page wins.  
+**Date:** 2026-09-06 (Version 4.0 — board catch-up: §7 gains rows 29–36 and the title, status block and conclusion counts move from thirty to thirty-six studies; v3.4 2026-08-31 — Study 29 re-framed as the continuous-model shear and Study 30 split out as the sovereign edge pod; v3.3 Study 29 added; v3.2 2026-08-27 Study 28 added; v3.1 2026-08-26; v3.0 2026-08-26; v2.0 2026-08-13; first version 2026-07-23)  
+**Status of this document:** Public synthesis of the thirty-six-study board. Study 1: **DATA SEALED** — first look 2026-08-12, frozen integers + 82-row corpus; claim on apex not served yet; pinned-archive verdict ~2026-08-30. Studies 06/07: **LAW FROZEN**. Study 04: **PARTIAL_CORPUS_SEAL**. Study 02: **LIVE CLAIM**. Studies 11, 14, 16–21: **LAW FROZEN + LIVE CLAIM**. Study 15: **CITED** (court DARK). Studies 22–25: **LIVE ON GLAMA**. OPEN (data absent) is confined to 03, 05, 08, 26, 27, 29 and 30. Study 28 (chartered 2026-08-27) sealed its Act 1 gate the same day — 17 flips at the survivability line on the pinned 2025 Gulf slice. Study 29 (chartered 2026-08-31) is **OPEN** and is the board's first page that is deliberately not a shear study: a hardware-and-protocol validation charter carrying one of the recipe's four pieces and naming the three it lacks. Study 30 (the sovereign edge pod, split out 2026-08-31) is **OPEN** on the same footing. Study 31 is **LIVE CLAIM** — a live court answering `STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN` on 9/9 cells. Study 32 is **SEALED** on an open 525,541-flight corpus. Study 33 is **PENDING** (law built, no device behind it). Study 34 carries a **PROVEN property**, and Studies 35 and 36 carry **RESULTS** — the time and proof-synthesis axes of the same exactness thesis. The live [index](Shear-Studies-Index.md) and the study pages are the single source of truth for every status; where this paper and a study page disagree, the study page wins.  
 **Readers’ entry:** [Shear-Studies-Readers-Guide](Shear-Studies-Readers-Guide.md)
 
 ---
@@ -355,7 +355,7 @@ Study 1’s historical Form carries its falsifiers in the seal itself: 15/16 at 
 
 ---
 
-## 7. Program status board (as of 2026-08-26 — statuses copied from the live index, which is the single source of truth)
+## 7. Program status board (as of 2026-09-06 — statuses copied from the live index, which is the single source of truth)
 
 | # | Study | Status (index wording) | Headline fact |
 |---|---|---|---|
@@ -387,8 +387,16 @@ Study 1’s historical Form carries its falsifiers in the seal itself: 15/16 at 
 | 26 | Master regulator bonds | **OPEN** — charter only; gate not run | Load-bearing regulator sets as bonds — network shape vs mutation magnitude on public TCGA/LINCS keys; test claim, not efficacy — [Study 26](Study-26-Master-Regulator-Bonds.md) |
 | 27 | Exact nuclear scattering | **OPEN** — charter only; gate not run | Glauber all-orders vs optical-limit smear; the field's own 30–50 mb divergence replayed on EXFOR/AME2020 keys — [Study 27](Study-27-Exact-Nuclear-Scattering.md) |
 | 28 | Wet-bulb threshold court | **ACT 1 SEALED** — gate GREEN 2026-08-27; 17 flips sealed at 611/20 on the pinned 2025 Gulf slice; Act 2 gated on the 2026 archive | Exact rational psychrometric T_W vs the published float bands (Stull −1.0/+0.65 °C; the operational regression's own ±1.3 °F) at survivability thresholds on NOAA ISD integer station-hours — [Study 28](Study-28-Wet-Bulb-Threshold-Court.md) |
+| 29 | Continuous-model shear | **OPEN** — charter frozen 2026-08-31; response corpus not ingested, gate not run | Satellite-reentry mass ledger in exact grams against the continuous chemistry-transport models that consume it and disagree on the *sign* of the ozone response — [Study 29](Study-29-Continuous-Model-Shear.md) |
+| 30 | Sovereign edge pod | **OPEN** — hardware and protocol validation charter frozen 2026-08-31; no pod built, no tier run | Four-tier gate — thermal soak, zero-heap ingest, NATS leaf asymmetry, asynchronous JetStream replay — each with the observation that fails it and a control arm — [Study 30](Study-30-Sovereign-Edge-Pod.md) |
+| 31 | Biosphere Cascade Court | **LIVE CLAIM** — live court **`STUDY31_BIOSPHERE_JOINT_LEDGER_PROVEN`**, 9/9 cells answer JOINT_LEDGER | 56,575 Dobson rows + a 46-year AGGI forcing baseline, anonymous and digest-pinned; the control arm independently recovers the Antarctic depletion at −16.1% — [Study 31](Study-31-Biosphere-Cascade.md) |
+| 32 | Taxi-Out Floor Court | **SEALED** on the open CC-BY 2022 corpus (525,541 flights, integer minutes) | Refuses the RMSE-prediction premise: the floor is each airport's own p05 in exact minutes, frozen first; excess ledger 20,405 h/yr across 20 airports — [Study 32](Study-32-Taxi-Out-Floor-Court.md) |
+| 33 | Fusion Control Verdict Court | **PENDING** — `STUDY33_FUSION_CONTROL_VERDICT_PENDING`; law BUILT with control arms 5/5, no device behind it yet | Grades a plasma operating point against three exact inequalities (Greenwald, Troyon, q-min) and names its refusals where a float surrogate would extrapolate a confident number — [Study 33](Study-33-Fusion-Control-Verdict-Court.md) |
+| 34 | Observer-Invariant Verdict | **PROVEN property** — `PROOF_EXACT_VERDICT_IS_OBSERVER_INVARIANT` | A 2,992-verdict corpus byte-identical on every machine (sha256 f49b576e…), and 142 operating points where the floating-point verdict contradicts itself while the exact court refuses all 142 — [Study 34](Study-34-Observer-Invariant-Verdict.md) |
+| 35 | The safety brain that forgets | **RESULTS** — the *time* axis of the fusion thesis (sibling to 34) | A float running state goes deaf after 2²⁴ updates, forgets when moved to a machine it never saw, and disagrees with itself; the exact invariant does none of the three — [Study 35](Study-35-The-Safety-Brain-That-Forgets.md) |
+| 36 | The language game of Fermat's Last Theorem | **RESULTS** — the *proof-synthesis* axis (sibling to 34/35); sealed sha256 1bba2839… | A finite-precision observer reports a false Fermat solution below its horizon and keeps it at every zoom depth; the exact court refutes at every depth. Universal FLT stays **NOT KNOWN** — [Study 36](Study-36-The-Language-Game-of-Fermats-Last-Theorem.md) |
 
-The index states the data-absent set plainly: **OPEN stays 03 / 05 / 08.** The v2 build-order sentence is retired — 04 and 06, last in that queue, reached PARTIAL_CORPUS_SEAL and LAW FROZEN ahead of it, and 02 carries a dated live claim.
+The index states the data-absent set plainly: **OPEN is 03 / 05 / 08 / 26 / 27 / 29 / 30.** The v2 build-order sentence is retired — 04 and 06, last in that queue, reached PARTIAL_CORPUS_SEAL and LAW FROZEN ahead of it, and 02 carries a dated live claim.
 
 ---
 
@@ -493,7 +501,7 @@ Bind and run: [user guide](Math-Court-User-Guide.md) · [example app](Math-Court
 
 ## 11. Conclusion
 
-The shear program is one claim, now restated twenty-eight times — and once, in Study 29, deliberately not restated at all:
+The shear program is one claim, now restated thirty-four times — and twice, in Studies 29 and 30, deliberately not restated at all:
 
 > **An adversary can copy the size of a response. It cannot keep the forcing’s appointment. Grade the appointment in exact integers on public raw bytes. Freeze the law before the next event. Publish WIN and MISS alike.**
 
@@ -503,7 +511,7 @@ Study 07 proved the same grammar on the Milky Way’s center against the imaging
 
 The program now flies on five wings. The **sky, sea, and ground studies** (01–10) grade public raw archives against forcings carrying their own clock and track — laws frozen on 06 and 07; sealed data on 01 and 04; a dated live claim on 02; OPEN confined to 03, 05, 08. The **exact-arithmetic courts** (11–13, 22–25) freeze integer and rational law where the standard method computes in floats — four courts live on Glama since 2026-08-26 as public tools that refuse a float at the wire. The **industry-key courts** (14–19) bond every claim to an identifier the public already owns, so a generated nickname never wins. The **applied shears** (20–21) carry the method into contested territory as test claims, never efficacy. And the **biology lane** (14, 16, 20) carries the same discipline into medical territory as test claims, never efficacy. The live board is [Shear-Studies-Index](Shear-Studies-Index.md) — with each study page, the single source of truth for every status.
 
-And beneath all twenty-eight of those studies runs the fact that makes the grading portable: none of these verdicts is a floating-point computation on somebody's machine. Every sealed threshold, comparison, and fingerprint lives on a whole-integer lattice — arithmetic that produces the identical byte on every computer ever built, incapable of taking a side. That is what lets a sealed claim be handed to a stranger for grading — since 2026-08-26, through an open door any JSON-RPC POST can walk (§10b) — and why the seals re-verify byte-for-byte weeks after stamping. The doctrine has its own titled page: [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm.md). The lattice is not an implementation detail. It is what makes the appointment checkable.
+And beneath all thirty-four of those studies runs the fact that makes the grading portable: none of these verdicts is a floating-point computation on somebody's machine. Every sealed threshold, comparison, and fingerprint lives on a whole-integer lattice — arithmetic that produces the identical byte on every computer ever built, incapable of taking a side. That is what lets a sealed claim be handed to a stranger for grading — since 2026-08-26, through an open door any JSON-RPC POST can walk (§10b) — and why the seals re-verify byte-for-byte weeks after stamping. The doctrine has its own titled page: [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm.md). The lattice is not an implementation detail. It is what makes the appointment checkable.
 
 The sky writes geometry. The ledger is how we read it — wins, misses, voids, and the program’s own failures alike.
 
@@ -513,8 +521,8 @@ The sky writes geometry. The ledger is how we read it — wins, misses, voids, a
 
 | Field | Value |
 |---|---|
-| Title | Shear Studies White Paper — Shape Against Magnitude Across Thirty Studies |
-| Version | 3.0 |
+| Title | Shear Studies White Paper — Shape Against Magnitude Across Thirty-Six Studies |
+| Version | 4.0 |
 | Sealed Study 07 law timestamp | 2026-07-23T20:00:59Z |
 | Eclipse event date | 2026-08-12 — DATA SEALED; day verified quiet |
 | Eclipse pinned-archive verdict | ~2026-08-30, on Madrigal instrument-8000 posting (lag measured at 2–3 weeks between 2026-07-25 and 2026-08-01) |
@@ -523,6 +531,8 @@ The sky writes geometry. The ledger is how we read it — wins, misses, voids, a
 **Version 1.0 (2026-07-23)** — initial public synthesis coinciding with Study 07 law freeze and full program index of Studies 01–07. Carried a title/doc-control contradiction (Eight vs Seven Skies) and a prose-only 2026-08-13 resolution date, both corrected in v2.
 
 **Version 2.0 (2026-08-13, T+1)** — post-eclipse revision. Past-tense sweep; new §2.1; Study 1’s frozen falsification numbers printed in full; interpretive claims re-scoped to their evidence class throughout; renumbering note added; new §9 (limitations and falsification); status board refreshed to T+1; title/doc-control contradiction fixed.
+
+**Version 4.0 (2026-09-06)** — board catch-up. §7 had ended at Study 28 while the live index carried 36; it now carries rows **29–36**, every status copied from the index. Title, status block and conclusion counts move from thirty to thirty-six. The OPEN set is restated as 03 / 05 / 08 / 26 / 27 / 29 / 30. Studies 31–36 enter the paper for the first time: the biosphere joint ledger answering live on 9/9 cells, the taxi-out floor sealed on 525,541 flights, the fusion control court PENDING, and the three exactness axes — observer (34), time (35) and proof-synthesis (36). The doc-control Version field, stale at 3.0 since the v3.1 revision, is corrected to 4.0. No sealed number changed.
 
 **Version 3.4 (2026-08-31)** — Study 29 re-framed and Study 30 split out. Study 29 is now **The continuous-model shear**: the satellite-reentry mass ledger in exact grams and centi-degrees against the continuous chemistry-transport models that consume it, which disagree on the **sign** of the ozone response and on the species they attribute it to. Study 30 is **The sovereign edge pod**, the constructive architecture — the open A.E.P-1 specification, the integer HAL, the zero-heap WASM sandbox, the asymmetric NATS leaf, and a four-tier validation gate with frozen integers. The split exists so that an empirical hardware specification does not dilute the mathematical precision of a model-disagreement court. Two corrections carried on their own faces: the cost advantage reported in earlier drafts is **withdrawn** (both figures priced one satellite subscription per sensing node while handing the terrestrial mesh its gateway backhaul free), and the geometry claim is narrowed from an eight-axis map onto T⁸ to the three-axis spatial quotient the shipped code performs. Both studies stand as **OPEN**, and neither delivers a verdict.
 
