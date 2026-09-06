@@ -354,6 +354,75 @@ as one rather than counted as a refutation.
 
 
 
+
+## The one place the signal is positive — and what it is a signal of
+
+The network swap left an open thread, and it was the most interesting number on the board: once
+regulon size is normalised away, the published master regulators clear the degree-matched null on
+**ARCHS4 — a co-expression network built from roughly 100,000 public RNA-seq samples unrelated to
+this corpus — in 6 of 17 tumour types, against 1 of 17 on ARACNe, the network they were derived
+from.** This section pulls that thread.
+
+### Which regulators carry it
+
+| regulator | tumour types where it reaches the top-N | tumour types where it was eligible |
+|---|---|---|
+| **FOXM1** | 7 | 10 |
+| **E2F1** | 6 | 8 |
+| **HSF1** | 6 | 6 |
+| **NR2F6** | 6 | 6 |
+| **MAZ** | 4 | 4 |
+| DRAP1 | 3 | 3 |
+| TCF3 | 3 | 3 |
+| ZNF687 | 3 | 4 |
+| NME2 | 3 | 6 |
+
+Ten regulators reach the top-N in three or more tumour types, and the most recurrent reaches it in
+eight. Holding each tumour type's hit count fixed and redrawing from its own eligible published
+regulators, **0 of 2,000 draws** reach either number.
+
+### Two things that would explain it away, and what happened when they were tested
+
+**Could it be the shared network?** ARACNe regulons are built per tumour type — a different file
+for each. ARCHS4 is a single network used for all seventeen. A regulator whose ARCHS4 regulon
+happens to sit high under this statistic would rank high in every tumour type for a reason that
+involves no tumour at all, and recurrence would follow from the shared topology alone. The first
+null does not exclude this, because it redraws only among published regulators, every one of them
+scored through the same fixed topology.
+
+Tested directly: size-matched sets of **regulators the master-regulator papers never named**, drawn
+from the same pool and scored through the identical ARCHS4 network and pipeline. Their recurrence
+reaches a median maximum of 2 and a best of 6 — **never the observed 8** — and a median of 0
+regulators in three or more tumour types against the observed 10, in **0 of 2,000 draws**.
+
+The recurrence is a property of the published regulators, not of the network they are scored through.
+
+**Could it be that tumours proliferate?** This one is not excluded, and it is the reading the data
+actually favours. FOXM1, E2F1 and HSF1 are proliferation and heat-shock regulators. A tumour is
+proliferating tissue under stress, so these would rank high in tumour expression for a reason that
+has nothing to do with governing any *particular* tumour type.
+
+And the shape of the result argues for exactly that. The published architecture's claim is a
+**type-specific appointment** — that each tumour type is maintained by its own load-bearing set.
+What was measured is the opposite shape: **the same handful of regulators recurring across many
+different tumour types.** Cross-tumour consistency is evidence for a shared programme, not for a
+type-specific one.
+
+### What this section concludes, and what it does not
+
+Stated as narrowly as the measurement allows:
+
+> On an independent co-expression network, the published master regulators are recoverable beyond
+> what unpublished regulators achieve through the same network — and what recurs is a small,
+> pan-cancer set of proliferation and stress regulators rather than a per-tumour-type set.
+
+That is a real signal, and it is the first positive one in this study. It is **not** a
+demonstration of type-specific master regulation, and this study does not claim one. Separating
+"these proteins matter in cancer" from "these proteins are the appointment for *this* cancer"
+requires a proliferation-matched control that this corpus cannot supply — the frozen universe holds
+Primary Tumour samples only, with no normal tissue to hold proliferation constant against.
+Recorded **NOT_KNOWN**, and named as the single most useful thing a successor charter could add.
+
 ## S3 — the inversion lookup, and what it found
 
 The charter's third stage asks the question a patient would want asked: **is there a public compound
