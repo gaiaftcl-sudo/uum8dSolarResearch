@@ -112,6 +112,12 @@ check_figure corpus-distinct-count-exact "74db969f653be18214608230b4aaee30498f7f
 check_figure corpus-distinct-count-exact "0169f514a861ece42573fbff4d4db28e27880373adb7296a304aa9ddb860c1f4" "Study-37-Validated-Discoveries-Five-Molecules.md"
 check_figure corpus-distinct-count-exact "CONTROL ARM  13/13 PASS" ""
 
+# --- the generated-peptide novelty screen (cures family) ---
+check_figure protein-novelty-exact "8c50b3e877d1dac7b68244464ae679fc43ed273d9fd38e7e348b823c3e80563b" "Generated-Peptides-Against-The-Human-Proteome.md"
+check_figure protein-novelty-exact "bf1bc7e188e55199a2447fc20d25834db5f7f798daa818432370deb4a6b0df5e" "Generated-Peptides-Against-The-Human-Proteome.md"
+check_figure protein-novelty-exact "bb3691b332fb15cdd54c43bc42905478e53c4f4b01862885a7304260498cf3f7" "Generated-Peptides-Against-The-Human-Proteome.md"
+check_figure protein-novelty-exact "24cdbf96621e6c38fa046c7a203fcc3ea09e31fad410d9c1cb51f6d192a04204" "Generated-Peptides-Against-The-Human-Proteome.md"
+
 # --- the oligonucleotide off-target atlas ---
 check_figure oligo-offtarget-atlas-exact "OLIGO_OFFTARGET_ATLAS_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT" "Oligonucleotide-Off-Target-Atlas.md"
 check_figure oligo-offtarget-atlas-exact "321b36c694b89a45bb81668d7ea62b9c85cf0b3087e18bba586f43b230274b08" "Oligonucleotide-Off-Target-Atlas.md"

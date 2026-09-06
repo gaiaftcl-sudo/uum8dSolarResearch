@@ -2,6 +2,7 @@
 
 - [**The off-target atlas** — every nucleic-acid medicine the registry publishes](Oligonucleotide-Off-Target-Atlas)
 - [**Where else could this guide cut?** — the whole genome, counted](CRISPR-Genome-Off-Target-Map)
+- [**Are the generated cures new?** — 80,080 peptides against the human proteome](Generated-Peptides-Against-The-Human-Proteome)
 - [**Cures Without the Gatekeeper** — the medicine front door](Cures-Without-The-Gatekeeper)
 - [**Zilganersen** — the first treatment for Alexander disease](The-Safety-Question-Made-Exact)
 - [**CAR-T, halted** — the verdict a regulator could re-derive](The-Verdict-a-Regulator-Could-Re-Derive)
