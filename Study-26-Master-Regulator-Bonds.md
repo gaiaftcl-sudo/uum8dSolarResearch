@@ -478,23 +478,32 @@ tumour types**, and every one of the 20 has at least two subtypes — so the pai
 bladder has 6, colon 8, head and neck 6, glioblastoma 5.
 
 **The mutation half cannot be partitioned.** S2 requires, for each subtype, the top-*t* mutated
-genes among *that subtype's* cases. The published subtype sets identify a subtype by an **integer
-index and a member count**, and nothing more:
+genes among *that subtype's* cases. Two published objects describe the subtypes, and neither names
+a case. Table S2 gives each subtype's **master-regulator set**:
 
 ```
-cohort  subtype   n
-blca    1        78
-blca    2        49
-blca    3        45
-blca    4        60
-blca    5        72
-blca    6        37
+cohort  subtype   regulators in the set
+blca    1         78
+blca    2         49
+blca    3         45
 ```
 
-There is no public mapping from that index to GDC case identifiers. Without it there is no way to
-say which patients are in subtype 1 and which in subtype 2, and therefore no way to build the two
-mutation lists the comparison is made of. The 78 and the 49 are counts of people whose identities
-the published set does not carry.
+and Table S1's clustering summary gives each subtype's **patient count**:
+
+```
+TCGA Cohort  Subtype  Sample Count
+blca         1        93
+blca         2        46
+blca         3        81
+```
+
+So the record says that 93 people are in bladder subtype 1 and that 78 regulators define it. It
+does not say **which** 93 people. Searching all twelve supplementary files of both source papers
+for a TCGA barcode of any form returns **zero matches** — the identifiers are not withheld behind
+a licence, they are simply not published.
+
+Without them there is no way to say which patients are in subtype 1 and which in subtype 2, and
+therefore no way to build the two mutation lists the comparison is made of.
 
 **This is a property of the published corpus, not a limitation we could engineer around.** A more
 careful ingest would not help: the mutation data can be partitioned any number of ways, and none of

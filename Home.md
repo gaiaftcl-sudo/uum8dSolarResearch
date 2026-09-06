@@ -1,3 +1,78 @@
+# What we built today, and what it found
+
+*2026-09-06. Every figure below reproduces from public bytes — no account, no key, no data-use
+agreement — and the harness that checks it is [`reproduce/validate.sh`](reproduce/validate.sh).*
+
+## Two safety maps that did not exist this morning
+
+A patient given a molecule that binds their RNA, or edits their genome, has one question that no
+trial answers and that never expires: **besides its target, where else can this thing act?**
+Complementarity is a *discrete* rule, so that question is **counted, not estimated** — and the
+count is the same integer on every machine, forever.
+
+| | what was screened | scale |
+|---|---|---|
+| [**The off-target atlas**](Oligonucleotide-Off-Target-Atlas) | every nucleic-acid substance the US public registry publishes a usable sequence for | 350 substances · 472 strands · every window of the human transcriptome |
+| [**The CRISPR genome map**](CRISPR-Genome-Off-Target-Map) | every guide RNA in that registry, found by its scaffold | 15 guides · **304,796,751** NGG sites on both strands of GRCh38 |
+
+**All fifteen CRISPR guides find their cut site, thirteen with exactly one perfect match in 3.1
+billion bases — and every one has zero sites at a single mismatch.** Casgevy, the approved therapy
+for sickle cell disease, is among them. The measured cut sites land on the right chromosomes
+without the screen ever being told a target.
+
+**The scope is the fix.** Both maps began as lists written from memory — 33 drugs, 2 guides. A drug
+nobody recalls is silently absent from a safety map, and no harness can catch that: the arithmetic
+is right and the coverage is wrong. So the registry is **enumerated by structure** instead. An
+85-minute run was retired rather than published incomplete.
+
+## Study 26 closed on seventeen tumour types
+
+[**Master Regulator Bonds**](Study-26-Master-Regulator-Bonds) asked whether published cancer
+master-regulator sets are recoverable from public patient data. Every chartered stage now reports
+its result or its measured blocker.
+
+- **The instrument was proven able to fire before it was trusted.** Ranked on half a cohort's
+  patients and scored against the other half, it reproduces **135–141 of 141** regulators in every
+  one of the seventeen tumour types, and collapses to 0–4 under label permutation.
+- **The recovery is largely topology.** In **11 of 17** tumour types, ranking regulators by edge
+  count alone — never opening the expression matrix — recovers the published set at least as
+  significantly as the patient data does.
+- **No drug inverts the signature.** Across **20,308 distinct compounds** and 205,034 signatures,
+  zero of fifteen scored tumour types clear both control arms. Eleven times the chemical space
+  changes nothing.
+- **The one apparent positive did not replicate.** A recurring regulator set on one co-expression
+  network survived three controls — and then failed a fourth on a second network, where the overlap
+  is one regulator out of ten, which is chance. The page says so, and the earlier over-strong
+  sentence was corrected in place.
+
+## What we got wrong, in public
+
+The method is only worth anything if its failures are on the page too. Today's, all of them found
+by our own checks rather than reported to us:
+
+- A null scored against **one** signature while the observed value was a best-of-107,404. It said
+  0/1000 — apparently overwhelming. Corrected, it says 489/1000. **A null that does not match the
+  shape of the observed statistic manufactures significance.**
+- A Monte Carlo **seed derived from a per-process randomised hash**, so the same command gave
+  different nulls on different runs. Now SHA-256 derived, and *proven* identical across processes.
+- An **undeclared duplicate-gene rule** that made two implementations of one law return σ=4 and
+  σ=5 on the same bytes. A law with an undeclared rule is as many laws as it has implementations.
+- A table that looked complete and plausible with **one guide's off-target profile printed under
+  another guide's name** — caught only because the numbers had been computed independently first.
+
+## Why this is the shape of the thing
+
+Two Phase 3 cardiovascular programmes read out in six weeks of 2026 with 14,699 participants
+between them. Both moved their biomarker. Neither moved the outcome. A failed cardiovascular
+Phase 3 destroys a mean **$255M**, and the field's Phase-3-to-approval rate is **45.6%**.
+
+Nothing here would have predicted either result, and this program does not claim it would. What it
+claims is narrower and checkable: **a pre-registered shape test and an exhaustive exact off-target
+map cost an afternoon, run before the money, and can be re-derived byte-for-byte by a stranger who
+trusts none of it.** That last part is the whole product.
+
+---
+
 # Stochastic AI guesses. This machine doesn't.
 
 ![The guess never stops being fooled; the exact never wavers — a floating-point processor reports a false Fermat solution at every zoom depth while the exact integer court refutes it, the gap only growing](images/short-guess-or-project.svg)
