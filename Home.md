@@ -1,75 +1,75 @@
-# What we built today, and what it found
+# The question nobody was made to ask
 
-*2026-09-06. Every figure below reproduces from public bytes — no account, no key, no data-use
-agreement — and the harness that checks it is [`reproduce/validate.sh`](reproduce/validate.sh).*
+A woman is offered a medicine that will edit her genome. It has been through its trials. It works.
+Nobody in the room can tell her, exactly, where else in her three billion bases that molecule could
+cut — not because anyone is careless, but because the tools in use return a *score*, and a score is
+an opinion with a decimal point on it. Run it on different software and the list of places to worry
+about changes.
 
-## Two safety maps that did not exist this morning
+That question has an exact answer. Complementarity is a discrete rule: a base pairs or it does not.
+There are only so many places in a genome where a guide can bind, and they can be **counted** —
+every one of them, with no sampling and no threshold buried in the arithmetic. The answer is an
+integer. It is the same integer on her doctor's laptop, on a regulator's, and on a stranger's who
+trusts none of them.
 
-A patient given a molecule that binds their RNA, or edits their genome, has one question that no
-trial answers and that never expires: **besides its target, where else can this thing act?**
-Complementarity is a *discrete* rule, so that question is **counted, not estimated** — and the
-count is the same integer on every machine, forever.
+**Today we counted them.** For Casgevy — the approved CRISPR therapy that is curing sickle cell
+disease right now — the answer is that its guide matches perfectly in exactly **one** place in the
+human genome, its intended target, and there is **nothing at all** one mismatch away. Not a low
+score. Nothing. We did the same for every CRISPR medicine whose guide is public, and for every
+antisense and siRNA medicine whose sequence is public, across every window of the transcriptome.
 
-| | what was screened | scale |
-|---|---|---|
-| [**The off-target atlas**](Oligonucleotide-Off-Target-Atlas) | every nucleic-acid substance the US public registry publishes a usable sequence for | 350 substances · 472 strands · every window of the human transcriptome |
-| [**The CRISPR genome map**](CRISPR-Genome-Off-Target-Map) | every guide RNA in that registry, found by its scaffold | 15 guides · **304,796,751** NGG sites on both strands of GRCh38 |
+Those maps did not exist this morning. They exist now, they cost an afternoon, and anyone can
+re-derive them without asking us for anything.
 
-**All fifteen CRISPR guides find their cut site, thirteen with exactly one perfect match in 3.1
-billion bases — and every one has zero sites at a single mismatch.** Casgevy, the approved therapy
-for sickle cell disease, is among them. The measured cut sites land on the right chromosomes
-without the screen ever being told a target.
+**→ [The CRISPR genome map](CRISPR-Genome-Off-Target-Map)  ·  [The off-target atlas](Oligonucleotide-Off-Target-Atlas)**
 
-**The scope is the fix.** Both maps began as lists written from memory — 33 drugs, 2 guides. A drug
-nobody recalls is silently absent from a safety map, and no harness can catch that: the arithmetic
-is right and the coverage is wrong. So the registry is **enumerated by structure** instead. An
-85-minute run was retired rather than published incomplete.
+---
 
-## Study 26 closed on seventeen tumour types
+## The harder question, and why we published a disappointment
 
-[**Master Regulator Bonds**](Study-26-Master-Regulator-Bonds) asked whether published cancer
-master-regulator sets are recoverable from public patient data. Every chartered stage now reports
-its result or its measured blocker.
+The same day, we finished a study that had been open since August. It asked something that a great
+deal of cancer drug development rests on: when a method says *these proteins are what keeps this
+tumour alive*, can you recover those proteins from the patient's own data?
 
-- **The instrument was proven able to fire before it was trusted.** Ranked on half a cohort's
-  patients and scored against the other half, it reproduces **135–141 of 141** regulators in every
-  one of the seventeen tumour types, and collapses to 0–4 under label permutation.
-- **The recovery is largely topology.** In **11 of 17** tumour types, ranking regulators by edge
-  count alone — never opening the expression matrix — recovers the published set at least as
-  significantly as the patient data does.
-- **No drug inverts the signature.** Across **20,308 distinct compounds** and 205,034 signatures,
-  zero of fifteen scored tumour types clear both control arms. Eleven times the chemical space
-  changes nothing.
-- **The one apparent positive did not replicate.** A recurring regulator set on one co-expression
-  network survived three controls — and then failed a fourth on a second network, where the overlap
-  is one regulator out of ten, which is chance. The page says so, and the earlier over-strong
-  sentence was corrected in place.
+We built the corpus from scratch — seventeen tumour types, 7,673 people's tumours, every byte
+public. We proved our instrument could tell something from nothing before we trusted it: rank the
+regulators using half the patients, and 135 to 141 of the 141 come back when you rank them again
+using completely different patients. Shuffle the labels and it collapses to nothing. That is a
+sharp instrument.
 
-## What we got wrong, in public
+Then we pointed it at the question, and the answer was not the one anyone hoped for.
 
-The method is only worth anything if its failures are on the page too. Today's, all of them found
-by our own checks rather than reported to us:
+**In eleven of seventeen tumour types, you can recover the published regulators just as well by
+counting how many connections each one has in the network — without ever opening the patient's
+data at all.** We searched 20,308 compounds for one that reverses the signature; none separates
+from noise. And the one result that did look positive survived three controls before failing a
+fourth: it does not reproduce when you change the network it was measured on.
 
-- A null scored against **one** signature while the observed value was a best-of-107,404. It said
-  0/1000 — apparently overwhelming. Corrected, it says 489/1000. **A null that does not match the
-  shape of the observed statistic manufactures significance.**
-- A Monte Carlo **seed derived from a per-process randomised hash**, so the same command gave
-  different nulls on different runs. Now SHA-256 derived, and *proven* identical across processes.
-- An **undeclared duplicate-gene rule** that made two implementations of one law return σ=4 and
-  σ=5 on the same bytes. A law with an undeclared rule is as many laws as it has implementations.
-- A table that looked complete and plausible with **one guide's off-target profile printed under
-  another guide's name** — caught only because the numbers had been computed independently first.
+None of that says anyone was wrong. It says something narrower and more useful: **a question can
+pass its own test and still not be the question you thought you were asking** — and until today,
+nothing in the path from hypothesis to a $255 million trial forced anyone to check which.
 
-## Why this is the shape of the thing
+**→ [Study 26 — Master Regulator Bonds](Study-26-Master-Regulator-Bonds)**
 
-Two Phase 3 cardiovascular programmes read out in six weeks of 2026 with 14,699 participants
-between them. Both moved their biomarker. Neither moved the outcome. A failed cardiovascular
-Phase 3 destroys a mean **$255M**, and the field's Phase-3-to-approval rate is **45.6%**.
+---
 
-Nothing here would have predicted either result, and this program does not claim it would. What it
-claims is narrower and checkable: **a pre-registered shape test and an exhaustive exact off-target
-map cost an afternoon, run before the money, and can be re-derived byte-for-byte by a stranger who
-trusts none of it.** That last part is the whole product.
+## Why you can believe the numbers
+
+Because we publish the mistakes with the same prominence as the results, and they are ours.
+
+A null we built compared the best of 107,404 candidates against a single one, and reported a result
+as overwhelming when the honest comparison says it is noise. A random seed we used changed between
+runs, so a study whose entire claim is that the answer does not depend on who computes it was
+quietly depending on that. Two implementations of one law disagreed on identical bytes, because the
+law had a rule nobody had written down. A results table looked complete and plausible while
+printing one medicine's safety profile under another medicine's name.
+
+Every one was caught by our own checks, before anyone read them, and every one is written on the
+page it affected. **A method that only shows you its clean runs is not showing you a method.**
+
+That is the whole offer. Not a machine that sounds confident — a machine whose answers are integers
+you can check, whose mistakes are on the record, and whose questions you are invited to disagree
+with, using nothing but public bytes and a laptop.
 
 ---
 
