@@ -117,45 +117,69 @@ final class Acc {
     init(_ L: Int) { hist = [Int](repeating: 0, count: L + 1) }
 }
 var acc = drugs.map { Acc($0.L) }
-var totalWindows = 0, transcripts = 0
+// Clean-window counts are a property of the TRANSCRIPTOME AND A LENGTH, nothing else — never of
+// which strand happens to be first in the list. Counted once per transcript, per distinct strand
+// length, so every shard that contains a strand of length L reports the identical figure for L.
+var winByLen: [Int: Int] = [:]
+var transcripts = 0
 
+let distinctLengths: [Int] = Array(Set(drugs.map { $0.L })).sorted()
 let REPORT_AT = 16                          // printed list threshold, applied after the arithmetic
 
+// A window is scoreable only if EVERY one of its L positions is a standard base. The mismatch
+// early-exit below stops scanning as soon as the window cannot reach REPORT_FLOOR, which means
+// it can stop BEFORE reaching an N further along the window — so an N-bearing window was being
+// counted as valid. Measured 2026-09-06 against two independent 20-mer screens: the defect moved
+// the reported window TOTAL by 90, and made that total depend on which strand happened to be
+// first in the list, because only strand 0 increments it. Every histogram bucket at or above
+// REPORT_FLOOR was unaffected — those windows never take the early exit and so were fully
+// checked — and so was every off-target list and every seal over them.
+//
+// The repair is to decide cleanliness ONCE per transcript, independently of any strand's
+// scanning order: lastBad[i] is the index of the most recent invalid base at or before i, so the
+// window starting at p with length L is clean exactly when lastBad[p + L - 1] < p.
 @inline(__always)
 func scan(seq: [Int8], gene: String, tx: String) {
+    let n = seq.count
+    var lastBad = [Int](repeating: -1, count: n)
+    var lb = -1
+    for i in 0..<n { if seq[i] < 0 { lb = i }; lastBad[i] = lb }
+    for L in distinctLengths where n >= L {
+        var c = 0
+        for p in 0...(n - L) where lastBad[p + L - 1] < p { c += 1 }
+        winByLen[L, default: 0] += c
+    }
     seq.withUnsafeBufferPointer { sp in
+      lastBad.withUnsafeBufferPointer { lbp in
         for (di, d) in drugs.enumerated() {
             let L = d.L
-            if seq.count < L { continue }
+            if n < L { continue }
             let a = acc[di]
             let maxMiss = L - REPORT_FLOOR
             d.seq.withUnsafeBufferPointer { ap in
-                let last = seq.count - L
+                let last = n - L
                 var p = 0
                 while p <= last {
-                    var m = 0, miss = 0, bad = false
+                    if lbp[p + L - 1] >= p { p += 1; continue }   // window contains an N: not scoreable
+                    var m = 0, miss = 0
                     var i = 0
                     while i < L {
-                        let b = sp[p + L - 1 - i]
-                        if b < 0 { bad = true; break }
-                        if Int(ap[i]) + Int(b) == 3 { m += 1 } else {
+                        if Int(ap[i]) + Int(sp[p + L - 1 - i]) == 3 { m += 1 } else {
                             miss += 1
                             if miss > maxMiss { break }      // exact bound: cannot reach REPORT_FLOOR
                         }
                         i += 1
                     }
-                    if !bad {
-                        if miss > maxMiss { a.below += 1 }
-                        else {
-                            a.hist[m] += 1
-                            if m >= REPORT_AT { a.hits.append((m, gene, tx, p)) }
-                        }
-                        if di == 0 { totalWindows += 1 }
+                    if miss > maxMiss { a.below += 1 }
+                    else {
+                        a.hist[m] += 1
+                        if m >= REPORT_AT { a.hits.append((m, gene, tx, p)) }
                     }
                     p += 1
                 }
             }
         }
+      }
     }
 }
 
@@ -187,7 +211,8 @@ if transcripts == 0 {
 }
 print("drugs screened      : \(drugs.count)")
 print("transcripts scanned : \(transcripts)")
-print("windows enumerated  : \(totalWindows)   (per drug; lengths differ slightly)")
+print("windows enumerated, by strand length — a property of the transcriptome and the length alone:")
+for L in distinctLengths.sorted() { print("  \(L)-mer : \(winByLen[L] ?? 0)") }
 print("")
 
 var transcript = "atlas;tx=\(transcripts);\n"

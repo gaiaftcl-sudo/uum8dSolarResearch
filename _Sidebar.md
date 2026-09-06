@@ -16,6 +16,7 @@
 - [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — **why fusion needs an exact law, not a bigger computer**
 - [**Study 35** — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) — **why the floating-point safety brain is doomed, not just behind**
 - [**Study 36** — the language game of Fermat's Last Theorem](Study-36-The-Language-Game-of-Fermats-Last-Theorem) — **guess and shear, or project: the near-miss the float never stops seeing**
+- [**Study 37** — thirty-seven thousand validated discoveries, five molecules](Study-37-Validated-Discoveries-Five-Molecules) — **why per-item validation cannot see a corpus-level defect**
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)
@@ -35,7 +36,7 @@
 - [**The ontology**](Ontology) — grades, terminals, controls
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm) — the method
 - [**The full-grade replacement**](The-Replacement-Grade) — 49 retired instruments, 4 verticals
-- [Program index — all 36 studies](Shear-Studies-Index)
+- [Program index — all 37 studies](Shear-Studies-Index)
 - [Readers’ guide](Shear-Studies-Readers-Guide)
 - [White paper](Shear-Studies-White-Paper)
 - [Roadmap — what comes next](Shear-Studies-Roadmap)

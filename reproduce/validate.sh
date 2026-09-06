@@ -105,6 +105,13 @@ check_figure crispr-genome-offtarget-exact "3099750718" "CRISPR-Genome-Off-Targe
 check_figure crispr-genome-offtarget-exact "L28RZ5CC6K" "CRISPR-Genome-Off-Target-Map.md"
 check_figure crispr-genome-offtarget-exact "D8UQ4B2T7M" "CRISPR-Genome-Off-Target-Map.md"
 
+# --- Study 37: the corpus-collapse instrument ---
+check_figure corpus-distinct-count-exact "1c2e05a659917cd5de0d20446483b26372c757b48cec510070644e7307b7fd36" "Study-37-Validated-Discoveries-Five-Molecules.md"
+check_figure corpus-distinct-count-exact "95594154026f63552bf746f535be96392bca50385b4577c72d545c3d1de67aa1" "Study-37-Validated-Discoveries-Five-Molecules.md"
+check_figure corpus-distinct-count-exact "74db969f653be18214608230b4aaee30498f7fcd09df9e3d7b107ddb5c8f64f7" "Study-37-Validated-Discoveries-Five-Molecules.md"
+check_figure corpus-distinct-count-exact "0169f514a861ece42573fbff4d4db28e27880373adb7296a304aa9ddb860c1f4" "Study-37-Validated-Discoveries-Five-Molecules.md"
+check_figure corpus-distinct-count-exact "CONTROL ARM  13/13 PASS" ""
+
 # --- the oligonucleotide off-target atlas ---
 check_figure oligo-offtarget-atlas-exact "OLIGO_OFFTARGET_ATLAS_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT" "Oligonucleotide-Off-Target-Atlas.md"
 check_figure oligo-offtarget-atlas-exact "321b36c694b89a45bb81668d7ea62b9c85cf0b3087e18bba586f43b230274b08" "Oligonucleotide-Off-Target-Atlas.md"
@@ -181,6 +188,12 @@ check_figure drift-barrier-demo     "50.3%"     "Study-35-The-Safety-Brain-That-
 check_figure drift-barrier-demo     "DRIFT_BARRIER_TRAINED_MODEL_STALE_INVARIANT_FIXED" "Study-35-The-Safety-Brain-That-Forgets.md"
 
 # --- Zilganersen / Alexander disease: the exact ASO off-target screen ---
+check_figure zilganersen-offtarget-whole-transcriptome "ZILGANERSEN_OFFTARGET_EXACT__REAL_SEQUENCE_WITH_COMPOSITION_CONTROL" "The-Safety-Question-Made-Exact.md"
+check_figure zilganersen-offtarget-whole-transcriptome "edcb277ddea44820502b6446b00ed8bdcfdb08835d6785fdee7d1b370420bbaa" "The-Safety-Question-Made-Exact.md"
+check_figure zilganersen-offtarget-whole-transcriptome "CAGTATTACCTCTACTAGTC" "The-Safety-Question-Made-Exact.md"
+check_figure zilganersen-offtarget-whole-transcriptome "1467336203" "The-Safety-Question-Made-Exact.md"
+check_figure zilganersen-offtarget-whole-transcriptome "670670" "The-Safety-Question-Made-Exact.md"
+check_figure zilganersen-offtarget-whole-transcriptome "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "The-Safety-Question-Made-Exact.md"
 check_figure aso-offtarget-exact-vs-float "ASO_OFFTARGET_EXACT_IS_OBSERVER_INVARIANT" "The-Safety-Question-Made-Exact.md"
 check_figure crispr-guide-offtarget-exact-vs-float "CRISPR_OFFTARGET_EXACT_IS_OBSERVER_INVARIANT" "PM359-Prime-Editing-Certified-Before-Anyone-Is-Dosed.md"
 check_figure flt-nearmiss-fractal-shear "FLT_NEARMISS_FRACTAL_SHEAR__EXACT_IS_OBSERVER_INVARIANT" "Study-36-The-Language-Game-of-Fermats-Last-Theorem.md"

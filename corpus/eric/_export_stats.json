@@ -1,0 +1,9 @@
+{
+  "proteins_validated": 78680,
+  "proteins_validated_safe": 41391,
+  "proteins_by_disease": 1400,
+  "materials_bivqbit_validated": 37910,
+  "_bivqbit_scanned": 75823,
+  "materials_chemistry_validated": 8712,
+  "_chemistry_scanned": 11801
+}

@@ -181,11 +181,17 @@ if !buf.isEmpty { scan(seq: buf, gene: curGene, tx: curTx); transcripts += 1 }
 
 // ---- the published reference, printed on EVERY path including refusal --------------------
 func printPublishedReference() {
-    print("PUBLISHED REFERENCE RUN — GENCODE v50, the figures this page carries:")
+    print("PUBLISHED REFERENCE RUN — the figures this page carries:")
+    print("  corpus              : GENCODE v50, sha256")
+    print("  5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56")
     print("  transcripts scanned : 670670")
     print("  windows enumerated  : 1467336203")
-    print("  perfect 20/20       : 5, all in GFAP")
-    print("  17/20 or better off-target genes : GFAP-AS1, KANSL1, ARHGAP42, TRIM47, LINC02210")
+    print("  perfect 20/20       : 2, both in GFAP")
+    print("  19/20 and 18/20     : 0 and 0 — nothing in the transcriptome sits between")
+    print("  17/20 paired        : 11, in XYLB, ENSG00000239572, ADAM20P1, ENSG00000293223")
+    print("  off-target burden at 16/20 or better, outside GFAP : 324")
+    print("  composition-matched control median at the same threshold : 787")
+    print("  seal edcb277ddea44820502b6446b00ed8bdcfdb08835d6785fdee7d1b370420bbaa")
     print("MARKER  ZILGANERSEN_OFFTARGET_EXACT__REAL_SEQUENCE_WITH_COMPOSITION_CONTROL")
 }
 
@@ -283,6 +289,10 @@ for t in stride(from: 17, through: 14, by: -1) {
         ctrl.append(c)
     }
     ctrl.sort()
+    // With an even number of controls there is no unique median. The convention here is the
+    // UPPER median — element count/2 of the ascending sort, i.e. the 9th of 16 — chosen once,
+    // stated, and never varied. No verdict rests on it: min, max and the drug's exact rank are
+    // all published beside it, so a reader can re-make the choice.
     let lo = ctrl.first ?? 0
     let hi = ctrl.last ?? 0
     let mid = ctrl[ctrl.count / 2]
