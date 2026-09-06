@@ -72,6 +72,17 @@ NTLA-2002                 D8UQ4B2T7M  KLKB1       chr4          1  PASS — zero
 
 Each guide has **exactly one** perfect site in the entire human genome, and it is the intended one.
 
+These are the two sequences that were screened, so that nothing here rests on taking our word for
+what was tested:
+
+| medicine | UNII | 20-base spacer, as screened |
+|---|---|---|
+| Casgevy (exagamglogene autotemcel) | `L28RZ5CC6K` | `CTAACAGTTGCTTTTATCAC` |
+| NTLA-2002 | `D8UQ4B2T7M` | `GGATTGCGTATGGGACACAA` |
+
+Each is the 20 bases preceding the canonical sgRNA scaffold in that UNII's GSRS record, with `U`
+written as `T`. Fetch the same record and you get the same bases.
+
 ## What the screen found
 
 ```

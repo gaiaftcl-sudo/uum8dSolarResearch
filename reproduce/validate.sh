@@ -102,6 +102,8 @@ check_figure crispr-genome-offtarget-exact "CRISPR_GENOME_OFFTARGET_EXACT__COMPL
 check_figure crispr-genome-offtarget-exact "b760d18dbb651dd14dfc290083371b3ef3bff122d43a9cefb13ca4ecf38f05ca" "CRISPR-Genome-Off-Target-Map.md"
 check_figure crispr-genome-offtarget-exact "304796751" "CRISPR-Genome-Off-Target-Map.md"
 check_figure crispr-genome-offtarget-exact "3099750718" "CRISPR-Genome-Off-Target-Map.md"
+check_figure crispr-genome-offtarget-exact "L28RZ5CC6K" "CRISPR-Genome-Off-Target-Map.md"
+check_figure crispr-genome-offtarget-exact "D8UQ4B2T7M" "CRISPR-Genome-Off-Target-Map.md"
 
 # --- the landing page's own headline figures ---
 check_figure seasonal-and-alternative      "About fifty tonnes" "SpaceX-Biosphere-Safety.md"
