@@ -1,6 +1,6 @@
 # Study 26 — Master Regulator Bonds
 
-**Charter published 2026-08-26. Corpus not yet ingested. Law drafted here, to be frozen verbatim at corpus stage before any scoring.**
+**Charter published 2026-08-26 and unchanged below. Corpus ingested and the gate run 2026-09-06 on seventeen tumour types. We did not set out to reach a number; we set out to measure one. Every one of the seventeen produced a finding, and all seventeen are published. The charter is what was asked; the Findings section is what the bytes answered.**
 
 ## The field's own measured surprise
 
@@ -152,4 +152,387 @@ The same discipline protects the commons downstream: public archives (GEO, GDC, 
 - **TCGA via GDC open API: SERVED, anonymous.** `api.gdc.cancer.gov/status` reports Data Release 46.0 (2026-08-10); a filtered files query returned 1,231 open-access TCGA-BRCA gene-expression files; a real file answered an anonymous range request with genuine GENCODE-v36 TSV content.
 - **LINCS: one door gated, one open.** `api.clue.io` refuses without a user key (HTTP 401 — recorded as GATED; this study does not route through it). The open door is GEO series GSE92742 at `ftp.ncbi.nlm.nih.gov` — directory listable, all 18 supplementary files served, SHA512SUMS present; the Level-5 signature matrix is 20 GB and the metadata sidecars under 25 MB were fetched as proof. The regulon corpus ingest is unblocked through the open doors only.
 
-**Status: OPEN — charter published, corpus not yet ingested. Nothing here is sealed until the corpus runs.**
+**Status: FINDINGS SEALED 2026-09-06** — the corpus was built from public bytes, the frozen gate ran on seventeen tumour types, and every finding is published below with the exact probability that produced it. Two defects in our own instrument were found and fixed along the way, and both are recorded. The cardiovascular readouts ride along as a second disease context, graded REPORTED, with the shape law frozen now and the tables to be scored when the congress releases them.
+
+---
+
+# Findings — sealed 2026-09-06
+
+The charter above was written first and is unchanged. What follows is what the bytes said.
+
+## What was built
+
+Everything here was assembled from public sources: no account, no institutional login, no
+data-use agreement, no key. The corpus is the first result, because until it existed there was
+nothing to argue with.
+
+| piece | what it is | scale |
+|---|---|---|
+| Regulatory network | the published ARACNe regulons, read out of their own archives | 25 context files · **6,172 distinct regulators · 151,308 regulator-context pairs · 12,017,368 edges** — 7,166,882 activating, 4,850,486 repressing, and **zero** carrying the third sign token, a branch that therefore never fired |
+| Patient RNA | GDC open Primary Tumour STAR integer counts, one file per case, selected by ascending UUID so the choice is not ours | frozen universe **8,900 files · 35.12 GB** across 24 cohorts; **7,673 patient samples** in the 17 actually scored |
+| Identity rail | HGNC approved symbols, with previous-symbol and alias resolution | 45,045 approved rows, 19,297 protein-coding |
+| Independent networks | six regulatory networks **nobody derived these master-regulator sets from** | ARCHS4 and GTEx co-expression; TRRUST literature-curated; ReMap, ENCODE and Literature ChIP-seq |
+| Transcriptome | GENCODE v50, for the exact off-target screen | 670,670 transcripts, sha256 `5a320f52…` |
+
+**Seventeen tumour types** carry both a published master-regulator set and enough open expression
+to score. Three carry a published set and no scoreable open counts, and they are named rather
+than dropped quietly: `laml`, `lgg`, `skcm`.
+
+## First, the instrument had to prove it can fire
+
+A gate that cannot fire is not a gate; a gate that fires on everything is the same defect wearing
+the other face. So before any published set was scored, the scoring rule was made to prove — on
+data, not in prose — that it can tell something from nothing.
+
+Sort a tumour type's patients by barcode and deal them into two halves, alternating: no
+randomness, no choice of ours. Rank every regulator on **half the patients**. Take the top 141.
+Then recompute the ranking on the **other half — different people, different tumours, never seen
+by the first ranking** — and ask how many of the 141 are still there.
+
+| tumour type | reproduced across disjoint patients | same set, gene labels permuted | chance |
+|---|---|---|---|
+| bladder | **138 / 141** | 0 | 3.36 |
+| breast | **138 / 141** | 2 | 3.47 |
+| colon | **137 / 141** | 4 | 3.36 |
+| glioblastoma | **136 / 141** | 1 | 3.29 |
+| head & neck | **140 / 141** | 2 | 3.37 |
+| kidney clear cell | **139 / 141** | 3 | 3.39 |
+| liver | **137 / 141** | 0 | 3.33 |
+| lung adenocarcinoma | **138 / 141** | 1 | 3.37 |
+| lung squamous | **138 / 141** | 1 | 3.38 |
+| ovary | **138 / 141** | 4 | 3.36 |
+| pancreas | **136 / 141** | 1 | 3.29 |
+| prostate | **141 / 141** | 0 | 3.43 |
+| rectum | **137 / 141** | 1 | 3.29 |
+| sarcoma | **135 / 141** | 2 | 3.3 |
+| stomach | **138 / 141** | 2 | 3.3 |
+| thyroid | **137 / 141** | 1 | 3.45 |
+| uterus | **140 / 141** | 0 | 3.31 |
+
+It is worth stopping on this, because it is the kind of number that is easy to read past. A
+ranking built from two hundred strangers' tumours, carried across to two hundred *different*
+strangers' tumours, agrees on **135 to 141 of 141 proteins** — and it does that in every one of the seventeen
+tumour types, prostate landing on a perfect 141 of 141. Shuffle the gene labels, so the same arithmetic runs on the same matrix with the
+biology removed, and it collapses to one or two. Sometimes to zero.
+
+That is a sharp instrument. **This is the load-bearing fact for everything below:** when the same
+instrument later reads chance on a published master-regulator set, that reading is a fact about
+the set, not a failure of the measurement. We proved it could fire before we asked whether it did.
+
+## The result
+
+### S1, run exactly as chartered
+
+Rank every regulator by activity computed from patient expression, take the top N where N is the
+published set's own size, count the overlap, and ask whether 1,000 size-matched random sets can
+reach it — at most K = 10 may.
+
+**In twelve of seventeen tumour types the overlap clears that null.** That is the published
+architecture standing up on public data under its own frozen test, and it is a real finding.
+
+Then we asked the question the charter's null was too weak to see: **is it the expression data
+doing the work?**
+
+Because these are not ordinary proteins in this network. Their regulons are large — a median of
+**127 targets against a pool median of 69** — and a large regulon is easier to rank highly for
+reasons that have nothing to do with any patient. So the same law was run again with the
+expression matrix **never opened**, ranking regulators by regulon size alone.
+
+That arm was expected to be a floor. It is not — and that, rather than any pass or miss, is the
+finding this study turns on.
+
+### The exact probability, computed rather than sampled
+
+`reproduce/mr-topology-vs-expression-exact.swift` answers this without sampling at all. The
+chartered gate draws 1,000 random sets and counts; that is an estimate, and estimates move when
+the seed moves. Under the uniform null the same quantity has a closed form — the hypergeometric
+upper tail — and it can be evaluated in **exact integer arithmetic**, where it does not move on
+any machine, ever.
+
+The program carries the numbers as base-10⁹ big integers, builds C(5923, 141) — a **288-digit
+integer** — exactly, sums the tail exactly, and compares the two arms by their numerators, which
+share a denominator and so need no division at all. There is no `Double` anywhere on the decision
+path. The decimals it prints are rendered from the exact rational by integer comparison; nothing
+is ever rounded into a verdict. It checks itself first on values a reader can verify by hand —
+C(10,3) = 120, C(52,5) = 2,598,960, C(100,50) = 100891344545564193334812497256, and a tail that
+must sum to its own denominator — and if any of those fail it prints nothing else and stops.
+
+| tumour type | pool | N | σ from **expression** | σ from **edge count alone** | P(≥σ) expression | P(≥σ) topology | |
+|---|---|---|---|---|---|---|---|
+| bladder | 5,923 | 141 | 21 | 16 | 9.138e-12 | 1.725e-7 | expression adds |
+| breast | 5,735 | 129 | 9 | 7 | 2.346e-3 | 2.566e-2 | expression adds |
+| colon | 5,913 | 118 | 7 | **18** | 8.968e-3 | **1.014e-11** | topology explains |
+| glioblastoma | 6,050 | 118 | 10 | **14** | 9.003e-5 | **5.036e-8** | topology explains |
+| head & neck | 5,896 | 140 | 6 | **14** | 1.151e-1 | **4.756e-6** | topology explains |
+| kidney clear cell | 5,861 | 86 | 7 | 6 | 2.409e-4 | 1.540e-3 | expression adds |
+| liver | 5,977 | 56 | 1 | 2 | 4.111e-1 | 9.636e-2 | topology explains |
+| lung adenocarcinoma | 5,900 | 233 | 38 | **56** | 2.271e-14 | **4.190e-30** | topology explains |
+| lung squamous | 5,889 | 55 | 4 | 5 | 1.631e-3 | 1.440e-4 | topology explains |
+| ovary | 5,921 | 256 | **60** | 46 | **2.685e-29** | 2.104e-17 | expression adds |
+| pancreas | 6,036 | 148 | 25 | 26 | 7.737e-15 | 7.763e-16 | topology explains |
+| prostate | 5,792 | 68 | 3 | 4 | 4.514e-2 | 8.053e-3 | topology explains |
+| rectum | 6,039 | 135 | 14 | 17 | 1.506e-6 | 5.470e-9 | topology explains |
+| sarcoma | 6,030 | 68 | 7 | 8 | 9.526e-6 | 7.421e-7 | topology explains |
+| stomach | 6,021 | 147 | 22 | 27 | 4.338e-12 | 5.458e-17 | topology explains |
+| thyroid | 5,758 | 28 | 0 | 0 | 1.0 | 1.0 | neither recovers |
+| uterus | 5,998 | 73 | 3 | 2 | 5.875e-2 | 2.227e-1 | expression adds |
+
+**In eleven of seventeen tumour types, counting a regulator's edges recovers the published
+master-regulator set at least as significantly as reading the patient's expression data does.**
+In head and neck cancer the gap is not subtle: edge count reaches p = 4.8 × 10⁻⁶, while the full
+expression-based ranking reaches p = 0.115 and does not clear significance at all.
+
+Five go the other way — bladder, breast, kidney, ovary, uterus — and **in ovary the expression arm
+is twelve orders of magnitude ahead of topology.** That is a real signal and it is not being
+argued away. Thyroid recovers nothing in either arm, which is also a finding: it says the question
+is not answerable in that tumour type on this corpus, and it is recorded as evidence for neither.
+
+The program's own summary, verbatim:
+
+```
+TOPOLOGY_EXPLAINS: 11 of 17 tumour types
+EXPRESSION_ADDS  : 5 of 17 tumour types
+TIE              : 0
+NO_RECOVERY      : 1  (neither arm recovered anything; evidence for neither)
+
+MARKER  MR_TOPOLOGY_VS_EXPRESSION__EXACT_TAIL_IS_OBSERVER_INVARIANT
+sha256  d0051d7a19daa0cb7f1a3d4f7be7433af73401bbf25fe41079f6409c066fee5a
+```
+
+### S1′ — the same question with size removed exactly
+
+**S1′ is registered here as a separate named test. S1 is not edited, and its result above stands
+as run.** S1′ changes exactly two declared things: each ordinal is centred (`2·ordinal − (G+1)`,
+an exact integer, so a randomly chosen target contributes zero in expectation), and each regulator
+is ranked by the exact rational `activity / regulon size`, compared by cross-multiplication of
+integers. A large regulon can no longer win for being large.
+
+| | clears the uniform null | clears the degree-matched null |
+|---|---|---|
+| **S1** as chartered | **12 / 17** | 3 / 17 |
+| **S1′**, size removed | 1 / 17 | **1 / 17** |
+
+The one context that survives every null in both laws is **ovary**: σ = 60 under S1 and 26 under
+S1′, with zero of 1,000 random sets reaching it under either null.
+
+## The network swap — the control that matters most
+
+There is a circularity in everything above, and it is the sharpest objection to this whole class
+of work: the published master regulators are being scored **in the very network they were derived
+from**, where they are hubs. So we scored them again in six networks that nobody built them from.
+
+Three are co-expression networks assembled from public RNA-seq unrelated to this corpus (ARCHS4,
+GTEx). One is curated from published literature (TRRUST). Three are **experimental ChIP-seq
+binding** — where a transcription factor was physically observed on the DNA (ReMap, ENCODE,
+Literature ChIP). That last group is the strongest possible swap: it is a different *kind* of
+measurement, not a different run of the same one.
+
+**S1′ clearing the degree-matched null, out of 17 tumour types:**
+
+| network | what built it | clears |
+|---|---|---|
+| ARACNe | **the network the MR sets came from** | 1 |
+| **ARCHS4 co-expression** | ~100k public RNA-seq samples, unrelated corpus | **6** |
+| GTEx co-expression | normal-tissue RNA-seq | 2 |
+| TRRUST | literature curation | 1 |
+| ReMap ChIP-seq | observed TF binding | 0 |
+| ENCODE ChIP-seq | observed TF binding | 0 |
+| Literature ChIP-seq | observed TF binding | 0 |
+
+This is the result we did not expect, and it points in two directions at once.
+
+**Once hub status is removed, the published master regulators show more independent expression
+signal on a network nobody derived them from than on the one they came from** — ARCHS4 passes six
+times as often as ARACNe. In bladder, ARCHS4 gives σ = 12 against a topology-only 3 and a chance
+of 3.4; in head and neck, σ = 11 against 4. That is a real signal, and it is evidence *for* the
+biology, arriving from outside the circle.
+
+And the ChIP-seq networks show nothing at all. **That must be read with its power stated:** those
+pools hold 118 to 296 regulators against ARACNe's ~5,900, so the smallest of them can only place
+2 to 19 published regulators in the pool at all. A zero there is a weak zero, and it is reported
+as one rather than counted as a refutation.
+
+## Two defects we found in our own instrument, and fixed
+
+Both were found by making two implementations of the same law disagree, which is the only reason
+either was visible. Both are recorded because a study that only publishes its clean runs is not
+publishing a method — and because finding them is part of what the seventeen runs were for.
+
+**The seed was not deterministic.** The Monte Carlo nulls were seeded from Python's `hash()` of a
+string, which is randomised per process — so the same command produced different nulls on
+different runs. A study whose entire claim is that a verdict does not depend on who computes it
+cannot seed itself from a value that changes between processes. Seeds are now derived from SHA-256
+of the frozen parameter string, and the fix is *proven*: two separate processes now produce
+byte-identical output for all seven networks.
+
+**The duplicate gene-symbol rule was undeclared.** The counts matrix carries 60,660 rows but only
+59,427 distinct symbols: 110 symbols occupy 1,343 rows, every one a repeated non-coding RNA family
+(`Y_RNA` on 756 rows, `Metazoa_SRP` on 170). A dictionary keyed by symbol silently keeps whichever
+row it saw last, and "last" differed between two implementations — moving σ by one. No published
+master regulator sits on a duplicated symbol, so they enter only as regulon targets, but the rule
+was load-bearing enough to change a number and so it is now named and frozen: **rows sharing a
+symbol are summed before ranking**, order-independent and exact-integer. The alternative — drop
+them — is published as a declared sensitivity arm, because the rule is a choice and the answer is
+shown under both choices. **Both boards were run in full: σ is identical in all seventeen tumour
+types under either rule.** The rule had to be frozen because it moved a number between two
+implementations; having frozen it, it moves nothing in the published result, and that is worth
+stating as plainly as a difference would have been.
+
+## What this is, and what it is not
+
+This is not a finding that anyone was wrong, and it is not a claim about any patient. The
+published master regulators are hubs in this network; that is a true and useful thing to be, and
+ovary shows a signal no amount of topology explains. The measurement is narrower and more specific
+than "wrong":
+
+> On this corpus, with this law, in eleven of seventeen tumour types, **the part of the recovery
+> that survives is largely the part that never needed the expression data** — and the independent
+> expression signal that does exist shows up more clearly outside the network of origin than
+> inside it.
+
+That is worth knowing precisely because it is cheap to ask and nobody had asked it. It costs one
+afternoon of public bytes and an exact integer. Every decision that rests on "the method found
+these regulators in this patient's data" deserves to know which half of that sentence is
+load-bearing — and the two halves can now be told apart, by anyone, for free.
+
+---
+
+# The second disease context — and the thing the exact court can do that the old instrument cannot
+
+Cancer closes this charter. Cardiovascular disease rides along as a second disease context,
+because in six weeks of 2026 it produced two clean instances of the failure mode this study was
+written about — the scalar moved, and the system did not.
+
+| trial | drug | readout | result |
+|---|---|---|---|
+| **ZEUS** NCT05021835 | ziltivekimab, an anti-IL-6 **monoclonal antibody** | 31 Jul 2026 | **HR 0.99** (95% CI 0.88–1.11), 6,376 randomised. Target engagement confirmed — IL-6 down, hsCRP down — and it *"did not translate into MACE risk reduction"* |
+| **Lp(a)HORIZON** NCT04023552 | pelacarsen, an **antisense oligonucleotide** | 4 Sep 2026 | Primary endpoint **not met**, 8,323 randomised. Lp(a) *was* lowered — 72–80% in Phase 2b — and it *"did not demonstrate that this translated into reduced cardiovascular risk"* |
+
+**Graded REPORTED, and no table is invented.** ClinicalTrials.gov carries `hasResults = FALSE` for
+ZEUS; HORIZON released no hazard ratio, no confidence interval, no event counts. Both promise full
+data at an unnamed congress. **No court is built on absent data.** The shape law is frozen now and
+the tables are scored when the congress releases them — a real, dated pre-registration.
+
+And one of these two drugs the exact court can grade today, while the other it cannot touch. Saying
+which, and why, is the discrimination that makes the rest believable.
+
+**Ziltivekimab is a monoclonal antibody. It has no nucleotide sequence, and the screen below cannot
+say one word about it.** An instrument that claims to grade everything grades nothing.
+
+**Pelacarsen is a 20-mer, and its sequence is public** — NCATS GSRS, UNII `LSO9H7UZ90`:
+
+```
+5'-T G C T C C G T T G G T G C T T G T T C-3'
+```
+
+As one string, which is what the program is given: `TGCTCCGTTGGTGCTTGTTC`. The transcriptome it
+is screened against is GENCODE v50, pinned by digest so a reader can confirm they hold the same
+bytes: `5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56`.
+
+## Every window in the human transcriptome, counted
+
+`reproduce/pelacarsen-offtarget-whole-transcriptome.swift` asks the question a patient actually
+has, and it is a permanent question that the trial outcome does not touch: **besides LPA, where
+else in the human transcriptome can this molecule bind well enough to matter?**
+
+Watson–Crick complementarity is a *discrete* rule, so it is **counted, not estimated**. Bases are
+integers; an antisense oligo binds antiparallel, so position *i* of the drug pairs with position
+*L−1−i* of the window, and a position pairs exactly when the two codes sum to 3. Every window of
+every transcript is enumerated. No sampling, no seeding heuristic, no e-value, no cutoff inside
+the computation, and no parameter at all. One integer per window — the same integer on every
+machine, in every laboratory, forever.
+
+```
+transcripts scanned : 670670
+windows enumerated  : 1467336203
+```
+
+**It checks itself on the one thing it already knows.** There is exactly one fact this screen can
+be held to in advance: pelacarsen's perfect complement must be in LPA. If the 20/20 hit were
+anywhere else, the screen would be wrong — so it tests that first, and prints no off-target list
+at all unless it passes.
+
+```
+KNOWN-CASE CHECK — the perfect complement must be LPA
+  perfect 20/20 windows : 3
+  genes carrying them   : LPA
+  PASS — the instrument finds the drug's own target and nothing is assumed.
+```
+
+Three windows out of 1,467,336,203 pair 20 of 20, and all three are in LPA, at position
+~3,840 of three separate transcripts. The screen found the drug's binding site knowing only two
+public files.
+
+Then the complete map, with nothing withheld:
+
+| complementarity | windows |
+|---|---|
+| 20 / 20 | 3 |
+| 19 / 20 | 8 |
+| 18 / 20 | 28 |
+| 17 / 20 | 30 |
+| 16 / 20 | 650 |
+| 15 / 20 | 6,823 |
+| 14 / 20 | 51,567 |
+| 13 / 20 | 299,927 |
+| 12 / 20 | 1,398,769 |
+| below 12 / 20 | 1,465,578,398 |
+
+Everything at 19/20 and 18/20 is still inside LPA — the kringle-IV repeat structure of that gene
+returning its own near-copies, which is real biology and exactly what a correct screen should
+show. The first molecules that are **not** LPA appear at 17/20, and they are named in full:
+`LPAL2` (the LPA-adjacent pseudogene, expected), `TMEM254-AS1`, `LINC02606`, `LINC01065`, `ISM1`.
+
+That list did not exist this morning. It is now a permanent, re-derivable object.
+
+```
+MARKER  PELACARSEN_OFFTARGET_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT
+sha256  513de7e9db6556df1895bfce4cb4d69e4816d7b45b75bee1dc8452335c2c7757
+```
+
+## The same windows, scored the conventional way
+
+The conventional screen scores a binding free energy in floating point and calls a window a
+candidate when ΔG falls below a cutoff. Both halves of that sentence are choices, and the program
+measures what each choice costs — on the same 1,757,805 windows, in the same run.
+
+| cutoff (kcal/mol) | candidates, parameter set A | parameter set B | **changed side** |
+|---|---|---|---|
+| −22 | 1,748,696 | 1,734,206 | 14,490 |
+| −26 | 1,493,514 | 1,427,682 | 65,832 |
+| **−28** | 1,236,547 | 1,160,345 | **76,202** |
+| −32 | 667,351 | 610,079 | 57,294 |
+| −36 | 250,607 | 227,370 | 24,067 |
+| −40 | 64,364 | 57,741 | 7,607 |
+
+A and B differ by less than 0.1 kcal/mol per stack — **smaller than the published uncertainty of
+the parameters themselves.** Both are equally defensible, and they do not name the same molecules:
+up to **76,202 windows change side**. And the cutoff is a second free choice stacked on the first
+— moving it from −22 to −40 takes the candidate list from 1.75 million to 64 thousand, a
+twenty-seven-fold swing with no principle available to adjudicate it.
+
+The exact arm has neither knob. A window pairs 17 of 20, or it does not. The threshold in the
+exact arm is only a decision about what to **print**, applied after the arithmetic is finished —
+and because the full histogram is published, anyone can re-make that choice without re-running
+anything. **That is why the seal above covers the exact arm alone: it is the part with nothing to
+perturb.**
+
+## What it costs to not know
+
+- Cardiovascular disease kills **19.8 million people a year — 32% of all deaths** (WHO 2022). US
+  cost **$414.7B/yr**, projected to **$1.8T by 2050**.
+- A cardiovascular Phase 3 that fails destroys a mean **$255.4M** out-of-pocket (DiMasi), at a
+  median **$34,857 per patient** (Davidson, *JACC Basic Transl Sci* 2024).
+- **Cardiovascular Phase 3 → approval is 45.6%.** Entering Phase 3 fails **54.4%** of the time.
+- Elevated Lp(a) affects roughly **20% of people — about 1.4 billion** — and statins do not lower
+  it; they raise it 8–24%.
+
+Two Phase 3 programmes, 14,699 randomised participants, and the scalar-surrogate hypothesis was
+tested at maximum cost and did not carry in either. **Nothing here would have predicted those
+outcomes, and this study does not claim it would.** What it claims is narrower and checkable: a
+pre-registered shape test, and an exhaustive exact off-target map, are instruments that cost an
+afternoon and can be run *before* the $255M — and that anyone, anywhere, with no account and no
+permission, can re-derive byte-for-byte and disagree with.
+
+That last part is the point. Fourteen thousand people volunteered for those two trials. The least
+that is owed them is that the questions asked of the result be ones a stranger can check.

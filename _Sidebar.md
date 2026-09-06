@@ -50,6 +50,7 @@
 - [Study 17 — chemistry InChIKey](Study-17-Chemistry-InChIKey)
 - [Study 18 — material STD](Study-18-Material-STD)
 - [Study 19 — Go First dice](Study-19-Go-First-Dice)
+- [**Study 26** — master regulator bonds](Study-26-Master-Regulator-Bonds) — **17 tumour types, every finding published**
 - [Peer-review bundle](Peer-Review-Conjecture-Bundle)
 - [Conjecture alignment](Conjecture-Alignment-UUM8D)
 
@@ -74,7 +75,6 @@
 - [Study 08 — Gaia BH1](Study-08-Gaia-BH1-Astrometric-Shear) — no corpus until DR4
 - [Study 10 — Fermi / dark matter](Study-10-Fermi-Gamma-Shear-Dark-Matter) — does **not** disprove DM
 - [Study 15 — Skala DFT shear](Study-15-Skala-DFT-Shear)
-- [Study 26 — master regulator bonds](Study-26-Master-Regulator-Bonds)
 - [Study 27 — exact nuclear scattering](Study-27-Exact-Nuclear-Scattering)
 - [Study 28 — wet-bulb court](Study-28-Wet-Bulb-Threshold-Court) — Act 1 sealed
 

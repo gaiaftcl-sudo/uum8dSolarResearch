@@ -45,7 +45,7 @@ if have xcrun || have swiftc; then
         fi
         stage="$(mktemp -d)"; cp "$p" "$stage/main.swift"
         out="$(cd "$ROOT/corpus/flood-lead-time" 2>/dev/null || cd "$HERE"; \
-               $SC -O -swift-version 5 $extra "$stage/main.swift" -o "/tmp/val_$n" 2>/dev/null && "/tmp/val_$n" 2>/dev/null)"
+               $SC -O -swift-version 5 $extra "$stage/main.swift" -o "/tmp/val_$n" 2>/dev/null && "/tmp/val_$n" 2>/dev/null </dev/null)"
         if [ -n "$out" ]; then ok "$n runs"; printf '%s\n' "$out" > "/tmp/out_$n.txt"
         else bad "$n produced no output"; fi
         rm -f "/tmp/val_$n"; rm -rf "$stage"
@@ -79,6 +79,22 @@ check_figure guadalupe-wave-ledger         "180"      ""
 check_figure rate-of-rise-common-window    "885"      ""
 check_figure flourishing-entropy-ledger    "9 resolve exactly" ""
 check_figure flourishing-entropy-ledger    "1/1"      ""
+
+# --- Study 26: the exact discrimination court, and the exhaustive off-target screen ---
+check_figure mr-topology-vs-expression-exact "TOPOLOGY_EXPLAINS: 11 of 17 tumour types" "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "EXPRESSION_ADDS  : 5 of 17 tumour types"  "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "d0051d7a19daa0cb7f1a3d4f7be7433af73401bbf25fe41079f6409c066fee5a" "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "100891344545564193334812497256" "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "9.138e-12" "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "4.756e-6"  "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "1.151e-1"  "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "2.685e-29" "Study-26-Master-Regulator-Bonds.md"
+check_figure mr-topology-vs-expression-exact "SELFTEST PASS" ""
+check_figure pelacarsen-offtarget-whole-transcriptome "513de7e9db6556df1895bfce4cb4d69e4816d7b45b75bee1dc8452335c2c7757" "Study-26-Master-Regulator-Bonds.md"
+check_figure pelacarsen-offtarget-whole-transcriptome "TGCTCCGTTGGTGCTTGTTC" "Study-26-Master-Regulator-Bonds.md"
+check_figure pelacarsen-offtarget-whole-transcriptome "670670" "Study-26-Master-Regulator-Bonds.md"
+check_figure pelacarsen-offtarget-whole-transcriptome "1467336203" "Study-26-Master-Regulator-Bonds.md"
+check_figure pelacarsen-offtarget-whole-transcriptome "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "Study-26-Master-Regulator-Bonds.md"
 
 # --- the landing page's own headline figures ---
 check_figure seasonal-and-alternative      "About fifty tonnes" "SpaceX-Biosphere-Safety.md"
