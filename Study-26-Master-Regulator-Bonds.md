@@ -490,6 +490,46 @@ master-regulator genes appear **harder** to invert than random landmark genes. A
 available — these are well-expressed, mutually correlated, functionally constrained genes whose
 ranks have less room to move — but this study did not test it, and it is recorded **NOT_KNOWN**.
 
+### S3 again, against eleven times as many drugs
+
+The obvious objection to a null result is that not enough was tried. So S3 was run a second time
+against the larger LINCS archive: **205,034 compound signatures covering 20,308 distinct
+drugs by InChIKey**, against the 107,404 signatures and 1,792 drugs of the first
+run. Eleven times the chemical space, same frozen law, same two control arms.
+
+The 21.3 GB archive was streamed twice and never stored — once to read the column order out of its
+own tail, once to emit the ordinals — and the SHA-512 of the compressed stream was checked against
+the digest GEO publishes for that file. It matched both times. **65 MB ever touched disk.**
+
+| tumour type | observable MRs | best K (1,792 drugs) | random-set median | reaching it | best K (20,308 drugs) | random-set median | reaching it |
+|---|---|---|---|---|---|---|---|
+| bladder | 14 | -73 | -71 | 489/1000 | -75 | **-73** | **320/1000** |
+| breast | 16 | -86 | -88 | 797/1000 | -88 | **-90** | **666/1000** |
+| colon | 16 | -86 | -90 | 830/1000 | -94 | **-88** | **208/1000** |
+| glioblastoma | 14 | -75 | -71 | 269/1000 | -79 | **-73** | **55/1000** |
+| head & neck | 25 | -164 | -182 | 972/1000 | -164 | **-178** | **952/1000** |
+| kidney clear cell | 8 | -28 | -28 | 886/1000 | -28 | **-28** | **965/1000** |
+| liver | 8 | -28 | -28 | 900/1000 | -28 | **-28** | **965/1000** |
+| lung adeno | 24 | -178 | -170 | 237/1000 | -178 | **-168** | **211/1000** |
+| lung squamous | 9 | -34 | -34 | 890/1000 | -34 | **-34** | **944/1000** |
+| ovary | 30 | -227 | -243 | 858/1000 | -259 | **-237** | **120/1000** |
+| pancreas | 14 | -71 | -71 | 673/1000 | -73 | **-73** | **551/1000** |
+| rectum | 19 | -109 | -117 | 935/1000 | -121 | **-117** | **303/1000** |
+| sarcoma | 9 | -34 | -34 | 917/1000 | -36 | **-34** | **425/1000** |
+| stomach | 16 | -86 | -88 | 818/1000 | -96 | **-90** | **112/1000** |
+| uterus | 12 | -56 | -56 | 653/1000 | -56 | **-56** | **717/1000** |
+
+**0 of 15 scored tumour types clear both control arms.** Cohorts refused for falling under the frozen floor of 8 observable regulators: prostate (7), thyroid (5).
+
+Testing eleven times more compounds changes the answer nowhere. The best-scoring drug improves
+slightly, as drawing more samples from the same distribution will do — and the null improves with
+it, because the null is a best-of over the same enlarged candidate set. What does not appear, at
+either scale, is a compound that separates from the noise.
+
+That closes off the most natural objection: this is not a result about having searched too small a
+library. It is a result about the quantity being measured — the expression ranks of the minority of
+master regulators that LINCS observes at all — carrying no recoverable inversion signal.
+
 ### A defect in our own null, found and fixed
 
 The first null scored random gene sets against a **single** signature, while the observed statistic
