@@ -817,6 +817,53 @@ rescaling by construction; that argument was already available and is worth noth
 because it does not cover the tie structure. **This measures the part the argument does not
 cover, and the answer is that the ranking survives it in all seventeen tumour types.**
 
+
+## S1-PRIME-BLOOD — the eighteenth context, and why it is not the eighteenth row
+
+S1 ran on seventeen tumour types. All seventeen are **solid tumours**, and that was not a choice —
+it is what the frozen universe rule produced. The rule says open STAR counts from **Primary Tumour**
+aliquots, and GDC types acute myeloid leukaemia samples as
+`Primary Blood Derived Cancer – Peripheral Blood`. AML has **151 open expression files, none of them
+typed Primary Tumor**, a published master-regulator set of 108, and an ARACNe regulon sitting ready.
+
+So the exclusion was never a missing dataset. It was one word in a rule we froze in advance.
+
+**The rule was not moved.** Amending a frozen universe after seeing seventeen results is exactly the
+move this program refuses — a threshold changed after the data is a decoration on a conclusion. AML
+is therefore scored as its **own registered test**, with its own name, its own line, and no
+arithmetic that touches S1's seventeen. S1 remains seventeen contexts, reported as run. The single
+amended token is declared: `Primary Blood Derived Cancer – Peripheral Blood` in place of
+`Primary Tumor`. Everything else — open access, STAR counts, one file per case by ascending UUID,
+md5 recorded — is identical.
+
+**151 files found, 151 verified, 0 skipped.**
+
+The instrument validates here as it does everywhere: ranked on half the patients and scored against
+the other half, **139 of 141** regulators come back, against
+1 under label permutation and a chance expectation of
+3.31.
+
+| arm | σ of 108 | uniform null | degree-matched null | exact tail |
+|---|---|---|---|---|
+| **S1** — ranked by patient expression | 4 | 142/1000 | 884/1000 | 0.1293 |
+| **S1′** — size normalised away | 2 | 597/1000 | 598/1000 | 0.5831 |
+| topology, net sign | 1 | 859/1000 | 999/1000 | 0.8617 |
+| **topology, edge count alone** | **9** | **0/1000** | 199/1000 | **0.125e-3** |
+
+**In blood, the pattern is sharper than in any solid tumour.** Reading the patient's expression
+recovers 4 regulators at p = 0.1293 — which does not clear
+significance at all. Counting edges, never opening the expression matrix, recovers
+9 at p = 0.125e-3, with **0 of 1,000** random sets
+reaching it. The expression arm does not merely fail to add; it recovers **5 fewer**
+than counting connections does.
+
+That matters because every other context in this study is a solid tumour. The topology finding is
+therefore **not an artefact of solid-tumour biology** — it holds, and holds harder, in a cancer of
+the blood.
+
+The amendment is also the answer to a question a reader should ask of the seventeen: *what else did
+your frozen rule exclude?* One thing, nameable, and now measured rather than left as a footnote.
+
 ## What was excluded, and why — measured, with a control arm
 
 Three of the twenty tumour types with a published master-regulator set are not scored here. They
