@@ -175,8 +175,8 @@ nothing to argue with.
 | Transcriptome | GENCODE v50, for the exact off-target screen | 670,670 transcripts, sha256 `5a320f52…` |
 
 **Seventeen tumour types** carry both a published master-regulator set and enough open expression
-to score. Three carry a published set and no scoreable open counts, and they are named rather
-than dropped quietly: `laml`, `lgg`, `skcm`.
+to score. Three carry a published set and no scoreable open counts — `laml`, `lgg`, `skcm`. They are named
+rather than dropped quietly, and the measured reason for each is given below.
 
 ## First, the instrument had to prove it can fire
 
@@ -351,6 +351,71 @@ And the ChIP-seq networks show nothing at all. **That must be read with its powe
 pools hold 118 to 296 regulators against ARACNe's ~5,900, so the smallest of them can only place
 2 to 19 published regulators in the pool at all. A zero there is a weak zero, and it is reported
 as one rather than counted as a refutation.
+
+
+## Is any of this an artifact of sequencing depth?
+
+Patients are not sequenced equally, and a ranking that quietly tracked read depth rather than
+biology would make everything above an artifact. So it was measured, on real data, with no
+simulation and no downsampling.
+
+Sort each cohort's patients by **total library size** and take the shallowest third and the
+deepest third — two disjoint groups chosen to disagree about depth as much as the cohort allows.
+Rank regulators on the **shallow** patients, take the top 141, and score that set against the
+**deep** patients' own ranking. If the law were a depth readout, these two groups could not agree.
+
+| tumour type | library-size range across patients | depth gap, shallow third vs deep third | zero-count genes, shallow | deep | shallow-ranked set found in deep patients |
+|---|---|---|---|---|---|
+| bladder | 6.44× | 1.77× | 50.2% | 45.0% | **135 / 141** |
+| breast | 5.91× | 1.63× | 47.8% | 43.5% | **130 / 141** |
+| colon | 56.17× | 2.64× | 54.9% | 46.9% | **127 / 141** |
+| glioblastoma | 7.24× | 1.47× | 40.4% | 32.9% | **124 / 141** |
+| head & neck | 4.36× | 1.57× | 48.5% | 46.1% | **131 / 141** |
+| kidney clear cell | 30.5× | 1.6× | 44.4% | 40.7% | **132 / 141** |
+| liver | 6.43× | 1.53× | 54.8% | 50.1% | **133 / 141** |
+| lung adenocarcinoma | 5.76× | 2.3× | 48.2% | 42.0% | **132 / 141** |
+| lung squamous | 7.33× | 1.66× | 45.5% | 42.2% | **133 / 141** |
+| ovary | 9.11× | 1.96× | 43.5% | 36.8% | **136 / 141** |
+| pancreas | 4.41× | 1.6× | 47.8% | 43.6% | **122 / 141** |
+| prostate | 5.31× | 1.61× | 47.9% | 44.7% | **130 / 141** |
+| rectum | 6.46× | 2.69× | 54.1% | 46.4% | **116 / 141** |
+| sarcoma | 4.34× | 1.43× | 50.2% | 46.4% | **129 / 141** |
+| stomach | 6.5× | 1.7× | 36.8% | 34.4% | **136 / 141** |
+| thyroid | 6.77× | 1.43× | 48.0% | 45.2% | **127 / 141** |
+| uterus | 13.31× | 2.12× | 48.7% | 46.9% | **131 / 141** |
+
+Chance throughout is about 3.4. The groups genuinely differ: library sizes span up to **56-fold**
+within a single cohort, the deep third carries up to 2.7× the reads of the shallow third, and
+several percent more of the genome is at zero counts in the shallow group — which matters, because
+zeros form one large tied block and the tie rule is part of the law.
+
+The chartered ordinal is a rank *within* a sample, so it is invariant to any strictly monotone
+rescaling by construction; that argument was already available and is worth nothing on its own,
+because it does not cover the tie structure. **This measures the part the argument does not
+cover, and the answer is that the ranking survives it in all seventeen tumour types.**
+
+## What was excluded, and why — measured, with a control arm
+
+Three of the twenty tumour types with a published master-regulator set are not scored here. They
+are named rather than dropped quietly, and the reason for each is measured against the live GDC
+API rather than asserted.
+
+| tumour type | published MR set | why it is not scored |
+|---|---|---|
+| **acute myeloid leukaemia** | 108 regulators | The data exists — **151** open expression files — but all of them are typed `Primary Blood Derived Cancer – Peripheral Blood`, and **0** are `Primary Tumor`. AML is a blood cancer. The universe rule "Primary Tumour only" was frozen before any scoring, and it is not moved afterwards to admit a cohort. |
+| **lower-grade glioma** | 29 regulators | 516 open Primary Tumour files exist, but the published regulatory network carries **no regulon for this context** — it covers 25 contexts and this is not among them. Nothing to score against. |
+| **melanoma** | 110 regulators | 103 open Primary Tumour files exist; again **no regulon** in the published network. |
+
+The query discriminates: the same filter returns **412** Primary Tumour files for bladder, so a
+zero above is a real zero and not a broken question.
+
+**AML is the interesting one, and it is a finding about our own frozen rule rather than about the
+biology.** The corpus for it is public, complete, and has a regulon waiting. It is excluded by a
+single word in a rule we froze in advance, for a good reason — mixing solid-tumour and
+blood-derived sample types in one universe would have been a silent confound — and the discipline
+that makes the rest of this page worth reading is the same discipline that keeps that word in
+place today. It is the obvious first amendment for a successor charter, declared here so that a
+later run cannot present it as a new idea.
 
 ## Two defects we found in our own instrument, and fixed
 
