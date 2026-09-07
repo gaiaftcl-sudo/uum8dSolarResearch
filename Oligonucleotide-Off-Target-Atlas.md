@@ -22,8 +22,18 @@ with position *L*−1−*i* of the window, and a position pairs exactly when the
 strands screened    : 472
 substances          : 350
 transcripts scanned : 670670
-windows enumerated  : 1467336293   (per strand; lengths differ)
+windows enumerated  : per strand LENGTH — a 20-mer has 1467336203 scoreable windows
 ```
+
+That last line was corrected on 2026-09-06. It previously read `1467336293`, presented as a
+property of the run. It was neither: the count is a function of strand LENGTH, and only strand
+index 0 incremented the counter, so the figure named one arbitrary strand — and it was inflated by
+windows containing an `N` that the mismatch early-exit reached before the invalid-base check. **No
+off-target list, no histogram bucket and no seal moved**, because a window at or above the report
+floor never takes that exit and the sealed transcript covers the histograms and the hit lists, not
+the below-floor bucket. The repair decides window cleanliness once per transcript, independent of
+any strand scanning order. It was found by a second, independently written screen disagreeing by 99
+windows while agreeing exactly on all nine scored buckets.
 
 ## Why the scope is the registry and not a list
 

@@ -531,16 +531,27 @@ naming their own digest, which is the instrument working, not failing.
 
 ## Reproduce
 
+Everything the screen reads is in the clone. No account, no key, no data-use agreement, and no
+edit to the source — the program discovers its own inputs by walking outward from the binary and
+the working directory, and refuses by name if it cannot find them.
+
 ```bash
 git clone https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git
 cd uum8dSolarResearch
-curl -sL 'https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true+AND+organism_id:9606&format=fasta' \
-  > raw/uniprot_human_reviewed.fasta
-# the input paths are a compile-time constant; point ROOT at your clone
-sed -i '' "s|static let ROOT = .*|static let ROOT = \"$PWD\"|" reproduce/protein-novelty-exact.swift
+( cd corpus/eric && shasum -a 256 -c SHA256SUMS )           # the generated corpora
+( cd corpus/eric/raw && shasum -a 256 -c SHA256SUMS )       # the human reference proteome
 xcrun swiftc -O -swift-version 5 reproduce/protein-novelty-exact.swift -o /tmp/pn
 /tmp/pn < /dev/null
 bash reproduce/validate.sh
+```
+
+The reference proteome is committed so the screen runs from a clone rather than only its refusal
+path. It is the UniProt reviewed human set and can be re-fetched independently to confirm the
+pinned digest:
+
+```bash
+curl -sL 'https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true+AND+organism_id:9606&format=fasta' \
+  | shasum -a 256    # bf1bc7e188e55199a2447fc20d25834db5f7f798daa818432370deb4a6b0df5e
 ```
 
 The program takes **no arguments** and reads **no stdin**. It prints the published reference figures
