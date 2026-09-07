@@ -1,0 +1,14 @@
+# THE LIBRARY OF COMPOUND CURES AND THEIR EXACT SAFETY MAPS
+#
+# Every ceiling below is an integer and is tested PER VALUE:
+#     count(most repeated value on that axis) <= declared
+# never in aggregate. The aggregate form this law once used admitted a library in
+# which one value carried five entries against a declared ceiling of two.
+LIBRARY                          COMPOUNDS
+DECLARED_ENTRIES_PER_IDENTITY    1
+DECLARED_ENTRIES_PER_PROGRAM     1
+DECLARED_ENTRIES_PER_SEAL        1
+DECLARED_ENTRIES_PER_MEASURED    1
+DECLARED_ENTRIES_PER_TRIPLE      1
+PUBLISHED_PAGE                   Library-Of-Compound-Cures.md
+OPEN_SLOT                        The registry-wide specificity ranking across all in-scope strands. Running; not available at this grading. Named 2026-09-07.

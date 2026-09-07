@@ -1,0 +1,40 @@
+{
+  "study": "26",
+  "stage": "S3-COMBINATION",
+  "cohort": "gbm",
+  "observable_mrs": 14,
+  "pairs_of_genes": 91,
+  "model": "integer sum of Crossing-B ordinals",
+  "M_MIN": 8,
+  "compound_signatures": 107404,
+  "vehicle_signatures": 6467,
+  "best_single_K": -75,
+  "best_single_drug": "SB-242235",
+  "pair_pool_single_agents": 300,
+  "pairs_scored": 44850,
+  "best_pair_K": -89,
+  "best_pair": [
+    "drospirenone",
+    "alpelisib"
+  ],
+  "gain_over_best_single": -14,
+  "control_vehicle_pairs": {
+    "pairs_scored": 45150,
+    "best_K": -65,
+    "VERDICT": "PASS"
+  },
+  "control_self_pairs": {
+    "best_K": -75,
+    "note": "a signature combined with itself; any gain here is arithmetic, not combination"
+  },
+  "null_random_gene_sets_pairs": {
+    "draws": 200,
+    "best_pair_K_observed": -89,
+    "null_best_min": -83,
+    "null_best_median": -69,
+    "null_best_max": -59,
+    "draws_reaching_observed": 0,
+    "VERDICT": "PASS"
+  },
+  "verdict": "SCORED"
+}

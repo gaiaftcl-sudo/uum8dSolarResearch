@@ -102,10 +102,21 @@ The law was run, not just written. Producing program: `reproduce/fusion-control-
 The stable terminals the harness checks — claims a slower machine must still satisfy, or the study is wrong:
 
 ```
-HEADROOM_EXCEEDS_50X            TRUE
-VERDICT_INSIDE_ONE_MS_BUDGET    TRUE
 VERDICT_DETERMINISTIC_10K       TRUE
+VERDICT_RENDERED_AT_INDEX_208   TRUE
 ```
+
+**Corrected 2026-09-07.** Two terminals were removed from that block, and the reason is the same
+rule this wiki applies to a seal: a published claim must never be a timing. `HEADROOM_EXCEEDS_50X`
+and `VERDICT_INSIDE_ONE_MS_BUDGET` were printed as stable terminals and pinned by the harness, but
+both measure how much spare CPU the host had. Measured on this machine at load average 425, headroom
+read **44.4x** and the terminal printed FALSE — turning the harness red on a run in which nothing
+about the law had changed. A gate that flips with system load is not measuring the thing it names.
+
+Neither figure is deleted; deleting a measurement to make a gate green is the wrong repair. Both now
+print in a block labelled a dated wall measurement of this host, with the measured multiple beside
+them, and neither is pinned. What the harness pins instead are integer properties of the law that
+any machine reproduces exactly at any load.
 
 One core keeps up with roughly **265 simultaneous 2 MHz channels**, and the decision renders in **692 nanoseconds — about 1,446× inside a single 1 ms budget.** Published trained-control loops run on a millisecond cadence and batch on a GPU.
 

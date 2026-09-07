@@ -1,0 +1,40 @@
+{
+  "study": "26",
+  "stage": "S3-COMBINATION",
+  "cohort": "sarc",
+  "observable_mrs": 9,
+  "pairs_of_genes": 36,
+  "model": "integer sum of Crossing-B ordinals",
+  "M_MIN": 8,
+  "compound_signatures": 107404,
+  "vehicle_signatures": 6467,
+  "best_single_K": -34,
+  "best_single_drug": "felbamate",
+  "pair_pool_single_agents": 300,
+  "pairs_scored": 44850,
+  "best_pair_K": -36,
+  "best_pair": [
+    "felbamate",
+    "PSI-6130"
+  ],
+  "gain_over_best_single": -2,
+  "control_vehicle_pairs": {
+    "pairs_scored": 45150,
+    "best_K": -36,
+    "VERDICT": "FAIL_VEHICLE_PAIRS_REACH_IT"
+  },
+  "control_self_pairs": {
+    "best_K": -34,
+    "note": "a signature combined with itself; any gain here is arithmetic, not combination"
+  },
+  "null_random_gene_sets_pairs": {
+    "draws": 200,
+    "best_pair_K_observed": -36,
+    "null_best_min": -36,
+    "null_best_median": -34,
+    "null_best_max": -30,
+    "draws_reaching_observed": 43,
+    "VERDICT": "FAIL_RANDOM_GENE_SETS_REACH_IT"
+  },
+  "verdict": "SCORED"
+}

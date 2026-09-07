@@ -1,0 +1,17 @@
+# THE STUDY-37 SHAPE, DECLARED AS GENEROUSLY AS IT CAN BE, AND STILL REFUSED.
+# Four rows, ONE identity, four different titles. Every other ceiling is set to 4 — per
+# program, per seal, per measured, per triple — so the refusal cannot be blamed on a mean
+# declaration anywhere else. DECLARED_ENTRIES_PER_IDENTITY 1 is the only thing left, and it
+# is what catches it. The TITLE census reports 4 distinct beside it, which is the wrong
+# counter reporting perfect diversity over the same four rows.
+#
+# A control case is not published, so it names a page that does not exist and clause L9
+# reports NOT_KNOWN rather than REFUSED. A control case must be refused for the ONE reason
+# it was built to demonstrate, or it demonstrates nothing.
+LIBRARY                          COMPOUNDS
+DECLARED_ENTRIES_PER_IDENTITY    1
+DECLARED_ENTRIES_PER_PROGRAM     4
+DECLARED_ENTRIES_PER_SEAL        4
+DECLARED_ENTRIES_PER_MEASURED    4
+DECLARED_ENTRIES_PER_TRIPLE      4
+PUBLISHED_PAGE                   This-Control-Case-Is-Not-Published.md

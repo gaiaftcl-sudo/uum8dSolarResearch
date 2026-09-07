@@ -1,7 +1,17 @@
+## 📚 The Library of Affine Quantum Truth
+
+**The front door. Libraries that grow, not studies that close — and a law that refuses.**
+
+- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 61 arms that prove it refuses. **The primary artefact.**
+- [**The Library of Proteins**](Library-Of-Proteins) — 80,080 generated sequences, novel chemical matter, graded honestly
+- [**The Library of Compound Cures**](Library-Of-Compound-Cures) — exact off-target maps for the medicines the registry publishes
+- [**The Library of Material Systems**](Library-Of-Material-Systems) — what a system is, what was measured, where the law lives. C-007 absolute: no recipes
+
 ## 🧬 Cures — the exact safety screen
 
 - [**The off-target atlas** — every nucleic-acid medicine the registry publishes](Oligonucleotide-Off-Target-Atlas)
 - [**Where else could this guide cut?** — the whole genome, counted](CRISPR-Genome-Off-Target-Map)
+- [**Designed, or forced by its own bases?** — every clinical CRISPR guide, counted](CRISPR-Clinical-Guide-Atlas)
 - [**Are the generated cures new?** — 80,080 peptides against the human proteome](Generated-Peptides-Against-The-Human-Proteome)
 - [**Cures Without the Gatekeeper** — the medicine front door](Cures-Without-The-Gatekeeper)
 - [**Zilganersen** — the first treatment for Alexander disease](The-Safety-Question-Made-Exact)

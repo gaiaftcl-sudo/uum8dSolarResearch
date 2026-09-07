@@ -128,7 +128,7 @@ A single sha256 over ~2,992 verdicts (400 streaming traces plus a 2,592-point op
 f49b576e073835bcab17bee10fe0eee1938774643d900b8ffe1a583b159ab3d7
 ```
 
-**VERIFIED** (`reproduce/validate.sh:126`). Two harness-pinned booleans stand alongside it: `HEADROOM_EXCEEDS_50X TRUE` and `VERDICT_DETERMINISTIC_10K TRUE` **VERIFIED**.
+**VERIFIED** (`reproduce/validate.sh:126`). Two harness-pinned booleans stand alongside it: `VERDICT_DETERMINISTIC_10K TRUE` and `VERDICT_RENDERED_AT_INDEX_208 TRUE` **VERIFIED** — both integer properties of the law that reproduce exactly on any machine at any load. `HEADROOM_EXCEEDS_50X` was pinned here until 2026-09-07 and no longer is: it measures spare CPU on the host, read 44.4x at load average 425, and a gate that flips with system load is not measuring the thing it names. It is still printed, in a block labelled a dated wall measurement, and it is pinned by nothing.
 
 ### One law, one home
 

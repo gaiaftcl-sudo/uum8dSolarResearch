@@ -1,0 +1,26 @@
+# name	unii	product	nuclease	pam	pam_side	spacer_end	spacer_len	spacer	declared_target	inn_list	anchor_evidence
+EXAGAMGLOGENE AUTOTEMCEL GUIDE RNA SEQUENCE	L28RZ5CC6K	exagamglogene autotemcel	SpCas9	NGG	3prime	5prime	20	CTAACAGTTGCTTTTATCAC	BCL11A erythroid enhancer	pl124	5' of [SpCas9 sgRNA repeat] at offset 20
+EVONCABTAGENE PAZURGEDLEUCEL SINGLE GUIDE RNA (SGRNA) TARGETING THE .BETA.2M LOCUS	EQW8RVL4CV	evoncabtagene pazurgedleucel	SpCas9	NGG	3prime	5prime	20	GCTACTCTCTCTTTCTGGCC	B2M	pl125	5' of [SpCas9 sgRNA repeat] at offset 20
+EVONCABTAGENE PAZURGEDLEUCEL SINGLE GUIDE RNA (SGRNA) TARGETING THE TRAC LOCUS	FKP72X9XKK	evoncabtagene pazurgedleucel	SpCas9	NGG	3prime	5prime	20	AGAGCAACAGTGCTGTGGCC	TRAC	pl125	5' of [SpCas9 sgRNA repeat] at offset 20
+Nenzinacogene autogeleucel gRNA targeting CCR5	YGA7BAF735	nenzinacogene autogeleucel	SpCas9	NGG	3prime	5prime	20	CAATGTGTCAACTCTTGACA	CCR5	pl134	5' of [SpCas9 sgRNA repeat] at offset 20
+Ristoglogene autogetemcel gRNA	5UBM9CGH6K	ristoglogene autogetemcel	SpCas9-D10A-BE	NGG	3prime	5prime	20	CTTGACCAATAGCCTTGACA	HBG1/HBG2 promoter	pl132	5' of [SpCas9 sgRNA repeat] at offset 20
+Soficabtagene geleucel single gRNA targeting CD7 locus	ENS57C5JUZ	soficabtagene geleucel	SpCas9	NGG	3prime	5prime	20	ATCACGGAGGTCAATGTCTA	CD7	pl132	5' of [SpCas9 sgRNA repeat] at offset 20
+Soficabtagene geleucel single gRNA targeting TRAC locus	93A4Y2S6E2	soficabtagene geleucel	SpCas9	NGG	3prime	5prime	20	GAGAATCAAAATCGGTGAAT	TRAC	pl132	5' of [SpCas9 sgRNA repeat] at offset 20
+TACATRESGENE AUTOLEUCEL GUIDE RNA (GRNA) SEQUENCES (TRBC-1)	3KQV6T97QD	tacatresgene autoleucel	SpCas9	NGG	3prime	5prime	20	GGCTCTCGGAGAATGACGAG	undeclared in record	pl124	5' of [SpCas9 sgRNA repeat] at offset 20
+TGFBR2-5 sgRNA (zugocabtagene geleucel)	GPK7BXF67W	zugocabtagene geleucel	SpCas9	NGG	3prime	5prime	20	CCCCTACCATGACTTTATTC	TGFBR2	pl133	5' of [SpCas9 sgRNA repeat] at offset 20
+ZC3H12A-10 sgRNA (zugocabtagene geleucel)	RC77WK8XEG	zugocabtagene geleucel	SpCas9	NGG	3prime	5prime	20	ACGACGCGTGGGTGGCAAGC	ZC3H12A	pl133	5' of [SpCas9 sgRNA repeat] at offset 20
+Tremtelectogene empogeditemcel Guide RNA	B6ZZE44GUB	tremtelectogene empogeditemcel	SpCas9	NGG	3prime	5prime	20	CCTCACTAGACTTGACCCAC	undeclared in record	pl127	5' of [SpCas9 sgRNA repeat] at offset 20
+VOLAMCABTAGENE DURZIGEDLEUCEL SINGLE GUIDE RNA (SGRNA) TARGETING THE CD70 LOCUS	4M5F9ZC9EH	volamcabtagene durzigedleucel	SpCas9	NGG	3prime	5prime	20	GCTTTGGTCCCATTGGTCGC	CD7	pl126	5' of [SpCas9 sgRNA repeat] at offset 20
+NULABEGLOGENE AUTOGEDTEMCEL SINGLE GUIDE RNA SEQUENCE TARGETING THE FIRST EXON OF THE HUMAN .BETA.-GLOBIN (HBB) GENE	AAC95PP873	nulabeglogene autogedtemcel	SpCas9	NGG	3prime	5prime	20	CTTGCCCCACAGGGCAGTAA	HBB exon 1	pl126	whole record is the spacer (no scaffold registered, 20nt)
+Taziguran	A2N98QL2SL	taziguran (+ ozunacogene parvec)	SpCas9	NGG	3prime	5prime	20	TAAAGCATAGTGCAATGGAT	ALB intron 1	pl134	5' of [SpCas9 sgRNA repeat] at offset 20
+Nexiguran	5G537B4BTJ	nexiguran (NTLA-2001)	SpCas9	NGG	3prime	5prime	20	AAAGGCTGCTGATGACACCT	TTR	pl127	5' of [SpCas9 sgRNA repeat] at offset 20
+Lonvoguran	D8UQ4B2T7M	lonvoguran (NTLA-2002)	SpCas9	NGG	3prime	5prime	20	GGATTGCGTATGGGACACAA	KLKB1	pl130	5' of [SpCas9 sgRNA repeat] at offset 20
+CS-101-msgRNA (ataglogene autogetemcel)	HN5K2P5L5F	ataglogene autogetemcel CS-101-msgRNA	SpCas9-D10A-BE	NGG	3prime	5prime	20	CTTGACCAATAGCCTTGACA	HBG1/HBG2 promoter	pl133	5' of [SpCas9 sgRNA repeat, G4 variant (transformer base editor)] at offset 20
+CS-101-hsgRNA (ataglogene autogetemcel)	YG9GZ69KEF	ataglogene autogetemcel CS-101-hsgRNA	SpCas9-D10A-BE	NGG	3prime	5prime	10	ACTCCACCCA	homing guide, 10nt spacer	pl133	5' of [SpCas9 sgRNA repeat, G4 variant (transformer base editor)] at offset 10
+Peclacabtagene geleucel B2M-tgt12 chRDNA	FJ27AXN4HM	peclacabtagene geleucel	AsCas12a	TTTV	5prime	3prime	20	AGTGGGGGTGAATTCAGTGT	B2M	pl133	3' of [Cas12a direct repeat, chimeric RNA-DNA] ending at offset 20
+Peclacabtagene geleucel PDCD1-tgt19 chRDNA	EVN3GQ2W9C	peclacabtagene geleucel	AsCas12a	TTTV	5prime	3prime	20	GCACGAAGCTCTCCGATGTG	PDCD1	pl133	3' of [Cas12a direct repeat, chimeric RNA-DNA] ending at offset 20
+Peclacabtagene geleucel TRAC-tgt12 chRDNA	HPQ9VN6BRV	peclacabtagene geleucel	AsCas12a	TTTV	5prime	3prime	20	GAGTCTCTCAGCTGGTACAC	TRAC	pl133	3' of [Cas12a direct repeat, chimeric RNA-DNA] ending at offset 20
+Renizgamglogene autogedtemcel the guide RNA	RT5PXR4D9S	renizgamglogene autogedtemcel	AsCas12a	TTTV	5prime	3prime	21	CCTTGTCAAGGCTATTGGTCA	HBG1/HBG2 promoter	pl129	3' of [Cas12a direct repeat, all-RNA] ending at offset 45
+Persicabtagene lemgedleucel sgRNA targeting B2M locus	95YRJ2A5AD	persicabtagene lemgedleucel	Cas12b	TTN	5prime	3prime	22	ACCCCCACTGAAAAAGATGAGT	B2M	pl131	3' of [Cas12b sgRNA 3' end of scaffold] ending at offset 97
+Persicabtagene lemgedleucel sgRNA targeting CIITA locus	69QP5QX83X	persicabtagene lemgedleucel	Cas12b	TTN	5prime	3prime	22	GCATAAGCCTCCCTGGTCTCTT	CIITA	pl131	3' of [Cas12b sgRNA 3' end of scaffold] ending at offset 97
+Persicabtagene lemgedleucel sgRNA targeting TRAC locus	J5PZ6ZT8TB	persicabtagene lemgedleucel	Cas12b	TTN	5prime	3prime	22	GGTTCCGAATCCTCCTCCTGAA	TRAC	pl131	3' of [Cas12b sgRNA 3' end of scaffold] ending at offset 97

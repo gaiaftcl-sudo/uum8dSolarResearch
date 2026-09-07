@@ -793,6 +793,42 @@ vehicle-pair control, the self-pair control, and the random-gene-set null at **0
 Every pair, with both compound names and its InChIKey rail, is in the result files the reproduce
 command regenerates. **A wet-lab should synthesize and test these.**
 
+
+### Re-derive the eleven pairs yourself
+
+These pairs were published on 2026-09-06 as a bench handoff, and for one day they were **not
+re-derivable**: the compound names appeared nowhere in this repository except the prose above. No
+program printed them and no corpus carried them. This wiki's own harness rule is that a number in a
+page which no program prints is not reproducible, and that rule applies to our own headline result
+exactly as it applies to anyone else's.
+
+That is closed. The per-cohort results the screen wrote are now in the repository, pinned by digest,
+and a program reads them and prints every figure above:
+
+```bash
+git clone https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git
+cd uum8dSolarResearch
+( cd corpus/study-26-combination && shasum -a 256 -c SHA256SUMS )
+xcrun swiftc -O -swift-version 5 reproduce/study26-combination-pairs-exact.swift -o /tmp/s26c
+/tmp/s26c < /dev/null
+```
+
+```
+MARKER  STUDY26_COMBINATION_PAIRS__ELEVEN_CLEAR_ALL_THREE_CONTROLS
+SEAL sha256(transcript) = d0117523ff3b950a0741de281671c0bd977f8dc003f41972f2bfac2f50994d74
+```
+
+**What that program is, and what it is not.** It is a faithful reader of the screen's sealed output,
+and it says so on every path. It does not re-run the combination screen — that needs the LINCS rank
+matrices, which are gigabytes and are fetched from GEO rather than committed. So it makes the
+published figures checkable against the bytes the screen produced; re-deriving those bytes from
+LINCS is a separate and larger reproduction.
+
+It carries a known-case check that runs before any table: the published gain must equal
+`best_pair − best_single` on all fifteen rows. Substituting a single digit in one result file makes
+it report the disagreeing row and emit no table and no seal. Given no corpus at all it refuses
+rather than printing an empty result, and its seal is byte-identical from any directory.
+
 **The bound, equally direct.** Affine.Earth does **not** call any pair safe, effective, or ready for
 a patient. The additive model is a model — two compounds given together are not guaranteed to act
 as the sum of their signatures. This measures expression ranks of landmark genes, not protein

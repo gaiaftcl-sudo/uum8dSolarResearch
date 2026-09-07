@@ -43,12 +43,26 @@ if have xcrun || have swiftc; then
         if grep -q "FusionOperatingPointLaw\.\|OperatingEnvelope(" "$p" 2>/dev/null; then
             extra="$extra $(ls "$ROOT/app/FusionCourt/Sources/FusionOperatingPoint"/*.swift 2>/dev/null | tr '\n' ' ')"
         fi
-        stage="$(mktemp -d)"; cp "$p" "$stage/main.swift"
+        stage="$(mktemp -d)"; cp "$p" "$stage/main.swift"; berr="$(mktemp)"
         out="$(cd "$ROOT/corpus/flood-lead-time" 2>/dev/null || cd "$HERE"; \
-               $SC -O -swift-version 5 $extra "$stage/main.swift" -o "/tmp/val_$n" 2>/dev/null && "/tmp/val_$n" 2>/dev/null </dev/null)"
+               $SC -O -swift-version 5 $extra "$stage/main.swift" -o "/tmp/val_$n" 2>"$berr" && "/tmp/val_$n" 2>/dev/null </dev/null)"
         if [ -n "$out" ]; then ok "$n runs"; printf '%s\n' "$out" > "/tmp/out_$n.txt"
-        else bad "$n produced no output"; fi
-        rm -f "/tmp/val_$n"; rm -rf "$stage"
+        else
+            # A STALE TRANSCRIPT IS WORSE THAN NO TRANSCRIPT, and it was being left in place.
+            # When a build failed, /tmp/out_<program>.txt from an EARLIER run survived, so the
+            # harness printed ONE failure and then passed every check_figure pinned to that
+            # program against yesterday's bytes. Removing it makes those rows report SKIP —
+            # absent, which is a third answer and not a pass.
+            rm -f "/tmp/out_$n.txt"
+            # DID NOT COMPILE and COMPILED BUT PRINTED NOTHING are different answers and were
+            # printed alike, with the compiler's reason discarded to /dev/null.
+            if [ -s "$berr" ]; then
+                bad "$n DID NOT COMPILE — $(head -1 "$berr" | cut -c1-160)"
+            else
+                bad "$n compiled and printed nothing — every exit must print its reference figures"
+            fi
+        fi
+        rm -f "/tmp/val_$n" "$berr"; rm -rf "$stage"
     done
 else
     echo "  SKIP — no Swift toolchain on this host; the programs are the evidence, install Swift to run them"
@@ -96,6 +110,15 @@ check_figure pelacarsen-offtarget-whole-transcriptome "670670" "Study-26-Master-
 check_figure pelacarsen-offtarget-whole-transcriptome "1467336203" "Study-26-Master-Regulator-Bonds.md"
 check_figure pelacarsen-offtarget-whole-transcriptome "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "Study-26-Master-Regulator-Bonds.md"
 
+# --- Study 26 S3-COMBINATION: the eleven pairs, made re-derivable 2026-09-07 ---
+check_figure study26-combination-pairs-exact "STUDY26_COMBINATION_PAIRS__ELEVEN_CLEAR_ALL_THREE_CONTROLS" "Study-26-Master-Regulator-Bonds.md"
+check_figure study26-combination-pairs-exact "d0117523ff3b950a0741de281671c0bd977f8dc003f41972f2bfac2f50994d74" "Study-26-Master-Regulator-Bonds.md"
+check_figure study26-combination-pairs-exact "estradiol + AMG-208" "Study-26-Master-Regulator-Bonds.md"
+check_figure study26-combination-pairs-exact "olaparib + ursodeoxycholyltaurine" "Study-26-Master-Regulator-Bonds.md"
+check_figure study26-combination-pairs-exact "drospirenone + alpelisib" "Study-26-Master-Regulator-Bonds.md"
+check_figure study26-combination-pairs-exact "HMN-214 + saracatinib" "Study-26-Master-Regulator-Bonds.md"
+check_figure study26-combination-pairs-exact "XMD-892 + NVP-BGJ398" "Study-26-Master-Regulator-Bonds.md"
+
 # --- the genome-wide CRISPR off-target map ---
 check_figure crispr-genome-offtarget-exact "487b4f81de2d24bd0bb11ecd1d8d42778e3a5d91b9edb33627c86dcc8df34980" "CRISPR-Genome-Off-Target-Map.md"
 check_figure crispr-genome-offtarget-exact "CRISPR_GENOME_OFFTARGET_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT" "CRISPR-Genome-Off-Target-Map.md"
@@ -117,6 +140,17 @@ check_figure protein-novelty-exact "8c50b3e877d1dac7b68244464ae679fc43ed273d9fd3
 check_figure protein-novelty-exact "bf1bc7e188e55199a2447fc20d25834db5f7f798daa818432370deb4a6b0df5e" "Generated-Peptides-Against-The-Human-Proteome.md"
 check_figure protein-novelty-exact "bb3691b332fb15cdd54c43bc42905478e53c4f4b01862885a7304260498cf3f7" "Generated-Peptides-Against-The-Human-Proteome.md"
 check_figure protein-novelty-exact "24cdbf96621e6c38fa046c7a203fcc3ea09e31fad410d9c1cb51f6d192a04204" "Generated-Peptides-Against-The-Human-Proteome.md"
+# Added 2026-09-07 with the three new PROTEINS library entries (the Q14258 maximum, the
+# residual-overlap null, the composition signature). The library admission law requires a
+# check_figure row in the same commit as the entry, so page and program cannot drift apart.
+check_figure protein-novelty-exact "LETFLAKSRPEL" "Generated-Peptides-Against-The-Human-Proteome.md"
+check_figure protein-novelty-exact "Q14258" "Generated-Peptides-Against-The-Human-Proteome.md"
+check_figure protein-novelty-exact "249852560" "Generated-Peptides-Against-The-Human-Proteome.md"
+# Program-side pin only, because the page carrying it is not yet in this root. The third
+# argument becomes Library-Of-Proteins.md the moment that page lands, and the pin is then
+# two-sided like the rows above it. A row pinned to a page that does not exist is a red
+# harness, and a red harness nobody can fix is how a harness stops being read.
+check_figure protein-novelty-exact "198674 ppm = 19.8674%" ""
 
 # --- the oligonucleotide off-target atlas ---
 check_figure oligo-offtarget-atlas-exact "OLIGO_OFFTARGET_ATLAS_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT" "Oligonucleotide-Off-Target-Atlas.md"
@@ -175,7 +209,8 @@ check_figure fusion-affine-density-invariant "pi-ambiguous by 334 mm^2 across th
 check_figure fusion-affine-magnitude-invariance "AFFINE_INVARIANT_CARRIES_MEANING_AT_ANY_MAGNITUDE" ""
 check_figure fusion-affine-magnitude-invariance "float32 goes blind at 2^24 = 16777216" ""
 check_figure fusion-affine-magnitude-invariance "float64 goes blind at 2^53 = 9007199254740992" ""
-check_figure fusion-control-benchmark    "HEADROOM_EXCEEDS_50X            TRUE" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-benchmark    "VERDICT_DETERMINISTIC_10K       TRUE" "Study-33-Fusion-Control-Verdict-Court.md"
+check_figure fusion-control-benchmark    "VERDICT_RENDERED_AT_INDEX_208   TRUE" "Study-33-Fusion-Control-Verdict-Court.md"
 check_figure fusion-control-benchmark    "VERDICT_DETERMINISTIC_10K       TRUE" ""
 check_figure fusion-control-exact-law     "5 of 5 arms hold" "Study-33-Fusion-Control-Verdict-Court.md"
 check_figure fusion-control-exact-law     "REFUSED_OUT_OF_ENVELOPE" "Study-33-Fusion-Control-Verdict-Court.md"
@@ -232,6 +267,104 @@ check_figure percolation-refutation       "0.29"     "Study-31-Biosphere-Cascade
 check_figure biosphere-cascade-chain      "15.6%"    "Study-31-Biosphere-Cascade.md"
 check_figure biosphere-cascade-chain      "+17.1% to +31.2%" "Study-31-Biosphere-Cascade.md"
 
+
+# --- THE THREE LIBRARIES: one check_figure row per admitted entry, in the same commit.
+# The admission law's own "what must accompany an addition" requires this row and the entry
+# together, so a page and the program behind it cannot drift apart between commits. The sixth
+# PROTEINS entry — homology under substitution — has NO row here on purpose: it is HELD, its
+# program's output in this harness is a refusal, and a row pinned to a figure that program does
+# not print here would be a red harness rather than a measurement.
+check_figure protein-novelty-exact "bb3691b332fb15cdd54c43bc42905478e53c4f4b01862885a7304260498cf3f7" "Library-Of-Proteins.md"
+check_figure protein-novelty-exact "second rows       1400   residues 78694   lengths 20 to 100   labels 12" "Library-Of-Proteins.md"
+check_figure protein-novelty-exact "LETFLAKSRPEL" "Library-Of-Proteins.md"
+check_figure protein-novelty-exact "corpus K+R                   1026307 of 5165782 = 198674 ppm = 19.8674%" "Library-Of-Proteins.md"
+check_figure protein-novelty-exact "aligned-pair match probability = 3266100739639 / 58984123166334 = 55372 ppm" "Library-Of-Proteins.md"
+check_figure zilganersen-offtarget-whole-transcriptome "edcb277ddea44820502b6446b00ed8bdcfdb08835d6785fdee7d1b370420bbaa" "Library-Of-Compound-Cures.md"
+check_figure pelacarsen-offtarget-whole-transcriptome "513de7e9db6556df1895bfce4cb4d69e4816d7b45b75bee1dc8452335c2c7757" "Library-Of-Compound-Cures.md"
+check_figure crispr-genome-offtarget-exact "487b4f81de2d24bd0bb11ecd1d8d42778e3a5d91b9edb33627c86dcc8df34980" "Library-Of-Compound-Cures.md"
+check_figure mr-topology-vs-expression-exact "TOPOLOGY_EXPLAINS: 11 of 17 tumour types" "Library-Of-Compound-Cures.md"
+check_figure oligo-offtarget-atlas-exact "321b36c694b89a45bb81668d7ea62b9c85cf0b3087e18bba586f43b230274b08" "Library-Of-Compound-Cures.md"
+check_figure z8-vs-e8-lattice "E8  : 240" "Library-Of-Material-Systems.md"
+check_figure lora-time-on-air "287.744" "Library-Of-Material-Systems.md"
+check_figure fusion-determinism-digest "f49b576e073835bcab17bee10fe0eee1938774643d900b8ffe1a583b159ab3d7" "Library-Of-Material-Systems.md"
+check_figure unimodular-control-arms "unimodular det=1: det=1  e_1 reachable in sample = true" "Library-Of-Material-Systems.md"
+check_figure fusion-exact-vs-float "PI_BRACKET  355/113 - 333/106 = 1/11978" "Library-Of-Material-Systems.md"
+
+echo "=== 3b. the admission law grades the three libraries in ONE run ==="
+# THE THREE LIBRARIES ARE GRADED TOGETHER, NEVER ONE AT A TIME. F1 — no entry filed in two
+# libraries — is a relation BETWEEN libraries, and a run given one library reports it NOT_KNOWN
+# and exits 2. Three libraries each graded alone, each reporting clean, is three runs none of
+# which asked the question; that is exactly how the first published state of these pages came to
+# carry three clean tables while the combined run refused. This harness makes the combined run
+# the only run, and the pages publish what THIS command prints.
+#
+# EXIT CODES: 0 = every entry admitted; 2 = nothing refused, something HELD for want of evidence
+# present here. Both are green. 1 (something REFUSED) and 3 (control arm failed) are not.
+if have xcrun || have swiftc; then
+    SC2=$(have xcrun && echo "xcrun swiftc" || echo "swiftc")
+    LALSTAGE="$(mktemp -d)"; cp "$HERE/library-admission-law.swift" "$LALSTAGE/main.swift"
+    # Reuse a binary only if it is NEWER THAN THE SOURCE. Section 2 already compiled this
+    # file once to prove it builds; this section needs it with arguments, and the law is the
+    # largest program here. `-nt` is the whole guard: edit the law and it rebuilds.
+    LALBUILT=0
+    [ -x /tmp/val_lal ] && [ /tmp/val_lal -nt "$HERE/library-admission-law.swift" ] && LALBUILT=1
+    if [ "$LALBUILT" -eq 1 ] || $SC2 -O -swift-version 5 "$LALSTAGE/main.swift" -o /tmp/val_lal 2>/dev/null; then
+        /tmp/val_lal --library "$ROOT/library/proteins" \
+                     --library "$ROOT/library/compounds" \
+                     --library "$ROOT/library/materials" \
+                     --reproduce "$HERE" --evidence /tmp > /tmp/out_library-admission-law-graded.txt 2>&1
+        LALEXIT=$?
+        G=/tmp/out_library-admission-law-graded.txt
+        # the control arm, as a RATCHET: every arm must pass and arms may only be added
+        CA=$(grep -m1 '^CONTROL ARM ' "$G")
+        cp_=$(printf '%s' "$CA" | sed -E 's#^CONTROL ARM +([0-9]+)/([0-9]+) PASS$#\1#')
+        ct_=$(printf '%s' "$CA" | sed -E 's#^CONTROL ARM +([0-9]+)/([0-9]+) PASS$#\2#')
+        if [ -n "$cp_" ] && [ "$cp_" = "$ct_" ] && [ "${ct_:-0}" -ge 61 ] 2>/dev/null; then
+            ok "admission law control arm $cp_/$ct_ PASS (ratchet: at least 61 arms, all passing)"
+        else
+            bad "admission law control arm did not pass or has fewer than 61 arms: '$CA'"
+        fi
+        if [ "$LALEXIT" -eq 0 ] || [ "$LALEXIT" -eq 2 ]; then
+            ok "the three libraries graded in ONE run, exit $LALEXIT (0 = all admitted, 2 = something HELD)"
+        else
+            bad "the three libraries graded in ONE run exited $LALEXIT — a refusal or a failed control arm, see $G"
+        fi
+        REFN=$(grep -m1 -E '^  REFUSED +[0-9]+$' "$G" | sed -E 's#^  REFUSED +##')
+        [ "${REFN:-x}" = "0" ] && ok "0 entries refused across all three libraries" \
+                               || bad "entries refused across the libraries: '$REFN'"
+        GRADEDN=$(grep -m1 -E '^  entries graded +[0-9]+$' "$G" | sed -E 's#^  entries graded +##')
+        if [ "${GRADEDN:-0}" -ge 16 ] 2>/dev/null; then
+            ok "$GRADEDN entries graded (ratchet: the library may only grow)"
+        else
+            bad "only '${GRADEDN:-none}' entries graded — a checker given nothing must not report clean"
+        fi
+        if grep -q 'F1_NO_ENTRY_FILED_TWICE    ok' "$G"; then
+            ok "F1 — no entry filed in two libraries, over all three graded together"
+        else
+            bad "F1 did not clear: $(grep -m1 'F1_NO_ENTRY_FILED_TWICE' "$G")"
+        fi
+        for lb in PROTEINS COMPOUNDS MATERIALS; do
+            if grep -q "^LIBRARY $lb   ->   ADMITTED" "$G"; then ok "LIBRARY $lb admitted by the law"
+            else bad "LIBRARY $lb is not ADMITTED: $(grep -m1 "^LIBRARY $lb " "$G")"; fi
+        done
+        # NEGATIVE CONTROL. An instrument that has not been shown to refuse has measured
+        # nothing, so the harness makes it refuse something on every run.
+        EMPTYLIB=$(mktemp -d)
+        /tmp/val_lal --library "$EMPTYLIB" --reproduce "$HERE" --evidence /tmp >/tmp/out_lal_empty.txt 2>&1
+        if [ $? -ne 0 ] && grep -q 'L1_NOT_EMPTY' /tmp/out_lal_empty.txt; then
+            ok "negative control: the law REFUSES an empty library rather than reporting it clean"
+        else
+            bad "the law admitted an EMPTY library — always-green and always-red are the same defect"
+        fi
+        rm -rf "$EMPTYLIB"
+    else
+        bad "library-admission-law.swift does not compile — the libraries are ungraded, and ungraded is not a pass"
+    fi
+    rm -rf "$LALSTAGE"; rm -f /tmp/val_lal
+else
+    echo "  ABSENT  no Swift toolchain — the three libraries are NOT graded this run, which is not a pass"
+fi
+
 echo "=== 4. the public pages carry no private reference ==="
 # grep -c prints 0 AND exits 1 on no match, so `|| echo 0` yields "0\n0" and breaks the
 # arithmetic — which is how the first version of this check reported PASS having counted
@@ -281,6 +414,52 @@ for pat in 'treasury-swarm' 'injector_lease_holder' 'covered_execs' 'observed_ex
     [ "${hits:-0}" -gt 0 ] && { bad "private identifier '$pat' in $hits page(s)"; IDS=1; }
 done
 [ "$IDS" -eq 0 ] && ok "no private identifier in any published page"
+
+
+echo "=== 4d. the library entry files carry no private reference ==="
+# Sections 4 and 4c scan the pages in the repository root. The library ENTRY FILES live one
+# level down, under library/<lib>/, and were outside every one of those globs — the same
+# scoping error, one directory deeper. The positive control here is the standing not-advice
+# line, which every admitted entry must carry by clause E10: if the scanner cannot find it in
+# every file, either an entry has lost its line or the scanner is not working, and both are
+# reported rather than either being assumed.
+LIBFILES=$(ls "$ROOT"/library/*/*.md 2>/dev/null | wc -l | tr -d ' ')
+if [ "${LIBFILES:-0}" -eq 0 ]; then
+    bad "no library entry files found to scan — refusing to report a clean boundary over nothing"
+else
+    LBREACH=0
+    for pat in 'cells/' 'LatticeRender/Sources/' '\.gaiaftcl' '/Users/' '/home/' '/var/folders/' \
+               '\$HOME' 'mortonBits' 'CapabilityRegistry' 'com\.gaiaftcl' 'treasury-swarm'; do
+        h=$(grep -lE "$pat" "$ROOT"/library/*/*.md 2>/dev/null | wc -l | tr -d ' ')
+        if [ "${h:-0}" -gt 0 ]; then
+            bad "private reference '$pat' in $h library entry file(s): $(grep -lE "$pat" "$ROOT"/library/*/*.md 2>/dev/null | xargs -n1 basename | tr '\n' ' ')"
+            LBREACH=1
+        fi
+    done
+    LCTRL=$(grep -lF 'NOT_ADVICE' "$ROOT"/library/*/*.md 2>/dev/null | wc -l | tr -d ' ')
+    if [ "${LCTRL:-0}" -eq "$LIBFILES" ]; then
+        [ "$LBREACH" -eq 0 ] && ok "no private reference across $LIBFILES library entries (scanner verified live: NOT_ADVICE found in all $LCTRL)"
+    else
+        bad "the standing not-advice line is in only $LCTRL of $LIBFILES library entries — an entry lost its line, or the scanner is not working"
+    fi
+fi
+
+echo "=== 4e. every library entry file is published on its library's page ==="
+# The gradeable artefact is library/<lib>/; the artefact a stranger opens is Library-Of-*.md.
+# Clause L9 of the admission law gates this, and this row is the harness's own second opinion:
+# a count that must agree, computed a different way, from the fenced blocks themselves.
+PGOK=1
+for pair in "proteins:Library-Of-Proteins.md" "compounds:Library-Of-Compound-Cures.md" "materials:Library-Of-Material-Systems.md"; do
+    d="${pair%%:*}"; pg="${pair#*:}"
+    nd=$(ls "$ROOT"/library/$d/*.md 2>/dev/null | wc -l | tr -d ' ')
+    np=$(grep -c '^```affine-entry$' "$ROOT/$pg" 2>/dev/null | tr -d ' ')
+    if [ "${nd:-0}" -gt 0 ] && [ "${nd:-0}" -eq "${np:-0}" ]; then
+        ok "$pg publishes all $nd entries of library/$d"
+    else
+        bad "library/$d holds ${nd:-0} entries and $pg publishes ${np:-0}"
+        PGOK=0
+    fi
+done
 
 echo "=== 5. the live surface serves ==="
 if have curl; then

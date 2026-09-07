@@ -1,0 +1,67 @@
+KNOWN-CASE CHECK — the instrument is validated on constructed cases before it reports anything
+Every arm names what was expected and what was measured. Arms run in both directions.
+
+  as built  A1 NGG L=10 — the rule admits exactly the two sites it should                   expect 0mm=2  |  got 0mm=2
+  as built  A2 NGG L=20 — the rule admits exactly the two sites it should                   expect 0mm=2  |  got 0mm=2
+  as built  A3 TTTV L=20 — the rule admits exactly the two sites it should                  expect 0mm=2  |  got 0mm=2
+  as built  A4 TTTV L=21 — the rule admits exactly the two sites it should                  expect 0mm=2  |  got 0mm=2
+  as built  A5 TTN L=22 — the rule admits exactly the two sites it should                   expect 0mm=2  |  got 0mm=2
+  as built  A6 the sequence is present more often than the PAM rule admits                  expect literal=15 admitted_fwd=5  |  got literal=15 admitted_fwd=5
+  as built  A7 the one-mismatch decoy is seen as a one-mismatch site                        expect 1mm>=1  |  got 1mm>=1
+  as built  A8 the intact spacer IS found where the corrupted one is NOT                    expect intact=1 corrupt=0  |  got intact=1 corrupt=0
+  as built  A9 packed and naive kernels agree on every histogram bucket (synthetic)         expect identical  |  got identical
+  as built  A10 packed and naive kernels agree on every candidate-site census (synthetic)   expect identical  |  got identical
+  as built  A11 packed and naive kernels agree on the in-kernel work count (synthetic)      expect 169257  |  got 169257
+  as built  A12 an N run is set aside rather than scored                                    expect setAside>0  |  got setAside>0
+  as built  A13 an empty range performs no work and reports none                            expect evals=0 scored=0  |  got evals=0 scored=0
+  as built  A14 a homopolymer separates the three rules (fwd/rev per rule)                  expect NGG10:0/0 NGG20:0/0 TTTV20:0/0 TTTV21:0/0 TTN22:0/9976  |  got NGG10:0/0 NGG20:0/0 TTTV20:0/0 TTTV21:0/0 TTN22:0/9976
+  as built  A15 both kernels reach that same split on the same bytes                        expect identical  |  got identical
+  as built  A16 the completeness identity holds, and REFUSES when the count is perturbed    expect true/false  |  got true/false
+
+  arms run: 16   as built: 16   failed: 0
+
+EXACT GENOME-WIDE OFF-TARGET MAP — EVERY CLINICAL CRISPR GUIDE WITH A PUBLIC SPACER
+Every candidate site of three PAM rules, on both strands of the primary assembly.
+
+counted INSIDE the kernel, as the work happened — never derived from input sizes
+  sequences scanned      : 1
+  bases scanned          : 118,032,780
+  candidate sites, by rule (forward + reverse, both strands of every sequence):
+    NGG  L=10      6,674,446 fwd +     6,690,966 rev =    13,365,412   scored    13,365,408   set aside (N) 4
+    NGG  L=20      6,674,446 fwd +     6,690,966 rev =    13,365,412   scored    13,365,401   set aside (N) 11
+    TTTV L=20      2,511,190 fwd +     2,515,819 rev =     5,027,009   scored     5,027,005   set aside (N) 4
+    TTTV L=21      2,511,190 fwd +     2,515,819 rev =     5,027,009   scored     5,027,004   set aside (N) 5
+    TTN  L=22     10,894,326 fwd +    10,914,020 rev =    21,808,346   scored    21,808,317   set aside (N) 29
+  probe evaluations      : 10,761,636,435   (one integer comparison of a whole
+                           spacer against a candidate site; 25 guides x 33 probes)
+  permutations per guide : 32
+
+known-case pins, measured against externally published integers:
+  bases                  : 118,032,780 vs 3,099,750,718   DIFFERS
+  sequences              : 1 vs 194   DIFFERS
+  NGG sites at L=20      : 13,365,412 vs 304,796,751   DIFFERS
+  N windows set aside    : 11 vs 1,718   DIFFERS  (reported, not a pin)
+  kernels on a real slice: 200,000 bases (200,000 of them ACGT) — packed 18,850,194 evals, naive 18,850,194 evals   IDENTICAL
+
+REFUSED — INCOMPLETE. This program did not screen the whole assembly and will not seal a
+map that would read as complete. What failed:
+    bases scanned 118,032,780 != published 3,099,750,718
+    sequences 1 != published 194
+    NGG candidate sites at L=20 13,365,412 != published 304,796,751
+
+REFERENCE FIGURES — what this program needs and what the published predecessor produced.
+  input 1  the guide table, first argument, sha256
+           bb188a75837c3384322723c5935da34605cb89caae43cf3b0468572fda60b80c
+           25 guides: 18 SpCas9 family (NGG, 3'), 4 AsCas12a (TTTV, 5'), 3 Cas12b (TTN, 5')
+           spacer lengths 10, 20, 21, 22 — measured from each record's scaffold anchor
+  input 2  GENCODE GRCh38 primary assembly on stdin, gunzipped, sha256 of the .gz
+           b760d18dbb651dd14dfc290083371b3ef3bff122d43a9cefb13ca4ecf38f05ca
+           3,099,750,718 bases over 194 sequences
+  input 3  permutations per guide, second argument, default 100
+
+  the predecessor (15 guides, one NGG rule) measured 304,796,751 NGG candidate
+  sites at spacer length 20, with 1,718 windows containing an N set aside.
+  All 15 found a zero-mismatch site; 13 had exactly one in the whole genome; every one had
+  ZERO sites at one mismatch and 13 of 15 had zero at two. Those are this program's pins.
+
+MARKER  CRISPR_CLINICAL_GUIDE_ATLAS__NO_SCREEN_PERFORMED

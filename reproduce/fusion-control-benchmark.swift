@@ -120,18 +120,35 @@ print("  differ across machines. The verdict is add, subtract, compare.")
 print("")
 // A TIMING IS A MEASUREMENT ON A DATE, NOT A REPRODUCIBLE CONSTANT. The wall
 // numbers above differ run to run and machine to machine, so the harness cannot
-// pin them as strings. What IS stable is the ORDER-OF-MAGNITUDE CLAIM, emitted
-// here as a terminal the harness can check -- and it can fail.
+// pin them as strings.
+//
+// CORRECTED 2026-09-07. HEADROOM_EXCEEDS_50X was printed in the block below under
+// the sentence "These are claims, not timings. A slower machine still satisfies
+// them or the study is wrong." IT IS A TIMING. Measured on this machine at load
+// average 425 it printed FALSE, the harness pinned it as TRUE, and validate.sh
+// went red on a run in which nothing about the law had changed. What that boolean
+// measures is how much spare CPU the host had. The house rule that a seal must
+// never digest a path or a timing applies to a PINNED FIGURE just as hard, and a
+// gate that flips on load is not measuring the thing it names.
+//
+// It is not deleted -- deleting a measurement to make a gate green is the wrong
+// repair. It moves to where the other dated wall numbers live, printed with the
+// measured multiple beside it, and it is no longer pinned.
 let headroomOK = headroom >= 50
 let latencyOK  = ws[4] < 100_000            // verdict well inside a 1 ms budget
+print("╔══ A DATED WALL MEASUREMENT OF THIS HOST — pinned by nothing ══╗")
+print("  HEADROOM_X_REAL_TIME            \(String(format:"%.1f", headroom))x   (>= 50x: \(headroomOK ? "TRUE" : "FALSE"))")
+print("  VERDICT_INSIDE_ONE_MS_BUDGET    \(latencyOK ? "TRUE" : "FALSE")   (a timing too; margin ~145x)")
+print("  These two are measurements of THIS MACHINE ON THIS DAY, not properties of")
+print("  the arithmetic. A busy host lowers both. Neither is pinned by the harness,")
+print("  because a figure that flips with system load cannot be a published claim.")
+print("")
 print("╔══ THE STABLE TERMINALS — what the harness pins ══╗")
-print("  HEADROOM_EXCEEDS_50X            \(headroomOK ? "TRUE" : "FALSE")")
-print("  VERDICT_INSIDE_ONE_MS_BUDGET    \(latencyOK ? "TRUE" : "FALSE")")
 print("  VERDICT_DETERMINISTIC_10K       \(ok ? "TRUE" : "FALSE")")
-print("  These are claims, not timings. A slower machine still satisfies them or")
-print("  the study is wrong -- which is what makes them checkable rather than")
-print("  decorative. The wall numbers above are a dated measurement, not a")
-print("  constant, and the page labels them that way.")
+print("  VERDICT_RENDERED_AT_INDEX_208   \(ri == 208 ? "TRUE" : "FALSE")")
+print("  These are claims, not timings: integer properties of the law that any")
+print("  machine reproduces exactly, at any load, or the study is wrong -- which is")
+print("  what makes them checkable rather than decorative.")
 print("")
 print("╔══ WHAT THESE NUMBERS DO NOT SAY ══╗")
 print("  - not measured on control hardware, not through real I/O, no actuation")

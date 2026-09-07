@@ -1,0 +1,15 @@
+# THE LIBRARY OF MATERIAL SYSTEMS
+# C-007 is absolute here. An entry names WHAT a system is, WHAT was measured about
+# it, and WHERE the law lives. It never carries a procedure a person could follow.
+#
+# Every ceiling below is an integer and is tested PER VALUE:
+#     count(most repeated value on that axis) <= declared
+LIBRARY                          MATERIALS
+DECLARED_ENTRIES_PER_IDENTITY    1
+DECLARED_ENTRIES_PER_PROGRAM     1
+DECLARED_ENTRIES_PER_SEAL        1
+DECLARED_ENTRIES_PER_MEASURED    1
+DECLARED_ENTRIES_PER_TRIPLE      1
+PUBLISHED_PAGE                   Library-Of-Material-Systems.md
+OPEN_SLOT                        The A.E.P-1 sovereign edge pod, four-tier bench gate. Charter frozen 2026-09-01 with its integers; NO pod built, NO tier run. Named 2026-09-07.
+OPEN_SLOT                        A bench reading from an instrument attached to a built thing. Every entry admitted here is computed — from published symbol timing, published machine parameters, or exact enumeration. NOT ONE is an instrument reading. Named 2026-09-07.

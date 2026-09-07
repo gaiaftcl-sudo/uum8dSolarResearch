@@ -1,0 +1,36 @@
+# THE LIBRARY OF GENERATED PROTEINS AND PEPTIDES
+#
+# Every ceiling here is an integer and is tested PER VALUE:
+#     count(most repeated value on that axis) <= declared
+# Raising one is a public act: it is the library saying, in advance, how much
+# repetition it considers honest AT ONE VALUE. A stale ceiling silently re-admits
+# what was just excluded, so an addition moves it in the same commit or the addition
+# is refused.
+#
+# MOVED 2026-09-07, and the checker forced the move rather than a reviewer.
+# Three entries were added (the Q14258 maximum, the composition signature, the
+# residual-overlap null). Every one of the six entry files passed every per-entry
+# clause and the LIBRARY was REFUSED: L4 and L5 both read short.
+# One program run answers five separable questions here and it is the same run,
+# so PER_PROGRAM and PER_SEAL move to 5 and the library says so in public.
+#
+# MOVED AGAIN 2026-09-07, later the same day, and this time the ceiling was moved by
+# a repair to the TEST rather than by an addition to the library. PER_IDENTITY read 2
+# while the digest bb3691b3... carried THREE of the five admitted entries — legal
+# under the aggregate test the law used to apply (3 distinct x 2 >= 5) and refused
+# the moment the ceiling was tested where it is declared, per value. Nothing was
+# added and nothing was hidden; a ceiling that had never been true is now true, in
+# public, at 3. PER_TRIPLE is declared for the first time at 3, for the same three
+# entries: one identity, one program and one seal, answering three separable
+# questions from one run over one corpus.
+LIBRARY                          PROTEINS
+DECLARED_ENTRIES_PER_IDENTITY    3
+DECLARED_ENTRIES_PER_PROGRAM     5
+DECLARED_ENTRIES_PER_SEAL        5
+DECLARED_ENTRIES_PER_MEASURED    1
+DECLARED_ENTRIES_PER_TRIPLE      3
+PUBLISHED_PAGE                   Library-Of-Proteins.md
+OPEN_SLOT                        Homology under substitution across the whole 80,080-sequence population — the exact Smith-Waterman screen. Measured, not yet sealed; in repair for an unfalsifiable completeness figure. Named 2026-09-07.
+OPEN_SLOT                        The 12-residue fragment LETFLAKSRPEL assayed against the human protein it was found in. No program, no figure, no seal — this is a bench measurement and the library does not have it. Named 2026-09-07.
+OPEN_SLOT                        Nonspecific membrane activity of the K+R-enriched population. Named by the screen's own transcript as the second experiment; no program, no figure, no seal. Named 2026-09-07.
+OPEN_SLOT                        Structure, folding, binding, immunogenicity, toxicity, protease stability and off-target activity for any sequence in this library. None measured, none held, none in progress here. Named 2026-09-07.

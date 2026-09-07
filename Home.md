@@ -23,6 +23,20 @@ re-derive them without asking us for anything.
 
 **→ [The CRISPR genome map](CRISPR-Genome-Off-Target-Map)  ·  [The off-target atlas](Oligonucleotide-Off-Target-Atlas)**
 
+And they are now somewhere a person can look. The woman in that room, or her doctor, or the
+regulator who has to sign for her, can open a **library** and find the molecule: what was measured
+about it, by which program, and the one command that re-derives it from public bytes. Three
+libraries — [proteins](Library-Of-Proteins), [compound cures](Library-Of-Compound-Cures),
+[material systems](Library-Of-Material-Systems) — and each of them says, inside every row, what it
+refuses to claim. They are not studies that close. They grow as new cures and new materials are
+measured, and nothing enters without a program a stranger can run.
+
+What keeps them libraries rather than lists is the thing in front of them: **[an admission
+law](The-Library-Admission-Law)**, executable, that refuses. This programme has already published a
+generated corpus that reported 37,910 validated discoveries and held five distinct molecules, where
+every single row passed every check made of it. A library with no law is that corpus with a nicer
+front page. So the law is the first artefact, and the libraries are downstream of it.
+
 ---
 
 ## The harder question, and what asking it again found

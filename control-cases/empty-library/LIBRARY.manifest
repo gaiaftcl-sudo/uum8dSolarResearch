@@ -1,0 +1,14 @@
+# A LIBRARY THAT DECLARES CEILINGS AND HOLDS NOTHING.
+# Everything a well-formed library carries is here except the entries. It exists so the
+# checker can be shown refusing NOTHING — a gate given nothing must not pass, and an
+# instrument nobody has watched refuse has measured nothing.
+LIBRARY                          COMPOUNDS
+DECLARED_ENTRIES_PER_IDENTITY    1
+DECLARED_ENTRIES_PER_PROGRAM     1
+DECLARED_ENTRIES_PER_SEAL        1
+DECLARED_ENTRIES_PER_MEASURED    1
+DECLARED_ENTRIES_PER_TRIPLE      1
+# A control case is not published, so it names a page that does not exist and clause L9
+# reports NOT_KNOWN rather than REFUSED. A control case must be refused for the ONE reason
+# it was built to demonstrate, or it demonstrates nothing.
+PUBLISHED_PAGE                   This-Control-Case-Is-Not-Published.md
