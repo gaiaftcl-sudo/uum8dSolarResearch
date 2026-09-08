@@ -293,7 +293,7 @@ positive answer would be read against:
   WAS I SANDWICHED, AND WHAT DID IT COST ME?
   affine.earth market-shear · one transaction · one answer
 =====================================================================
-law_carried   extraction-exact.swift lines 1..2535 — VERBATIM, compiled in
+law_carried   extraction-exact.swift lines 1..2843 — VERBATIM, compiled in
 
 == NOTHING WAS GIVEN ==
 A GATE GIVEN NOTHING MUST NOT PASS. No hash was supplied, so nothing was
@@ -359,8 +359,8 @@ blind.
 ### It is the same code path as the study. Measured, not claimed
 
 The tool defines **no conjunct, no pool arithmetic and no shortfall formula**. It compiles a
-**verbatim byte slice** of the detector — `extraction-exact.swift` lines 1..2535, 136,524 bytes,
-sha256 `d46ea837b66f21763ed3dfc50c9ca246e05cb9f2a499237aa4cc77ec4edbdf5e` — and calls `runCorpus()`,
+**verbatim byte slice** of the detector — `extraction-exact.swift` lines 1..2843, 156,508 bytes,
+sha256 `6b093daa07214dd589156235cc4fcb04b21de3750d6b76f008e35baf0c9e2799` — and calls `runCorpus()`,
 `computeShortfall()`, `v2Out()`, `v3Step()` and `v3InvertStart()` by their own names. Re-derive that
 digest yourself:
 
@@ -1248,6 +1248,13 @@ change, and three of the four would have gone on quoting a stale number. It is n
 return exactly **2535** on the untouched file it was written for while tracking the boundary on the
 file that moved.
 
+That change had a consequence worth showing, because it is the gate doing its job. Growing the law
+moved the slice from lines 1..2535 to 1..2843 and changed its digest — and this page cited the old
+range and the old digest in four places. The harness **failed the run** on two of them, by name:
+*the page cites a number its program does not produce*. Every figure above was corrected from the
+program's own output rather than by hand, which is the only reason a reader can trust the rest of
+this manifest.
+
 **Four cited numbers were withdrawn when a null turned out degenerate.** The first null's harness
 tied the address draw to the direction draw inside one LCG, so **14,506 of 14,591 same-sender leg
 pairs (99.4%) ran the same direction**, suppressing opposite-direction round trips ~85×. A proper
@@ -1600,17 +1607,18 @@ S010303-v2.zip           58,907,174 B  eb67a239cf09b7de1843f6b0ede3c473616cc5cac
 eth/blocks.ndjson       274,405,185 B  2f3c1b9f23645c7b0ad652b1ba677691a16b7a6b538f31af5680189cbf47e5ff
 eth/receipts.ndjson     378,717,564 B  af09271d39451288bbd9728f6488bb7a7e0d3441428caa22530d159af562feb0
 
-extraction-exact.swift         2,688 lines  3c3856b422aa3e08ba20d31aaf3e709106e6232681607cc274d657ce71033c12
+extraction-exact.swift         3,011 lines  3b67f7e92bdb2305671c20e8686aaae442349b8daa9162fd955fd7bc64756b3a
 wasi-sandwiched.swift          1,463 lines  e2742ecd94d8001741fcc14be01cc29968271345120921cd2820407b2e26560e
-  its compiled-in law slice  136,524 B  d46ea837b66f21763ed3dfc50c9ca246e05cb9f2a499237aa4cc77ec4edbdf5e
+  its compiled-in law slice  156,508 B  6b093daa07214dd589156235cc4fcb04b21de3750d6b76f008e35baf0c9e2799
 wasi-exposure.swift            1,782 lines  2b1c6c21c1fd51d3373cf44bb43a88231523c6f98b8d0856557e3f2812342439
   its law slice is the SAME one, cut from the SAME file at the SAME marker as the line above —
   no separate digest is pinned for it, because two pins for one fact become two facts
-market-shear-exact.swift       2,737 lines  d072169f1f6637d537e942786963849d1a2a696ed30c98ee722d6a49ace517e4
+market-shear-exact.swift       2,763 lines  619637839ee57b2102c409c6f7487fcf993fe771c48c5c40dfdc66f31e6d9fe5
 af-conjunct-exact.swift        1,510 lines  9d669a55f4fa42547dc8d417bd80edff4ea7824f0c9fddb9810932fdaadcc838
 live-wire-watch.swift          2,576 lines  85403365cf25700f2beb8db27588382a953ec482ce81c7c4b1425cf53eb3e675
 market-shear-rederive.swift      380 lines  f6558631196f4a35e322fbb66163b74a4260a631c236376f8dbb3997057599ed
 market-shear-positional.swift    117 lines  e9b7be225145224992ccd1a8f0ee02e8d209e370ca8c8eb59c102be439f52332
+feed-order-identity.swift        670 lines  05390a8c6539604e9ced25965a23cd323f1d8db653d35c980447fd414896f8e4
 ```
 
 **Two honest notes on those digests.** For NASDAQ ITCH there are no publisher digests: the listing

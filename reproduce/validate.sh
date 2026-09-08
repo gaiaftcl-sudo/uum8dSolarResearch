@@ -408,13 +408,13 @@ check_figure wasi-sandwiched "WAS I SANDWICHED, AND WHAT DID IT COST ME" "The-De
 check_figure wasi-sandwiched "A GATE GIVEN NOTHING MUST NOT PASS"        "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure wasi-sandwiched "== NOTHING WAS GIVEN =="                   "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure wasi-sandwiched "ZERO — no API key, no account, no registration, nobody's permission" "The-Detector-That-Flags-The-Whole-Market.md"
-check_figure wasi-sandwiched "extraction-exact.swift lines 1..2535"      "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "extraction-exact.swift lines 1..2843"      "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure wasi-sandwiched "126 brackets · 108 extractive · 104 blocks · 26 pseudonymous actors" "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure wasi-sandwiched "median 476 ten-thousandths of the output that was due — about 0.17 ETH" "The-Detector-That-Flags-The-Whole-Market.md"
 # The compiled-in law digest, printed by the binary and computed at build time by shasum(1)
 # over the slice. It is on the page so a stranger can re-derive it in one command:
 #   sed -n '1,2535p' reproduce/extraction-exact.swift | shasum -a 256
-check_figure wasi-sandwiched "d46ea837b66f21763ed3dfc50c9ca246e05cb9f2a499237aa4cc77ec4edbdf5e" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "6b093daa07214dd589156235cc4fcb04b21de3750d6b76f008e35baf0c9e2799" "The-Detector-That-Flags-The-Whole-Market.md"
 
 # --- THE PRE-TRADE CHECK: the same law, asked before the signature instead of after -----
 # wasi-exposure carries NO law of its own either. Section 2 above compiles it against the
