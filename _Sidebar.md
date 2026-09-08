@@ -59,7 +59,7 @@ verdicts. The subject under grading is always the instrument, never the phenomen
 - [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — why a safety verdict needs an exact law, not a bigger computer
 - [**Study 35** — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) — deaf in 8.4 seconds, forgets across machines, disagrees with itself
 - [**Study 36** — the language game of Fermat's Last Theorem](Study-36-The-Language-Game-of-Fermats-Last-Theorem) — guess and shear, or project
-- [**Study 40** — who told you the order mattered?](Study-40-Indefinite-Causal-Order) — order-dependence is a property of the arithmetic: nine cells, one exact result and six float ones
+- [**Study 40** — the number the simulation throws away](Study-40-Indefinite-Causal-Order) — **their ICO result computed as a fraction; in float the effect returns 0 at every width, and an effect returned as zero cannot be searched for**
 - [**Study 41** — fifty years of solving the wrong problem](Study-41-What-The-Ordering-Cost) — **the ordering was never about time, it was about arithmetic; 177× the work and 2,400× the wrong guesses to return the answer the machine already had**
 - [**Study 29** — continuous-model shear](Study-29-Continuous-Model-Shear)
 - [The lattice holds](The-Lattice-Holds) · [Impact study — continuum dead](Impact-Study-Death-of-Continuous-Shear) · [Death of continuous shear](Death-of-Continuous-Shear)
