@@ -1,0 +1,44 @@
+[
+ {
+  "test": "duty-hour FLOOR",
+  "regulator": "FAA Table B min = 540 min (9h00); EASA Table 2 min = 540 min (9h00) - IDENTICAL",
+  "measurement": "Hanecke 1998 (1.2M German accidents, 1994): 'exponentially increasing accident risk beyond the 9th hour at work'",
+  "verdict": "AGREE",
+  "note": "540 min = 9.0 h exactly. Two regulators, independently, floor at the hour where the measured curve turns exponential."
+ },
+ {
+  "test": "floor moves EARLIER for late starts",
+  "regulator": "FAA: 0000-0359 start caps at 540 min at ALL segment counts. EASA: 1700-0459 start reaches 540 min by 6 sectors.",
+  "measurement": "Hanecke 1998: 'with later starting times, the relative accident risk increased dramatically beyond the 8th hour at work'",
+  "verdict": "AGREE",
+  "note": "Both tables shorten the permitted duty as start time moves into the night; the measured knee also moves 9th->8th hour."
+ },
+ {
+  "test": "consecutive night-shift cap",
+  "regulator": "FAA 14 CFR 117.27: max THREE consecutive FDPs infringing the WOCL (five only with >=2h in-flight rest)",
+  "measurement": "Folkard & Tucker 2003 (7 studies): risk vs 1st night = +6% (2nd), +17% (3rd), +36% (4th)",
+  "verdict": "AGREE",
+  "note": "The regulator forbids exactly the shift that carries the +36% step. The cap lands on the knee, not before it."
+ },
+ {
+  "test": "window of circadian low",
+  "regulator": "FAA 14 CFR 117.3: WOCL = 0200-0559",
+  "measurement": "Connor 2002: driving 0200-0500 vs other times, adjusted OR 5.6 (1.4-22.7)",
+  "verdict": "AGREE",
+  "note": "The regulator's defined trough and the measured crash-risk trough are the same clock band."
+ },
+ {
+  "test": "which axis dominates - CIRCADIAN vs TASK DENSITY",
+  "regulator": "FAA sheds 300 min for circadian vs 150 min for density (circadian DOMINATES 2:1). EASA sheds 120 min for circadian vs 240 min for density (density DOMINATES 2:1).",
+  "measurement": "Connor 2002: circadian OR 5.6. No published study measures 'flight segments' as an exposure, so task density has NO effect size in this corpus.",
+  "verdict": "CONFLICT",
+  "note": "The two regulators INVERT each other on which axis matters more. This is a genuine disagreement between published priors and the corpus cannot adjudicate it."
+ },
+ {
+  "test": "Van Dongen threshold vs regulator ceilings",
+  "regulator": "FAA max FDP 840 min (14h00); EASA max 780 min (13h00); FMCSA driving window 840 min (14h00)",
+  "measurement": "Van Dongen 2003: PVT lapses near-linear in cumulative wakefulness IN EXCESS OF 15.84 h (s.e. 0.73 h) = 950 min (s.e. 44 min)",
+  "verdict": "NOT_COMPARABLE",
+  "note": "Duty length is not time-since-waking. Converting one to the other requires assuming a pre-duty awake interval, which no source in this corpus measures. LOAD-BEARING JUDGEMENT - see report."
+ }
+]

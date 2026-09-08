@@ -11,15 +11,21 @@
 
 - [**The off-target atlas** — every nucleic-acid medicine the registry publishes](Oligonucleotide-Off-Target-Atlas)
 - [**Where else could this guide cut?** — the whole genome, counted](CRISPR-Genome-Off-Target-Map)
+- [**Where humans actually yield** — the fatigue curves, and where the rules already agree](Where-Humans-Actually-Yield)
 - [**Designed, or forced by its own bases?** — every clinical CRISPR guide, counted](CRISPR-Clinical-Guide-Atlas)
 - [**Are the generated cures new?** — 80,080 peptides against the human proteome](Generated-Peptides-Against-The-Human-Proteome)
 - [**Cures Without the Gatekeeper** — the medicine front door](Cures-Without-The-Gatekeeper)
 - [**Zilganersen** — the first treatment for Alexander disease](The-Safety-Question-Made-Exact)
+- [**A drug an AI designed** — rentosertib, and what our instruments reach](A-Drug-An-AI-Designed)
 - [**CAR-T, halted** — the verdict a regulator could re-derive](The-Verdict-a-Regulator-Could-Re-Derive)
 - [**N-of-1 antisense** — the only safety net at a population of one](N-of-1-Antisense-The-Exact-Off-Target-Map)
 - [**VERVE-102** — the off-target lattice a stranger can re-derive](VERVE-102-The-Verdict-A-Stranger-Can-Re-Derive)
 - [**PM359** — prime editing, certified before anyone is dosed](PM359-Prime-Editing-Certified-Before-Anyone-Is-Dosed)
 - [**Del-Zota** — the one safety question made exact](Del-Zota-The-One-Safety-Question-Made-Exact)
+
+## 🏛 Market surveillance — the indicator, measured
+
+- [**The detector that flags the whole market**](The-Detector-That-Flags-The-Whole-Market) — a manipulation geometry in exact integers, and the regulator's own indicator scored against a legitimate quoter
 
 ## ★ The planetary case
 
@@ -28,7 +34,7 @@
 - [**Study 35** — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) — **why the floating-point safety brain is doomed, not just behind**
 - [**Study 36** — the language game of Fermat's Last Theorem](Study-36-The-Language-Game-of-Fermats-Last-Theorem) — **guess and shear, or project: the near-miss the float never stops seeing**
 - [**Study 37** — thirty-seven thousand validated discoveries, five molecules](Study-37-Validated-Discoveries-Five-Molecules) — **why per-item validation cannot see a corpus-level defect**
-- [**Study 38** — the loss-reserve triangle, exact against float](Study-38-Loss-Reserve-Triangle) — **the null result we published as the headline: float was adequate, an unchecked premise was not**
+- [**Study 38** — the loss-reserve triangle, exact against float](Study-38-Loss-Reserve-Triangle) — **a reserve is an exact rational; 481 of 482 verdicts identical in both arithmetics; the sixteen-billion figure comes from an unchecked premise**
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)

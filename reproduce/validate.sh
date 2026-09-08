@@ -135,6 +135,14 @@ check_figure study26-combination-pairs-exact "drospirenone + alpelisib" "Study-2
 check_figure study26-combination-pairs-exact "HMN-214 + saracatinib" "Study-26-Master-Regulator-Bonds.md"
 check_figure study26-combination-pairs-exact "XMD-892 + NVP-BGJ398" "Study-26-Master-Regulator-Bonds.md"
 
+# --- Rentosertib: the structural lock, the network census, the modality register ---
+check_figure rentosertib-structure-lock-exact "C27H30FN7O" "A-Drug-An-AI-Designed.md"
+check_figure rentosertib-structure-lock-exact "b5da901cbcba5535" "A-Drug-An-AI-Designed.md"
+check_figure rentosertib-structure-lock-exact "ZVDNXHUSIKGTSF-UHFFFAOYSA-N" "A-Drug-An-AI-Designed.md"
+check_figure tnik-repairs-exact "12548903" ""
+check_figure tnik-network-degree-exact "12017368" ""
+check_figure modality-register-exact "validation_arms_failed     = 0" ""
+
 # --- the genome-wide CRISPR off-target map ---
 check_figure crispr-genome-offtarget-exact "487b4f81de2d24bd0bb11ecd1d8d42778e3a5d91b9edb33627c86dcc8df34980" "CRISPR-Genome-Off-Target-Map.md"
 check_figure crispr-genome-offtarget-exact "CRISPR_GENOME_OFFTARGET_EXACT__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT" "CRISPR-Genome-Off-Target-Map.md"
@@ -150,6 +158,83 @@ check_figure corpus-distinct-count-exact "95594154026f63552bf746f535be96392bca50
 check_figure corpus-distinct-count-exact "74db969f653be18214608230b4aaee30498f7fcd09df9e3d7b107ddb5c8f64f7" "Study-37-Validated-Discoveries-Five-Molecules.md"
 check_figure corpus-distinct-count-exact "0169f514a861ece42573fbff4d4db28e27880373adb7296a304aa9ddb860c1f4" "Study-37-Validated-Discoveries-Five-Molecules.md"
 check_figure corpus-distinct-count-exact "CONTROL ARM  13/13 PASS" ""
+
+# --- where humans actually yield: fatigue curves vs regulator limits ---
+check_figure fatigue-yield-vs-regulator "FATIGUE_YIELD_VS_REGULATOR__FOUR_AGREE_ONE_CONFLICT_ONE_NOT_COMPARABLE" "Where-Humans-Actually-Yield.md"
+check_figure fatigue-yield-vs-regulator "d5fab6529c34126003aec8d8ea2f80cb1558ccf9feb3b4896eaef739758206a1" "Where-Humans-Actually-Yield.md"
+
+
+# --- MARKET SURVEILLANCE: the detector that flags the whole market -----------------
+# Un-numbered family page, added 2026-09-08. Every row below was checked with grep -F on
+# BOTH sides before it was written here — the program's own no-argv output and the page —
+# because a pin on a figure the program does not print is exactly the defect this harness
+# exists to catch, and it has bitten this repository before.
+#
+# THESE FIVE PROGRAMS PRINT THEIR REFERENCE FIGURES ON EVERY EXIT PATH, INCLUDING THE
+# NO-ARGV ONE THIS HARNESS TAKES. The corpora are 1.1 GB and fetched, not committed, so a
+# run here measures nothing; it prints what it WOULD have measured, says so on its own
+# face, and exits non-zero. ABSENCE and REFUSAL are different answers, and an
+# uninstrumented early exit is indistinguishable from a program that never built.
+#
+# live-wire-watch is the one that could have cost this harness ten minutes on the network:
+# its old default probed live endpoints and watched the chain head for 600 seconds. The
+# no-argv path is now the ZERO-NETWORK one — self-test arms, the in-process null
+# population, then the figures — and --all still does what the old default did.
+
+# the phantom-mass base rate, the equities composite, the ETH conjunct set, attribution
+check_figure market-shear-exact "12,676,036"  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "12,156,283"  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "10,164,658"  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "2,921,796"   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "2,732,598"   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "88,900"      "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "63,140"      "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "1,407 per 1,000" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "7.3 per 1,000"   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "RATIO_PUBLISHED_NO_THRESHOLD" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "10,580,123"  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "NOT_COMPUTABLE" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "837,472,908" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "15,393"      "The-Detector-That-Flags-The-Whole-Market.md"
+
+# MAR Annex I A(f) computed in FULL, and the legitimate quoter that outscores the session
+check_figure af-conjunct-exact "9,589 bp"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "5,384 bp"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "7,665 bp"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "9,189 bp"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "6,825,510"    "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "9,716,694"    "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "7,032 bp"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "85.14th percentile" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "REFUTED_CONTROL_SCORES_HIGHER" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure af-conjunct-exact "REFUSED_SINGLE_POPULATION"     "The-Detector-That-Flags-The-Whole-Market.md"
+
+# the live wire, the self-contradiction guard, and the false-positive FLOOR
+check_figure live-wire-watch "68,121 per 10,000,000" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "2,208 per 10,000,000"  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "53.95x"                "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "IRREDUCIBLE FLOOR"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "100,426,957 bytes"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "815 HTTP requests"     "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "8,119,826"             "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "4,766 swaps"           "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "1,427 leg pairs"       "The-Detector-That-Flags-The-Whole-Market.md"
+# ABSENCE, REFUSAL, BOT_BLOCKED and NOT_KNOWN are four different answers on every wire
+# verdict. Two of them are pinned so the distinction cannot quietly collapse into one.
+check_figure live-wire-watch "NOT_KNOWN"             "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure live-wire-watch "BOT_BLOCKED"           "The-Detector-That-Flags-The-Whole-Market.md"
+
+# the independently written kernel that reproduced the set member for member
+check_figure market-shear-rederive "200,826 · 276,014" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-rederive "13,272 · 3,245"    "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-rederive "22,287"            "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-rederive "28 · 26"           "The-Detector-That-Flags-The-Whole-Market.md"
+
+# the naive geometry the conjunct set is measured AGAINST — the discrimination, not a rate
+check_figure market-shear-positional "262,799"               "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-positional "2,433x"                "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-positional "101 per 1,000 flagged" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-positional "4.8 per 1,000"         "The-Detector-That-Flags-The-Whole-Market.md"
 
 # --- the generated-peptide novelty screen (cures family) ---
 check_figure protein-novelty-exact "8c50b3e877d1dac7b68244464ae679fc43ed273d9fd38e7e348b823c3e80563b" "Generated-Peptides-Against-The-Human-Proteome.md"
