@@ -72,7 +72,13 @@ if have xcrun || have swiftc; then
             # tracks the law; the structural check below is unchanged and still REFUSES.
             # Verified both ways: the rule returns exactly 2535 on the file the constant
             # was written for, and follows the boundary on the file that moved.
-            END=$(awk '/SECTION 11 . MAIN/{print NR-3; exit}' "$CORE")
+            # THE SAME LOCALE FIX ALREADY LANDED IN wasi-sandwiched-build.sh AND
+            # wasi-sandwiched-one-law.sh, and this THIRD site was missed. It is the one the
+            # harness itself reads, so both wasi tools were still refusing a correct tree with
+            # an EMPTY line number — the marker's dash is an EM DASH, three bytes in UTF-8, and
+            # with LANG and LC_ALL unset awk's `.` matches ONE BYTE. Same anchored pattern as
+            # the other two, so all three sites now agree in every locale.
+            END=$(awk '/^\/\/ SECTION 11 /{print NR-3; exit}' "$CORE")
             if [ -f "$CORE" ] && [ "$(sed -n "${END}p" "$CORE" 2>/dev/null)" = "}" ] \
                && sed -n "$((END+2))p" "$CORE" 2>/dev/null | grep -q '^// ====='; then
                 sed -n "1,${END}p" "$CORE" > "$stage/core-detector.swift"
@@ -257,6 +263,43 @@ check_figure genotype-score-ceiling-exact   "691/1000"                          
 check_figure genotype-score-ceiling-exact   "627/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 check_figure genotype-score-ceiling-exact   "278/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 check_figure genotype-score-ceiling-exact   "1,105"                                                    "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+# THE RUN-TERMINAL CONTRACT, PRODUCER SIDE. library-admission-law.swift reads a declared
+# terminal by STRUCTURE; these two programs are the first that print one. The harness demands
+# every refusal path quote its published figures, so a figure pin cannot tell quoted from
+# computed — only a run that finished prints COMPLETE, and it is pinned here for both.
+check_figure genotype-score-ceiling-exact       "RUN_TERMINAL  COMPLETE"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+
+# --- WHAT A GENE'S LENGTH ALREADY DECIDES ---
+# Complete enumeration: every base of every catchment on every chromosome, and every gene
+# carrying a LOEUF. These rows were dropped by a concurrent commit — the program and its page
+# were never absent, only the pins, so the harness checked none of its figures.
+check_figure nearest-gene-length-lottery-exact  "RUN_TERMINAL  COMPLETE"                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "GENE_LENGTH_INSTRUMENT__NEAREST_GENE_LOTTERY_AND_LOEUF_DENOMINATOR"     "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "c11ae542d7344b95abd87ee84d065954f322d0118d2609b236fe69ae1dda4489"       "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "arms run = 16   failed = 0"                                             "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "pins disagreeing = 0"                                                   "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "19,704"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "19,197"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "66,591"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "243,881"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "114,478"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "2,070,253,229"                                                          "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1,261,815,650"                                                          "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1,628,025,115"                                                          "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "3662/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1719/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "3359/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "4366/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "4092/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "3143/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1626000"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "484000"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1799000"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "412000"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1686000"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "-124,600"                                                               "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "-391,700"                                                               "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "10 of 10"                                                               "What-A-Gene-Length-Already-Decides.md"
 
 
 # --- MARKET SURVEILLANCE: the detector that flags the whole market -----------------

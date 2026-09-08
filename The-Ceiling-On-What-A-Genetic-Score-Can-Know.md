@@ -203,9 +203,18 @@ working directory; nothing absolute is baked in, and the seal is identical from 
 The staged label file carries the field descriptions and **not** the answer: the C columns were
 removed before staging, and the program refuses outright if one reappears.
 
+**How you know this run computed rather than quoted.** The harness runs every program with no
+argument and stdin from `/dev/null`, and every published figure must appear in the output — so a
+program that *refuses* still prints its figures, and grepping a transcript for a figure cannot tell
+a quoted number from a computed one. This program therefore prints exactly one terminal line, last,
+on every path it can take: `RUN_TERMINAL  COMPLETE`, or `RUN_TERMINAL  REFUSED <reason>`. The quoted
+figures sit inside a fenced block a reader or a grader can exclude by structure. Read the terminal
+first; if it says REFUSED, nothing inside the fences was computed on that run.
+
 ```
   arms run = 25   failed = 0
   pins disagreeing = 0
+RUN_TERMINAL  COMPLETE
 MARKER  GENOTYPE_SCORE_CEILING__EXACT_ARCSIN_BRACKET_OVER_1E12
 sha256  438bfa14cf0c4ab6e013af73173d78d16d8ecae2c78a438ff034482579733359
 ```

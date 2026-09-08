@@ -147,9 +147,18 @@ very first action, before any file is opened, so every refusal path prints them.
 discovered by walking outward from the binary and the working directory; the seal is identical from
 any directory.
 
+**How you know this run computed rather than quoted.** The harness runs every program with no
+argument and stdin from `/dev/null`, and every published figure must appear in the output — so a
+program that *refuses* still prints its figures, and grepping a transcript for a figure cannot tell
+a quoted number from a computed one. This program therefore prints exactly one terminal line, last,
+on every path it can take: `RUN_TERMINAL  COMPLETE`, or `RUN_TERMINAL  REFUSED <reason>`. The quoted
+figures sit inside a fenced block a reader or a grader can exclude by structure. Read the terminal
+first; if it says REFUSED, nothing inside the fences was computed on that run.
+
 ```
   arms run = 16   failed = 0
   pins disagreeing = 0
+RUN_TERMINAL  COMPLETE
 MARKER  GENE_LENGTH_INSTRUMENT__NEAREST_GENE_LOTTERY_AND_LOEUF_DENOMINATOR
 sha256  c11ae542d7344b95abd87ee84d065954f322d0118d2609b236fe69ae1dda4489
 ```
