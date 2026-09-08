@@ -220,6 +220,40 @@ check_figure corpus-distinct-count-exact "CONTROL ARM  13/13 PASS" ""
 check_figure fatigue-yield-vs-regulator "FATIGUE_YIELD_VS_REGULATOR__FOUR_AGREE_ONE_CONFLICT_ONE_NOT_COMPARABLE" "Where-Humans-Actually-Yield.md"
 check_figure fatigue-yield-vs-regulator "d5fab6529c34126003aec8d8ea2f80cb1558ccf9feb3b4896eaef739758206a1" "Where-Humans-Actually-Yield.md"
 
+# --- THE CEILING ON WHAT A GENOTYPE-ONLY SCORE CAN KNOW ---
+# The program prints its published reference figures as its FIRST action, before any file
+# is opened, so these pins are checked even from a tree with no corpus. The bound itself is
+# recomputed from corpus/genotype-ceiling on every run and compared, digit for digit, to the
+# figures written into the program before the run: `pins disagreeing = 0` is that check.
+check_figure genotype-score-ceiling-exact   "GENOTYPE_SCORE_CEILING__EXACT_ARCSIN_BRACKET_OVER_1E12"   "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "438bfa14cf0c4ab6e013af73173d78d16d8ecae2c78a438ff034482579733359" "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "arms run = 25   failed = 0"                               "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "pins disagreeing = 0"                                     "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.573212381656"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.602142835007"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.610622725745"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.527947611149"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.544353505508"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.538042338431"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.549890300690"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.541714427173"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.530300726943"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.598988711992"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.571783146564"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.599737251748"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.550601310553"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.558775112702"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.545063908314"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.561183362582"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.629000353248"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "0.606403923961"                                           "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "725/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "719/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "691/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "627/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "278/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+check_figure genotype-score-ceiling-exact   "1,105"                                                    "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
+
 
 # --- MARKET SURVEILLANCE: the detector that flags the whole market -----------------
 # Un-numbered family page, added 2026-09-08. Every row below was checked with grep -F on
