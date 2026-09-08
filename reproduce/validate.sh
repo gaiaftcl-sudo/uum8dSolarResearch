@@ -110,6 +110,22 @@ check_figure reserve-triangle-exact-vs-float "f1=14043/46" "Study-38-Loss-Reserv
 check_figure reserve-triangle-exact-vs-float "Dorinco Rein Co" "Study-38-Loss-Reserve-Triangle.md"
 check_figure reserve-triangle-exact-vs-float "9,007,199,254,740,992" "Study-38-Loss-Reserve-Triangle.md"
 
+# --- Study 39: the actuarial domain, exact against float ---
+check_figure actuarial-domain-exact-vs-float "STUDY39_ACTUARIAL_DOMAIN_EXACT_VS_FLOAT" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "SELFTEST PASS" ""
+check_figure actuarial-domain-exact-vs-float "control arms failed = 0" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "16,128"    "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "10,878"    "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "2,016"     "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "3,990"     "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "6,048"     "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "2,835"     "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "1,995"     "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "22,973,085" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "11,561,327" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "ES 2022, from age 93, 2 steps" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "442, 547, 631" "Study-39-Actuarial-Domain.md"
+
 # --- Study 26: the exact discrimination court, and the exhaustive off-target screen ---
 check_figure mr-topology-vs-expression-exact "TOPOLOGY_EXPLAINS: 11 of 17 tumour types" "Study-26-Master-Regulator-Bonds.md"
 check_figure mr-topology-vs-expression-exact "EXPRESSION_ADDS  : 5 of 17 tumour types"  "Study-26-Master-Regulator-Bonds.md"

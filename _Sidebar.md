@@ -35,6 +35,7 @@
 - [**Study 36** — the language game of Fermat's Last Theorem](Study-36-The-Language-Game-of-Fermats-Last-Theorem) — **guess and shear, or project: the near-miss the float never stops seeing**
 - [**Study 37** — thirty-seven thousand validated discoveries, five molecules](Study-37-Validated-Discoveries-Five-Molecules) — **why per-item validation cannot see a corpus-level defect**
 - [**Study 38** — the loss-reserve triangle, exact against float](Study-38-Loss-Reserve-Triangle) — **a reserve is an exact rational; 481 of 482 verdicts identical in both arithmetics; the sixteen-billion figure comes from an unchecked premise**
+- [**Study 39** — the actuarial domain, exact against float](Study-39-Actuarial-Domain) — **life, pensions, multi-state and aggregation; the margin is 8 significant digits at its tightest**
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)
@@ -54,7 +55,7 @@
 - [**The ontology**](Ontology) — grades, terminals, controls
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm) — the method
 - [**The full-grade replacement**](The-Replacement-Grade) — 49 retired instruments, 4 verticals
-- [Program index — all 38 studies](Shear-Studies-Index)
+- [Program index — all 39 studies](Shear-Studies-Index)
 - [Readers’ guide](Shear-Studies-Readers-Guide)
 - [White paper](Shear-Studies-White-Paper)
 - [Roadmap — what comes next](Shear-Studies-Roadmap)
