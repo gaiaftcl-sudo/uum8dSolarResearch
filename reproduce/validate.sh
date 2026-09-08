@@ -94,6 +94,22 @@ check_figure rate-of-rise-common-window    "885"      ""
 check_figure flourishing-entropy-ledger    "9 resolve exactly" ""
 check_figure flourishing-entropy-ledger    "1/1"      ""
 
+# --- Study 38: the loss-reserve triangle, exact against float ---
+check_figure reserve-triangle-exact-vs-float "STUDY38_RESERVE_TRIANGLE_EXACT_VS_FLOAT" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "SELFTEST PASS" ""
+check_figure reserve-triangle-exact-vs-float "control arms failed = 0" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "5,393,021"  "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "77,900"     "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "-16,662,494" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "21,770,741" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "19,041,666" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "17,138,459" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "15,618,034" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "2,390"      "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "f1=14043/46" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "Dorinco Rein Co" "Study-38-Loss-Reserve-Triangle.md"
+check_figure reserve-triangle-exact-vs-float "9,007,199,254,740,992" "Study-38-Loss-Reserve-Triangle.md"
+
 # --- Study 26: the exact discrimination court, and the exhaustive off-target screen ---
 check_figure mr-topology-vs-expression-exact "TOPOLOGY_EXPLAINS: 11 of 17 tumour types" "Study-26-Master-Regulator-Bonds.md"
 check_figure mr-topology-vs-expression-exact "EXPRESSION_ADDS  : 5 of 17 tumour types"  "Study-26-Master-Regulator-Bonds.md"
