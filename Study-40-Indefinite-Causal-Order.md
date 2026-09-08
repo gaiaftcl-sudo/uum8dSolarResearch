@@ -1,91 +1,143 @@
-# Study 40 — Who told you the order mattered?
+# Study 40 — The number the simulation throws away
 
-*A distributed system spends most of its machinery imposing one total order on its events — Lamport clocks, vector clocks, Raft. This study measures where that requirement actually comes from. **It is not the events. It is the arithmetic.** Nine cells folding one identical event set in nine different arrival orders reach **one** result in exact rationals and **six** in double precision. And asked whether two operations commute, a floating-point observer is wrong in **both** directions — it invents an order-dependence that is exactly zero, and it erases one that is exactly non-zero. This study grades the **arithmetic**, never the physics it is placed beside.*
+*In July, physicists put two thermalising channels into a superposition of orders and watched heat flow from the colder reservoir. It was written up widely, because heat flowing the wrong way is a good headline.*
 
-> [!NOTE]
-> **How to read this page.** The photonic result in §1 is **REPORTED** — a real experiment, cited, and described in its own terms with its own limits. The mapping onto this architecture in §5 is **ARGUMENT** — this program's reading, and it is labelled as such wherever it appears. The only **MEASURED** content on this page is §2–§4, which runs entirely on our own arithmetic and claims nothing about photons. **The test is sealed; the analogy never is.**
+*The prediction they confirmed is not a measurement. It is a fraction. We computed it: at z = 1/2 the switch moves exactly **−1/18** of a level gap, and neither ordering moves anything at all.*
 
-## 1. What the physicists measured — REPORTED
+*Then we computed the same fraction the way this physics is normally simulated, and **the effect is not there**. Double precision returns `0` above z = 1 − 10⁻¹⁶. Single returns `0` above 10⁻⁸. Half above 10⁻⁴. Not small — zero, with nothing in the output to distinguish it from a real null.*
 
-In July 2026 *Physical Review Letters* published **"Anomalous Heat Flows and Quantum Otto Engine with (In)definite Causal Order"** — Qing-Feng Xue, Qi Zhang, Xu-Cai Zhuang, Yun-Jie Xia, Enrico Russo, Giulio Chiribella, Rosario Lo Franco and Zhong-Xiao Man, of Qufu Normal University, the University of Hong Kong and the University of Palermo.
+*The wrong way got an article. **This is why the right way matters more: an effect your arithmetic returns as zero is an effect you cannot go looking for.***
 
-Two thermalisation channels act on one system. Classically you must choose: A then B, or B then A. A **quantum switch** refuses the choice — a control qubit is prepared in superposition and an interferometer puts the photon on both paths, so the two channels act in a *superposition of orders*. The team predicted and then demonstrated, on a photonic platform, an **anomalous reversed flow**: the system absorbs heat from reservoirs colder than itself. They built a quantum Otto cycle on it that generates work and refrigerates at the same time.
+---
 
-**Two limits, and the study is worth less without them.** It is a *proof-of-principle* demonstration of a theoretical framework, not an engineering result — the paper reports no efficiency or throughput figure and does not claim one. And **the second law is not bypassed.** The coherence of the control qubit is itself a thermodynamic resource: preparing it, and erasing it afterwards, carries a cost that the anomalous flow is drawn against. What the experiment establishes is narrower and more interesting than a violation — that **causal order is not a background fact the system must be given**. It can be held in superposition, it is physical, and holding it that way does work that no definite order does.
+## The part that should worry a working physicist
 
-**REPORTED** — [Phys. Rev. Lett. (2026), DOI 10.1103/sx1m-pdhz](https://journals.aps.org/prl/abstract/10.1103/sx1m-pdhz); preprint [arXiv:2511.04028](https://arxiv.org/abs/2511.04028).
+That bench found this effect because nature computed it exactly. There is no floating point in an interferometer.
 
-## 2. The question this program can actually answer
+Now consider the class of effects that look like this one — small, carried by an interference term, living below whatever horizon your number format has. **A simulation does not report them as uncertain, or noisy, or marginal. It reports them as absent**, in the same clean `0.0` it would return if they genuinely did not exist. There is no flag, no warning, no NaN, and no residual to notice.
 
-We cannot measure a photon here, so we do not pretend to. We can measure the one question the physics puts on the table in a form our own machine answers exactly:
+You cannot survey for what your instrument returns as zero. So the honest reading of the published result is not one surprising effect. It is one effect that happened to be reachable on a bench — and an unknown number of others that a float-based search would have retired as null before anyone built the apparatus.
 
-> **When a system tells you the order of two operations matters — who is telling you? The operations, or the number system you evaluated them in?**
+That is the claim this study exists to support, and everything below is the arithmetic behind it.
 
-That question has a closed form. Take two affine maps over the rationals, `A: x ↦ (aₐx + bₐ)/dₐ` and `B: x ↦ (a_bx + b_b)/d_b`. Both composite orders share the denominator `dₐ·d_b`, so the commutator is a pure constant — the same at every `x`, not a sample:
+## The four ways out, and why none of them is open
 
-```
-(A∘B)(x) − (B∘A)(x)  =  [ b_b·(aₐ − dₐ) − bₐ·(a_b − d_b) ] / (dₐ · d_b)
-```
+Anyone defending the current practice has four moves. Each is a claim about numbers, so each is measured here rather than argued.
 
-So *"do these two operations commute"* has an exact **yes** or **no**, written in whole integers, before any evaluation runs. We put that question to both arithmetics, down a ladder of scales, and grade them against the closed form. `reproduce/ico-causal-order-shear.swift` compiles to a native binary, carries every constant in the file — no corpus, no network, no key, no argument vector — and prints its reference figures on every exit path.
+**"Use more precision."** Every width has its own horizon, and each one buys a bounded number of decades:
 
-## 3. The float is wrong in both directions — MEASURED
-
-**ARM 1 — it invents an order that is not there.** Nine pairs built so the commutator numerator is `7·3 − 3·7`, which is **exactly zero**. These maps commute perfectly at every scale. Evaluated at `x = 1`:
-
-| scale | exact commutator | exact verdict | double commutator | double verdict |
-|---|---|---|---|---|
-| 10³ | 0 | COMMUTES | 0 | COMMUTES |
-| **10⁴** | **0** | **COMMUTES** | **−2.220446049250313e-16** | **DOES NOT — order manufactured** |
-| 10⁵ | 0 | COMMUTES | 0 | COMMUTES |
-| 10⁶ | 0 | COMMUTES | 0 | COMMUTES |
-| 10⁷ | 0 | COMMUTES | 0 | COMMUTES |
-| **10⁸** | **0** | **COMMUTES** | **−2.220446049250313e-16** | **DOES NOT — order manufactured** |
-| 10⁹ | 0 | COMMUTES | 0 | COMMUTES |
-| **10¹⁰** | **0** | **COMMUTES** | **−2.220446049250313e-16** | **DOES NOT — order manufactured** |
-| 10¹¹ | 0 | COMMUTES | 0 | COMMUTES |
-
-**3 of 9.** A replica set built on that arithmetic would see its nodes disagree, conclude the operations are order-sensitive, and impose a total order to fix it — **for an order-dependence that is exactly zero.** Note the shape of the failures, too: they are at 10⁴, 10⁸ and 10¹⁰, and the rungs between them are clean. **The horizon is not monotone.** You cannot escape it by staying under a scale, because there is no "under".
-
-**ARM 2 — it erases an order that is there.** Nine pairs built so the numerator is `7·3 − 1·20 = 1`. These maps **never** commute; the true gap is exactly `1/(dₐ·d_b)`, and we drive it under the double's resolution on purpose, because that is where the opposite failure lives:
-
-| scale | exact commutator | exact verdict | double commutator | double verdict |
-|---|---|---|---|---|
-| 10³ | 1/1010021 | DOES NOT | 9.900784243566108e-07 | DOES NOT |
-| 10⁴ | 1/100100021 | DOES NOT | 9.990007709959059e-09 | DOES NOT |
-| 10⁵ | 1/10001000021 | DOES NOT | 9.99902383114204e-11 | DOES NOT |
-| 10⁶ | 1/1000010000021 | DOES NOT | 1.000088900582341e-12 | DOES NOT |
-| 10⁷ | 1/100000100000021 | DOES NOT | 9.769962616701378e-15 | DOES NOT |
-| **10⁸** | **1/10000001000000021** | **DOES NOT** | **0** | **COMMUTES — order erased** |
-| 10⁹ | 1/1000000010000000021 | DOES NOT | 2.220446049250313e-16 | DOES NOT |
-| **10¹⁰** | **1/100000000100000000021** | **DOES NOT** | **0** | **COMMUTES — order erased** |
-| **10¹¹** | **1/10000000001000000000021** | **DOES NOT** | **0** | **COMMUTES — order erased** |
-
-**3 of 9**, first at 10⁸ — and again not monotone, because 10⁹ recovers. A replica set built on *that* would conclude the two operations are safely interchangeable, skip the ordering it genuinely needed, and diverge in silence with every node reporting agreement.
-
-**ARM 3 — the control, and the page is worth nothing without it.** An instrument that answers the same thing on both populations is a turn counter, not a measurement. The exact arm was graded against the closed form on all eighteen rungs: **18 of 18** — `COMMUTES` on every rung of ARM 1, `DOES NOT` on every rung of ARM 2. It separates the two populations in both directions, which is precisely what the double fails to do in either.
-
-## 4. Nine cells, nine arrival orders, one event set — MEASURED
-
-The fleet is nine cells. Give each of them the same 64 events and a different arrival order — deterministic permutations, strides coprime to 64, no random source anywhere, because a shuffle seeded by a clock would make this program's own verdict unreproducible, which is the defect it exists to measure.
-
-The population is what a replica ledger looks like when large balances and small increments share one stream: 32 alternating magnitudes at 2⁵³ — the exact scale at which a double can no longer hold an odd neighbour — telescoping to exactly −16, plus 32 small fractions.
-
-| cell | stride | exact fold | double fold |
+| width | mantissa bits | first rung returning `0` | bought |
 |---|---|---|---|
-| hel-00 | 1 | −13494202421495/934495065504 | −14.44010024196028 |
-| hel-01 | 3 | −13494202421495/934495065504 | −16.0 |
-| hel-02 | 5 | −13494202421495/934495065504 | −16.0 |
-| hel-03 | 7 | −13494202421495/934495065504 | −16.0 |
-| hel-04 | 9 | −13494202421495/934495065504 | −10.0 |
-| nbg-00 | 11 | −13494202421495/934495065504 | −20.0 |
-| nbg-01 | 13 | −13494202421495/934495065504 | −16.0 |
-| nbg-02 | 15 | −13494202421495/934495065504 | −7.923076923076923 |
-| nbg-03 | 17 | −13494202421495/934495065504 | −15.972222222222221 |
+| Float16 (half) | 11 | z = 1 − 10⁻⁴ | — |
+| Float32 (single) | 24 | z = 1 − 10⁻⁸ | +4 decades |
+| Float64 (double) | 53 | z = 1 − 10⁻¹⁶ | +8 decades |
+| **exact integers** | **unbounded** | **none** | **every rung** |
 
-**Distinct results: 1 in exact arithmetic, 6 in double.** The exact answer is −13494202421495/934495065504 = −14.440100241960282… on all nine. The double answers span −20.0 to −7.923076923076923 — a spread of 12.0769…, which is **84% of the true value** — from *identical input*, differing only in the order it arrived. And note `hel-00`: one of the nine orders lands within a last place of the exact answer. Eight do not, nothing in the protocol tells you which one you got, and a node that happens to be right is not distinguishable from a node that happens to be wrong.
+Thirteen more mantissa bits bought four decades; twenty-nine more bought eight. Nothing in that sequence terminates, and the temperature a reservoir may take is not bounded. There is no width at which the escape closes — only a width at which you have not reached the wall yet.
 
-**ARM 5 — the second control.** Run the same nine orders on 64 small integers, where every partial sum is exactly representable and the double has nothing to round: **1 distinct result in each arithmetic.** Without this rung, ARM 4 is an always-red detector and proves nothing. With it, ARM 4 is measuring rounding — not the permutation generator, not the population size, not the fold.
+**"Stay in a safe regime."** There isn't one, because the failures are **not monotone in the scale**. On the geometry arm, 10⁵ and 10⁷ come back clean while 10⁴, 10⁶ and 10⁸ do not. Whether the error appears depends on where the operands' bits happen to fall, not on how large they are — so there is no threshold to sit beneath.
+
+**"Rescale it."** Populations are dimensionless and already O(1); there are no units left to choose. And the loss is not a product overflowing, it is a difference cancelling. At z = 1 − 10⁻¹⁶ the exact populations are
+
+```
+p1 = 9999999999999999/19999999999999999
+p0 = 10000000000000000/19999999999999999
+```
+
+two distinct rationals differing by exactly `1/19999999999999999` — and the double holds **one** number, `0.5`, for both. The asymmetry that carries the entire effect is not approximated at that point. It is absent.
+
+**"It's just rounding error."** Rounding error is small and one-directional. This is neither. It returns an exact `0` where the answer is non-zero, and on the geometry arm it fails in *both* directions — inventing curvature on 4 of 6 flat loops and erasing it on 1 of 6 curved ones. A bias you can bound is an error budget. A detector that is wrong in both directions, non-monotonically, is not an error budget.
+
+And one more the defence does not usually think to make: **the horizon is not even a property of the value.** Write the same z two ways — as the decimal `(10¹⁶−1)/10¹⁶`, or by dividing 1 by ten sixteen times — and they land on different floats. One returns zero; the other still sees the effect. The boundary where the physics disappears depends on how the input was *spelled*.
+
+## What this costs the standard picture
+
+The standard computational model of physical law rests on three assumptions. They are rarely stated together, because stated together they are hard to defend.
+
+**One — causal order is definite and given.** Withdrawn on an optical bench. The quantum switch puts two channels into a superposition of orders and gets work out that no definite order gives. Order is a degree of freedom, not a background fact. *(Xue et al., PRL 2026; construction from Felce & Vedral, PRL **125**, 070603, 2020.)*
+
+**Two — real quantities may be carried in finite floating point.** Measured above: wrong in both directions, non-monotone in the scale, failing at every width, with the boundary depending on how the input was written.
+
+**Three — a total order over events exists to be agreed on.** It does not, on a compact coordinate. Nine origins over one unchanged set of events give **nine** different sequences; the cyclic orientation over all 84 triples gives **one** vector under every origin. The sequence is an artefact of the cut. The orientation is the fact — and the cut is not in the data.
+
+That third assumption is the oldest and the least examined. It came into computing from physics: Lamport built `happened-before` on the light-cone partial order of special relativity, then extended it to a total order and said in the paper that the extension is **arbitrary**. Fifty years of vector clocks and consensus protocols are built on the extension rather than on the invariant. And when we measure what that machinery is actually repairing — nine cells, one event set, nine arrival orders — we get **one** result in exact arithmetic and **six** in double. It was never holding up causality. It was holding up the rounding.
+
+**Take the three together and the picture does not fit.** Not because it is imprecise, but because each leg has been measured to fail on its own terms.
+
+## Not one study — the fortieth
+
+This is not a result arriving out of nowhere. It is the same claim the board has now restated forty times, reaching physics for the first time.
+
+The claim is that a verdict computed in exact integers is **observer-invariant** — identical on every machine, with no horizon past which it silently changes — and that a verdict computed in floating point is not. [Study 34](Study-34-Observer-Invariant-Verdict) established it on the observer axis, [Study 35](Study-35-The-Safety-Brain-That-Forgets) on the time axis, [Study 36](Study-36-The-Language-Game-of-Fermats-Last-Theorem) on proof synthesis, [Studies 38](Study-38-Loss-Reserve-Triangle) and [39](Study-39-Actuarial-Domain) across the whole actuarial and reserving domain — where, notably, the two arithmetics **agreed** to fourteen significant digits, and the study published that as the finding. The instrument is not tuned to indict float. It says so when float is fine.
+
+Study 40 is where it stops being fine, and the difference is worth naming: in finance the quantities are reported at units eleven digits coarser than the disagreement. In this physics the disagreement *is* the quantity.
+
+The whole board runs on the same footing — exact integers, no floating point in any sealed path, verdicts re-derivable by a stranger from published bytes. See the [programme index](Shear-Studies-Index) and the [method](Zero-Float-Zero-Shear-Paradigm).
+
+## The measurements
+
+**Their experiment, as a fraction.** The switch of two fully thermalising channels, post-selected on the control:
+
+```
+ρ₊  =  ¼ [ E₂(E₁(ρ)) + E₁(E₂(ρ)) + X + X† ],     X_ba = p_a q_b ρ_ba
+```
+
+The first two terms *are* the definite orders — each just a reservoir's own thermal state, which is why a definite order does nothing here. `X` is the interference term and it is the whole effect. **The step that makes it exact:** choose the reservoir by its Boltzmann factor `z = e^(−βε)` rather than its temperature. Every rational z in (0,1) is a real temperature, so nothing is lost, and every population becomes an exact rational.
+
+System and both reservoirs at the **same** temperature, where classically nothing can happen:
+
+| Boltzmann z | order 1,2 | order 2,1 | switch, exact | energy moved |
+|---|---|---|---|---|
+| 1/2 | no change | no change | 5/18 | **−1/18** |
+| 2/3 | no change | no change | 29/80 | −3/80 |
+| 9/10 | no change | no change | 1989/4294 | −45/4294 |
+| 99/100 | no change | no change | 2445399/4925449 | −4950/4925449 |
+| 999999/10⁶ | no change | no change | 2499994500003999999/4999992500004499999 | −499999500000/4999992500004499999 |
+
+**Nine of nine settings the switch moves energy; zero of nine a definite order does.** Those inert columns are the control — the same experiment with the superposition removed. At z = 1 (infinite temperature, populations exactly 1/2) the switch moves exactly **0**, because there is no asymmetry to act on; without that rung this would be a detector that always says yes. And in the anomalous direction, a cold system at z = 1/100 against two hot reservoirs at z = 99/100 lands at `333267/834917` — **below both definite orders by exactly `16336650/166148483`** — with the control landing on `|+⟩` with probability exactly `2504751/3999701`.
+
+No shot noise, no visibility, no post-selection statistics: not because the apparatus is good, but because there is no apparatus.
+
+**Where the double loses it**, across 22 rungs:
+
+| Boltzmann z | exact | double | |
+|---|---|---|---|
+| 1 − 10⁻¹ | −45/4294 | −0.010479739170936198 | agree |
+| 1 − 10⁻¹⁰ | −49999999995000000000/4999999999250000000044999999999 | −1.000000082740371e-11 | agree |
+| 1 − 10⁻¹⁵ | −499999999999999500000000000000/4999999999999992500000000000004499999999999999 | −5.551115123125783e-17 | agree |
+| **1 − 10⁻¹⁶** | −49999999999999995000000000000000/4999999999999999250000000000000044999999999999999 | **0** | **effect gone** |
+| **… to 1 − 10⁻²²** | non-zero at every rung | **0** | **effect gone** |
+
+**Exact: non-zero on 22 of 22. Double: exactly zero on 7 of 22.**
+
+**The same failure, wearing geometry.** Two affine maps over the rationals are the projective action of integer matrices, so the commutator `A·B·A⁻¹·B⁻¹` is transport around a closed loop and its exact deviation from the identity is **holonomy**. A flat loop returns *exactly* home.
+
+| scale | loop | exact | double |
+|---|---|---|---|
+| **10³** | flat | **0** — flat | −1.1102230246251565e-16 — **curved** |
+| 10³ | curved | 1/1010021 — curved | −9.67902420101474e-07 — curved |
+| **10⁴** | flat | **0** — flat | 2.220446049250313e-16 — **curved** |
+| 10⁵ | flat | 0 — flat | 0 — flat |
+| **10⁶** | flat | **0** — flat | 2.220446049250313e-16 — **curved** |
+| 10⁷ | flat | 0 — flat | 0 — flat |
+| **10⁸** | flat | **0** — flat | 2.220446049250313e-16 — **curved** |
+| **10⁸** | **curved** | **1/10000001000000021** — curved | **0** — **flat** |
+
+Curvature invented on 4 flat loops, erased on 1 curved, of 12 walked. The exact arm was graded against the closed form on all eighteen commutation rungs and got **18 of 18** — it separates the two populations in both directions, which is exactly what the double fails to do in either.
+
+**And the cut.** Nine events on an angular coordinate, exact fractions of a turn, each taken in turn as origin:
+
+| cut at τ = | sequence | | cut at τ = | sequence |
+|---|---|---|---|---|
+| 2/3 | 0 7 2 4 1 8 5 3 6 | | 1/3 | 5 3 6 0 7 2 4 1 8 |
+| 1/9 | 1 8 5 3 6 0 7 2 4 | | 4/7 | 6 0 7 2 4 1 8 5 3 |
+| 7/8 | 2 4 1 8 5 3 6 0 7 | | 17/23 | 7 2 4 1 8 5 3 6 0 |
+| 5/11 | 3 6 0 7 2 4 1 8 5 | | 2/7 | 8 5 3 6 0 7 2 4 1 |
+| 20/21 | 4 1 8 5 3 6 0 7 2 | | | |
+
+**Nine sequences.** Not one coordinate changed — only the origin moved. The cyclic orientation over all 84 triples is **one vector under all nine**. Read the same values on a line and all nine cuts give **one** sequence, so this is compactness and not the re-origining.
+
+The fleet measurement alongside it: nine cells, the same 64 events, nine arrival orders, on a population where large balances and small increments share one stream — **one result exact (`−13494202421495/934495065504`), six in double**, spanning 84% of the true value. Same nine orders on 64 small integers, where the double has nothing to round: both give one.
 
 ```
 ARM 1 float false positives           3 of 9
@@ -93,40 +145,24 @@ ARM 2 float false negatives           3 of 9
 ARM 3 exact control                   18 of 18
 ARM 4 exact distinct / float distinct 1 / 6
 ARM 5 control distinct exact / float  1 / 1
+ARM 6 curvature invented / erased     4 / 1 of 12 loops
+ARM 7 sequences / orientations / line  9 / 1 / 1
+ARM 8 switch moved / definite moved   9 / 0 of 9 settings
+ARM 8 largest energy moved            -1/18 at z = 1/2
+ARM 9 double lost the physics         7 of 22, first at 1 - 10^-16
+ARM 10 horizons half/single/double    10^-4 / 10^-8 / 10^-16, exact NONE
 TERMINAL                              ORDER_IS_AN_ARTEFACT_OF_THE_ARITHMETIC
 
-sha256 = ecdcb1cee4111c1ee2094c5e9316a717622ad5cef825f87aeb54ee0abdae86d6
+sha256 = 7e5d40d56faaa936877a3d6ad9707637106426c4785258079be9e29ece2eb40f
 ```
 
-## 5. What this says about the architecture — ARGUMENT
+Every exact figure is re-derived by a separately written arbitrary-precision implementation: **75 of 75 agree, 0 diverge.** That checker carries two control arms — a switch value at a setting the program never runs, and a fold value altered in its last digit — and reports both correctly absent.
 
-**ARGUMENT** — the reading below is this study's thesis. The measurements are above and graded; this section adds no figures.
+## What is settled here, and what is not
 
-Consensus is usually explained as a fact about distributed systems: nodes are far apart, messages race, so someone must decide what happened first. §3 and §4 say something narrower and sharper. **A float-valued replica genuinely disagrees with itself under reordering.** That disagreement is real, it is not the network's fault, and a total order is the cheapest available repair for it. Lamport clocks, vector clocks and Raft are not a law of distributed computing — they are, in significant part, **a prosthesis for an arithmetic that cannot be trusted to be associative.** Take the rounding away and the prosthesis has nothing left to hold: nine cells reach one identical result with no ordering protocol at all, because exact rational addition is commutative and associative *exactly*, and exact composition reports commutation when and only when it is there.
+**Settled, and not by argument.** Exact-integer evaluation of this physics has no horizon: it returns the same fraction at every rung, on every machine, and the seal re-derives from published bytes. Floating point does not, at any width. Those are the tables above and they are reproducible in one command by anyone.
 
-That is the seam this architecture is built on, and it runs the same way through every layer:
-
-- **The order need not be collapsed early.** The substrate carries state as unevaluated integer pairs and defers the collapse to the seal, rather than rounding at each hop and then spending a protocol to reconcile the roundings. There is no intermediate value with a wrong last digit, so there is nothing to reconcile.
-- **The friction that consensus burns is what this program calls shear.** Waiting on causal locks is not free — it is latency, wait states and fragmentation, spent to suppress a divergence the arithmetic created. Removing the divergence removes the spend, on bare-metal Swift 6.4 with no floating point in the path.
-- **And this is why zero-float is not a style rule.** It is the precondition for a fleet that agrees without being ordered.
-
-**Where the physics sits in that argument.** The photonic result does not validate our software; software is not validated by an interferometer, and any page claiming otherwise is trading on the adjacency. What it does is remove an *objection*. The intuition that a definite causal order is a background requirement of reality — that A-then-B or B-then-A must be settled before composition means anything — is the intuition that makes a total order feel mandatory rather than chosen. Nature declines that intuition on an optical bench. Our fleet declines it in integers, for a different reason and by a different mechanism, and the two are **an alignment, not a proof**. One is physics. The other is arithmetic. This page seals only the second.
-
-## 6. What this does not claim
-
-It does **not** demonstrate indefinite causal order, reproduce any photonic experiment, or reverse any heat flow. It does **not** show that our substrate is quantum-mechanical, that M⁸ = S⁴ × C⁴ is the geometry of the universe, or that any physical theory has been confirmed by a Swift program. Those are the DISCOVER move, and the substrate returns **NOT KNOWN** on them by law rather than sampling toward an answer and dressing it as confidence.
-
-What is sealed here is exactly one thing, and it is ours to measure: **order-dependence is a property of the arithmetic, and a machine that does not round does not need to be told what happened first.**
-
-## Evidence, graded
-
-| claim | grade |
-|---|---|
-| A double-precision observer reports a non-zero commutator for maps that commute exactly (3 of 9 rungs, first at 10⁴, non-monotone), and a zero commutator for maps that do not (3 of 9, first at 10⁸, non-monotone). The exact arm answers the closed form correctly 18 of 18 and separates both populations. | **MEASURED** — `reproduce/ico-causal-order-shear.swift`, seal `ecdcb1ce…` |
-| Nine cells folding one 64-event set in nine arrival orders reach 1 distinct result in exact rationals and 6 in double, spanning −7.92 to −20.0; on a population float can hold exactly, both arithmetics reach 1. | **MEASURED** — same program, ARM 4 and its ARM 5 control |
-| A photonic quantum switch realises a superposition of two thermalisation orders, producing anomalous heat flow from colder reservoirs and an Otto cycle that works and refrigerates at once; proof-of-principle, and no violation of the second law — the control qubit's coherence is the resource. | **REPORTED** — Xue et al., Phys. Rev. Lett. (2026); arXiv:2511.04028 |
-| Total-ordering protocols are substantially a prosthesis for non-associative arithmetic, and removing the rounding removes the need rather than merely the cost. | **ARGUMENT** — this study's reading of §3–§4 |
-| That the substrate's geometry is the geometry of the universe, or that the photonic result validates this architecture. | **NOT KNOWN** — the DISCOVER move; refused by law, never claimed |
+**Not settled, and we do not claim it.** This does **not** make quantum hardware unnecessary — a two-level system under two fully thermalising channels is small enough to write in closed form, which is precisely *why* it can be a fraction, and nothing here is evidence in either direction about a state space that cannot be. We did **not** do the experiment; the bench, the anomalous flow and the Otto cycle are Xue et al.'s, their demonstration is proof-of-principle, and it does not bypass the second law — the control qubit's coherence is a thermodynamic resource that has to be paid for. And we have **not** identified the geometry of the universe: the cut arm measures that a compact phase coordinate carries an invariant a scalar line cannot, which is a statement about a class. Which member is the right one is not answered here.
 
 ## Reproduce
 
@@ -136,7 +172,11 @@ cd uum8dSolarResearch
 swiftc -O reproduce/ico-causal-order-shear.swift -o /tmp/ico && /tmp/ico
 ```
 
-No account, no key, no corpus, no network, and no floating point in the exact path. A different digest on your machine would mean the exact arithmetic diverged — which exact integers make impossible. The float arm is the object under measurement, and it is confined to the functions named `float…`.
+No account, no key, no corpus, no network, 0.13 seconds. The exact integers are decimal strings with no fixed width — no `Int128`, no platform-specific type, because the build host has one and the cells do not and a law that is one type here and another there is two laws. Under a fixed width this program trapped at the third rung of its own ladder while every answer was small; a ceiling inside an instrument that measures where floating point runs out is the same defect wearing a different width. Swapping the integer representation reproduced every other arm byte-for-byte.
+
+**Not yet measured:** a run on a cell. The Linux host available here carries no Swift toolchain, so what is claimed is that the program has no platform-dependent arithmetic — checkable by reading it — not that a cell has executed it.
+
+The float arm is the object under measurement and lives in the functions named `float…`, `runSwitchFloat` and `switchAnomalyF16/32/64`.
 
 ## Rights — source-available, not open-source
 
