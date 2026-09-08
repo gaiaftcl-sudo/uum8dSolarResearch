@@ -11,7 +11,7 @@ below with the clause that stopped it. Two slots named and empty.**
 LIBRARY MATERIALS   ->   ADMITTED
   entry files   5      ADMITTED  5      HELD  0      REFUSED  0
   graded together with the other two libraries in ONE run — 14 admitted, 4 held, 0 refused
-  TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
+  TRANSCRIPT SEAL  sha256  da85dccf51d40c7dd5ecaf6842ba2927370c2bc6a26730e7ff3c55193297a3e5
 ```
 
 ---
@@ -81,7 +81,7 @@ never in aggregate. A tenth clause, **F1**, holds two libraries at once and asks
 is filed in both — which is why the three libraries are graded in a **single run**. Three
 terminals — **ADMITTED**, **REFUSED**, **NOT_KNOWN** — and they are three answers. The full law is
 [here](The-Library-Admission-Law); the executable is `reproduce/library-admission-law.swift`, and it
-runs **65 control arms** before it grades anything.
+runs **71 control arms** before it grades anything.
 
 ---
 
@@ -440,8 +440,8 @@ own `REFUSED` lines say the same thing individually; the slot says it about the 
 ### The verdict transcript, and its seal
 
 ```
-CONTROL ARM  65/65 PASS
-  arms that must REFUSE      40
+CONTROL ARM  71/71 PASS
+  arms that must REFUSE      43
   arms that must ADMIT       16
   arms that must HOLD         5   (NOT_KNOWN — the third terminal is reachable)
 
@@ -454,8 +454,8 @@ LIBRARY MATERIALS   ->   ADMITTED
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries graded
                           together; 12 distinct triples over 14 admitted entries
 
-TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
-sealed bytes             31,434
+TRANSCRIPT SEAL  sha256  da85dccf51d40c7dd5ecaf6842ba2927370c2bc6a26730e7ff3c55193297a3e5
+sealed bytes             32,378
 exit                     2   (four entries across the three libraries are HELD; nothing is refused)
 ```
 
@@ -573,7 +573,7 @@ taken that way.
 
 ## Related
 
-- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 65 control arms
+- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 71 control arms
   behind it.
 - [**The Library of Proteins**](Library-Of-Proteins) · [**The Library of Compound Cures**](Library-Of-Compound-Cures) — the other two libraries, graded in the same run as this one.
 - [Study 30 — The sovereign edge pod](Study-30-Sovereign-Edge-Pod.md) — the charter behind entry 2

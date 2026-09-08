@@ -4,7 +4,7 @@
 
 **Status: LAW FROZEN and EXECUTABLE, 2026-09-07.** The law is
 `reproduce/library-admission-law.swift`. It compiles with `xcrun swiftc -O -swift-version 5`,
-carries **65 control arms passing in three directions**, and refuses on every constructed
+carries **71 control arms passing in three directions**, and refuses on every constructed
 violation below with the clause named. The three library pages are downstream of this file.
 This page is the law's prose; the program is the law.
 
@@ -156,12 +156,45 @@ seal, and says so in the held message. Three control arms hold both repairs, and
 that matters: **the same entry against a COMPLETE run must still ADMIT**, because a guard that always
 holds is the same defect wearing the other face.
 
-**The known weakness, stated here rather than found later.** The refusal detector is keyed to
-**spellings** — the phrases our programs actually print when they decline to compute. A detector
-keyed to spellings goes blind the moment a program says it a new way, which is exactly how this
-defect survived. The durable fix is a **contract**: one declared line every refusing program prints,
-and a delimited block around quoted reference figures, so the law reads only what a run computed.
-That is named as open work, not claimed as done.
+**THE CONTRACT — the weakness this page named as open work, closed the same day.** Six hours
+earlier this paragraph read *"the refusal detector is keyed to spellings … the durable fix is a
+contract: one declared line every refusing program prints, and a delimited block around quoted
+reference figures … named as open work, not claimed as done."* A second session building two
+unrelated studies read that, implemented it in both of its programs without being asked, and said
+so. The law reads it now, and the spelling list survives only as a fallback for programs that have
+not adopted it — a vocabulary can only ever be as complete as yesterday.
+
+```
+RUN_TERMINAL  COMPLETE                  this run computed a verdict
+RUN_TERMINAL  REFUSED  <reason>         this run computed nothing, and says why
+
+--- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+  … the figures the page carries, so a reader with no corpus can still check them …
+--- END QUOTED REFERENCE FIGURES ---
+```
+
+**Two properties, and the second is the one a refusal test alone cannot give you.**
+
+**A declared terminal is final in both directions.** `REFUSED` is a refusal whatever the prose
+says — and `COMPLETE` is **not** a refusal whatever the prose says. That second half is not
+symmetry for its own sake: a completed run whose quoted block contains the sentence *"a gate given
+nothing must not pass"* would otherwise be read as a refusal by the fallback and **held**, and a
+false NOT_KNOWN is a defect exactly as a false ADMIT is. Arm 51 is that case, in that direction.
+
+**A figure between the fences was quoted, not computed — even on a COMPLETE run.** This is the
+half the refusal test cannot reach at all. A program that runs to completion *and* prints its
+published reference block would have those quoted figures credited to the run. E4 and E5 now read
+the **computed region** — the transcript less every fenced block — independently of each other, so
+a run can print its figures and have its seal refused, or the reverse. An unclosed `BEGIN` fence is
+treated as quoted to the end of the transcript: the conservative direction, which can only withhold
+credit, never manufacture it.
+
+**Six arms hold it, and three of the six cut against the rule rather than for it:** a COMPLETE run
+that also quotes its block must **admit**; figures only inside the fences on a COMPLETE run must be
+**refused**, not held, because the run finished and simply does not print them; a declared refusal
+that quotes every figure must **hold**; a declared `COMPLETE` must beat a refusal spelling in its
+own quoted block; an unclosed fence must withhold; and figures computed with the seal only quoted
+must pass E4 and refuse E5. **71 arms, all passing: 43 refuse, 19 admit, 9 hold.**
 
 ### E6 — GRADE from this wiki's ontology
 `VERIFIED · REPORTED · CITED_NOT_MEASURED · MEASURED · PROJECTION · ABSENT · NOT_KNOWN`
@@ -450,13 +483,13 @@ A law that admits everything has admitted nothing. A law that refuses everything
 law with no reachable `NOT_KNOWN` has two answers for three questions, so it will print one of
 the two where it means the third.
 
-**65 arms, all passing: 40 must REFUSE, 17 must ADMIT, 8 must HOLD.** Every negative arm is the one
+**71 arms, all passing: 43 must REFUSE, 19 must ADMIT, 9 must HOLD.** Every negative arm is the one
 correctly-formed fixture entry with **exactly one thing changed**, so a refusal is attributable to
 that change and nothing else. Each arm declares the terminal **and** the clause code it expects —
 refusing for the wrong reason is recorded as `REFUSED(wrong reason)` and **fails**, because
 otherwise a checker that refused everything would score full marks on a suite of refusal arms.
 
-Eleven arms are **controls on the controls**, and they are the ones worth arguing about:
+Fourteen arms are **controls on the controls**, and they are the ones worth arguing about:
 
 - prose *about* a procedure must not trip the procedure detector;
 - a refusal line naming a self-graded column must not trip the self-graded detector;
@@ -470,15 +503,21 @@ Eleven arms are **controls on the controls**, and they are the ones worth arguin
 - a figure absent from a **complete** run must still refuse, for the same reason.
 - an entry graded against a **complete** run must still ADMIT after the quoted-figure repair, or
   that repair is an always-hold — the same defect wearing the other face.
+- a COMPLETE run that also quotes its published block must **admit**, or the computed-region
+  rule is an always-refuse;
+- a declared `COMPLETE` must beat a refusal **spelling** inside that program's own quoted block,
+  because a false NOT_KNOWN is a defect exactly as a false ADMIT is;
+- figures computed with the seal only quoted must pass E4 and refuse E5, so the two clauses are
+  shown to read the region independently.
 
 The fixtures are embedded in the program: the control arm needs no corpus, no filesystem and no
 network, and it runs **first** — if any arm fails, no library is graded at all.
 
 ```
-CONTROL ARM  65/65 PASS
-  arms that must REFUSE      40
-  arms that must ADMIT       17
-  arms that must HOLD         8   (NOT_KNOWN — the third terminal is reachable)
+CONTROL ARM  71/71 PASS
+  arms that must REFUSE      43
+  arms that must ADMIT       19
+  arms that must HOLD         9   (NOT_KNOWN — the third terminal is reachable)
 A law that admits everything has admitted nothing; a law that refuses everything
 has too; and a law with no reachable NOT_KNOWN has only two answers for three
 questions, so it will print one of the two where it means the third.

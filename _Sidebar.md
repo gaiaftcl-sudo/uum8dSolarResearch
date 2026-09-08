@@ -6,7 +6,7 @@ any medicine safe or unsafe.**
 **1 · Why an exact safety screen at all**
 
 - [**Cures Without the Gatekeeper**](Cures-Without-The-Gatekeeper) — the medicine front door: six real written medicines, one screen anyone can re-run
-- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 65 arms that prove it refuses. **The primary artefact.**
+- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 71 arms that prove it refuses. **The primary artefact.**
 
 **2 · The three libraries, which grow rather than close**
 

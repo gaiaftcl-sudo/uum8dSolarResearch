@@ -325,7 +325,78 @@ func firstHex64Range(_ line: String) -> Range<String.Index>? {
 // REFUSED. Narrow by construction: the five screens in this wiki that print their
 // pinned reference figures and then stop for want of stdin are NOT refusal
 // transcripts by this test, and their entries are admitted from them.
+// ===========================================================================================
+// THE CONTRACT — structure, not spelling. Adopted 2026-09-08.
+//
+// The spelling-keyed detector below this block was written the same day and its own comment
+// named the durable fix: "one declared line every refusing program prints, and a delimited
+// block around quoted reference figures". Two programs in reproduce/ now print exactly that,
+// so the law reads structure first and falls back to spellings only for programs that have
+// not adopted it. A vocabulary list can only ever be as complete as yesterday.
+//
+//   RUN_TERMINAL  COMPLETE            this run computed a verdict
+//   RUN_TERMINAL  REFUSED  <reason>   this run computed nothing, and says why
+//
+//   --- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+//   ...
+//   --- END QUOTED REFERENCE FIGURES ---
+//
+// TWO PROPERTIES, and the second is the one a refusal test alone cannot give you.
+//
+// 1. A DECLARED TERMINAL IS FINAL IN BOTH DIRECTIONS. `REFUSED` is a refusal whatever the
+//    prose says; `COMPLETE` is NOT a refusal whatever the prose says. The second half matters
+//    as much as the first: a completed run whose quoted block happens to contain the sentence
+//    "a gate given nothing must not pass" would otherwise be misread as a refusal by the
+//    fallback, and a false HOLD is a defect exactly as a false ADMIT is.
+//
+// 2. A FIGURE BETWEEN THE FENCES WAS QUOTED, NOT COMPUTED — even on a COMPLETE run. This is
+//    the half that the refusal test cannot reach: a program that runs to completion and also
+//    prints its published reference block would otherwise have those quoted figures credited
+//    to the run. E4 and E5 read the COMPUTED REGION only.
+//
+// An unclosed BEGIN fence is treated as quoted to the end of the transcript. That is the
+// conservative direction: it can only withhold credit, never manufacture it.
+// ===========================================================================================
+
+let RUN_TERMINAL_KEY = "RUN_TERMINAL"
+let QUOTED_BEGIN     = "BEGIN QUOTED REFERENCE FIGURES"
+let QUOTED_END       = "END QUOTED REFERENCE FIGURES"
+
+// The LAST declared terminal wins: a transcript is whatever it finished as.
+func declaredTerminal(_ text: String) -> String? {
+    var found: String? = nil
+    for line in splitLines(text) {
+        let t = trim(line)
+        guard t.hasPrefix(RUN_TERMINAL_KEY) else { continue }
+        let rest = trim(String(t.dropFirst(RUN_TERMINAL_KEY.utf8.count)))
+        let up = rest.uppercased()
+        if up.hasPrefix("COMPLETE") { found = "COMPLETE" }
+        else if up.hasPrefix("REFUSED") { found = "REFUSED" }
+    }
+    return found
+}
+
+// Everything the run actually printed as its own work: the transcript less every fenced
+// quoted block. The fence lines themselves are dropped with the block.
+func computedRegion(_ text: String) -> String {
+    var out: [String] = []
+    var inQuoted = false
+    for line in splitLines(text) {
+        if line.contains(QUOTED_BEGIN) { inQuoted = true; continue }
+        if line.contains(QUOTED_END)   { inQuoted = false; continue }
+        if !inQuoted { out.append(line) }
+    }
+    return out.joined(separator: "\n")
+}
+
+func transcriptCarriesContract(_ text: String) -> Bool {
+    return declaredTerminal(text) != nil || text.contains(QUOTED_BEGIN)
+}
+
 func isRefusalTranscript(_ text: String) -> Bool {
+    // STRUCTURE FIRST. A declared terminal is final in BOTH directions, so a program that
+    // adopted the contract can never be misread by the spelling list below it.
+    if let d = declaredTerminal(text) { return d == "REFUSED" }
     for line in splitLines(text) {
         let t = trim(line)
         let lt = lower(t)
@@ -661,6 +732,9 @@ struct EmbeddedEvidence: Evidence {
     let programs: Set<String> = ["fixture-program-alpha", "fixture-program-beta",
                                 "fixture-program-gamma", "fixture-program-delta",
                                 "fixture-program-epsilon", "fixture-program-zeta",
+                                "fixture-program-theta", "fixture-program-iota",
+                                "fixture-program-kappa", "fixture-program-lambda",
+                                "fixture-program-mu", "fixture-program-nu",
                                 "fixture-program-eta"]
     func transcript(_ program: String) -> String? {
         switch program {
@@ -688,6 +762,88 @@ struct EmbeddedEvidence: Evidence {
 
             REASON: study root not found.
             NO SEAL EMITTED. No verdict is published on a refusal path.
+            """
+        case "fixture-program-theta":
+            // THE CONTRACT, HONESTLY USED: a COMPLETE run that also prints its published
+            // reference block. Both declared figures and the seal appear OUTSIDE the fences,
+            // in the region this run computed. This is the positive control for every arm
+            // below it — without it the computed-region rule could be an always-refuse.
+            return """
+            FIXTURE THETA — a complete run that also quotes its published block
+            --- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+              alpha figure one : 999
+              seal 0000000000000000000000000000000000000000000000000000000000000000
+            --- END QUOTED REFERENCE FIGURES ---
+            alpha figure one : 42
+            alpha figure two : 7 of 9
+            seal 9f2c4b7a1e6d8305c9b4a27fe0d1638a5c7b9e402d16f8a3c5b7d9e1f02a4c68
+            RUN_TERMINAL  COMPLETE
+            """
+        case "fixture-program-iota":
+            // A COMPLETE run whose declared figures appear ONLY between the fences. The run
+            // finished, so this is not absence of evidence — it is a figure the program does
+            // not print. REFUSED, not HELD, and that distinction is the whole ontology.
+            return """
+            FIXTURE IOTA — complete, but the figures are only in the quoted block
+            --- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+              alpha figure one : 42
+              alpha figure two : 7 of 9
+              seal 9f2c4b7a1e6d8305c9b4a27fe0d1638a5c7b9e402d16f8a3c5b7d9e1f02a4c68
+            --- END QUOTED REFERENCE FIGURES ---
+            RUN_TERMINAL  COMPLETE
+            """
+        case "fixture-program-kappa":
+            // A DECLARED REFUSAL that quotes everything. The shape peptide-homology-exact
+            // produced, now saying so by structure instead of by a phrase.
+            return """
+            FIXTURE KAPPA — declared refusal, published block quoted in full
+            --- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+              alpha figure one : 42
+              alpha figure two : 7 of 9
+              seal 9f2c4b7a1e6d8305c9b4a27fe0d1638a5c7b9e402d16f8a3c5b7d9e1f02a4c68
+            --- END QUOTED REFERENCE FIGURES ---
+            RUN_TERMINAL  REFUSED  no corpus on standard input
+            """
+        case "fixture-program-lambda":
+            // THE CONTROL ON THE FALLBACK, in the direction nobody builds. A run that
+            // COMPLETED, whose quoted block happens to contain a sentence the spelling list
+            // reads as a refusal. A declared COMPLETE must win, or the fallback manufactures
+            // a HOLD on a run that measured everything — a false NOT_KNOWN, which is a defect
+            // exactly as a false ADMIT is.
+            return """
+            FIXTURE LAMBDA — complete, and its quoted block trips the old spelling list
+            --- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+              the predecessor refused with: a gate given nothing must not pass
+              NO SEAL EMITTED on that path
+            --- END QUOTED REFERENCE FIGURES ---
+            alpha figure one : 42
+            alpha figure two : 7 of 9
+            seal 9f2c4b7a1e6d8305c9b4a27fe0d1638a5c7b9e402d16f8a3c5b7d9e1f02a4c68
+            RUN_TERMINAL  COMPLETE
+            """
+        case "fixture-program-mu":
+            // AN UNCLOSED FENCE. Everything after BEGIN is treated as quoted, so the figures
+            // below it are not credited. The conservative direction: it can only withhold
+            // credit, never manufacture it.
+            return """
+            FIXTURE MU — a BEGIN fence with no END
+            --- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+              alpha figure one : 42
+              alpha figure two : 7 of 9
+              seal 9f2c4b7a1e6d8305c9b4a27fe0d1638a5c7b9e402d16f8a3c5b7d9e1f02a4c68
+            RUN_TERMINAL  COMPLETE
+            """
+        case "fixture-program-nu":
+            // The figures computed, the SEAL only quoted. E4 must pass and E5 must refuse,
+            // so the two clauses are shown to read the region independently.
+            return """
+            FIXTURE NU — figures computed, seal only in the quoted block
+            --- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---
+              seal 9f2c4b7a1e6d8305c9b4a27fe0d1638a5c7b9e402d16f8a3c5b7d9e1f02a4c68
+            --- END QUOTED REFERENCE FIGURES ---
+            alpha figure one : 42
+            alpha figure two : 7 of 9
+            RUN_TERMINAL  COMPLETE
             """
         case "fixture-program-eta":
             // The COMPLETE counterpart of delta: input digests and no seal, and NO
@@ -911,12 +1067,16 @@ func clauseE4_figures(_ e: Entry, _ ev: Evidence) -> ClauseResult {
         return hold("E4_FIGURE",
                     "\(figs.count) figure(s) declared, and \(p)'s output here is ITSELF A REFUSAL — it published no verdict, so any figure appearing in it was QUOTED, not computed. A quoted figure is not evidence. Run the program against its corpus and grade again.")
     }
+    // READ THE COMPUTED REGION ONLY. A figure between the quoted fences was printed by
+    // this run and computed by a DIFFERENT one; crediting it is the same error as
+    // crediting a refusal transcript, one step subtler, because the run did complete.
+    let tc = computedRegion(t)
     // TOKEN-ANCHORED, not `contains`. A whole-transcript substring test graded
     // "E8  : 24" as MEASURED against a line printing "E8  : 240".
     var missing: [String] = []
     var matched: [(String, String)] = []
     for f in figs {
-        if let line = matchLineAtTokenBoundary(t, f) { matched.append((f, trim(line))) }
+        if let line = matchLineAtTokenBoundary(tc, f) { matched.append((f, trim(line))) }
         else { missing.append(f) }
     }
     if !missing.isEmpty {
@@ -927,7 +1087,9 @@ func clauseE4_figures(_ e: Entry, _ ev: Evidence) -> ClauseResult {
         // A figure present only as the PREFIX of a longer token is a different fault
         // from a figure that is nowhere, and the refusal says which.
         var why = ""
-        if t.contains(missing[0]) {
+        if t.contains(missing[0]) && !tc.contains(missing[0]) {
+            why = " It appears ONLY between the quoted-reference fences, so this run printed it without computing it."
+        } else if tc.contains(missing[0]) {
             why = " It occurs in that output only inside a longer token, which is a prefix and not the figure."
         }
         return refuse("E4_FIGURE",
@@ -948,8 +1110,11 @@ func clauseE5_seal(_ e: Entry, _ ev: Evidence) -> ClauseResult {
     guard let t = ev.transcript(p) else {
         return hold("E5_SEAL", "no transcript for '\(p)' is present here, so the seal cannot be checked against what the program prints")
     }
+    // Same rule as E4: a seal between the quoted fences is one this run PRINTED and a
+    // different one COMPUTED. Both directions of this clause read the computed region.
+    let tc = computedRegion(t)
     if s == "NONE_PRINTED" {
-        if let sealLine = findSealLine(t) {
+        if let sealLine = findSealLine(tc) {
             return refuse("E5_SEAL", "the entry declares NONE_PRINTED but \(p) prints a seal: '\(sealLine)'. An entry may not hide a seal it has.")
         }
         if isRefusalTranscript(t) {
@@ -966,14 +1131,14 @@ func clauseE5_seal(_ e: Entry, _ ev: Evidence) -> ClauseResult {
         return hold("E5_SEAL",
                     "\(p)'s output here is a refusal: it published no verdict, so it emitted no seal, and any 64-hex in it is an INPUT or a QUOTED figure. \(t.contains(s) ? "The declared seal does appear in that text, which is exactly the trap: appearing and being computed are two different things." : "The declared seal does not appear.") Run the program against its corpus and grade again.")
     }
-    if !t.contains(s) {
+    if !tc.contains(s) {
         if isRefusalTranscript(t) {
             return hold("E5_SEAL",
                         "the seal \(s) is absent from \(p)'s output, but that output is ITSELF A REFUSAL — no verdict was published, so no seal was due. Run the program against its corpus and grade again.")
         }
         return refuse("E5_SEAL", "the seal \(s) does not appear in \(p)'s output. A seal the named program does not print is not that program's seal.")
     }
-    return pass_("E5_SEAL", "\(s) is printed by \(p)")
+    return pass_("E5_SEAL", "\(s) is printed by \(p) in the region it computed")
 }
 
 func clauseE6_grade(_ e: Entry) -> ClauseResult {
@@ -2039,6 +2204,34 @@ func runControlArm() -> (arms: [Arm], allPass: Bool) {
     arm("47 CONTROL ON 45+46 — the SAME entry against a COMPLETE run still ADMITS",
         GOOD_FIXTURE,
         .ADMITTED, "")
+
+    // ── direction 5c: THE CONTRACT — structure, not spelling. Added 2026-09-08 the same day
+    // the spelling-keyed detector was written, because two programs in reproduce/ adopted the
+    // declared-terminal-and-fenced-block shape its own comment asked for.
+    func contractEntry(_ program: String) -> String {
+        return mutate(GOOD_FIXTURE, replace: "PROGRAM        fixture-program-alpha",
+                      with: "PROGRAM        fixture-program-\(program)")
+            .replacingOccurrences(of: "fixture-program-alpha.swift",
+                                  with: "fixture-program-\(program).swift")
+    }
+
+    arm("48 CONTRACT — a COMPLETE run that also quotes its published block ADMITS",
+        contractEntry("theta"), .ADMITTED, "")
+
+    arm("49 CONTRACT — a COMPLETE run whose figures are ONLY inside the fences is REFUSED, not held",
+        contractEntry("iota"), .REFUSED, "E4_FIGURE")
+
+    arm("50 CONTRACT — a DECLARED refusal that quotes every figure HOLDS",
+        contractEntry("kappa"), .NOT_KNOWN, "E4_FIGURE")
+
+    arm("51 CONTROL ON THE FALLBACK — a declared COMPLETE beats a refusal SPELLING in its quoted block",
+        contractEntry("lambda"), .ADMITTED, "")
+
+    arm("52 CONTRACT — an unclosed BEGIN fence withholds credit rather than granting it",
+        contractEntry("mu"), .REFUSED, "E4_FIGURE")
+
+    arm("53 CONTRACT — figures computed but the SEAL only quoted: E4 passes, E5 refuses",
+        contractEntry("nu"), .REFUSED, "E5_SEAL")
 
     // ── direction 6: the per-library half, which no per-entry arm can reach.
     var libArms: [Arm] = []

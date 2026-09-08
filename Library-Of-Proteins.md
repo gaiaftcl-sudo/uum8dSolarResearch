@@ -44,7 +44,7 @@ holds two libraries at once, which is why the three libraries are graded in ONE 
 **Nothing enters without a reproducible measurement**, and a claim whose figure no program prints
 is refused with the clause named. The full law is
 [The library admission law](The-Library-Admission-Law); the law *is* the program,
-`reproduce/library-admission-law.swift`, and it runs 65 control arms in three directions before
+`reproduce/library-admission-law.swift`, and it runs 71 control arms in three directions before
 it grades anything.
 
 **Why the per-library half exists.** A generative pipeline in this same programme reported
@@ -614,10 +614,10 @@ refused on. That is fixed in the law and in this command.
 **What the checker printed here, 2026-09-08**, so a reader has something to compare against:
 
 ```
-CONTROL ARM  65/65 PASS        40 must REFUSE · 17 must ADMIT · 8 must HOLD
+CONTROL ARM  71/71 PASS        43 must REFUSE · 19 must ADMIT · 9 must HOLD
 LIBRARY PROTEINS   ->   ADMITTED
   entry files   6      ADMITTED 5      HELD 1      REFUSED 0
-  programs in reproduce/   84
+  programs in reproduce/   89
   generated-peptides-homology-under-substitution.md   NOT_KNOWN
       HELD E4_FIGURE   3 figure(s) declared, and peptide-homology-exact's output here is
                        ITSELF A REFUSAL — it published no verdict, so any figure appearing
@@ -626,8 +626,8 @@ LIBRARY PROTEINS   ->   ADMITTED
                        trap: appearing and being computed are two different things.
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries
                           graded together; 12 distinct triples over 14 admitted entries
-TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
-sealed bytes             31,434
+TRANSCRIPT SEAL  sha256  da85dccf51d40c7dd5ecaf6842ba2927370c2bc6a26730e7ff3c55193297a3e5
+sealed bytes             32,378
 exit                     2          (2 means an entry is HELD, 1 means refused, 0 means clean)
 ```
 

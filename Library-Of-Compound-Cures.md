@@ -34,7 +34,7 @@ integers is where a float enters a program that had none.
 
 The full law: **[The library admission law](The-Library-Admission-Law)**. The law itself is the
 program `reproduce/library-admission-law.swift` — 2,495 lines, Swift 6.4, zero float on every
-decision path, 65 control arms passing in three directions. Beyond the two halves there is one
+decision path, 71 control arms passing in three directions. Beyond the two halves there is one
 **federation** clause, F1, which asks the only question neither half can: *is one entry filed in
 two different libraries?* No per-library clause can see it, because no per-library clause ever
 holds two libraries at once — which is why **the three libraries are graded in a single run and
@@ -84,19 +84,19 @@ by construction** — filesystem paths are printed and never sealed, because a s
 the checkout directory indicts a correct reproduction.
 
 ```
-CONTROL ARM  65/65 PASS        40 must REFUSE · 17 must ADMIT · 8 must HOLD
-  programs in reproduce/   84
+CONTROL ARM  71/71 PASS        43 must REFUSE · 19 must ADMIT · 9 must HOLD
+  programs in reproduce/   89
 LIBRARY PROTEINS    ->  ADMITTED     6 files   5 admitted   1 held   0 refused
 LIBRARY COMPOUNDS   ->  ADMITTED     7 files   4 admitted   3 held   0 refused
 LIBRARY MATERIALS   ->  ADMITTED     5 files   5 admitted   0 held   0 refused
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries
-TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
-sealed bytes             31,434
+TRANSCRIPT SEAL  sha256  da85dccf51d40c7dd5ecaf6842ba2927370c2bc6a26730e7ff3c55193297a3e5
+sealed bytes             32,378
 exit                     2
 ```
 
 **The seal moves when the census moves; the verdict does not, and the difference is worth a
-sentence rather than a footnote.** The program census — `programs in reproduce/ 84` — is inside the
+sentence rather than a footnote.** The program census — `programs in reproduce/ 89` — is inside the
 sealed transcript, because what programs were available *is* evidence about the grading. A clone
 holding a different number of programs prints a different seal. That is content disagreeing, not a
 broken reproduction: the per-entry and per-library verdicts above it are what must match.
@@ -738,7 +738,7 @@ machine — that is clause E9, and it is checked rather than promised.
 
 ## Related
 
-- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 65 arms that prove it refuses.
+- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 71 arms that prove it refuses.
 - [**The Library of Proteins**](Library-Of-Proteins) · [**The Library of Material Systems**](Library-Of-Material-Systems) — the other two libraries, graded in the same run as this one.
 - [Where else could this guide cut?](CRISPR-Genome-Off-Target-Map) — the full per-guide map with coordinates.
 - [The exact off-target atlas of the nucleic-acid medicines](Oligonucleotide-Off-Target-Atlas) — the registry-wide screen.
