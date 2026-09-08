@@ -334,6 +334,19 @@ func isRefusalTranscript(_ text: String) -> Bool {
         if lt.contains("no verdict is published") { return true }
         if lt.hasPrefix("refused —") || lt.hasPrefix("refused -") { return true }
         if lt.hasPrefix("control arm failed") { return true }
+        // THE VOCABULARY, AND ITS KNOWN WEAKNESS, STATED HERE RATHER THAN DISCOVERED LATER.
+        // This detector is keyed to SPELLINGS a refusing program uses, and a detector keyed
+        // to spellings goes blind the moment a program says it a new way — which is exactly
+        // how the quoted-figure defect of 2026-09-08 survived. Every line below was added
+        // because a real program in reproduce/ prints it on a path that computed nothing.
+        // The durable fix is a CONTRACT — one declared line every refusing program prints,
+        // and a delimited block around quoted reference figures — and it is named as an open
+        // weakness on The-Library-Admission-Law page rather than left implicit here.
+        if lt.contains("no_screen_performed") { return true }
+        if lt.contains("no screen was run") { return true }
+        if lt.contains("will not invent one") { return true }
+        if lt.contains("no seal emitted on this path") { return true }
+        if lt.contains("a gate given nothing must not pass") { return true }
     }
     return false
 }
@@ -647,7 +660,8 @@ struct EmbeddedEvidence: Evidence {
     // suite with no such arm cannot show that its NOT_KNOWN path is reachable.
     let programs: Set<String> = ["fixture-program-alpha", "fixture-program-beta",
                                 "fixture-program-gamma", "fixture-program-delta",
-                                "fixture-program-epsilon"]
+                                "fixture-program-epsilon", "fixture-program-zeta",
+                                "fixture-program-eta"]
     func transcript(_ program: String) -> String? {
         switch program {
         case "fixture-program-alpha":
@@ -674,6 +688,34 @@ struct EmbeddedEvidence: Evidence {
 
             REASON: study root not found.
             NO SEAL EMITTED. No verdict is published on a refusal path.
+            """
+        case "fixture-program-eta":
+            // The COMPLETE counterpart of delta: input digests and no seal, and NO
+            // refusal anywhere in it. This is what arm 31 was always testing —
+            // NONE_PRINTED is honest when the program genuinely prints no seal —
+            // and it now sits on a transcript that RAN, so the figure it carries
+            // was computed rather than quoted.
+            return """
+            FIXTURE ETA — a complete run that prints input digests and NO seal
+              corpus sha256     bb3691b332fb15cdd54c43bc42905478e53c4f4b01862885a7304260498cf3f7
+              reference sha256  bf1bc7e188e55199a2447fc20d25834db5f7f798daa818432370deb4a6b0df5e
+              delta figure : 78680 rows
+            """
+        case "fixture-program-zeta":
+            // THE SHAPE THAT BROKE E4 AND E5, kept as a fixture so it cannot come back.
+            // A program that prints its PUBLISHED figures and its PUBLISHED seal on the
+            // refusal path — which several now do, so a wiki harness can check a page
+            // against its program from a clean clone with no corpus. Every declared
+            // figure and the declared seal are present in this text, and NONE of them
+            // was computed by this run. E4 and E5 must HOLD, not pass.
+            return """
+            FIXTURE ZETA — a refusal that QUOTES the published run
+              alpha figure one : 42
+              alpha figure two : 7 of 9
+              seal 9f2c4b7a1e6d8305c9b4a27fe0d1638a5c7b9e402d16f8a3c5b7d9e1f02a4c68
+
+            REASON: no corpus on standard input.
+            NO SEAL EMITTED. Every figure above was quoted, not computed.
             """
         case "fixture-program-epsilon":
             // A COMPLETE run that prints input digests and a real seal. It is the
@@ -855,6 +897,20 @@ func clauseE4_figures(_ e: Entry, _ ev: Evidence) -> ClauseResult {
         return hold("E4_FIGURE",
                     "\(figs.count) figure(s) declared; no transcript for '\(p)' is present here. ABSENT IS NOT REFUSED — run the program and grade again.")
     }
+    // A REFUSAL TRANSCRIPT CREDITS NOTHING, EVEN WHEN THE FIGURE IS IN IT.
+    // Found 2026-09-08 on a live entry. Several programs now print their published
+    // figures on EVERY exit path, refusal included, so the wiki harness can check a
+    // page against its program from a clean clone with no corpus present. That is
+    // right for the harness and it silently broke this clause: the figures were
+    // matched against text the run QUOTED rather than text it COMPUTED, and E4
+    // passed on a run that measured nothing. The old code reached the refusal test
+    // only when a figure was MISSING, so a program that quotes all of its figures
+    // was never tested for having refused. Absence and refusal are different
+    // answers; so are "computed it" and "printed it".
+    if isRefusalTranscript(t) {
+        return hold("E4_FIGURE",
+                    "\(figs.count) figure(s) declared, and \(p)'s output here is ITSELF A REFUSAL — it published no verdict, so any figure appearing in it was QUOTED, not computed. A quoted figure is not evidence. Run the program against its corpus and grade again.")
+    }
     // TOKEN-ANCHORED, not `contains`. A whole-transcript substring test graded
     // "E8  : 24" as MEASURED against a line printing "E8  : 240".
     var missing: [String] = []
@@ -900,6 +956,15 @@ func clauseE5_seal(_ e: Entry, _ ev: Evidence) -> ClauseResult {
             return pass_("E5_SEAL", "\(p)'s output here is a refusal and emits no seal; the entry declares NONE_PRINTED rather than leaving the field blank. A 64-hex naming a corpus or a reference is an INPUT, not a seal.")
         }
         return pass_("E5_SEAL", "\(p) prints no seal, and the entry says so rather than leaving the field blank")
+    }
+    // A REFUSAL TRANSCRIPT EMITS NO SEAL, so a 64-hex found in one was quoted or is
+    // an input. Tested BEFORE the containment test, which is the repair: the old
+    // order reached the refusal branch only when the seal was ABSENT, so a program
+    // that prints its published seal on its refusal path passed this clause against
+    // a run that sealed nothing. Measured on peptide-homology-exact 2026-09-08.
+    if isRefusalTranscript(t) {
+        return hold("E5_SEAL",
+                    "\(p)'s output here is a refusal: it published no verdict, so it emitted no seal, and any 64-hex in it is an INPUT or a QUOTED figure. \(t.contains(s) ? "The declared seal does appear in that text, which is exactly the trap: appearing and being computed are two different things." : "The declared seal does not appear.") Run the program against its corpus and grade again.")
     }
     if !t.contains(s) {
         if isRefusalTranscript(t) {
@@ -1850,7 +1915,14 @@ func runControlArm() -> (arms: [Arm], allPass: Bool) {
     }
 
     arm("31 NONE_PRINTED where the program prints INPUT digests and no seal",
-        deltaEntry([]), .ADMITTED, "")
+        deltaEntry([("PROGRAM        fixture-program-delta", "PROGRAM        fixture-program-eta"),
+                    ("fixture-program-delta.swift", "fixture-program-eta.swift")]),
+        .ADMITTED, "")
+
+    // The arm 31 case as it stands on a REFUSAL transcript. Before 2026-09-08 this
+    // read ADMITTED, because the figure was matched against text the run quoted.
+    arm("31b the SAME entry against a transcript that REFUSED — HOLD, never admit",
+        deltaEntry([]), .NOT_KNOWN, "E4_FIGURE")
 
     arm("32 a figure absent from a transcript that is ITSELF A REFUSAL — HOLD, not refuse",
         deltaEntry([("FIGURE         delta figure : 78680 rows",
@@ -1948,6 +2020,24 @@ func runControlArm() -> (arms: [Arm], allPass: Bool) {
     arm("44 CONTROL ON 42 — two quantities with units is below the threshold and admits",
         mutate(GOOD_FIXTURE, replace: "MEASURED       alpha figure one is 42 and alpha figure two is 7 of 9",
                with: "MEASURED       42 mg per dose sampled over 6 h, alpha figure one is 42 and alpha figure two is 7 of 9"),
+        .ADMITTED, "")
+
+    // ── direction 5b: A QUOTED FIGURE IS NOT EVIDENCE. Added 2026-09-08 after the
+    // defect these three arms describe was found live, on an admitted entry.
+    arm("45 a refusal transcript that QUOTES every declared figure — E4 must HOLD, never pass",
+        mutate(GOOD_FIXTURE, replace: "PROGRAM        fixture-program-alpha",
+               with: "PROGRAM        fixture-program-zeta")
+            .replacingOccurrences(of: "fixture-program-alpha.swift", with: "fixture-program-zeta.swift"),
+        .NOT_KNOWN, "E4_FIGURE")
+
+    arm("46 a refusal transcript that QUOTES the declared seal — E5 must HOLD, never pass",
+        mutate(GOOD_FIXTURE, replace: "PROGRAM        fixture-program-alpha",
+               with: "PROGRAM        fixture-program-zeta")
+            .replacingOccurrences(of: "fixture-program-alpha.swift", with: "fixture-program-zeta.swift"),
+        .NOT_KNOWN, "E5_SEAL")
+
+    arm("47 CONTROL ON 45+46 — the SAME entry against a COMPLETE run still ADMITS",
+        GOOD_FIXTURE,
         .ADMITTED, "")
 
     // ── direction 6: the per-library half, which no per-entry arm can reach.

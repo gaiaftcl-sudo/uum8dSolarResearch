@@ -115,7 +115,7 @@ antisense and siRNA medicine whose sequence is public, across every window of th
 Those maps did not exist this morning. They exist now, they cost an afternoon, and anyone can
 re-derive them without asking us for anything.
 
-**→ [The CRISPR genome map](CRISPR-Genome-Off-Target-Map)  ·  [The off-target atlas](Oligonucleotide-Off-Target-Atlas)**
+**→ [The CRISPR genome map](CRISPR-Genome-Off-Target-Map)  ·  [The off-target atlas](Oligonucleotide-Off-Target-Atlas)  ·  [The order of the bases](The-Order-Of-The-Bases)**
 
 And they are now somewhere a person can look. The woman in that room, or her doctor, or the
 regulator who has to sign for her, can open a **library** and find the molecule: what was measured
@@ -212,7 +212,7 @@ And it is not only a veto — the same exactness is a **seal on a drug that work
 
 Both belong in the same place: **before a first patient is dosed**, at the design stage, where changing course is still cheap — and for a molecule already in the pipeline, the same exact verdict helps decide the path forward. The instrument that returns it is proven today and buildable now. All of it could be done differently.
 
-**Six cures now, gathered in one place — and the reason we are giving the method away.** The veto and the seal are two of six real, in-the-news medicines we put the exact off-target screen against: the first-ever Alexander-disease drug, a halted CAR-T, a base editor for heart disease, a prime editor for chronic granulomatous disease, an antibody-oligo conjugate for Duchenne, and a therapy written for a single child whose disease has a population of one. **[Cures Without the Gatekeeper →](Cures-Without-The-Gatekeeper)**
+**Seven cures now, gathered in one place — and the reason we are giving the method away.** The veto and the seal are two of seven real, in-the-news medicines we put the exact off-target screen against: the first-ever Alexander-disease drug, a halted CAR-T, a base editor for heart disease, a prime editor for chronic granulomatous disease, an antibody-oligo conjugate for Duchenne, and a therapy written for a single child whose disease has a population of one. **[Cures Without the Gatekeeper →](Cures-Without-The-Gatekeeper)**
 
 *Why we did it.* The one question that decides whether a written medicine heals or harms — where else in the genome it strikes — is not a guess. It is discrete counting, and counting returns one answer that reads the same on every machine and can be re-derived by a regulator. A safety screen that used to need a big lab's pipeline becomes arithmetic.
 
@@ -357,27 +357,37 @@ No account. No key. No dependency on us.
 ```bash
 git clone https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git
 cd uum8dSolarResearch
-bash reproduce/validate.sh                    # 147 checks, digest-pinned
+bash reproduce/validate.sh                    # every published figure, digest-pinned
 ```
 
-The harness verifies that every figure quoted on these pages appears in the output of the program that claims to produce it, that the corpora match their published digests, and that no page cites a path you cannot reach. **If a check fails, we want the issue.** As we did the day we found a 300× error in our own π-bracket figure — `355/113 − 333/106 = 1/11978 ≈ 8.35×10⁻⁵`, not the `2.7×10⁻⁷` an earlier page claimed — the correction is published with a date on it.
+The harness prints its own count on every run — it grows with the work, so no page quotes a number that can go stale. It verifies that every figure quoted on these pages appears in the output of the program that claims to produce it, that the corpora match their published digests, and that no page cites a path you cannot reach. **If a check fails, we want the issue.** As we did the day we found a 300× error in our own π-bracket figure — `355/113 − 333/106 = 1/11978 ≈ 8.35×10⁻⁵`, not the `2.7×10⁻⁷` an earlier page claimed — the correction is published with a date on it.
 
 ---
 
 ## Start here
 
+**If you have five minutes, read down the first block. It is the shortest path from "what is this"
+to a medicine, and every row in it is re-derivable from public bytes on a laptop.**
+
 | page | what it is |
 |---|---|
-| [Cures Without the Gatekeeper](Cures-Without-The-Gatekeeper) | **the medicine front door** — six real written medicines and the exact off-target screen that makes each one's safety re-derivable by anyone |
-| [Study 34 — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) | the proof on this page, in full — why a fusion safety verdict must be exact |
+| **CURES** ||
+| [Cures Without the Gatekeeper](Cures-Without-The-Gatekeeper) | **the medicine front door** — seven real written medicines and the exact off-target screen that makes each one's safety re-derivable by anyone |
+| [The off-target atlas](Oligonucleotide-Off-Target-Atlas) | every nucleic-acid medicine the public registry publishes a sequence for — **where** each one can pair, across the whole transcriptome |
+| [The order of the bases](The-Order-Of-The-Bases) | and **whether that burden is unusual** — 472 strands each ranked against sixteen rearrangements of its own bases |
+| [The library admission law](The-Library-Admission-Law) | the executable law that refuses; the three libraries are downstream of it |
+| [Study 26 — master regulator bonds](Study-26-Master-Regulator-Bonds) | 17 tumour types — what actually recovers a published regulator set, and eleven compound pairs where no single agent among 20,308 cleared any |
+| **THE METHOD** ||
+| [The ontology of this wiki](Ontology) | the type system — grades, terminals, controls, and what each page may say |
+| [Study 34 — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) | the proof on this page, in full — why a safety verdict must be exact |
 | [Study 35 — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) | why a floating-point safety brain is doomed, not just behind — it deafens in seconds, forgets across machines, disagrees with itself; the exact one does none of it |
+| [All studies](Shear-Studies-Index) | the programme index, every lifecycle state stated |
+| **FUSION, AND THE PLANET** ||
 | [Affine Fusion Control](Affine-Fusion-Control) | the local exact-integer fusion court — five panels, both laws live, 65,536 agents on one laptop |
 | [Affine Fusion Control — public release](Affine-Fusion-Control-Release) | the measured, claim-graded public case for the app |
 | [Study 33 — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court) | the charter, and the three-way fork it retired |
 | [Every season, fifty tonnes](SpaceX-Biosphere-Safety) | the SpaceX / satellite biosphere-safety case — the same method, its most urgent application |
 | [The full-grade replacement](The-Replacement-Grade) | the over-scaling law, and the vendor-to-public argument across 49 domains |
-| [The ontology of this wiki](Ontology) | the type system — grades, terminals, controls, and what each page may say |
-| [All studies](Shear-Studies-Index) | the programme index, every lifecycle state stated |
 
 ---
 

@@ -2,7 +2,7 @@
 
 **The front door. Libraries that grow, not studies that close — and a law that refuses.**
 
-- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 61 arms that prove it refuses. **The primary artefact.**
+- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 65 arms that prove it refuses. **The primary artefact.**
 - [**The Library of Proteins**](Library-Of-Proteins) — 80,080 generated sequences, novel chemical matter, graded honestly
 - [**The Library of Compound Cures**](Library-Of-Compound-Cures) — exact off-target maps for the medicines the registry publishes
 - [**The Library of Material Systems**](Library-Of-Material-Systems) — what a system is, what was measured, where the law lives. C-007 absolute: no recipes

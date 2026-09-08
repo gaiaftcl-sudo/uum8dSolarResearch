@@ -4,7 +4,7 @@
 
 **Status: LAW FROZEN and EXECUTABLE, 2026-09-07.** The law is
 `reproduce/library-admission-law.swift`. It compiles with `xcrun swiftc -O -swift-version 5`,
-carries **61 control arms passing in three directions**, and refuses on every constructed
+carries **65 control arms passing in three directions**, and refuses on every constructed
 violation below with the clause named. The three library pages are downstream of this file.
 This page is the law's prose; the program is the law.
 
@@ -121,6 +121,19 @@ each figure matched, instead of asserting a word.
 
 If the program has never been run here, **NOT_KNOWN** — absence is not refusal.
 
+**A QUOTED FIGURE IS NOT EVIDENCE — corrected 2026-09-08, on a live admitted entry.**
+Several programs in `reproduce/` now print their published figures on **every** exit path,
+refusals included. That is right, and it is required: the wiki's own harness runs each program
+with no argument and no standard input, so without it a page's figures could not be checked
+against the program that produced them from a clean clone. It also broke this clause silently.
+E4 matched the declared figures against the whole transcript, reaching its refusal test **only
+when a figure was missing** — so a program that quoted *all* of its figures was never asked
+whether it had refused, and its entry was graded `MEASURED` against a run that measured nothing.
+The repair is one test moved to the front: **if the transcript is itself a refusal, every figure
+in it was quoted rather than computed, and the clause HOLDS.** `generated-peptides-homology-under-substitution`
+is the entry this was found on; it reads `NOT_KNOWN` in a clean clone now, and admits the moment
+the screen is run.
+
 ### E5 — SEAL
 Either a 64-hex seal the program actually prints, or the explicit token `NONE_PRINTED`.
 
@@ -133,6 +146,22 @@ Not every honest program prints a seal. **Four of the fifteen admitted seed entr
 `NONE_PRINTED`** — the E8 enumeration, the LoRa airtime law, the unimodular reachability arms and
 the observer-invariant π bracket — and a fifth does among the entries still held. They say so
 rather than leaving the field blank, because *unsealed* and *unstated* are different states.
+
+**AND THE SAME TRAP ON THE SEAL, which is the sharper half.** The old order tested
+`transcript contains seal` first and only consulted the refusal test when the seal was **absent**.
+A program that prints its published seal on its refusal path therefore *passed* this clause against
+a run that sealed nothing — the declared seal was there, in text the program had quoted. **Appearing
+and being computed are two different things.** E5 now tests for a refusal before it looks for the
+seal, and says so in the held message. Three control arms hold both repairs, and the third is the one
+that matters: **the same entry against a COMPLETE run must still ADMIT**, because a guard that always
+holds is the same defect wearing the other face.
+
+**The known weakness, stated here rather than found later.** The refusal detector is keyed to
+**spellings** — the phrases our programs actually print when they decline to compute. A detector
+keyed to spellings goes blind the moment a program says it a new way, which is exactly how this
+defect survived. The durable fix is a **contract**: one declared line every refusing program prints,
+and a delimited block around quoted reference figures, so the law reads only what a run computed.
+That is named as open work, not claimed as done.
 
 ### E6 — GRADE from this wiki's ontology
 `VERIFIED · REPORTED · CITED_NOT_MEASURED · MEASURED · PROJECTION · ABSENT · NOT_KNOWN`
@@ -421,13 +450,13 @@ A law that admits everything has admitted nothing. A law that refuses everything
 law with no reachable `NOT_KNOWN` has two answers for three questions, so it will print one of
 the two where it means the third.
 
-**61 arms, all passing: 40 must REFUSE, 16 must ADMIT, 5 must HOLD.** Every negative arm is the one
+**65 arms, all passing: 40 must REFUSE, 17 must ADMIT, 8 must HOLD.** Every negative arm is the one
 correctly-formed fixture entry with **exactly one thing changed**, so a refusal is attributable to
 that change and nothing else. Each arm declares the terminal **and** the clause code it expects —
 refusing for the wrong reason is recorded as `REFUSED(wrong reason)` and **fails**, because
 otherwise a checker that refused everything would score full marks on a suite of refusal arms.
 
-Ten arms are **controls on the controls**, and they are the ones worth arguing about:
+Eleven arms are **controls on the controls**, and they are the ones worth arguing about:
 
 - prose *about* a procedure must not trip the procedure detector;
 - a refusal line naming a self-graded column must not trip the self-graded detector;
@@ -439,15 +468,17 @@ Ten arms are **controls on the controls**, and they are the ones worth arguing a
 - a program that prints no seal, declared honestly, must be admitted;
 - a **complete** run's seal must still be found, so the refusal-transcript fix is not a weakening;
 - a figure absent from a **complete** run must still refuse, for the same reason.
+- an entry graded against a **complete** run must still ADMIT after the quoted-figure repair, or
+  that repair is an always-hold — the same defect wearing the other face.
 
 The fixtures are embedded in the program: the control arm needs no corpus, no filesystem and no
 network, and it runs **first** — if any arm fails, no library is graded at all.
 
 ```
-CONTROL ARM  61/61 PASS
+CONTROL ARM  65/65 PASS
   arms that must REFUSE      40
-  arms that must ADMIT       16
-  arms that must HOLD         5   (NOT_KNOWN — the third terminal is reachable)
+  arms that must ADMIT       17
+  arms that must HOLD         8   (NOT_KNOWN — the third terminal is reachable)
 A law that admits everything has admitted nothing; a law that refuses everything
 has too; and a law with no reachable NOT_KNOWN has only two answers for three
 questions, so it will print one of the two where it means the third.

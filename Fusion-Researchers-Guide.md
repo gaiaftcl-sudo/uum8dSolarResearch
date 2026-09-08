@@ -62,7 +62,7 @@ To run a `reproduce/` script (it links the law in automatically):
 
 ```bash
 cd ../..            # back to repo root
-bash reproduce/validate.sh    # 131 checks; every published figure re-derived from source
+bash reproduce/validate.sh    # every published figure re-derived from source
 ```
 
 ## The gates — the instrument checks its own honesty

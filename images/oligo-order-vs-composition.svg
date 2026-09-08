@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+ <defs>
+  <style>
+   .bg{fill:#0a0e14}
+   .kick{font-size:12px;letter-spacing:2.5px;fill:#5f7285}
+   .h{font-size:22px;fill:#e8eef6}.serif{font-family:Georgia,'Times New Roman',serif}
+   .sub{font-size:13px;fill:#8195aa}
+   .tiny{font-size:10.5px;fill:#5f7285}
+   .lbl{font-size:10.5px;fill:#8aa0b6;letter-spacing:.3px}
+   .mono{font-size:12px;fill:#8195aa}
+   .num{font-size:25px;fill:#e8eef6}
+   .nums{font-size:12.5px;fill:#8195aa}
+   .good{fill:#4ec9a0}.low{fill:#3f7f77}.neutral{fill:#5b7690}.high{fill:#6b8090}
+   .above{fill:#74899c}.tie{fill:#c9973c}
+   .goodt{font-size:13px;fill:#4ec9a0}.artet{font-size:11.5px;fill:#d9a94e}
+   .rule{stroke:#1d2733;stroke-width:1}
+   .lead{stroke:#3a4a5c;stroke-width:1}
+  </style>
+ </defs>
+ <rect class="bg" width="900" height="700"/>
+
+ <text x="42" y="38" class="kick">AFFINE.EARTH · OLIGONUCLEOTIDE SAFETY · ORDER VS COMPOSITION</text>
+ <text x="40" y="76" class="h serif">A list of off-target sites decides nothing. Any 20-mer has hundreds.</text>
+ <text x="40" y="103" class="h serif">The question that decides something is comparative.</text>
+ <text x="42" y="130" class="sub">Every strand was screened against SIXTEEN permutations of its own bases — the identical multiset of</text>
+ <text x="42" y="147" class="sub">A, C, G and T in a different order. A permutation is the molecule's composition with none of its design.</text>
+
+ <line class="rule" x1="42" y1="168" x2="858" y2="168"/>
+ <text x="42" y="190" class="lbl">GENCODE v50 · 670,670 transcripts · 1,467,336,203 scoreable 20-mer windows</text>
+ <text x="42" y="207" class="lbl">5,355,878,467,758 probe-windows counted as they happened · zero floating point</text>
+
+ <text x="42" y="240" class="lbl">186 SCREENED PROBE FAMILIES — 169 REGISTRY STRANDS AND 17 UNDESIGNED CONTROLS, EACH AGAINST ITS OWN 16 PERMUTATIONS</text>
+
+ <!-- the stacked bar : x 42..858 = 816px for 186 families, 4.387px each -->
+ <g>
+  <rect class="good"    x="42"  y="252" width="9"   height="46"/>
+  <rect class="low"     x="51"  y="252" width="35"  height="46"/>
+  <rect class="neutral" x="86"  y="252" width="535" height="46"/>
+  <rect class="high"    x="621" y="252" width="4"   height="46"/>
+  <rect class="above"   x="625" y="252" width="193" height="46"/>
+  <rect class="tie"     x="818" y="252" width="40"  height="46" opacity="0.9"/>
+  <rect x="42" y="252" width="816" height="46" fill="none" stroke="#1d2733" stroke-width="1"/>
+  <text x="353" y="283" class="num" text-anchor="middle">122</text>
+  <text x="721" y="283" class="num" text-anchor="middle">44</text>
+ </g>
+
+ <!-- BELOW, far left under the sliver -->
+ <line class="lead" x1="46" y1="298" x2="46" y2="316"/>
+ <text x="42" y="333" class="goodt">2</text>
+ <text x="42" y="350" class="nums">BELOW all 16</text>
+ <text x="42" y="366" class="tiny">zerlasiran guide strand,</text>
+ <text x="42" y="380" class="tiny">free acid and sodium</text>
+ <text x="42" y="394" class="tiny">salt — ONE sequence</text>
+
+ <!-- ties-lowest -->
+ <line class="lead" x1="68" y1="298" x2="68" y2="424"/>
+ <line class="lead" x1="68" y1="424" x2="86" y2="424"/>
+ <text x="92" y="428" class="artet">8 TIE the lowest control — a tie is not fewer places</text>
+
+ <!-- INSIDE -->
+ <text x="380" y="322" class="nums" text-anchor="middle">INSIDE their own control range</text>
+ <text x="380" y="339" class="tiny" text-anchor="middle">indistinguishable from what their own base composition forces</text>
+ <text x="380" y="354" class="tiny" text-anchor="middle">— measured, and NOT a safety finding</text>
+
+ <!-- ABOVE -->
+ <text x="716" y="322" class="nums" text-anchor="middle">ABOVE every permutation</text>
+ <text x="716" y="339" class="tiny" text-anchor="middle">not a safety finding either: one integer</text>
+ <text x="716" y="354" class="tiny" text-anchor="middle">larger than another integer</text>
+
+ <!-- ties-all-16 : the nine that cannot be ranked at this threshold -->
+ <line class="lead" x1="838" y1="298" x2="838" y2="386"/>
+ <line class="lead" x1="838" y1="386" x2="820" y2="386"/>
+ <text x="814" y="390" class="artet" text-anchor="end">9 TIE ALL SIXTEEN, every arm at ZERO</text>
+ <text x="814" y="406" class="tiny" text-anchor="end">25 to 33 bases. The comparison is empty at four mismatches, so no rank</text>
+ <text x="814" y="420" class="tiny" text-anchor="end">can be read from it. A strict-only rank rule printed these as rank 1 and</text>
+ <text x="814" y="434" class="tiny" text-anchor="end">counted them as designed specificity: 19 where the honest figure is 2.</text>
+ <text x="814" y="448" class="tiny" text-anchor="end">Read at its own resolving threshold, ETEPLIRSEN is ABOVE all 16.</text>
+
+ <line class="rule" x1="42" y1="470" x2="858" y2="470"/>
+
+ <text x="42" y="492" class="lbl">NOT IN THIS BAR AT ALL — 18 UBIQUITOUS, 266 REFUSED, 19 NOT_KNOWN. Three silences, none of them a zero.</text>
+ <text x="42" y="510" class="tiny">UBIQUITOUS: a perfect complement in 141 to 1,344 genes is not a measured target, it is a common motif — abetimus is a</text>
+ <text x="42" y="524" class="tiny">pure dinucleotide repeat (GTGT… / CACA…) that pairs at every microsatellite, and a B-cell tolerogen, not an antisense medicine.</text>
+ <text x="42" y="538" class="tiny">Subtracting those genes as &#8220;on-target&#8221; and publishing the remainder manufactures an off-target burden it never earned.</text>
+
+ <line class="rule" x1="42" y1="558" x2="858" y2="558"/>
+
+ <text x="42" y="580" class="lbl">THE ONE SEQUENCE BELOW ITS OWN FLOOR — specificity as a property of the ORDER its bases were chosen in</text>
+ <text x="42" y="604" class="mono">zerlasiran guide   19-mer   ATAACTCTGTCCATTACCG   measured target LPA, LPAL2</text>
+ <text x="42" y="623" class="mono">off-target at &#8804;4 mismatches <tspan class="good">965</tspan>  ·  its 16 controls  min <tspan fill="#e8eef6">991</tspan>  upper median 1554  max 4089</text>
+ <text x="42" y="641" class="tiny">Nothing at 19/19, 18/19 or 17/19 anywhere outside its target. Measurable in integers before a molecule is ever synthesised.</text>
+
+ <line class="rule" x1="42" y1="658" x2="858" y2="658"/>
+ <text x="42" y="676" class="tiny">A near-complementary window is a place a molecule COULD pair. NOT a cut, NOT an occupancy, NOT a clinical event, and NOT</text>
+ <text x="42" y="690" class="tiny">evidence that any medicine harms anyone. A high rank is not a safety finding; a low rank is not a clearance.  seal 2d74f5c676d51d45</text>
+</svg>

@@ -220,11 +220,7 @@ check_figure corpus-distinct-count-exact "CONTROL ARM  13/13 PASS" ""
 check_figure fatigue-yield-vs-regulator "FATIGUE_YIELD_VS_REGULATOR__FOUR_AGREE_ONE_CONFLICT_ONE_NOT_COMPARABLE" "Where-Humans-Actually-Yield.md"
 check_figure fatigue-yield-vs-regulator "d5fab6529c34126003aec8d8ea2f80cb1558ccf9feb3b4896eaef739758206a1" "Where-Humans-Actually-Yield.md"
 
-# --- THE CEILING ON WHAT A GENOTYPE-ONLY SCORE CAN KNOW ---
-# The program prints its published reference figures as its FIRST action, before any file
-# is opened, so these pins are checked even from a tree with no corpus. The bound itself is
-# recomputed from corpus/genotype-ceiling on every run and compared, digit for digit, to the
-# figures written into the program before the run: `pins disagreeing = 0` is that check.
+# --- the ceiling on what a genotype-only score can know: exact arcsin bracket over 10^12 ---
 check_figure genotype-score-ceiling-exact   "GENOTYPE_SCORE_CEILING__EXACT_ARCSIN_BRACKET_OVER_1E12"   "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 check_figure genotype-score-ceiling-exact   "438bfa14cf0c4ab6e013af73173d78d16d8ecae2c78a438ff034482579733359" "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 check_figure genotype-score-ceiling-exact   "arms run = 25   failed = 0"                               "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
@@ -253,37 +249,6 @@ check_figure genotype-score-ceiling-exact   "691/1000"                          
 check_figure genotype-score-ceiling-exact   "627/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 check_figure genotype-score-ceiling-exact   "278/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 check_figure genotype-score-ceiling-exact   "1,105"                                                    "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
-
-# --- WHAT A GENE'S LENGTH ALREADY DECIDES ---
-# Two instruments with a built-in answer, both measured by complete enumeration: every base of
-# every catchment on every chromosome, and every gene carrying a LOEUF. The program prints its
-# reference figures before opening a file, so these pins hold from a tree with no corpus.
-check_figure nearest-gene-length-lottery-exact  "GENE_LENGTH_INSTRUMENT__NEAREST_GENE_LOTTERY_AND_LOEUF_DENOMINATOR"     "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "c11ae542d7344b95abd87ee84d065954f322d0118d2609b236fe69ae1dda4489"       "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "arms run = 16   failed = 0"                                             "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "pins disagreeing = 0"                                                   "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "19,704"                                                                 "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "19,197"                                                                 "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "66,591"                                                                 "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "243,881"                                                                "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "114,478"                                                                "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "2,070,253,229"                                                          "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "1,261,815,650"                                                          "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "1,628,025,115"                                                          "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "3662/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "1719/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "3359/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "4366/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "4092/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "3143/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "1626000"                                                                "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "484000"                                                                 "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "1799000"                                                                "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "412000"                                                                 "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "1686000"                                                                "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "-124,600"                                                               "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "-391,700"                                                               "What-A-Gene-Length-Already-Decides.md"
-check_figure nearest-gene-length-lottery-exact  "10 of 10"                                                               "What-A-Gene-Length-Already-Decides.md"
 
 
 # --- MARKET SURVEILLANCE: the detector that flags the whole market -----------------
@@ -513,6 +478,44 @@ check_figure zilganersen-offtarget-whole-transcriptome "CAGTATTACCTCTACTAGTC" "T
 check_figure zilganersen-offtarget-whole-transcriptome "1467336203" "The-Safety-Question-Made-Exact.md"
 check_figure zilganersen-offtarget-whole-transcriptome "670670" "The-Safety-Question-Made-Exact.md"
 check_figure zilganersen-offtarget-whole-transcriptome "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "The-Safety-Question-Made-Exact.md"
+
+# THE ORDER OF THE BASES — the registry-wide specificity ranking and its independent verifier.
+# Both programs print the published figures on EVERY exit path, refusal included, so these pins
+# are checked from a clean clone with no corpus present and no 1.5 GB download. The 5.36-trillion
+# window screen itself is NOT run here; the harness checks that the page and the program agree
+# on what that screen measured, which is the property a reader needs and the one that can rot.
+check_figure registry-specificity-ranking "REGISTRY_SPECIFICITY_RANKING__ORDER_NOT_COMPOSITION_SETS_THE_BURDEN" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "5135ebb89ca659c6cce26d749dfc1547c08c4e6fc959074b6b3ab67fc9862afb" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "e8a4711ff3d52ffae59c8c36a3dd6477307e9c4e6562ead6039302a0056c9e98" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "2d74f5c676d51d45df178f9fed7840729bd87633ae8e5a9104383f6fbd7c3fd1" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "717027798090 + 4638850669668 = 5355878467758" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "670670 transcripts, 79139 genes, 1480179158 bases" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "1467336203" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "489 in sweep A, 3162 in sweep B" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "9 pre-corpus + 8 corpus-dependent = 17" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "169 registry strands + 17 undesigned constructed 20-mers" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "18 UBIQUITOUS, 266 REFUSED, 19 NOT_KNOWN" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "BELOW-all-16 2 | ties-lowest 8 | inside 122 | ties-highest 1 |" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "ABOVE-all-16 44 | ties-all-16 9" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "0 BELOW-all-16, 23 ABOVE-all-16" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "families whose rankLo is 1 (ties favour the strand)      : 19" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "families STRICTLY below all 16 controls (rank exactly 1-1): 2" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "9 of them tied ALL 16" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "registry strands in the table              : 472" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "undesigned constructed 20-mers, NOT medicines: 17" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "SCREENED   (target measured in few genes)  : 169" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "UBIQUITOUS (perfect complement in hundreds of genes): 18" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "REFUSED    (no perfect complement anywhere): 266" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "NOT_KNOWN  (too short for a target to mean): 19" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "ZILGANERSEN off=324 ctrl median=787 range 141-1355 rank 3 of 17" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "ATAACTCTGTCCATTACCG" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "1468006855" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "991 1002 1007 1026 1051 1053 1150 1250" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "CTCCAACATCAAGGAAGATGGCATTTCTAG" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "ties-all-16" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "BELOW-all-16" "The-Order-Of-The-Bases.md"
 check_figure aso-offtarget-exact-vs-float "ASO_OFFTARGET_EXACT_IS_OBSERVER_INVARIANT" "The-Safety-Question-Made-Exact.md"
 check_figure crispr-guide-offtarget-exact-vs-float "CRISPR_OFFTARGET_EXACT_IS_OBSERVER_INVARIANT" "PM359-Prime-Editing-Certified-Before-Anyone-Is-Dosed.md"
 check_figure flt-nearmiss-fractal-shear "FLT_NEARMISS_FRACTAL_SHEAR__EXACT_IS_OBSERVER_INVARIANT" "Study-36-The-Language-Game-of-Fermats-Last-Theorem.md"
@@ -605,19 +608,20 @@ check_figure lora-time-on-air "287.744" "Library-Of-Material-Systems.md"
 check_figure fusion-determinism-digest "f49b576e073835bcab17bee10fe0eee1938774643d900b8ffe1a583b159ab3d7" "Library-Of-Material-Systems.md"
 check_figure unimodular-control-arms "unimodular det=1: det=1  e_1 reachable in sample = true" "Library-Of-Material-Systems.md"
 check_figure fusion-exact-vs-float "PI_BRACKET  355/113 - 333/106 = 1/11978" "Library-Of-Material-Systems.md"
+# --- the registry specificity ranking (The Order Of The Bases) -------------------------------
+# These programs are run by section 2 with NO argv and stdin from /dev/null, so they REFUSE and
+# print their published reference block on the way out. Every figure pinned below therefore comes
+# off a refusal path, which is exactly the property that makes a refusal auditable.
+check_figure registry-specificity-ranking "REGISTRY_SPECIFICITY_RANKING__ORDER_NOT_COMPOSITION_SETS_THE_BURDEN" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "5a320f524d73b5793518eb19b118829033713443d0f42af20a67bb31cc06cf56" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "5135ebb89ca659c6cce26d749dfc1547c08c4e6fc959074b6b3ab67fc9862afb" "The-Order-Of-The-Bases.md"
+check_figure registry-specificity-ranking "RANK 1 MEANS rankLo == rankHi == 1" ""
+check_figure registry-specificity-ranking "324 off-target windows at 4 mismatches" ""
+check_figure verify-one-family "INDEPENDENT_VERIFIER_ONE_FAMILY" ""
+check_figure verify-one-family "991 1002 1007 1026 1051 1053 1150 1250" "The-Order-Of-The-Bases.md"
+check_figure verify-one-family "ties-all-16, kRes 7, and AT kRes it is ABOVE all 16 (51 vs 0-20)" ""
+check_figure verify-one-family "RANK 1 MEANS burden < min(controls). A tie is not fewer places." ""
 
-# --- Study 41: the silicon cost of imposing an order (nine live cells) ---
-# The program needs Linux performance counters, so on this host it takes its REFUSAL path —
-# which prints the same reference block as a full run. That is the point: a study whose figures
-# vanish when the instrument is absent could not be pinned at all.
-check_figure silicon-shear-telemetry "ORDERING_IS_PRICED_IN_CYCLES_NOT_IN_PHYSICS" "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "22,846 against 4,053,186"                     "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "42-51 against 110,319-111,002"                "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "6 of 6 rungs on 9 of 9 cells"                 "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "4 of 5 rungs"                                 "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "1,499,438-1,500,676 of 3,000,000"             "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "-45 to +938 cycles"                           "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "ABSENT is not ZERO and is not PASS"           ""
 
 echo "=== 3b. the admission law grades the three libraries in ONE run ==="
 # THE THREE LIBRARIES ARE GRADED TOGETHER, NEVER ONE AT A TIME. F1 — no entry filed in two

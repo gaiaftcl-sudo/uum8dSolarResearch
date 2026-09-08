@@ -44,7 +44,7 @@ holds two libraries at once, which is why the three libraries are graded in ONE 
 **Nothing enters without a reproducible measurement**, and a claim whose figure no program prints
 is refused with the clause named. The full law is
 [The library admission law](The-Library-Admission-Law); the law *is* the program,
-`reproduce/library-admission-law.swift`, and it runs 61 control arms in three directions before
+`reproduce/library-admission-law.swift`, and it runs 65 control arms in three directions before
 it grades anything.
 
 **Why the per-library half exists.** A generative pipeline in this same programme reported
@@ -611,19 +611,36 @@ about the relation between libraries, so it prints `F1_NO_ENTRY_FILED_TWICE   NO
 produced by a single-library run that structurally could not reach the clause the combined run
 refused on. That is fixed in the law and in this command.
 
-**What the checker printed here, 2026-09-07**, so a reader has something to compare against:
+**What the checker printed here, 2026-09-08**, so a reader has something to compare against:
 
 ```
-CONTROL ARM  61/61 PASS        40 must REFUSE · 16 must ADMIT · 5 must HOLD
+CONTROL ARM  65/65 PASS        40 must REFUSE · 17 must ADMIT · 8 must HOLD
 LIBRARY PROTEINS   ->   ADMITTED
   entry files   6      ADMITTED 5      HELD 1      REFUSED 0
-  programs in reproduce/   60
+  programs in reproduce/   84
+  generated-peptides-homology-under-substitution.md   NOT_KNOWN
+      HELD E4_FIGURE   3 figure(s) declared, and peptide-homology-exact's output here is
+                       ITSELF A REFUSAL — it published no verdict, so any figure appearing
+                       in it was QUOTED, not computed. A quoted figure is not evidence.
+      HELD E5_SEAL     the declared seal does appear in that text, which is exactly the
+                       trap: appearing and being computed are two different things.
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries
-                          graded together; 13 distinct triples over 15 admitted entries
-TRANSCRIPT SEAL  sha256  c12f27fdada6f574e2b2d4864ea95935f9bf3f75fa5c33ab325eb52c1c52b54b
-sealed bytes             28,104
+                          graded together; 12 distinct triples over 14 admitted entries
+TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
+sealed bytes             31,434
 exit                     2          (2 means an entry is HELD, 1 means refused, 0 means clean)
 ```
+
+**That HELD row is a correction we made to our own law on 2026-09-08, and it is worth reading
+before the numbers.** The homology screen takes about 35 minutes over a 58,984,123,166,334-cell
+comparison, so its program has a harness path: given no argument it runs no screen and instead
+**prints the published figures**, which is what lets the wiki's harness check this page against the
+program in a clean clone. Clauses E4 and E5 were then matching the entry's declared figures and its
+declared seal against text the program had **quoted rather than computed** — and passing. The seal
+of a screen that measured nothing was being credited to it. Both clauses now test for a refusal
+**before** they look for the figure, three new control arms hold the repair, and this entry reads
+NOT_KNOWN in a clean clone until someone runs the screen. **A held entry is not in the library and
+is not thrown out of it.** Point the grader at a directory holding that transcript and it admits.
 
 That seal covers the graded transcript, which includes the count of programs in `reproduce/` — so
 a clone holding a different number of programs prints a different seal, and that is content

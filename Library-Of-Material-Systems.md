@@ -10,8 +10,8 @@ below with the clause that stopped it. Two slots named and empty.**
 ```
 LIBRARY MATERIALS   ->   ADMITTED
   entry files   5      ADMITTED  5      HELD  0      REFUSED  0
-  graded together with the other two libraries in ONE run — 15 admitted, 1 held, 0 refused
-  TRANSCRIPT SEAL  sha256  c12f27fdada6f574e2b2d4864ea95935f9bf3f75fa5c33ab325eb52c1c52b54b
+  graded together with the other two libraries in ONE run — 14 admitted, 4 held, 0 refused
+  TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
 ```
 
 ---
@@ -81,7 +81,7 @@ never in aggregate. A tenth clause, **F1**, holds two libraries at once and asks
 is filed in both — which is why the three libraries are graded in a **single run**. Three
 terminals — **ADMITTED**, **REFUSED**, **NOT_KNOWN** — and they are three answers. The full law is
 [here](The-Library-Admission-Law); the executable is `reproduce/library-admission-law.swift`, and it
-runs **61 control arms** before it grades anything.
+runs **65 control arms** before it grades anything.
 
 ---
 
@@ -440,7 +440,7 @@ own `REFUSED` lines say the same thing individually; the slot says it about the 
 ### The verdict transcript, and its seal
 
 ```
-CONTROL ARM  61/61 PASS
+CONTROL ARM  65/65 PASS
   arms that must REFUSE      40
   arms that must ADMIT       16
   arms that must HOLD         5   (NOT_KNOWN — the third terminal is reachable)
@@ -452,11 +452,11 @@ LIBRARY MATERIALS   ->   ADMITTED
                                 identical as a multiset to the 5 in this directory
 
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries graded
-                          together; 13 distinct triples over 15 admitted entries
+                          together; 12 distinct triples over 14 admitted entries
 
-TRANSCRIPT SEAL  sha256  c12f27fdada6f574e2b2d4864ea95935f9bf3f75fa5c33ab325eb52c1c52b54b
-sealed bytes             28,104
-exit                     2   (one entry in the PROTEINS library is HELD; nothing is refused)
+TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
+sealed bytes             31,434
+exit                     2   (four entries across the three libraries are HELD; nothing is refused)
 ```
 
 **The seal is path-independent, and that is measured rather than asserted.** Filesystem paths are
@@ -573,7 +573,7 @@ taken that way.
 
 ## Related
 
-- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 61 control arms
+- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 65 control arms
   behind it.
 - [**The Library of Proteins**](Library-Of-Proteins) · [**The Library of Compound Cures**](Library-Of-Compound-Cures) — the other two libraries, graded in the same run as this one.
 - [Study 30 — The sovereign edge pod](Study-30-Sovereign-Edge-Pod.md) — the charter behind entry 2

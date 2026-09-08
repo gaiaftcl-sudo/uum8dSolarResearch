@@ -1,15 +1,3 @@
-# The Library of Compound Cures
-
-*Small molecules and nucleic-acid medicines against known disease — what was measured about them,
-exactly, by programs anyone can run.*
-
-**Graded 2026-09-07: 5 entries, 5 admitted, 0 held, 0 refused. 5 rows over 5 distinct identities.
-2 open slots, named.**
-
----
-
-## What this library is for, and who it is for
-
 This library is for someone who does not know us and has no reason to trust us.
 
 A patient reading a label. A prescriber who wants to know where else a strand of RNA could bind. A
@@ -46,7 +34,7 @@ integers is where a float enters a program that had none.
 
 The full law: **[The library admission law](The-Library-Admission-Law)**. The law itself is the
 program `reproduce/library-admission-law.swift` — 2,495 lines, Swift 6.4, zero float on every
-decision path, 61 control arms passing in three directions. Beyond the two halves there is one
+decision path, 65 control arms passing in three directions. Beyond the two halves there is one
 **federation** clause, F1, which asks the only question neither half can: *is one entry filed in
 two different libraries?* No per-library clause can see it, because no per-library clause ever
 holds two libraries at once — which is why **the three libraries are graded in a single run and
@@ -91,24 +79,24 @@ which is the default. Exit `0` all admitted, `1` something refused, `2` somethin
 control arm failed and nothing was graded.
 
 Measured 2026-09-07, all three libraries together: `15 ADMITTED · 1 HELD · 0 REFUSED`, every
-per-library clause holding, and F1 clear over 13 distinct triples. The seal is **path-independent
+per-library clause holding, and F1 clear over 12 distinct triples. The seal is **path-independent
 by construction** — filesystem paths are printed and never sealed, because a seal that moves with
 the checkout directory indicts a correct reproduction.
 
 ```
-CONTROL ARM  61/61 PASS        40 must REFUSE · 16 must ADMIT · 5 must HOLD
-  programs in reproduce/   60
+CONTROL ARM  65/65 PASS        40 must REFUSE · 17 must ADMIT · 8 must HOLD
+  programs in reproduce/   84
 LIBRARY PROTEINS    ->  ADMITTED     6 files   5 admitted   1 held   0 refused
-LIBRARY COMPOUNDS   ->  ADMITTED     5 files   5 admitted   0 held   0 refused
+LIBRARY COMPOUNDS   ->  ADMITTED     7 files   4 admitted   3 held   0 refused
 LIBRARY MATERIALS   ->  ADMITTED     5 files   5 admitted   0 held   0 refused
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries
-TRANSCRIPT SEAL  sha256  c12f27fdada6f574e2b2d4864ea95935f9bf3f75fa5c33ab325eb52c1c52b54b
-sealed bytes             28,104
+TRANSCRIPT SEAL  sha256  b9b2ac76b28aab3ac709b1ae4143f0bc1827421b78c0a3d7b44bdd3ec104765c
+sealed bytes             31,434
 exit                     2
 ```
 
 **The seal moves when the census moves; the verdict does not, and the difference is worth a
-sentence rather than a footnote.** The program census — `programs in reproduce/ 60` — is inside the
+sentence rather than a footnote.** The program census — `programs in reproduce/ 84` — is inside the
 sealed transcript, because what programs were available *is* evidence about the grading. A clone
 holding a different number of programs prints a different seal. That is content disagreeing, not a
 broken reproduction: the per-entry and per-library verdicts above it are what must match.
@@ -117,7 +105,7 @@ broken reproduction: the per-entry and per-library verdicts above it are what mu
 
 ## The entries
 
-Five entry blocks follow, reproduced verbatim from the canonical entry files in
+Seven entry blocks follow, reproduced verbatim from the canonical entry files in
 `library/compounds/`. The checker grades **one entry per file**, so grade the library directory —
 this page is the reading surface, not the graded object. **Clause L9 makes "reproduced verbatim" a
 gate rather than a promise**: it compares the fenced blocks on this page against the blocks in that
@@ -407,6 +395,52 @@ The reader carries a known-case check that runs before any table: the published 
 it name the disagreeing row and emit **no table and no seal**. Given no corpus it refuses rather
 than printing an empty result, and its seal is byte-identical from any directory.
 
+### 7 — Is a medicine more specific than the same bases in another order?
+
+The atlas above answers **where** a strand can pair. It cannot answer whether that burden is
+unusual, and alone it decides nothing: any 20-mer has hundreds of near-complementary windows in a
+corpus of 1.47 billion, for the same reason any twenty-letter string turns up in a large enough
+library. This entry is the comparison — every screened strand against **sixteen permutations of its
+own bases**, the same multiset with none of the design.
+
+**This slot was named empty on 2026-09-07 and filled on 2026-09-08.** The manifest carried it as an
+open slot, in the library's own words, while the screen was still running: *no program, no
+transcript, no seal, nothing to hold.* It is an entry now because a program prints it.
+
+The result the bench should read first is not the two successes. It is that **17 undesigned
+sequences**, drawn from the corpus by a fixed rule and screened exactly as a medicine is, put the
+registry's numbers in a scale — and **none of the seventeen is below its own controls either.**
+
+```affine-entry
+LIBRARY        COMPOUNDS
+IDENTITY_KIND  CONTENT_DIGEST
+IDENTITY       2d74f5c676d51d45df178f9fed7840729bd87633ae8e5a9104383f6fbd7c3fd1
+DIGEST_OF      the sealed transcript of the registry-wide specificity ranking, over every strand, every threshold, every rank interval and every complete histogram
+TITLE          Every registry strand ranked against sixteen rearrangements of its own bases
+MEASURED       472 registry strands and 17 undesigned constructed 20-mers screened as 186 families of 17 probes each, 5,355,878,467,758 probe-windows counted with no sampling and no cutoff inside the arithmetic. At 4 mismatches: 2 families pair in strictly fewer places than all sixteen permutations of their own bases, 8 tie the lowest, 122 sit inside their own control range, 1 ties the highest, 44 pair in more places than every permutation, and 9 tie all sixteen. 18 strands are UBIQUITOUS, 266 REFUSED and 19 NOT_KNOWN — three silences, none of which is zero off-targets.
+PROGRAM        registry-specificity-ranking
+FIGURE         2d74f5c676d51d45df178f9fed7840729bd87633ae8e5a9104383f6fbd7c3fd1
+FIGURE         717027798090 + 4638850669668 = 5355878467758
+FIGURE         169 registry strands + 17 undesigned constructed 20-mers
+FIGURE         18 UBIQUITOUS, 266 REFUSED, 19 NOT_KNOWN
+FIGURE         BELOW-all-16 2 | ties-lowest 8 | inside 122 | ties-highest 1 |
+SEAL           2d74f5c676d51d45df178f9fed7840729bd87633ae8e5a9104383f6fbd7c3fd1
+GRADE          MEASURED
+SOURCE         NCATS GSRS class nucleicAcid enumerated in full, screened against GENCODE v50 transcripts
+WHERE_THE_LAW_LIVES  reproduce/registry-specificity-ranking.swift
+REFUSED        not a safety finding. A near-complementary window is a place a molecule COULD pair — not a cut, not an occupancy, not a clinical event. A high rank is not a safety finding and a low rank is not a clearance
+REFUSED        not a ranking of medicines against each other. Every comparison on this entry is a strand against permutations of ITS OWN bases, never against another strand, and raw burden is never pooled across lengths
+REFUSED        not a claim about the 303 excluded strands. UBIQUITOUS, REFUSED and NOT_KNOWN are three different answers and an excluded strand is never a clean strand
+REFUSED        not the chemistry half. Phosphorothioate backbone binding, complement activation, thrombocytopenia and aseptic meningitis are not sequence matches and this program does not reach them
+FALSIFIER      a registry strand in the 8-60 nt band this enumeration omits; or a re-run on the same two public inputs reaching a different seal, a different disposition for any family, or a different count of families strictly below all sixteen
+REPRODUCE      xcrun swiftc -O -swift-version 5 reproduce/registry-specificity-ranking.swift -o /tmp/rsr && curl -sL <gencode v50 transcripts fasta> | gunzip -c | /tmp/rsr
+NOT_ADVICE     Nothing in this entry is medical advice and it is not a recommendation to take anything.
+ADDED          2026-09-08
+```
+
+The full page, including the tie rule that took a claimed nineteen designed-specificity families
+down to a measured two, is **[The order of the bases](The-Order-Of-The-Bases)**.
+
 ## The refused section
 
 **A library that shows only what it admitted cannot be audited.** Six things were considered for
@@ -506,18 +540,30 @@ evidence and calling it a clean library is the strongest possible claim.
 
 ---
 
-## Open slots — named, and empty
+## Open slots — named, and empty, and two that closed
 
 A slot is a measurement this library has named and does not have: no program, no figure, no seal,
 nothing to hold. Slots are counted in no axis above and gate on nothing.
 
+**Both slots this page carried on 2026-09-07 are now closed, and closed the only way a slot may
+close — a program prints them:**
+
+| slot named 2026-09-07 | why it was empty | closed |
+|---|---|---|
+| The eleven master-regulator drug pairs, one per tumour type | published in prose on the study page; no program in `reproduce/` printed them, so a stranger could not re-derive them from a clean clone | **2026-09-07**, entry 6 — `study26-combination-pairs-exact` |
+| The registry-wide specificity ranking across all in-scope strands | running at that grading; no program, no transcript, no seal | **2026-09-08**, entry 7 — `registry-specificity-ranking`, seal `2d74f5c6…` |
+
+**Three slots are open, and each names the one condition that would fill it:**
+
 | slot | why it is empty | named |
 |---|---|---|
-| The registry-wide specificity ranking across all in-scope strands | running at this grading; no program in `reproduce/`, no transcript, no seal | 2026-09-07 |
-| The eleven master-regulator drug pairs, one per tumour type | published in prose on the study page; no program in `reproduce/` prints them, so a stranger cannot re-derive them from a clean clone | 2026-09-07 |
+| The exact off-target map of **del-zota's** payload | the sequence is not public. The slot fills the day the sponsor or a regulator puts it on the table — the instrument is already written | 2026-09-08 |
+| The exact off-target map of **VERVE-102's** guide on the real molecule | the same reason, on a base editor rather than an oligonucleotide | 2026-09-08 |
+| A signature-reversal or network-recovery figure for **rentosertib** | there is nothing to compute against: the compound is **ABSENT** from both LINCS perturbagen tables (51,383 and 2,170 rows read, 0 matches, in a lookup returning 1 and 1 for pirfenidone and nintedanib) and TNIK is a master regulator in none of our cohorts. The slot fills if a public perturbation corpus carries the molecule | 2026-09-08 |
 
-**An invented result would have been easier and would have looked better.** Both slots stay empty
-until a program prints them.
+**An invented result would have been easier and would have looked better.** A slot stays empty
+until a program prints it, and the three above are in the manifest, so the grader prints them on
+every run whether anyone reads this page or not.
 
 ---
 
@@ -527,45 +573,70 @@ This library states both, always. Reproduced verbatim from the grading run:
 
 ```
     axis                            entries  distinct  most at 1  declared  holds
-    IDENTITY                              5         5          1         1  yes
-    PROGRAM                               5         5          1         1  yes
-    SEAL (sealed entries only)            5         5          1         1  yes
-    MEASURED                              5         5          1         1  yes
-    IDENTITY|PROGRAM|SEAL triple          5         5          1         1  yes
-    TITLE (census, not a gate)            5         5          1         -    -
-    GRADE (census, not a gate)            5         1          5         -    -
+    IDENTITY                              4         4          1         1  yes
+    PROGRAM                               4         4          1         1  yes
+    SEAL (sealed entries only)            4         4          1         1  yes
+    MEASURED                              4         4          1         1  yes
+    IDENTITY|PROGRAM|SEAL triple          4         4          1         1  yes
+    TITLE (census, not a gate)            4         4          1         -    -
+    GRADE (census, not a gate)            4         1          4         -    -
 
-  GRADE CENSUS over the admitted set (a census, NOT a gate)
-    MEASURED                   5
+    'most at 1' is the count carried by the single most repeated value on that
+    axis. It is the number the declared ceiling is about, and it is printed
+    whether the ceiling holds or not — an aggregate that clears while one value
+    carries five against a declared two is the collapse this table exists to show.
+
+  GRADE CENSUS over the admitted set (a census, NOT a gate — no library is
+  refused for its distribution of grades, and no library should be read as
+  strong for having none of the weaker ones):
+    MEASURED                   4
+
+  OPEN SLOTS — named, and empty. A slot is NOT an entry and is counted in no
+  axis above. It is a measurement this library has named and does not have:
+  no program, no figure, no seal. Naming it is how a library says what it is
+  missing instead of quietly not having it.
+    - The exact off-target map of del-zota's payload. The sequence is not public; the slot fills the day the sponsor or a regulator puts it on the table. Named 2026-09-08.
+    - The exact off-target map of VERVE-102's guide on the real molecule. Named 2026-09-08.
+    - A signature-reversal or network-recovery figure for rentosertib. The compound is ABSENT from both LINCS perturbagen tables and TNIK is a master regulator in none of our cohorts, so there is nothing to compute against; the slot fills if a public perturbation corpus carries the molecule. Named 2026-09-08.
 
   PER-LIBRARY CLAUSES
-     ok  L1_NOT_EMPTY              5 entry file(s) present
-     ok  L2_MANIFEST               LIBRARY COMPOUNDS declares: per identity 1, per program 1,
-                                   per seal 1, per measured 1, per triple 1;
-                                   page Library-Of-Compound-Cures.md; open slots 2
-     ok  L7_NO_ENTRY_REFUSED       0 of 5 entries refused
-     ok  L3_DISTINCT_IDENTITY      5 entries, 5 distinct; most repeated value carries 1,
-                                   declared ceiling 1 per value — 1 <= 1
-     ok  L4_DISTINCT_PROGRAM       5 entries, 5 distinct; most repeated value carries 1 — 1 <= 1
-     ok  L5_DISTINCT_SEAL          5 entries, 5 distinct; most repeated value carries 1 — 1 <= 1
-     ok  L6_DISTINCT_MEASURED      5 entries, 5 distinct; most repeated value carries 1 — 1 <= 1
-     ok  L8_DISTINCT_TRIPLE        5 entries, 5 distinct; most repeated value carries 1 — 1 <= 1
-     ok  L9_PAGE_MATCHES_DIR       Library-Of-Compound-Cures.md carries 5 entry block(s),
-                                   identical as a multiset to the 5 in this directory
+     ok  L1_NOT_EMPTY              7 entry file(s) present
+     ok  L2_MANIFEST               LIBRARY COMPOUNDS declares: per identity 1, per program 1, per seal 1, per measured 1, per triple 1; page Library-Of-Compound-Cures.md; open slots 3
+     ok  L7_NO_ENTRY_REFUSED       0 of 7 entries refused
+     ok  L3_DISTINCT_IDENTITY      4 entries, 4 distinct; most repeated value 'AXQ9493NT2' carries 1, declared ceiling 1 per value — 1 <= 1
+     ok  L4_DISTINCT_PROGRAM       4 entries, 4 distinct; most repeated value 'mr-topology-vs-expression-exact' carries 1, declared ceiling 1 per value — 1 <= 1
+     ok  L5_DISTINCT_SEAL          4 entries, 4 distinct; most repeated value '513de7e9db6556df1895bfce4cb4d69e4816d7b45b75bee1dc8452335c2c7757' carries 1, declared ceiling 1 per value — 1 <= 1
+     ok  L6_DISTINCT_MEASURED      4 entries, 4 distinct; most repeated value '3 perfect 20/20 windows, all in LPA, over 670,670 transcripts and 1,467,336,203 windows against GENCODE v50. At 17/20 or better outside LPA: LPAL2, TMEM254-AS1, LINC02606, LINC01065, ISM1.' carries 1, declared ceiling 1 per value — 1 <= 1
+     ok  L8_DISTINCT_TRIPLE        4 entries, 4 distinct; most repeated value 'AXQ9493NT2 | zilganersen-offtarget-whole-transcriptome | edcb277ddea44820502b6446b00ed8bdcfdb08835d6785fdee7d1b370420bbaa' carries 1, declared ceiling 1 per value — 1 <= 1
 ```
 
-**Five rows over five distinct identities, five distinct programs, five distinct seals and five
-distinct findings.** Every ceiling is declared at 1 in `library/compounds/LIBRARY.manifest` and
-tested **per value** — `count(most repeated value) ≤ declared` — never by a ratio and never in
-aggregate. `most at 1` is the column that carries the test; an aggregate can clear while one value
-carries five against a declared two, and on the sibling PROTEINS library it did.
+**Seven entry files, four admitted here, three held — and the three are the honest half of this
+table.** The library holds seven measurements. Four of them are graded ADMITTED from a clean clone,
+because their programs run to completion against corpora small enough to ship in this repository.
+The other three — the registry-wide atlas, the genome-wide CRISPR map and the specificity ranking —
+name a program that **refuses** without a 1.5 GB public download, so in a clean clone their evidence
+is not present and the law returns **NOT_KNOWN**. A held entry is not in the library and is not
+thrown out of it. Point the grader at a directory holding those three transcripts and they admit.
 
+**That distinction is younger than this page, and it was our own defect.** Until 2026-09-08 all
+three read ADMITTED here, because several programs now print their published figures **on every
+exit path** — the right thing for the wiki harness, which must check a page against its program with
+no corpus present — and clauses E4 and E5 were matching those figures against text the run had
+**quoted** rather than **computed**. The seal of a screen that measured nothing was being credited to
+it. Three new control arms hold the repair: a refusal transcript that quotes every declared figure
+must HOLD, one that quotes the declared seal must HOLD, and the same entry against a **complete** run
+must still ADMIT — because a guard that always holds is the same defect wearing the other face.
+
+Every ceiling is declared at 1 in `library/compounds/LIBRARY.manifest` and tested **per value** —
+`count(most repeated value) ≤ declared` — never by a ratio and never in aggregate. `most at 1` is the
+column that carries the test; an aggregate can clear while one value carries five against a declared
+two, and on the sibling PROTEINS library it did.
 **L9 is the clause that ties this page to what was graded.** The checker grades
 `library/compounds/`; you are reading `Library-Of-Compound-Cures.md`. Nothing made them agree until
 L9 did — it compares the fenced entry blocks of the two as multisets and refuses if they differ,
 so an edit to this page that is not also an edit to the entry it publishes fails the harness.
 
-`GRADE` reads 5 entries over 1 distinct value and is labelled **census, not a gate**, in the
+`GRADE` reads 4 admitted entries over 1 distinct value and is labelled **census, not a gate**, in the
 output and here. Every admitted entry is graded `MEASURED`. A clause that never refuses is
 decoration, and calling a decoration a gate is how a reader comes to trust one — so this library
 does not claim strength from its grade distribution, it reports it.
@@ -667,7 +738,7 @@ machine — that is clause E9, and it is checked rather than promised.
 
 ## Related
 
-- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 61 arms that prove it refuses.
+- [**The library admission law**](The-Library-Admission-Law) — what may enter, and the 65 arms that prove it refuses.
 - [**The Library of Proteins**](Library-Of-Proteins) · [**The Library of Material Systems**](Library-Of-Material-Systems) — the other two libraries, graded in the same run as this one.
 - [Where else could this guide cut?](CRISPR-Genome-Off-Target-Map) — the full per-guide map with coordinates.
 - [The exact off-target atlas of the nucleic-acid medicines](Oligonucleotide-Off-Target-Atlas) — the registry-wide screen.

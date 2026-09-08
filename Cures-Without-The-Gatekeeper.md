@@ -27,9 +27,9 @@ Compare that to how the field usually refines the list. The standard tools rank 
 
 The difference isn't accuracy — a float can be perfectly precise and still shear. The difference is whether the safety map is the **same map** for everyone who looks. A genome edit you cannot undo deserves an off-target verdict a stranger can re-derive years later, on a machine you've never seen, without trusting the lab that produced it — not a number that moves with the tool that drew it. For a therapy given to a single patient, where the map can never be checked against a population, that re-derivability *is* the credibility.
 
-## Six real, in-the-news medicines
+## Seven real, in-the-news medicines
 
-We put that exact screen's argument against six real medicines — never to grade the drug, its makers, or any patient, only to grade the **safety instrument** that decides where the medicine strikes. Each one names, out loud, exactly where the exact method stops.
+We put that exact screen's argument against seven real medicines — never to grade the drug, its makers, or any patient, only to grade the **safety instrument** that decides where the medicine strikes. Each one names, out loud, exactly where the exact method stops.
 
 ### Zilganersen — the first door that ever opened for Alexander disease
 
@@ -53,7 +53,34 @@ Duchenne muscular dystrophy breaks the *DMD* reading frame; del-zota is built fo
 
 ### CAR-T, halted — the one whose safety question is not off-target at all
 
-The other five are off-target-sequence questions. This one is deliberately the counterpoint, because honesty means showing where the off-target screen is *not* the tool. In August 2026 two of the world's largest drug companies paused their autoimmune CAR-T programs after three patients died — a cell therapy meant to heal expanded out of control and turned the immune system against the patient. The failure was not a mis-targeted sequence; it was an **unbounded expansion**, in cells engineered on fast-manufacturing platforms *specifically to expand harder and resist their own brakes* — a declared design choice, on the record before the first dose. No off-target map would have caught this, because the danger was not where the therapy struck but that it had no ceiling. **The instrument's honest answer to a system built without a bound is not a confident safety score — it is a refusal.** A safety verdict that carries a declared envelope can return "outside what I can certify — refused" instead of a reassuring number, and a therapy engineered to expand without a brake is exactly the case that belongs on the far side of that line. That is a different discipline from the off-target seal, and it is an argument carried in full on its own page — **[the case a regulator could re-derive →](The-Verdict-a-Regulator-Could-Re-Derive)** — not a molecular screen run on the therapy.
+The five above are off-target-sequence questions. This one and the one after it are deliberately the counterpoints, because honesty means showing where the off-target screen is *not* the tool — here because the danger was not a sequence at all, and next because the molecule is not a sequence. In August 2026 two of the world's largest drug companies paused their autoimmune CAR-T programs after three patients died — a cell therapy meant to heal expanded out of control and turned the immune system against the patient. The failure was not a mis-targeted sequence; it was an **unbounded expansion**, in cells engineered on fast-manufacturing platforms *specifically to expand harder and resist their own brakes* — a declared design choice, on the record before the first dose. No off-target map would have caught this, because the danger was not where the therapy struck but that it had no ceiling. **The instrument's honest answer to a system built without a bound is not a confident safety score — it is a refusal.** A safety verdict that carries a declared envelope can return "outside what I can certify — refused" instead of a reassuring number, and a therapy engineered to expand without a brake is exactly the case that belongs on the far side of that line. That is a different discipline from the off-target seal, and it is an argument carried in full on its own page — **[the case a regulator could re-derive →](The-Verdict-a-Regulator-Could-Re-Derive)** — not a molecular screen run on the therapy.
+
+
+### Rentosertib — the drug an AI designed, and the honest shape of a screen that cannot reach it
+
+Idiopathic pulmonary fibrosis replaces working lung with scar. Two drugs are approved for it anywhere in the world, both slow the loss rather than restoring anything, and that is the whole shelf; **84 phase-3 trials are registered in this condition and 93 studies were terminated, withdrawn or suspended, 87 of them with a reason written down.** Rentosertib is a candidate for that shelf and it is the first of its kind on this page: **both its target and its molecule were machine-generated** — the target TNIK proposed by a target-discovery engine, the inhibitor drawn by a generative chemistry model. Its identifiers are exact and we counted them element by element: **C₂₇H₃₀FN₇O**, InChIKey `ZVDNXHUSIKGTSF-UHFFFAOYSA-N`, with one skeleton digest `b5da901cbcba5535` shared by PubChem, ChEMBL and NCATS GSRS. 89 self-test arms, zero failures. **What the exact screen contributes here is not a number — it is a named absence, and that is the point.** This is a small molecule, not a written sequence, so the off-target complementarity screen has nothing to bind to. And our other instrument, the Study 26 signature-reversal machinery, **cannot be pointed at this drug either**, for three measured reasons: TNIK is an *inferred* rather than a physically measured gene on the LINCS platform; TNIK is a master regulator in none of our 21 cohorts, where the control token FOXM1 appears 10, 11, 22, 1 and 1 times; and the compound is **absent from both LINCS perturbagen tables** — 51,383 and 2,170 rows read, zero matches by InChIKey, skeleton or any of seven name spellings, in a lookup that returns 1 and 1 for pirfenidone and nintedanib and 7 and 3 for sirolimus. The lookup works. The drug is not in it. **So this page publishes no recovery number for rentosertib, and says so as loudly as it would state a positive one** — because a silence that reads as either safety or doubt is the exact failure this discipline exists to prevent. **Where it stops, and where it starts again:** the trigger is named before the data exists — **NCT07687459**, FVC decline over 52 weeks, n = 320. If that reads out positive and nothing better is on the shelf, the page gets rewritten to promote it. **[The full safety review →](A-Drug-An-AI-Designed)**
+
+### And beyond the seven — the whole registry, not a selection
+
+Seven medicines chosen for the news is a selection, and a selection can flatter. So the same
+arithmetic was then run across **everything the public registry publishes a usable sequence for**,
+with nothing chosen by us:
+
+- **[The off-target atlas](Oligonucleotide-Off-Target-Atlas)** — all **472** nucleic-acid strands
+  the US substance registry carries in the 8–60 nt band, every window of the transcriptome:
+  **WHERE** each one can pair.
+- **[The order of the bases](The-Order-Of-The-Bases)** — the question a list of sites cannot answer:
+  **is that burden unusual?** Each strand ranked against **sixteen rearrangements of its own bases**,
+  5,355,878,467,758 probe-windows, no sampling. **Two** of the 169 measurable strands pair in
+  strictly fewer places than every rearrangement of themselves; **122** are indistinguishable from
+  their own composition. Seventeen undesigned sequences drawn from the corpus by a fixed rule put
+  those numbers in a scale, and none of the seventeen is below its own controls either.
+- **[Designed, or forced by its own bases?](CRISPR-Clinical-Guide-Atlas)** — the same control arm
+  applied to every clinical CRISPR guide.
+
+**A rank is not a safety finding and a low rank is not a clearance.** What the registry-wide pass
+adds to the seven is scale: a figure for one molecule means nothing until you know what an ordinary
+sequence of the same bases scores, and now that is published for all of them.
 
 ## What it unlocks
 
