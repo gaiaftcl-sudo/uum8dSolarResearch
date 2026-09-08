@@ -606,6 +606,19 @@ check_figure fusion-determinism-digest "f49b576e073835bcab17bee10fe0eee193877464
 check_figure unimodular-control-arms "unimodular det=1: det=1  e_1 reachable in sample = true" "Library-Of-Material-Systems.md"
 check_figure fusion-exact-vs-float "PI_BRACKET  355/113 - 333/106 = 1/11978" "Library-Of-Material-Systems.md"
 
+# --- Study 41: the silicon cost of imposing an order (nine live cells) ---
+# The program needs Linux performance counters, so on this host it takes its REFUSAL path —
+# which prints the same reference block as a full run. That is the point: a study whose figures
+# vanish when the instrument is absent could not be pinned at all.
+check_figure silicon-shear-telemetry "ORDERING_IS_PRICED_IN_CYCLES_NOT_IN_PHYSICS" "Study-41-What-The-Ordering-Cost.md"
+check_figure silicon-shear-telemetry "22,846 against 4,053,186"                     "Study-41-What-The-Ordering-Cost.md"
+check_figure silicon-shear-telemetry "42-51 against 110,319-111,002"                "Study-41-What-The-Ordering-Cost.md"
+check_figure silicon-shear-telemetry "6 of 6 rungs on 9 of 9 cells"                 "Study-41-What-The-Ordering-Cost.md"
+check_figure silicon-shear-telemetry "4 of 5 rungs"                                 "Study-41-What-The-Ordering-Cost.md"
+check_figure silicon-shear-telemetry "1,499,438-1,500,676 of 3,000,000"             "Study-41-What-The-Ordering-Cost.md"
+check_figure silicon-shear-telemetry "-45 to +938 cycles"                           "Study-41-What-The-Ordering-Cost.md"
+check_figure silicon-shear-telemetry "ABSENT is not ZERO and is not PASS"           ""
+
 echo "=== 3b. the admission law grades the three libraries in ONE run ==="
 # THE THREE LIBRARIES ARE GRADED TOGETHER, NEVER ONE AT A TIME. F1 — no entry filed in two
 # libraries — is a relation BETWEEN libraries, and a run given one library reports it NOT_KNOWN

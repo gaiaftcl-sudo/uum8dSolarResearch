@@ -37,6 +37,7 @@
 - [**Study 38** — the loss-reserve triangle, exact against float](Study-38-Loss-Reserve-Triangle) — **a reserve is an exact rational; 481 of 482 verdicts identical in both arithmetics; the sixteen-billion figure comes from an unchecked premise**
 - [**Study 39** — the actuarial domain, exact against float](Study-39-Actuarial-Domain) — **life, pensions, multi-state and aggregation; the margin is 8 significant digits at its tightest**
 - [**Study 40** — the number the simulation throws away](Study-40-Indefinite-Causal-Order) — **their ICO result computed as a fraction; in float the effect returns 0 at every width, and an effect returned as zero cannot be searched for**
+- [**Study 41** — fifty years of solving the wrong problem](Study-41-What-The-Ordering-Cost) — **the ordering was never about time, it was about arithmetic; 177× the work and 2,400× the wrong guesses to return the answer the machine already had**
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)

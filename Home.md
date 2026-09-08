@@ -1,3 +1,97 @@
+# Forty-one studies, one finding: the exact answer was there the whole time
+
+**This is a line in the sand, and it is drawn with numbers rather than opinions.**
+
+Across forty-one studies — the sky, the sea, the ground, the genome, the grid, the ledger, and the
+machines this page is served from — we kept meeting the same thing. Somewhere near the bottom of a
+serious, careful, expensive piece of work, an exact quantity had been turned into an approximate one,
+because that is simply how computing has been done since the 1980s. And every time we went back and
+did the same work in exact whole numbers instead, **the answer was already available.** Not better.
+Not faster. *Available* — where before there had been a score, an estimate, or a disagreement between
+two machines that were supposed to agree.
+
+That is the finding, and it is bigger than any one study on this board:
+
+> **A great many questions the world treats as approximate are not approximate. They are exact
+> questions that were handed to approximate arithmetic, and the uncertainty everyone learned to live
+> with was manufactured on the way in.**
+
+![Nine machines receive the same events in different orders; the sorting machinery spins up and its cost climbs to four million processor cycles; both paths return the identical integer; then the same fold in ordinary decimals returns two different totals](images/affine-earth-the-wrong-problem.gif)
+
+*Nineteen seconds: the question, the nine machines, what the ordering cost, the identical answer — and the half that keeps it honest. [Full-resolution film](media/affine-earth-the-wrong-problem.mp4).*
+
+## What that has looked like, measured
+
+Nothing below is an argument. Each is a sealed study on this wiki with a program a stranger can run.
+
+- **A medicine.** Where a guide molecule could bind in three billion bases is a counting question, not
+  a scoring question. For Casgevy — curing sickle cell disease right now — the count is **one** perfect
+  match, its intended target, and **nothing** one mismatch away. Not a low score. Nothing.
+- **A tumour.** Seventeen tumour types, 7,673 people's tumours, all public bytes. No single compound
+  reversed the signature in any of them — and asked again of **pairs**, the same law with the same
+  controls finds candidates in **eleven of fifteen**. Those eleven warrant a laboratory. We do not call
+  them safe or ready; that needs a bench.
+- **A safety system.** A floating-point control brain for fusion goes deaf after about eight seconds,
+  forgets what it learned when moved to a machine it has never seen, and **contradicts itself at 142
+  operating points**. The exact court refuses all 142, needs no training, and returns a verdict that is
+  **byte-identical on every machine** across a 2,992-verdict corpus.
+- **A ledger.** An insurance reserve is an exact ratio of the integers a company already filed. Nothing
+  in it mathematically requires approximation.
+- **A life table.** Across **10,878** actuarial quantities from public archives, the exact arithmetic
+  and the float agree to at least fourteen significant digits — a result we publish as gladly as the
+  ones that part, because a programme that only reports its wins is advertising.
+- **A discovery pipeline.** A generative system reported **37,910 validated discoveries**. Every row
+  passed every check made of it. The number of distinct molecules was **five**.
+- **A physics result.** A published effect where heat flows the wrong way predicts a *fraction*, so we
+  computed the fraction: exactly **−1/18**, at nine of nine settings. Simulated the way the field
+  simulates it, in double precision, the effect is **not small — it is zero.**
+- **And today, the machines underneath all of it.** Fifty years of computing has treated "which event
+  came first" as a fact about *time*, because the founding paper built it on relativity. It was never
+  about time. It was about arithmetic. Nine machines, the same jumbled events: sorted into an agreed
+  order and not sorted at all gave **the identical answer every time**, and the sorting cost **177×
+  the work** to change nothing. **→ [Study 41 — Fifty years of solving the wrong problem](Study-41-What-The-Ordering-Cost)**
+
+## Why we think this matters beyond us
+
+Two reasons, and neither requires you to take our side.
+
+**The first is that it can be checked.** Every study here ships as a single file with a hash. No
+network, no keys, no database, no permission, no account. You run it and you get our numbers, or you
+run it and you don't — and if it cannot measure something honestly it refuses and says so rather than
+returning a figure. Set that beside the alternative now in fashion: ten thousand agents, eighty-eight
+hours and millions of dollars producing a result that has not been released for anyone to check. It
+may well be right. **It is not yet something anyone can act on**, and that is a different and more
+serious problem than being wrong. Science's hardest current problem is not dishonesty; it is that most
+published results cannot be re-derived by anybody else. **Exact arithmetic removes the last cause of
+that by construction: the same input gives the same answer, on any machine, in any order, forever. A
+result that can be re-derived exactly cannot rot.**
+
+**The second is what the questions are about.** A tide gauge that can tell a seismic wavefront from a
+storm surge inside the first hour is the difference between a coast warned in time and a coast
+evacuated for nothing. A seismic ladder that separates an announced explosion from an earthquake in
+raw integer counts is the working problem of nuclear-treaty verification. A wet-bulb threshold decides
+whether a place stays liveable through an afternoon. A biosphere cascade, a taxi-out floor, a grid, a
+reserve, a genome. These are not curiosities. **They are the instruments a civilisation uses to look
+after itself and the place it lives**, and every one of them is better for being exact, checkable by
+anyone, and the same number for everybody who asks.
+
+## What we are not claiming
+
+We would rather be trusted on the small things than dismissed for a large one.
+
+Nothing here overturns the Standard Model of physics. Not one measurement on this board touches a
+particle, a field or a force. What these studies overturn is narrower and entirely real: **a fifty-year
+assumption about where uncertainty comes from in computation** — and, one domain at a time, the claim
+that a given real-world question *needs* to be approximate. Five studies on this board are still
+**OPEN**, meaning we do not have the data yet and say so. Several report results that went against the
+expectation, and those stay on the page with their numbers intact. One study on this board reports a
+measurement of our own that **proved nothing**, kept because a page that quietly drops its failures is
+not a record.
+
+That is the flag. The exact answer is usually already there. It costs an afternoon and a file anyone
+can run. **→ [Start here](Shear-Studies-Index)** · [How to read this board](Shear-Studies-Readers-Guide) · [The white paper](Shear-Studies-White-Paper)
+
+---
 # The question nobody was made to ask
 
 A woman is offered a medicine that will edit her genome. It has been through its trials. It works.
