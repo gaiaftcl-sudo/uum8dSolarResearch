@@ -3,9 +3,10 @@
 *Over 1,000 consecutive Ethereum blocks — 13,586 seconds of one chain on one day — 108 trades
 were inserted around. For 87 of them we computed, in exact integers from the pool's own
 arithmetic, what the person would have received had the trade in front of them not been placed.
-The typical one lost 476 ten-thousandths of what they were due, about 0.17 ETH. The tool at the
-bottom of this page answers that question for one transaction hash, for free, with no account and
-nobody's permission.*
+The typical one lost 476 ten-thousandths of what they were due, about 0.17 ETH. Two programs on this
+page put that arithmetic into a reader's own hands, both free and needing nobody's permission: one
+answers whether it happened to a given transaction hash and what it cost, and the other answers,
+while a signature is still a decision, how much a leg inserted in front of that trade could take.*
 
 **Said once, on the face of the page: detection of a geometry is not proof of intent, and intent is
 a statutory element of manipulation.** Nothing here names or implies wrongdoing by any identifiable
@@ -81,6 +82,77 @@ ABSOLUTE LOSS, DERIVED into wei
 **It IS concentrated by venue, and that cuts the other way.** 48 distinct pools carry a detection,
 but **one pool carries 22 of the 108** — 203 permille. "108 sheared trades across the market" would
 overstate the spread, so the page says so instead.
+
+### That concentration is one episode, not a rate — and the taus survive it
+
+Split the same 1,000 blocks into four 250-block sub-corpora and the warning above understates it:
+
+```
+  Q0 14000000-14000249   40 detections   24 pools   busiest 150 permille
+  Q1 14000250-14000499   31 detections    8 pools   busiest 580 permille
+  Q2 14000500-14000749   19 detections   13 pools   busiest 210 permille
+  Q3 14000750-14000999   18 detections   15 pools   busiest 111 permille
+```
+
+**Eighteen of the twenty-two sit inside one quarter**, and three more in the next. Q1 carries 31
+detections across only eight distinct pools; Q3, the same length of chain, spreads 18 across fifteen
+and its busiest takes 111 per 1,000. The published 203 is the average of quarters ranging **111 to
+580**, so it describes no quarter of the window it summarises. The detection rate is not flat either
+— 40, 31, 19, 18, falling monotonically, a 2.2× spread across one session.
+
+The honest reading is therefore *this corpus contains one burst on one pool*, not *one pool carries a
+fifth of the market's shear*. The correction comes from the same corpus that produced the original
+number and needed no new data.
+
+**Both Kendall taus keep their signs in all four quarters**: pool-relative +137, +619, +573, +269;
+absolute-ETH −464, −592, −590, −657. The magnitudes do not. That is the same shape as the composite
+ladder — **the direction replicates, the magnitude does not** — and it is called the same way.
+
+One thing must not be claimed from that. Q1 is both the most concentrated quarter and the one with
+the strongest pool-relative tau, so the four are not four independent draws of one process, and four
+agreeing signs are weaker evidence than four agreeing signs would ordinarily be.
+
+**An instrument fault found on the way, published because it would mislead anyone reproducing this.**
+The first attempt at the split passed `--start` and `--count` to the kernel over the whole corpus and
+got **four byte-identical answers from four different sub-windows**. In this kernel those flags are a
+**contiguity assertion, not a filter**: it always reads the whole file and only checks that block *i*
+is numbered `start + i`. The kernel said so in its own output — `blocks_not_contiguous 1000` on every
+quarter but the first — and the error was in not reading it. Every figure above comes from a real
+sub-corpus of 250 lines, each reporting `blocks_scanned 250` and `blocks_not_contiguous 0`.
+
+### Out of sample: 3,000 more blocks say the rate is real and the concentration was not
+
+Blocks **14,001,000–14,003,999** were pulled from the same free endpoint — no key, no account —
+immediately after the published window. The kernel reports `blocks_scanned 3000` and
+`blocks_not_contiguous 0`, so the corpus is the range it claims.
+
+| | published 1,000 | extension 3,000 | reads |
+|---|---:|---:|---|
+| detections | 108 | 319 | |
+| **per 1,000 blocks** | **108** | **106** | **the rate replicates** |
+| distinct pools | 48 | 162 | |
+| **busiest pool share** | **203 permille** | **78 permille** | **the concentration goes** |
+| the pool that carried it | 22 | **6** | an **11× fall** |
+| EXACT · NOT_KNOWN | 87 · 21 | 249 · 70 | |
+| pool-relative size tau | +491 | **+112** | sign holds |
+| absolute ETH size tau | −500 | **−407** | sign holds |
+
+**Three answers, and they are not the same answer.** The per-block rate replicates out of sample —
+108 per 1,000 against **106 per 1,000** on three times the data — so the quantity this study measures
+is a property of this chain over this period and not an artifact of which thousand blocks were
+picked. The pool concentration does not replicate: 203 per 1,000 falls to 78, the pool that carried
+it drops from 22 detections to 6, and 48 distinct pools become 162. Taken with the quarter split
+above, `a939ee68` was **one burst, not a standing feature**. And both tau signs survive while both
+magnitudes fall, which means the published magnitudes are the top of their range rather than its
+centre; the sign is what this study should be read as calling.
+
+**A third instrument defect, found by using the kernel outside the window it was written for.**
+`detections_per_1000_blocks_MEASURED` is the raw detection **count**, and is a rate only when the
+window happens to be exactly 1,000 blocks. On the 3,000-block corpus it printed **319** — which
+would have been a threefold overstatement had it been quoted as a rate. The 106 above is computed
+from the counts, 319 × 1,000 / 3,000. Same shape as the `--count` defect: a parameter honoured in
+the name of a figure but not in its arithmetic. The counts, not the derived rates, are what this
+section quotes.
 
 Sign checks: 87 positive, 0 exactly zero, 0 negative. A negative would mean the victim did *better*
 than at the pre-front state, which the direction conjunct makes impossible — so a non-zero count
@@ -326,9 +398,422 @@ NEGATIVE ARM    92 pass / 0 fail of  92
   somebody else. A tool that says yes to everything is worse than no tool.
 ```
 
+### The other question, and it is the only one still open before a signature
+
+`wasi-sandwiched` above answers about a transaction that already exists. **A person deciding whether
+to sign has a different question, and it is the same arithmetic.**
+
+```bash
+./wasi-exposure <pool-address> <token-you-are-paying> <amount-in-base-units>
+```
+
+```
+cost_to_run_this   ZERO — no API key, no account, no registration, nobody's permission
+what_it_needs      a pool address, which token you are paying in, how much, and an internet connection
+what_leaves_this_machine
+  A POOL ADDRESS and the standard read-only calls every block explorer makes
+  against it, to TWO public endpoints. Your amount is NEVER sent: the size you
+  type is used only in arithmetic on this machine, against reserves that were
+  already public. No address of yours, no wallet, no transaction, no signature.
+```
+
+#### It is equation (4) with one word changed, which is why it is not a second implementation
+
+The realised loss this study published is
+
+```
+   shortfall      = out(a; S_before_front) − out(a; S_after_front)              (4)
+   exposure(a, f) = out(a; S_now)          − out(a; S_now ⊕ f)                  (5)
+```
+
+where `out()` is the pool's own output function. **The only difference is which state is called
+*before*:** in (4) a state that already stood and was recovered from the chain, in (5) the state
+standing now, read from the pool this second. `S ⊕ f` is the pool's transition under a front leg of
+size `f` — `R_in + f` and `R_out − out(f; S)` on a constant-product pool, `v3Step(...).sqrtNext` on a
+concentrated-liquidity one — so it is `out()` again. **(5) introduces no arithmetic that (4) did not
+already carry**, and the program defines none of it: 17 call sites into `v2Out`, `v3Step`,
+`v3InvertStart`, `computeShortfall` and `runCorpus`, and **zero definitions** of any of them.
+
+#### The answer is a shape, because whoever inserts the leg picks its size and you do not
+
+Pasted from a live run — 6.0 ETH into a concentrated-liquidity pool, the study's own median victim
+size, at the state standing at block 25,935,160:
+
+```
+your_trade_as_ten_thousandths_of_this_pools_depth   719
+
+inserted_leg   TAKEN from what you were due       /10000   price move  is one step still credible
+1/8x                 49464477735139389566392      171           89  YES_small_move
+1/4x                 97669465864779842186877      337          179  MAYBE_check_the_ticks
+1/2x                190468864097248583772339      658          358  MAYBE_check_the_ticks
+1x                  362706185513692330622045     1254          717  MAYBE_check_the_ticks
+2x                  661169437766900944565258     2287         1434  NO_the_real_hit_is_LARGER
+4x                 1118888346570417393196236     3871         2869  NO_the_real_hit_is_LARGER
+8x                 1694473155128980054873411     5862         5739  NO_the_real_hit_is_LARGER
+16x                2240628989265071379429721     7752        11479  NO_the_real_hit_is_LARGER
+ladder_monotone_in_inserted_size   YES — as the arithmetic requires
+```
+
+**The last two columns are the one limit that can make the printed figure too SMALL, so the program
+prints them on the row rather than in a footnote.** A concentrated-liquidity pool holds its liquidity
+in ticks; this models one price step at the liquidity standing now and fetches no tick map. Where the
+move is large the leg crosses into ranges this program did not read, and on the far side there may be
+less liquidity — so the real hit is bigger than the row says. The error has a direction, the direction
+is upward, and the row names it. On a constant-product pool the question does not arise: its liquidity
+is one range by construction.
+
+#### Verified against 87 losses that already happened
+
+The same binary was replayed over the pinned corpus with the attacker's leg size read out of the block
+rather than solved for. **Solving for the size that makes the prediction true would be an always-green
+instrument**, so the front leg's own Swap event is the input and the check is allowed to fail.
+
+```
+costed victims                      87
+CHECKED by equation (5)             87
+MATCHED to the base unit            85
+DIFFERED                             2      both PREDICTION_ABOVE_REALISED, neither below
+NOT_KNOWN                            0
+  CONCENTRATED_LIQUIDITY   14 checked / 14 matched
+  CONSTANT_PRODUCT         73 checked / 71 matched
+
+################  VALIDATION:  GREEN — EXACT ON 85 OF 87, AN UPPER BOUND ON 2  ################
+```
+
+**The cause of the two is measured, not assumed.** A census of all 73 constant-product front legs
+found 70 exact-input swaps the formula reproduces exactly, **3 that took LESS out of the pool than an
+exact-input swap would give, and 0 that took more** — an exact-*output* or fee-on-transfer leg, whose
+smaller real draw leaves the victim a little more than the ladder assumes. **Only 2 of those 3
+differed**: `out()` floors to an integer, so a leg that took slightly less can leave the victim's own
+output unchanged, and the third row matched to the base unit anyway. The worst of the two over-states
+that row's own realised loss by **202 per 10,000**; the other by **0 per 10,000** at the printed
+precision. An upper bound is the right direction for a number somebody is about to sign
+against, and the wrong direction for a promise. The program prints which one it is.
+
+#### Four answers, four exit codes, and none of them prints like another
+
+```
+################  EXPOSURE:  MEASURED  ################               exit 0
+   the pool's shape and the block it was read at · what you are due · your size as
+   ten-thousandths of that pool's depth · the ladder above · the two panels · and the
+   second endpoint's independent read of the same state, agreeing or not
+
+!!!!!!!!!!!!!!!!  EXPOSURE:  REFUSED  !!!!!!!!!!!!!!!!                 exit 3
+   with a reason code and whether the refusal arose ON THE WIRE or HERE. REFUSED IS NOT
+   ZERO EXPOSURE — an unknown pool is refused, never answered as safe, because somebody
+   signs on the answer.
+
+== NOTHING WAS GIVEN ==                                               exit 4
+   A GATE GIVEN NOTHING MUST NOT PASS. No pool, so nothing measured and no exposure
+   offered. This is NOT a finding of zero exposure. It prints the reference figures.
+
+VALIDATION BROKEN                                                     exit 5
+   the replay against the 87 could not be completed, which is its own answer and never a
+   quiet pass.
+```
+
+Wire answers stay separated into the four this study keeps apart everywhere else — `ABSENCE`,
+`REFUSAL`, `BOT_BLOCKED`, `NOT_KNOWN` — and the program never merges them. In the run above the
+first confirming endpoint returned an HTML interstitial where a JSON-RPC body belonged; that is
+`NOT_KNOWN`, it was recorded as such, and a third endpoint was asked rather than the answer being
+taken from one.
+
+Run it with no pool at all and this is what comes back instead of a verdict:
+
+```
+=====================================================================
+  BEFORE YOU SIGN: HOW MUCH OF WHAT YOU ARE DUE CAN BE TAKEN?
+  affine.earth market-shear · one pool · one trade · one shape
+=====================================================================
+
+== REFERENCE FIGURES — published, from the pinned corpus. Not this run's measurements. ==
+  corpus            Ethereum blocks 14,000,000–14,000,999 · 13,586 s of one chain
+  detections        108 inserted trades · 87 costed EXACTLY · 21 NOT_KNOWN, named
+  typical hit       MEDIAN 476 ten-thousandths of the output that was due
+  absolute          MEDIAN 0.170457244547709297 ETH ≈ 558 USDC per victim
+  derived floor     28,889,398,990,674,697,077 wei = 28.8894 WETH = 94,645.77 USDC
+  spread            min 47 · p10 49 · p25 102 · MEDIAN 476 · p75 1,785 · max 9,999
+  by venue          constant-product 73 victims median 575 · concentrated 14 median 105
+  WHAT PREDICTS IT  pool-relative size Kendall tau +491 permille
+  concentration     48 distinct pools, ONE carries 22 of 108 (203 permille)
+  null floor        47 false positives per 212,769 leg pairs
+```
+
+#### One law, one home — the same digest the other tool carries
+
+```bash
+./wasi-exposure --selftest                      # 31 arms, no network, both directions
+./wasi-exposure --validate --dir corpus/market-shear/eth    # the 87 replayed
+bash reproduce/wasi-exposure-one-law.sh         # 19 arms, 6 of them controls
+```
+
+**Neither build carries a literal to check its law against — each computes the digest at build time
+from the bytes it cut, and the two are then required to agree.** Both cut at the `SECTION 11 — MAIN`
+marker rather than at a typed line number, and the gate re-cuts the slice, re-hashes it, checks it is
+a byte prefix of the detector's own source, then reads `law_sha256_computed_at_build` out of **both
+binaries and requires one digest from the two**. Its control arm appends a single byte and requires
+the prefix check to break. A frozen digest was tried first and removed on measurement: the detector
+legitimately grew from 2,688 lines to 3,011 the same afternoon and the literal went stale, refusing
+over a change that broke nothing. A relation survives the law growing; a literal is the constant that
+drifts.
+
+Self-test arm 9 is the join, and it is arithmetic rather than prose: it computes exposure (5) on a
+state, assembles that same state as the detector sees it — front leg, victim leg, two `Sync` records
+— calls the published `computeShortfall()` verbatim, and requires both to return **19864365895**. Its control
+gives a different front size and requires a different number, so the agreement is not vacuous.
+
+**Integer only, on a path where the number is somebody's exposure.** The single `Double` is
+`URLRequest.timeoutInterval`, built from an `Int` and never read. The float gate strips comments
+before matching — an earlier version fired on the sentence describing the exemption, which is the
+same defect one scope over — and carries three controls: a real declaration must be caught, prose
+naming a float must not be, and the timeout exemption must not hide a real one beside it.
+
 ---
 
-## 3. How it is known
+## 3. What knowing this is worth, and to whom
+
+A measurement nobody can act on helps nobody. This section says, per person rather than per
+programme, what each kind of reader can now do that they could not, what it costs them, and what it
+does not give them.
+
+### If you make swaps: two questions, both free, and one choice you can actually make
+
+```
+AFTER    ./wasi-sandwiched <your-transaction-hash>            was it taken, and how much
+BEFORE   ./wasi-exposure <pool> <token-in> <amount>           how much COULD be taken if I sign
+```
+
+The first is §2 and answers about a transaction that already exists. **The second answers before the
+signature rather than after it, which is the only point at which anything can still change.** Its
+arithmetic is not a second implementation: it compiles a verbatim byte slice of the same file, cut at
+the same named marker, and calls `v2Out()`, `v3Step()` and `v3InvertStart()` by their own names. The
+two binaries are required to print one law digest between them, so a drift is a gate failure rather
+than a footnote. A law written twice is two laws, so it is written once.
+
+```
+what leaves your machine   a pool address, and the read-only calls any block explorer makes,
+                           to two public endpoints which are cross-confirmed against each other
+your amount                NEVER SENT. The size you type is arithmetic on your own machine,
+                           against reserves that were already public. No wallet, no address of
+                           yours, no transaction, no signature.
+cost                       ZERO — no API key, no account, no registration, nobody's permission
+```
+
+What each of the two cannot do:
+
+```
+AFTER    cannot recover anything · cannot name who did it · cannot say it will happen again
+         21 of 108 published rows are NOT_KNOWN, and it prints NOT_KNOWN rather than a number
+
+BEFORE   cannot predict that anyone WILL insert a leg. It reports what one COULD take.
+         cannot see a leg split across two addresses, routed through another pool, or worked
+           across blocks — the study's own detector cannot see those either, so neither can this,
+           and absence of exposure here is not absence of exposure
+         cannot know your slippage limit, your router's path splitting, or anyone's gas
+         is an UPPER BOUND, and that is measured rather than asserted: replayed against the 87
+           costed victims it reproduced the realised loss TO THE BASE UNIT on 85, and on the
+           other 2 it stood ABOVE what was realised, never below (worst over-statement 202 per
+           10,000 of that row's own loss; concentrated-liquidity 14 of 14 exact, constant-product
+           71 of 73). An upper bound is the right direction for a pre-trade number and the wrong
+           direction for a promise, and the program prints which one it is.
+```
+
+#### The one fact you can act on: the hit tracks the pool, not your wealth
+
+§1 measures this twice and the two measurements point opposite ways on purpose — pool-relative size
+Kendall tau **+491** permille, absolute ETH size **−500** permille. The pre-trade counterpart makes it
+a choice instead of a finding. Worked at the study's own median victim size, 6.0 ETH, against a
+concentrated-liquidity pool `6ae0cdc5` at the state standing at block 25,935,160:
+
+```
+your trade as ten-thousandths of that pool's depth        719
+an inserted leg at 1x your size would take              1,254 of the 10,000 you are due
+                     (published median realised loss:     476)
+```
+
+```
+A. THE SAME TRADE, IN A DEEPER POOL        B. A SMALLER TRADE, IN THIS POOL
+depth   your size /10,000   taken /10,000   size    your size /10,000   taken /10,000
+   1x           719               1,254     full            719               1,254
+   2x           359                 669     1/2             359                 669
+   5x           143                 278     1/4             179                 346
+  10x            71                 141     1/10             71                 141
+ 100x             7                  14     1/100             7                  14
+```
+
+**The two panels are the same lever, and the program's own output is the proof: wherever the
+pool-relative column agrees, the take agrees exactly** — 359 → 669, 71 → 141, 7 → 14, in both panels,
+reached by two different routes through the arithmetic. Halving your size and doubling the depth are
+the same act. That is the +491/−500 pair restated as something a person can do something about, and
+it is why the program reports pool-relative size first and prints your trade's absolute size as an
+afterthought. The 1x rung of that example prints `MAYBE_check_the_ticks`, so 1,254 is the one-step
+figure and the real hit is not bounded above by it — the error on a concentrated-liquidity pool has a
+direction, and the direction is upward.
+
+**Splitting is not free, and this will not pretend it is.** Two half-trades at 669 each take
+100,097,446,908,321,448,120,683 apiece — 200,194,893,816,642,896,241,366 together, against
+362,706,185,513,692,330,622,045 for the single trade. **551 per 1,000 of it**, at the state read and
+at one inserted leg per piece. Against that: each piece is exposed on its own, the second piece meets
+a pool the first piece moved, and gas is paid per piece. The panels are one state and one attack
+shape. They are a reason to look before signing, not a strategy, and no trade, venue, pool or product
+is proposed anywhere on this page.
+
+**What actually caps the loss is not in this arithmetic at all.** A slippage limit is a bound the pool
+enforces on your behalf; the exposure figure does not model it and says so on every run. What this
+adds is the integer that limit would be standing against.
+
+### If you build a wallet, an interface or a router
+
+```
+detector kernel     min 2 us · max 75 us          measured on the live wire, §4
+block interval      ~12,000 ms
+                    at its slowest that is one 160,000th of the gap between blocks
+```
+
+**The arithmetic is not the cost. The state read is — and an interface about to show a quote has
+already paid it.** In the run above, the six read-only calls took 91–1,181 ms across the two
+endpoints that served; the ladder over the integers they return is microseconds. A wallet that
+already holds `getReserves()`, or `slot0()` + `liquidity()` + `fee()`, to compute the quote it is
+displaying holds everything the ladder needs. **A warning before signature costs a wallet nothing
+it is not already spending.**
+
+Embedding is a slice, not a port: the law is one contiguous byte range of one file, delimited by a
+named marker rather than a line number, so an implementation can carry it verbatim and re-derive its
+digest in one line — `sed -n "1,${END}p" extraction-exact.swift | shasum -a 256`, with `END` read off
+the marker. Transliterating it instead produces a second law, and a second law drifts — this study's
+own client-side history is where that lesson was paid for.
+
+**Nothing here is a product, and this page does not imply one.** There is no package, no SDK, no
+versioning, no support, and no licence grant — the repository carries no LICENSE and the Rights
+section says what that means. There is no tick map: a concentrated-liquidity figure models one price
+step at the liquidity standing now, so every rung prints the price move it causes and one of
+`YES_small_move` / `MAYBE_check_the_ticks` / `NO_the_real_hit_is_LARGER` beside it. An interface that
+shows the number and hides that verdict is showing a number whose error has a known direction and
+suppressing the direction.
+
+### If you buy — or build — surveillance
+
+The value here is the refutation, and it is the kind that saves money before it is spent.
+
+```
+a detector keyed on cancellation alone, over a complete session with nobody doing anything:
+  Nasdaq BX ITCH 5.0, 2019-07-30     958 per 1,000 of orders
+  Nasdaq ITCH v2,     2003-01-03     935 per 1,000 of orders
+```
+
+**The question to ask a vendor is one line: what does your indicator score on an ordinary session with
+nobody doing anything?** That question had no published answer to check a vendor's answer against.
+It has one now, on two sessions sixteen years apart, from files anyone can fetch without an account.
+
+Two further questions the page equips a buyer to ask, both free:
+
+- **Show me the control, and show me that it can fail.** §6 records a control arm that returned 0
+  detections over 223,500 leg pairs — a fact about a 2³¹ generator read at its low bits, not about the
+  detector it was certifying. An always-green control and an always-red one are the same defect.
+- **Compute the regulator's indicator in full, not its cancellation half.** MAR Annex I A(f) is a
+  conjunction; computed whole, one modelled two-sided quoter scores 0 bp or 9,189 bp depending only on
+  whether it quotes inside the touch or at it. An indicator that sorts by quoting style generates
+  alerts that a person then has to triage.
+
+No money saving is claimed. What is supplied is a denominator and three questions; what they are worth
+depends on what was about to be bought, and this page does not know that.
+
+### If you research or regulate
+
+Three things exist now that did not, all on data needing no account, no key and no data-use agreement:
+
+```
+a base rate WITH its null shape    958 and 935 per 1,000, n = 2, one publisher — carried as a band
+                                   and never as "≈95%", with the null's shape published, because a
+                                   separation number without its null shape is not a measurement
+a false-positive floor             47 per 212,769 leg pairs — and it is a property of the DATA, not
+                                   of the code: ordering alone cannot separate those 47
+a set-identical reproduction       108 of 108, by a kernel sharing no code, keyed on
+                                   (block, pool, actor, tx_front, tx_victim, tx_back)
+```
+
+Enforcement records carry episodes. They do not carry base rates, false-positive floors, or
+independent re-derivations — and §7 measures how hard that gap is to close from the other side: of 12
+located adjudicated episodes, **1** is validatable on login-free data, **7** sit behind a licensed
+dataset, **4** are not validatable at all. **The literature has episodes without base rates. This page
+has a base rate without episodes.** Naming that as the gap is the contribution; closing it needs both
+halves, and the cheapest missing condition is already staged and named in The call.
+
+### If you build any measuring instrument, in any field
+
+The most portable result here has nothing to do with markets:
+
+> **Count every item into exactly one bucket, and require the buckets to sum to a total derived
+> independently of the counting.**
+
+It costs nothing, needs no second source, and it caught an endpoint returning HTTP 200 with the real
+block hash, the real transactions root, `gasUsed` 8,119,826, and an empty `transactions[]`. **Data-shaped
+emptiness passes every status-code check and every hash check.** A closure does not pass it. §4 names
+the five places this study ran that shape; what belongs here is only that it transfers — to a log
+pipeline, a lab instrument, a billing reconciliation, a survey, anything that counts things.
+
+Its companion, from §6: **a control must be able to fail.** A control that cannot produce the outcome
+it exists to exclude is decoration, and it will read green through the exact failure it was built to
+catch.
+
+### What it is worth, plainly
+
+```
+one day of one chain · 1,000 blocks · 13,586 seconds
+108 inserted trades  against 16,517 covered DEX swap events in the same blocks  = 6 per 1,000
+ 87 victims costed exactly · 21 NOT_KNOWN
+  a floor of 28,889,398,990,674,697,077 wei ≈ 94,645.77 USDC
+```
+
+**That is not a large number, and this section will not dress it as one.** It is one working afternoon
+of one venue class on one chain. No total anywhere here is scaled to make it look larger.
+
+**The value is not the size of the number. It is that the number exists at all — per transaction, for
+anyone, at zero cost, with a published error floor.** Before this, a person who suspected their swap
+had been sheared had no way to put an integer on their own row: the counterfactual needs the pool's
+own state before the front leg, in exact arithmetic, and nothing free computed it. Now one command
+does — and prints NOT_KNOWN on 21 of 108 rather than guessing, which is the half that makes the other
+87 worth reading.
+
+**An honest small number anyone can reproduce is worth more than a large one nobody can check.** This
+study withdrew four of its own cited figures to keep that true (§6), and the withdrawal cost it a
+separation of 843× — exactly the kind of figure a study that wanted a headline would have kept.
+
+### The overclaims this section does not make
+
+Each was available. Each is declined on measurement, not on modesty.
+
+**Not annualised.** The page carries `PROJECTED_AND_DERIVED 219,692,999 USDC/year`, labelled on the key
+name itself, and this section carries none of it into any statement of worth. 1,000 blocks is about
+three and three-quarter hours; the corpus cannot test whether that rate holds, and one pool carrying
+203 permille of the detections means the rate is partly a property of that pool's day.
+
+**Not a market total.** Legs split across two addresses are invisible to the conjunct set. Both legs
+inside one transaction are invisible. Every non-Uniswap-shaped venue contributes zero by construction,
+and every other chain contributes nothing at all. A market-wide figure needs a denominator this study
+does not have, and inventing one would destroy the only property the total has: that it is a floor and
+is called one on every line that carries it.
+
+**Nobody is a parasite, because nobody is named.** Detection is a statement about ordering and pool
+state, not about purpose. 47 false positives arise on a null where nothing was inserted. Intent is a
+statutory element and no arithmetic here reaches it. Acting addresses stay keyed pseudonyms for that
+reason, not as a courtesy.
+
+**This stops nothing.** It removes no leg, reorders no block, prevents no insertion, and returns no
+money to anyone. It changes exactly one thing: **a person can see.** Before signing — the size of what
+a leg could take. After signing — what one did take, in integers, from their own hash. Detection after
+the fact tells someone they were taken; a check before the signature tells them what they are exposed
+to. Neither is protection, and calling either one protection would be the first false sentence on this
+page.
+
+**And the pre-trade check does not protect you either.** `COULD, NOT WILL` is printed on every exposure
+answer it gives. Most swaps are not sandwiched — 108 across 1,000 blocks carrying 200,826 transactions.
+A large exposure is not a warning that it is about to happen, and a small one is not a promise that it
+will not.
+
+---
+
+## 4. How it is known
 
 ### The conjunct set, reimplementable from this paragraph alone
 
@@ -535,7 +1020,7 @@ therefore the worst possible place for a number that depends on the host.
 
 ---
 
-## 4. The refutation — why the positive result above can be believed
+## 5. The refutation — why the positive result above can be believed
 
 The most common shape a surveillance product takes is a detector keyed on cancellation: displayed
 size that never executes, orders with short lifetimes, liquidity that vanishes. Run that predicate
@@ -544,19 +1029,43 @@ alone over a complete session and it does not find anything. **It counts the mar
 ```
 PHANTOM alone — displayed size that never executed
   Nasdaq BX TotalView-ITCH 5.0, 2019-07-30
-    12,676,036 orders terminated · 12,156,283 never executed
-    958 per 1,000 of orders  ·  988 per 1,000 of shares
-
+    orders terminated                     12,676,036
+    never executed                        12,156,283
+    per 1,000 of orders                          958
+    per 1,000 of displayed shares                988
+    termination split   DELETE 10,164,658 · REPLACE 2,046,443 · DRAINED 464,935
+  Nasdaq PSX TotalView-ITCH 5.0, 2019-07-30 — THE SAME DAY, A DIFFERENT BOOK
+    orders terminated                     16,165,067
+    never executed                        15,952,637
+    per 1,000 of orders                          986
+    per 1,000 of displayed shares                992
+    termination split   DELETE 13,582,830 · REPLACE 2,405,437 · DRAINED 176,800
   Nasdaq ITCH v2, 2003-01-03
-     2,921,796 orders terminated ·  2,732,598 never executed
-    935 per 1,000 of orders  ·  936 per 1,000 of shares
+    orders terminated                      2,921,796
+    never executed                         2,732,598
+    per 1,000 of orders                          935
+    per 1,000 of displayed shares                936
+
+  IEX DEEP 1.0, 2019-07-30 — THE PREDICATE CANNOT RUN.  ABSENT, NOT ZERO.
 ```
 
-Sixteen years and a protocol generation apart — v2 carries no Delete and no Replace message at all,
-5.0 splits termination into DELETE 10,164,658 / REPLACE 2,046,443 / DRAINED 464,935 — and the reading
-moves by 2.3 points. Reg NMS, sub-penny quoting, maker-taker and modern electronic market making all
-arrived between those two files and the number stayed put. That is the signature of a *structural*
-quantity, not a behavioural one. Market makers cancel constantly; that is the job.
+Nasdaq ITCH v2 and BX 5.0 are sixteen years and a protocol generation apart — v2 carries no Delete
+and no Replace message at all, 5.0 splits termination into DELETE / REPLACE / DRAINED — and the
+reading moves by 2.3 points. Reg NMS, sub-penny quoting, maker-taker and modern electronic market
+making all arrived between those two files and the number stayed put.
+
+**Then the third venue moved it by more in one session than sixteen years had.** BX and PSX are the
+same day on two books run by the same operator, read by the same binary, and the reading moves by
+**2.8**. Every macro variable is held fixed: same market, same headlines, same volatility. The two
+books differ in matching engine and fee model, and they differ visibly on the wire — BX carries 15
+message types to PSX's 14, and the one BX has is **N**, the Retail Price Improvement indicator,
+**4,636,704** of them. PSX runs no such programme.
+
+**So the base rate is venue-dependent, and that makes the refutation sharper rather than weaker.**
+Anyone selling a cancellation-keyed surveillance indicator has to say which venue their number came
+from before it means anything, and "Nasdaq" is not specific enough: two Nasdaq books on one day are
+28 per 1,000 apart. The quantity is still structural rather than behavioural — market makers cancel
+constantly, that is the job — but *how much* of a session it claims is a property of the book.
 
 **A detector keyed on cancellation, on order lifetime, or on displayed liquidity that never trades
 measures market making.** That is the denominator every cancellation claim has to be stated against.
@@ -603,10 +1112,12 @@ that is sufficient to refute a separating claim, which is all that is asserted.
 PHANTOM  AND  D2 (a price level whose displayed size >= S never filled)
          AND  D3 (an opposite-side execution within W ns before withdrawal)
 
-BX 2019-07-30   flag 88,900   control 63,140   ratio 1,407 per 1,000
-                per-cell min 1,223 · max 3,500 · all 25 cells above 1,000
-                = 7.3 per 1,000 of the 12,156,283 phantom orders
-ITCH v2 2003    flag  1,643   control  1,033   ratio 1,590 per 1,000 · min 1,377
+    BX 2019-07-30     flag 88,900   control 63,140   1,407 per 1,000
+                      per-cell min 1,223 · max 3,500 · all 25 cells above 1,000
+                      = 7.3 per 1,000 of the 12,156,283 phantom orders
+    PSX 2019-07-30    flag 169,275  control 57,401   2,948 per 1,000
+                      = 1,061 per 100,000 of the 15,952,637 phantom orders
+    ITCH v2 2003      flag  1,643   control  1,033   1,590 per 1,000
 ```
 
 The control is the same mechanism with exactly one field changed — D3 keyed to the **same-side**
@@ -623,19 +1134,126 @@ is the second corpus, where n is 2. The v2 corpus timestamps in milliseconds, so
 10,000 / 100,000 ns columns are identical and at most 15 of its 25 cells are distinct measurements.
 **The direction clears on two independent sessions. The magnitude does not** — 1,407 against 1,590.
 
+### One of the two staged feeds cannot carry the predicate at all
+
+IEX DEEP 1.0 for 2019-07-30 is 32,123,581 messages and closes byte-exactly. The predicate still
+cannot run on it, and the reason is structural rather than a shortage of data.
+
+The predicate keys every order by an **order reference** — an identifier minted when an individual
+order is opened and quoted back when that same order is terminated. Whether a feed carries such a
+field was decided from the bytes by `reproduce/feed-order-identity.swift`, with the detector
+declared before it ran, as a conjunction whose halves fail independently:
+
+```
+R1  CARDINALITY  an 8-byte window at some offset takes a distinct value on nearly
+                 every opening message                         >= 900 per 1,000
+R2  JOINABILITY  the value at THAT SAME offset reappears in the terminating
+                 messages                                      >= 900 per 1,000
+ORDER IDENTITY is declared only where R1 AND R2 hold at one offset.
+```
+
+R1 alone is not a detector — a timestamp passes it and joins nothing. R2 alone is not a detector — a
+stock symbol passes it and identifies nothing. Both halves are measured on both feeds, in opposite
+directions, so neither can be carrying a verdict by itself:
+
+| | R1-only control · high cardinality, must NOT join | R2-only control · low cardinality, must join |
+|---|---|---|
+| ITCH 5.0 | timestamp window: card 1,000 · join 0 — fires | stock locate: card 0 · join 1,000 — fires |
+| IEX DEEP | timestamp: card 932 · join 0 — fires | symbol: card 2 · join 980 — fires |
+
+On both ITCH feeds the instrument reports `identity_offset 11`, big-endian, cardinality 1,000 and
+join 1,000:
+
+```
+VERDICT               ORDER_IDENTITY_PRESENT
+predicate_status      CAN_RUN
+```
+
+Offset 11 is exactly where this study's own kernel reads the order reference. The instrument was not
+told where to look.
+
+On DEEP it sweeps 23 offsets in both endiannesses — 46 candidate fields — and none passes both
+halves:
+
+```
+reference_deep_candidate_fields_swept	46
+reference_deep_candidate_fields_passing_both_halves	0
+VERDICT               ORDER_IDENTITY_ABSENT
+predicate_status      CANNOT_RUN_NO_KEY
+```
+
+The reason is visible in the message. DEEP's Price Level Update is 30 bytes and every one of them is
+claimed by a field whose meaning was checked against the bytes rather than taken from a document:
+
+```
+offset  0  type        1   0x38 buy · 0x35 sell
+offset  1  flags       1   2 distinct values across 30629120 messages
+offset  2  timestamp   8   30629120 inside the capture window · 0 outside
+offset 10  symbol      8   30629049 ASCII space-padded · 71 not · 6,237 distinct
+offset 18  size        4   13081242 of them ZERO — the price level was removed
+offset 22  price       8   0 zero · min 100 · max 3,700,000,000 raw
+                     ----
+   bytes claimed by named fields                              30
+   price level update body                                    30
+   RESIDUAL BYTES AVAILABLE FOR AN ORDER REFERENCE             0
+```
+
+And the null does not rest on a choice of message type. DEEP's trade report is 38 bytes to the
+update's 30, and the extra eight are high-cardinality, so it was swept as an opening type in its own
+right against the price level updates as terminators — 62 further candidate fields:
+
+```
+trade_report_identity_offset                -1
+trade_report_carries_order_identity         NO
+```
+
+Neither of DEEP's two high-volume message shapes mints an identifier the other quotes back.
+
+DEEP does publish a withdrawal — **13081242** of its updates set size to zero — but the thing
+withdrawn is a **price level**, not an order. Type `A` on this feed is Auction Information at 80
+bytes and type `D` is Security Directory at 31; the message lengths say so before the names do.
+
+**The answer is ABSENT, and ABSENT is not zero.** The predicate counts orders opened and then
+terminated without executing. On DEEP there are no orders to count and therefore no denominator to
+divide by. A per-1,000 rate computed here would answer a different question while looking like an
+answer to this one — which is the specific way a number stops being merely wrong and starts being
+misleading.
+
+**That is worth knowing before buying an indicator.** A cancellation-keyed surveillance claim cannot
+be computed on aggregated depth data at all. If a product quotes one over a depth feed, the quantity
+behind it is not the quantity its name describes.
+
 ---
 
-## 5. The corrections this study made to itself
+## 6. The corrections this study made to itself
 
 Published on the page's own face, because a study that shows its corrections is the only kind worth
 trusting.
+
+**A price field that decoded to four capital letters.** `src/itchcount.swift`, a staging tool, read
+type F's price at offset **36**. That is not the price — it is the four-character MPID attribution
+that F carries *after* the price. Add Order with MPID Attribution is Add Order's 36 bytes plus 4 of
+attribution, so the price stays at offset 32 and only the message gets longer. The misread printed
+its own signature: `max_price_raw 1447119960` is `0x56414C58`, ASCII **`VALX`**. Any maximum that
+tool reported over a session containing F messages was the largest MPID in it, sorted as a
+big-endian integer. Corrected, PSX reads **40,866,100** and BX **40,901,400**. **No published figure
+is affected** — the kernel behind every number on this page reads offset 32 for both A and F — and
+it is recorded here because the wrong number sat in a staged log where a reader could have taken it.
+
+**A line number typed into three files.** The boundary that slices `extraction-exact.swift` into the
+law shared with the WASI tools was the literal `2535` in `wasi-sandwiched-build.sh`,
+`wasi-sandwiched-one-law.sh` and `validate.sh`. Any addition to the law was therefore a four-file
+change, and three of the four would have gone on quoting a stale number. It is now derived from the
+`SECTION 11 — MAIN` marker with the structural check unchanged, and the derived rule was verified to
+return exactly **2535** on the untouched file it was written for while tracking the boundary on the
+file that moved.
 
 **Four cited numbers were withdrawn when a null turned out degenerate.** The first null's harness
 tied the address draw to the direction draw inside one LCG, so **14,506 of 14,591 same-sender leg
 pairs (99.4%) ran the same direction**, suppressing opposite-direction round trips ~85×. A proper
 null gives 51.2%. The withdrawn figures — "7 false positives over 222,154 null leg pairs, separation
 241× → 843×" — are declined on measurement. The repair itself stands; the surviving figures are the
-ones in §3 above.
+ones in §4 above.
 
 **An always-green control, caught by measurement rather than by review.** A 2³¹-modulus LCG read at
 its low bits produced **0 detections across 223,500 leg pairs** — an arm reporting a false-positive
@@ -685,7 +1303,7 @@ before hashing** — a truncated read and a different artefact are indistinguish
 
 ---
 
-## 6. What this cannot do
+## 7. What this cannot do
 
 **Geometry is not intent, and intent is a statutory element.** Every predicate here identifies
 orderings and states exactly decidable from public data. None attaches a label to any address or
@@ -721,10 +1339,13 @@ therefore not in the total.
 and anyone may read it for nothing. That property is why this geometry is decidable here and only
 partially decidable on a public equities feed.
 
-**The base-rate band is n = 2 from one publisher.** [935, 958] per 1,000 is an invariant of
-Nasdaq-operated books, not yet of electronic limit order books in general. PSX (30,467,321 messages)
-and IEX DEEP (32,123,581 messages) are already fetched and byte-closed, and the predicate has **not**
-been run on them. That is the cheapest available third condition and it was not taken.
+**The base-rate band is n = 3 from one publisher, and it is wider than it looked.**
+[935, 986] per 1,000 is an invariant of Nasdaq-operated books, not yet of electronic limit order
+books in general. PSX has now been run — 30,467,321 messages, byte closure exact, sequence
+intact, `VERDICT ACCEPT` — and it reads 986, twenty-eight points above the BX session it shares
+a day with. IEX DEEP (32,123,581 messages) has been run and **cannot** carry the predicate at
+all; that is measured from its own bytes, not assumed. The third condition the band needed has
+been taken, and the fourth turned out to be a different kind of answer.
 
 **No execution path was built.** "Detect the shear so we can trade ahead of it" is the same
 extraction this study exists to measure, one layer up. The tree contains no order-entry code, no
@@ -745,6 +1366,48 @@ routed around. The equities intersection is **zero** by arithmetic, not judgemen
 adjudicated equities episode whose venue class has public order-book data ran 2010–2016, and the
 earliest public ITCH file is 2019-01-30.
 
+
+### The 21 NOT_KNOWN rows: the premise was wrong, and that is the result
+
+This page previously said each of the 21 uncosted rows needed two extra reserve states. It does not.
+Three routes to the missing pre-front state were tried on every row, in order of provenance:
+
+1. invert the front leg through `v3InvertStart` — the published route, needs nothing but the leg
+2. the last swap on that pool earlier in the same block — free, already on disk, and better
+   provenance than a fetched value because the chain emitted it in the same block
+3. `slot0()` at the parent block and `fee()`, read from a free public archive endpoint
+
+Every route passes the same gate: the candidate price must run the front leg **forward** through the
+same `v3Step` onto the price the leg itself reported and the amount it itself returned, and a
+candidate fee must reproduce the victim's own leg exactly. The program prints:
+
+```
+  states fetched from the free wire                                    9
+  endpoint refusals                                                    0
+  states REJECTED because they did not reproduce the leg               9
+  rows closed from an earlier swap in the same block                   0
+  rows closed in total                                                 0
+  EXACT rows, unchanged                                               87
+  NOT_KNOWN rows, unchanged                                           21
+  floor, unchanged            28,889,398,990,674,697,077 wei
+```
+
+
+**Nothing was fitted.** Of the six `FRONT_NOT_INVERTIBLE` rows, five had no earlier swap on that pool
+anywhere in the block — so the parent-block price *was* the price before the front leg, and it still
+did not reproduce it. Of the three `LEG_NOT_REPRODUCIBLE` rows the pool's own fee was read — 500,
+3,000 and 10,000 pips — and none reproduces the victim leg either, so those three now carry the
+sharper status `NOT_KNOWN_NOT_REPRODUCIBLE_AT_THE_POOLS_OWN_FEE`: the fee is determined and the model
+still fails, which is a refutation rather than a gap.
+
+**Twenty of the twenty-one fail for one structural reason: the single-tick, constant-liquidity step
+this counterfactual uses cannot reproduce those legs** — nine because the leg does not reproduce at
+the pool's own fee, eleven because in-range liquidity is not constant between the two legs. Whether
+that is a tick crossing or a mint or burn inside the step is **not** distinguished here and is not
+claimed. Either way what closes them is a multi-tick counterfactual over the pool's tick map — a
+larger law than the one written here, and one that would have to be built and validated before any
+number it produced could be published.
+
 ---
 
 ## The call
@@ -763,16 +1426,33 @@ sixteen years apart); and MAR Annex I A(f) computed in full does not rescue it.
 **What we refuse to call.** No participant is named and no conduct is alleged. The total is a
 **floor** and is called one on every line that carries it. The money figures are **DERIVED** and the
 annual figures are **PROJECTED_AND_DERIVED** — labelled in the program's own key names, not only in
-prose. 21 of 108 rows are **NOT_KNOWN**, which is not zero. The composite's separation **magnitude**
+prose. 21 of 108 rows are **NOT_KNOWN**, which is not zero — and the reason is now measured
+rather than open: every free route to the missing state was tried, all nine fetched states were
+rejected by the gate that admits any other price, and twenty of the twenty-one need arithmetic
+a single-tick step cannot express. The floor did not move. The composite's separation **magnitude**
 is not called, only its sign. The base-rate band is not called as "≈95%". And 47 false positives on a
 null with nothing inserted is published as the floor rather than argued down.
 
-**Where a reader should point next.** Run the tool on your own hash — that costs nothing and it is
-the only part of this page that answers a question about you. Then: run the base-rate predicate on
-**PSX and IEX DEEP**, both staged and byte-closed and neither run, because that is the third
-independent condition the base rate is missing. Extend the Ethereum window past 1,000 blocks to test
-whether pool concentration (one pool carries 22 of 108) is stable. Close the 21 NOT_KNOWN rows by
-fetching the two extra reserve states each one needs. And treat the self-consistency guard as the
+**Where a reader should point next.** Run the tool on your own hash — that costs nothing and it
+is the only part of this page that answers a question about you. The three things this page used
+to send a reader to do have now been done, and each opened something narrower:
+
+- **The base rate on a third venue** — done. PSX reads 986 against BX's 958 on the same day, so
+  the question is no longer whether the band is real but **how far it spreads across operators**.
+  Cboe BZX/BYX/EDGA/EDGX publish PITCH and NYSE publishes Integrated Feed; neither is read here.
+- **A fourth venue** — done, and it answered a different question. IEX DEEP cannot carry a
+  cancellation predicate at all. What replaces it is **which other products are quoted over depth
+  feeds**, because none of them can mean what their names say.
+- **The 21 NOT_KNOWN rows** — attempted on every free route, none closed, and the cause is now
+  named: twenty of them need arithmetic a single-tick step cannot express. The work that closes
+  them is a **multi-tick counterfactual**, which is a specified piece of work rather than a guess
+  about missing reserves.
+- **Past 1,000 blocks** — the concentration was tested inside the window first and it
+  **dissolved**: eighteen of the busiest pool's twenty-two detections sit in one 250-block
+  quarter. A wider window should be read as a test of whether bursts like that are common, not of
+  whether one pool is special.
+
+And treat the self-consistency guard as the
 transferable result: count every item into exactly one bucket, require the buckets to sum to an
 independently derived total, and the trap that returns HTTP 200 with a real block hash and an empty
 body stops passing.
@@ -853,6 +1533,24 @@ bash reproduce/wasi-sandwiched-fpscan.sh         # 12 arms, both directions
 bash reproduce/wasi-sandwiched-one-law.sh        #  9 arms — the tool defines no law
 ```
 
+**The pre-trade check — how much of what I am due can be taken, before I sign.**
+
+```bash
+bash reproduce/wasi-exposure-build.sh            # slices the SAME law, pins its digest, compiles
+./reproduce/wasi-exposure <pool> <token-in> <amount-in-base-units>
+
+./reproduce/wasi-exposure --selftest             # 31 arms, no network, both directions
+./reproduce/wasi-exposure --validate --dir corpus/market-shear/eth
+                                                 # replayed against the 87 costed victims:
+                                                 # 85 exact to the base unit, 2 an upper bound
+bash reproduce/wasi-exposure-one-law.sh          # 19 arms, 6 of them controls
+./reproduce/wasi-exposure                        # no argv: exits 4, prints the reference figures
+```
+
+The law slice digest below is the one `wasi-sandwiched` prints. The figure this program forecasts
+and the figure the study measured come from one law, and the one-law gate measures that rather than
+asserting it.
+
 **The detection instrument, the independent re-derivation, and the naive null.**
 
 ```bash
@@ -905,6 +1603,9 @@ eth/receipts.ndjson     378,717,564 B  af09271d39451288bbd9728f6488bb7a7e0d34414
 extraction-exact.swift         2,688 lines  3c3856b422aa3e08ba20d31aaf3e709106e6232681607cc274d657ce71033c12
 wasi-sandwiched.swift          1,463 lines  e2742ecd94d8001741fcc14be01cc29968271345120921cd2820407b2e26560e
   its compiled-in law slice  136,524 B  d46ea837b66f21763ed3dfc50c9ca246e05cb9f2a499237aa4cc77ec4edbdf5e
+wasi-exposure.swift            1,782 lines  2b1c6c21c1fd51d3373cf44bb43a88231523c6f98b8d0856557e3f2812342439
+  its law slice is the SAME one, cut from the SAME file at the SAME marker as the line above —
+  no separate digest is pinned for it, because two pins for one fact become two facts
 market-shear-exact.swift       2,737 lines  d072169f1f6637d537e942786963849d1a2a696ed30c98ee722d6a49ace517e4
 af-conjunct-exact.swift        1,510 lines  9d669a55f4fa42547dc8d417bd80edff4ea7824f0c9fddb9810932fdaadcc838
 live-wire-watch.swift          2,576 lines  85403365cf25700f2beb8db27588382a953ec482ce81c7c4b1425cf53eb3e675

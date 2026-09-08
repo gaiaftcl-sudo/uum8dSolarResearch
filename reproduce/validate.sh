@@ -64,7 +64,15 @@ if have xcrun || have swiftc; then
         # END+2 must open the detector's own MAIN. If the detector source moves, this
         # REFUSES rather than slicing a law in half and reporting a green run over it.
         if grep -q 'CORE_SLICE_SHA256' "$p" 2>/dev/null; then
-            CORE="$HERE/extraction-exact.swift"; END=2535
+            CORE="$HERE/extraction-exact.swift"
+            # THE BOUNDARY IS DERIVED FROM A NAMED MARKER, NEVER TYPED. It was the literal
+            # 2535 here and in wasi-sandwiched-build.sh and wasi-sandwiched-one-law.sh, so
+            # any addition to the law was a four-file change and three of the four would
+            # have gone on quoting a stale number. Derived from the SECTION 11 marker it
+            # tracks the law; the structural check below is unchanged and still REFUSES.
+            # Verified both ways: the rule returns exactly 2535 on the file the constant
+            # was written for, and follows the boundary on the file that moved.
+            END=$(awk '/SECTION 11 . MAIN/{print NR-3; exit}' "$CORE")
             if [ -f "$CORE" ] && [ "$(sed -n "${END}p" "$CORE" 2>/dev/null)" = "}" ] \
                && sed -n "$((END+2))p" "$CORE" 2>/dev/null | grep -q '^// ====='; then
                 sed -n "1,${END}p" "$CORE" > "$stage/core-detector.swift"
@@ -296,6 +304,36 @@ check_figure af-conjunct-exact "85.14th percentile" "The-Detector-That-Flags-The
 check_figure af-conjunct-exact "REFUTED_CONTROL_SCORES_HIGHER" "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure af-conjunct-exact "REFUSED_SINGLE_POPULATION"     "The-Detector-That-Flags-The-Whole-Market.md"
 
+# --- Market shear: the base rate on a third venue, and a fourth that cannot carry it ---
+# Every string below was confirmed present in BOTH the program's own no-argv output and the
+# page, with grep -F on each, before it was added. A pin that is only in one of the two is a
+# pin that passes for the wrong reason.
+check_figure market-shear-exact "16,165,067"        "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "15,952,637"        "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "13,582,830"        "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "2,405,437"         "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "169,275"           "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "57,401"            "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "2,948 per 1,000"   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "1,061 per 100,000" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "4,636,704"         "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure market-shear-exact "THE PREDICATE CANNOT RUN.  ABSENT, NOT ZERO." "The-Detector-That-Flags-The-Whole-Market.md"
+# --- Market shear: which feed carries the key the predicate needs ---
+check_figure feed-order-identity "ORDER_IDENTITY_PRESENT"  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure feed-order-identity "ORDER_IDENTITY_ABSENT"   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure feed-order-identity "CANNOT_RUN_NO_KEY"       "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure feed-order-identity "30629120"                "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure feed-order-identity "13081242"                "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure feed-order-identity "reference_deep_candidate_fields_swept" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure feed-order-identity "trade_report_carries_order_identity"   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure feed-order-identity "reference_deep_plu_residual_bytes" ""
+# --- Market shear: what the 21 NOT_KNOWN rows needed, the sub-window split, and out of sample ---
+check_figure extraction-exact "states REJECTED because they did not reproduce the leg               9" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "floor, unchanged            28,889,398,990,674,697,077 wei" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "Q1 14000250-14000499   31 detections    8 pools   busiest 580 permille" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "Q3 14000750-14000999   18 detections   15 pools   busiest 111 permille" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "NOT_KNOWN_NOT_REPRODUCIBLE_AT_THE_POOLS_OWN_FEE" "The-Detector-That-Flags-The-Whole-Market.md"
+
 # the live wire, the self-contradiction guard, and the false-positive FLOOR
 check_figure live-wire-watch "68,121 per 10,000,000" "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure live-wire-watch "2,208 per 10,000,000"  "The-Detector-That-Flags-The-Whole-Market.md"
@@ -377,6 +415,38 @@ check_figure wasi-sandwiched "median 476 ten-thousandths of the output that was 
 # over the slice. It is on the page so a stranger can re-derive it in one command:
 #   sed -n '1,2535p' reproduce/extraction-exact.swift | shasum -a 256
 check_figure wasi-sandwiched "d46ea837b66f21763ed3dfc50c9ca246e05cb9f2a499237aa4cc77ec4edbdf5e" "The-Detector-That-Flags-The-Whole-Market.md"
+
+# --- THE PRE-TRADE CHECK: the same law, asked before the signature instead of after -----
+# wasi-exposure carries NO law of its own either. Section 2 above compiles it against the
+# SAME verbatim byte slice of extraction-exact.swift that wasi-sandwiched is built from.
+#
+# NEITHER THE SLICE DIGEST NOR ITS LINE RANGE IS PINNED HERE, deliberately. Both move when
+# the law legitimately grows — measured 2026-09-08, the detector went from 2,688 lines to
+# 3,011 in one afternoon — and a pin on a moving number goes red over a change that broke
+# nothing. That two tools carry ONE law is a relation between two binaries, and
+# wasi-exposure-one-law.sh measures it by reading the digest out of both.
+#
+# Given no pool it measures nothing, says so, prints the published reference figures and
+# exits 4 — so every row here comes off a no-argv, no-network, no-corpus path, which is
+# what makes a refusal auditable. Each was checked with grep -F on BOTH sides before it
+# was written here; nothing that only the network path prints is pinned, because a pin
+# that needs the wire is a pin a stranger cannot check.
+check_figure wasi-exposure "BEFORE YOU SIGN: HOW MUCH OF WHAT YOU ARE DUE CAN BE TAKEN?" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "affine.earth market-shear · one pool · one trade · one shape" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "A GATE GIVEN NOTHING MUST NOT PASS" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "== NOTHING WAS GIVEN ==" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "ZERO — no API key, no account, no registration, nobody's permission" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "Ethereum blocks 14,000,000–14,000,999 · 13,586 s of one chain" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "108 inserted trades · 87 costed EXACTLY · 21 NOT_KNOWN, named" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "MEDIAN 476 ten-thousandths of the output that was due" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "MEDIAN 0.170457244547709297 ETH ≈ 558 USDC per victim" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "28,889,398,990,674,697,077 wei = 28.8894 WETH = 94,645.77 USDC" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "min 47 · p10 49 · p25 102 · MEDIAN 476 · p75 1,785 · max 9,999" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "constant-product 73 victims median 575 · concentrated 14 median 105" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "pool-relative size Kendall tau +491 permille" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "48 distinct pools, ONE carries 22 of 108 (203 permille)" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "47 false positives per 212,769 leg pairs" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-exposure "COULD, NOT WILL" "The-Detector-That-Flags-The-Whole-Market.md"
 
 # --- the generated-peptide novelty screen (cures family) ---
 check_figure protein-novelty-exact "8c50b3e877d1dac7b68244464ae679fc43ed273d9fd38e7e348b823c3e80563b" "Generated-Peptides-Against-The-Human-Proteome.md"
@@ -621,19 +691,6 @@ check_figure verify-one-family "INDEPENDENT_VERIFIER_ONE_FAMILY" ""
 check_figure verify-one-family "991 1002 1007 1026 1051 1053 1150 1250" "The-Order-Of-The-Bases.md"
 check_figure verify-one-family "ties-all-16, kRes 7, and AT kRes it is ABOVE all 16 (51 vs 0-20)" ""
 check_figure verify-one-family "RANK 1 MEANS burden < min(controls). A tie is not fewer places." ""
-
-# --- Study 41: the silicon cost of imposing an order (nine live cells) ---
-# The program needs Linux performance counters, so on this host it takes its REFUSAL path —
-# which prints the same reference block as a full run. That is the point: a study whose figures
-# vanish when the instrument is absent could not be pinned at all.
-check_figure silicon-shear-telemetry "ORDERING_IS_PRICED_IN_CYCLES_NOT_IN_PHYSICS" "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "22,846 against 4,053,186"                     "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "42-51 against 110,319-111,002"                "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "6 of 6 rungs on 9 of 9 cells"                 "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "4 of 5 rungs"                                 "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "1,499,438-1,500,676 of 3,000,000"             "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "-45 to +938 cycles"                           "Study-41-What-The-Ordering-Cost.md"
-check_figure silicon-shear-telemetry "ABSENT is not ZERO and is not PASS"           ""
 
 
 echo "=== 3b. the admission law grades the three libraries in ONE run ==="

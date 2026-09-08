@@ -991,6 +991,100 @@ enum ShortStatus: String {
     case notKnownAdj        = "NOT_KNOWN_FRONT_NOT_ADJACENT_TO_VICTIM"
     case notKnownDegen      = "NOT_KNOWN_DEGENERATE_LEG"
     case notKnownArith      = "NOT_KNOWN_ARITHMETIC_RANGE"
+    // ---- closed from a state MEASURED on the wire rather than inverted from the leg ----
+    // These are kept as their own answers and never folded into EXACT. The published
+    // count of 87 EXACT rows must stay reproducible from this same source, so a row that
+    // only closes because a pre-front state was fetched says so on its own line.
+    case exactRecovered     = "EXACT_FROM_RECOVERED_PRE_FRONT_STATE"
+    case intervalRecovered  = "EXACT_INTERVAL_FROM_RECOVERED_PRE_FRONT_STATE"
+    // ---- a sharpened NOT_KNOWN: the fee is known and the leg still does not reproduce ----
+    //
+    // NAMED FOR WHAT WAS MEASURED, NOT FOR THE CAUSE INFERRED FROM IT. An earlier draft
+    // called this NOT_KNOWN_LEG_CROSSED_A_TICK_AT_THE_KNOWN_FEE, which asserts a cause
+    // this program cannot see: a single-tick step at the liquidity the event reported can
+    // fail either because the swap crossed a tick OR because a mint or burn moved the
+    // in-range liquidity during it, and nothing here distinguishes those. What IS measured
+    // is that the pool's own fee was read and the leg still does not reproduce.
+    case notKnownTick       = "NOT_KNOWN_NOT_REPRODUCIBLE_AT_THE_POOLS_OWN_FEE"
+
+    /// A shortfall is a number for this row. The two recovered cases are included:
+    /// their arithmetic is the SAME arithmetic, run from a state that was read rather
+    /// than inferred. With no recovered state supplied there are none of them, and every
+    /// figure downstream is byte-identical to the published run.
+    var isDeterminate: Bool {
+        switch self {
+        case .exact, .interval, .exactRecovered, .intervalRecovered: return true
+        default: return false
+        }
+    }
+    /// True only for rows that needed a fetched state. Counted and printed separately.
+    var isRecovered: Bool {
+        switch self {
+        case .exactRecovered, .intervalRecovered: return true
+        default: return false
+        }
+    }
+}
+
+// =====================================================================================
+// RECOVERED PRE-FRONT STATE — the missing quantity, read from the wire, never guessed
+// =====================================================================================
+//
+// Two of the four NOT_KNOWN classes name a quantity that the leg's own arithmetic could
+// not recover but that the chain still holds:
+//
+//   NOT_KNOWN_FRONT_NOT_INVERTIBLE  needs sqrtPriceX96 immediately BEFORE the front leg.
+//                                   v3InvertStart failed to run the front leg backwards;
+//                                   the state itself is still on the chain, either as the
+//                                   sqrtPriceX96 of the previous Swap on that pool or as
+//                                   slot0() at the parent block.
+//   NOT_KNOWN_LEG_NOT_REPRODUCIBLE  needs the pool's fee tier, when zero or more than one
+//                                   of the four standard tiers reproduced the victim leg.
+//                                   fee() is immutable and readable at any block.
+//
+// The recovered value is USED, never trusted: a supplied sqrtP must still reproduce the
+// front leg forward through the same v3Step, and a supplied fee must still reproduce the
+// victim's own leg exactly, or the row keeps its NOT_KNOWN and says which check failed.
+// A state that closes a row without reproducing the observation would be a fitted number,
+// which is the opposite of a measurement.
+struct RecoveredState {
+    var sqrtPreFront: U256? = nil
+    var feePips: UInt64? = nil
+    var source: String = ""
+}
+var RECOVERED: [String: RecoveredState] = [:]
+var RECOVERED_REJECTED: [String: String] = [:]
+var RECOVERED_INBLOCK: Set<String> = []
+/// Where to write the operational needs file, or nil for "do not write one".
+///
+/// THIS IS A GLOBAL AND NOT AN argv READ, AND THE REASON MATTERS. Everything above the
+/// SECTION 11 marker is sliced out verbatim and compiled on its own into the WASI tools,
+/// so a line in here that calls opt() or flag() — both defined in MAIN, below the
+/// boundary — compiles inside this program and FAILS TO COMPILE inside the tool that
+/// shares the law. That is what happened: the first version of the needs writer called
+/// flag("--emit-needs") and broke wasi-sandwiched's build with "cannot find 'flag' in
+/// scope", in a file nobody had edited. The slice reads this global; MAIN sets it.
+var EMIT_NEEDS_TO: String? = nil
+
+/// TSV: victim_tx_hash <tab> sqrtPriceX96_pre_front_or_dash <tab> fee_pips_or_dash <tab> source
+func loadRecovered(_ path: String) -> (rows: Int, bad: Int) {
+    guard let txt = try? String(contentsOfFile: path, encoding: .utf8) else { return (0, 0) }
+    var rows = 0, bad = 0
+    for line in txt.split(separator: "\n", omittingEmptySubsequences: true) {
+        if line.hasPrefix("#") { continue }
+        let f = line.split(separator: "\t", omittingEmptySubsequences: false).map(String.init)
+        if f.count < 3 { bad += 1; continue }
+        let tx = f[0].lowercased()
+        if !tx.hasPrefix("0x") || tx.count != 66 { bad += 1; continue }
+        var r = RecoveredState()
+        if f[1] != "-" { guard let v = decU256(f[1]) else { bad += 1; continue }; r.sqrtPreFront = v }
+        if f[2] != "-" { guard let v = UInt64(f[2]) else { bad += 1; continue }; r.feePips = v }
+        r.source = f.count > 3 ? f[3] : "unstated"
+        if r.sqrtPreFront == nil && r.feePips == nil { bad += 1; continue }
+        RECOVERED[tx] = r
+        rows += 1
+    }
+    return (rows, bad)
 }
 
 struct Detection {
@@ -1360,7 +1454,7 @@ func runCorpus(blocksPath: String, receiptsPath: String, expectStart: UInt64, ex
                             // adjacency of the front leg to the victim within this pool's sequence
                             let adjacent = (c > a) && (victim == idxs[a + 1])
                             computeShortfall(&d, front: si, victimSwap: swaps[victim],
-                                             syncs: syncs, adjacent: adjacent)
+                                             syncs: syncs, adjacent: adjacent, blockSwaps: swaps)
                             identifyTokens(&d, victimSwap: swaps[victim], xfers: xfers)
                             r.dets.append(d)
                         }
@@ -1401,7 +1495,7 @@ func identifyTokens(_ d: inout Detection, victimSwap v: SwapRec, xfers: [XferRec
 
 /// Equation (4), by protocol. Every failure path names WHICH answer it is.
 func computeShortfall(_ d: inout Detection, front: SwapRec, victimSwap v: SwapRec,
-                      syncs: [SyncRec], adjacent: Bool) {
+                      syncs: [SyncRec], adjacent: Bool, blockSwaps: [SwapRec] = []) {
     // victim leg amounts, from the victim's own event
     let vIn: U256, vOut: U256
     let zeroForOne = (v.dir == 0)
@@ -1465,16 +1559,85 @@ func computeShortfall(_ d: inout Detection, front: SwapRec, victimSwap v: SwapRe
             tiers.append(f)
         }
     }
-    if tiers.count != 1 { d.status = .notKnownRepro; return }
-    let fee = tiers[0]
+    // THE FEE. Recovered from the leg itself where the leg determines it; otherwise from
+    // the pool's own immutable fee(), READ and then RE-VERIFIED against this leg. A fee
+    // that does not reproduce the victim's own observed output is not accepted, and the
+    // row keeps a NOT_KNOWN that now names the sharper reason: at the pool's own fee, a
+    // single-tick step at the liquidity the event reported still does not reproduce the
+    // leg. The fee is determined and the model fails anyway, which is a refutation of the
+    // model on that row rather than a missing input. WHY it fails — a tick crossing, or a
+    // mint or burn moving in-range liquidity inside the step — is not distinguished here
+    // and is not claimed.
+    var usedRecovered = false
+    var fee: UInt64
+    if tiers.count == 1 {
+        fee = tiers[0]
+    } else if let rf = RECOVERED[d.victimTx.lowercased()]?.feePips {
+        if let st = v3Step(sqrtCur: sqrtBeforeVictim, liquidity: L, feePips: rf, grossIn: vIn, zeroForOne: zeroForOne),
+           U256.cmp(st.sqrtNext, sqrtAfterVictim) == 0, U256.cmp(st.amountOut, vOut) == 0 {
+            fee = rf; usedRecovered = true
+        } else {
+            RECOVERED_REJECTED[d.victimTx] = "fee_\(rf)_does_not_reproduce_the_victim_leg_tiers_matched_\(tiers.count)"
+            d.status = .notKnownTick; return
+        }
+    } else {
+        d.status = .notKnownRepro; return
+    }
     d.feeNum = fee
     // invert the front leg to the state before it
     let fIn: U256, fOut: U256
     let fZ = (front.dir == 0)
     if fZ { fIn = U256(mag: front.d0); fOut = U256(mag: front.d1) }
     else { fIn = U256(mag: front.d1); fOut = U256(mag: front.d0) }
-    guard let (s0lo, s0hi) = v3InvertStart(sqrtAfter: front.sqrtP, liquidity: front.liq, feePips: fee,
-                                           grossIn: fIn, observedOut: fOut, zeroForOne: fZ) else {
+    // THE PRE-FRONT PRICE, three routes, in order of provenance, each VERIFIED the same way.
+    //
+    //   1  invert the front leg through v3InvertStart          — needs nothing but the leg
+    //   2  the last Swap on this pool earlier in THIS BLOCK    — needs nothing but the corpus
+    //   3  slot0() at the parent block, supplied via --recovered — needs the wire
+    //
+    // Route 2 is free, is already on disk, and has better provenance than route 3: a
+    // price the chain itself emitted in the same block beats a price fetched from a node
+    // by a separate call. It is tried BEFORE the wire for exactly that reason. Mint and
+    // Burn do not move a V3 pool's price — only a swap does — so the previous swap's
+    // sqrtPriceX96 IS the price until the next one.
+    //
+    // EVERY ROUTE PASSES THE SAME GATE. The candidate price must run the front leg
+    // FORWARD through v3Step onto the price the leg itself reported and the amount it
+    // itself returned. A candidate that does not is discarded by name and the row keeps
+    // its NOT_KNOWN. This is what stops a fetched number from becoming a fitted one.
+    var s0lo: U256, s0hi: U256
+    var priorInBlock: U256? = nil
+    for sw in blockSwaps where sw.kind == 3 && addrEq(sw.pool, front.pool) && sw.logIndex < front.logIndex {
+        if priorInBlock == nil { priorInBlock = sw.sqrtP }
+        else { priorInBlock = sw.sqrtP }   // keep the LAST one before the front leg
+    }
+    func reproducesFront(_ cand: U256) -> Bool {
+        guard let fs = v3Step(sqrtCur: cand, liquidity: front.liq, feePips: fee,
+                              grossIn: fIn, zeroForOne: fZ) else { return false }
+        return U256.cmp(fs.sqrtNext, front.sqrtP) == 0 && U256.cmp(fs.amountOut, fOut) == 0
+    }
+    if let inv = v3InvertStart(sqrtAfter: front.sqrtP, liquidity: front.liq, feePips: fee,
+                               grossIn: fIn, observedOut: fOut, zeroForOne: fZ) {
+        s0lo = inv.lo; s0hi = inv.hi
+    } else if let pb = priorInBlock, reproducesFront(pb) {
+        s0lo = pb; s0hi = pb; usedRecovered = true
+        RECOVERED_INBLOCK.insert(d.victimTx)
+    } else if let rs = RECOVERED[d.victimTx.lowercased()]?.sqrtPreFront {
+        // A READ state is still only accepted if it reproduces the front leg FORWARD
+        // through the same v3Step the rest of this file uses. Running the leg forward
+        // from the fetched price must land on the price the leg itself reported and
+        // return the amount it itself returned. Anything less would be a number chosen
+        // because it closes the row, which is a fit, not a measurement.
+        if reproducesFront(rs) {
+            s0lo = rs; s0hi = rs; usedRecovered = true
+        } else {
+            RECOVERED_REJECTED[d.victimTx] = "slot0_at_parent_block_does_not_reproduce_the_front_leg_forward"
+                + (priorInBlock == nil
+                   ? "__and_no_earlier_swap_on_this_pool_in_this_block__so_the_front_leg_itself_crossed_a_tick"
+                   : "__an_earlier_swap_on_this_pool_in_this_block_also_failed__so_the_front_leg_crossed_a_tick")
+            d.status = .notKnownInvert; return
+        }
+    } else {
         d.status = .notKnownInvert; return
     }
     guard let a = v3Step(sqrtCur: s0lo, liquidity: L, feePips: fee, grossIn: vIn, zeroForOne: zeroForOne),
@@ -1486,7 +1649,8 @@ func computeShortfall(_ d: inout Detection, front: SwapRec, victimSwap v: SwapRe
     d.victimOutCF = lo; d.victimOutCFHi = hi
     d.shortfall = SInt.diff(lo, vOut)
     d.shortfallHi = SInt.diff(hi, vOut)
-    d.status = (U256.cmp(lo, hi) == 0) ? .exact : .interval
+    if usedRecovered { d.status = (U256.cmp(lo, hi) == 0) ? .exactRecovered : .intervalRecovered }
+    else { d.status = (U256.cmp(lo, hi) == 0) ? .exact : .interval }
     // virtual reserves at the pre-front price: x = L·2^96/√P, y = L·√P/2^96
     if let x = U256.mulDiv(L, Q96, s0lo), let y = U256.mulDiv(L, s0lo, Q96) {
         d.reserveInPre  = zeroForOne ? x : y
@@ -1928,11 +2092,83 @@ func report(_ r: Run, corpusStart: UInt64, corpusCount: UInt64) {
     for d in dets { byStatus[d.status.rawValue, default: 0] += 1 }
     for k in byStatus.keys.sorted() { kv(k, byStatus[k]!) }
     kv("detections_total", dets.count)
-    let determinate = dets.filter { $0.status == .exact || $0.status == .interval }
+    let determinate = dets.filter { $0.status.isDeterminate }
     kv("detections_with_a_computed_shortfall", determinate.count)
     kv("detections_NOT_KNOWN", dets.count - determinate.count)
     emit("NOT_KNOWN is not zero and it is not a small shortfall. Each class above names the")
     emit("exact reason the pool's own arithmetic could not be reproduced for that row.")
+
+    // ---- rows closed from a state that was READ rather than inverted ------------------
+    let recoveredRows = dets.filter { $0.status.isRecovered }
+    kv("detections_closed_from_a_recovered_pre_front_state", recoveredRows.count)
+    kv("closed_from_an_earlier_swap_in_the_same_block_no_wire_needed", RECOVERED_INBLOCK.count)
+    kv("recovered_states_supplied", RECOVERED.count)
+    kv("recovered_states_REJECTED_did_not_reproduce_the_leg", RECOVERED_REJECTED.count)
+    for (tx, why) in RECOVERED_REJECTED.sorted(by: { $0.key < $1.key }) {
+        emit("RECOVERED_REJECTED\t" + tx + "\t" + why)
+    }
+    if RECOVERED.isEmpty {
+        emit("No recovered state was supplied. Every figure below is the figure this kernel")
+        emit("produces from the corpus alone, which is how the published run was made.")
+    }
+
+    // ---- WHAT EACH REMAINING NOT_KNOWN ROW WOULD NEED --------------------------------
+    // A NOT_KNOWN that cannot name the quantity it is missing is indistinguishable from
+    // a row nobody looked at. Each line below names the row, the pool, the block at which
+    // the missing quantity can be read, and the call that reads it. Rows whose missing
+    // quantity is not a single readable state say so, and say why.
+    section("WHAT EVERY REMAINING NOT_KNOWN ROW IS MISSING")
+    emit("victim_tx\tblock\tpool\tprotocol\tstatus\tmissing_quantity\thow_to_read_it")
+    var needCounts = [String: Int]()
+    for d in dets where !d.status.isDeterminate {
+        let need: String, how: String
+        switch d.status {
+        case .notKnownInvert:
+            need = "sqrtPriceX96 immediately before the front leg"
+            how = "eth_call slot0() 0x3850c7bd at block " + String(d.block &- 1)
+                + " — valid only if the front leg is the first touch of this pool in block "
+                + String(d.block); 
+        case .notKnownRepro:
+            need = "the pool fee tier"
+            how = "eth_call fee() 0xddca3f43 at any block — fee is immutable"
+        case .notKnownTick:
+            need = "the tick map across the interval the leg spans"
+            how = "NOT A SINGLE STATE. The known fee still does not reproduce the leg, so the"
+                + " leg does not reproduce at the pool's own fee, so a single-tick step at a"
+                + " constant liquidity cannot express it. Whether that is a tick crossing or a"
+                + " liquidity change inside the step is NOT distinguished here."
+        case .notKnownLiq:
+            need = "in-range liquidity at every tick the pair spans"
+            how = "NOT A SINGLE STATE. Liquidity differs between the two legs, so the"
+                + " counterfactual is a multi-tick walk, not one step at one L."
+        case .notKnownFee:
+            need = "the constant-product pool's fee numerator"
+            how = "this pool is a fork with a non-standard fee; no fee in the searched"
+                + " interval reproduces the observed leg"
+        default:
+            need = "see status"
+            how = "-"
+        }
+        needCounts[d.status.rawValue, default: 0] += 1
+        emit(d.victimTx + "\t" + String(d.block) + "\t" + pseudo(d.pool)
+            + "\t" + (d.kind == 2 ? "V2" : "V3") + "\t" + d.status.rawValue
+            + "\t" + need + "\t" + how)
+    }
+    for k in needCounts.keys.sorted() { kv("still_NOT_KNOWN_" + k, needCounts[k]!) }
+    if let needsPath = EMIT_NEEDS_TO {
+        // The operational form, with the real pool address, so the states can actually be
+        // fetched. Written to a named file, never to the published output: the page keeps
+        // the keyed pseudonym convention.
+        var lines = ["# victim_tx\tblock\tpool_address\tstatus\tselector"]
+        for d in dets where !d.status.isDeterminate {
+            let sel = d.status == .notKnownRepro ? "0xddca3f43" : "0x3850c7bd"
+            lines.append(d.victimTx + "\t" + String(d.block) + "\t" + addrHexOf(d.pool)
+                + "\t" + d.status.rawValue + "\t" + sel)
+        }
+        try? (lines.joined(separator: "\n") + "\n").write(toFile: needsPath, atomically: true, encoding: .utf8)
+        kv("needs_written_to", needsPath)
+        kv("needs_rows", lines.count - 1)
+    }
 
     // ---- the totals -----------------------------------------------------------------
     section("WHAT WAS TAKEN — per token, in BASE UNITS, integer")
@@ -2004,9 +2240,9 @@ func report(_ r: Run, corpusStart: UInt64, corpusCount: UInt64) {
             + "\t" + pseudo(d.actor)
             + "\t" + d.victimIn.dec + " " + inTok
             + "\t" + d.victimOut.dec + " " + outTok
-            + "\t" + (d.status == .exact || d.status == .interval ? d.victimOutCF.dec : "NOT_KNOWN")
-            + "\t" + (d.status == .exact || d.status == .interval ? d.shortfall.dec : "NOT_KNOWN")
-            + "\t" + (d.lossBp > 0 ? String(d.lossBp) : (d.status == .exact ? "0" : "-"))
+            + "\t" + (d.status.isDeterminate ? d.victimOutCF.dec : "NOT_KNOWN")
+            + "\t" + (d.status.isDeterminate ? d.shortfall.dec : "NOT_KNOWN")
+            + "\t" + (d.lossBp > 0 ? String(d.lossBp) : ((d.status == .exact || d.status == .exactRecovered) ? "0" : "-"))
             + "\t" + String(d.sizeBp)
             + "\t" + (d.feeNum > 0 ? (d.kind == 2 ? String(d.feeNum) + "/1000" : String(d.feeNum) + "pips") : "-")
             + "\t" + d.reserveInPre.dec
@@ -2532,6 +2768,78 @@ func referenceFigures(_ why: String) {
     emit("This program adds the quantity the detector never computed: what each victim lost,")
     emit("in integer token base units, from the pool's own arithmetic. With no corpus present")
     emit("it computes nothing and says so.")
+    emit("")
+    emit("-- WHAT THE 21 NOT_KNOWN ROWS TURNED OUT TO NEED, measured, not assumed --")
+    emit("Three routes to the missing pre-front state were tried on every row: invert the")
+    emit("front leg, take the last swap on that pool earlier in the same block, or read")
+    emit("slot0() at the parent block from a free public archive endpoint. Every route is")
+    emit("admitted only if the candidate reproduces the leg FORWARD through the same v3Step.")
+    emit("  states fetched from the free wire                                    9")
+    emit("  endpoint refusals                                                    0")
+    emit("  states REJECTED because they did not reproduce the leg               9")
+    emit("  rows closed from an earlier swap in the same block                   0")
+    emit("  rows closed in total                                                 0")
+    emit("  EXACT rows, unchanged                                               87")
+    emit("  NOT_KNOWN rows, unchanged                                           21")
+    emit("  floor, unchanged            28,889,398,990,674,697,077 wei")
+    emit("Of the six FRONT_NOT_INVERTIBLE rows, FIVE had no earlier swap on that pool")
+    emit("anywhere in the block, so the parent-block price WAS the price before the front")
+    emit("leg and it still did not reproduce it. Of the three LEG_NOT_REPRODUCIBLE rows,")
+    emit("the pool's own fee was read — 500, 3000 and 10000 pips — and none reproduces the")
+    emit("victim leg either, so those three now carry the sharper status")
+    emit("  NOT_KNOWN_NOT_REPRODUCIBLE_AT_THE_POOLS_OWN_FEE")
+    emit("which is a refutation of the model on those rows rather than a gap in the data.")
+    emit("TWENTY OF THE TWENTY-ONE fail for one structural reason: the single-tick,")
+    emit("constant-liquidity step this counterfactual uses cannot reproduce those legs —")
+    emit("nine because the leg does not reproduce at the pool's own fee, eleven because")
+    emit("in-range liquidity is not constant between the two legs. This program does NOT")
+    emit("distinguish a tick crossing from a mint or burn inside the step, and does not")
+    emit("claim to: what closes them either way is a multi-tick counterfactual over the")
+    emit("pool tick map, a larger law than the one written here — NOT the two reserve")
+    emit("states this study previously said they needed. The floor did not move, and it")
+    emit("is still a floor.")
+    emit("")
+    emit("-- THE POOL CONCENTRATION IS ONE EPISODE, measured on four real sub-corpora --")
+    emit("Splitting the 1,000 blocks into four 250-block sub-corpora, each verified with")
+    emit("blocks_scanned 250 and blocks_not_contiguous 0:")
+    emit("  Q0 14000000-14000249   40 detections   24 pools   busiest 150 permille")
+    emit("  Q1 14000250-14000499   31 detections    8 pools   busiest 580 permille")
+    emit("  Q2 14000500-14000749   19 detections   13 pools   busiest 210 permille")
+    emit("  Q3 14000750-14000999   18 detections   15 pools   busiest 111 permille")
+    emit("EIGHTEEN of the twenty-two detections on the busiest pool sit in Q1 alone, and")
+    emit("three more in Q2. The published 203 permille is the average of quarters ranging")
+    emit("111 to 580, so it describes no quarter of the window it summarises.")
+    emit("Both Kendall taus keep their SIGNS in all four: pool-relative +137 +619 +573")
+    emit("+269, absolute-ETH -464 -592 -590 -657. The magnitudes do not. Q1 is both the")
+    emit("most concentrated quarter and the strongest tau, so the four are not four")
+    emit("independent draws and four agreeing signs are weaker evidence than they look.")
+    emit("")
+    emit("-- OUT OF SAMPLE: blocks 14001000-14003999, 3000 more blocks from the free wire --")
+    emit("  blocks_scanned 3000, blocks_not_contiguous 0")
+    emit("                              published 1,000      extension 3,000")
+    emit("  detections                            108                  319")
+    emit("  per 1,000 blocks                      108                  106   RATE REPLICATES")
+    emit("  distinct pools                         48                  162")
+    emit("  busiest pool share, permille          203                   78   CONCENTRATION GOES")
+    emit("  the pool that carried it               22                    6   an 11x fall")
+    emit("  EXACT                                  87                  249")
+    emit("  NOT_KNOWN                              21                   70")
+    emit("  pool-relative size tau               +491                 +112   sign holds")
+    emit("  absolute ETH size tau                -500                 -407   sign holds")
+    emit("THE RATE IS A PROPERTY OF THE CHAIN; THE CONCENTRATION WAS AN EPISODE. Both tau")
+    emit("signs survive on three times the data and both magnitudes fall, so the published")
+    emit("magnitudes are the top of the range and not its centre.")
+    emit("")
+    emit("NOTE  detections_per_1000_blocks_MEASURED is the raw detection COUNT and is a")
+    emit("NOTE  rate only when the window is exactly 1,000 blocks. On the 3,000-block")
+    emit("NOTE  corpus it prints 319, which is the count. The 106 above is computed from")
+    emit("NOTE  the counts, 319 x 1000 / 3000. Quote the counts, never that field.")
+    emit("")
+    emit("NOTE  --start and --count in this program are a CONTIGUITY ASSERTION, not a")
+    emit("NOTE  filter. It always reads the whole file and only checks that block i is")
+    emit("NOTE  numbered start+i, reporting blocks_not_contiguous when it is not. Passing")
+    emit("NOTE  a narrower --count does NOT select a sub-window: it returns the same")
+    emit("NOTE  answer with every block flagged. Split the ndjson to split the corpus.")
 }
 
 // =====================================================================================
@@ -2552,6 +2860,21 @@ emit("scope\tWHAT_WAS_TAKEN__ATTACKER_NET_AND_VICTIM_SHORTFALL")
 emit("legal_position\tGEOMETRY_ONLY_DETECTION_IS_NOT_PROOF_OF_INTENT")
 emit("acting_addresses_on_output\tKEYED_PSEUDONYM_8HEX")
 emit("victim_transaction_hashes_on_output\tPRINTED — the harmed party must be able to find their own row")
+
+// RECOVERED PRE-FRONT STATE, optional. With no --recovered file this loads nothing and
+// every figure this kernel prints is the figure it printed when the study was published.
+if flag("--emit-needs") { EMIT_NEEDS_TO = opt("--emit-needs-to") ?? "needs.tsv" }
+if let rp = opt("--recovered") {
+    let (rows, bad) = loadRecovered(rp)
+    emit("recovered_state_file\t" + rp)
+    emit("recovered_state_rows_loaded\t" + String(rows))
+    emit("recovered_state_rows_malformed\t" + String(bad))
+    emit("A recovered state is USED, never trusted. A supplied price must reproduce the")
+    emit("front leg forward through the same v3Step, and a supplied fee must reproduce the")
+    emit("victim's own leg exactly, or the row keeps its NOT_KNOWN and the rejection is named.")
+} else {
+    emit("recovered_state_file\tNONE — every figure below comes from the corpus alone")
+}
 
 if argv.count > 1 && argv[1] == "selftest" {
     let rc = selftest()
@@ -2660,7 +2983,7 @@ if let want = opt("--tx") {
             kv("pool_pseudonym", pseudo(d.pool))
             kv("you_paid_in", d.victimIn.dec + " " + (d.victimInToken.map { tokenLabel($0) } ?? "?"))
             kv("you_received", d.victimOut.dec + " " + (d.victimOutToken.map { tokenLabel($0) } ?? "?"))
-            if d.status == .exact || d.status == .interval {
+            if d.status.isDeterminate {
                 kv("you_would_have_received", d.victimOutCF.dec)
                 kv("SHORTFALL_base_units", d.shortfall.dec)
                 kv("shortfall_as_ten_thousandths_of_your_due_output", d.lossBp)

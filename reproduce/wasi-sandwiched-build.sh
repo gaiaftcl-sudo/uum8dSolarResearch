@@ -6,7 +6,7 @@
 # It does not link a library and it does not re-type the arithmetic: it COMPILES A
 # VERBATIM BYTE SLICE of extraction-exact.swift alongside its own I/O layer.
 #
-#   lines 1..2535 of extraction-exact.swift  =  every declaration, up to but not
+#   lines 1..END_LINE of extraction-exact.swift  =  every declaration, up to but not
 #   including that program's own SECTION 11 MAIN. runCorpus(), computeShortfall(),
 #   v2Out(), v3Step(), v3InvertStart(), U256/I256/SInt and the JSON scanner all live
 #   in that range, and this tool calls them, unmodified, by their own names.
@@ -14,7 +14,7 @@
 # The slice digest is computed HERE and compiled in, so the binary can state which
 # bytes of law it carries and a stranger can re-derive that digest in one command:
 #
-#   sed -n '1,2535p' extraction-exact.swift | shasum -a 256
+#   sed -n "1,${END_LINE}p" extraction-exact.swift | shasum -a 256
 # =====================================================================================
 set -u -o pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
@@ -22,11 +22,22 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 SRC=extraction-exact.swift
 SLICE=.core-detector.swift
 PIN=.core-pin.swift
-END_LINE=2535
+# THE BOUNDARY IS DERIVED FROM A NAMED MARKER, NEVER TYPED AS A LINE NUMBER.
+#
+# It was typed as 2535 in THREE separate files — this script, wasi-sandwiched-one-law.sh
+# and reproduce/validate.sh — so any additive edit to the law was a four-file change and
+# three of the four would have gone on quoting a stale number. That is the same defect this
+# study records elsewhere: a constant duplicated across consumers is a constant that drifts.
+# The marker "SECTION 11 — MAIN" is what actually separates the declarations from the
+# program's own top-level code, so the boundary is read off that. The structural check that
+# follows is unchanged and still REFUSES if what it finds is not a closing brace followed by
+# a rule — deriving the number does not remove the check, it removes the retyping.
+END_LINE=$(awk '/SECTION 11 . MAIN/{print NR-3; exit}' "$SRC")
+[ -n "$END_LINE" ] || { echo "BUILD_REFUSED  SECTION 11 MAIN marker not found in $SRC"; exit 3; }
 
 [ -f "$SRC" ] || { echo "BUILD_REFUSED  detector source absent: $SRC"; exit 3; }
 
-# The boundary is asserted nowhere: it is CHECKED. Line 2535 must close referenceFigures()
+# The boundary is asserted nowhere: it is CHECKED. That line must close referenceFigures()
 # and 2503 must open the detector's own MAIN. If the detector moves, this refuses to build
 # rather than slicing law in half.
 b1=$(sed -n "${END_LINE}p" "$SRC")
@@ -39,6 +50,19 @@ fi
 # a top-level STATEMENT (Swift allows those only in main.swift). Both directions checked.
 if sed -n "1,${END_LINE}p" "$SRC" | grep -nE '^(emit|kv|section|flush|exit|print)\(' >/dev/null; then
   echo "BUILD_REFUSED  the slice carries a top-level statement"
+  exit 3
+fi
+
+# NOTHING IN THE SLICE MAY REFERENCE A SYMBOL DEFINED AFTER IT. The check above catches a
+# top-level STATEMENT in the slice; it does not catch a slice line that CALLS opt() or
+# flag(), both of which live in MAIN, below the boundary. That compiles here — this file
+# has MAIN — and fails inside the tool that gets only the slice, with "cannot find 'flag'
+# in scope" in a file nobody edited. Measured: it happened, and the build error named
+# wasi-sandwiched rather than the law that broke it. Comments are stripped before the
+# match so that prose describing the rule does not trip it.
+if sed -n "1,${END_LINE}p" "$SRC" | sed 's|//.*||' | grep -qE '\b(opt|flag)\('; then
+  echo "BUILD_REFUSED  the slice calls opt() or flag(), which are defined below the boundary"
+  echo "               move the argv read into MAIN and have the slice read a global instead"
   exit 3
 fi
 

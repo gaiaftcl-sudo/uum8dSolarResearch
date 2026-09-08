@@ -16,7 +16,18 @@ TOOL=wasi-sandwiched.swift
 SRC=extraction-exact.swift
 SLICE=.core-detector.swift
 PIN=.core-pin.swift
-END_LINE=2535
+# THE BOUNDARY IS DERIVED FROM A NAMED MARKER, NEVER TYPED AS A LINE NUMBER.
+#
+# It was typed as 2535 in THREE separate files — this script, wasi-sandwiched-one-law.sh
+# and reproduce/validate.sh — so any additive edit to the law was a four-file change and
+# three of the four would have gone on quoting a stale number. That is the same defect this
+# study records elsewhere: a constant duplicated across consumers is a constant that drifts.
+# The marker "SECTION 11 — MAIN" is what actually separates the declarations from the
+# program's own top-level code, so the boundary is read off that. The structural check that
+# follows is unchanged and still REFUSES if what it finds is not a closing brace followed by
+# a rule — deriving the number does not remove the check, it removes the retyping.
+END_LINE=$(awk '/SECTION 11 . MAIN/{print NR-3; exit}' "$SRC")
+[ -n "$END_LINE" ] || { echo "BUILD_REFUSED  SECTION 11 MAIN marker not found in $SRC"; exit 3; }
 arms=0; pass=0; fail=0
 arm(){ arms=$((arms+1)); if [ "$2" = "$3" ]; then pass=$((pass+1)); printf 'ARM  PASS  %-46s expect %-22s got %s\n' "$1" "$2" "$3"; else fail=$((fail+1)); printf 'ARM  FAIL  %-46s expect %-22s got %s\n' "$1" "$2" "$3"; fi; }
 

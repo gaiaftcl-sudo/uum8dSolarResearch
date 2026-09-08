@@ -20,3 +20,7 @@ a0a057010cc5172cfaf2d8a7b4d5f133557fa47b3a5837fcf985b6e5533e50eb  391242214  itc
 eb67a239cf09b7de1843f6b0ede3c473616cc5cac777b293bbe15608bf51794d   58907174  itch/S010303-v2.zip
 2f3c1b9f23645c7b0ad652b1ba677691a16b7a6b538f31af5680189cbf47e5ff  274405185  eth/blocks.ndjson
 af09271d39451288bbd9728f6488bb7a7e0d3441428caa22530d159af562feb0  378717564  eth/receipts.ndjson
+# --- B3 EXTENSION, blocks 14,001,000..14,003,999. Fetched from the free public wire with
+# --- market-shear-pull-eth.sh: CORPUS=<dir> START=14001000 COUNT=3000. No key, no account.
+bbb17e1bc6f42cff4dea7b01a39544271acdadb7a78bca4de44c6e793a37c527  795466772  eth-ext/blocks.ndjson
+7a63a8d7df47464c50762377d90a2bb01fb8766945b800536d2e3b26eb21bbe0  1124822166  eth-ext/receipts.ndjson
