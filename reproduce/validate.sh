@@ -43,9 +43,48 @@ if have xcrun || have swiftc; then
         if grep -q "FusionOperatingPointLaw\.\|OperatingEnvelope(" "$p" 2>/dev/null; then
             extra="$extra $(ls "$ROOT/app/FusionCourt/Sources/FusionOperatingPoint"/*.swift 2>/dev/null | tr '\n' ' ')"
         fi
-        stage="$(mktemp -d)"; cp "$p" "$stage/main.swift"; berr="$(mktemp)"
+        stage="$(mktemp -d)"; berr="$(mktemp)"
+        # STAGING NAME IS A CHOICE, AND IT IS NOT THE SAME CHOICE FOR EVERY PROGRAM.
+        # Top-level code is legal only in a file called main.swift, so that is the default.
+        # A file declaring `@main` is the OPPOSITE case: Swift refuses that attribute in a
+        # file that could carry top-level code, and naming it main.swift fails the build with
+        # "'main' attribute cannot be used in a module that contains top-level code" — which
+        # this harness would then report as the program being broken. It is not; the staging
+        # was. Measured on wasi-sandwiched.swift, which is @main.
+        if grep -q '^@main' "$p" 2>/dev/null; then src="$stage/$(basename "$p")"
+        else src="$stage/main.swift"; fi
+        cp "$p" "$src"
+        # ONE LAW, ONE HOME — the market-shear tool. wasi-sandwiched defines no conjunct,
+        # no pool arithmetic and no shortfall formula of its own: it compiles a VERBATIM
+        # BYTE SLICE of extraction-exact.swift, which is exactly what its own build script
+        # does. Building it here the same way is the point — a harness that linked a COPY
+        # of the law would be grading a second law, and then there would be two.
+        #
+        # THE BOUNDARY IS CHECKED, NOT ASSERTED. Line END must close referenceFigures() and
+        # END+2 must open the detector's own MAIN. If the detector source moves, this
+        # REFUSES rather than slicing a law in half and reporting a green run over it.
+        if grep -q 'CORE_SLICE_SHA256' "$p" 2>/dev/null; then
+            CORE="$HERE/extraction-exact.swift"; END=2535
+            if [ -f "$CORE" ] && [ "$(sed -n "${END}p" "$CORE" 2>/dev/null)" = "}" ] \
+               && sed -n "$((END+2))p" "$CORE" 2>/dev/null | grep -q '^// ====='; then
+                sed -n "1,${END}p" "$CORE" > "$stage/core-detector.swift"
+                { echo "let CORE_SLICE_SHA256   = \"$(shasum -a 256 "$stage/core-detector.swift" | awk '{print $1}')\""
+                  echo "let CORE_SLICE_BYTES    = \"$(wc -c < "$stage/core-detector.swift" | tr -d ' ')\""
+                  echo "let CORE_SLICE_LINES    = \"1..$END\""
+                  echo "let CORE_SOURCE_NAME    = \"extraction-exact.swift\""
+                  echo "let CORE_SOURCE_SHA256  = \"$(shasum -a 256 "$CORE" | awk '{print $1}')\""
+                  echo "let CORE_SOURCE_BYTES   = \"$(wc -c < "$CORE" | tr -d ' ')\""
+                  echo "let TOOL_SOURCE_SHA256  = \"$(shasum -a 256 "$p" | awk '{print $1}')\""
+                  echo "let BUILD_UTC           = \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\""
+                } > "$stage/core-pin.swift"
+                extra="$extra $stage/core-detector.swift $stage/core-pin.swift"
+            else
+                bad "$n SLICE BOUNDARY MOVED — extraction-exact.swift line $END no longer closes referenceFigures(); refusing to compile half a law"
+                rm -f "$berr"; rm -rf "$stage"; continue
+            fi
+        fi
         out="$(cd "$ROOT/corpus/flood-lead-time" 2>/dev/null || cd "$HERE"; \
-               $SC -O -swift-version 5 $extra "$stage/main.swift" -o "/tmp/val_$n" 2>"$berr" && "/tmp/val_$n" 2>/dev/null </dev/null)"
+               $SC -O -swift-version 5 $extra "$src" -o "/tmp/val_$n" 2>"$berr" && "/tmp/val_$n" 2>/dev/null </dev/null)"
         if [ -n "$out" ]; then ok "$n runs"; printf '%s\n' "$out" > "/tmp/out_$n.txt"
         else
             # A STALE TRANSCRIPT IS WORSE THAN NO TRANSCRIPT, and it was being left in place.
@@ -253,6 +292,61 @@ check_figure market-shear-positional "262,799"               "The-Detector-That-
 check_figure market-shear-positional "2,433x"                "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure market-shear-positional "101 per 1,000 flagged" "The-Detector-That-Flags-The-Whole-Market.md"
 check_figure market-shear-positional "4.8 per 1,000"         "The-Detector-That-Flags-The-Whole-Market.md"
+
+# --- WHAT WAS TAKEN: the extraction kernel, added 2026-09-08 --------------------------
+# The study measured a capability and never answered "so what". This program is that
+# answer: per victim, per token, in integer base units, from the pool's own arithmetic.
+# Every row below was checked with grep -F on BOTH sides before it was written here.
+#
+# THESE RUN WITH NO CORPUS AND NO NETWORK. The 1.1 GB Ethereum corpus is fetched, never
+# committed, so the no-argv path measures NOTHING and says so — it prints the published
+# reference figures, labels them PUBLISHED_REFERENCES_NOT_THIS_RUNS_MEASUREMENTS, and
+# exits 4. A gate given nothing must not exit 0, and this one does not.
+check_figure extraction-exact "GEOMETRY_ONLY_DETECTION_IS_NOT_PROOF_OF_INTENT" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "KEYED_PSEUDONYM_8HEX"        "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "CORPUS_ABSENT"               "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "PUBLISHED_REFERENCES_NOT_THIS_RUNS_MEASUREMENTS" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "126 brackets · 108 extractive · 104 blocks · 26 extractive actors" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "108 of 108 SET-IDENTICAL"    "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "47 false positives per 212,769 leg pairs" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "87 of 108 EXACT · 21 NOT_KNOWN" "The-Detector-That-Flags-The-Whole-Market.md"
+# the per-token integer table IS the result; the single-unit lines are DERIVED and the
+# page carries that label on both. Pinning both halves stops the derived one drifting free
+# of the measured one.
+check_figure extraction-exact "155,576,958,801,814,594,396,893" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "5,074,012,211,888,792,743,310"   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "28,924,625,003,219,287,345,953"  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "1,689,797,703,211,127,422"       "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "28,889,398,990,674,697,077"      "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "28,247,424,339,991,594,322"      "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "94,645,772,620"                  "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "3,276,141,973"                   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "min 47 · p25 102 · MEDIAN 476 · p75 1,785 · max 9,999" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "0.170457244547709297"            "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "558.442133"                      "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "0.104516232525109603"            "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "+491 permille"                   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "-500 permille"                   "The-Detector-That-Flags-The-Whole-Market.md"
+# MEASURED and PROJECTED are two answers. Both are pinned so neither can quietly become
+# the other — the label lives on the program's own key name, not only in the page's prose.
+check_figure extraction-exact "108 detections per 1,000 blocks = 13,586 s · 28 per hour" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure extraction-exact "686 per day · 250,390 per year" "The-Detector-That-Flags-The-Whole-Market.md"
+
+# --- THE TOOL a person can actually run on their own transaction ----------------------
+# wasi-sandwiched carries NO law of its own: section 2 above compiles it against a verbatim
+# byte slice of extraction-exact.swift, refusing outright if that slice boundary has moved.
+# Given no hash it prints the reference figures and exits 4 — the same discipline.
+check_figure wasi-sandwiched "WAS I SANDWICHED, AND WHAT DID IT COST ME" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "A GATE GIVEN NOTHING MUST NOT PASS"        "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "== NOTHING WAS GIVEN =="                   "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "ZERO — no API key, no account, no registration, nobody's permission" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "extraction-exact.swift lines 1..2535"      "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "126 brackets · 108 extractive · 104 blocks · 26 pseudonymous actors" "The-Detector-That-Flags-The-Whole-Market.md"
+check_figure wasi-sandwiched "median 476 ten-thousandths of the output that was due — about 0.17 ETH" "The-Detector-That-Flags-The-Whole-Market.md"
+# The compiled-in law digest, printed by the binary and computed at build time by shasum(1)
+# over the slice. It is on the page so a stranger can re-derive it in one command:
+#   sed -n '1,2535p' reproduce/extraction-exact.swift | shasum -a 256
+check_figure wasi-sandwiched "d46ea837b66f21763ed3dfc50c9ca246e05cb9f2a499237aa4cc77ec4edbdf5e" "The-Detector-That-Flags-The-Whole-Market.md"
 
 # --- the generated-peptide novelty screen (cures family) ---
 check_figure protein-novelty-exact "8c50b3e877d1dac7b68244464ae679fc43ed273d9fd38e7e348b823c3e80563b" "Generated-Peptides-Against-The-Human-Proteome.md"
