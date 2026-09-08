@@ -358,6 +358,48 @@ print("  no e-value is computed anywhere in this program")
 print("")
 
 // ---------------------------------------------------------------------------
+// THE HARNESS PATH. Added 2026-09-07 after this program wedged reproduce/validate.sh.
+//
+// validate.sh compiles and RUNS every program in this directory with no argv. That is the right
+// design and it is why every published figure is checkable. But the measurement path here is a
+// 58,984,123,166,334-cell screen run TWICE, real and null, and once the corpus resolver was fixed
+// so the program could find its inputs from a clean clone, the harness stopped refusing in a
+// millisecond and started running the full 35-minute screen on every invocation — three copies were
+// grinding at once before it was noticed.
+//
+// A fix in one place had a consequence in another, and the harness is the wrong place to discover
+// it. So: with no argv this prints the published reference figures and the pinned verdict figures
+// and exits 0. It NEVER prints a seal on this path, because it computed nothing — a seal for work
+// not done is the defect this whole programme exists to prevent. The measurement runs under an
+// explicit flag, which is what validate-homology.sh passes.
+//
+// This is the same shape pelacarsen and the atlas already use when handed no corpus: print what
+// the published run measured, name how to reproduce it, emit no seal.
+let MEASURE_FLAG = "--measure"
+if CommandLine.arguments.count == 1 {
+    print("HARNESS PATH — no argument given, so NO SCREEN WAS RUN and NO SEAL IS EMITTED.")
+    print("The figures below are what the published run measured; the command that reproduces")
+    print("them is at the bottom. This path exists so the harness stays fast: the measurement is")
+    print("a 58,984,123,166,334-cell screen run twice and takes about 35 minutes.")
+    print("")
+    print("  paired against their own shuffles, real ABOVE shuffle  : 36128")
+    print("  paired against their own shuffles, real BELOW shuffle  : 36113")
+    print("  tied                                                   : 6439")
+    print("  real corpus max score  : 90     null max score : 94")
+    print("  real sum of maxima     : 4556252")
+    print("  null sum of maxima     : 4554816")
+    print("  dynamic programming cells COUNTED, per corpus          : 58984123166334")
+    print("  query-protein visits COUNTED, per corpus               : 1607511080")
+    print("  self-test arms                                         : 24 of 24 pass")
+    print("  ROOT-INVARIANT of the published transcript             : b11fe3c9ee6dab0e98b9773a883b438e0cf102fcf4e34bd94ef7cb05a97e0313")
+    print("")
+    print("  reproduce:  swiftc -O -swift-version 5 reproduce/peptide-homology-exact.swift -o /tmp/ph")
+    print("              /tmp/ph \(MEASURE_FLAG)")
+    print("NO SEAL EMITTED on the harness path.")
+    exit(0)
+}
+
+// ---------------------------------------------------------------------------
 // transcript / refusal
 // ---------------------------------------------------------------------------
 var TX: [String] = []
@@ -395,8 +437,8 @@ do {
         _ = screen([], [], [], "self-probe-zero-query")
         refuse("the zero-query self-probe RETURNED. screen() answered an empty query list instead of refusing it, which is the defect this probe exists to detect.")
     }
-    if argv.count > 1 {
-        refuse("this program takes no argument on its measurement path. The only argument it recognises is \(SELF_PROBE_ZERO_QUERY), which self-test arm A20 spawns against this same image; \(argv.count - 1) other argument(s) were given.")
+    if argv.count > 1 && argv[1] != MEASURE_FLAG {
+        refuse("this program takes no argument on its measurement path except \(MEASURE_FLAG). The only argument it recognises is \(SELF_PROBE_ZERO_QUERY), which self-test arm A20 spawns against this same image; \(argv.count - 1) other argument(s) were given.")
     }
 }
 

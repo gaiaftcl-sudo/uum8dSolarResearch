@@ -1,0 +1,22 @@
+# Pinned bytes for the market-shear study. Fetched from their publishers, never committed:
+# 1,240,632,399 bytes is too much to carry in a wiki, and it is public.
+#
+# TWO HONEST NOTES ON THESE DIGESTS.
+#
+# 1. For NASDAQ ITCH there are NO PUBLISHER DIGESTS. The listing advertises a .md5sum sidecar
+#    beside every archive and a GET returns HTTP 404, re-measured for the pinned files. Both
+#    ITCH digests below are OURS. They prove two readers hold the same bytes; they do not
+#    prove those bytes are what the publisher meant to serve, and nothing here claims they do.
+#
+# 2. A JSON-RPC response is NOT BYTE-CANONICAL ACROSS PROVIDERS. Some emit a non-consensus
+#    blockTimestamp per transaction and some do not — a 3,360-byte difference on block
+#    14,000,000 with block hash, ordering and every transaction hash identical. The eth/*
+#    digests are over the STORED FORM from the named endpoint. Digest the consensus content
+#    and two honest archives agree exactly; digest the response bytes and they read as a
+#    divergence that is not there.
+#
+# format: <sha256>  <bytes>  <path under the corpus directory>
+a0a057010cc5172cfaf2d8a7b4d5f133557fa47b3a5837fcf985b6e5533e50eb  391242214  itch/20190730.BX_ITCH_50.gz
+eb67a239cf09b7de1843f6b0ede3c473616cc5cac777b293bbe15608bf51794d   58907174  itch/S010303-v2.zip
+2f3c1b9f23645c7b0ad652b1ba677691a16b7a6b538f31af5680189cbf47e5ff  274405185  eth/blocks.ndjson
+af09271d39451288bbd9728f6488bb7a7e0d3441428caa22530d159af562feb0  378717564  eth/receipts.ndjson
