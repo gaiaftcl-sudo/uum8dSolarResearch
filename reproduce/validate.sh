@@ -481,6 +481,24 @@ check_figure biosphere-cascade-chain      "15.6%"    "Study-31-Biosphere-Cascade
 check_figure biosphere-cascade-chain      "+17.1% to +31.2%" "Study-31-Biosphere-Cascade.md"
 
 
+# --- Study 40: indefinite causal order — order-dependence is a property of the arithmetic ---
+check_figure ico-causal-order-shear "ORDER_IS_AN_ARTEFACT_OF_THE_ARITHMETIC" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "ecdcb1cee4111c1ee2094c5e9316a717622ad5cef825f87aeb54ee0abdae86d6" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "3 of 9"    "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "18 of 18"  "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "1 / 6"     "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "1 / 1"     "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "13494202421495/934495065504" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "2.220446049250313e-16"       "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "9.900784243566108e-07"       "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "1/10000000001000000000021"   "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "14.44010024196028"           "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "7.923076923076923"           "Study-40-Indefinite-Causal-Order.md"
+# CONTROL ON THE CONTROLS: both arms must fire. A run where the float agreed everywhere would
+# print neither of these, and the study's whole claim would be unsupported rather than merely quiet.
+check_figure ico-causal-order-shear "first scale at which float is fooled  10^4"  ""
+check_figure ico-causal-order-shear "first scale at which float goes blind 10^8"  ""
+
 # --- THE THREE LIBRARIES: one check_figure row per admitted entry, in the same commit.
 # The admission law's own "what must accompany an addition" requires this row and the entry
 # together, so a page and the program behind it cannot drift apart between commits. The sixth
