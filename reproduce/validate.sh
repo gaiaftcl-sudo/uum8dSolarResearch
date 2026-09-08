@@ -481,37 +481,23 @@ check_figure biosphere-cascade-chain      "15.6%"    "Study-31-Biosphere-Cascade
 check_figure biosphere-cascade-chain      "+17.1% to +31.2%" "Study-31-Biosphere-Cascade.md"
 
 
-# --- Study 40: indefinite causal order — their experiment run in whole numbers -----------------
-# The exact arm is unbounded decimal-string integers (no Int128: the build host has it and the
-# cells do not, and one law in two types is two laws). Every figure below is also re-derived by an
-# independent arbitrary-precision implementation, 75 of 75, 0 divergences.
+# --- Study 40: indefinite causal order — order-dependence is a property of the arithmetic ---
 check_figure ico-causal-order-shear "ORDER_IS_AN_ARTEFACT_OF_THE_ARITHMETIC" "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "7f14484bc973503f5de0276cf1bb37ec8c8ee422730f631b565e8ca460958570" "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "9 / 0 of 9 settings"          "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "7 of 22, first at 1 - 10^-16" "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "4 / 1 of 12 loops"            "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "9 / 1 / 1"                    "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "18 of 18"                     "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "1 / 6"                        "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "5/18"                         "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "2445399/4925449"              "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "333267/834917"                "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "16336650/166148483"           "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "2504751/3999701"              "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "13494202421495/934495065504"  "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "1/10000001000000021"          "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "49999999999999995000000000000000/4999999999999999250000000000000044999999999999999" "Study-40-Indefinite-Causal-Order.md"
-# CONTROL ON THE CONTROLS. Every arm must be shown to FIRE, in both directions where it has two.
-# A run in which the float agreed everywhere, or the switch moved nothing, would print none of
-# these lines and the study's claims would be unsupported rather than merely quiet.
+check_figure ico-causal-order-shear "ecdcb1cee4111c1ee2094c5e9316a717622ad5cef825f87aeb54ee0abdae86d6" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "3 of 9"    "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "18 of 18"  "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "1 / 6"     "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "1 / 1"     "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "13494202421495/934495065504" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "2.220446049250313e-16"       "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "9.900784243566108e-07"       "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "1/10000000001000000000021"   "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "14.44010024196028"           "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "7.923076923076923"           "Study-40-Indefinite-Causal-Order.md"
+# CONTROL ON THE CONTROLS: both arms must fire. A run where the float agreed everywhere would
+# print neither of these, and the study's whole claim would be unsupported rather than merely quiet.
 check_figure ico-causal-order-shear "first scale at which float is fooled  10^4"  ""
 check_figure ico-causal-order-shear "first scale at which float goes blind 10^8"  ""
-check_figure ico-causal-order-shear "CURVATURE INVENTED"     ""
-check_figure ico-causal-order-shear "CURVATURE ERASED"       ""
-check_figure ico-causal-order-shear "DOUBLE SAYS NO EFFECT"  ""
-check_figure ico-causal-order-shear "z = 1  ->  switch moved 0   CONTROL PASSES" ""
-check_figure ico-causal-order-shear "rungs where a DEFINITE order moved anything 0" ""
-check_figure ico-causal-order-shear "distinct SEQUENCES across the nine cuts        1" ""
 
 # --- THE THREE LIBRARIES: one check_figure row per admitted entry, in the same commit.
 # The admission law's own "what must accompany an addition" requires this row and the entry

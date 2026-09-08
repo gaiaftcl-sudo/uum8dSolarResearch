@@ -36,7 +36,7 @@
 - [**Study 37** — thirty-seven thousand validated discoveries, five molecules](Study-37-Validated-Discoveries-Five-Molecules) — **why per-item validation cannot see a corpus-level defect**
 - [**Study 38** — the loss-reserve triangle, exact against float](Study-38-Loss-Reserve-Triangle) — **a reserve is an exact rational; 481 of 482 verdicts identical in both arithmetics; the sixteen-billion figure comes from an unchecked premise**
 - [**Study 39** — the actuarial domain, exact against float](Study-39-Actuarial-Domain) — **life, pensions, multi-state and aggregation; the margin is 8 significant digits at its tightest**
-- [**Study 40** — who told you the order mattered?](Study-40-Indefinite-Causal-Order) — order-dependence is a property of the arithmetic: nine cells, one exact result and six float ones
+- [**Study 40** — who told you the order mattered?](Study-40-Indefinite-Causal-Order) — **order-dependence is a property of the arithmetic; nine orders, one exact result and six float ones**
 - [**Affine Fusion Control** — the local app](Affine-Fusion-Control)
 - [**Affine Fusion Control — public release**](Affine-Fusion-Control-Release)
 - [**Fusion researcher's guide**](Fusion-Researchers-Guide)
