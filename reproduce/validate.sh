@@ -254,6 +254,37 @@ check_figure genotype-score-ceiling-exact   "627/1000"                          
 check_figure genotype-score-ceiling-exact   "278/1000"                                                 "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 check_figure genotype-score-ceiling-exact   "1,105"                                                    "The-Ceiling-On-What-A-Genetic-Score-Can-Know.md"
 
+# --- WHAT A GENE'S LENGTH ALREADY DECIDES ---
+# Two instruments with a built-in answer, both measured by complete enumeration: every base of
+# every catchment on every chromosome, and every gene carrying a LOEUF. The program prints its
+# reference figures before opening a file, so these pins hold from a tree with no corpus.
+check_figure nearest-gene-length-lottery-exact  "GENE_LENGTH_INSTRUMENT__NEAREST_GENE_LOTTERY_AND_LOEUF_DENOMINATOR"     "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "c11ae542d7344b95abd87ee84d065954f322d0118d2609b236fe69ae1dda4489"       "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "arms run = 16   failed = 0"                                             "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "pins disagreeing = 0"                                                   "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "19,704"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "19,197"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "66,591"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "243,881"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "114,478"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "2,070,253,229"                                                          "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1,261,815,650"                                                          "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1,628,025,115"                                                          "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "3662/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1719/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "3359/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "4366/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "4092/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "3143/1000"                                                              "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1626000"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "484000"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1799000"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "412000"                                                                 "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "1686000"                                                                "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "-124,600"                                                               "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "-391,700"                                                               "What-A-Gene-Length-Already-Decides.md"
+check_figure nearest-gene-length-lottery-exact  "10 of 10"                                                               "What-A-Gene-Length-Already-Decides.md"
+
 
 # --- MARKET SURVEILLANCE: the detector that flags the whole market -----------------
 # Un-numbered family page, added 2026-09-08. Every row below was checked with grep -F on
