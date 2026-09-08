@@ -1,82 +1,116 @@
 # Study 40 — The number the simulation throws away
 
-*In July, physicists put two thermalising channels into a superposition of orders and watched heat flow from the colder reservoir. The prediction they confirmed is not a measurement. It is a fraction.*
+*In July, physicists put two thermalising channels into a superposition of orders and watched heat flow from the colder reservoir. It was written up widely, because heat flowing the wrong way is a good headline.*
 
-*We computed it. At z = 1/2 the switch moves exactly **−1/18** of a level gap, and neither ordering moves anything at all.*
+*The prediction they confirmed is not a measurement. It is a fraction. We computed it: at z = 1/2 the switch moves exactly **−1/18** of a level gap, and neither ordering moves anything at all.*
 
-*Then we computed the same fraction the way this physics is normally simulated — in double precision — and above z = 1 − 10⁻¹⁶ the answer comes back **0**. Not small. Not noisy. Zero. The effect leaves the calculation without a warning, and nothing in the output says it was ever there.*
+*Then we computed the same fraction the way this physics is normally simulated, and **the effect is not there**. Double precision returns `0` above z = 1 − 10⁻¹⁶. Single returns `0` above 10⁻⁸. Half above 10⁻⁴. Not small — zero, with nothing in the output to distinguish it from a real null.*
 
----
-
-## Why this might be your problem
-
-Three places where the arithmetic, not the physics, is deciding what you find. Each one is a thing that can be sitting in working code right now.
-
-**If you simulate indefinite causal order in floating point, you may be computing zero for an effect that exists.** We can name where it starts: `z = 1 − 10⁻¹⁶`, and everywhere hotter. Below that the double tracks the exact answer to the last digits. Above it, the double returns a clean, confident `0.0`.
-
-**If you compute curvature in floating point, some of it is yours.** Walk a closed loop and see whether you get home. We walked twelve. On four of the six flat ones the double came back curved — holonomy that is exactly zero, reported as non-zero. On one of the six curved ones it came back flat. **And it is not monotone in the scale**: 10⁵ and 10⁷ are clean while 10⁴, 10⁶ and 10⁸ are not. There is no threshold to stay under and no calibration that removes it, because whether the error appears depends on where the operands' bits fall, not on how big they are.
-
-**And if you are enforcing a total order on events, check whether your data contains one.** On a compact coordinate it does not. Nine origins, one unchanged set of events, **nine different sequences** — and one cyclic orientation, identical under every origin. The sequence is an artefact of where you cut. The orientation is the fact.
-
-Everything below is the arithmetic. No corpus, no network, no key, no error bars, and no fixed integer width. One program, 0.13 seconds, one digest.
+*The wrong way got an article. **This is why the right way matters more: an effect your arithmetic returns as zero is an effect you cannot go looking for.***
 
 ---
 
-## 1 · Their experiment, as a fraction
+## The part that should worry a working physicist
 
-The quantum switch of two thermalising channels — Felce and Vedral's construction (*PRL* **125**, 070603, 2020), realised on an optical bench by Xue et al. (*PRL*, 2026). Two channels act on one system; classically you pick an order. The switch puts a control qubit in superposition so both orders happen at once, and the interference term is the entire content of the effect:
+That bench found this effect because nature computed it exactly. There is no floating point in an interferometer.
+
+Now consider the class of effects that look like this one — small, carried by an interference term, living below whatever horizon your number format has. **A simulation does not report them as uncertain, or noisy, or marginal. It reports them as absent**, in the same clean `0.0` it would return if they genuinely did not exist. There is no flag, no warning, no NaN, and no residual to notice.
+
+You cannot survey for what your instrument returns as zero. So the honest reading of the published result is not one surprising effect. It is one effect that happened to be reachable on a bench — and an unknown number of others that a float-based search would have retired as null before anyone built the apparatus.
+
+That is the claim this study exists to support, and everything below is the arithmetic behind it.
+
+## The four ways out, and why none of them is open
+
+Anyone defending the current practice has four moves. Each is a claim about numbers, so each is measured here rather than argued.
+
+**"Use more precision."** Every width has its own horizon, and each one buys a bounded number of decades:
+
+| width | mantissa bits | first rung returning `0` | bought |
+|---|---|---|---|
+| Float16 (half) | 11 | z = 1 − 10⁻⁴ | — |
+| Float32 (single) | 24 | z = 1 − 10⁻⁸ | +4 decades |
+| Float64 (double) | 53 | z = 1 − 10⁻¹⁶ | +8 decades |
+| **exact integers** | **unbounded** | **none** | **every rung** |
+
+Thirteen more mantissa bits bought four decades; twenty-nine more bought eight. Nothing in that sequence terminates, and the temperature a reservoir may take is not bounded. There is no width at which the escape closes — only a width at which you have not reached the wall yet.
+
+**"Stay in a safe regime."** There isn't one, because the failures are **not monotone in the scale**. On the geometry arm, 10⁵ and 10⁷ come back clean while 10⁴, 10⁶ and 10⁸ do not. Whether the error appears depends on where the operands' bits happen to fall, not on how large they are — so there is no threshold to sit beneath.
+
+**"Rescale it."** Populations are dimensionless and already O(1); there are no units left to choose. And the loss is not a product overflowing, it is a difference cancelling. At z = 1 − 10⁻¹⁶ the exact populations are
+
+```
+p1 = 9999999999999999/19999999999999999
+p0 = 10000000000000000/19999999999999999
+```
+
+two distinct rationals differing by exactly `1/19999999999999999` — and the double holds **one** number, `0.5`, for both. The asymmetry that carries the entire effect is not approximated at that point. It is absent.
+
+**"It's just rounding error."** Rounding error is small and one-directional. This is neither. It returns an exact `0` where the answer is non-zero, and on the geometry arm it fails in *both* directions — inventing curvature on 4 of 6 flat loops and erasing it on 1 of 6 curved ones. A bias you can bound is an error budget. A detector that is wrong in both directions, non-monotonically, is not an error budget.
+
+And one more the defence does not usually think to make: **the horizon is not even a property of the value.** Write the same z two ways — as the decimal `(10¹⁶−1)/10¹⁶`, or by dividing 1 by ten sixteen times — and they land on different floats. One returns zero; the other still sees the effect. The boundary where the physics disappears depends on how the input was *spelled*.
+
+## What this costs the standard picture
+
+The standard computational model of physical law rests on three assumptions. They are rarely stated together, because stated together they are hard to defend.
+
+**One — causal order is definite and given.** Withdrawn on an optical bench. The quantum switch puts two channels into a superposition of orders and gets work out that no definite order gives. Order is a degree of freedom, not a background fact. *(Xue et al., PRL 2026; construction from Felce & Vedral, PRL **125**, 070603, 2020.)*
+
+**Two — real quantities may be carried in finite floating point.** Measured above: wrong in both directions, non-monotone in the scale, failing at every width, with the boundary depending on how the input was written.
+
+**Three — a total order over events exists to be agreed on.** It does not, on a compact coordinate. Nine origins over one unchanged set of events give **nine** different sequences; the cyclic orientation over all 84 triples gives **one** vector under every origin. The sequence is an artefact of the cut. The orientation is the fact — and the cut is not in the data.
+
+That third assumption is the oldest and the least examined. It came into computing from physics: Lamport built `happened-before` on the light-cone partial order of special relativity, then extended it to a total order and said in the paper that the extension is **arbitrary**. Fifty years of vector clocks and consensus protocols are built on the extension rather than on the invariant. And when we measure what that machinery is actually repairing — nine cells, one event set, nine arrival orders — we get **one** result in exact arithmetic and **six** in double. It was never holding up causality. It was holding up the rounding.
+
+**Take the three together and the picture does not fit.** Not because it is imprecise, but because each leg has been measured to fail on its own terms.
+
+## Not one study — the fortieth
+
+This is not a result arriving out of nowhere. It is the same claim the board has now restated forty times, reaching physics for the first time.
+
+The claim is that a verdict computed in exact integers is **observer-invariant** — identical on every machine, with no horizon past which it silently changes — and that a verdict computed in floating point is not. [Study 34](Study-34-Observer-Invariant-Verdict) established it on the observer axis, [Study 35](Study-35-The-Safety-Brain-That-Forgets) on the time axis, [Study 36](Study-36-The-Language-Game-of-Fermats-Last-Theorem) on proof synthesis, [Studies 38](Study-38-Loss-Reserve-Triangle) and [39](Study-39-Actuarial-Domain) across the whole actuarial and reserving domain — where, notably, the two arithmetics **agreed** to fourteen significant digits, and the study published that as the finding. The instrument is not tuned to indict float. It says so when float is fine.
+
+Study 40 is where it stops being fine, and the difference is worth naming: in finance the quantities are reported at units eleven digits coarser than the disagreement. In this physics the disagreement *is* the quantity.
+
+The whole board runs on the same footing — exact integers, no floating point in any sealed path, verdicts re-derivable by a stranger from published bytes. See the [programme index](Shear-Studies-Index) and the [method](Zero-Float-Zero-Shear-Paradigm).
+
+## The measurements
+
+**Their experiment, as a fraction.** The switch of two fully thermalising channels, post-selected on the control:
 
 ```
 ρ₊  =  ¼ [ E₂(E₁(ρ)) + E₁(E₂(ρ)) + X + X† ],     X_ba = p_a q_b ρ_ba
 ```
 
-The first two terms *are* the two definite orders, and for fully thermalising channels each is just a reservoir's own thermal state — which is exactly why a definite order can do nothing here. For a diagonal input, `X` is diagonal too, and everything becomes a ratio of integers.
+The first two terms *are* the definite orders — each just a reservoir's own thermal state, which is why a definite order does nothing here. `X` is the interference term and it is the whole effect. **The step that makes it exact:** choose the reservoir by its Boltzmann factor `z = e^(−βε)` rather than its temperature. Every rational z in (0,1) is a real temperature, so nothing is lost, and every population becomes an exact rational.
 
-**The step that makes it exact:** pick the reservoir by its Boltzmann factor `z = e^(−βε)` rather than by its temperature. Every rational z in (0,1) *is* a real temperature, so this loses nothing — and it makes every population an exact rational. Nothing is sampled, binned or fitted.
-
-Here is the case with nowhere to hide: the system and both reservoirs at the **same** temperature, where classically nothing whatever can happen.
+System and both reservoirs at the **same** temperature, where classically nothing can happen:
 
 | Boltzmann z | order 1,2 | order 2,1 | switch, exact | energy moved |
 |---|---|---|---|---|
 | 1/2 | no change | no change | 5/18 | **−1/18** |
 | 2/3 | no change | no change | 29/80 | −3/80 |
-| 4/5 | no change | no change | 194/459 | −10/459 |
 | 9/10 | no change | no change | 1989/4294 | −45/4294 |
 | 99/100 | no change | no change | 2445399/4925449 | −4950/4925449 |
-| 999/1000 | no change | no change | 2494503999/4992504499 | −499500/4992504499 |
-| 99999/10⁵ | no change | no change | 2499945000399999/4999925000449999 | −4999950000/4999925000449999 |
 | 999999/10⁶ | no change | no change | 2499994500003999999/4999992500004499999 | −499999500000/4999992500004499999 |
 
-**Nine of nine settings, the switch moves energy. Zero of nine, a definite order does.** Those inert columns are the control: they are the same experiment with the superposition removed, and they do nothing at every rung.
+**Nine of nine settings the switch moves energy; zero of nine a definite order does.** Those inert columns are the control — the same experiment with the superposition removed. At z = 1 (infinite temperature, populations exactly 1/2) the switch moves exactly **0**, because there is no asymmetry to act on; without that rung this would be a detector that always says yes. And in the anomalous direction, a cold system at z = 1/100 against two hot reservoirs at z = 99/100 lands at `333267/834917` — **below both definite orders by exactly `16336650/166148483`** — with the control landing on `|+⟩` with probability exactly `2504751/3999701`.
 
-At infinite temperature — z = 1, populations exactly 1/2 — the switch moves exactly **0**, because there is no asymmetry for the interference term to act on. Without that rung this would be a detector that always says yes.
+No shot noise, no visibility, no post-selection statistics: not because the apparatus is good, but because there is no apparatus.
 
-And in the anomalous direction: a cold system at z = 1/100 against two hot reservoirs at z = 99/100. A definite order hands it the hot reservoir's thermal state, `99/199`. The switch lands at `333267/834917` — **below both orders by exactly `16336650/166148483`** — with the control landing on `|+⟩` with probability exactly `2504751/3999701`.
-
-No shot noise, no visibility, no post-selection statistics. Not because the apparatus is good — because there is no apparatus. The state was carried as integers and read off.
-
-## 2 · Where the double loses it
-
-The effect shrinks as the temperature rises. So we asked where a conventional simulation stops seeing it, across 22 rungs from `z = 1 − 10⁻¹` to `1 − 10⁻²²`.
+**Where the double loses it**, across 22 rungs:
 
 | Boltzmann z | exact | double | |
 |---|---|---|---|
 | 1 − 10⁻¹ | −45/4294 | −0.010479739170936198 | agree |
-| 1 − 10⁻⁵ | −4999950000/4999925000449999 | −1.0000050000291694e-06 | agree |
 | 1 − 10⁻¹⁰ | −49999999995000000000/4999999999250000000044999999999 | −1.000000082740371e-11 | agree |
 | 1 − 10⁻¹⁵ | −499999999999999500000000000000/4999999999999992500000000000004499999999999999 | −5.551115123125783e-17 | agree |
 | **1 − 10⁻¹⁶** | −49999999999999995000000000000000/4999999999999999250000000000000044999999999999999 | **0** | **effect gone** |
-| **1 − 10⁻¹⁷ … 1 − 10⁻²²** | non-zero at every rung | **0** | **effect gone** |
+| **… to 1 − 10⁻²²** | non-zero at every rung | **0** | **effect gone** |
 
-**Exact: non-zero on 22 of 22. Double: exactly zero on 7 of 22, first at z = 1 − 10⁻¹⁶.**
+**Exact: non-zero on 22 of 22. Double: exactly zero on 7 of 22.**
 
-Read the last column again. The double does not return a small number there, or an uncertain one. It returns `0` — the absence of the physics, delivered as a result, with nothing to distinguish it from a genuine null. A study run at those temperatures concludes that indefinite causal order does nothing.
-
-There is no temperature at which the effect stops existing. There is only a temperature at which a 64-bit float stops being able to hold it.
-
-## 3 · The same failure, wearing geometry
-
-Two affine maps over the rationals are the projective action of integer matrices, so the group commutator `A·B·A⁻¹·B⁻¹` is transport around a closed loop — out along A, out along B, back along A, back along B. Its exact deviation from the identity is the loop's **holonomy**. A flat loop returns *exactly* to where it started.
+**The same failure, wearing geometry.** Two affine maps over the rationals are the projective action of integer matrices, so the commutator `A·B·A⁻¹·B⁻¹` is transport around a closed loop and its exact deviation from the identity is **holonomy**. A flat loop returns *exactly* home.
 
 | scale | loop | exact | double |
 |---|---|---|---|
@@ -89,15 +123,9 @@ Two affine maps over the rationals are the projective action of integer matrices
 | **10⁸** | flat | **0** — flat | 2.220446049250313e-16 — **curved** |
 | **10⁸** | **curved** | **1/10000001000000021** — curved | **0** — **flat** |
 
-**Curvature invented on 4 flat loops, erased on 1 curved loop, of 12 walked.** Read as commutation on a longer ladder: 3 of 9 exactly-commuting pairs called non-commuting, 3 of 9 genuinely non-commuting pairs called commuting.
+Curvature invented on 4 flat loops, erased on 1 curved, of 12 walked. The exact arm was graded against the closed form on all eighteen commutation rungs and got **18 of 18** — it separates the two populations in both directions, which is exactly what the double fails to do in either.
 
-The exact arm was graded against the closed form on all eighteen rungs and got **18 of 18** — flat on every flat one, curved on every curved one. It separates the two populations in both directions, which is precisely what the double fails to do in either.
-
-## 4 · And the order was never in the data
-
-A scalar-line model says an event carries a coordinate on a line and *before* is that coordinate's order. That model came into computing from physics: Lamport built `happened-before` on the light-cone partial order of special relativity, and then — because a system has to do *something* — extended it to a total order, saying in the paper that the extension is **arbitrary**. Fifty years of vector clocks and consensus protocols are built on the extension rather than on the invariant.
-
-A circle admits no translation-invariant total order. To get a sequence you must choose a cut, and the cut is not in the data. Nine events carrying an angular coordinate, exact fractions of a turn, each taken in turn as the origin:
+**And the cut.** Nine events on an angular coordinate, exact fractions of a turn, each taken in turn as origin:
 
 | cut at τ = | sequence | | cut at τ = | sequence |
 |---|---|---|---|---|
@@ -107,36 +135,9 @@ A circle admits no translation-invariant total order. To get a sequence you must
 | 5/11 | 3 6 0 7 2 4 1 8 5 | | 2/7 | 8 5 3 6 0 7 2 4 1 |
 | 20/21 | 4 1 8 5 3 6 0 7 2 | | | |
 
-**Nine distinct sequences.** Not one coordinate changed between those rows. Only the origin moved.
+**Nine sequences.** Not one coordinate changed — only the origin moved. The cyclic orientation over all 84 triples is **one vector under all nine**. Read the same values on a line and all nine cuts give **one** sequence, so this is compactness and not the re-origining.
 
-Take the **cyclic orientation** of all 84 ordered triples under those same nine cuts — the relation *"b lies on the arc from a to c"* — and it is **one vector, identical under every origin.** Read the same nine values as points on a line, re-origined by subtraction with no wraparound, and you get **one sequence** from all nine cuts: so the nine on the circle come from compactness, not from the re-origining.
-
-A system that seals a sequence must first make everyone agree on an origin the data does not contain. A system that seals the orientation needs no agreement, because there is nothing left to disagree about.
-
-**And this is measurable in a fleet.** Nine cells, the same 64 events, nine arrival orders, on a population where large balances and small increments share one stream: **one result in exact arithmetic — `−13494202421495/934495065504` on all nine — and six in double**, spanning 84% of the true value. One of the nine happens to land within a last place of the exact answer, eight do not, and nothing in the protocol tells you which you got. Put the same nine orders on 64 small integers, where the double has nothing to round, and both arithmetics return one. So what the total order was repairing was the rounding.
-
----
-
-## What we are not saying
-
-**This does not make quantum hardware unnecessary.** A two-level system under two fully thermalising channels is small enough to write down in closed form — that is *why* it can be a fraction. Nothing here is evidence in either direction about a state space that cannot be. What §1 and §2 show is narrower and still worth having: for this experiment, the limit on a conventional simulation is not the physics and not the Hilbert space. It is the arithmetic, and it fails somewhere we can name.
-
-**We did not do the experiment.** The optical bench, the anomalous flow and the Otto cycle are Xue et al.'s. Their demonstration is proof-of-principle, and it does not bypass the second law — the control qubit's coherence is itself a thermodynamic resource that has to be paid for. We computed the prediction their apparatus was built to confirm, which is a different act and a smaller one.
-
-**We did not identify the geometry of the universe.** §4 measures that a compact phase coordinate carries an invariant a scalar line cannot. That is a statement about a class, shared by every compact coordinate in it. Which member is the right one is not answered here.
-
-## Evidence, graded
-
-| claim | grade |
-|---|---|
-| The switch of two thermalising channels, exactly: 9 of 9 reservoir settings move energy that neither definite order moves (0 of 9); exactly −1/18 at z = 1/2; exactly 0 at z = 1; a cold system lands below both orders by 16336650/166148483. | **MEASURED** — `reproduce/ico-causal-order-shear.swift` |
-| The same effect in double precision returns exactly zero on 7 of 22 rungs, first at z = 1 − 10⁻¹⁶, where exact arithmetic is non-zero on all 22. | **MEASURED** |
-| A float-walked closed loop invents curvature on 4 of 6 flat loops and erases it on 1 of 6 curved, non-monotone in the scale; the exact arm is 18 of 18 and separates both populations. | **MEASURED** |
-| Nine origins on a compact coordinate give 9 sequences from one unchanged event set; the cyclic orientation over 84 triples is 1 vector under all nine; on a line, 1 sequence under all nine. | **MEASURED** |
-| Nine cells folding one 64-event set in nine arrival orders: 1 result exact, 6 in double, spanning 84% of the true value; on a population float holds exactly, both give 1. | **MEASURED** |
-| The photonic realisation of anomalous heat flow and the ICO Otto cycle. | **REPORTED** — Xue et al., *PRL* (2026), [arXiv:2511.04028](https://arxiv.org/abs/2511.04028); construction from Felce & Vedral, *PRL* **125**, 070603 (2020) |
-| That total-ordering protocols are substantially a prosthesis for non-associative arithmetic, and that the arbitrariness Lamport noted is the signature of modelling an angular quantity on a line. | **ARGUMENT** — our reading |
-| That exact arithmetic removes the need for quantum hardware; that any single manifold is the geometry of the universe. | **NOT KNOWN** — never claimed |
+The fleet measurement alongside it: nine cells, the same 64 events, nine arrival orders, on a population where large balances and small increments share one stream — **one result exact (`−13494202421495/934495065504`), six in double**, spanning 84% of the true value. Same nine orders on 64 small integers, where the double has nothing to round: both give one.
 
 ```
 ARM 1 float false positives           3 of 9
@@ -149,12 +150,19 @@ ARM 7 sequences / orientations / line  9 / 1 / 1
 ARM 8 switch moved / definite moved   9 / 0 of 9 settings
 ARM 8 largest energy moved            -1/18 at z = 1/2
 ARM 9 double lost the physics         7 of 22, first at 1 - 10^-16
+ARM 10 horizons half/single/double    10^-4 / 10^-8 / 10^-16, exact NONE
 TERMINAL                              ORDER_IS_AN_ARTEFACT_OF_THE_ARITHMETIC
 
-sha256 = 7f14484bc973503f5de0276cf1bb37ec8c8ee422730f631b565e8ca460958570
+sha256 = 7e5d40d56faaa936877a3d6ad9707637106426c4785258079be9e29ece2eb40f
 ```
 
-Every exact figure here is re-derived by a separately written arbitrary-precision implementation: **75 of 75 agree, 0 diverge.** That checker carries two control arms — a switch value at a setting the program never runs, and a fold value altered in its last digit — and reports both correctly absent, so it is discriminating rather than merely agreeable.
+Every exact figure is re-derived by a separately written arbitrary-precision implementation: **75 of 75 agree, 0 diverge.** That checker carries two control arms — a switch value at a setting the program never runs, and a fold value altered in its last digit — and reports both correctly absent.
+
+## What is settled here, and what is not
+
+**Settled, and not by argument.** Exact-integer evaluation of this physics has no horizon: it returns the same fraction at every rung, on every machine, and the seal re-derives from published bytes. Floating point does not, at any width. Those are the tables above and they are reproducible in one command by anyone.
+
+**Not settled, and we do not claim it.** This does **not** make quantum hardware unnecessary — a two-level system under two fully thermalising channels is small enough to write in closed form, which is precisely *why* it can be a fraction, and nothing here is evidence in either direction about a state space that cannot be. We did **not** do the experiment; the bench, the anomalous flow and the Otto cycle are Xue et al.'s, their demonstration is proof-of-principle, and it does not bypass the second law — the control qubit's coherence is a thermodynamic resource that has to be paid for. And we have **not** identified the geometry of the universe: the cut arm measures that a compact phase coordinate carries an invariant a scalar line cannot, which is a statement about a class. Which member is the right one is not answered here.
 
 ## Reproduce
 
@@ -164,11 +172,11 @@ cd uum8dSolarResearch
 swiftc -O reproduce/ico-causal-order-shear.swift -o /tmp/ico && /tmp/ico
 ```
 
-No account, no key, no corpus, no network. The exact integers are decimal strings with no fixed width — there is no `Int128` and no platform-specific type, because the build host has one and the cells do not, and a law that is one type here and another there is two laws. Under a fixed width this program trapped at the third rung of its own ladder while every answer was small; a ceiling inside an instrument that measures where floating point runs out is the same defect wearing a different width. Swapping the integer representation reproduced every other arm byte-for-byte.
+No account, no key, no corpus, no network, 0.13 seconds. The exact integers are decimal strings with no fixed width — no `Int128`, no platform-specific type, because the build host has one and the cells do not and a law that is one type here and another there is two laws. Under a fixed width this program trapped at the third rung of its own ladder while every answer was small; a ceiling inside an instrument that measures where floating point runs out is the same defect wearing a different width. Swapping the integer representation reproduced every other arm byte-for-byte.
 
-**One thing is not yet measured:** a run on a cell. The Linux host available here carries no Swift toolchain, so what is claimed is that the program has no platform-dependent arithmetic — checkable by reading it — not that a cell has executed it.
+**Not yet measured:** a run on a cell. The Linux host available here carries no Swift toolchain, so what is claimed is that the program has no platform-dependent arithmetic — checkable by reading it — not that a cell has executed it.
 
-The float arm is the object under measurement and lives in the functions named `float…` and `runSwitchFloat`.
+The float arm is the object under measurement and lives in the functions named `float…`, `runSwitchFloat` and `switchAnomalyF16/32/64`.
 
 ## Rights — source-available, not open-source
 

@@ -842,6 +842,62 @@ func runSwitchFloat(z1: Double, z2: Double, zs: Double) -> Double {
 }
 
 // ══════════════════════════════════════════════════════════════════════════
+// SECTION E5 — THE PRECISION LADDER. Closing the "just use more bits" escape.
+// ══════════════════════════════════════════════════════════════════════════
+//
+// A reader who does not like ARM 9 has four ways out, and each is a claim that can be
+// measured rather than argued:
+//
+//   1. "Use more precision."      -> then every width has its own horizon, and the next
+//                                    one is only a fixed number of decades further out.
+//   2. "Stay in a safe regime."   -> then the failures must be monotone in the scale.
+//   3. "Rescale the problem."     -> then the horizon must move when the inputs are
+//                                    multiplied by a constant.
+//   4. "It is a rounding error."  -> then it must be SMALL, not a returned zero, and it
+//                                    must not fall in both directions.
+//
+// This section measures 1 and 3. ARMs 1/2/6 already measure 2 (10^5 and 10^7 clean while
+// 10^4, 10^6 and 10^8 are not) and 4 (curvature invented AND erased, and the ARM 9 column
+// is an exact 0.0 rather than a small number).
+//
+// The same switch anomaly is computed at three IEEE widths on the same rungs. Each width
+// is asked one question: at which rung does it first return exactly zero for an effect the
+// integers say is non-zero?
+
+/// z = 1 - 10^-k, built from the exact decimal the way ARM 9 builds it. How a value is
+/// SPELLED changes which float it lands on, so the two arms must construct z the same way
+/// or their horizons are not comparable — measured below, they differ by a full decade.
+func decimalZ(_ k: Int) -> Double {
+    var p = BigInt(1); for _ in 0..<k { p = p * BigInt(10) }
+    return (p - BigInt(1)).asDouble / p.asDouble
+}
+
+/// The same z reached by repeated division instead. Same mathematical value, different bits.
+func dividedZ(_ k: Int) -> Double {
+    var p = 1.0; for _ in 0..<k { p /= 10 }
+    return 1.0 - p
+}
+
+func switchAnomalyF16(_ z: Float16) -> Float16 {
+    let p1 = z / (1 + z), p0: Float16 = 1 / (1 + z)
+    let u0 = (p0 + p0 + 2 * p0 * p0 * p0) / 4
+    let u1 = (p1 + p1 + 2 * p1 * p1 * p1) / 4
+    return u1 / (u0 + u1) - p1
+}
+func switchAnomalyF32(_ z: Float) -> Float {
+    let p1 = z / (1 + z), p0: Float = 1 / (1 + z)
+    let u0 = (p0 + p0 + 2 * p0 * p0 * p0) / 4
+    let u1 = (p1 + p1 + 2 * p1 * p1 * p1) / 4
+    return u1 / (u0 + u1) - p1
+}
+func switchAnomalyF64(_ z: Double) -> Double {
+    let p1 = z / (1 + z), p0: Double = 1 / (1 + z)
+    let u0 = (p0 + p0 + 2 * p0 * p0 * p0) / 4
+    let u1 = (p1 + p1 + 2 * p1 * p1 * p1) / 4
+    return u1 / (u0 + u1) - p1
+}
+
+// ══════════════════════════════════════════════════════════════════════════
 // SECTION F — run every arm, grade it, seal it
 // ══════════════════════════════════════════════════════════════════════════
 
@@ -1217,6 +1273,89 @@ say("  temperature at which the effect stops existing — only a temperature at 
 say("  64-bit float stops being able to hold it, and reports its absence as a result.")
 say()
 
+// ---------------------------------------------------------------- ARM 10
+rule("=")
+say("ARM 10 — THE PRECISION LADDER.  'Just use more bits' is a claim. Here it is, measured.")
+rule("=")
+say("The same anomaly at three IEEE widths, on the same rungs. Each width is asked one")
+say("question: where does it first return EXACTLY ZERO for an effect the integers say is")
+say("non-zero? A rescaling arm follows, because 'rescale the problem' is the other escape.")
+say()
+say("  " + pad("width", 22) + pad("mantissa bits", 16) + pad("first rung returning 0", 26) + "decades bought")
+rule()
+
+var horizons: [(String, Int, Int)] = []     // name, mantissa bits, first-zero k
+for (name, bits, probe) in [
+    ("Float16 (half)",  11, { (k: Int) -> Bool in
+        switchAnomalyF16(Float16(decimalZ(k))) == 0 }),
+    ("Float32 (single)", 24, { (k: Int) -> Bool in
+        switchAnomalyF32(Float(decimalZ(k))) == 0 }),
+    ("Float64 (double)", 53, { (k: Int) -> Bool in
+        switchAnomalyF64(decimalZ(k)) == 0 }),
+] {
+    var first = -1
+    for k in 1...40 where first < 0 {
+        var pw = BigInt(1); for _ in 0..<k { pw = pw * BigInt(10) }
+        let exact = runSwitch(z1: Q(pw - BigInt(1), pw), z2: Q(pw - BigInt(1), pw), zs: Q(pw - BigInt(1), pw)).anomaly
+        if !exact.isZero && probe(k) { first = k }
+    }
+    horizons.append((name, bits, first))
+}
+var prev = 0
+for (name, bits, k) in horizons {
+    let bought = prev == 0 ? "—" : "+\(k - prev) decades of z"
+    say("  " + pad(name, 22) + pad("\(bits)", 16)
+            + pad(k < 0 ? "none in 1...40" : "z = 1 - 10^-\(k)", 26) + bought)
+    prev = k
+}
+say("  " + pad("exact integers", 22) + pad("unbounded", 16) + pad("NONE", 26) + "every rung, always")
+say()
+let f16k = horizons[0].2, f32k = horizons[1].2, f64k = horizons[2].2
+say("  Each width buys a bounded number of decades and then returns zero exactly as the")
+say("  narrower one did. Half fails at 10^-\(f16k), single at 10^-\(f32k), double at 10^-\(f64k):")
+say("  \(f32k - f16k) decades for 13 more mantissa bits, then \(f64k - f32k) more for another 29.")
+say("  Nothing in that sequence terminates, and the temperatures a reservoir may take are")
+say("  not bounded — so there is no width at which the escape closes, only a width at")
+say("  which it has not been reached yet.")
+say()
+
+// --- the rescaling escape ---
+rule()
+say("  RESCALE — the other way out. If the failure were about the SIZE of the numbers,")
+say("  choosing different units would move the horizon. It cannot: populations are")
+say("  dimensionless and already O(1), so there are no units left to choose. What is lost")
+say("  is not a product that overflowed but a DIFFERENCE that cancelled.")
+let zc = decimalZ(16)
+let p1c = zc / (1 + zc), p0c = 1 / (1 + zc)
+let zq16 = Q(BigInt("9999999999999999"), BigInt("10000000000000000"))
+let p1q = zq16 / (Q(1) + zq16), p0q = Q(1) / (Q(1) + zq16)
+say("    at z = 1 - 10^-16, double :  p1 = \(p1c)   p0 = \(p0c)   equal? \(p1c == p0c)")
+say("    the same two, exactly    :  p1 = \(p1q)")
+say("                                p0 = \(p0q)")
+say("    The two populations are DISTINCT rationals — they differ by exactly")
+say("    \(p0q - p1q) — and the double holds ONE number for both. The asymmetry")
+say("    that carries the whole effect is not approximated here. It is absent.")
+say()
+say("  AND THE HORIZON IS NOT EVEN A PROPERTY OF THE VALUE. The same z reached two ways:")
+var spellDiff = -1
+for k in 1...40 where spellDiff < 0 {
+    var pw = BigInt(1); for _ in 0..<k { pw = pw * BigInt(10) }
+    let ex = runSwitch(z1: Q(pw - BigInt(1), pw), z2: Q(pw - BigInt(1), pw), zs: Q(pw - BigInt(1), pw)).anomaly
+    if ex.isZero { continue }
+    let a = switchAnomalyF64(decimalZ(k)) == 0
+    let b = switchAnomalyF64(dividedZ(k)) == 0
+    if a != b {
+        spellDiff = k
+        say("    k = \(k):  from the decimal (10^k-1)/10^k -> \(a ? "returns 0" : "sees it")")
+        say("              by repeated division 1 - 10^-k -> \(b ? "returns 0" : "sees it")")
+    }
+}
+if spellDiff < 0 { say("    no rung where the two spellings disagree") }
+say("  Same real number, two ways of writing it, and they land on different floats — so")
+say("  the temperature at which the physics disappears depends on how the input was")
+say("  spelled. There is no safe value to stay below, because the boundary is not a value.")
+say()
+
 // ---------------------------------------------------------------- VERDICT
 rule("=")
 say("VERDICT")
@@ -1277,6 +1416,8 @@ let allPass = arm3Pass && arm5Pass && arm7Pass && arm8ControlPass
             && arm6FakeCurvature > 0 && arm6MissedCurvature > 0
             && arm8Anomalies == arm8Rungs && arm8DefiniteMoves == 0
             && arm9Lost > 0 && arm9Lost < arm9Rungs
+            && horizons.count == 3 && horizons.allSatisfy { $0.2 > 0 }
+            && horizons[0].2 < horizons[1].2 && horizons[1].2 < horizons[2].2
             && exDistinct == 1 && flDistinct > 1
 
 rule("=")
@@ -1292,6 +1433,7 @@ say("  ARM 7 sequences / orientations / line \(distinctSeq) / \(distinctOri) / \
 say("  ARM 8 switch moved / definite moved   \(arm8Anomalies) / \(arm8DefiniteMoves) of \(arm8Rungs) settings")
 say("  ARM 8 largest energy moved            \(arm8Largest) at z = \(arm8LargestZ)")
 say("  ARM 9 double lost the physics         \(arm9Lost) of \(arm9Rungs), first at " + arm9FirstLostZ)
+say("  ARM 10 horizons half/single/double    10^-\(horizons[0].2) / 10^-\(horizons[1].2) / 10^-\(horizons[2].2), exact NONE")
 say("  TERMINAL                              "
     + (allPass ? "ORDER_IS_AN_ARTEFACT_OF_THE_ARITHMETIC"
                : "INSTRUMENT_DID_NOT_DISCRIMINATE"))

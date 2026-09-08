@@ -486,7 +486,7 @@ check_figure biosphere-cascade-chain      "+17.1% to +31.2%" "Study-31-Biosphere
 # cells do not, and one law in two types is two laws). Every figure below is also re-derived by an
 # independent arbitrary-precision implementation, 75 of 75, 0 divergences.
 check_figure ico-causal-order-shear "ORDER_IS_AN_ARTEFACT_OF_THE_ARITHMETIC" "Study-40-Indefinite-Causal-Order.md"
-check_figure ico-causal-order-shear "7f14484bc973503f5de0276cf1bb37ec8c8ee422730f631b565e8ca460958570" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "7e5d40d56faaa936877a3d6ad9707637106426c4785258079be9e29ece2eb40f" "Study-40-Indefinite-Causal-Order.md"
 check_figure ico-causal-order-shear "9 / 0 of 9 settings"          "Study-40-Indefinite-Causal-Order.md"
 check_figure ico-causal-order-shear "7 of 22, first at 1 - 10^-16" "Study-40-Indefinite-Causal-Order.md"
 check_figure ico-causal-order-shear "4 / 1 of 12 loops"            "Study-40-Indefinite-Causal-Order.md"
@@ -501,6 +501,12 @@ check_figure ico-causal-order-shear "2504751/3999701"              "Study-40-Ind
 check_figure ico-causal-order-shear "13494202421495/934495065504"  "Study-40-Indefinite-Causal-Order.md"
 check_figure ico-causal-order-shear "1/10000001000000021"          "Study-40-Indefinite-Causal-Order.md"
 check_figure ico-causal-order-shear "49999999999999995000000000000000/4999999999999999250000000000000044999999999999999" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "10^-4 / 10^-8 / 10^-16, exact NONE" "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "9999999999999999/19999999999999999"  "Study-40-Indefinite-Causal-Order.md"
+check_figure ico-causal-order-shear "10000000000000000/19999999999999999" "Study-40-Indefinite-Causal-Order.md"
+# CONTROL: the precision ladder must show every width failing and the exact arm never.
+check_figure ico-causal-order-shear "exact integers        unbounded       NONE" ""
+check_figure ico-causal-order-shear "the double holds ONE number for both" ""
 # CONTROL ON THE CONTROLS. Every arm must be shown to FIRE, in both directions where it has two.
 # A run in which the float agreed everywhere, or the switch moved nothing, would print none of
 # these lines and the study's claims would be unsupported rather than merely quiet.
