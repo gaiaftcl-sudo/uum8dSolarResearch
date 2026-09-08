@@ -45,9 +45,82 @@
 //   117,968,246,332,668 in total.  No sampling.  No seeding.  No cutoff inside
 //   the computation.  The reporting threshold is applied AFTER the arithmetic,
 //   to an already-published distribution, so a reader can re-make that choice.
-//   These two products are also computed by the program at run time and printed
-//   into the transcript, so the comment cannot drift away from the arithmetic
-//   without the transcript disagreeing with it.
+//
+//   AND THE PUBLISHED COMPLETENESS FIGURE IS THE WORK, NOT THE INPUT SIZES.
+//   Until 2026-09-07 this program printed 5,165,782 x 11,418,237 into the
+//   transcript and called it completeness.  That product is a restatement of the
+//   two file sizes: it is computed from the parsed inputs and is IDENTICAL
+//   whatever the screen then did.
+//
+//   THE POSITIVE CONTROL, MEASURED HERE RATHER THAN QUOTED, with its recipe so
+//   anyone can repeat it.  Take the PRE-REPAIR source and restrict FIVE call
+//   sites to the first 400 of the 20,431 proteins — the real screen, the null
+//   screen, both deep-null screens, and the scalar re-verification:
+//
+//     sed -e 's|screen(qSeq, allProt,|screen(qSeq, Array(allProt.prefix(400)),|' \
+//         -e 's|screen(nullQ, allProt,|screen(nullQ, Array(allProt.prefix(400)),|' \
+//         -e 's|screen(deepQ, allProt,|screen(deepQ, Array(allProt.prefix(400)),|' \
+//         -e 's|screen(deepQN, allProt,|screen(deepQN, Array(allProt.prefix(400)),|' \
+//         -e 's|scalarOverProteins(qSeq\[qi\], allProt,|scalarOverProteins(qSeq[qi], Array(allProt.prefix(400)),|'
+//
+//   That build runs in 78 seconds instead of 35 minutes and:
+//     * EXITS 0 and SEALS — 93145f1ce7d0ae2064f2164461a323af90392992da45c6bd6bb6b5dfb589d0c8
+//     * passes 22 of 22 self-test arms
+//     * prints "every query against every reference protein, no exceptions"
+//     * prints "dynamic programming cells, real corpus:  58984123166334" —
+//       the IDENTICAL figure the complete run prints
+//     * and every published figure in it is WRONG: maximum 84 against the true
+//       90, sum of maxima 3,668,659 against the true 4,556,252, floor 35 against 45, sign split 36,275 / 36,047 against 36,128 / 36,113.
+//
+//   The truncation has to be CONSISTENT to get that far, and that is itself worth
+//   recording: truncating only the four screens and leaving the scalar
+//   re-verification at full scope is caught, by the re-verification, with 7 of 15
+//   published answers disagreeing.  The gate that caught it was not the
+//   completeness gate and was not looking for this.  So the old figure was not
+//   defenceless — it was defended by an instrument aimed at something else, which
+//   is exactly the state in which a defect survives a review.
+//
+//   A claim that cannot fail is not a claim.
+//
+//   The figure is now ACCUMULATED INSIDE kernelBlock, one addition per protein
+//   visited, as realLanes * m * proteinLength, together with a query-protein
+//   VISIT counter incremented on the same line.  Both are summed per block and
+//   returned by the screen, and the run REFUSES before any seal unless they
+//   equal the complete product exactly.  A screen that skips proteins, skips
+//   queries or shortens either now reports a SMALLER number and refuses.  The
+//   discrimination is demonstrated, not argued: a deliberately truncated build
+//   is run in validate-homology.sh and its refusal is required.
+//
+// ---------------------------------------------------------------------------
+// AND NEITHER IS A CALL THAT CANNOT FAIL.  "=== THE ANSWER ===" used to publish
+// three distributions, a paired sign split and a control, and then go straight to
+// what the study does not measure — leaving the reader to infer the answer from
+// four tables.  It now STATES the answer.  The danger in doing that is obvious
+// and is the same one: a paragraph that says SAME and EXCEEDS and COIN whatever
+// the numbers did would be the completeness defect reintroduced as prose.
+//
+// So every direction word in the call is computed by direction(), the mode by
+// modeOf(), the resolution floor by smallestK(), and WHICH BRANCH of the call is
+// printed by a count of the three comparisons.  A24 exercises direction() and
+// modeOf() in all three branches.  And the OTHER BRANCH OF THE CALL HAS BEEN
+// OBSERVED — not reasoned about.  Build this file with the same five call sites
+// restricted to 400 proteins as above and with the two requireComplete() calls
+// commented out, run it, and the transcript prints:
+//
+//     (1) the real maximum EXCEEDS the null's:  84 against 82
+//     (2) the paired sign leans to the REAL side:  36275 above own shuffle, 36047 below
+//     (3) the deep-null candidates come back ABOVE their selection-matched control:
+//         855555 ppm against 802197 ppm
+//     Toward a signal: 3 of 3.  Against: 0 of 3.  Level: 0 of 3.
+//     A SEQUENCE-LEVEL SIGNAL SURVIVES ALL THREE COMPARISONS.  ...
+//     84 sits ABOVE the null's own maximum of 82, so it stands outside the range
+//     its own permuted residues reach.
+//
+// All three direction words flipped, the mode moved from 57 to 45, and the call
+// printed its other branch.  That is a demonstration on real bytes that the
+// sentence follows the measurement.  The 400-protein answer is of course WRONG —
+// that is why requireComplete() has to be disabled to see it, and why the shipped
+// program refuses it.
 //
 // ---------------------------------------------------------------------------
 // THE ALGORITHM, and why it is exact rather than merely fast.
@@ -65,6 +138,40 @@
 //   exactness is a real argument; measured here at 569 MCUPS/core against 8,874
 //   MCUPS/core for the inter-sequence form.  The faster kernel is also the one
 //   with the shorter correctness proof, so there was nothing to trade.
+//
+//   WHAT THE KERNEL COMPILES TO, and the SCOPE of that claim, which is the whole
+//   correction.  The builder's note read "0 bl, 6 smax.16b in the kernel".  That
+//   is true of the HOT INNER LOOP and false of kernelBlock, and the two are not
+//   the same object: the loop is 52 instructions and the function is 417.
+//   Re-measured 2026-09-07 on the built binary with otool -tvV.  NO ADDRESS IS
+//   QUOTED HERE, deliberately: addresses move with every build, and a comment
+//   naming one becomes a stale pointer within a day.  The inner loop is found
+//   instead by its own structure — the unique backward branch inside kernelBlock
+//   whose span is between 20 and 100 instructions — which re-finds it on any
+//   build:
+//
+//     hot inner loop (the `for _ in 0..<m` body, span 52):
+//       52 instructions — 24 smax.16b, 12 sub.16b, 6 ldp, 4 stp, 4 add.16b,
+//       subs, b.ne.  ZERO calls.  ZERO fmov.  Nothing that touches the FP unit.
+//     kernelBlock as a whole:
+//       417 instructions, 28 smax.16b, ZERO fmov, and FIVE bl — one memset per
+//       protein (the H/F clear) and four SIMD16<Int8>.min in the COLD
+//       per-protein tie update.  Four ldp/stp of d-registers, which are the
+//       callee-saved vector spills of the prologue and epilogue.
+//     the whole program image:
+//       ZERO floating-point ARITHMETIC instructions, and that adjective is
+//       load-bearing.  There are exactly TWO fmov in the entire image — `fmov
+//       w0, s0` inside the specialised SIMD16<Int8>.min, and `fmov x0, d0`
+//       inside ScreenResult's value-witness copy.  Both move BITS between the
+//       vector and general register files; neither interprets its operand as a
+//       float.  A sweep that counts fmov as floating-point returns 2, not 0, and
+//       saying "zero floating-point instructions anywhere in the image" without
+//       that qualification is a claim this build does not support.
+//
+//   The distinction matters because "0 bl in the kernel" invites the reader to
+//   believe there is no call anywhere in the per-protein path, and there are five.
+//   None of them is in the loop that runs 58,984,123,166,334 times, which is the
+//   thing the claim was actually about.
 //
 //   Blocks hold 64 queries OF EQUAL LENGTH, so there is no padding inside a
 //   block and therefore no masking of pad lanes — the last block of each length
@@ -86,16 +193,32 @@
 //     and s <= 11 (the largest BLOSUM62 entry, W:W).  E and F are derived from H
 //     by subtraction and are bounded below by -12, so they never wrap.
 //
-//     Suppose the TRUE optimal score for some query exceeds 116.  Consider the
-//     first cell along an optimal path whose true value exceeds 116.  All cells
-//     feeding it have true value <= 116, so no wrap has occurred anywhere in
-//     that region and every one of them is computed exactly.  That cell's own
-//     value is Hdiag + s <= 116 + 11 = 127, which fits, so it too is computed
-//     exactly and its value — greater than 116 — is written into the running
-//     maximum.  Therefore:
+//     THE QUANTIFIER IS EVALUATION ORDER, NOT AN OPTIMAL PATH.  This argument
+//     read "the first cell along an optimal path whose true value exceeds 116"
+//     until 2026-09-07.  That quantifier does not match the property the code
+//     has: the code does not know an optimal path, and "first along a path" is
+//     not a well-founded induction over the cells it actually evaluates.  The
+//     property it does have is over the order in which cells are computed, and
+//     that order is total and fixed: reference position j outer, query position
+//     i inner.  Every input to cell (i, j) — Hdiag from (i-1, j-1), the vertical
+//     E from (i-1, j), the horizontal F from (i, j-1) — is evaluated STRICTLY
+//     EARLIER in that order.  So:
+//
+//     Suppose some cell's true value exceeds 116.  Take the FIRST SUCH CELL IN
+//     EVALUATION ORDER.  Every cell evaluated before it has true value <= 116,
+//     so no wrap has occurred in any of them and every one of them is computed
+//     exactly.  Its three inputs are among those, so they are exact and <= 116;
+//     E and F are further <= 116 - 12 = 104 and >= -12.  Its own value is
+//     therefore max(0, Hdiag + s, E, F) <= 116 + 11 = 127, which fits in Int8,
+//     so it too is computed exactly, and its value — greater than 116 — is
+//     written into the running maximum by the very next instruction.  Therefore:
 //
 //         computed maximum <= 116  IMPLIES  no wrap occurred anywhere
 //                                   IMPLIES  computed maximum IS the true value.
+//
+//     The induction is over the evaluation order the kernel executes, which is
+//     the same order in the SIMD kernel and the scalar oracle, and each of the
+//     16 lanes is an independent instance of it.
 //
 //   The guard re-runs any query whose Int8 maximum reaches 100 in the exact
 //   Int32 scalar oracle.  100 is strictly inside the proven-safe bound of 116,
@@ -126,9 +249,19 @@
 //       E[i][j] = max(E[i-1][j] - 1, H[i-1][j] - 12)      gap in the reference
 //       F[i][j] = max(F[i][j-1] - 1, H[i][j-1] - 12)      gap in the query
 //       H[i][j] = max(0, H[i-1][j-1] + s(q_i, r_j), E[i][j], F[i][j])
-//   E and F are clamped at 0.  That clamp does not change any H, because H
-//   takes a max with 0 anyway, and it keeps E and F from drifting below the
-//   Int8 floor.  Both facts are checked against the Int32 scalar oracle in A6.
+//
+//   E AND F ARE NOT CLAMPED AT 0, and this comment said they were until
+//   2026-09-07.  Neither swPair, nor swPairMat, nor kernelBlock contains such a
+//   clamp; all three initialise E and F to 0 at the start of a reference and
+//   thereafter take max(prev - 1, H - 12) with nothing else in the max.  Since
+//   H >= 0 always, that expression is bounded BELOW BY EXACTLY -12 — H - 12 is
+//   at worst -12, and prev - 1 can only reach -12 from a value that was already
+//   >= -11.  So E and F live in [-12, 115] and cannot approach the Int8 floor.
+//   This is the standard Gotoh recurrence and it is what every published figure
+//   in this study was computed with; only the comment was wrong.  The COMMENT
+//   was the defect, not the code, and the repair is to describe the code.
+//   A6 checks the SIMD kernel against the Int32 scalar oracle cell for cell, so
+//   whatever E and F do, the two implementations are shown to do the same thing.
 //
 // TIE RULE, stated as required.  When two reference proteins attain the same
 // maximum for one query, the one appearing EARLIER IN THE REFERENCE FILE wins.
@@ -147,8 +280,25 @@
 //     to the first ancestor holding both corpus/proteins_validated.csv and
 //     raw/uniprot_human_reviewed.fasta.  A private path is not a public
 //     constant, and re-rooting the program is what the refusal arms in
-//     validate.sh do — they place the same binary somewhere else.
-//   * NO ARGV.  The program takes none; argv[0] is not read.
+//     validate-homology.sh do — they place the same binary somewhere else.
+//     (This read "validate.sh" until 2026-09-07.  validate.sh is a different
+//     script grading a different program — protein-novelty-exact — and contains
+//     no probe of this one; `grep -c peptide-homology validate.sh` returns 0.
+//     A comment naming the wrong validator is a stale pointer of exactly the
+//     kind this program spends its header cataloguing.)
+//   * THE MEASUREMENT PATH TAKES NO ARGV.  Run with no argument it performs the
+//     study; argv[0] is not read on that path.  EXACTLY ONE reserved argument
+//     exists, "--self-probe-zero-query", and it exists because self-test arm A20
+//     could not otherwise be a measurement: screen() refuses an empty query list
+//     by calling exit(2), which cannot be observed in-process, and fork() is
+//     unavailable in Swift on Darwin ("Please use threads or posix_spawn*()").
+//     A20 therefore spawns THIS SAME EXECUTABLE IMAGE with that one argument, and
+//     the child reaches the real call site — screen([], [], [], ...) — with a
+//     genuinely empty list.  A20 grades the child's exit code, its REASON line
+//     and the ABSENCE of a seal.  Any other argument is refused.  Before the
+//     repair A20 was arm("A20", ..., true, ...): a literal true, inside a
+//     self-test whose stated doctrine is that always-green and always-red are the
+//     same defect, counting toward the published arm total.
 //   * stdout is UNBUFFERED from the first statement, so an abnormal exit still
 //     leaves the published figures on disk rather than a zero-byte file.
 //   * EVERY exit path prints the pinned reference figures, before any file is
@@ -221,6 +371,33 @@ func refuse(_ reason: String) -> Never {
     print("REASON: \(reason)")
     print("NO SEAL EMITTED. No verdict is published on a refusal path.")
     exit(2)
+}
+
+// ---------------------------------------------------------------------------
+// THE ONE RESERVED ARGUMENT.  Dispatched HERE — after the pinned figures have
+// been printed, so the probe path carries them like every other path, and BEFORE
+// the study root is resolved or any file is opened, so the child needs no inputs
+// and answers in milliseconds.
+//
+// This is the real call site, reached with a real empty list, in the real binary.
+// A test of a seam that screen() might or might not call is not a test of
+// screen(); a subprocess that reaches screen() is.
+// ---------------------------------------------------------------------------
+let SELF_PROBE_ZERO_QUERY = "--self-probe-zero-query"
+// The seal marker lives in ONE place, because A20 greps a child process for it.
+// A detector spelt separately from the thing it detects drifts: the first version
+// of A20 looked for "SEAL" and matched the refusal path's own
+// "NO SEAL EMITTED", so a correct refusal read as a seal and the arm failed.
+let SEAL_MARKER = "SEAL sha256(transcript) = "
+do {
+    let argv = CommandLine.arguments
+    if argv.count == 2 && argv[1] == SELF_PROBE_ZERO_QUERY {
+        _ = screen([], [], [], "self-probe-zero-query")
+        refuse("the zero-query self-probe RETURNED. screen() answered an empty query list instead of refusing it, which is the defect this probe exists to detect.")
+    }
+    if argv.count > 1 {
+        refuse("this program takes no argument on its measurement path. The only argument it recognises is \(SELF_PROBE_ZERO_QUERY), which self-test arm A20 spawns against this same image; \(argv.count - 1) other argument(s) were given.")
+    }
 }
 
 func nowNs() -> Int {
@@ -335,19 +512,38 @@ struct SHA256Exact {
 // temporary tree, but launched from a shell sitting inside the real study tree,
 // finds the real inputs through the CWD start and runs the whole study.
 //
-// That is not hypothetical.  It is what happened the first time validate.sh ran
-// its refusal arms: the arm asserting "no study root anywhere" ran the complete
+// That is not hypothetical.  It is what happened the first time this program's
+// refusal arms were run (they lived in validate.sh then and live in
+// validate-homology.sh now): the arm asserting "no study root anywhere" ran the complete
 // 39-minute computation at 431% CPU instead of refusing in milliseconds, and the
 // same arm had PASSED by hand ten minutes earlier only because that shell's
 // working directory happened to lie outside the tree.  Same binary, same probe,
 // same assertion, opposite result, decided by ambient state the arm never named.
-// validate.sh now sets the working directory for every probe invocation.
+// validate-homology.sh now sets the working directory for every probe invocation:
+// every probe runs inside `( cd "$dir" && ./reproduce/probe )`.
 // ---------------------------------------------------------------------------
+enum Layout {
+    // CORRECTED 2026-09-07. The predicate below looked for corpus/ and raw/ as SIBLINGS, which is
+    // the scratchpad layout this program was written in. The repository ships the same bytes one
+    // level deeper, at corpus/eric/ and corpus/eric/raw/, so a stranger cloning the repo reached
+    // the refusal path and never the screen: the program could not find its own corpus in the tree
+    // it ships in. Both layouts are accepted now and the resolved pair is recorded, so a reader can
+    // see which one answered. A resolver that knows only the author.s layout is a private path
+    // wearing a different name.
+    static var CORPUS_REL = "/corpus/proteins_validated.csv"
+    static var REF_REL    = "/raw/uniprot_human_reviewed.fasta"
+}
+
 func findRoot() -> String? {
     let fm = FileManager.default
     func holds(_ d: String) -> Bool {
-        return fm.fileExists(atPath: d + "/corpus/proteins_validated.csv")
-            && fm.fileExists(atPath: d + "/raw/uniprot_human_reviewed.fasta")
+        for (c, r) in [("/corpus/proteins_validated.csv", "/raw/uniprot_human_reviewed.fasta"),
+                       ("/corpus/eric/proteins_validated.csv", "/corpus/eric/raw/uniprot_human_reviewed.fasta")] {
+            if fm.fileExists(atPath: d + c) && fm.fileExists(atPath: d + r) {
+                Layout.CORPUS_REL = c; Layout.REF_REL = r; return true
+            }
+        }
+        return false
     }
     var starts: [String] = []
     var size: UInt32 = 8192
@@ -478,7 +674,7 @@ func swPair(_ q: [Int8], _ r: [Int8]) -> Int32 {
 // reference proteome, loaded and hashed
 // ---------------------------------------------------------------------------
 progress("hashing reference fasta")
-guard let refData = FileManager.default.contents(atPath: ROOT + "/raw/uniprot_human_reviewed.fasta") else {
+guard let refData = FileManager.default.contents(atPath: ROOT + Layout.REF_REL) else {
     refuse("reference file could not be read under the resolved study root")
 }
 let refSha = SHA256Exact.hexOf(refData)
@@ -555,6 +751,33 @@ if protStartArr.count != N_PROT + 1 { refuse("protein boundary table malformed")
 if protHasU.count != N_PROT { refuse("U-flag table malformed") }
 let uProteinIdx: [Int] = (0..<N_PROT).filter { protHasU[$0] }
 
+// ---------------------------------------------------------------------------
+// THE RESOLUTION LIMIT'S ARITHMETIC, computed from this proteome's own residue
+// composition rather than quoted.  Integer milli-units by integer division; no
+// float anywhere.  s(a,a) is the score a PERFECT identity earns per residue, so
+// the composition-weighted mean diagonal times k is what a perfect k-residue
+// match is worth against this reference.  U has no BLOSUM62 diagonal of its own
+// (it is scored through the X row) and is excluded from the weighting, which is
+// why diagResidues is reported alongside the mean.
+// ---------------------------------------------------------------------------
+var diagWeighted = 0
+var diagResidues = 0
+for a in 0..<20 {
+    let c = refAlphaCount[Int(AA[a])]
+    diagWeighted += c * Int(B62[a * NA + a])
+    diagResidues += c
+}
+if diagResidues <= 0 { refuse("reference carries no standard residues; the composition-weighted diagonal is undefined") }
+let meanDiagMilli = diagWeighted * 1000 / diagResidues
+// the floor and ceiling of s(a,a) over the 20 standard letters, read from the
+// matrix rather than quoted: a perfect k-residue identity is bounded by these.
+var minDiag = Int(B62[0]), maxDiag = Int(B62[0])
+for a in 0..<20 {
+    let d = Int(B62[a * NA + a])
+    if d < minDiag { minDiag = d }
+    if d > maxDiag { maxDiag = d }
+}
+
 // unsigned copy of the encoded reference for the SIMD kernel
 var refU = [UInt8](repeating: 0, count: refSeq.count)
 for i in 0..<refSeq.count { refU[i] = UInt8(refSeq[i]) }
@@ -563,7 +786,7 @@ for i in 0..<refSeq.count { refU[i] = UInt8(refSeq[i]) }
 // corpus, loaded and hashed
 // ---------------------------------------------------------------------------
 progress("hashing corpus csv")
-guard let corpData = FileManager.default.contents(atPath: ROOT + "/corpus/proteins_validated.csv") else {
+guard let corpData = FileManager.default.contents(atPath: ROOT + Layout.CORPUS_REL) else {
     refuse("corpus file could not be read under the resolved study root")
 }
 let corpSha = SHA256Exact.hexOf(corpData)
@@ -669,7 +892,16 @@ struct ScreenResult {
     var score: [Int32]
     var protIdx: [Int32]
     var saturatedCount: Int
+    // COUNTED WORK, accumulated inside kernelBlock as it happens.  Not derived
+    // from the input sizes; a screen that skips anything reports less.
+    var cells: Int
+    var visits: Int
 }
+
+// COUNTERS, the two the kernel accumulates.  Indices are named so that a reader
+// of the transcript can find the line that increments the figure it is reading.
+let CTR_CELLS = 0
+let CTR_VISITS = 1
 
 @inline(never)
 func kernelBlock(_ m: Int,
@@ -678,16 +910,26 @@ func kernelBlock(_ m: Int,
                  _ protList: UnsafePointer<Int32>,
                  _ protStart: UnsafePointer<Int32>,
                  _ nProt: Int,
+                 _ realLanes: Int,
                  _ H: UnsafeMutablePointer<V>,
                  _ F: UnsafeMutablePointer<V>,
                  _ outScore: UnsafeMutablePointer<Int8>,
-                 _ outProt: UnsafeMutablePointer<Int32>) {
+                 _ outProt: UnsafeMutablePointer<Int32>,
+                 _ ctr: UnsafeMutablePointer<Int>) {
     var b0 = VZ, b1 = VZ, b2 = VZ, b3 = VZ
     for l in 0..<BLOCK { outProt[l] = -1 }
+    var cells = 0
+    var visits = 0
     let mG = m &* GROUPS
     for pi in 0..<nProt {
         let p = Int(protList[pi])
         let s = Int(protStart[p]), e = Int(protStart[p &+ 1])
+        // THE COUNT HAPPENS HERE, on the protein this pass is about to align,
+        // inside the loop that does the work.  realLanes is the number of
+        // DISTINCT queries this block carries; pad lanes repeat a query already
+        // present and their work is discarded, so they are not counted.
+        cells &+= realLanes &* m &* (e &- s)
+        visits &+= realLanes
         for i in 0..<mG { H[i] = VZ; F[i] = VZ }
         var m0 = VZ, m1 = VZ, m2 = VZ, m3 = VZ
         for j in s..<e {
@@ -723,6 +965,8 @@ func kernelBlock(_ m: Int,
         outScore[l] = b0[l]; outScore[LANES &+ l] = b1[l]
         outScore[2*LANES &+ l] = b2[l]; outScore[3*LANES &+ l] = b3[l]
     }
+    ctr[CTR_CELLS] = cells
+    ctr[CTR_VISITS] = visits
 }
 
 // scalar oracle over a protein list, parallel across proteins, with the same
@@ -811,6 +1055,7 @@ func screen(_ queries: [[Int8]], _ protList: [Int32], _ mat: [Int8], _ label: St
     }
     // blocks of 64 queries of EQUAL length
     var blocks: [[Int]] = []
+    var blockReal: [Int] = []      // DISTINCT queries in the block; the rest are pad repeats
     var i = 0
     while i < n {
         let L = queries[order[i]].count
@@ -820,6 +1065,7 @@ func screen(_ queries: [[Int8]], _ protList: [Int32], _ mat: [Int8], _ label: St
         while k < j {
             let hi = min(j, k + BLOCK)
             var b = Array(order[k..<hi])
+            blockReal.append(hi - k)
             while b.count < BLOCK { b.append(b[0]) }   // pad by repetition; duplicate lanes discarded
             blocks.append(b)
             k = hi
@@ -833,9 +1079,11 @@ func screen(_ queries: [[Int8]], _ protList: [Int32], _ mat: [Int8], _ label: St
     let done = UnsafeMutablePointer<Int32>.allocate(capacity: 1); done.pointee = 0
     defer { done.deallocate() }
 
+    var ctrPerBlock = [Int](repeating: -1, count: nB * 2)
     scoreOut.withUnsafeMutableBufferPointer { so in
       protOut.withUnsafeMutableBufferPointer { po in
         satFlag.withUnsafeMutableBufferPointer { sf in
+         ctrPerBlock.withUnsafeMutableBufferPointer { cb in
           refU.withUnsafeBufferPointer { rp in
             protStartArr.withUnsafeBufferPointer { psp in
               protList.withUnsafeBufferPointer { plp in
@@ -867,9 +1115,10 @@ func screen(_ queries: [[Int8]], _ protList: [Int32], _ mat: [Int8], _ label: St
                           os.withUnsafeMutableBufferPointer { osp in
                             op.withUnsafeMutableBufferPointer { opp in
                               kernelBlock(m, pp.baseAddress!, rp.baseAddress!, plp.baseAddress!,
-                                          psp.baseAddress!, protList.count,
+                                          psp.baseAddress!, protList.count, blockReal[bi],
                                           hp.baseAddress!, fp.baseAddress!,
-                                          osp.baseAddress!, opp.baseAddress!)
+                                          osp.baseAddress!, opp.baseAddress!,
+                                          cb.baseAddress! + bi * 2)
                             }
                           }
                         }
@@ -891,8 +1140,20 @@ func screen(_ queries: [[Int8]], _ protList: [Int32], _ mat: [Int8], _ label: St
               }
             }
           }
+         }
         }
       }
+    }
+    // Sum the counters the kernel wrote.  A block whose counter was never
+    // written still reads -1, so a block that did not run cannot look like a
+    // block that did zero work.
+    var cells = 0, visits = 0
+    for bi in 0..<nB {
+        let c = ctrPerBlock[bi * 2 + CTR_CELLS], v = ctrPerBlock[bi * 2 + CTR_VISITS]
+        if c < 0 || v < 0 {
+            refuse("screen '\(label)' block \(bi) of \(nB) left its work counters unwritten. A block that never ran must not be indistinguishable from a block that did no work.")
+        }
+        cells += c; visits += v
     }
     var satN = 0
     for qi in 0..<n where satFlag[qi] {
@@ -901,7 +1162,26 @@ func screen(_ queries: [[Int8]], _ protList: [Int32], _ mat: [Int8], _ label: St
         scoreOut[qi] = s
         protOut[qi] = p
     }
-    return ScreenResult(score: scoreOut, protIdx: protOut, saturatedCount: satN)
+    return ScreenResult(score: scoreOut, protIdx: protOut, saturatedCount: satN,
+                        cells: cells, visits: visits)
+}
+
+// ---------------------------------------------------------------------------
+// COMPLETENESS, checked against the COUNTED work rather than asserted.
+// Called on every screen whose completeness is published.  It compares the
+// counters kernelBlock accumulated against the complete product; a screen that
+// covered fewer proteins, fewer queries or shorter sequences reports less and
+// this refuses.
+// ---------------------------------------------------------------------------
+func requireComplete(_ label: String, _ r: ScreenResult,
+                     _ nQ: Int, _ qResidues: Int, _ nProt: Int, _ refResidues: Int) {
+    let wantCells = qResidues * refResidues
+    let wantVisits = nQ * nProt
+    if r.cells != wantCells || r.visits != wantVisits {
+        note("  screen '\(label)' COUNTED cells \(r.cells) visits \(r.visits)")
+        note("  complete would be   cells \(wantCells) visits \(wantVisits)")
+        refuse("screen '\(label)' is INCOMPLETE. The kernel COUNTED \(r.cells) dynamic programming cells over \(r.visits) query-protein visits, one addition per protein actually visited. A complete screen of \(nQ) queries totalling \(qResidues) residues against \(nProt) proteins totalling \(refResidues) residues is \(wantCells) cells over \(wantVisits) visits. The counted work does not equal the complete work, so no completeness is claimed and no verdict is sealed. This figure is the work performed; it is NOT the product of the two input file sizes, which is identical whatever the screen did.")
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -1002,6 +1282,8 @@ do {
 // A6 SIMD block kernel == scalar oracle, on a synthetic mini-proteome
 var a6mismatch = 0
 var a6cases = 0
+// (cellsCounted, visitsCounted, cellsByHand, visitsByHand) per A6 block
+var a23observed: [(Int, Int, Int, Int)] = []
 do {
     var rng = SplitMix64(0x5DEECE66D)
     // synthetic proteome
@@ -1035,16 +1317,24 @@ do {
         var os = [Int8](repeating: 0, count: BLOCK)
         var op = [Int32](repeating: -1, count: BLOCK)
         var plist = [Int32](); for p in 0..<nSP { plist.append(Int32(p)) }
+        var ctr = [Int](repeating: -1, count: 2)
         prof.withUnsafeBufferPointer { pp in sU.withUnsafeBufferPointer { rp in
           plist.withUnsafeBufferPointer { plp in sStart.withUnsafeBufferPointer { ssp in
             H.withUnsafeMutableBufferPointer { hp in F.withUnsafeMutableBufferPointer { fp in
               os.withUnsafeMutableBufferPointer { osp in op.withUnsafeMutableBufferPointer { opp in
-                kernelBlock(m, pp.baseAddress!, rp.baseAddress!, plp.baseAddress!, ssp.baseAddress!,
-                            nSP, hp.baseAddress!, fp.baseAddress!, osp.baseAddress!, opp.baseAddress!)
+                ctr.withUnsafeMutableBufferPointer { cp in
+                  kernelBlock(m, pp.baseAddress!, rp.baseAddress!, plp.baseAddress!, ssp.baseAddress!,
+                              nSP, BLOCK, hp.baseAddress!, fp.baseAddress!,
+                              osp.baseAddress!, opp.baseAddress!, cp.baseAddress!)
+                }
               } }
             } }
           } }
         } }
+        // A23's evidence, gathered here where the synthetic proteome's sizes are
+        // known exactly: the counter must equal the hand product for this block.
+        a23observed.append((ctr[CTR_CELLS], ctr[CTR_VISITS],
+                            BLOCK * m * sSeq.count, BLOCK * nSP))
         for l in 0..<BLOCK {
             var truth: Int32 = 0
             var truthP: Int32 = -1
@@ -1209,9 +1499,8 @@ do {
 // comparison for a K/R-rich corpus, and it is checkable without any statistics.
 do {
     let poly = [Int8](repeating: code[Int(UInt8(ascii: "Q"))], count: 66)
-    var raw = [UInt8](repeating: UInt8(ascii: "Q"), count: 66)
+    let raw = [UInt8](repeating: UInt8(ascii: "Q"), count: 66)
     let sh = shuffled(poly, raw, 0)
-    raw[0] = raw[0]
     let mixed = qSeq[1]
     let mixedSh = shuffled(mixed, qSeqRaw[1], 0)
     arm("A22", "the paired null cancels COMPOSITION exactly, leaving only ORDER",
@@ -1233,12 +1522,16 @@ do {
     var H = [V](repeating: VZ, count: mG), F = H
     var os = [Int8](repeating: 0, count: BLOCK)
     var op = [Int32](repeating: -1, count: BLOCK)
+    var ctr = [Int](repeating: -1, count: 2)
     prof.withUnsafeBufferPointer { pp in refU.withUnsafeBufferPointer { rp in
       allProt.withUnsafeBufferPointer { plp in protStartArr.withUnsafeBufferPointer { ssp in
         H.withUnsafeMutableBufferPointer { hp in F.withUnsafeMutableBufferPointer { fp in
           os.withUnsafeMutableBufferPointer { osp in op.withUnsafeMutableBufferPointer { opp in
-            kernelBlock(m, pp.baseAddress!, rp.baseAddress!, plp.baseAddress!, ssp.baseAddress!,
-                        N_PROT, hp.baseAddress!, fp.baseAddress!, osp.baseAddress!, opp.baseAddress!)
+            ctr.withUnsafeMutableBufferPointer { cp in
+              kernelBlock(m, pp.baseAddress!, rp.baseAddress!, plp.baseAddress!, ssp.baseAddress!,
+                          N_PROT, 1, hp.baseAddress!, fp.baseAddress!,
+                          osp.baseAddress!, opp.baseAddress!, cp.baseAddress!)
+            }
           } }
         } }
       } }
@@ -1284,9 +1577,55 @@ do {
         String(letters.sorted()) == "ACDEFGHIKLMNPQRSTUVWY" && uCount == 36 && uProteinIdx.count == 25,
         "observed '\(String(letters.sorted()))', U occurs \(uCount) times in \(uProteinIdx.count) proteins")
 }
-// A20 a gate given nothing must not pass — demonstrated by construction
-arm("A20", "an empty query list is REFUSED by the screen", true,
-    "screen() refuses a zero-query call rather than returning an empty distribution; the refusal path is exercised by validate.sh under a re-rooted binary")
+// ---------------------------------------------------------------------------
+// A20  A GATE GIVEN NOTHING MUST NOT PASS — and until 2026-09-07 this arm was
+// arm("A20", ..., true, ...).  A literal true.  It could not fail, it counted
+// toward the published arm total, and its detail line asserted that the path was
+// "exercised by validate.sh under a re-rooted binary" — which validate-homology.sh
+// does not do: all four of its refusal arms refuse at the root walk or a digest
+// gate, before screen() is ever reached.  The behaviour was real; the arm was not
+// a measurement of it.
+//
+// It is now a measurement.  screen() refuses by calling exit(2), which cannot be
+// observed in-process, and fork() is unavailable in Swift on Darwin.  So this arm
+// SPAWNS THIS SAME EXECUTABLE IMAGE with the one reserved argument, and that child
+// reaches the real call site with a real empty list.  Graded on the child's exit
+// code, its REASON line, the ABSENCE of a seal, and — the other direction — the
+// presence of the pinned figures the child printed before refusing.
+// ---------------------------------------------------------------------------
+do {
+    var exePath = ""
+    var sz: UInt32 = 8192
+    var eb = [CChar](repeating: 0, count: Int(sz))
+    if _NSGetExecutablePath(&eb, &sz) == 0 { exePath = String(cString: eb) }
+    var ok = false
+    var detail = "executable path unavailable, so the probe could not be spawned"
+    if !exePath.isEmpty {
+        let proc = Process()
+        proc.executableURL = URL(fileURLWithPath: exePath)
+        proc.arguments = [SELF_PROBE_ZERO_QUERY]
+        let outPipe = Pipe()
+        proc.standardOutput = outPipe
+        proc.standardError = FileHandle.nullDevice
+        proc.standardInput = FileHandle.nullDevice
+        do {
+            try proc.run()
+            let d = outPipe.fileHandleForReading.readDataToEndOfFile()
+            proc.waitUntilExit()
+            let text = String(decoding: d, as: UTF8.self)
+            let cleanExit = (proc.terminationReason == .exit)
+            let code = Int(proc.terminationStatus)
+            let sawReason = text.contains("was given ZERO queries")
+            let sawFigures = text.contains("corpus rows       \(PIN_CORPUS_ROWS)")
+            let noSeal = !text.contains(SEAL_MARKER)
+            ok = cleanExit && code == 2 && sawReason && sawFigures && noSeal
+            detail = "a child of THIS image reached screen([], [], [], ...) at the real call site: exit \(cleanExit ? String(code) : "terminated by signal"), REASON line \(sawReason ? "present" : "ABSENT"), pinned figures \(sawFigures ? "printed" : "MISSING"), seal \(noSeal ? "absent" : "PRESENT"), \(d.count) bytes on stdout"
+        } catch {
+            detail = "the probe could not be spawned"
+        }
+    }
+    arm("A20", "an empty query list is REFUSED by the screen — EXERCISED, not asserted", ok, detail)
+}
 // A21 line-ending discipline, in BOTH directions.  This arm exists because the
 // first run of this program parsed the corpus to ZERO rows and said so only
 // because a count gate caught it: the corpus is CRLF, and Swift's
@@ -1306,6 +1645,105 @@ do {
         "corpus is CRLF (\(corpCRLFRows) CR-terminated lines = \(N_Q) rows + header) while the reference is LF-only (\(refCR) CR); the Character-based split returns \(naiveLines) line on the real corpus bytes, the byte-level parser returns \(qSeq.count) rows")
 }
 
+// ---------------------------------------------------------------------------
+// A23  THE WORK COUNTER IS AN INSTRUMENT AND MUST DISCRIMINATE.
+//
+// The published completeness figure is now the counter kernelBlock accumulates,
+// which is only worth more than the old product-of-file-sizes if it FALLS when
+// the work falls.  So this arm runs the same block twice over a synthetic
+// proteome of known dimensions — once over every protein, once over half of them
+// — and requires:
+//   * the full count equals the hand product exactly, in cells AND in visits;
+//   * the truncated count is STRICTLY SMALLER and equals ITS OWN hand product;
+//   * the same holds across the six query lengths A6 already ran.
+// Both branches must be non-empty, so neither is vacuous.
+// ---------------------------------------------------------------------------
+do {
+    var rng = SplitMix64(0xA23A23A23)
+    var sSeq = [Int8](); var sStart = [Int32]()
+    var lens = [Int]()
+    let nSP = 24
+    for _ in 0..<nSP {
+        sStart.append(Int32(sSeq.count))
+        let L = 30 + rng.below(90)
+        lens.append(L)
+        for _ in 0..<L { sSeq.append(Int8(rng.below(20))) }
+    }
+    sStart.append(Int32(sSeq.count))
+    var sU = [UInt8](repeating: 0, count: sSeq.count)
+    for i in 0..<sSeq.count { sU[i] = UInt8(sSeq[i]) }
+    let m = 41, mG = m * GROUPS
+    var qs = [[Int8]]()
+    for _ in 0..<BLOCK { var q = [Int8](); for _ in 0..<m { q.append(Int8(rng.below(20))) }; qs.append(q) }
+    var prof = [V](repeating: VZ, count: NA * mG)
+    for a in 0..<NA { for pos in 0..<m { for g in 0..<GROUPS {
+        var v = VZ
+        for l in 0..<LANES { v[l] = B62[Int(qs[g*LANES+l][pos]) * NA + a] }
+        prof[a*mG + pos*GROUPS + g] = v
+    } } }
+    func run(_ nUse: Int, _ lanes: Int) -> (Int, Int) {
+        var H = [V](repeating: VZ, count: mG), F = H
+        var os = [Int8](repeating: 0, count: BLOCK)
+        var op = [Int32](repeating: -1, count: BLOCK)
+        var ctr = [Int](repeating: -1, count: 2)
+        var plist = [Int32](); for p in 0..<nUse { plist.append(Int32(p)) }
+        prof.withUnsafeBufferPointer { pp in sU.withUnsafeBufferPointer { rp in
+          plist.withUnsafeBufferPointer { plp in sStart.withUnsafeBufferPointer { ssp in
+            H.withUnsafeMutableBufferPointer { hp in F.withUnsafeMutableBufferPointer { fp in
+              os.withUnsafeMutableBufferPointer { osp in op.withUnsafeMutableBufferPointer { opp in
+                ctr.withUnsafeMutableBufferPointer { cp in
+                  kernelBlock(m, pp.baseAddress!, rp.baseAddress!, plp.baseAddress!, ssp.baseAddress!,
+                              nUse, lanes, hp.baseAddress!, fp.baseAddress!,
+                              osp.baseAddress!, opp.baseAddress!, cp.baseAddress!)
+                }
+              } }
+            } }
+          } }
+        } }
+        return (ctr[CTR_CELLS], ctr[CTR_VISITS])
+    }
+    let half = nSP / 2
+    var residuesFull = 0; for L in lens { residuesFull += L }
+    var residuesHalf = 0; for p in 0..<half { residuesHalf += lens[p] }
+    let (cFull, vFull) = run(nSP, BLOCK)
+    let (cHalf, vHalf) = run(half, BLOCK)
+    let (cLane, vLane) = run(nSP, 1)
+    let fullExact  = cFull == BLOCK * m * residuesFull && vFull == BLOCK * nSP
+    let halfExact  = cHalf == BLOCK * m * residuesHalf && vHalf == BLOCK * half
+    let laneExact  = cLane == 1 * m * residuesFull && vLane == 1 * nSP
+    let fell       = cHalf < cFull && vHalf < vFull && cLane < cFull && vLane < vFull
+    var a6bad = 0
+    for (c, v, wc, wv) in a23observed where c != wc || v != wv { a6bad += 1 }
+    arm("A23", "the COUNTED-WORK figure DISCRIMINATES — it falls when the work falls",
+        fullExact && halfExact && laneExact && fell && a6bad == 0 && a23observed.count == 6,
+        "full \(nSP) proteins counted \(cFull) cells / \(vFull) visits = the hand product exactly; the SAME block over \(half) proteins counted \(cHalf)/\(vHalf), strictly smaller and equal to its own hand product; with 1 real lane instead of \(BLOCK) it counted \(cLane)/\(vLane); and the \(a23observed.count) A6 blocks over lengths 1,2,7,23,66,90 agree with their hand products in \(a23observed.count - a6bad) of \(a23observed.count). A completeness figure that cannot fall is the product of two file sizes wearing a counter's name.")
+}
+
+// ---------------------------------------------------------------------------
+// A24  THE CALL'S OWN VERDICT WORDS MUST DISCRIMINATE.
+//
+// "=== THE ANSWER ===" now states the call rather than leaving it to be inferred
+// from four tables, and every direction word in it is computed by direction()
+// and every mode by modeOf().  Those two functions are therefore part of the
+// sealed verdict, and a direction() that returned its first argument whatever
+// the inputs would make the call unfalsifiable in exactly the way the old
+// completeness figure was.  So both are exercised in ALL THREE branches, and the
+// mode's tie rule — highest count, lowest score on a tie of counts — is checked
+// on a constructed tie, because a mode is not defined without that rule.
+// ---------------------------------------------------------------------------
+do {
+    let up   = direction(2, 1, "U", "L", "D")
+    let lvl  = direction(1, 1, "U", "L", "D")
+    let down = direction(1, 2, "U", "L", "D")
+    let dirOK = up == "U" && lvl == "L" && down == "D"
+    let m1 = modeOf([(45, 3), (57, 9), (90, 1)])          // plain maximum
+    let m2 = modeOf([(45, 9), (57, 9), (90, 1)])          // count tie -> lowest score
+    let m3 = modeOf([(45, 1), (57, 2), (90, 40)])         // mode at the top of the range
+    let modeOK = m1.0 == 57 && m1.1 == 9 && m2.0 == 45 && m2.1 == 9 && m3.0 == 90 && m3.1 == 40
+    arm("A24", "the CALL's verdict words and mode rule DISCRIMINATE", dirOK && modeOK,
+        "direction() returns three DIFFERENT words on 2>1, 1=1 and 1<2 ('\(up)' '\(lvl)' '\(down)'), so a direction word in the sealed call is a reading rather than a constant; modeOf picks \(m1.0) from a plain maximum, \(m2.0) from a constructed count tie by the stated lowest-score rule, and \(m3.0) when the mode sits at the top of the range")
+}
+
 let ARMS = armPass + armFail
 note("SELF-TEST: \(armPass) of \(ARMS) arms pass")
 for l in armLines { note(l) }
@@ -1321,13 +1759,18 @@ let T_SELFTEST = nowNs()
 
 progress("real corpus screen: \(N_Q) queries x \(N_PROT) proteins")
 let realRes = screen(qSeq, allProt, B62, "real")
+requireComplete("real", realRes, N_Q, totalQResidues, N_PROT, refSeq.count)
+progress("real screen COUNTED \(realRes.cells) cells over \(realRes.visits) query-protein visits")
 let T_REAL = nowNs()
 
 progress("null screen: composition-matched shuffles")
 var nullQ = [[Int8]]()
 nullQ.reserveCapacity(N_Q)
 for i in 0..<N_Q { nullQ.append(shuffled(qSeq[i], qSeqRaw[i], 0)) }
+var nullQResidues = 0; for q in nullQ { nullQResidues += q.count }
 let nullRes = screen(nullQ, allProt, B62, "null")
+requireComplete("null", nullRes, N_Q, nullQResidues, N_PROT, refSeq.count)
+progress("null screen COUNTED \(nullRes.cells) cells over \(nullRes.visits) query-protein visits")
 let T_NULL = nowNs()
 
 // U-sensitivity: the 25 U-bearing proteins re-screened under U->C
@@ -1522,6 +1965,62 @@ for qi in deepSetN where (deepGEN[qi] ?? 0) == 0 { controlAboveOwnNull += 1 }
 let candPpm = deepSet.count > 0 ? candidatesAboveOwnNull * 1_000_000 / deepSet.count : 0
 let ctrlPpm = deepSetN.count > 0 ? controlAboveOwnNull * 1_000_000 / deepSetN.count : 0
 
+// ---------------------------------------------------------------------------
+// THE CALL'S VERDICT WORDS, COMPUTED.
+//
+// A transcript that prints "the two distributions are the SAME" and "the sign
+// test is a COIN" whatever the numbers did has the same defect the completeness
+// figure had: the sentence is green by construction.  So every direction word in
+// the call below is derived here from the measurement, and the call itself
+// branches on a count of clauses rather than on an author's summary.
+//
+// The three comparisons are independent of one another: (1) is the extreme of
+// the two distributions, (2) is the paired sign over all 78,680, (3) is the deep
+// null against a control that holds the SELECTION fixed.  A real sequence-level
+// signal has to survive all three; each one alone has a way of being wrong.
+// ---------------------------------------------------------------------------
+func direction(_ a: Int, _ b: Int, _ up: String, _ level: String, _ down: String) -> String {
+    return a > b ? up : (a == b ? level : down)
+}
+let c1word = direction(Int(realMax), Int(nullMax), "EXCEEDS", "EQUALS", "does NOT reach")
+let c1bound = direction(Int(realMax), Int(nullMax), "sits ABOVE", "EQUALS", "sits BELOW")
+let c2word = direction(greater, lesser, "to the REAL side", "NEITHER way", "to the NULL side")
+let c3word = direction(candPpm, ctrlPpm, "ABOVE", "LEVEL WITH", "BELOW")
+let signImbalance = greater > lesser ? greater - lesser : lesser - greater
+let signImbalancePpm = signImbalance * 1_000_000 / N_Q
+var clausesFor = 0, clausesAgainst = 0, clausesLevel = 0
+for (a, b) in [(Int(realMax), Int(nullMax)), (greater, lesser), (candPpm, ctrlPpm)] {
+    if a > b { clausesFor += 1 } else if a < b { clausesAgainst += 1 } else { clausesLevel += 1 }
+}
+
+// modes, by the deterministic rule: highest count, and on a tie of counts the
+// LOWEST score.  Stated because "the mode" is not defined without it.
+func modeOf(_ d: [(Int32, Int)]) -> (Int32, Int) {
+    var bs: Int32 = -1, bc = -1
+    for (s, c) in d { if c > bc || (c == bc && s < bs) { bs = s; bc = c } }
+    return (bs, bc)
+}
+let (realMode, realModeN) = modeOf(realDist)
+let (nullMode, nullModeN) = modeOf(nullDist)
+
+// THE RESOLUTION FLOOR, solved rather than asserted: the smallest identity
+// length whose AVERAGE score clears the corpus band's floor, and the smallest
+// that clears its maximum.  Enumerated up to the longest query, so a k that does
+// not exist inside this study's own length range is reported as that length + 1
+// rather than as a number pulled from nowhere.
+func smallestK(_ target: Int32) -> Int {
+    var k = 1
+    while k <= PIN_CORPUS_MAXLEN {
+        if k * meanDiagMilli / 1000 > Int(target) { return k }
+        k += 1
+    }
+    return PIN_CORPUS_MAXLEN + 1
+}
+let kClearFloor = smallestK(realMin)     // clears the band's FLOOR — not the same as being seen
+let kClearMode  = smallestK(realMode)    // clears the bulk
+let kClearMax   = smallestK(realMax)     // clears the entire corpus band
+let kClearNull  = smallestK(nullMax)     // clears the null's band too, which is the real bar
+
 // ===========================================================================
 // TRANSCRIPT
 // ===========================================================================
@@ -1540,10 +2039,25 @@ emit("  reference proteins \(N_PROT)")
 emit("  reference residues \(refSeq.count)")
 emit("  reference U count  \(uCount) in \(uProteinIdx.count) proteins, scored through the BLOSUM62 X row")
 emit("")
-emit("COMPLETENESS, stated as a count rather than as a word")
-emit("  every query against every reference protein, no exceptions")
-emit("  dynamic programming cells, real corpus:  \(totalQResidues * refSeq.count)")
-emit("  dynamic programming cells, null corpus:  \(totalQResidues * refSeq.count)")
+emit("COMPLETENESS, COUNTED AS THE WORK HAPPENS — not the product of the two input file sizes")
+emit("  Until 2026-09-07 this section printed the product \(totalQResidues) x \(refSeq.count) and called")
+emit("  it completeness. That product is computed from the parsed inputs and is IDENTICAL whatever")
+emit("  the screen then did — MEASURED, not argued: the pre-repair program restricted to 400 of the")
+emit("  \(N_PROT) proteins exits 0, passes its whole self-test, seals, and prints that IDENTICAL figure")
+emit("  under the IDENTICAL sentence, while every figure it publishes is wrong: maximum 84 where this")
+emit("  run measures \(realMax), sum of maxima 3668659 where this run measures \(realSum), floor 35 where this")
+emit("  run measures \(realMin). The recipe is in this program's header so the control can be repeated")
+emit("  rather than believed. A claim that cannot fail is not a claim.")
+emit("  The two figures below are instead accumulated INSIDE kernelBlock, one addition per protein")
+emit("  visited, and this run REFUSES before the seal unless they equal the complete work exactly.")
+emit("  Self-test A23 shows the counter falling when the work falls; validate-homology.sh builds a")
+emit("  deliberately truncated variant and requires its refusal.")
+emit("  query-protein visits COUNTED, real corpus:  \(realRes.visits)")
+emit("  query-protein visits COUNTED, null corpus:  \(nullRes.visits)")
+emit("  dynamic programming cells COUNTED, real corpus:  \(realRes.cells)")
+emit("  dynamic programming cells COUNTED, null corpus:  \(nullRes.cells)")
+emit("  every query against every reference protein, no exceptions — and that sentence is now")
+emit("  falsifiable: \(realRes.visits) counted visits against \(N_Q) x \(N_PROT) = \(N_Q * N_PROT) required")
 emit("  saturating queries resolved by the exact Int32 oracle: real \(realRes.saturatedCount), null \(nullRes.saturatedCount)")
 emit("")
 emit("SELF-TEST: \(armPass) of \(ARMS) arms pass")
@@ -1560,6 +2074,56 @@ emit("  agreed \(verifyAgree) of \(verifyIdx.count); any disagreement refuses th
 for l in verifyLines { emit(l) }
 emit("")
 emit("=== THE ANSWER ===")
+emit("")
+emit("THE CALL. The transcript stated four tables and left the reader to infer the answer from them;")
+emit("it now states the answer. EVERY VERDICT WORD BELOW IS COMPUTED FROM THE MEASUREMENT, not typed")
+emit("beside it — the direction words, the count of clauses, and which branch of the call is printed.")
+emit("A sentence that says SAME or EXCEEDS or COIN whatever the numbers do is the unfalsifiable")
+emit("failure this study spent a repair removing from its own completeness figure; it is not")
+emit("reintroduced here in prose.")
+emit("")
+emit("  THREE INDEPENDENT COMPARISONS, each with its own direction and its own magnitude:")
+emit("    (1) the real maximum \(c1word) the null's:  \(realMax) against \(nullMax)")
+emit("    (2) the paired sign leans \(c2word):  \(greater) above own shuffle, \(lesser) below,")
+emit("        \(equal) exactly tied — an imbalance of \(signImbalance) sequences, \(signImbalancePpm) ppm of the corpus,")
+emit("        next to \(equal * 1_000_000 / N_Q) ppm of exact ties")
+emit("    (3) the deep-null candidates come back \(c3word) their selection-matched control:")
+emit("        \(candPpm) ppm against \(ctrlPpm) ppm  (\(candidatesAboveOwnNull) of \(deepSet.count) against \(controlAboveOwnNull) of \(deepSetN.count))")
+emit("  Toward a signal: \(clausesFor) of 3.  Against: \(clausesAgainst) of 3.  Level: \(clausesLevel) of 3.")
+emit("")
+if clausesFor == 3 {
+    emit("  A SEQUENCE-LEVEL SIGNAL SURVIVES ALL THREE COMPARISONS. The highest-scoring sequences are")
+    emit("  named in the table below with their accessions, and this transcript does NOT call the")
+    emit("  corpus free of homology. Read the table, not this line.")
+} else {
+    emit("  NO SEQUENCE among the \(N_Q) shows detectable homology to a reviewed human protein under")
+    emit("  substitution. A signal has to survive all three comparisons; it survives \(clausesFor) of 3.")
+    emit("  Comparison (1): the corpus reaches \(realMax) where its own permuted residues reach \(nullMax).")
+    emit("  Comparison (2): the whole imbalance is \(signImbalance) sequences out of \(N_Q) — \(signImbalancePpm) ppm — against")
+    emit("  \(equal) exact ties, and it takes the sign of a coin to move it further than that.")
+    emit("  Comparison (3): the control that holds the SELECTION fixed and removes residue order")
+    emit("  entirely returns \(ctrlPpm) ppm where the real candidates return \(candPpm) ppm.")
+    if ctrlPpm >= candPpm {
+        emit("  Selection alone therefore buys as much of that last effect as the corpus shows, and")
+        emit("  nothing is left over for residue order to have caused.")
+    } else {
+        emit("  \(candPpm - ctrlPpm) ppm of that last effect is NOT bought by selection, and that residue is the")
+        emit("  only part of this study that could be signal. It is named in the table below.")
+    }
+}
+emit("")
+emit("  THE TWO DISTRIBUTIONS, side by side, with no adjective between them:")
+emit("    real   floor \(realMin)  mode \(realMode) (\(realModeN) sequences)  maximum \(realMax)  sum \(realSum)")
+emit("    null   floor \(nullMin)  mode \(nullMode) (\(nullModeN) sequences)  maximum \(nullMax)  sum \(nullSum)")
+emit("    over the same \(N_Q) sequences and the same \(totalQResidues) residues; the sums differ by \(realSum - nullSum).")
+emit("")
+emit("  THE BOUND, equally plainly. The largest local alignment score attained by any of the \(N_Q)")
+emit("  against any of the \(N_PROT) reviewed human proteins is \(realMax). For scale, on this same")
+emit("  instrument a genuine remote homology — HBA_HUMAN against HBB_HUMAN — scores \(a13hb), and a")
+emit("  protein against itself scores \(a11self). \(realMax) \(c1bound) the null's own maximum of \(nullMax), so")
+emit("  \(realMax > nullMax ? "it stands outside the range its own permuted residues reach" : "it is not separable from permuted residues of the same composition").")
+emit("  The bound on how far a real match could have risen without being seen is the RESOLUTION")
+emit("  LIMIT in the closing section, and it is stated there with its arithmetic.")
 emit("")
 emit("REAL CORPUS — distribution of the maximum Smith-Waterman score against the whole human proteome")
 emit("  observed minimum \(realMin), observed maximum \(realMax)")
@@ -1647,10 +2211,47 @@ emit("DOES NOT MEASURE: cross-reactivity, MHC presentation, epitope prediction, 
 emit("  structural mimicry, or immunological safety. A Smith-Waterman score is a sequence")
 emit("  statement. It is not a bench result and no clinical property follows from it.")
 emit("  It also says nothing about the unreviewed proteome, isoforms, or non-human proteins.")
+emit("")
+emit("RESOLUTION LIMIT — the arithmetic, because it governs how the answer above may be read.")
+emit("  A whole-sequence maximum cannot see a match shorter than the background it sits in, and this")
+emit("  study's background is measured above: \(realMin) to \(realMax) over \(N_Q) sequences.")
+emit("  The mean BLOSUM62 diagonal weighted by THIS proteome's own composition is \(meanDiagMilli)/1000")
+emit("  (\(diagResidues) residues over the 20 standard letters; the \(uCount) U are excluded, having no")
+emit("  BLOSUM62 diagonal of their own). A gapless, 100%-identity window of k residues scores exactly")
+emit("  the sum of ITS OWN k diagonal entries, so it is bounded by k*\(minDiag) and k*\(maxDiag) and averages")
+emit("  k*\(meanDiagMilli)/1000 over this composition. Per k, floor / average / ceiling:")
+emit("     8 residues    \(8 * minDiag)  /  \(8 * meanDiagMilli / 1000)  /  \(8 * maxDiag)")
+emit("     9 residues    \(9 * minDiag)  /  \(9 * meanDiagMilli / 1000)  /  \(9 * maxDiag)")
+emit("    10 residues    \(10 * minDiag)  /  \(10 * meanDiagMilli / 1000)  /  \(10 * maxDiag)")
+emit("  An MHC class-I ligand is 8 to 10 residues. Its average perfect identity is \(8 * meanDiagMilli / 1000) to")
+emit("  \(10 * meanDiagMilli / 1000) here, and the corpus background runs \(realMin) to \(realMax) with its mode at \(realMode).")
+emit("  So a REAL short-epitope match CANNOT lift a whole-sequence maximum out of this background")
+emit("  and is NOT RESOLVABLE by this statistic. Solved rather than asserted, the smallest identity")
+emit("  length k whose AVERAGE score passes each landmark of that band:")
+emit("     past the floor \(realMin):            k = \(kClearFloor)")
+emit("     past the mode \(realMode):             k = \(kClearMode)")
+emit("     past the corpus maximum \(realMax):   k = \(kClearMax)")
+emit("     past the null's maximum \(nullMax):   k = \(kClearNull)")
+emit("  Clearing the FLOOR is not being seen: at k = \(kClearFloor) the match still sits among the bulk of")
+emit("  \(N_Q) sequences that have no homology at all, and the smallest k whose average even reaches")
+emit("  the MODE of \(realMode) is \(kClearMode) — already longer than the entire 8-to-10 class-I range. Being")
+emit("  SEEN means passing \(nullMax), the null's own maximum, and that takes k = \(kClearNull): short of it by")
+emit("  \(kClearNull - 10) to \(kClearNull - 8) residues, which is where the class-I range sits. The ceiling column above")
+emit("  is the arithmetic bound and not a peptide: a 9-mer of the single highest-scoring residue")
+emit("  would reach \(9 * maxDiag) and clear the band, and nothing anyone presents is a poly-tryptophan.")
+emit("  Before this section existed the word 'epitope' occurred EXACTLY ONCE in the whole program, in")
+emit("  the DOES NOT MEASURE list above, and the arithmetic that turns that exclusion from a")
+emit("  disclaimer into a MEASUREMENT was nowhere in the sealed transcript at all. That is what this")
+emit("  section adds. Reading the answer above as 'these peptides carry no human-like epitope' is")
+emit("  over-reading its own null.")
+emit("  What the instrument DOES reach, measured in this same run: a whole-sequence homology scores")
+emit("  \(a13hb) (HBA against HBB) and a self-match \(a11self), both clear of the \(realMin)-to-\(realMax) band by more")
+emit("  than the band is wide. The resolution therefore runs from whole-sequence homology, which this")
+emit("  instrument finds, down to about \(kClearNull) residues of perfect identity, below which it does not.")
 emit("END TRANSCRIPT")
 
 let transcript = TX.joined(separator: "\n") + "\n"
-print("SEAL sha256(transcript) = \(SHA256Exact.hexOf(transcript))")
+print(SEAL_MARKER + SHA256Exact.hexOf(transcript))
 print("")
 let T_END = nowNs()
 print("UNSEALED timings — these are NOT inside the seal, because a seal that moves when nothing")

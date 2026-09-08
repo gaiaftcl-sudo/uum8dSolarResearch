@@ -15,7 +15,7 @@ PROGRAM        peptide-homology-exact
 FIGURE         bb3691b332fb15cdd54c43bc42905478e53c4f4b01862885a7304260498cf3f7
 FIGURE         36128
 FIGURE         36113
-SEAL           NONE_PRINTED
+SEAL           b11fe3c9ee6dab0e98b9773a883b438e0cf102fcf4e34bd94ef7cb05a97e0313
 GRADE          MEASURED
 WHERE_THE_LAW_LIVES  reproduce/peptide-homology-exact.swift, with reproduce/validate-homology.sh
 REFUSED        not sealed. The screen is in repair for a completeness figure that was stated unfalsifiably, and until that lands these numbers are measured and unsealed, which is a weaker thing than the substring screen beside it

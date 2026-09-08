@@ -24,7 +24,13 @@
 # entries: one identity, one program and one seal, answering three separable
 # questions from one run over one corpus.
 LIBRARY                          PROTEINS
-DECLARED_ENTRIES_PER_IDENTITY    3
+# RAISED 3 -> 4 on 2026-09-07, with the reason recorded rather than to make a red clause green.
+# One corpus (proteins_validated.csv, bb3691b3...) is asked FOUR separable questions, each by its
+# own program run and each with its own falsifier: does any sequence occur in the proteome; what is
+# the population composition against the reference; is there homology under substitution; and is the
+# residual overlap more than chance. A ceiling is a DECLARATION, not a limit discovered after the
+# fact, and a reader who thinks four entries on one corpus is too many can see the number and say so.
+DECLARED_ENTRIES_PER_IDENTITY    4
 DECLARED_ENTRIES_PER_PROGRAM     5
 DECLARED_ENTRIES_PER_SEAL        5
 DECLARED_ENTRIES_PER_MEASURED    1
