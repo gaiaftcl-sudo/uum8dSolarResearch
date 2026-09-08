@@ -26,7 +26,15 @@ PIN=.core-pin.swift
 # program's own top-level code, so the boundary is read off that. The structural check that
 # follows is unchanged and still REFUSES if what it finds is not a closing brace followed by
 # a rule — deriving the number does not remove the check, it removes the retyping.
-END_LINE=$(awk '/SECTION 11 . MAIN/{print NR-3; exit}' "$SRC")
+# THE PATTERN IS ANCHORED AND CARRIES NO DOT, AND THAT IS A LOCALE FIX, NOT A STYLE ONE.
+# The marker's dash is an EM DASH — three bytes in UTF-8. This harness and these scripts
+# run with LANG and LC_ALL unset, so awk is in the C locale and `.` matches ONE BYTE: the
+# old pattern /SECTION 11 . MAIN/ matched interactively, where the shell has a UTF-8
+# locale, and matched NOTHING where it actually runs. The guard below then refused a
+# correct tree — a false refusal, which is the always-red half of the same defect as a
+# false pass. Anchored on the line start with no metacharacter over the dash, this
+# returns the same line in both locales, verified in both.
+END_LINE=$(awk '/^\/\/ SECTION 11 /{print NR-3; exit}' "$SRC")
 [ -n "$END_LINE" ] || { echo "BUILD_REFUSED  SECTION 11 MAIN marker not found in $SRC"; exit 3; }
 arms=0; pass=0; fail=0
 arm(){ arms=$((arms+1)); if [ "$2" = "$3" ]; then pass=$((pass+1)); printf 'ARM  PASS  %-46s expect %-22s got %s\n' "$1" "$2" "$3"; else fail=$((fail+1)); printf 'ARM  FAIL  %-46s expect %-22s got %s\n' "$1" "$2" "$3"; fi; }
