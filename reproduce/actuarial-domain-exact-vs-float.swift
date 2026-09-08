@@ -518,40 +518,51 @@ func intColumns(_ t: LifeTable) -> (L: [UInt64?], D: [UInt64?], scale: Int)? {
 // A verdict test at one fixed reporting unit cannot tell "they agree" from "the unit is too
 // coarse to show a difference"; this returns the digit at which they first part, or 19 if
 // they never part inside the range a Double can even represent.
-// The first SIGNIFICANT digit at which the exact value and the float value part.
+// How many leading significant digits the exact value and the floating-point value share.
 //
-// An absolute decimal position is the wrong instrument here: a deep survival probability
-// is around 1e-20, so both arithmetics round to zero at every fixed decimal place and
-// "agree" for a reason that has nothing to do with arithmetic. Comparing significant
-// digits asks the question that can actually be answered, and it can fail.
-// Returns 1..18, or 19 when they agree across every digit a Double can carry.
-func firstPartingSignificantDigit(num: Mag, den: Mag, f: Double) -> Int {
-    if num.isZero || f == 0 { return 0 }                 // 0 = not measurable, counted apart
-    var S = 19
-    var w = Mag.divMod(num * Mag.pow(Mag(10), S), den).0
-    var guard0 = 0
-    while w.description.count != 19 && guard0 < 40 {
-        S += 19 - w.description.count
-        if S < 0 { return 0 }
-        w = Mag.divMod(num * Mag.pow(Mag(10), S), den).0
-        guard0 += 1
+// A first version of this compared the two values ROUNDED at each digit, and that instrument
+// was wrong in a way worth recording: an exact value whose decimal expansion terminates in a
+// 5 sits exactly on a rounding tie, so the exact arm rounds half-away up while the float sits
+// infinitesimally below and rounds down. It reported a parting at the 8th digit for two values
+// agreeing to the 16th. The tie is a property of the decimal expansion, not of the arithmetic.
+//
+// This version compares nothing rounded. A Double is a binary rational exactly — sig * 2^e from
+// its own bit pattern — so the relative difference is a ratio of two integers and the answer is
+// the largest k with |exact - float| * 10^k <= |exact|. Returns 0..20, or -1 when the exact
+// value is zero and a relative difference is not defined.
+func exactRational(of d: Double) -> (sig: Mag, twoExp: Int)? {
+    if !d.isFinite || d == 0 { return nil }
+    let bits = d.magnitude.bitPattern
+    let expBits = Int((bits >> 52) & 0x7FF)
+    let frac = bits & 0x000F_FFFF_FFFF_FFFF
+    if expBits == 0 { return (Mag(frac), -1074) }                 // subnormal
+    return (Mag(frac | (1 << 52)), expBits - 1075)
+}
+
+func agreeingSignificantDigits(num: Mag, den: Mag, f: Double) -> Int {
+    if num.isZero { return -1 }
+    guard let (sig, e) = exactRational(of: f) else { return -1 }
+    // exact = num/den, float = sig * 2^e. Put both over one denominator.
+    //   e >= 0 : float = sig*2^e            -> lhs = num,        rhs = sig*2^e*den, scale = num
+    //   e <  0 : float = sig/2^(-e)         -> lhs = num*2^(-e), rhs = sig*den,     scale = num*2^(-e)
+    var lhs = num, rhs = sig, scale = num
+    if e >= 0 {
+        rhs = sig * Mag.pow(Mag(2), e) * den
+    } else {
+        let Q = Mag.pow(Mag(2), -e)
+        lhs = num * Q; scale = lhs
+        rhs = sig * den
     }
-    if w.description.count != 19 { return 0 }
-    // the float, brought to the same scale
-    var fv = f
-    for _ in 0..<S { fv *= 10 }
-    if !fv.isFinite || fv == 0 { return 0 }
-    // compare significant digit by significant digit, both rounded at the same place
-    for j in 1...18 {
-        let d = Mag.pow(Mag(10), 19 - j)
-        let (qe, _) = Mag.divMod(w.mulSmall(2) + d, d.mulSmall(2))
-        var dd = 1.0
-        for _ in 0..<(19 - j) { dd *= 10 }
-        let qf = roundHalfAwayD(fv / dd)
-        guard let ei = Int(qe.description) else { return j }
-        if Int64(ei) != qf { return j }
+    let diff = lhs < rhs ? rhs - lhs : lhs - rhs
+    if diff.isZero { return 20 }                                   // identical rationals
+    var k = 0
+    var scaled = diff
+    while k < 20 {
+        let next = scaled.mulSmall(10)
+        if scale < next { break }
+        scaled = next; k += 1
     }
-    return 19
+    return k
 }
 
 struct ArmCount {
@@ -591,7 +602,7 @@ for t in tables {
                 vp *= vD
             }
             let floatP = roundHalfAwayD(100_000.0 * AF / aF)
-            let pd = firstPartingSignificantDigit(num: ANum, den: aNum, f: AF / aF)
+            let pd = agreeingSignificantDigits(num: ANum, den: aNum, f: AF / aF)
             lifeArm.part[pd, default: 0] += 1; lifeArm.minPart = min(lifeArm.minPart, pd)
             lifeArm.scored += 1
             lifeArm.maxDepth = max(lifeArm.maxDepth, n - 1 - x)
@@ -606,8 +617,8 @@ print("  ages not scored, a tail cell absent    = \(lifeArm.skipped)")
 print("  exact and float premiums differing     = \(lifeArm.differ)")
 print("  worst difference, per 100,000 assured  = \(lifeArm.worst)")
 print("  deepest term reached                   = \(lifeArm.maxDepth) discount multiplications")
-print("  first SIGNIFICANT digit at which exact and float part (19 = agree across every digit a Double carries):")
-for k in lifeArm.part.keys.sorted() { print("    significant digit \(k): \(comma(lifeArm.part[k]!)) cases") }
+print("  leading significant digits on which exact and float agree (20 = identical rationals):")
+for k in lifeArm.part.keys.sorted() { print("    agreeing to \(k) significant digits: \(comma(lifeArm.part[k]!)) cases") }
 print("")
 print("=== E. pensions: the deferred annuity, exact against float ===")
 print("  the lump sum per 1,000 of annual pension deferred to age 65 and paid for life,")
@@ -636,7 +647,7 @@ for t in tables {
             for _ in 0..<t0 { vp *= vD }
             for t2 in t0...(n - 1 - x) { acc += vp * Double(L[x + t2]!) / Double(lx); vp *= vD }
             let floatV = roundHalfAwayD(1_000.0 * acc)
-            let pdp = firstPartingSignificantDigit(num: num, den: den, f: acc)
+            let pdp = agreeingSignificantDigits(num: num, den: den, f: acc)
             penArm.part[pdp, default: 0] += 1; penArm.minPart = min(penArm.minPart, pdp)
             penArm.scored += 1
             penArm.maxDepth = max(penArm.maxDepth, n - 1 - x)
@@ -651,8 +662,8 @@ print("  entry ages not scored                  = \(penArm.skipped)")
 print("  exact and float values differing       = \(penArm.differ)")
 print("  worst difference, per 1,000 of pension = \(penArm.worst)")
 print("  deepest term reached                   = \(penArm.maxDepth) discount multiplications")
-print("  first SIGNIFICANT digit at which exact and float part (19 = agree across every digit a Double carries):")
-for k in penArm.part.keys.sorted() { print("    significant digit \(k): \(comma(penArm.part[k]!)) cases") }
+print("  leading significant digits on which exact and float agree (20 = identical rationals):")
+for k in penArm.part.keys.sorted() { print("    agreeing to \(k) significant digits: \(comma(penArm.part[k]!)) cases") }
 print("")
 
 print("=== F. multi-state: the n-step survival chain, exact against float ===")
@@ -683,9 +694,9 @@ for t in tables {
         for _ in 0..<steps { den = den.mulSmall(100_000) }
         let exactPPB = roundExact(num.mulSmall(1_000_000_000), den)
         let floatPPB = roundHalfAwayD(1_000_000_000.0 * fp)
-        let pdm = firstPartingSignificantDigit(num: num, den: den, f: fp)
+        let pdm = agreeingSignificantDigits(num: num, den: den, f: fp)
         mkArm.part[pdm, default: 0] += 1
-        if pdm > 0 && pdm < mkArm.minPart {
+        if pdm >= 0 && pdm < mkArm.minPart {
             mkArm.minPart = pdm
             worstChain = "\(t.geo) \(t.year), from age \(t.ageLabels[x] >= 10_000 ? t.ageLabels[x] - 10_000 : t.ageLabels[x]), \(steps) steps"
         }
@@ -700,9 +711,9 @@ print("  chains scored                          = \(mkArm.scored)")
 print("  exact and float differing              = \(mkArm.differ)")
 print("  worst difference, parts per billion    = \(mkArm.worst)")
 print("  longest chain                          = \(mkArm.maxDepth) steps, ending at the last closed age")
-print("  first SIGNIFICANT digit at which exact and float part (19 = agree across every digit a Double carries):")
-for k in mkArm.part.keys.sorted() { print("    significant digit \(k): \(comma(mkArm.part[k]!)) cases") }
-print("  earliest parting is at significant digit \(mkArm.minPart), in \(worstChain)")
+print("  leading significant digits on which exact and float agree (20 = identical rationals):")
+for k in mkArm.part.keys.sorted() { print("    agreeing to \(k) significant digits: \(comma(mkArm.part[k]!)) cases") }
+print("  fewest agreeing digits anywhere in this arm: \(mkArm.minPart), in \(worstChain)")
 print("  A THREE-STATE morbidity chain is NOT measured here and is not claimed. The")
 print("  transition rates it needs are not served by an open archive: the SOA MORT tables")
 print("  are behind a postback application that returns HTML to a direct request, and the")
@@ -821,20 +832,19 @@ do {
         AF += vp * vD * Double(D[t2]) * 20_000_000.0
         vp *= vD
     }
-    let d = firstPartingSignificantDigit(num: ANum, den: aNum, f: AF / aF)
-    arm("always-red: the parting instrument reports a finite digit on inputs past 2^53",
-        d > 0 && d <= 18)
+    let d = agreeingSignificantDigits(num: ANum, den: aNum, f: AF / aF)
+    arm("always-red: agreement is finite, not identical, on inputs past 2^53", d >= 0 && d < 20)
 }
 
 // 6 — ALWAYS-RED: the parting instrument on a case whose answer is known in advance
 do {
-    let dThird = firstPartingSignificantDigit(num: Mag(1), den: Mag(3), f: 1.0 / 3.0)
-    arm("always-red: exact 1/3 against Double(1/3) parts inside a Double's digits",
-        dThird >= 15 && dThird <= 18)
-    let dWrong = firstPartingSignificantDigit(num: Mag(1), den: Mag(3), f: 0.34)
-    arm("always-red: exact 1/3 against 0.34 parts at the second significant digit", dWrong == 2)
-    let dSame = firstPartingSignificantDigit(num: Mag(1), den: Mag(4), f: 0.25)
-    arm("always-green: exact 1/4 against 0.25 never parts", dSame == 19)
+    let dThird = agreeingSignificantDigits(num: Mag(1), den: Mag(3), f: 1.0 / 3.0)
+    arm("always-red: exact 1/3 against Double(1/3) agrees to 15-17 digits, not more",
+        dThird >= 15 && dThird <= 17)
+    let dWrong = agreeingSignificantDigits(num: Mag(1), den: Mag(3), f: 0.34)
+    arm("always-red: exact 1/3 against 0.34 agrees to at most 1 significant digit", dWrong <= 1)
+    let dSame = agreeingSignificantDigits(num: Mag(1), den: Mag(4), f: 0.25)
+    arm("always-green: exact 1/4 against 0.25 is the identical rational", dSame == 20)
 }
 
 // 7 — ALWAYS-RED: aggregation order does part once the ceiling is passed
@@ -848,8 +858,13 @@ do {
 
 // 8 — the zero sentinel is a distinct answer, not agreement
 do {
-    let z = firstPartingSignificantDigit(num: Mag(0), den: Mag(7), f: 0.0)
-    arm("a value of exactly zero returns the not-measurable sentinel, never 19", z == 0)
+    let z = agreeingSignificantDigits(num: Mag(0), den: Mag(7), f: 0.0)
+    arm("a value of exactly zero returns the not-measurable sentinel, never a digit count", z == -1)
+    // the tie that broke the first instrument: 0.636038925 terminates in a 5 at digit 9
+    let tie = agreeingSignificantDigits(num: Mag(6_360_389_250), den: Mag(10_000_000_000),
+                                        f: (100000.0 - 19310.0) / 100000.0 * ((100000.0 - 21175.0) / 100000.0))
+    arm("the rounding tie that fooled the first instrument agrees to 15 digits or more, not 8",
+        tie >= 15)
 }
 
 // 9 — the identity checks are testing something
@@ -863,7 +878,7 @@ print("  control arms failed = \(armsFailed)")
 print(armsFailed == 0 ? "SELFTEST PASS" : "SELFTEST FAIL")
 print("")
 print("=== I. the same figures in the form the study page states them ===")
-func minKey(_ h: [Int: Int]) -> Int { h.keys.filter { $0 > 0 }.min() ?? 0 }
+func minKey(_ h: [Int: Int]) -> Int { h.keys.filter { $0 >= 0 }.min() ?? -1 }
 print("  life tables                            = \(comma(tables.count))")
 print("  published values read                  = \(comma(scaleHist.values.reduce(0, +)))")
 print("  cells the archive does not serve       = \(absentCells)")
@@ -872,9 +887,9 @@ print("  l(x+1) = l(x) - d(x), exact / not / one-unit = \(comma(i1ok)) / \(comma
 print("  T(x) = T(x+1) + L(x), exact / not / one-unit = \(comma(i3ok)) / \(comma(i3off)) / \(comma(i3near))")
 print("  identity tests run in total            = \(comma(i1ok + i1off + i3ok + i3off)) across the two accumulation identities")
 print("  segment-rate triples                   = \(comma(rates.count))")
-print("  life premiums scored                   = \(comma(lifeArm.scored)), earliest parting at significant digit \(minKey(lifeArm.part))")
-print("  pension values scored                  = \(comma(penArm.scored)), earliest parting at significant digit \(minKey(penArm.part))")
-print("  survival chains scored                 = \(comma(mkArm.scored)), earliest parting at significant digit \(minKey(mkArm.part))")
+print("  life premiums scored                   = \(comma(lifeArm.scored)), fewest agreeing significant digits \(minKey(lifeArm.part))")
+print("  pension values scored                  = \(comma(penArm.scored)), fewest agreeing significant digits \(minKey(penArm.part))")
+print("  survival chains scored                 = \(comma(mkArm.scored)), fewest agreeing significant digits \(minKey(mkArm.part))")
 print("  verdicts differing at the reporting unit = \(lifeArm.differ + penArm.differ + mkArm.differ) of \(comma(lifeArm.scored + penArm.scored + mkArm.scored))")
 print("")
 print("STUDY39_ACTUARIAL_DOMAIN_EXACT_VS_FLOAT")

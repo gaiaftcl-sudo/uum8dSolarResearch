@@ -4,12 +4,27 @@
 pensions, multi-state health, and aggregation at the discrete cuts a capital regime is written on —
 on two public archives whose every published value is fixed-decimal, and therefore an exact rational
 before any arithmetic runs. **Across 10,878 measured quantities the exact and floating-point answers
-agree to at least eight significant digits, and to thirteen everywhere except one arm.** The
-reporting units the rules are written on sit nine digits coarser than that.*
+agree to at least fourteen significant digits, in every arm.** The reporting units the rules are
+written on sit eleven digits coarser than that.*
+
+> [!NOTE]
+> **CORRECTED 2026-09-08, the same day it was sealed — the first version of this page reported a
+> tightest margin of eight significant digits and read something into it. That was our instrument,
+> not the arithmetic.** The first comparator rounded both values at each digit and asked whether the
+> rounded results matched. An exact value whose decimal expansion terminates in a 5 sits exactly on a
+> rounding tie, so the exact arm rounds half-away up while the float sits infinitesimally below and
+> rounds down — and the comparator called that a disagreement. It reported a parting at the 8th digit
+> for two values agreeing to the 16th. The tie is a property of the decimal expansion, not of the
+> arithmetic. The comparator now measures the exact relative difference — a `Double` is a binary
+> rational exactly, from its own bit pattern, so `|exact − float| / |exact|` is a ratio of two
+> integers and nothing is rounded at all. **The corrected reading is 14 significant digits, uniform
+> across all three arms**, and the paragraph that read meaning into the shortest product is retired
+> below. A 21st control arm now pins that specific tie case at 15 digits or more, so the defect
+> cannot return unnoticed.
 
 **Status: RESULTS SEALED 2026-09-08** · marker `STUDY39_ACTUARIAL_DOMAIN_EXACT_VS_FLOAT`
 — two public archives, digest-pinned, no authentication; 21 published life tables (16,128 values,
-zero cells the archive does not serve) and 295 monthly statutory rate triples; 20 control arms passing
+zero cells the archive does not serve) and 295 monthly statutory rate triples; 21 control arms passing
 in both directions; every figure printed by `reproduce/actuarial-domain-exact-vs-float.swift`.
 **The subject under grading is the arithmetic and the instrument.** No person, insurer, pension scheme
 or country is assessed, and nothing here is advice.
@@ -81,11 +96,10 @@ integers and nothing is rounded until the reporting unit.
 | premiums computed | **6,048** (21 tables × 3 rates × 96 ages) |
 | deepest term reached | **95 discount multiplications** |
 | verdicts differing at the reporting unit | **0** |
-| earliest parting, in significant digits | **13** |
+| fewest agreeing significant digits | **14** |
 
-The distribution of the first significant digit at which the two arithmetics part: digit 13 in 10
-cases, 14 in 144, 15 in 1,299, 16 in 3,261, 17 in 1,181, 18 in 148, and in 5 cases they agree across
-every digit a `Double` carries.
+The distribution of leading significant digits on which the two arithmetics agree: 14 in **1,158**
+cases, 15 in **3,845**, 16 in **922**, 17 in 111, 18 in 11, and 19 in one.
 
 **This is the depth question Study 38 could not reach.** That study measured nine multiplications and
 said so; this one measures ninety-five, and the reading holds.
@@ -100,7 +114,7 @@ minimum-present-value rule is written on — at the same three published rates.
 | entry ages scored | **2,835** |
 | deepest term reached | **75 discount multiplications** |
 | verdicts differing at the reporting unit | **0** |
-| earliest parting, in significant digits | **13** |
+| fewest agreeing significant digits | **14** — 1,028 cases at 14, 1,729 at 15, 71 at 16 |
 
 ## 4. Multi-state — the n-step survival chain
 
@@ -112,12 +126,14 @@ rationals, ending at the last closed age.
 | chains scored | **1,995** |
 | longest chain | **95 steps** |
 | verdicts differing at parts per billion | **0** |
-| earliest parting, in significant digits | **8** — `ES 2022, from age 93, 2 steps` |
+| fewest agreeing significant digits | **14** — `IT 2022, from age 9, 86 steps` |
 
-**Eight significant digits is the tightest margin measured anywhere in this study**, and it appears in
-the shortest chain rather than the longest — two steps, not ninety-five. That is worth stating plainly
-because the intuition runs the other way: a long product of numbers near one is well conditioned,
-while a short product of two rates near a quarter is where the last digits go first.
+Sixteen chains agree to 14 digits, 1,495 to 15, 442 to 16, and the rest higher. The fewest-agreeing
+case is a **long** product — 86 steps — which is the direction accumulated rounding actually runs.
+
+*The first version of this page reported this arm's tightest margin as 8 digits in a two-step chain
+and built a paragraph on the reversal. That number was an artifact of the comparator, as the note at
+the top of this page records; the corrected measurement removes both the number and the reading.*
 
 **A three-state morbidity chain is not measured here and is not claimed.** The transition rates it
 needs are not served by an open archive: the SOA MORT tables sit behind a postback application that
@@ -149,9 +165,9 @@ Capital and solvency regimes are written on **integer cuts** — the US risk-bas
 are published as 200, 150, 100 and 70 percent, and a verdict is which side of a cut a figure falls.
 The measurement above answers that question in the form it is actually asked:
 
-> **A verdict rendered at a cut expressed to fewer than eight significant digits cannot flip between
-> the exact and the floating-point form of these quantities, anywhere in the 10,878 measured here.**
-> The cuts are written to three.
+> **A verdict rendered at a cut expressed to fewer than fourteen significant digits cannot flip
+> between the exact and the floating-point form of these quantities, anywhere in the 10,878 measured
+> here.** The cuts are written to three.
 
 That is the transferable statement, and it is a bound rather than a reassurance: it holds for the
 quantities and depths measured on this page and transfers to another depth only by being measured
@@ -159,7 +175,7 @@ there.
 
 ## Controls
 
-Twenty arms, run every time, **in both directions** — the harness fails if any fails.
+Twenty-one arms, run every time, **in both directions** — the harness fails if any fails.
 
 - **Exact machinery on answers known in advance.** `10^18 / 7 = 142857142857142857 remainder 1`;
   `10^19` has twenty characters; half-away rounding on `3/2` and `1/2`.
@@ -170,11 +186,14 @@ Twenty arms, run every time, **in both directions** — the harness fails if any
   terminal open interval, 96 steps from the 97 categories served.
 - **Always-green.** A table nobody dies in has an assurance numerator of exactly zero and an annuity
   numerator that is not zero.
-- **Always-red, four ways.** The parting instrument returns a finite digit on inputs past 2⁵³; exact
-  `1/3` against `Double(1/3)` parts inside a `Double`'s digits; exact `1/3` against `0.34` parts at
-  the **second** significant digit; and 201 values summed both ways differ once past 2⁵³.
-- **Always-green on the same instrument.** Exact `1/4` against `0.25` never parts — so the detector
-  is not simply reporting a difference every time.
+- **Always-red, four ways.** Agreement is finite and not identical on inputs past 2⁵³; exact `1/3`
+  against `Double(1/3)` agrees to 15–17 digits and no more; exact `1/3` against `0.34` agrees to at
+  most **one** significant digit; and 201 values summed both ways differ once past 2⁵³.
+- **Always-green on the same instrument.** Exact `1/4` against `0.25` is the identical rational — so
+  the detector is not simply reporting a difference every time.
+- **The tie that broke the first comparator is pinned.** The exact value `6360389250/10^10` against
+  its floating-point product must agree to **15 digits or more**. Under the first instrument this
+  case read 8.
 - **Zero is a distinct answer.** A value of exactly zero returns the not-measurable sentinel, never
   the "they agree everywhere" code. Without this arm the survival chains reported perfect agreement
   for the reason that both sides had rounded to nothing.
@@ -182,7 +201,7 @@ Twenty arms, run every time, **in both directions** — the harness fails if any
   return the same census.
 
 ```
-control arms run    = 20
+control arms run    = 21
 control arms failed = 0
 SELFTEST PASS
 ```
@@ -191,9 +210,9 @@ SELFTEST PASS
 
 - **Measured:** every published input in this domain is an exact rational; the published tables satisfy
   their own identities with no residual above one unit in the last printed place; across 10,878
-  quantities at depths to 95 multiplications, exact and float agree to at least 8 significant digits
-  and to 13 outside the survival-chain arm; and a sum of filed integers below 2⁵³ is order-independent
-  because each addition is exact.
+  quantities at depths to 95 multiplications, exact and float agree to at least 14 significant digits
+  in every arm; and a sum of filed integers below 2⁵³ is order-independent because each addition is
+  exact.
 - **Not measured, and therefore not claimed:** a three-state morbidity chain, for want of an open
   archive. Recorded ABSENT with both archives named and their responses dated.
 - **Not measured:** stochastic capital modelling. A Monte Carlo capital figure's reproducibility is a
@@ -201,9 +220,9 @@ SELFTEST PASS
   construction rather than the field's.
 - **Two archives, seven countries, three years, one statutory rate series.** A different reporting
   basis is a different measurement.
-- **The margin is not uniform.** Eight significant digits in the survival chains against thirteen
-  elsewhere is a factor of a hundred thousand, and it appeared in the shortest product rather than the
-  longest.
+- **The margin is uniform at 14 digits across all three arms**, and the fewest-agreeing case in each
+  is a deep product rather than a shallow one. The first version of this page said otherwise on both
+  counts; the correction is recorded at the top rather than swapped in silently.
 
 ## Reproduce
 

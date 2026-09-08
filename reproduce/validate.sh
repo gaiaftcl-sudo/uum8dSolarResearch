@@ -123,7 +123,9 @@ check_figure actuarial-domain-exact-vs-float "2,835"     "Study-39-Actuarial-Dom
 check_figure actuarial-domain-exact-vs-float "1,995"     "Study-39-Actuarial-Domain.md"
 check_figure actuarial-domain-exact-vs-float "22,973,085" "Study-39-Actuarial-Domain.md"
 check_figure actuarial-domain-exact-vs-float "11,561,327" "Study-39-Actuarial-Domain.md"
-check_figure actuarial-domain-exact-vs-float "ES 2022, from age 93, 2 steps" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "IT 2022, from age 9, 86 steps" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "fewest agreeing significant digits" "Study-39-Actuarial-Domain.md"
+check_figure actuarial-domain-exact-vs-float "3,845"     "Study-39-Actuarial-Domain.md"
 check_figure actuarial-domain-exact-vs-float "442, 547, 631" "Study-39-Actuarial-Domain.md"
 
 # --- Study 26: the exact discrimination court, and the exhaustive off-target screen ---
