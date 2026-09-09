@@ -21,6 +21,7 @@ any medicine safe or unsafe.**
 - [**Where else could this guide cut?**](CRISPR-Genome-Off-Target-Map) — the whole human genome, counted
 - [**Designed, or forced by its own bases?**](CRISPR-Clinical-Guide-Atlas) — every clinical CRISPR guide, with its own composition as the control
 - [**What a public genome deposit will tell you**](What-A-Public-Genome-Deposit-Will-Tell-You) — and four ways it will mislead a health tool first
+- [**Study 45** — which of nine billion answers a laboratory can act on](Study-45-Which-Answers-A-Laboratory-Can-Act-On) — **a safety review of AlphaGenome Atlas, measured live on 1,200 real variants at two genes. The headline score separates every one. The detailed tracks do not: splice-site usage hands back 950 of every 1,000 values shared with another variant at HBB and 998 at CFTR, and the shared values pile up in the quiet band where a bench clears a variant**
 
 **4 · One medicine at a time**
 

@@ -9,4 +9,11 @@ reproduce/extraction-core-syms.txt
 reproduce/wasi-sandwiched
 reproduce/.core-detector.swift
 reproduce/.core-pin.swift
+reproduce/wasi-exposure
+reproduce/.core-detector-exposure.swift
+reproduce/.core-pin-exposure.swift
 reproduce/logs/
+
+# Study 45 Arm B — pulled Atlas scores are never committed
+atlas-dense*.jsonl
+reproduce/atlas-dense*.jsonl

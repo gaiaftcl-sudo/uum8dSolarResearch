@@ -841,6 +841,62 @@ check_figure atlas-container-pigeonhole-exact "9,000,000,000 variants in 4,278,1
 check_figure atlas-container-pigeonhole-exact "arms: 7 run, 7 passed, 0 failed" "Study-44-The-Atlas-Container.md"
 check_figure atlas-container-pigeonhole-exact "Values are stored as single" "Study-44-The-Atlas-Container.md"
 
+# ---------------------------------------------------------------------------------------
+# STUDY 45 — which of nine billion answers a laboratory can act on.
+#
+# Arm A core needs no input and runs to COMPLETE under this harness, so its figures are
+# MEASURED on the grading run. Arm A genome and Arm B both need inputs this harness does not
+# supply — a 4.7 GB annotation and a key-gated live pull — so under it they always take a
+# refusal path. Each of those refusal paths prints the study's published figures, labelled
+# QUOTED, which is why these pins resolve at all. That is deliberate: a figure on the page
+# that no program prints is not reproducible, and this harness is what says so.
+PAGE45="Study-45-Which-Answers-A-Laboratory-Can-Act-On.md"
+
+# -- Arm A core: the genetic code, enumerated. No inputs, measured on this run.
+check_figure codon-consequence-exact "138   239 per 1000" "$PAGE45"
+check_figure codon-consequence-exact "392   680 per 1000" "$PAGE45"
+check_figure codon-consequence-exact "23   39 per 1000" "$PAGE45"
+check_figure codon-consequence-exact "184 of 576   319 per 1000" "$PAGE45"
+check_figure codon-consequence-exact "arms: 7 run, 7 passed, 0 failed" ""
+
+# -- Arm A genome: the coding footprint, from GENCODE v50 canonical CDS.
+check_figure coding-consequence-genome-exact "20,107" "$PAGE45"
+check_figure coding-consequence-genome-exact "197,573" "$PAGE45"
+check_figure coding-consequence-genome-exact "33,722,363" "$PAGE45"
+check_figure coding-consequence-genome-exact "101,167,089" "$PAGE45"
+check_figure coding-consequence-genome-exact "9,299,252,154" "$PAGE45"
+check_figure coding-consequence-genome-exact "1087" "$PAGE45"
+check_figure coding-consequence-genome-exact "103,076,262" "$PAGE45"
+check_figure coding-consequence-genome-exact "23,660,731   229 per 1000" "$PAGE45"
+check_figure coding-consequence-genome-exact "75,158,434   729 per 1000" "$PAGE45"
+check_figure coding-consequence-genome-exact "4,246,822   41 per 1000" "$PAGE45"
+check_figure coding-consequence-genome-exact "10,275   0 per 1000" "$PAGE45"
+check_figure coding-consequence-genome-exact "27,917,828   270 per 1000" "$PAGE45"
+check_figure coding-consequence-genome-exact "25b068b63a9b656aea78fdc2f2f290091ad451b5d1276b1c8bae4bf69259f111" "$PAGE45"
+check_figure coding-consequence-genome-exact "CODON_TABLE_SPEAKS_TO_ONLY_THE_CODING_FRACTION" ""
+
+# -- Arm B: collisions measured on the live artifact, both loci.
+check_figure atlas-collision-measure-exact "ATLAS_COLLISIONS_MEASURED_ON_THE_PUBLISHED_ARTIFACT" ""
+check_figure atlas-collision-measure-exact "arms: 13 run, 13 passed, 0 failed" ""
+check_figure atlas-collision-measure-exact "4,278,190,082" "$PAGE45"
+check_figure atlas-collision-measure-exact "4,721,809,918" "$PAGE45"
+check_figure atlas-collision-measure-exact "1600aa88aaa9cc3f4633b38d148984195b80d191303a6a1ec1be24e9d2fdcba0" "$PAGE45"
+check_figure atlas-collision-measure-exact "45054503330b28b151432e6b27170112aaded210311998e9aef263885ea1fb9a" "$PAGE45"
+# the published sentences, verbatim in both the program and the page
+check_figure atlas-collision-measure-exact "600 different values to 600 variants" "$PAGE45"
+check_figure atlas-collision-measure-exact "950 of every 1,000" "$PAGE45"
+check_figure atlas-collision-measure-exact "7 of 7" "$PAGE45"
+check_figure atlas-collision-measure-exact "145 of the 600 variants carry an identical pair of splice-site values" "$PAGE45"
+check_figure atlas-collision-measure-exact "574" "$PAGE45"
+check_figure atlas-collision-measure-exact "identical 167-value ATAC_ACTIVE vector" "$PAGE45"
+check_figure atlas-collision-measure-exact "POLYADENYLATION returns ZERO values for all 600 variants at CFTR" ""
+# the per-scorer rates the page tabulates
+check_figure atlas-collision-measure-exact "CHIP_TF_ACTIVE                         1,617      930       968" ""
+check_figure atlas-collision-measure-exact "SPLICE_SITE_USAGE                        367      950       998" ""
+check_figure atlas-collision-measure-exact "AVI_SCORE                                  1        0         0" ""
+# the exact near-zero band edge
+check_figure atlas-collision-measure-exact "2^-4 = 0.0625" "$PAGE45"
+
 
 echo "=== 3b. the admission law grades the three libraries in ONE run ==="
 # THE THREE LIBRARIES ARE GRADED TOGETHER, NEVER ONE AT A TIME. F1 — no entry filed in two
