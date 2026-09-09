@@ -1,0 +1,234 @@
+STUDY 42 — THE EXACT CONTRACT
+2.7 million flood-insurance settlements graded against the algebra written into the
+contracts they settle. Money is carried as native Int128 cents; no Float, no Double
+and no float literal touches the data. Int128 crosses a node boundary as a decimal
+String and is parsed back, so there is no packing, no endianness and no width shear.
+Subject under grading: the arithmetic and the structural integrity of the instrument.
+No claimant, community or individual payout decision is assessed anywhere in this work.
+
+=== A. the corpus as ingested ===
+  settlements read                       = 2721780
+  rows too short to parse                = 0
+  money fields read as exact Int128 cents = 15173855
+  money fields the archive leaves empty   = 3878605   ELEMENT_MISSING, never a zero
+  money fields that are not a decimal     = 0
+  money fields with more than two places  = 0
+
+=== B. the deductible ladder, recovered from the settlements themselves ===
+  For each code, the most common value of (damage - paid) among settlements that
+  were NOT capped at the coverage limit. Nothing is looked up. A code whose ladder
+  cannot be recovered is REFUSED, never assumed.
+  code  decade        n   deductible   modal support
+  1       2000    162894   $1000       2953 of 162894
+  0       1980    152969   $500        13112 of 152969
+  0       2000    131812   $500        4401 of 131812
+  2       2010    130953   $2000       1324 of 130953
+  0       1990    130767   $500        7166 of 130767
+  1       1990    123586   $750        2249 of 123586
+  F       2010    111728   $1250       664 of 111728
+  1       2010    72204    $1000       1046 of 72204
+  (blank) 1980    71444    $200        11321 of 71444
+  (blank) 1970    69546    $200        16431 of 69546
+  2       2000    67896    $1000       1415 of 67896
+  9       1990    56341    $750        1822 of 56341
+  5       2010    52419    $5000       465 of 52419
+  F       2020    46992    $1250       388 of 46992
+  (code, decade) pairs with a recovered ladder = 51
+  highest modal support anywhere         = 71 of 286
+  THE RECOVERED VALUES ARE RIGHT AND THE SUPPORT IS LOW, and both are the finding:
+  the modal residual reproduces the published NFIP schedule, so the code-to-amount
+  map is real; but (damage - paid) is not concentrated at the deductible, so the
+  deductible is not what determines most settlements.
+
+=== C. ANALYSIS 1 — the contractual invariant ===
+  paid == min(damage - deductible, coverage), in exact Int128 cents.
+  Every settlement lands in exactly one bin; the bins are tested in this order.
+  ABSENT                     = 690929   (253851 per million)
+  LADDER_REFUSED             = 14316   (5259 per million)
+  NEGATIVE_RESIDUAL          = 214926   (78965 per million)   residual total = 195548144806 cents
+  LIMIT_CAP                  = 93172   (34232 per million)
+  EXACT_MATCH                = 114944   (42231 per million)
+  ONE_DOLLAR_ROUNDING_SHEAR  = 823111   (302416 per million)   residual total = 36972497 cents
+  RESIDUAL_OTHER             = 770382   (283043 per million)   residual total = 280284081879 cents
+  total settlements binned               = 2721780 of 2721780
+
+=== D. ANALYSIS 2 — the Parametric Trigger Matrix ===
+  Not a fitted relation. A discrete map [integer depth] -> [integer payout], asking
+  whether a public integer measurement is structurally rigid enough to execute a
+  contract without human adjustment. All order statistics are exact integer cents;
+  every ratio is an exact integer count over an exact integer count.
+
+  depth_ft        n   median_paid_cents      within_1/4     within_1/2   rigidity_ppm
+  0        532988    758500              61316          133803         115041
+  1        487253    998068              51296          108551         105275
+  2        194378    1659862             20603          43974          105994
+  3        110788    1961192             11778          25056          106311
+  4        76236     2305701             7679           16564          100726
+  5        47097     3000000             5129           10741          108902
+  6        40280     2586077             4489           9423           111444
+  7        24057     3515257             2830           6245           117637
+  8        27598     3590520             3170           6980           114863
+  9        13062     4566102             1832           3672           140254
+  10       22319     5885358             3778           7902           169272
+  11       6005      3718628             835            1748           139050
+  12       24424     3284827             3464           7030           141827
+  13       4736      3560000             663            1369           139991
+  14       7338      3781289             992            2062           135186
+  15       6061      4471035             877            1797           144695
+  16       5595      2790000             680            1456           121537
+  17       3471      3000000             425            927            122443
+  18       6880      2652503             846            1739           122965
+  19       2783      3016471             346            717            124326
+  20       5728      4400000             775            1549           135300
+  21       2635      3039747             328            661            124478
+  22       3102      2940000             366            775            117988
+  23       2122      3126250             218            506            102733
+  24       8997      1944722             973            2185           108147
+  25       2460      4550000             341            681            138617
+  26       2439      2983664             313            636            128331
+  27       2130      3467357             293            628            137558
+  28       2588      2960673             326            645            125965
+  29       1659      3204288             227            450            136829
+  30       3833      2969958             452            941            117923
+
+  conditioned on single-family occupancy in a mapped high-risk zone (A or V):
+  depth_ft        n   median_paid_cents      within_1/4   rigidity_ppm
+  0       243691   620802             30921       126886
+  1       202187   777002             23530       116377
+  2       86645    1258800            10594       122269
+  3       51765    1549515            5965        115232
+  4       37100    1932937            3974        107115
+  5       24034    2660000            2607        108471
+  6       20702    2447687            2289        110569
+  7       12619    3519205            1485        117679
+  8       14683    3473737            1641        111761
+  9       6727     4346870            933         138694
+  10      12467    6042274            2395        192107
+  11      2986     3355000            425         142330
+  12      11955    3230000            1610        134671
+  13      2268     3084522            309         136243
+  14      3828     3514601            537         140282
+  15      3299     4550000            509         154289
+  16      2832     2424364            367         129590
+  17      1705     2500000            221         129618
+  18      3565     2363375            397         111360
+  19      1316     2528401            151         114741
+  20      3287     4400000            465         141466
+  21      1289     2551822            144         111714
+  22      1583     2640000            192         121288
+  23      1033     2408312            133         128751
+  24      4695     1587074            515         109691
+  25      1288     4740000            182         141304
+  26      1228     2509781            150         122149
+  27      1041     3049246            134         128722
+  28      1356     2432810            165         121681
+  29      823      2751302            139         168894
+  30      2062     2759524            219         106207
+
+  median payout over 31 depths: 12 inversions across the whole range
+  over the 11 depths carrying 10,000+ settlements: 3 inversions
+  longest strictly increasing run        = 6 consecutive depths
+  first and last median, cents           = 620802 -> 2759524
+  best conditioned rigidity, parts per million = 192107
+  THE STEP EXISTS AND THE RIGIDITY DOES NOT, and they are two answers: the median
+  payout rises with depth, while fewer than one settlement in five sits within a
+  quarter of its own depth's median.
+
+  depth rows with at least 100 settlements = 31
+  depths where a majority of settlements sit within a quarter of the median = 0
+  those depths: none
+
+=== E. ANALYSIS 3 — the appointment ===
+  Does the institutional record land where the physical record says? The gauge side
+  is the four-gauge USGS corpus already pinned in this repository for the Guadalupe
+  crest of 2025-07-04, whose 10.000 ft crossings are Hunt 03:00 and Kerrville 06:00.
+  2025 settlements in the gauged counties = 125
+  dated the crest day 2025-07-04        = 117
+  that is 936000 per million of them, on one day out of the year
+  The gauge crossed 10.000 ft at Hunt 03:00 and Kerrville 06:00 that morning. The
+  claims archive dates a loss to the DAY, so this is a match of days and not of
+  hours; the hour-level appointment is not measurable from this field.
+    2025-07-03: 3
+    2025-07-04: 117
+    2025-07-05: 4
+    2025-07-14: 1
+
+=== F. ANALYSIS 4 — the baseline lock ===
+  The archive carries its own vintage stamp. We seal today's state cryptographically
+  so that when it is revised the diff is a measurement rather than an argument.
+  asOfDate 2026-06-01 on 2721780 settlements
+  distinct archive vintages in the corpus = 1
+  per-settlement seals written           = 2721780
+  CORPUS SEAL (order-independent sha256) = 648f32eb494b7d0990446d4f7aa05971cbe395d34de0fac39937577616edee3d
+  LEDGER SEAL (Analysis 1 bin counts)    = 8a0bc3227eeedc062896c237099239e461fefb2affc33ca4147ef795ebcd0291
+  per-settlement seal ledger written to   = ./record-seals.txt
+
+=== G. the mesh boundary, proven on this run ===
+  The corpus is sharded, every Int128 crosses the boundary as a decimal String and
+  is parsed back, and the shards are recombined. The recombined ledger must equal
+  the whole-corpus ledger exactly, or the boundary is lossy and nothing else here
+  can be trusted.
+  shards                                 = 9, sizes 302420-302420
+  Int128 String round-trip failures      = 0
+  MESH SEAL                              = 8a0bc3227eeedc062896c237099239e461fefb2affc33ca4147ef795ebcd0291
+  mesh ledger equals whole-corpus ledger = true
+
+=== H. control arms, in both directions ===
+  PASS  sha256("") is e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  PASS  sha256("abc") is ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
+  PASS  sha256 spans a block boundary correctly (56 and 64 byte inputs differ)
+  PASS  cents: 7243.04 is 724304
+  PASS  cents: 3000.00 is 300000
+  PASS  cents: a bare 7744 is 774400
+  PASS  cents: 0.5 is 50, not 5
+  PASS  cents: a negative reads negative
+  PASS  cents: empty is ABSENT, never zero
+  PASS  cents: a non-decimal is MALFORMED
+  PASS  cents: three decimal places is its own answer, not a silent truncation
+  PASS  mesh: Int128 survives String round-trip at every width including both extremes
+  PASS  mesh: a value beyond Int64 is carried exactly, which a 64-bit packing could not
+  PASS  mesh: a corrupt wire value is REFUSED, never coerced
+  PASS  always-green: damage 206991.00 less a 1250 deductible pays 205741.00 exactly
+  PASS  always-red: a payment one dollar short is ONE_DOLLAR_ROUNDING_SHEAR, not EXACT
+  PASS  always-red: a payment above the damage is NEGATIVE_RESIDUAL
+  PASS  always-red: entitlement above the limit is LIMIT_CAP
+  PASS  always-red: a residual larger than a dollar is RESIDUAL_OTHER
+  PASS  refusal: a code with no recovered ladder is REFUSED, never assumed
+  PASS  absence: a settlement with no damage figure is ABSENT, never scored as zero
+  PASS  the bins are disjoint: every settlement in the corpus landed in exactly one
+  PASS  ladder: a code the corpus never carries recovers nothing
+  PASS  ladder: at least one code recovered a whole-dollar deductible
+  PASS  determinism: a second independent recovery returns the identical ladder
+  PASS  determinism: the ledger seal is reproducible within a single run
+
+  control arms run    = 26
+  control arms failed = 0
+SELFTEST PASS
+
+=== I. the same figures in the form the study page states them ===
+  settlements                            = 2,721,780
+  money fields read as exact Int128 cents = 15,173,855
+  money fields ELEMENT_MISSING           = 3,878,605
+  shard size                             = 302,420
+  ladder entries recovered               = 51
+  ABSENT                     = 690,929
+  LADDER_REFUSED             = 14,316
+  NEGATIVE_RESIDUAL          = 214,926   residual 195,548,144,806 cents
+  LIMIT_CAP                  = 93,172
+  EXACT_MATCH                = 114,944
+  ONE_DOLLAR_ROUNDING_SHEAR  = 823,111   residual 36,972,497 cents
+  RESIDUAL_OTHER             = 770,382   residual 280,284,081,879 cents
+  depth 0 median paid                     = 620,802 cents
+  depth 1 median paid                     = 777,002 cents
+  depth 2 median paid                     = 1,258,800 cents
+  depth 3 median paid                     = 1,549,515 cents
+  depth 4 median paid                     = 1,932,937 cents
+  depth 5 median paid                     = 2,660,000 cents
+  depth 10 median paid                     = 6,042,274 cents
+  appointment: on the crest day          = 117 of 125
+  appointment: parts per million         = 936,000
+  best conditioned rigidity, ppm         = 192,107
+  control arms run                       = 26
+
+STUDY42_THE_EXACT_CONTRACT
+DONE

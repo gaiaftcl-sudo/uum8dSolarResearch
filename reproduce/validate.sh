@@ -181,6 +181,13 @@ check_figure actuarial-domain-exact-vs-float "fewest agreeing significant digits
 check_figure actuarial-domain-exact-vs-float "3,845"     "Study-39-Actuarial-Domain.md"
 check_figure actuarial-domain-exact-vs-float "442, 547, 631" "Study-39-Actuarial-Domain.md"
 
+# --- Study 42: the exact contract, 2.7M NFIP settlements in Int128 cents ---
+check_figure exact-contract-nfip "STUDY42_THE_EXACT_CONTRACT" "Study-42-The-Exact-Contract.md"
+check_figure exact-contract-nfip "SELFTEST PASS" ""
+check_figure exact-contract-nfip "control arms failed = 0" "Study-42-The-Exact-Contract.md"
+check_figure exact-contract-nfip "Int128 String round-trip failures      = 0" "Study-42-The-Exact-Contract.md"
+check_figure exact-contract-nfip "mesh ledger equals whole-corpus ledger = true" "Study-42-The-Exact-Contract.md"
+
 # --- Study 26: the exact discrimination court, and the exhaustive off-target screen ---
 check_figure mr-topology-vs-expression-exact "TOPOLOGY_EXPLAINS: 11 of 17 tumour types" "Study-26-Master-Regulator-Bonds.md"
 check_figure mr-topology-vs-expression-exact "EXPRESSION_ADDS  : 5 of 17 tumour types"  "Study-26-Master-Regulator-Bonds.md"

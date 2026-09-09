@@ -45,7 +45,7 @@ any medicine safe or unsafe.**
 - [**The ontology**](Ontology) — grades, terminals, controls, and what each page may say
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm) — the method in one page
 - [**Ask someone you trust to check this**](Ask-Someone-You-Trust-To-Check-This) — what to hand a sceptic
-- [Readers’ guide](Shear-Studies-Readers-Guide) · [Program index — all 39 studies](Shear-Studies-Index) · [White paper](Shear-Studies-White-Paper) · [Roadmap](Shear-Studies-Roadmap)
+- [Readers’ guide](Shear-Studies-Readers-Guide) · [Program index — all 42 studies](Shear-Studies-Index) · [White paper](Shear-Studies-White-Paper) · [Roadmap](Shear-Studies-Roadmap)
 - [**The full-grade replacement**](The-Replacement-Grade) — 49 retired instruments, 4 verticals
 - [**The exactness seam**](The-Exactness-Seam) — the business case
 - [Build a study — Falcon walkthrough](Build-a-Study-Falcon-Walkthrough) — how to add one yourself
@@ -61,6 +61,7 @@ verdicts. The subject under grading is always the instrument, never the phenomen
 - [**Study 36** — the language game of Fermat's Last Theorem](Study-36-The-Language-Game-of-Fermats-Last-Theorem) — guess and shear, or project
 - [**Study 40** — the number the simulation throws away](Study-40-Indefinite-Causal-Order) — **their ICO result computed as a fraction; in float the effect returns 0 at every width, and an effect returned as zero cannot be searched for**
 - [**Study 41** — fifty years of solving the wrong problem](Study-41-What-The-Ordering-Cost) — **the ordering was never about time, it was about arithmetic; 177× the work and 2,400× the wrong guesses to return the answer the machine already had**
+- [**Study 42** — The Exact Contract](Study-42-The-Exact-Contract) — **2.7M flood settlements in Int128 cents; the step exists and the rigidity does not**
 - [**Study 29** — continuous-model shear](Study-29-Continuous-Model-Shear)
 - [The lattice holds](The-Lattice-Holds) · [Impact study — continuum dead](Impact-Study-Death-of-Continuous-Shear) · [Death of continuous shear](Death-of-Continuous-Shear)
 - [Fourier Phantom — Anima FNO vs 11+12+13](Impact-Study-Fourier-Phantom) · [Stellar dynamo kill shot](Impact-Study-Stellar-Dynamo-Kill-Shot)
