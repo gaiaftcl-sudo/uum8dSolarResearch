@@ -89,6 +89,7 @@ verdicts. The subject under grading is always the instrument, never the phenomen
 
 - [**The detector that flags the whole market**](The-Detector-That-Flags-The-Whole-Market) — a manipulation geometry in exact integers, and the regulator's own indicator scored against a legitimate quoter
 - [**Study 43** — almost every order is cancelled, and that is normal](Study-43-Almost-Every-Order-Is-Cancelled) — **nine sessions, three operators, two continents: 935 to 998 of every 1,000 orders that ended, ended without trading. A check that flags almost everything is a denominator, not a detector — and the stock you pick moves it further than the exchange does**
+- [**Study 44** — nine billion answers, four billion ways to say them](Study-44-The-Atlas-Container) — **AlphaGenome Atlas ships 9 billion predictions in single-precision floats, which hold 4.28 billion distinct values: 52 of every 100 variants MUST share a score with another. Agreement and exhaustion look identical on the wire**
 - [**Study 38** — the loss-reserve triangle](Study-38-Loss-Reserve-Triangle) — a reserve is an exact rational; 481 of 482 verdicts identical in both arithmetics; the sixteen-billion figure comes from an unchecked premise
 - [**Study 39** — the actuarial domain](Study-39-Actuarial-Domain) — life, pensions, multi-state and aggregation; the margin is 8 significant digits at its tightest
 

@@ -821,6 +821,26 @@ check_figure market-shear-cross-venue "5,356"        "$PAGE43"
 check_figure market-shear-cross-venue "RATIO_PUBLISHED_NO_THRESHOLD" "$PAGE43"
 check_figure market-shear-cross-venue "LEDGER_CLOSES_EXACT" "$PAGE43"
 
+# STUDY 44 — the Atlas container. Every figure is an integer count of bit patterns,
+# and the program greps the container sentence out of the proto rather than quoting it.
+check_figure atlas-container-pigeonhole-exact "ATLAS_CONTAINER_CANNOT_DISTINGUISH_ITS_OWN_ROWS" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "642d84b418825906d7bc2ec2933f2c8c50b61f3f74f11445d7c89d44ed62e631" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "037e8ca50171582db7bf63780e87cb37d8dfeb2c078573412bdd71c0d69f1ed9" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "4,294,967,296" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "16,777,214" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "4,278,190,082" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "9,000,000,000" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "9,299,252,154" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "3,099,750,718" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "4,721,809,918" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "1,065,353,216" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "7,934,646,784" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "4,607,182,418,800,017,408" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "1,000 variants in 4,278,190,082 slots forces 0 collisions" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "9,000,000,000 variants in 4,278,190,082 slots forces 4,721,809,918" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "arms: 7 run, 7 passed, 0 failed" "Study-44-The-Atlas-Container.md"
+check_figure atlas-container-pigeonhole-exact "Values are stored as single" "Study-44-The-Atlas-Container.md"
+
 
 echo "=== 3b. the admission law grades the three libraries in ONE run ==="
 # THE THREE LIBRARIES ARE GRADED TOGETHER, NEVER ONE AT A TIME. F1 — no entry filed in two
