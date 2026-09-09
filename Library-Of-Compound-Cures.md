@@ -87,11 +87,11 @@ the checkout directory indicts a correct reproduction.
 CONTROL ARM  71/71 PASS        43 must REFUSE · 19 must ADMIT · 9 must HOLD
   programs in reproduce/   89
 LIBRARY PROTEINS    ->  ADMITTED     6 files   5 admitted   1 held   0 refused
-LIBRARY COMPOUNDS   ->  ADMITTED     7 files   4 admitted   3 held   0 refused
-LIBRARY MATERIALS   ->  ADMITTED     5 files   5 admitted   0 held   0 refused
+LIBRARY COMPOUNDS   ->  ADMITTED     8 files   4 admitted   4 held   0 refused
+LIBRARY MATERIALS   ->  ADMITTED     6 files   6 admitted   0 held   0 refused
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries
-TRANSCRIPT SEAL  sha256  da85dccf51d40c7dd5ecaf6842ba2927370c2bc6a26730e7ff3c55193297a3e5
-sealed bytes             32,378
+TRANSCRIPT SEAL  sha256  fa0c43d8cc38a2ad66214bac3a82c3aa27cb86cedd310640ed88ce0d9fb9584b
+sealed bytes             33,668
 exit                     2
 ```
 
@@ -105,7 +105,7 @@ broken reproduction: the per-entry and per-library verdicts above it are what mu
 
 ## The entries
 
-Seven entry blocks follow, reproduced verbatim from the canonical entry files in
+Eight entry blocks follow, reproduced verbatim from the canonical entry files in
 `library/compounds/`. The checker grades **one entry per file**, so grade the library directory —
 this page is the reading surface, not the graded object. **Clause L9 makes "reproduced verbatim" a
 gate rather than a promise**: it compares the fenced blocks on this page against the blocks in that
@@ -441,6 +441,50 @@ ADDED          2026-09-08
 The full page, including the tie rule that took a claimed nineteen designed-specificity families
 down to a measured two, is **[The order of the bases](The-Order-Of-The-Bases)**.
 
+### 8 — Every clinical CRISPR guide with a public spacer, against its own composition
+
+The genome-wide map above answers **where** one guide can cut. This entry asks the comparative
+question of **every** clinical guide the public registry names: twenty-five of them, under three
+different PAM rules, each ranked against **32 permutations of its own bases**.
+
+**The result the control arm was built for is not a flattering one, and it is the honest half.**
+Zero of 25 sit below their own composition floor. But a therapeutic spacer **is not free to be
+chosen** — it is dictated by the locus the medicine has to cut, while its 32 permutations have no
+locus to hit and are free to be whatever minimises burden. The comparison is between a molecule
+with a job and 32 with none, so the result is a statement about **the constraint**, never about
+anyone's design. That every one of them still reaches **zero sites at one mismatch** under that
+constraint is the more remarkable half of the same measurement.
+
+**And the 3 GB download is not required to check it.** The 3,022-line sealed transcript is shipped
+in this repository, digest-pinned, beside a deliberately truncated control that **refuses** — so
+the corpus carries both directions of its own instrument.
+
+```affine-entry
+LIBRARY        COMPOUNDS
+IDENTITY_KIND  CONTENT_DIGEST
+IDENTITY       61ef3254a8455ee339917368c5d45013072a377592045d2e0494cc99c0fad247
+DIGEST_OF      the sealed transcript of the complete genome-wide enumeration for every clinical CRISPR guide whose spacer is public, with every guide's control arm
+TITLE          Twenty-five clinical CRISPR guides, complete enumeration under three PAM rules, each ranked against 32 permutations of its own bases
+MEASURED       25 guides registered in a public login-free substance registry with a spacer and named in a WHO INN Proposed List: 18 SpCas9 family under NGG, 4 AsCas12a under TTTV, 3 Cas12b under TTN, at each guide's own measured spacer length, across both strands of GRCh38 primary assembly. Every one of the 24 full-length guides has ZERO sites at one mismatch and 22 of 24 have zero at two; the whole off-target burden sits in the 3 and 4 mismatch buckets. 2,718 coordinates are named in full with chromosome, position and strand, and the number of coordinate lines emitted equals the sum of the 24 burdens exactly, 2,718 = 2,718. Against 32 permutations of its own bases each: 0 of 25 sit below their own composition floor and 25 of 25 sit inside the range their own bases produce, where permutation burdens span 0 to 7,718,082.
+PROGRAM        crispr-clinical-guide-atlas-exact
+FIGURE         61ef3254a8455ee339917368c5d45013072a377592045d2e0494cc99c0fad247
+FIGURE         CRISPR_CLINICAL_GUIDE_ATLAS__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT
+FIGURE         bb188a75837c3384322723c5935da34605cb89caae43cf3b0468572fda60b80c
+SEAL           61ef3254a8455ee339917368c5d45013072a377592045d2e0494cc99c0fad247
+GRADE          MEASURED
+SOURCE         NCATS GSRS spacers with WHO INN Proposed List product names, screened against GENCODE GRCh38 primary assembly, sha256 b760d18dbb651dd14dfc290083371b3ef3bff122d43a9cefb13ca4ecf38f05ca
+WHERE_THE_LAW_LIVES  reproduce/crispr-clinical-guide-atlas-exact.swift
+REFUSED        not a claim that any of these therapies is safe, or unsafe. Neither verdict is ours to give and neither follows from this arithmetic
+REFUSED        not a cut. A site counted here is a place the chemistry COULD direct a cut, not an occupancy, not a clinical event, and not evidence that any medicine harms anyone
+REFUSED        not a judgement of anyone's guide design. A therapeutic spacer is dictated by the locus the medicine has to cut while its permutations have no locus to hit, so the control arm is a statement about that constraint and never about design quality
+REFUSED        not coverage of the six products whose spacer is not public. For those the honest word is NOT_KNOWN and it is printed as NOT_KNOWN rather than as zero
+FALSIFIER      a candidate site in GRCh38 within the reported mismatch range, under the guide's own PAM rule and spacer length, that this enumeration omits; or a coordinate count that does not equal the sum of the reported burdens
+REPRODUCE      xcrun swiftc -O -swift-version 5 reproduce/crispr-clinical-guide-atlas-exact.swift -o /tmp/atlas && curl -sL <GRCh38 primary assembly fasta gz> | gunzip -c | /tmp/atlas corpus/crispr-clinical/guides_expanded.tsv
+NOTE           The 3,022-line sealed transcript is SHIPPED in the repository as corpus/crispr-clinical/RUN-full-assembly-n32.txt, digest-pinned in that directory SHA256SUMS beside a deliberately truncated control that REFUSES, so the seal can be checked without the 3 GB assembly download. The program itself refuses without the assembly, so in a clean clone this entry reads NOT_KNOWN until it is run or that transcript is given as evidence.
+NOT_ADVICE     Nothing in this entry is medical advice and it is not a recommendation to take anything.
+ADDED          2026-09-09
+```
+
 ## The refused section
 
 **A library that shows only what it admitted cannot be audited.** Six things were considered for
@@ -597,12 +641,12 @@ This library states both, always. Reproduced verbatim from the grading run:
   missing instead of quietly not having it.
     - The exact off-target map of del-zota's payload. The sequence is not public; the slot fills the day the sponsor or a regulator puts it on the table. Named 2026-09-08.
     - The exact off-target map of VERVE-102's guide on the real molecule. Named 2026-09-08.
-    - A signature-reversal or network-recovery figure for rentosertib. The compound is ABSENT from both LINCS perturbagen tables and TNIK is a master regulator in none of our cohorts, so there is nothing to compute against; the slot fills if a public perturbation corpus carries the molecule. Named 2026-09-08.
+    - An ADMISSIBLE ENTRY for rentosertib. Two separate things block it and both are measured. (1) The recovery figure cannot be computed: the compound is ABSENT from both LINCS perturbagen tables and TNIK is a master regulator in none of our cohorts, so there is nothing to compute against. (2) Its three SEALED-looking arms cannot be filed either: measured 2026-09-09, none of rentosertib-structure-lock-exact, tnik-network-degree-exact or modality-register-exact accumulates a transcript or digests its own results, so clause E5 has no seal to check and the page publishes SOURCE digests only. The slot fills when a public perturbation corpus carries the molecule, or sooner when those three programs are given a transcript seal. Named 2026-09-08, condition made specific 2026-09-09.
 
   PER-LIBRARY CLAUSES
-     ok  L1_NOT_EMPTY              7 entry file(s) present
+     ok  L1_NOT_EMPTY              8 entry file(s) present
      ok  L2_MANIFEST               LIBRARY COMPOUNDS declares: per identity 1, per program 1, per seal 1, per measured 1, per triple 1; page Library-Of-Compound-Cures.md; open slots 3
-     ok  L7_NO_ENTRY_REFUSED       0 of 7 entries refused
+     ok  L7_NO_ENTRY_REFUSED       0 of 8 entries refused
      ok  L3_DISTINCT_IDENTITY      4 entries, 4 distinct; most repeated value 'AXQ9493NT2' carries 1, declared ceiling 1 per value — 1 <= 1
      ok  L4_DISTINCT_PROGRAM       4 entries, 4 distinct; most repeated value 'mr-topology-vs-expression-exact' carries 1, declared ceiling 1 per value — 1 <= 1
      ok  L5_DISTINCT_SEAL          4 entries, 4 distinct; most repeated value '513de7e9db6556df1895bfce4cb4d69e4816d7b45b75bee1dc8452335c2c7757' carries 1, declared ceiling 1 per value — 1 <= 1
@@ -610,16 +654,19 @@ This library states both, always. Reproduced verbatim from the grading run:
      ok  L8_DISTINCT_TRIPLE        4 entries, 4 distinct; most repeated value 'AXQ9493NT2 | zilganersen-offtarget-whole-transcriptome | edcb277ddea44820502b6446b00ed8bdcfdb08835d6785fdee7d1b370420bbaa' carries 1, declared ceiling 1 per value — 1 <= 1
 ```
 
-**Seven entry files, four admitted here, three held — and the three are the honest half of this
-table.** The library holds seven measurements. Four of them are graded ADMITTED from a clean clone,
-because their programs run to completion against corpora small enough to ship in this repository.
-The other three — the registry-wide atlas, the genome-wide CRISPR map and the specificity ranking —
-name a program that **refuses** without a 1.5 GB public download, so in a clean clone their evidence
-is not present and the law returns **NOT_KNOWN**. A held entry is not in the library and is not
-thrown out of it. Point the grader at a directory holding those three transcripts and they admit.
+**Eight entry files, four admitted here, four held — and the four held are the honest half of this
+table.** The library holds eight measurements. Four are graded ADMITTED from a clean clone, because
+their programs run to completion against corpora small enough to ship here. The other four — the
+registry-wide atlas, the genome-wide CRISPR map, the specificity ranking and the clinical guide
+atlas — name a program that **refuses** without a public download of 1.5 to 3 GB, so in a clean
+clone their evidence is not present and the law returns **NOT_KNOWN**. A held entry is not in the
+library and is not thrown out of it: point the grader at a directory holding those four transcripts
+and they admit. For the guide atlas that transcript is **shipped in this repository**, 3,022 lines,
+digest-pinned beside a deliberately truncated control that refuses — so its seal can be checked
+without the download at all.
 
 **That distinction is younger than this page, and it was our own defect.** Until 2026-09-08 all
-three read ADMITTED here, because several programs now print their published figures **on every
+three of them read ADMITTED here, because several programs now print their published figures **on every
 exit path** — the right thing for the wiki harness, which must check a page against its program with
 no corpus present — and clauses E4 and E5 were matching those figures against text the run had
 **quoted** rather than **computed**. The seal of a screen that measured nothing was being credited to

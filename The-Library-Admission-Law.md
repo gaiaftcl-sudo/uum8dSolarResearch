@@ -285,6 +285,17 @@ it, and a control arm proves the detector knows the difference.
 can support — `model_score high, plausibility strong` is admitted by this clause, and the honest
 message says so by naming its own scope.
 
+**It refuses in the other direction too, and that is recorded rather than filed off.** On
+2026-09-09 this clause refused a correctly-formed MATERIALS entry because its `MEASURED` line read
+*"all three pairwise **confidence** intervals overlap"* — the statistical sense, from a published
+epidemiological study, not a generator scoring itself. **The refusal was a false positive and the
+clause was not widened to accommodate it.** A token list is blunt by construction, the entry lost
+nothing by saying *"all three pairwise intervals overlap"* and printing the interval `3.4 to 19.7`
+beside it, and softening a detector that fires to admit one's own entry is how a gate becomes
+decoration. The cost of bluntness here is a rewritten sentence; the cost of the alternative is a
+self-graded column reaching a published figure, which is what this clause exists to have prevented
+once already.
+
 ### E13 — FALSIFIER
 The observation that would overturn the entry. **An entry nothing could refute is not evidence**,
 and there is nothing for a later refutation to be filed against.

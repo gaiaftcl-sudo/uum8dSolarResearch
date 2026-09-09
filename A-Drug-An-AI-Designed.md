@@ -342,21 +342,42 @@ curl -s "https://gsrs.ncats.nih.gov/api/v1/substances(M9NU5G8WXY)?view=full"
 
 Every program takes its corpus paths from `argv`; no absolute path is baked into any published source. Every one hashes its inputs and refuses on a mismatch, prints its reference figures on **every** exit path including refusals, and exits non-zero when it is given nothing.
 
-Markers and seal, recomputed by the programs on every run:
+Source digests, and a correction about the word *seal* — dated 2026-09-09.
+
+**These five values are digests of the PROGRAMS, not seals over a measurement, and this block used
+to call the last one a SEAL.** It is the sha256 of the five sources concatenated. That is
+provenance — it says which instrument ran — and it says nothing about what the instrument
+returned. A seal in this programme is a digest over the **measurement**: every figure, every arm,
+every histogram, and no path, no timing and no source text. Measured on 2026-09-09: none of these
+three programs accumulates a transcript or computes a digest over its own results, so **there is
+no seal on this page to publish, and the honest thing is to say so rather than to let a source
+digest stand in for one.** The block below is relabelled and the word is not reused.
 
 ```
 MARKER  TNIK_NETWORK_ARM_FIVE_REPAIRS_APPLIED
 MARKER  MODALITY_REGISTER_ARM_FIVE_REPAIRS_APPLIED
 
+SOURCE DIGESTS — which instrument ran. NOT a seal over any result.
 sha256 rentosertib-structure-lock-exact.swift  3435844fade80cd481ce1117f25501218c62cc73e87a02293c7ab47a4dbe8911
 sha256 tnik-network-degree-exact.swift         6878995bf82d4ba514b16285262cd57f65f484d5c931f2f5b22a5fe5ea05d3f5
 sha256 tnik-repairs-exact.swift                b855df532d59a7f7836b3a9bc5f0082261683f4baf4895f9bb0f1fed586df979
 sha256 modality-register-exact.swift           d2fe1e9700b167affd7ec54ea656efadc76a55e1c839189b5a90d30c1fef3259
 sha256 modality-repairs-exact.swift            0e2e8da4afec8c8fd9e893f2c133cf55285352a30b8d50e2db6b2c659d9adf10
 
-SEAL  (the five sources concatenated in the order above)
+SOURCE-SET DIGEST  (the five sources concatenated in the order above)
       2d8bd906268f1e7a4594d47299d799f00a99ada1095f3aaca4083521c240b9a7
+
+TRANSCRIPT SEAL  NONE. These programs seal no measurement.
 ```
+
+**And this is why rentosertib is an OPEN SLOT in the Library of Compound Cures rather than an
+entry, which until today was a decision that happened to be right for a reason nobody had
+written down.** The admission law's clause E5 requires a seal the named program actually prints,
+checked against the region of its output the run computed. None of these three prints one. So an
+entry for this drug cannot be admitted on the evidence that exists, and the condition that would
+fill the slot is now specific and cheap: **give the three programs a transcript seal.** Until then
+the page's arms stand as figures a reader can re-derive by running the programs, and the library
+records the gap by name instead of quietly not having it.
 
 ## Sources
 

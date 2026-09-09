@@ -625,9 +625,9 @@ LIBRARY PROTEINS   ->   ADMITTED
       HELD E5_SEAL     the declared seal does appear in that text, which is exactly the
                        trap: appearing and being computed are two different things.
 F1_NO_ENTRY_FILED_TWICE   ok — no triple appears in more than one of the 3 libraries
-                          graded together; 12 distinct triples over 14 admitted entries
-TRANSCRIPT SEAL  sha256  da85dccf51d40c7dd5ecaf6842ba2927370c2bc6a26730e7ff3c55193297a3e5
-sealed bytes             32,378
+                          graded together; 13 distinct triples over 15 admitted entries
+TRANSCRIPT SEAL  sha256  fa0c43d8cc38a2ad66214bac3a82c3aa27cb86cedd310640ed88ce0d9fb9584b
+sealed bytes             33,668
 exit                     2          (2 means an entry is HELD, 1 means refused, 0 means clean)
 ```
 
