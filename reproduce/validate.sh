@@ -755,6 +755,72 @@ check_figure silicon-shear-telemetry "1,499,438-1,500,676 of 3,000,000"         
 check_figure silicon-shear-telemetry "-45 to +938 cycles"                           "Study-41-What-The-Ordering-Cost.md"
 check_figure silicon-shear-telemetry "ABSENT is not ZERO and is not PASS"           ""
 
+# --- STUDY 43 — the cross-venue ledger.  Nine venue-sessions, three exchange operators, two
+# --- continents, two rulebooks, 2003 to 2026.  market-shear-cross-venue.swift measures no
+# --- market: it carries the counts market-shear-exact.swift printed on each session, names the
+# --- file each was read out of, and RE-DERIVES every published rate from those counts in whole
+# --- numbers.  It takes no argv, reads no file and applies no threshold, so it has exactly one
+# --- exit path and prints the complete ledger before taking it — including when it refuses.
+# --- Proven able to fail in both directions before these rows were written: move one published
+# --- rate by 1 and it exits 1 naming the row; break one closure identity and it does the same.
+PAGE43=Study-43-Almost-Every-Order-Is-Cancelled.md
+check_figure market-shear-cross-venue "12,676,036"   "$PAGE43"
+check_figure market-shear-cross-venue "12,156,283"   "$PAGE43"
+check_figure market-shear-cross-venue "2,921,796"    "$PAGE43"
+check_figure market-shear-cross-venue "2,732,598"    "$PAGE43"
+check_figure market-shear-cross-venue "16,165,067"   "$PAGE43"
+check_figure market-shear-cross-venue "15,952,637"   "$PAGE43"
+check_figure market-shear-cross-venue "53,909"       "$PAGE43"
+check_figure market-shear-cross-venue "253,809"      "$PAGE43"
+check_figure market-shear-cross-venue "251,097"      "$PAGE43"
+check_figure market-shear-cross-venue "121,297"      "$PAGE43"
+check_figure market-shear-cross-venue "120,331"      "$PAGE43"
+check_figure market-shear-cross-venue "82,132"       "$PAGE43"
+check_figure market-shear-cross-venue "81,648"       "$PAGE43"
+check_figure market-shear-cross-venue "108,421"      "$PAGE43"
+check_figure market-shear-cross-venue "108,137"      "$PAGE43"
+check_figure market-shear-cross-venue "130,683"      "$PAGE43"
+check_figure market-shear-cross-venue "130,451"      "$PAGE43"
+check_figure market-shear-cross-venue "287,986"      "$PAGE43"
+# the non-degenerate composite contrast — never the 0-against-0 cell, whose control is also 0
+check_figure market-shear-cross-venue "88,900"       "$PAGE43"
+check_figure market-shear-cross-venue "63,140"       "$PAGE43"
+check_figure market-shear-cross-venue "7,451"        "$PAGE43"
+check_figure market-shear-cross-venue "6,491"        "$PAGE43"
+check_figure market-shear-cross-venue "3,157"        "$PAGE43"
+check_figure market-shear-cross-venue "3,014"        "$PAGE43"
+check_figure market-shear-cross-venue "1,970"        "$PAGE43"
+# the BX/PSX contrast is CONFOUNDED and the confounder is a count, so it is pinned as one
+check_figure market-shear-cross-venue "4,636,704"    "$PAGE43"
+# compute cost, stated as an envelope over a set of builds and sized on the slowest run
+check_figure market-shear-cross-venue "46.568 s"     "$PAGE43"
+check_figure market-shear-cross-venue "328.043 s"    "$PAGE43"
+check_figure market-shear-cross-venue "11.4 microseconds" "$PAGE43"
+check_figure market-shear-cross-venue "13.586 seconds"    "$PAGE43"
+check_figure market-shear-cross-venue "28,734,686"   "$PAGE43"
+check_figure market-shear-cross-venue "63,447"       "$PAGE43"
+# the blockchain arm — already published, cited not re-measured
+check_figure market-shear-cross-venue "22,287"       "$PAGE43"
+check_figure market-shear-cross-venue "4.8 per 1,000" "$PAGE43"
+# the three feeds that cannot carry the check, each failing a DIFFERENT way
+check_figure market-shear-cross-venue "13,081,242"   "$PAGE43"
+check_figure market-shear-cross-venue "344,258"      "$PAGE43"
+check_figure market-shear-cross-venue "772,868"      "$PAGE43"
+check_figure market-shear-cross-venue "536,870,912"  "$PAGE43"
+check_figure market-shear-cross-venue "68123fc57aeef19f331acd74803b4c28" "$PAGE43"
+check_figure market-shear-cross-venue "EMPTY AT SOURCE" "$PAGE43"
+# scope that must survive into the prose, and did
+check_figure market-shear-cross-venue "CTEST"        "$PAGE43"
+check_figure market-shear-cross-venue "NOT MEASURED" "$PAGE43"
+check_figure market-shear-cross-venue "11 of 25"     "$PAGE43"
+check_figure market-shear-cross-venue "8,407"        "$PAGE43"
+check_figure market-shear-cross-venue "100,337"      "$PAGE43"
+check_figure market-shear-cross-venue "136,091"      "$PAGE43"
+check_figure market-shear-cross-venue "5,356"        "$PAGE43"
+# no threshold anywhere, and the ledger's own verdict marker
+check_figure market-shear-cross-venue "RATIO_PUBLISHED_NO_THRESHOLD" "$PAGE43"
+check_figure market-shear-cross-venue "LEDGER_CLOSES_EXACT" "$PAGE43"
+
 
 echo "=== 3b. the admission law grades the three libraries in ONE run ==="
 # THE THREE LIBRARIES ARE GRADED TOGETHER, NEVER ONE AT A TIME. F1 — no entry filed in two

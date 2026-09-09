@@ -88,6 +88,7 @@ verdicts. The subject under grading is always the instrument, never the phenomen
 ## 🏛 Markets, money and risk
 
 - [**The detector that flags the whole market**](The-Detector-That-Flags-The-Whole-Market) — a manipulation geometry in exact integers, and the regulator's own indicator scored against a legitimate quoter
+- [**Study 43** — almost every order is cancelled, and that is normal](Study-43-Almost-Every-Order-Is-Cancelled) — **nine sessions, three operators, two continents: 935 to 998 of every 1,000 orders that ended, ended without trading. A check that flags almost everything is a denominator, not a detector — and the stock you pick moves it further than the exchange does**
 - [**Study 38** — the loss-reserve triangle](Study-38-Loss-Reserve-Triangle) — a reserve is an exact rational; 481 of 482 verdicts identical in both arithmetics; the sixteen-billion figure comes from an unchecked premise
 - [**Study 39** — the actuarial domain](Study-39-Actuarial-Domain) — life, pensions, multi-state and aggregation; the margin is 8 significant digits at its tightest
 
