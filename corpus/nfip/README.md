@@ -49,8 +49,9 @@ Verify the decompressed slice without keeping it:
 **And the stored artifact is the 200,000-settlement slice, not the 2.7 million-settlement
 corpus this page is named for.** Measured 2026-09-09: `nfip-claims.csv.gz` decompresses to
 26,785,593 bytes, 200,001 lines — 200,000 settlements and a header — and its digest is the
-one the retired line labelled *"uncompressed, 200,000 settlements"*. The full corpus is a
-~360 MB CSV and is not committed; `pull-nfip-claims.sh` regenerates it from the archive, and
+one the retired line labelled *"uncompressed, 200,000 settlements"*. The full corpus is not
+committed — extrapolating the slice, 2,721,780 ÷ 200,000 × 26,785,593 B, puts it near 365 MB,
+which is why it is not — and `pull-nfip-claims.sh` regenerates it from the archive, while
 the published figures are the full-corpus run, whose transcript is `full-corpus-transcript.txt`
 and whose order-independent corpus seal is
 `648f32eb494b7d0990446d4f7aa05971cbe395d34de0fac39937577616edee3d`.
@@ -65,9 +66,10 @@ FEMA revised the archive, which is what the vintage stamp below is for.
 Every record carries `asOfDate`. The full-corpus digest recorded above, together with the
 order-independent corpus seal the program computes, locks the archive's state on the pull
 date. (`SHA256SUMS` pins the stored 200,000-settlement sample; the seal that the published
-figures rest on is the full-corpus one, for the reason given in the section above.) When FEMA revises the archive — and it will — the same program over the new pull
-returns a different seal, and the per-settlement seal ledger says exactly which settlements
-moved. That diff is the measurement, and it cannot be made without a baseline taken first.
+figures rest on is the full-corpus one, for the reason given in the section above.) When FEMA
+revises the archive — and it will — the same program over the new pull returns a different
+seal, and the per-settlement seal ledger says exactly which settlements moved. That diff is
+the measurement, and it cannot be made without a baseline taken first.
 
 ## The deductible ladder is recovered, not looked up
 
