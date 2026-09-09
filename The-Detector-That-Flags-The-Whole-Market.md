@@ -1106,7 +1106,7 @@ chosen here, not a measurement of any firm. What is carried is the existence cla
 legitimate two-sided quoter that scores 91.89% on the regulator's indicator computed in full* — and
 that is sufficient to refute a separating claim, which is all that is asserted.
 
-### The equities composite does separate — in sign, on every cell of its ladder
+### The equities composite separates on the three Nasdaq books — and Study 43 found where it does not
 
 ```
 PHANTOM  AND  D2 (a price level whose displayed size >= S never filled)
@@ -1133,6 +1133,15 @@ confirmations — the cells are nested, so ladder agreement is internal consiste
 is the second corpus, where n is 2. The v2 corpus timestamps in milliseconds, so its W = 1,000 /
 10,000 / 100,000 ns columns are identical and at most 15 of its 25 cells are distinct measurements.
 **The direction clears on two independent sessions. The magnitude does not** — 1,407 against 1,590.
+
+**CORRECTED 2026-09-09 — this heading once read "on every cell of its ladder", and six further
+venue-sessions refuted it.** That sentence was true of the three Nasdaq books it was measured on and
+is false of nine. [Study 43](Study-43-Almost-Every-Order-Is-Cancelled.md) ran the same composite on
+NYSE, NYSE American, NYSE National, NYSE Arca, NYSE Texas and Cboe Europe: **NYSE Texas reads flag
+68 against control 152 — 447 per 1,000, pointing the other way**; Cboe Europe BXE runs 8 of its 19
+defined cells below their own control; and the NYSE 2026 head returns 0 against a control of 0,
+which is not a separation but an empty cell. The three-book result stands exactly as measured. The
+generalisation drawn from it does not, and it was our own new data that broke it.
 
 ### One of the two staged feeds cannot carry the predicate at all
 
