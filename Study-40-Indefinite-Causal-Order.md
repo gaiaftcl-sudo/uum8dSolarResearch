@@ -160,7 +160,7 @@ Every exact figure is re-derived by a separately written arbitrary-precision imp
 
 ## What is settled here, and what is not
 
-**Settled, and not by argument.** Exact-integer evaluation of this physics has no horizon: it returns the same fraction at every rung, on every machine, and the seal re-derives from published bytes. Floating point does not, at any width. Those are the tables above and they are reproducible in one command by anyone.
+**Settled, and not by argument.** Exact-integer evaluation of this physics has no horizon: it returns the same fraction at every rung, on every machine, and the seal re-derives from published bytes. Floating point does not, at any width. Those are the tables above and they are reproducible in one command by anyone. **"On every machine" is now a measurement and not a manner of speaking:** nine live cells and the build host, two operating systems, one byte-identical transcript.
 
 **Not settled, and we do not claim it.** This does **not** make quantum hardware unnecessary — a two-level system under two fully thermalising channels is small enough to write in closed form, which is precisely *why* it can be a fraction, and nothing here is evidence in either direction about a state space that cannot be. We did **not** do the experiment; the bench, the anomalous flow and the Otto cycle are Xue et al.'s, their demonstration is proof-of-principle, and it does not bypass the second law — the control qubit's coherence is a thermodynamic resource that has to be paid for. And we have **not** identified the geometry of the universe: the cut arm measures that a compact phase coordinate carries an invariant a scalar line cannot, which is a statement about a class. Which member is the right one is not answered here.
 
@@ -174,7 +174,9 @@ swiftc -O reproduce/ico-causal-order-shear.swift -o /tmp/ico && /tmp/ico
 
 No account, no key, no corpus, no network, 0.13 seconds. The exact integers are decimal strings with no fixed width — no `Int128`, no platform-specific type, because the build host has one and the cells do not and a law that is one type here and another there is two laws. Under a fixed width this program trapped at the third rung of its own ladder while every answer was small; a ceiling inside an instrument that measures where floating point runs out is the same defect wearing a different width. Swapping the integer representation reproduced every other arm byte-for-byte.
 
-**Not yet measured:** a run on a cell. The Linux host available here carries no Swift toolchain, so what is claimed is that the program has no platform-dependent arithmetic — checkable by reading it — not that a cell has executed it.
+**Measured on the fleet, 2026-09-09.** Cross-compiled for `aarch64-swift-linux-musl` as a static executable and run on all nine live cells — Debian 13 (trixie), Linux 6.12.96, aarch64 — and on the macOS 27 build host. **All ten produce a byte-identical transcript**, sha256 `10bea22dc61d19ae2cb07d85634f44f6c9b444ee72682b6a3a757c24cc7a198c`, carrying the same internal seal `7e5d40d5…`. Matching hosts: `gaiaftcl-hcloud-hel1-01` through `-05`, `gaiaftcl-cell02`, `netcup-cell01`, `netcup-cell03`, `netcup-cell04`, and the build host.
+
+Two operating systems, two C libraries — musl static on the cells, Darwin on the host — one source file, and not one differing byte.
 
 The float arm is the object under measurement and lives in the functions named `float…`, `runSwitchFloat` and `switchAnomalyF16/32/64`.
 
