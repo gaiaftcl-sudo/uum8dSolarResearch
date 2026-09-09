@@ -155,6 +155,7 @@ struct SHA256Min {
 // ------------------------------------------------------------------- every exit prints figures
 func printPublishedReference() {
     print("")
+    print("--- BEGIN QUOTED REFERENCE FIGURES (published; NOT computed on this run) ---")
     print("REFERENCE FIGURES — what this program needs and what the published predecessor produced.")
     print("  input 1  the guide table, first argument, sha256")
     print("           \(GUIDES_SHA256)")
@@ -171,6 +172,7 @@ func printPublishedReference() {
     print("  ZERO sites at one mismatch and 13 of 15 had zero at two. Those are this program's pins.")
     print("")
     print("MARKER  CRISPR_CLINICAL_GUIDE_ATLAS__NO_SCREEN_PERFORMED")
+    print("--- END QUOTED REFERENCE FIGURES ---")
 }
 
 // ------------------------------------------------------------------------------ the guide table
@@ -208,7 +210,8 @@ if guides.isEmpty {
     print("Pass the guide table as the first argument. Every row carries the UNII the sequence came")
     print("from, so a reader can fetch the same bytes from the same public registry.")
     printPublishedReference()
-    exit(0)
+    print("RUN_TERMINAL  REFUSED  GUIDE_TABLE_ABSENT")
+    exit(2)
 }
 if guidesDigest != GUIDES_SHA256 {
     print("GUIDE TABLE DIGEST MISMATCH — REFUSED. This program screens one pinned table and will not")
@@ -216,7 +219,8 @@ if guidesDigest != GUIDES_SHA256 {
     print("  expected sha256  \(GUIDES_SHA256)")
     print("  measured sha256  \(guidesDigest)")
     printPublishedReference()
-    exit(0)
+    print("RUN_TERMINAL  REFUSED  GUIDE_TABLE_DIGEST_MISMATCH")
+    exit(3)
 }
 
 // ------------------------------------------------- the probe set: each guide plus its own permutations
@@ -802,7 +806,8 @@ if !selftestOK {
     print("SELF-TEST FAILED — REFUSED. No screen is reported. An instrument that cannot reproduce a")
     print("case constructed in advance cannot be trusted on a case nobody knows.")
     printPublishedReference()
-    exit(0)
+    print("RUN_TERMINAL  REFUSED  SELFTEST_FAILED")
+    exit(4)
 }
 
 // ================================================================= THE SCREEN OVER THE ASSEMBLY ==
@@ -914,7 +919,8 @@ if seqsScanned == 0 {
     print("  curl -sL https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/latest_release/\\")
     print("       GRCh38.primary_assembly.genome.fa.gz | gunzip -c | /tmp/atlas <guides.tsv> <N>")
     printPublishedReference()
-    exit(0)
+    print("RUN_TERMINAL  REFUSED  GENOME_ABSENT")
+    exit(5)
 }
 
 var nggIdx = -1
@@ -971,7 +977,8 @@ if !refusals.isEmpty {
     print("map that would read as complete. What failed:")
     for r in refusals { print("    \(r)") }
     printPublishedReference()
-    exit(0)
+    print("RUN_TERMINAL  REFUSED  SCREEN_INCOMPLETE")
+    exit(6)
 }
 
 // ------------------------------------------------------------------------------- the guide table
@@ -1043,7 +1050,8 @@ transcript += "pub15|\(pub15.count)|\(pubWithZero)|\(pubExactlyOne)|\(pubOneMM)|
 if !pubOK {
     print("REFUSED — the instrument does not reproduce the case it already knows. Nothing is sealed.")
     printPublishedReference()
-    exit(0)
+    print("RUN_TERMINAL  REFUSED  KNOWN_CASE_DIFFERS")
+    exit(7)
 }
 
 // ------------------------------------------------------------------------ full histograms + map
@@ -1144,7 +1152,8 @@ print("  the control arm discriminates: "
 if allSameAsReal {
     print("REFUSED — the control probes are not distinguishable from the guides they control.")
     printPublishedReference()
-    exit(0)
+    print("RUN_TERMINAL  REFUSED  CONTROL_NOT_DISCRIMINATING")
+    exit(8)
 }
 print("")
 print("A site counted here is a place where the chemistry COULD direct a cut. It is not a cut, not")
@@ -1162,3 +1171,4 @@ print("")
 print("MARKER  CRISPR_CLINICAL_GUIDE_ATLAS__COMPLETE_ENUMERATION_IS_OBSERVER_INVARIANT")
 print("arms    \(arms.count) run, \(arms.filter{$0.ok}.count) as built")
 print("sha256  \(SHA256Min.hex(Array(transcript.utf8)))")
+print("RUN_TERMINAL  COMPLETE")
