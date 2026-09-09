@@ -25,11 +25,47 @@ multiplies by 100 at the parser and carries the value as a native `Int128` of ex
 more than two decimal places is not silently truncated; it is a distinct answer and it is
 counted as one. An empty field is `ELEMENT_MISSING`, never a zero.
 
+## What is stored here, and the digests of what is not
+
+**Two of the four lines in `SHA256SUMS` named files this repository deliberately does not
+keep** — `corpus/nfip/.gitignore` excludes `nfip-claims.csv` — so `shasum -a 256 -c
+SHA256SUMS` could never pass on a fresh clone: it tried to open files that are not there,
+and `reproduce/validate.sh` reported the nfip corpus as a DIGEST MISMATCH. Corrected
+2026-09-09. `SHA256SUMS` now pins only the artifacts the repository actually stores, and the
+two digests it used to carry are recorded below, where the checker does not try to open them
+and a reader can still verify decompressed or re-pulled bytes against them.
+
+| artifact | bytes | settlements | sha256 |
+|---|---|---|---|
+| `nfip-claims.csv.gz` — **stored, pinned in `SHA256SUMS`** | 6,128,213 | 200,000 | `ad68c579d14eea69277560463c12dfd718f95f9a0f1bd0afdb117a633564c999` |
+| `nfip-claims.csv` — the above, decompressed; **not stored** | 26,785,593 | 200,000 | `1bbb75cb5deb2e4bcfc2bd1e53c25a03b36d56c6756a38e42a5f6957359c1460` |
+| the FULL pull of 2026-09-08 — **not stored** | — | 2,721,780 | `79ef60dd8deb12a88232189fa5ac988cda4ac42d7fb2250d777a5ba4e492b843` |
+
+Verify the decompressed slice without keeping it:
+
+    gzip -dc nfip-claims.csv.gz | shasum -a 256
+    # 1bbb75cb5deb2e4bcfc2bd1e53c25a03b36d56c6756a38e42a5f6957359c1460
+
+**And the stored artifact is the 200,000-settlement slice, not the 2.7 million-settlement
+corpus this page is named for.** Measured 2026-09-09: `nfip-claims.csv.gz` decompresses to
+26,785,593 bytes, 200,001 lines — 200,000 settlements and a header — and its digest is the
+one the retired line labelled *"uncompressed, 200,000 settlements"*. The full corpus is a
+~360 MB CSV and is not committed; `pull-nfip-claims.sh` regenerates it from the archive, and
+the published figures are the full-corpus run, whose transcript is `full-corpus-transcript.txt`
+and whose order-independent corpus seal is
+`648f32eb494b7d0990446d4f7aa05971cbe395d34de0fac39937577616edee3d`.
+
+So read the third row as the provenance of the published numbers and the first as the
+provenance of the sample a stranger gets without a 360 MB download. A re-pull that returns
+`79ef60dd…` is the same archive state the study was measured on; a different digest means
+FEMA revised the archive, which is what the vintage stamp below is for.
+
 ## The vintage stamp, and why it is pinned
 
-Every record carries `asOfDate`. The corpus digest in `SHA256SUMS`, together with the
+Every record carries `asOfDate`. The full-corpus digest recorded above, together with the
 order-independent corpus seal the program computes, locks the archive's state on the pull
-date. When FEMA revises the archive — and it will — the same program over the new pull
+date. (`SHA256SUMS` pins the stored 200,000-settlement sample; the seal that the published
+figures rest on is the full-corpus one, for the reason given in the section above.) When FEMA revises the archive — and it will — the same program over the new pull
 returns a different seal, and the per-settlement seal ledger says exactly which settlements
 moved. That diff is the measurement, and it cannot be made without a baseline taken first.
 
