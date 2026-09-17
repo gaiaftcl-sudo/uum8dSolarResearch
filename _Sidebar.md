@@ -43,6 +43,8 @@ any medicine safe or unsafe.**
 
 ## ⚖️ How to read any page here
 
+- [**No language model in this stack**](No-Language-Model-In-This-Stack) — **what the answers here are made of**: measured 2026-09-12, no cell runs a model process, opens a model port or holds an unmasked model unit, and a gate refuses their return
+- [**Run any study in your browser**](Run-Any-Study-In-Your-Browser) — all ninety programs open on your own device, forty-nine run there, and the run tells you whether it printed the sealed bytes
 - [**The ontology**](Ontology) — grades, terminals, controls, and what each page may say
 - [**Zero Float · Zero Shear**](Zero-Float-Zero-Shear-Paradigm) — the method in one page
 - [**Ask someone you trust to check this**](Ask-Someone-You-Trust-To-Check-This) — what to hand a sceptic
@@ -57,6 +59,9 @@ any medicine safe or unsafe.**
 compute the same quantity in exact integers, and seal the cases where the two render opposite
 verdicts. The subject under grading is always the instrument, never the phenomenon.**
 
+- [**Study 48** — the atom already has an address](Study-48-The-Atom-Already-Has-An-Address) — **silicon dimers 3.840 Å apart, the smallest commanded scale on the board: a length carried in single precision mis-addresses its first atom at step 8,783; an address cannot**
+- [**Study 49** — the phase code never needs π](Study-49-The-Phase-Code-Never-Needs-Pi) — **a phase-only modulator takes 256 codes per pixel; the code is a ratio of integers**
+- [**Study 47** — translation shear: the meaning that survives a language](Study-47-Translation-Shear) — **LAW FROZEN · LIVE CLAIM**, measured 2026-09-11 and again fleet-wide 2026-09-12: translation as an exact coordinate transform, charts derived in memory at every start from the raw rows of a pinned public weight file and never written down; one lattice digest on 9/9 cells, zero drift, every refusal named. The generative comparison arm is **ABSENT** — there is no generative translator in the stack
 - [**Study 34** — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) — why a safety verdict needs an exact law, not a bigger computer
 - [**Study 35** — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) — deaf in 8.4 seconds, forgets across machines, disagrees with itself
 - [**Study 36** — the language game of Fermat's Last Theorem](Study-36-The-Language-Game-of-Fermats-Last-Theorem) — guess and shear, or project
@@ -96,6 +101,7 @@ verdicts. The subject under grading is always the instrument, never the phenomen
 
 ## ⚛️ Run a court yourself
 
+- [**Run any study in your browser**](Run-Any-Study-In-Your-Browser) — the ▶ badge beside a program name opens it in the Studio, already built and carrying its inputs, and runs it on your machine with nothing sent back
 - [**Explore the live courts**](Affine-Earth-Lattice-Endpoints)
 - [MCP user guide — all 49 tools](Affine-Earth-MCP-User-Guide) · [Deterministic no-float courts for LLMs](MATH-COURT-MCP)
 - [Court Client — generic wasm IDE for every court](Affine-Court-Client-Template) · [Court-client checkpoint](Shear-Studies-Court-Client-Checkpoint)

@@ -897,6 +897,34 @@ check_figure atlas-collision-measure-exact "AVI_SCORE                           
 # the exact near-zero band edge
 check_figure atlas-collision-measure-exact "2^-4 = 0.0625" "$PAGE45"
 
+# --- Study 48 — the atom already has an address (1 nm hydrogen depassivation lithography) ---
+P48="Study-48-The-Atom-Already-Has-An-Address.md"
+check_figure hdl-site-address-exact-vs-float "2,097,152 writable sites" "$P48"
+check_figure hdl-site-address-exact-vs-float "mis-addresses its first hydrogen site at step 8,783" "$P48"
+check_figure hdl-site-address-exact-vs-float "float32 accumulating mis-addresses 4,183,204 of 4,194,304 sites; float64 accumulating mis-addresses 0; float32 recomputed from the index mis-addresses 0" "$P48"
+check_figure hdl-site-address-exact-vs-float "the exact arm mis-addresses 0 sites in 4,194,304 steps" "$P48"
+check_figure hdl-site-address-exact-vs-float "one pitch added to 7.81 mm of carried travel changes nothing" "$P48"
+check_figure hdl-site-address-exact-vs-float "arms run 7, broken 0" ""
+check_figure hdl-site-address-exact-vs-float "every dimer-centre separation is the integer Δn² + 4Δm²" "$P48"
+check_figure hdl-site-address-exact-vs-float "the dimer bond runs across the row, not along it" "$P48"
+check_figure hdl-site-address-exact-vs-float "first mis-addresses at step 5,086,264" "$P48"
+check_figure hdl-site-address-exact-vs-float "HDL_SITE_ADDRESS__THE_LATTICE_IS_ITS_OWN_RULER" "$P48"
+check_figure hdl-site-address-exact-vs-float "4b299340a10e04822aac19294abdbcdb1f05b6387e0ff63e0635c37cf3e5b881" "$P48"
+
+# --- Study 49 — the phase code never needs pi (phase-only SLM wavefront synthesis) ---
+P49="Study-49-The-Phase-Code-Never-Needs-Pi.md"
+check_figure slm-phase-code-exact-vs-float "16,588,800 bits of command word" "$P49"
+check_figure slm-phase-code-exact-vs-float "float64 hands the device 47 different codes in 1,920 pixels, and float32 hands it 45" "$P49"
+check_figure slm-phase-code-exact-vs-float "float64 hands the device 16 different codes in 2,073,600 pixels, and float32 hands it 1,974" "$P49"
+check_figure slm-phase-code-exact-vs-float "47 of the 47 sit EXACTLY on a" "$P49"
+check_figure slm-phase-code-exact-vs-float "21 pixels common to both arms, 26 float64 only, 24 float32 only" "$P49"
+check_figure slm-phase-code-exact-vs-float "4 of 1,920 pixels take a different code depending on which end the sum started" "$P49"
+check_figure slm-phase-code-exact-vs-float "30.503 levels" "$P49"
+check_figure slm-phase-code-exact-vs-float "arms run 13, broken 0" ""
+check_figure slm-phase-code-exact-vs-float "drops only from 1,974 to 970" "$P49"
+check_figure slm-phase-code-exact-vs-float "SLM_PHASE_CODE__THE_CODE_IS_A_RATIO_OF_INTEGERS" "$P49"
+check_figure slm-phase-code-exact-vs-float "ec768ab33eb7d8a771afe773d267d03a8fc28dd99386d6345921a622052a071f" "$P49"
+
 
 echo "=== 3b. the admission law grades the three libraries in ONE run ==="
 # THE THREE LIBRARIES ARE GRADED TOGETHER, NEVER ONE AT A TIME. F1 — no entry filed in two

@@ -1,8 +1,168 @@
-# Forty-one studies, one finding: the exact answer was there the whole time
+# Read this in your own language. The translation is arithmetic, and it will not guess.
+
+**Pick a language at the top of this page.** The site's own words change, and nothing generates them.
+Every visitor should be able to reach this work in the language they think in — that is the point of
+what follows, and it is why this is the first thing on the page rather than a footnote about
+infrastructure.
+
+Here is how it works, because how it works is the whole offer. Each of the nine machines serving this
+site derives a **coordinate chart per language in memory the moment it starts**: it reads the raw
+rows of one pinned public weight file by byte range at a pinned revision with the header
+digest-checked, decodes each row bit-exactly, quantises it onto an integer lattice with the same
+quantiser the substrate's own sealed bonds use, and orders candidates by an **exact 256-bit integer
+comparison**. Nothing derived is written to disk, so there is no chart file to go stale and none to
+trust. A word crosses only if both languages hold it as a pinned public dictionary states them and
+its round trip closes. Otherwise the court **refuses that word and names the refusal**.
+
+Measured on the public court, 2026-09-12 — one lattice digest across all nine machines, and a
+refusal you can read rather than a guess you cannot check:
+
+```
+book   → "libro"   chart:1
+water  → null      REFUSED_SHARED:1 of 1:water→agua(pt)
+```
+
+The second line is the part to look at. *Water* was withheld not because the court had no answer but
+because the spelling it would have returned is shared with a third language, so it says which one
+instead of picking. **→ [Study 47 — translation shear](Study-47-Translation-Shear)**
+
+**What this does not do yet, said here rather than lower down.** Five languages are charted today —
+Spanish, French, German, Italian, Portuguese — and everything else falls back to the English source,
+marked as such. Whole sentences are usually refused; single words usually cross. And a public
+dictionary is a list of the words a language *has*, not a list of translations, so a render can be a
+real target-language word that is not the translation: *world→verden* and *language→bahasa* in
+German are both genuine headwords of the pinned German dictionary. Those are the dictionary's entries
+to correct, and the court names what it did. **ABSENT**: any claim about fluency, and any language
+pair whose members are not stated.
+
+There is also a gap between **reading** this in your language and **finding** it in your language,
+and it is worth naming because only the first half is solved. The projection happens on your device,
+after the page arrives, so the text a search engine indexes is the English source. Being reachable
+from a search in Spanish or Hindi needs the projection to run before the page is served, not after —
+that is the next piece of this work and it is not built.
+
+---
+
+# The machines that serve it hold no model, no GPU, and no float
+
+Three measurements, each on all nine machines behind `affine.earth` and each taken per machine rather
+than through the apex that fronts them, because an apex round-robin hides a one-in-nine straggler.
+
+| measured 2026-09-12, per cell | |
+|---|---|
+| machines running a model process, listening on a model port, or holding an unmasked model unit | **0 of 9** |
+| model weight files anywhere on any machine — `.gguf` or `.safetensors`, whole filesystem | **0 of 9** |
+| machines with GPU compute: a vendor driver, a device node, or a CUDA / ROCm / OpenCL runtime | **0 of 9** |
+| numeric fields in the 51 published court tools that accept a floating-point value | **0 of 51** |
+
+**No model.** The last code path in the substrate that could build a request to a model API was
+deleted this week, with its service unit, its installer and its command-line subcommand; the unit is
+masked to `/dev/null` on all nine machines and nothing listens on its port. A local model server that
+had been running unused on one machine since 23 August was validated unused — 167 seconds of CPU in
+19.9 days, no log lines, no connections, the weight file's access time still the second it loaded —
+and removed. Two gates refuse the return of either, each with control arms that prove the instrument
+discriminates. **→ [No language model in this stack](No-Language-Model-In-This-Stack)**
+
+**No GPU.** All nine machines are ARM Neoverse-N1 and the serving path is CPU integer arithmetic end
+to end. No GPU driver, no device node, no CUDA, ROCm or OpenCL runtime on any of the nine — there is
+nothing on these machines an accelerator could be asked for, and nothing that asks.
+
+**No float.** This one is checkable from a terminal in three commands, and it discriminates in both
+directions. Every numeric input in every published court tool is a **decimal string**, not a number —
+the wire has no floating-point type to put a float into. Post integers and the court answers; put a
+decimal point in one value, or send a JSON float, and it refuses by name:
+
+```
+A = "1,2,3,4,5,6,7,8|1"    →  CALORIE   AFFINE_JZ_OP     result "2,3,4,5,6,7,8,9|1"
+A = "1.5,2,3,4,5,6,7,8|1"  →  REFUSED   AFFINE_JZ_PARSE  result ""
+A = 1.5  (a JSON float)    →  REFUSED   AFFINE_JZ_PARSE  result ""
+```
+
+That is the programme's whole thesis enforced at the door: a verdict that depends on a rounding is
+not a verdict, so the court will not accept the rounding in the first place.
+**→ [Zero Float · Zero Shear](Zero-Float-Zero-Shear-Paradigm)**
+
+---
+
+# Every study on this board runs on your device, not ours
+
+There is a Studio on this site — an editor and a terminal in the page — and it will run the programs
+behind these studies on your own hardware. No account, no key, nothing installed, and nothing sent
+back to us.
+
+![The Affine.Earth Studio: the study's own files on the left, the Swift source in the editor, a checks strip naming the zero-float rule and the wasm32 target, the terminal below reporting that the workspace is browser-local and the sandbox is a real WASI shell, and a pane on the right wired to the live membrane on a cell](images/studio-workbench.png)
+
+*This is the door, and it is why the language work is at the top of this page rather than the bottom.
+A person who can read the board in the language they think in, and then run the arithmetic behind it
+on their own laptop with no account and no key, has been handed the thing itself instead of a
+description of it.*
+
+| measured from one browser, 2026-09-12 | |
+|---|---|
+| programs in the sealed manifest at the pinned commit | **90** |
+| whose served source matched the manifest's digest of that commit's file, byte for byte | **90 of 90** |
+| that run in the browser | **49** |
+| that printed the sealed transcript exactly | **45** |
+| that differed — one cause, named below | **3** |
+| that withheld the comparison rather than claim one | **1** |
+| host errors, or programs that failed to open | **0** |
+| that do not build for the sandbox, each shown with its compiler's own line | **41** |
+
+**Every study opens on its story.** Before the code, a study opens on seven short chapters — what it
+asks in its author's words, the page its figures are published on, what its code reads (each corpus file
+by its digest, and whether it takes standard input or its command line), the numbers it has to print and
+whether its sealed run computed them or only quoted them, whether it runs here, whether it reproduced,
+and, once you press Run, which of those numbers your own device printed. Each chapter is quoted from a
+source pinned at the commit and names that source, so the story is checkable the same way the program is.
+**→ [How a study tells its story](Run-Any-Study-In-Your-Browser.md)**
+
+**What the Studio actually does.** Each program was compiled once to `wasm32-wasip1` and its native
+transcript sealed at the same time. The browser fetches the artifact, holds it to the byte count the
+manifest names, inflates it, checks the unpacked SHA-256, and only then instantiates it — inside a
+`wasi_snapshot_preview1` host written for this, whose file system is that study's own corpus with
+every file pinned by digest. When the run finishes it compares what your device printed against the
+sealed transcript and tells you which of three things happened: **the same bytes**, **your inputs
+differ**, or **it differs — and that is a finding**. The 49 artifacts are 584,047,128 bytes on the
+wire and 1,670,622,786 unpacked; 207 corpus files are pinned by digest; the whole pass took 167
+seconds of program time.
+
+**The third verdict is the reason the Studio exists.** A program that prints different bytes on two
+machines is exactly what this programme looks for, so the Studio is built to surface that rather than
+smooth it over — and to say *inputs changed* instead of *pass* when it cannot make a fair comparison.
+
+**All 90 open, including the 41 that cannot run here.** Each of those shows its source at the pin
+and the compiler's own first line, and the front door carries a **◇ reads here** link beside it.
+Twenty-six of the 41 are one cause — a 64-bit integer that does not fit wasm32's 32-bit `Int` — nine
+need Dispatch types the sandbox's Foundation does not carry, three need a platform module, two a
+platform C symbol, and one does not type-check. That is a change to those studies, not to the Studio.
+**→ [Run any study in your browser](Run-Any-Study-In-Your-Browser)**
+
+**And the honest part, in the same breath.** The three differences are one cause and it is not
+arithmetic: those programs print the directory their corpus came from, and the sealed transcript
+carries the absolute path of the machine that sealed it, which no other device can reproduce. Every
+digit of their arithmetic agrees. It is a transcript convention to repair upstream and the page names
+it with its line numbers. One further disagreement, on the machines rather than in the studies: of
+six categories graded across the nine cells, five are unanimous and one is not — two cells carry an
+extra settlement unit whose own description says "one payer". It was left running rather than stopped,
+and whether that is a defect is **NOT KNOWN** until its exclusivity is traced.
+
+**ARGUMENT** — what the three parts amount to together: you are reading a page translated by
+arithmetic you can re-derive, served by machines that hold no model and no accelerator and refuse a
+float at the door, carrying programs that run on your own hardware and print the same bytes the
+builder's machine printed. None of that asks you to trust us, and that is the only reason the numbers
+further down this page are worth your time.
+
+---
+
+# Forty-eight studies, one finding: the exact answer was there the whole time
 
 **This is a line in the sand, and it is drawn with numbers rather than opinions.**
 
-Across forty-one studies — the sky, the sea, the ground, the genome, the grid, the ledger, and the
+*(This heading read "forty-one" until 2026-09-12 and "forty-six" until 2026-09-17. The board carries
+forty-eight studies today — 1 through 45, and 47 through 49. Study 46 is in preparation and is not on
+the board, which is why the numbering runs past the count.)*
+
+Across forty-eight studies — the sky, the sea, the ground, the genome, the grid, the ledger, and the
 machines this page is served from — we kept meeting the same thing. Somewhere near the bottom of a
 serious, careful, expensive piece of work, an exact quantity had been turned into an approximate one,
 because that is simply how computing has been done since the 1980s. And every time we went back and
@@ -45,11 +205,73 @@ Nothing below is an argument. Each is a sealed study on this wiki with a program
 - **A physics result.** A published effect where heat flows the wrong way predicts a *fraction*, so we
   computed the fraction: exactly **−1/18**, at nine of nine settings. Simulated the way the field
   simulates it, in double precision, the effect is **not small — it is zero.**
+- **A writing machine.** Two instruments that are both commanded in whole numbers — a lithography
+  that lifts single hydrogen atoms off silicon dimers **3.840 Å** apart, and a modulator whose pixels
+  sit **4.5 µm** apart, four orders of magnitude out from it — ask the device which atom, and which of
+  **256** codes.
+  Carry the atom as a length in single precision and the first wrong atom comes at **step 8,783**,
+  with **4,183,204 of 4,194,304** sites written to an address nobody asked for. Ask the modulator in
+  radians and it is handed a different command word on **16** of **2,073,600** pixels in double
+  precision and **1,974** in single. Counted instead, both are **0** — the address *is* the count.
+  Neither program touches hardware: no hydrogen is removed and nothing is illuminated.
 - **And today, the machines underneath all of it.** Fifty years of computing has treated "which event
   came first" as a fact about *time*, because the founding paper built it on relativity. It was never
   about time. It was about arithmetic. Nine machines, the same jumbled events: sorted into an agreed
   order and not sorted at all gave **the identical answer every time**, and the sorting cost **177×
   the work** to change nothing. **→ [Study 41 — Fifty years of solving the wrong problem](Study-41-What-The-Ordering-Cost)**
+
+## Two studies where the exact quantity was never a measurement
+
+Every study above takes a quantity the world measures and computes it exactly instead. The two sealed
+on 2026-09-17 do something narrower. **The quantity was never a measurement.** It is an *address* —
+which atom — or a *command word* — which of 256 codes — and the device receiving it is already
+discrete. Nothing lies between two atoms on a silicon lattice and nothing lies between two codes on a
+modulator, because in neither case is there a state there to reach.
+
+So in these two domains the approximation was never required by the thing being commanded. **It
+entered with the software**, on the day a controller chose to carry a length instead of a count.
+
+And the same control arms that establish that also narrowed it, which is the part worth reading.
+Study 49 set out to show that π is what makes a float route hand the device a different code. Cancel
+π out of the route and the lens goes 16 → **0** in double precision — but only 1,974 → **970** in
+single, so about half of that disagreement never involved π at all. π is a sufficient cause
+everywhere these two programs look and a necessary one only on the grating and in double precision:
+a narrower claim than the one we first wrote, and we reached it by running the arm that could break
+it. Study 48 was narrowed the same way — its first draft had the dimer bond along the row when the
+published surface puts it across, and the bond is now carried as a REPORTED length held **ABSENT**
+from every integer the study compares, with an arm proving the arithmetic is free of it.
+
+**What these two add is a rung, not the board's reach.** The **3.840 Å** dimer pitch is the smallest
+length at which anything here is commanded, and Study 49 sits four orders out from it — but the board
+was already far wider than the pair, and the pair does not measure it. The smallest figure on the
+board is not theirs and is not an address at all:
+[Study 27](Study-27-Exact-Nuclear-Scattering.md) works on nuclei, and reports an **¹¹Li rms matter
+radius of 3.27 ± 0.24 fm** — five orders below the dimer pitch. That page is careful about its own
+number in a way worth repeating here: matter radii "are not measured directly", they are extracted
+from cross sections through Glauber-type analyses, so the figure is REPORTED and deduced rather than
+measured, and the study grades the extraction rather than trusting it. Upward,
+[Study 06](Study-06-Explosion-vs-Earthquake.md) works at station distances of **Δ ≈ 370 km** and
+[Study 05](Study-05-Forbush-Decreases.md) at the **L1 point, 1.5 million km** sunward of Earth.
+Counting the scale each page states it works at, that is **twenty-four orders of magnitude**, and the
+same sentence holds at every one of them.
+
+Read loosely the ceiling is higher still — [Study 08](Study-08-Gaia-BH1-Astrometric-Shear.md)'s Gaia
+BH1 is "hundreds of parsecs away", about 3×10¹⁸ m and **thirty-three orders** — and we mark that one a
+**bracket rather than a span**, because it is stated only to an order, it is a distance to the target
+rather than a length that study grades, and the nine orders beneath it hold **no graded length** —
+Studies 07 and 10 do print parsec-scale figures in that band, and both pages forbid posting them into
+their own court, so we do not count them here either.
+**We do not claim quanta to galaxies.** No page here states a quantum length and none grades a
+galactic one; what is measured is nuclear radii to the stellar neighbourhood, and the densely
+populated stretch — 3.840 Å up to thousands of kilometres — carries eleven studies.
+
+Neither program touches hardware: no hydrogen is removed, nothing is illuminated, and no voltage is
+computed. Each compiles to `wasm32-wasip1` and prints its sealed native transcript byte for byte
+under wasmtime. Neither opens in the Studio yet — it is pinned at a commit that carries neither file,
+so **the browser figures further up this page are unchanged by these two** and the in-browser run is
+**ABSENT** until that pin advances.
+
+**→ [Study 48 — the atom already has an address](Study-48-The-Atom-Already-Has-An-Address)** · **[Study 49 — the phase code never needs π](Study-49-The-Phase-Code-Never-Needs-Pi)**
 
 ## Why we think this matters beyond us
 
@@ -381,6 +603,8 @@ to a medicine, and every row in it is re-derivable from public bytes on a laptop
 | [The ontology of this wiki](Ontology) | the type system — grades, terminals, controls, and what each page may say |
 | [Study 34 — the observer-invariant verdict](Study-34-Observer-Invariant-Verdict) | the proof on this page, in full — why a safety verdict must be exact |
 | [Study 35 — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) | why a floating-point safety brain is doomed, not just behind — it deafens in seconds, forgets across machines, disagrees with itself; the exact one does none of it |
+| [Study 48 — the atom already has an address](Study-48-The-Atom-Already-Has-An-Address) | 1 nm hydrogen depassivation lithography — the write target is an integer address on silicon dimers 3.840 Å apart, and a controller carrying a length in single precision mis-addresses its first atom at step 8,783 |
+| [Study 49 — the phase code never needs π](Study-49-The-Phase-Code-Never-Needs-Pi) | a modulator takes one of 256 codes per pixel, so the code is a ratio of integers — and the study's own arms narrow where π is the cause and where it is not |
 | [All studies](Shear-Studies-Index) | the programme index, every lifecycle state stated |
 | **FUSION, AND THE PLANET** ||
 | [Affine Fusion Control](Affine-Fusion-Control) | the local exact-integer fusion court — five panels, both laws live, 65,536 agents on one laptop |
