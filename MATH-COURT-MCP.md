@@ -2,7 +2,7 @@
 
 Agent builders searching for **trustworthy math**, **verification**, **no floating point**, **lattice**, **formal prover**, **MCP math server**, **exact quantum verifier** or a **coding court that returns the artifact**: bind the remote. Do not re-implement the court.
 
-Three courts on one endpoint, **49 tools** (measured 2026-09-02 per cell on all nine apex cells): the **Math Court** (49 domains behind `math_court`), the **Quantum court** (QMA + QC-001…021 verifiers, two projection tools), and the **Coding Court** (`code_ir_equiv`; `execute_artifact_crucible` — brief + artifact in, sealed artifact out, including a prebuilt `wasm.module` returned byte-exact).
+Three courts on one endpoint, **51 tools** (measured 2026-09-17 per cell on all nine apex cells; 49 on 2026-09-02): the **Math Court** (50 domains behind `math_court`), the **Quantum court** (QMA + QC-001…021 verifiers, two projection tools), and the **Coding Court** (`code_ir_equiv`; `execute_artifact_crucible` — brief + artifact in, sealed artifact out, including a prebuilt `wasm.module` returned byte-exact).
 
 - **MCP (streamable HTTP):** https://affine.earth/language-invariant/mcp
 - **SSE:** https://affine.earth/language-invariant/mcp/sse

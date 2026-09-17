@@ -1,7 +1,7 @@
 # Affine.Earth Courts — live on Glama
 
 **The sky writes geometry. Quantum complexity does too. So does code.**  
-One endpoint carries three courts: the **Math Court** (49 domains behind `math_court`), the **Quantum court** (QMA + QC-001…021 verifiers and two projection tools) and the **Coding Court** (`code_ir_equiv`, `execute_artifact_crucible` — the verdict IS the artifact, including a prebuilt wasm module returned byte-exact). **49 tools**, measured 2026-09-02 per cell on all nine A records.  
+One endpoint carries three courts: the **Math Court** (50 domains behind `math_court`, measured 2026-09-17; 49 on 2026-09-02), the **Quantum court** (QMA + QC-001…021 verifiers and two projection tools) and the **Coding Court** (`code_ir_equiv`, `execute_artifact_crucible` — the verdict IS the artifact, including a prebuilt wasm module returned byte-exact). **49 tools**, measured 2026-09-02 per cell on all nine A records.  
 Open MCP: `https://affine.earth/language-invariant/mcp` · Registry: `earth.affine/math-court`  
 Public example: `clients/math-court-mcp` · Live proof: `bash clients/math-court-mcp/prove-live-court.sh`  
 Evidence: `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw` · edge `nbg-01` · HTTP 200

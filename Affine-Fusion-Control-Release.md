@@ -231,5 +231,5 @@ The `verify-all.sh` command runs five steps in one pass and prints `VERIFY_ALL_P
 - [Affine Fusion Control](Affine-Fusion-Control) — the study page
 - [Fusion researcher's guide](Fusion-Researchers-Guide) — get it, run it, attack it
 - [Study 33 — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court) — the charter, and the three-way fork it retired
-- [The full-grade replacement](The-Replacement-Grade) — the vendor-to-public argument across 49 domains
+- [The full-grade replacement](The-Replacement-Grade) — the vendor-to-public argument across 50 domains
 - [Ontology](Ontology) — the evidence grades and the one-way-flow rule this page obeys

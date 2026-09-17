@@ -103,7 +103,7 @@ verdicts. The subject under grading is always the instrument, never the phenomen
 
 - [**Run any study in your browser**](Run-Any-Study-In-Your-Browser) — the ▶ badge beside a program name opens it in the Studio, already built and carrying its inputs, and runs it on your machine with nothing sent back
 - [**Explore the live courts**](Affine-Earth-Lattice-Endpoints)
-- [MCP user guide — all 49 tools](Affine-Earth-MCP-User-Guide) · [Deterministic no-float courts for LLMs](MATH-COURT-MCP)
+- [MCP user guide — all 51 tools](Affine-Earth-MCP-User-Guide) · [Deterministic no-float courts for LLMs](MATH-COURT-MCP)
 - [Court Client — generic wasm IDE for every court](Affine-Court-Client-Template) · [Court-client checkpoint](Shear-Studies-Court-Client-Checkpoint)
 - [Coding Court — the verdict IS the artifact](Affine-Coding-Court-Architecture)
 - [Math Court on Glama](Affine-Math-Court-Glama) · [Math Court user guide](Math-Court-User-Guide) · [Example app — entire court](Math-Court-Example-App)

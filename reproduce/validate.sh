@@ -112,7 +112,37 @@ if have xcrun || have swiftc; then
             if [ -s "$berr" ]; then
                 bad "$n DID NOT COMPILE — $(head -1 "$berr" | cut -c1-160)"
             else
-                bad "$n compiled and printed nothing — every exit must print its reference figures"
+                # A TYPE DECLARATION IS NOT A STUDY THAT PRINTED NOTHING, and grading it as one
+                # trains a reader to step over a red row. This loop globs every *.swift in
+                # reproduce/, so it meets both kinds. The discriminator is STRUCTURAL: 96 of the 97
+                # files here emit through print( / out( / emit(; a file with none of the three
+                # carries no program at all and has nothing it could print. Measured on
+                # shear-ledger-v1.swift, which declares 7 types and emits by no mechanism.
+                # A declaration still owes the tree something, so it is graded on that instead:
+                # some other file must compile against its types, or it is an orphan and this says
+                # so. Both arms fire -- a real study with no output is still reported as one.
+                emits=$(( $(grep -c -F 'print(' "$p") + $(grep -c -F 'out(' "$p") + $(grep -c -F 'emit(' "$p") ))
+                decls=$(grep -cE '^(public )?(struct|enum|class|protocol|extension) ' "$p")
+                if [ "$emits" -eq 0 ] && [ "$decls" -gt 0 ]; then
+                    users=""
+                    for ty in $(grep -oE '^(public )?(struct|enum|class|protocol) [A-Za-z0-9_]+' "$p" | awk '{print $NF}' | sort -u); do
+                        # WHOLE WORD, NOT SUBSTRING. Written as `grep -l "$ty"` this reported
+                        # shear-ledger-v1 as consumed by aso-offtarget-exact-vs-float because that
+                        # file contains "Bases" and one of the declared types is `Base` — a green row
+                        # earned by a substring, which is worse than the red row it replaced. The
+                        # type must appear delimited by a non-identifier character on both sides.
+                        u=$(grep -lE "(^|[^A-Za-z0-9_])$ty([^A-Za-z0-9_]|$)" "$HERE"/*.swift 2>/dev/null | grep -v "^$p$" | head -1)
+                        [ -n "$u" ] && users="$users $(basename "$u")"
+                    done
+                    users=$(echo "$users" | tr ' ' '\n' | sort -u | tr '\n' ' ' | sed 's/^ *//')
+                    if [ -n "$users" ]; then
+                        ok "$n declares $decls types and no program -- compiled against by $users"
+                    else
+                        bad "$n declares $decls types that NO file in reproduce/ compiles against -- an orphan declaration, not a study that printed nothing"
+                    fi
+                else
+                    bad "$n compiled and printed nothing — every exit must print its reference figures"
+                fi
             fi
         fi
         rm -f "/tmp/val_$n" "$berr"; rm -rf "$stage"
@@ -1115,7 +1145,13 @@ if have curl; then
     else
         ok "live court answers 200 ($size bytes)"
         dc=$(grep -o 'domain_count[^0-9]*[0-9]*' /tmp/court.json | grep -o '[0-9]*$' | head -1)
-        [ "$dc" = "49" ] && ok "court reports 49 domains (biosphere joined the 48)" || bad "domain_count is '$dc', pages say 49"
+        # THE CONSTANT IS THE HALF THAT GOES STALE. 48 -> 49 when biosphere joined; 49 -> 50 on
+        # 2026-09-17 when the Coding Court's `cs` domain (roles compiler/consensus/ml_engineer) was
+        # measured answering AFFINE_MATH_COURT on 9 of 9 cells while every page still said 49. The
+        # fleet was right and the pages were fifteen days behind, so the pages were corrected and
+        # this number follows them. A mismatch here means one of the two moved again: re-measure per
+        # cell with --resolve before touching either.
+        [ "$dc" = "50" ] && ok "court reports 50 domains (cs, the Coding Court, joined the 49)" || bad "domain_count is '$dc', pages say 50"
         if grep -q 'no_float' /tmp/court.json; then
             grep -q 'no_float[^a-z]*false' /tmp/court.json \
               && bad "court reports a no_float:false domain" \

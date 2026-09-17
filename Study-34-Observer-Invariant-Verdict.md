@@ -90,5 +90,5 @@ bash reproduce/validate.sh                    # every published figure, digest-p
 - [Affine Fusion Control — public release](Affine-Fusion-Control-Release) — the measured, claim-graded public case
 - [Study 33 — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court) — the charter and the three-way fork it retired
 - [Study 35 — the safety brain that forgets](Study-35-The-Safety-Brain-That-Forgets) — the sibling axis: this study proves the verdict is the same for every *observer*; Study 35 proves it does not decay over *time*, across machines, or against a new event
-- [The full-grade replacement](The-Replacement-Grade) — the over-scaling law, and the vendor-to-public argument across 49 domains
+- [The full-grade replacement](The-Replacement-Grade) — the over-scaling law, and the vendor-to-public argument across 50 domains
 - [Ontology](Ontology) — the evidence grades and the one-way-flow rule this page obeys

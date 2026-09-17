@@ -313,6 +313,42 @@ not a record.
 That is the flag. The exact answer is usually already there. It costs an afternoon and a file anyone
 can run. **→ [Start here](Shear-Studies-Index)** · [How to read this board](Shear-Studies-Readers-Guide) · [The white paper](Shear-Studies-White-Paper)
 
+## Closing the loop
+
+Here is the hopeful reading, and it is the one the numbers support.
+
+One law has now held across **twenty-four orders of magnitude** — from the radius of a lithium
+nucleus to a point a million and a half kilometres sunward of Earth — and it is the same sentence at
+every rung: **bind the domain to the discrete set it already is, and the uncertainty that needed an
+error budget stops existing.** Nobody had to choose between scales. The law did not need a different
+form for a hydrogen atom, a tumour, a tide gauge or a reserve triangle, and that is not a slogan on
+this page — it is forty-eight sealed studies, each with a file a stranger can run.
+
+**What that buys is a loop that closes.** A measurement becomes an exact question; the question
+returns the same integer on every machine that asks it; and because the answer cannot drift, the next
+person can build on it instead of re-deriving it. Science's hardest current problem is not dishonesty,
+it is that most published results cannot be re-derived by anybody else — and an exact answer is
+re-derivable by construction, forever. **A result that cannot rot is a result the next question can
+stand on.**
+
+**In health that loop is the whole point.** A guide molecule's binding sites are a counting question,
+so the count is available today rather than after a study. A tumour signature's compound pairs are a
+counting question. An off-target screen is a counting question. Each one that moves from a score to a
+count is one fewer place a bench has to take somebody's word, and one more place two laboratories on
+opposite sides of the world get the identical number and can argue about the biology instead of the
+arithmetic.
+
+**And it runs on machines with nothing to hide.** No model, no accelerator, no float at the door —
+the nine cells serving this page hold none of them. The same source that answers here compiles to
+your browser and prints the same bytes. That is what makes the loop a loop rather than an
+announcement: every claim on this board is a door you can open yourself.
+
+The map is not finished. Five studies on this board are **OPEN** because we do not have the data yet
+and say so, one reports a measurement of our own that **proved nothing** and is kept for that reason,
+and the reach above is a span at its bottom and a **bracket** at its top, marked so on the page. What
+is finished is the method — and the method has not yet met a domain where the exact answer was not
+already waiting.
+
 ---
 # The question nobody was made to ask
 
@@ -611,7 +647,7 @@ to a medicine, and every row in it is re-derivable from public bytes on a laptop
 | [Affine Fusion Control — public release](Affine-Fusion-Control-Release) | the measured, claim-graded public case for the app |
 | [Study 33 — the fusion control verdict court](Study-33-Fusion-Control-Verdict-Court) | the charter, and the three-way fork it retired |
 | [Every season, fifty tonnes](SpaceX-Biosphere-Safety) | the SpaceX / satellite biosphere-safety case — the same method, its most urgent application |
-| [The full-grade replacement](The-Replacement-Grade) | the over-scaling law, and the vendor-to-public argument across 49 domains |
+| [The full-grade replacement](The-Replacement-Grade) | the over-scaling law, and the vendor-to-public argument across 50 domains |
 
 ---
 

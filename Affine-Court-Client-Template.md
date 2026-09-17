@@ -24,14 +24,14 @@ the cell, the shell it can load is Rust `#![no_std]` wasm32, and this page is th
 
 ### 1. Every court tool, from the tool's own schema
 
-`tools/list` → 49 tools → one button each, grouped into courts by name (Coding Court, Quantum & QMA,
+`tools/list` → 51 tools → one button each, grouped into courts by name (Coding Court, Quantum & QMA,
 Math Court, Corpus census, Exact geometry, Render & language games, Membrane & controller). Clicking
 a tool renders a form **generated from that tool's `inputSchema`** — enums become selects, objects
 and arrays become JSON boxes, everything else is a text field that posts a string. Nothing is
 hand-listed, so a fiftieth tool appears the moment the cell serves it, and a tool the cell stops
 serving disappears the same way.
 
-Measured: `initialize` → `tools/list` → **49 tools, HTTP 200**; `math_court {}` → **49 domains**;
+Measured 2026-09-17 per cell on all nine A records: `initialize` → `tools/list` → **51 tools, HTTP 200**; `math_court {}` → **50 domains**; *(read 49 and 49 on 2026-09-02 — the Coding Court's `cs` domain and two tools have joined since, and the count follows the fleet)*;
 `execute_exact_permanent` on the all-ones 3×3 → `WIN`, `energy_num 6`.
 
 ### 2. Local files → long-running UUM-8D language games

@@ -1,6 +1,6 @@
 # Affine.Earth MCP — User Guide
 
-**Endpoint:** `https://affine.earth/language-invariant/mcp` · streamable HTTP · JSON-RPC 2.0 · **49 tools** (measured 2026-09-02 per cell on all nine)
+**Endpoint:** `https://affine.earth/language-invariant/mcp` · streamable HTTP · JSON-RPC 2.0 · **51 tools** (measured 2026-09-02 per cell on all nine)
 No key. No account. No rate card. Served by nine cells behind one apex.
 
 Canonical full text, served on the apex:
@@ -16,7 +16,7 @@ curl -sS -X POST https://affine.earth/language-invariant/mcp \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
 
-Measured 2026-09-02: HTTP 200, **49 tools**, identical on all nine A records with SNI pinned per
+Measured 2026-09-17: HTTP 200, **51 tools**, identical on all nine A records *(49 on 2026-09-02; two have joined)* with SNI pinned per
 cell — nine correct answers through a load balancer would not prove nine correct cells, so the guide
 checks each one.
 

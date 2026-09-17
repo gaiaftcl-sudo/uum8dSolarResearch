@@ -157,7 +157,7 @@ A subscription warning chain runs: sensor → operator's network → operator's 
 
 All of that, plus the four properties already named — ground-repairable, country-owned, zero atmospheric cost in operation, **every verdict re-derivable by the population it serves** — is what "lasting benefit to the local population" means as an engineering fact rather than a slogan.
 
-**What this section does not claim:** no lives-saved figure, no adoption forecast, no revenue projection for the mesh itself. The solar bands are atlas ranges, not site surveys, and a real deployment starts with a site survey. The claim is narrower and holds: the power stage closes everywhere, the law layer is the same 49 domains everywhere, and the verdicts land in the hands of the people under them.
+**What this section does not claim:** no lives-saved figure, no adoption forecast, no revenue projection for the mesh itself. The solar bands are atlas ranges, not site surveys, and a real deployment starts with a site survey. The claim is narrower and holds: the power stage closes everywhere, the law layer is the same 50 domains everywhere, and the verdicts land in the hands of the people under them.
 
 ---
 
