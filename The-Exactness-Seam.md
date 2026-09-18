@@ -1891,7 +1891,7 @@ this class of undisclosed instrument limit.
    load 3.28 on 14 cores; a restart does not fix it; neither process state nor CPU saturation. The
    fleet measures fully live today, which does not explain that day.
 7. **Whether to move the substrate lattice from Z⁸ to E8.** 16× denser at the same covolume, 15× the
-   kissing number, and the densest packing in ℝ⁸ among all packings. Architectural, not a defect.
+   kissing number, and the densest packing in ℝ⁸ among all packings. Architectural, not a defect. *(Corrected 2026-09-18: the Z⁸ here is the transport charter's frame, not the court's lattice; the court tier is E8 by tetracode congruence, counted in the E8 library entry — 240 at norm 3, index 9, ω-closed, spectrum (1, 56, 126, 56, 1).)*
 8. **Whether EASA CM-S-014 names bit-exact reproducibility as a credibility factor.** Not
    established from the sources reviewed and not to be asserted either way. The same applies to
    DNV-RP-A204 (paywalled) and to the verbatim credibility-factor list in NASA-STD-7009A (not

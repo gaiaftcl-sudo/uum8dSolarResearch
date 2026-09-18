@@ -36,7 +36,7 @@ arithmetic. A gate handed nothing must not exit 0.
 | `gate-checks-panel-and-flux.swift` | the cold-day panel overshoot; the modular-wrap flux defect and its fix | the naive-vs-ring-delta pair |
 | `cost-matrix.swift` | every row of the cost table, four markets, three aggregation ratios | the per-site and 1:100 rows are each other's arm |
 | `reentry-alumina-ledger.swift` | the exact-rational reentry ledger; both readings of the same published inputs | CHECK 3 and CHECK 6 are the two readings, and both are printed |
-| `z8-vs-e8-lattice.swift` | kissing numbers 16 and 240 by direct enumeration; the density ratio as an exact integer | the det = 0 and det = 2 matrices |
+| `z8-vs-e8-lattice.swift` | kissing numbers 16 and 240 by enumeration with minimal norms counted; Construction A over Z[ω] with the tetracode enumerated (240 = 216 + 24, index 9, ω-closure, Gram spectrum) | ten arms both ways: tetracode weight, θ-divisibility, a non-codeword residue refused, a codeword lift admitted, counted minimum distances 3/1/2 with the d=1 and d=2 codes failing to give 240, the 16/240 enumeration, ω-closure, the (1,56,126,56,1) spectrum |
 | `guadalupe-wave-ledger.swift` | the river wave: peaks, propagation lags, the frozen-threshold lead time | reads the pinned corpus, digest in `corpus/flood-lead-time/SHA256SUMS` |
 | `rate-of-rise-common-window.swift` | rise rates on a **common** window, and the sampling histogram that shows why the native-window pair is not a comparison | prints both windows and says outright which is invalid |
 
