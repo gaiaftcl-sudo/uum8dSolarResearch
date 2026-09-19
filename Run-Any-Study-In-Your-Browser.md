@@ -180,7 +180,7 @@ when they should be used, in one stylesheet that names no selector the page did 
 
 ## What you are running
 
-- **The code at one commit.** The studies repository is pinned at `25a8a0c5e6f99903aeaf5bbcf1af5773483b4b9f`.
+- **The code at one commit.** The studies repository is pinned at `017a5971fb11f3773f4bbd7ad5bdcf97a1d380f0`.
   The source the editor opens with is that commit's file, byte for byte: served beside the build,
   hashed in your browser, and labelled against the manifest's digest of that commit's file. The label
   is printed, not a gate — the sealed wasm is what runs, and on a device that already holds your edit

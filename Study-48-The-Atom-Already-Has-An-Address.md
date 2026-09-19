@@ -19,8 +19,9 @@ sites. Carrying the count, the number is zero, and it is zero by construction ra
 **Status: FINDINGS SEALED 2026-09-17** — one program, seven control arms in both directions, seal
 `4b299340a10e04822aac19294abdbcdb1f05b6387e0ff63e0635c37cf3e5b881`, marker
 `HDL_SITE_ADDRESS__THE_LATTICE_IS_ITS_OWN_RULER`. Compiled to `wasm32-wasip1` and run under
-wasmtime, it prints the native transcript byte for byte — measured. The in-browser Studio run is
-**ABSENT** until the Studio's pinned commit advances to carry this program.
+wasmtime, it prints the native transcript byte for byte — measured. **It now opens in the Studio
+too**: at pin `017a5971fb11…` the sandbox row reads `RUNS`, parity `IDENTICAL`, 69 transcript lines,
+digest `bbe5077932fbf3da…` — the browser prints the same bytes as the native run.
 
 ---
 
@@ -196,8 +197,8 @@ swiftc -O -swift-version 5 reproduce/hdl-site-address-exact-vs-float.swift -o hd
 
 It takes no argument, reads no file and prints its reference figures on every exit path, including
 the refusal path. It also compiles to `wasm32-wasip1`, where it prints the same bytes under wasmtime —
-measured. It will open in the Studio once the Studio's pinned commit advances to carry it; until then
-this command line is the way to run it.
+measured. It also opens in the Studio at pin `017a5971fb11…` — 19,036,777 bytes on the wire, parity
+`IDENTICAL` against the native run — so this command line and the ▶ badge are the same measurement.
 
 Seal `4b299340a10e04822aac19294abdbcdb1f05b6387e0ff63e0635c37cf3e5b881` ·
 marker `HDL_SITE_ADDRESS__THE_LATTICE_IS_ITS_OWN_RULER`.
