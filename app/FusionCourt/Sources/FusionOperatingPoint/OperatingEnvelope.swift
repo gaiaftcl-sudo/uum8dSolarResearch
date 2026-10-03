@@ -1,13 +1,15 @@
 // The reactor operating point, on the wire, in EXACT INTEGER units only.
 // The court's ingest refuses any float-shaped token, so there is no "6.2" and
 // no "1e20" anywhere near this type — lengths in mm, currents in A, densities
-// in 1e14 m^-3, ratios x1000.
+// in 1e14 m^-3, ratios x1000. `IntegerToken.parse` below IS that ingest.
 //
 // MAC-ONLY app (founder, 2026-09-03: "this is a mac only fusion app, not the
 // build for the affine.earth cells"). Kept Foundation-free anyway — a verdict
 // law that needs a runtime is not a law — but this does NOT ship to the cells
 // and carries no Linux-portability burden.
-#if compiler(>=6.0)
+//
+// Nothing in this file touches Int128, so it carries no availability mark and
+// compiles on every macOS the consumers support.
 
 public struct OperatingEnvelope: Sendable, Equatable {
     public let ne14: Int64          // electron density / 1e14 m^-3
@@ -25,6 +27,13 @@ public struct OperatingEnvelope: Sendable, Equatable {
         self.betaNMilli = betaNMilli; self.qMinMilli = qMinMilli
         self.piNum = piNum; self.piDen = piDen
     }
+
+    /// True only when BOTH halves of the declared pi are positive. Anything else —
+    /// including HALF a declaration, one of the pair zero or negative — is not a
+    /// declaration: the court grades at the bracket. A caller that shows the verdict
+    /// of a half-declared pi must say "pi not declared: bracket used", because the
+    /// court did not grade at the pi the visitor typed.
+    public var declaresPi: Bool { piNum > 0 && piDen > 0 }
 }
 
 public enum Branch: String, Sendable { case greenwald, troyon, qMin }
@@ -43,4 +52,38 @@ public struct CourtVerdict: Sendable, Equatable {
         self.exactPath = exactPath
     }
 }
-#endif
+
+/// The court's input grammar for ONE integer, the only one there is: an optional
+/// leading '-' and then one or more ASCII digits, whose value fits Int64.
+/// Anything else is not an integer and is REFUSED (nil) — "6.2", "1e20", "+5",
+/// " 7", "0x10", "-", "" — never truncated, rounded or coerced. That is the control
+/// arm against the measured truncation of 6.2 to 6 in an earlier wire face.
+/// Every face that takes a typed number (the app's --grade, the IDE's grade form)
+/// parses through here, so the court has one input grammar.
+public enum IntegerToken {
+    public static func parse(_ s: Substring) -> Int64? {
+        let u = s.utf8
+        var i = u.startIndex
+        guard i != u.endIndex else { return nil }
+        let negative = u[i] == UInt8(ascii: "-")
+        if negative {
+            i = u.index(after: i)
+            guard i != u.endIndex else { return nil }
+        }
+        var v: Int64 = 0
+        while i != u.endIndex {
+            let c = u[i]
+            guard c >= UInt8(ascii: "0"), c <= UInt8(ascii: "9") else { return nil }
+            let d = Int64(c &- UInt8(ascii: "0"))
+            let (m, o1) = v.multipliedReportingOverflow(by: 10)
+            // accumulate a negative value DOWNWARD so Int64.min is reachable exactly
+            let (n, o2) = negative ? m.subtractingReportingOverflow(d) : m.addingReportingOverflow(d)
+            if o1 || o2 { return nil }
+            v = n
+            i = u.index(after: i)
+        }
+        return v
+    }
+
+    public static func parse(_ s: String) -> Int64? { parse(s[...]) }
+}

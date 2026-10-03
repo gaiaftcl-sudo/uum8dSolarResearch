@@ -105,19 +105,29 @@ public final class AgentArena: @unchecked Sendable {
         }
     }
 
-    /// Terminal census, in FIXED index order.
-    /// One agent's window in CHRONOLOGICAL order (oldest first), for display.
-    /// Reads the ring; does not mutate. head points one past the newest sample.
-    public func windowSnapshot(agent: Int) -> [Int16] {
-        guard agent >= 0, agent < agentCount else { return [] }
+    /// One agent's window in CHRONOLOGICAL order (oldest first), for display,
+    /// written into a caller-owned buffer of exactly `window` elements. Allocates
+    /// nothing, so a 1 kHz publisher can call it every publish. Reads the ring;
+    /// does not mutate. head points one past the newest sample. Returns false, and
+    /// writes nothing, for an agent outside the arena or a buffer of another size.
+    public func windowSnapshot(agent: Int, into out: UnsafeMutableBufferPointer<Int16>) -> Bool {
+        guard agent >= 0, agent < agentCount, out.count == window else { return false }
         let W = window
         let base = agent * W
         let head = Int(states[agent].head)
-        var out = [Int16](repeating: 0, count: W)
         for j in 0..<W { out[j] = ring[base + ((head + j) % W)] }
+        return true
+    }
+
+    /// The same window as a fresh array (allocates `window` elements per call).
+    public func windowSnapshot(agent: Int) -> [Int16] {
+        guard agent >= 0, agent < agentCount else { return [] }
+        var out = [Int16](repeating: 0, count: window)
+        _ = out.withUnsafeMutableBufferPointer { windowSnapshot(agent: agent, into: $0) }
         return out
     }
 
+    /// Terminal census, in FIXED index order.
     public func census() -> (nominal: Int, mitigate: Int, refusedEnv: Int, refusedMal: Int) {
         var c = (0, 0, 0, 0)
         for s in states {

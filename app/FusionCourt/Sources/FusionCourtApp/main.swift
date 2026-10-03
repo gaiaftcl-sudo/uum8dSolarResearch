@@ -11,12 +11,15 @@ import FusionOperatingPoint
 
 let args = CommandLine.arguments
 if args.contains("--selftest-clock") {
+    // An EMPTY step: this measures the clock, not the court. The time-constraint
+    // policy is requested by the control thread for itself; since 2026-10-03 this
+    // line reports the CONTROL thread's grant (it used to report the main
+    // thread's, which this mode had placed under the 1 ms policy). stop() returns
+    // only after the loop has returned, so the counters below are final.
     let d = FixedStepDriver(config: .init(periodNanos: 1_000_000, computeBudgetNanos: 400_000)) { _, _ in }
-    let granted = d.requestTimeConstraint()
     d.start(); Thread.sleep(forTimeInterval: 10.0); d.stop()
-    Thread.sleep(forTimeInterval: 0.05)
     let h = d.snapshotHistogram()
-    print("time_constraint_granted=\(granted)")
+    print("time_constraint_granted=\(d.timeConstraintGranted)")
     print("ticks=\(d.completedTicks) skipped=\(d.skippedTicks) gaps=\(d.gaps.count)")
     print("p50=\(h.percentileNanos(50))ns p99=\(h.percentileNanos(99))ns max=\(h.maxNanos)ns")
     exit(d.skippedTicks == 0 ? 0 : 1)
@@ -50,8 +53,10 @@ if args.contains("--grade") {
     // Optional piNum/piDen declare pi for an exact (rather than pi-independent)
     // verdict. Example:
     //   FusionCourt --grade ne14=1000000 ipAmp=15000000 aMm=2000 betaNMilli=1800 qMinMilli=3000
+    // Every value parses through IntegerToken, the court's one input grammar:
+    // "6.2", "+5" or "1e6" is not an integer and is refused, never truncated.
     func arg(_ k: String) -> Int64? {
-        for a in args where a.hasPrefix("\(k)=") { return Int64(a.dropFirst(k.count + 1)) }
+        for a in args where a.hasPrefix("\(k)=") { return IntegerToken.parse(a.dropFirst(k.count + 1)) }
         return nil
     }
     guard let ne = arg("ne14"), let ip = arg("ipAmp"), let a = arg("aMm"),
@@ -171,7 +176,9 @@ if args.count <= 1 {
                                                computeBudgetNanos: 400_000)) { tick, _ in
         host.tick(tick)
     }
-    _ = driver.requestTimeConstraint()
+    // The control thread requests its own time-constraint policy; the main (UI)
+    // thread is never placed under the 1 ms policy (it was, until 2026-10-03).
+    host.driver = driver
     driver.start()
     LiveContext.coldStartNanos = ControlClock.nanoseconds(ticks: ControlClock.now().raw &- t0)
     LiveContext.periodNanos = 1_000_000
@@ -179,7 +186,7 @@ if args.count <= 1 {
 }
 
 print("FusionCourt — Affine.Earth fusion control verdict court")
-print("  (no flags)           open the four-panel court window on 65,536 agents at 1 kHz")
+print("  (no flags)           open the five-panel court window on 65,536 agents at 1 kHz")
 print("  --grade K=V ...      grade one operating point (ne14, ipAmp, aMm, betaNMilli, qMinMilli)")
 print("  --selftest-clock     10 s at 1 kHz, histogram, refuses on any skipped tick")
 print("  --selftest-lattice   lattice widths and ingress lanes")

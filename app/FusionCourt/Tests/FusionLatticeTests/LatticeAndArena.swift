@@ -70,4 +70,72 @@ import Testing
             #expect(arena.states[j].terminal == ord, "agent \(j)")
         }
     }
+
+    // ---- added 2026-10-03: the slice, the plant and the window, each from one home ----
+
+    @Test("the D-slice is one integer: 22,132,500 mm^2, the cell 49,920 mm^2, no pi")
+    func densitySlice() {
+        #expect(DensitySlice.vertices.count == 16)
+        #expect(DensitySlice.twiceArea == 44_265_000)
+        #expect(DensitySlice.areaMm2 == 22_132_500)
+        #expect(DensitySlice.cellDeterminant == 49_920)
+        var s: Int64 = 0
+        for i in 0..<16 { s += DensitySlice.edgeDeterminant(i) }
+        #expect(s == DensitySlice.twiceArea)              // counter-clockwise: the sum is positive
+        // the circle it replaces moves 334 mm^2 across the pi bracket
+        let lo = DensitySlice.circleAreaFloorMm2(radiusMm: 2000, piNum: 333, piDen: 106)
+        let hi = DensitySlice.circleAreaFloorMm2(radiusMm: 2000, piNum: 355, piDen: 113)
+        #expect(lo == 12_566_037)
+        #expect(hi == 12_566_371)
+        #expect(hi! - lo! == 334)
+        // CONTROL: no radius, no area
+        #expect(DensitySlice.circleAreaFloorMm2(radiusMm: 0, piNum: 355, piDen: 113) == nil)
+    }
+
+    @Test("the synthetic plant has one census: 54,272 / 8,192 / 2,048 / 1,024 at 65,536 agents")
+    func plantCensus() {
+        func census(_ n: Int, ticks: UInt64) -> (Int, Int, Int, Int) {
+            let arena = AgentArena(agentCount: n, window: 256, slabs: 12)
+            var buf = [Int16](repeating: 0, count: n)
+            var t: UInt64 = 0
+            while t < ticks {
+                buf.withUnsafeMutableBufferPointer { SyntheticPlant.fill($0, tick: t) }
+                buf.withUnsafeBufferPointer { arena.advance(samples: $0, tick: UInt32(t)) }
+                t += 1
+            }
+            let c = arena.census()
+            return (c.nominal, c.mitigate, c.refusedEnv, c.refusedMal)
+        }
+        let big = census(65_536, ticks: 64)
+        #expect(big == (54_272, 8_192, 2_048, 1_024))
+        // CONTROL: a different size gives a different, predicted census
+        let small = census(4_096, ticks: 64)
+        #expect(small == (3_392, 512, 128, 64))
+        // the bulk face and the per-agent face are one generator
+        var one = [Int16](repeating: 0, count: 64)
+        one.withUnsafeMutableBufferPointer { SyntheticPlant.fill($0, tick: 9) }
+        for i in 0..<64 { #expect(one[i] == SyntheticPlant.sample(agent: i, tick: 9)) }
+    }
+
+    @Test("the window copy into a caller's buffer equals the allocating copy, and refuses a wrong size")
+    func windowInto() {
+        let arena = AgentArena(agentCount: 16, window: 256, slabs: 4)
+        var buf = [Int16](repeating: 0, count: 16)
+        for t in 0..<300 {
+            buf.withUnsafeMutableBufferPointer { SyntheticPlant.fill($0, tick: UInt64(t)) }
+            buf.withUnsafeBufferPointer { arena.advance(samples: $0, tick: UInt32(t)) }
+        }
+        let a = arena.windowSnapshot(agent: 5)
+        var b = [Int16](repeating: 0, count: 256)
+        let wrote = b.withUnsafeMutableBufferPointer { arena.windowSnapshot(agent: 5, into: $0) }
+        #expect(wrote)
+        #expect(a == b)
+        #expect(a.last == SyntheticPlant.sample(agent: 5, tick: 299))   // newest last
+        // CONTROL: a buffer of another size, or an agent outside the arena, is refused
+        var short = [Int16](repeating: 0, count: 255)
+        let wroteShort = short.withUnsafeMutableBufferPointer { arena.windowSnapshot(agent: 5, into: $0) }
+        let wroteOutside = b.withUnsafeMutableBufferPointer { arena.windowSnapshot(agent: 16, into: $0) }
+        #expect(!wroteShort)
+        #expect(!wroteOutside)
+    }
 }

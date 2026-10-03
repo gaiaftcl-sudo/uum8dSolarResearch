@@ -39,9 +39,17 @@ if have xcrun || have swiftc; then
         if grep -q "FusionLaw\.\|LawConstants\." "$p" 2>/dev/null; then
             extra="$extra $(ls "$LAWSRC"/*.swift 2>/dev/null | tr '\n' ' ')"
         fi
-        # A script consuming the operating-point court links that target too.
-        if grep -q "FusionOperatingPointLaw\.\|OperatingEnvelope(" "$p" 2>/dev/null; then
+        # A script consuming the operating-point court — or its machine table — links that target too.
+        if grep -q "FusionOperatingPointLaw\.\|OperatingEnvelope(\|FusionMachines\." "$p" 2>/dev/null; then
             extra="$extra $(ls "$ROOT/app/FusionCourt/Sources/FusionOperatingPoint"/*.swift 2>/dev/null | tr '\n' ' ')"
+        fi
+        # A script consuming the program's lattice slice links its home file, by mention, the
+        # same way: the 16 vertices and every determinant have one home, never a script copy.
+        # ONE FILE, not the FusionLattice directory: the slice is stdlib-only Int64, while the
+        # directory also holds TendingSwarm.swift (Foundation actors), which no script uses and
+        # which a wasm32 staging of the same rule would then have to compile.
+        if grep -q "DensitySlice\." "$p" 2>/dev/null; then
+            extra="$extra $ROOT/app/FusionCourt/Sources/FusionLattice/DensitySlice.swift"
         fi
         stage="$(mktemp -d)"; berr="$(mktemp)"
         # STAGING NAME IS A CHOICE, AND IT IS NOT THE SAME CHOICE FOR EVERY PROGRAM.
@@ -597,6 +605,8 @@ check_figure fusion-determinism-digest    "f49b576e073835bcab17bee10fe0eee193877
 check_figure fusion-exact-vs-float       "PROOF_EXACT_VERDICT_IS_OBSERVER_INVARIANT" ""
 check_figure fusion-exact-vs-float       "exact-refused points = 142 · float32 flips vs exact = 0 · two-pi float contradictions = 142" ""
 check_figure fusion-exact-vs-float       "355/113 - 333/106 = 1/11978" ""
+# the 142 refused and the 142 contradictory are the SAME 142 points (counted 2026-10-03)
+check_figure fusion-exact-vs-float       "same_points=142" ""
 check_figure fusion-affine-density-invariant "AFFINE_DENSITY_INVARIANT_IS_PI_FREE" ""
 check_figure fusion-affine-density-invariant "pi-ambiguous by 334 mm^2 across the bracket" ""
 check_figure fusion-affine-magnitude-invariance "AFFINE_INVARIANT_CARRIES_MEANING_AT_ANY_MAGNITUDE" ""

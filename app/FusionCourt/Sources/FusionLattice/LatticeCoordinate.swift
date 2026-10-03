@@ -7,15 +7,21 @@
 // 1.7014e38, so the products that overflow Int64 in this domain sit trivially
 // inside it.
 //
-// Why not Int64: the Greenwald cross-multiply reaches 2.8e19 at a 20 m minor
-// radius. That overflows Int64 and needs no escalation at all in Int128.
+// Why not Int64: the Greenwald cross-multiply reaches 1.42e19 at a 20 m minor
+// radius (100 x 1e6 x 355 x 20000^2, the test `greenwaldFits`; this line said
+// 2.8e19 until 2026-10-03). That overflows Int64 and needs no escalation at all
+// in Int128.
 //
 // BigInt still has a home — the ledger, where a coordinate accumulates for
 // decades and reversibility must be exact. It is simply not on the tick.
-
-#if compiler(>=6.0)
+//
+// Int128 exists from macOS 15, so each type below that holds or computes one
+// carries @available(macOS 15, *). That replaced a `#if compiler(>=6.0)` wrapper
+// on 2026-10-03: the wrapper excluded nothing (every consumer needs Swift 6) and
+// its `6.0` read as a float literal to the Affine IDE's no-float gate.
 
 /// One axis of the T^8 lattice, in exact integer quanta.
+@available(macOS 15, *)
 @frozen public struct LatticeAxis: Sendable, Equatable, Hashable {
     public var q: Int128
     @inlinable public init(_ q: Int128) { self.q = q }
@@ -36,6 +42,7 @@
 }
 
 /// A point on the orientable 8D flat torus, exact.
+@available(macOS 15, *)
 @frozen public struct LatticePoint8: Sendable, Equatable {
     public var x: (LatticeAxis, LatticeAxis, LatticeAxis, LatticeAxis,
                    LatticeAxis, LatticeAxis, LatticeAxis, LatticeAxis)
@@ -89,10 +96,9 @@
     }
 }
 
+@available(macOS 15, *)
 public enum LatticeWidth {
     public static let axisBits = Int128.bitWidth
     public static let pointBytes = MemoryLayout<LatticePoint8>.size
     public static let int64HeadroomFactor: Int128 = Int128.max / Int128(Int64.max)
 }
-
-#endif

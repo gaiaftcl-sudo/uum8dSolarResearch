@@ -5,11 +5,11 @@
 // Everything here is replayable: swift this file (the exact law is linked in).
 import Foundation   // Double.pi / Float only; the EXACT law imports nothing.
 
-// Published tokamak geometries (REPORTED): Ip in A, minor radius in mm.
-let MACHINES: [(String, Int64, Int64)] = [
-  ("ITER", 15_000_000, 2000), ("SPARC", 8_700_000, 570),
-  ("JET",   4_800_000, 1250), ("DIII-D", 2_000_000, 670),
-]
+// Published tokamak geometries (REPORTED): Ip in A, minor radius in mm — read from
+// the one machine table, FusionMachines (app/FusionCourt/Sources/FusionOperatingPoint/
+// Machines.swift), since 2026-10-03. The machines with a plasma current, in table order.
+let MACHINES: [(String, Int64, Int64)] =
+  FusionMachines.all.filter { $0.ipAmp > 0 }.map { ($0.name, $0.ipAmp, $0.minorRadiusMm) }
 
 // The exact court's verdict (integer, pi-bracketed).
 func exact(_ ne: Int64, _ ip: Int64, _ a: Int64) -> String {
@@ -27,6 +27,9 @@ func f32(_ ne: Int64, _ ip: Int64, _ a: Int64, pi: Float) -> String {
 print("=== PROOF: the floating-point safety verdict is observer-dependent; the exact one is not ===\n")
 print("  PI_BRACKET  355/113 - 333/106 = 1/11978   (8.35e-5 wide; 2.7e-7 is the error of 355/113 alone)\n")
 var totBracket=0, totF32Flip=0, totPiAmbiguous=0
+// Points counted in BOTH totals below. The two totals were equal before this count
+// existed (2026-10-03), which does not by itself make them the same points; this does.
+var totSame=0
 var exhibit: String? = nil
 for (nm, ip, a) in MACHINES {
   // real-arithmetic boundary, only to centre the integer sweep
@@ -45,6 +48,8 @@ for (nm, ip, a) in MACHINES {
     // two DEFENSIBLE rational values of pi give contradictory float verdicts
     if a355 != a333 {
       piamb += 1
+      // the SAME point: refused by the exact court AND contradictory between the two pis
+      if ex == "NOT_MEASURED_PI_BRACKET" { totSame += 1 }
       if exhibit == nil && ex == "NOT_MEASURED_PI_BRACKET" {
         let nG = Double(ip)*1e6*113.0/(355.0*Double(a)*Double(a))
         exhibit = "  \(nm): at n_e=\(ne)e14 m^-3  ->  pi=355/113 says \(a355) · pi=333/106 says \(a333)"
@@ -61,6 +66,7 @@ for (nm, ip, a) in MACHINES {
   totBracket+=bracket; totF32Flip+=f32flip; totPiAmbiguous+=piamb
 }
 print("\n  TOTALS  exact-refused points = \(totBracket) · float32 flips vs exact = \(totF32Flip) · two-pi float contradictions = \(totPiAmbiguous)")
+print("  SAME POINTS  refused by the exact court AND contradictory between the two pis: same_points=\(totSame)")
 if let ex = exhibit { print("\n  EXHIBIT — one operating point, three answers:\n\(ex)") }
 print("""
 
