@@ -7,7 +7,7 @@
   "upstream_repo": "SalesforceAIResearch/MCP-Universe",
   "branch": "affine-uum8d-s4-20261108",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 6ecbd0f1ad79 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "6ecbd0f1ad79041a0485a7b6d3aace4c9974b844f93131ed17899dfd9ac2531e",
-  "seal_12hex": "6ecbd0f1ad79"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: d5461eee5fce (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "d5461eee5fce8e18217de355d537a88e7b5a39269835a96b9e17b03b5717a24c",
+  "seal_12hex": "d5461eee5fce"
 }

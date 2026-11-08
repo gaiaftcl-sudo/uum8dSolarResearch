@@ -7,7 +7,7 @@
   "upstream_repo": "trishullab/PutnamBench",
   "branch": "affine-uum8d-s4-20261108",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: a03b0252bc9a (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "a03b0252bc9ae9ea9b636e26b23dc575453cbc564e5f0c444e4dd34cadf4701e",
-  "seal_12hex": "a03b0252bc9a"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 1c2722d44338 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "1c2722d443386545a2f810870798ac593fd10175e771f536a3183a42f9f942b7",
+  "seal_12hex": "1c2722d44338"
 }

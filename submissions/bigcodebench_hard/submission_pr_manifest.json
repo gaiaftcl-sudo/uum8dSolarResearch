@@ -7,7 +7,7 @@
   "upstream_repo": "bigcode-project/bigcodebench",
   "branch": "affine-uum8d-s4-20261108",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: c93f5ce8c03e (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "c93f5ce8c03ee0d7af303b004aa9655adf6baa299c1475c665fb4876c9488e20",
-  "seal_12hex": "c93f5ce8c03e"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 665aac7db84c (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "665aac7db84c32677973f4dc26ad8f29f57f64d7812fd76e98dd6098b164870c",
+  "seal_12hex": "665aac7db84c"
 }

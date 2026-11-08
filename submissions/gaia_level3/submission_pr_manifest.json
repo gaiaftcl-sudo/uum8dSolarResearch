@@ -7,7 +7,7 @@
   "upstream_repo": "gaia-benchmark/leaderboard",
   "branch": "affine-uum8d-s4-20261108",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: ff5a5249532d (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "ff5a5249532d5233e05852175f34e6a6465795f3170344f12c6a726946e60129",
-  "seal_12hex": "ff5a5249532d"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: caf309f127d7 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "caf309f127d7539fe08cd84c4f30de51c8e16df46130e7afcc11c785fc78d257",
+  "seal_12hex": "caf309f127d7"
 }

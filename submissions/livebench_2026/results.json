@@ -7,7 +7,7 @@
   "model_id": "affine-uum8d-s4",
   "openai_base_url": "https://affine.earth/v1",
   "mcp_court_url": "https://affine.earth/v1/mcp",
-  "evaluated_at_utc": "2026-11-08T20:43:28Z",
+  "evaluated_at_utc": "2026-11-08T20:56:02Z",
   "tasks_resolved": "1,000 / 1,000 (100.0%)",
   "score_pct": "100.0%",
   "runner_up_comparison": "Gemini 2.5 Pro / o3 (81.3%)",

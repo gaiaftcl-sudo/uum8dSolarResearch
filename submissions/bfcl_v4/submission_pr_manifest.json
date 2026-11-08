@@ -7,7 +7,7 @@
   "upstream_repo": "ShishirPatil/gorilla",
   "branch": "affine-uum8d-s4-20261108",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 4862f10e9615 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "4862f10e961567d7d5aa68039e63797d5b36ca22ef72c04514f07f4a7d76c834",
-  "seal_12hex": "4862f10e9615"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 03ed6dc2897e (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "03ed6dc2897eb883e41459d59816eac8d4a92111ed0ce36de4b11479e1001360",
+  "seal_12hex": "03ed6dc2897e"
 }
