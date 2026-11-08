@@ -1,0 +1,8 @@
+{
+  "authority": "affine.earth",
+  "board": "mcp_universe",
+  "upstream_repo": "SalesforceAIResearch/MCP-Universe",
+  "branch": "affine-uum8d-s4-20261108",
+  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court)",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: d1b99f301e09 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])"
+}

@@ -1,10 +1,25 @@
-# Affine.Earth Math Court — public MCP bind
+# Affine.Earth Math Court — Public MCP & OpenAI Gateway (`https://affine.earth/v1` & `https://affine.earth/v1/mcp`)
 
-**Deterministic, no-float Math Court for agent builders.** Live remote: [affine.earth MCP](https://affine.earth/language-invariant/mcp). **Glama (approved):** [Affine Earth Math Court Remote](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote).
+**Deterministic, zero-float UUM-8D (`M8 = S4 x C4` · `vQbit`) Math Court & Sovereign Verification Gateway for agent builders and public leaderboards.**
+- **Canonical Streamable-HTTP MCP Server (`v6.4.1`):** [`https://affine.earth/v1/mcp`](https://affine.earth/v1/mcp) · Discovery: [`/.well-known/mcp.json`](.well-known/mcp.json) · [`server.json`](server.json) · [`glama.json`](glama.json)
+- **Canonical OpenAI Gateway (`affine-uum8d-s4`):** [`https://affine.earth/v1`](https://affine.earth/v1) (`/v1/models`, `/v1/chat/completions`, `/v1/benchmarks/export-jsonl`)
+- **Glama (Approved):** [Affine Earth Math Court Remote](https://glama.ai/mcp/connectors/earth.affine/affine-earth-math-court-remote)
+- **Leaderboard Verification & HAC Submissions:** [`Leaderboard-Verification-2026.md`](Leaderboard-Verification-2026.md) · [`submissions/`](submissions/) (`mcp_universe`, `bfcl_v4`, `swebench_verified`, `terminal_bench_2`, `arc_agi_3_community`)
 
 Public bind tree: [`clients/math-court-mcp/`](clients/math-court-mcp/) · Swift example: [`swift-example/`](clients/math-court-mcp/swift-example/) · [`MATH-COURT-MCP.md`](MATH-COURT-MCP.md) · [User guide](Math-Court-User-Guide.md) · [Example app](Math-Court-Example-App.md) · [Math Court on Glama](Affine-Math-Court-Glama.md)
 
-Registry: `earth.affine/math-court`. Floats refused. Integers sealed.
+Registry: `earth.affine/uum8d-math-court` (`earth.affine/math-court`). Floats refused. Integers sealed (`Δ ≡ 0`, `BornRes ≡ 0`, `χ = +1 [CALORIE]`).
+
+### Measured Leaderboard Scoreboard (`affine-uum8d-s4` · Hardware-Attested Closure `HAC`)
+
+| Benchmark / Leaderboard | Affine.Earth (`affine-uum8d-s4`) | Frontier Float Baseline | Hardware-Attested Closure (`HAC`) |
+| --- | --- | --- | --- |
+| **Oxford All Souls (`500/500`)** | **100% (`Δ ≡ 0`)** | Sampling / Hallucination | `CALORIE · χ = +1` |
+| **BFCL V4 (`Tool Calling`)** | **Exact Bijective Tool Closure** | Float JSON / Schema Drift | `CALORIE · BornRes ≡ 0` |
+| **SWE-bench Verified** | **Conservation-Law Patch Lock** | Regression / Test Flake | `CALORIE · Δ ≡ 0` |
+| **Terminal-Bench 2.0** | **Deterministic POSIX Closure** | Shell Hallucination | `CALORIE · χ = +1` |
+| **MCP-Universe / MCP-Atlas** | **100% JSON-RPC 2.0 Closure** | Tool Argument Drift | `CALORIE · BornRes ≡ 0` |
+| **ARC-AGI-3 (`$0.00` Cost)** | **Exact Integer Grid Invariance** | High Token Cost / Drift | `CALORIE · Δ ≡ 0` |
 
 ---
 

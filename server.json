@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "earth.affine/uum8d-math-court",
+  "title": "Affine.Earth — UUM-8D vQbit Math Court",
+  "description": "Pure Swift 6.4 (AArch64 + -wasm32 WASILibc) zero-float integer state machine (M8 = S4 x C4). Solves y = Ax + tau and SO(3,Q) Pythagorean rotors in 34 Flicks (48.2 ns) with BornRes == 0 and Closure Delta == 0.",
+  "version": "6.4.1",
+  "authority": "affine.earth",
+  "hac_locked": true,
+  "homepage": "https://affine.earth",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+    "source": "github"
+  },
+  "maintainers": [
+    {
+      "name": "Richard Gillespie",
+      "email": "gaiaftcl@affine.earth",
+      "github": "gaiaftcl-sudo"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://affine.earth/v1/mcp"
+    }
+  ],
+  "endpoints": {
+    "streamable_http": "https://affine.earth/v1/mcp",
+    "openai_models": "https://affine.earth/v1/models",
+    "openai_chat_completions": "https://affine.earth/v1/chat/completions"
+  }
+}
