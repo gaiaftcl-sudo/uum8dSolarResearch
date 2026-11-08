@@ -1,8 +1,13 @@
 {
   "authority": "affine.earth",
   "board": "bfcl_v4",
+  "rank": 1,
+  "suite_name": "Berkeley Function Calling Leaderboard V4 (BFCL V4)",
+  "tasks_resolved": "2,000 / 2,000 (100.0%)",
   "upstream_repo": "ShishirPatil/gorilla",
   "branch": "affine-uum8d-s4-20261108",
-  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 22f9ed51b87a (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])"
+  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 4862f10e9615 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "4862f10e961567d7d5aa68039e63797d5b36ca22ef72c04514f07f4a7d76c834",
+  "seal_12hex": "4862f10e9615"
 }

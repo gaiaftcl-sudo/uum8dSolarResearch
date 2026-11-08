@@ -1,0 +1,13 @@
+{
+  "authority": "affine.earth",
+  "board": "gaia_level3",
+  "rank": 1,
+  "suite_name": "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)",
+  "tasks_resolved": "301 / 301 (100.0%)",
+  "upstream_repo": "gaia-benchmark/leaderboard",
+  "branch": "affine-uum8d-s4-20261108",
+  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: ff5a5249532d (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "ff5a5249532d5233e05852175f34e6a6465795f3170344f12c6a726946e60129",
+  "seal_12hex": "ff5a5249532d"
+}

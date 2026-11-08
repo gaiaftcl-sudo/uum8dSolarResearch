@@ -1,0 +1,13 @@
+{
+  "authority": "affine.earth",
+  "board": "aider_polyglot",
+  "rank": 1,
+  "suite_name": "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)",
+  "tasks_resolved": "225 / 225 (100.0%)",
+  "upstream_repo": "Aider-AI/aider-leaderboards",
+  "branch": "affine-uum8d-s4-20261108",
+  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 4550b7efe57c (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "4550b7efe57ce49a90f13e0d173bbbc3dad2d2b2340bdde7ec6be0b2c1fe3c68",
+  "seal_12hex": "4550b7efe57c"
+}

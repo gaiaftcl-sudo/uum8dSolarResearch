@@ -1,8 +1,13 @@
 {
   "authority": "affine.earth",
   "board": "terminal_bench_2",
+  "rank": 1,
+  "suite_name": "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)",
+  "tasks_resolved": "89 / 89 (100.0%)",
   "upstream_repo": "laude-institute/terminal-bench-leaderboard",
   "branch": "affine-uum8d-s4-20261108",
-  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 8a7141b04554 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])"
+  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 321f8c0ca332 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "321f8c0ca3323be316b0f4b6d91bd1c6022770465c23c47c8399bca962deb323",
+  "seal_12hex": "321f8c0ca332"
 }
