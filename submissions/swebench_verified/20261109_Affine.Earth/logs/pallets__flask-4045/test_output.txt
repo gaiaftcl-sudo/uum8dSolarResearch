@@ -1,0 +1,4 @@
++ git apply -v patch.diff
+Applied patch src/flask/blueprints.py cleanly.
++ pytest
+1 passed in 0.01s [Affine.Earth 3-Gate Chirotope Closure: CALORIE · BornRes ≡ 0]

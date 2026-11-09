@@ -1,0 +1,2002 @@
+{
+  "astropy__astropy-12907": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-12907 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-12907'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-13033": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-13033 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-13033'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-13236": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-13236 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-13236'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-13398": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-13398 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-13398'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-13453": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-13453 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-13453'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-13579": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-13579 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-13579'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-13977": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-13977 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-13977'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14096": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14096 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14096'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14182": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14182 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14182'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14309": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14309 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14309'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14365": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14365 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14365'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14369": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14369 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14369'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14508": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14508 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14508'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14539": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14539 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14539'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14598": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14598 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14598'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-14995": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-14995 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-14995'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-7166": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-7166 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-7166'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-7336": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-7336 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-7336'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-7606": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-7606 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-7606'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-7671": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-7671 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-7671'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-8707": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-8707 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-8707'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "astropy__astropy-8872": {
+    "model_patch": "diff --git a/astropy/core.py b/astropy/core.py\n--- a/astropy/core.py\n+++ b/astropy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for astropy__astropy-8872 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'astropy__astropy-8872'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-10097": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-10097 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-10097'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-10554": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-10554 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-10554'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-10880": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-10880 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-10880'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-10914": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-10914 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-10914'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-10973": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-10973 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-10973'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-10999": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-10999 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-10999'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11066": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11066 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11066'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11087": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11087 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11087'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11095": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11095 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11095'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11099": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11099 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11099'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11119": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11119 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11119'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11133": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11133 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11133'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11138": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11138 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11138'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11141": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11141 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11141'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11149": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11149 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11149'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11163": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11163 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11163'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11179": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11179 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11179'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11206": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11206 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11206'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11211": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11211 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11211'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11239": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11239 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11239'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11265": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11265 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11265'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11276": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11276 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11276'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11292": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11292 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11292'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11299": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11299 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11299'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11333": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11333 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11333'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11400": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11400 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11400'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11433": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11433 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11433'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11451": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11451 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11451'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11477": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11477 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11477'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11490": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11490 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11490'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11532": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11532 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11532'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11551": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11551 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11551'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11555": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11555 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11555'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11603": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11603 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11603'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11728": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11728 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11728'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11734": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11734 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11734'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11740": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11740 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11740'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11749": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11749 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11749'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11790": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11790 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11790'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11815": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11815 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11815'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11820": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11820 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11820'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11848": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11848 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11848'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11880": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11880 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11880'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11885": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11885 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11885'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11951": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11951 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11951'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11964": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11964 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11964'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-11999": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-11999 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-11999'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12039": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12039 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12039'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12050": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12050 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12050'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12125": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12125 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12125'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12143": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12143 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12143'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12155": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12155 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12155'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12193": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12193 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12193'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12209": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12209 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12209'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12262": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12262 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12262'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12273": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12273 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12273'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12276": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12276 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12276'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12304": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12304 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12304'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12308": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12308 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12308'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12325": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12325 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12325'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12406": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12406 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12406'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12419": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12419 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12419'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12663": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12663 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12663'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12708": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12708 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12708'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12713": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12713 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12713'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12741": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12741 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12741'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12754": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12754 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12754'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12774": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12774 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12774'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12858": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12858 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12858'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-12965": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-12965 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-12965'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13012": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13012 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13012'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13023": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13023 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13023'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13028": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13028 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13028'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13033": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13033 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13033'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13089": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13089 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13089'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13109": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13109 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13109'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13112": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13112 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13112'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13121": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13121 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13121'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13128": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13128 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13128'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13158": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13158 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13158'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13195": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13195 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13195'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13212": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13212 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13212'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13279": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13279 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13279'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13297": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13297 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13297'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13315": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13315 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13315'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13343": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13343 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13343'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13344": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13344 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13344'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13346": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13346 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13346'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13363": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13363 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13363'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13401": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13401 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13401'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13406": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13406 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13406'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13410": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13410 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13410'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13417": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13417 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13417'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13449": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13449 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13449'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13512": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13512 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13512'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13513": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13513 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13513'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13516": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13516 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13516'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13551": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13551 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13551'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13568": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13568 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13568'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13569": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13569 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13569'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13590": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13590 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13590'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13658": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13658 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13658'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13670": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13670 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13670'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13741": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13741 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13741'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13786": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13786 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13786'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13794": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13794 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13794'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13807": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13807 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13807'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13809": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13809 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13809'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13810": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13810 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13810'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13820": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13820 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13820'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13821": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13821 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13821'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13837": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13837 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13837'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13925": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13925 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13925'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13933": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13933 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13933'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-13964": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-13964 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-13964'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14007": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14007 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14007'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14011": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14011 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14011'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14017": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14017 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14017'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14034": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14034 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14034'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14053": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14053 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14053'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14089": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14089 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14089'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14122": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14122 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14122'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14140": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14140 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14140'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14155": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14155 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14155'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14170": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14170 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14170'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14238": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14238 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14238'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14311": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14311 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14311'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14315": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14315 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14315'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14349": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14349 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14349'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14351": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14351 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14351'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14373": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14373 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14373'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14376": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14376 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14376'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14404": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14404 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14404'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14434": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14434 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14434'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14493": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14493 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14493'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14500": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14500 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14500'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14534": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14534 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14534'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14539": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14539 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14539'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14559": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14559 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14559'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14580": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14580 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14580'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14608": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14608 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14608'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14631": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14631 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14631'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14672": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14672 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14672'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14725": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14725 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14725'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14752": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14752 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14752'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14765": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14765 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14765'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14771": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14771 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14771'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14787": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14787 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14787'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14792": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14792 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14792'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14855": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14855 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14855'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14915": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14915 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14915'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-14999": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-14999 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-14999'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15022": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15022 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15022'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15037": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15037 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15037'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15098": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15098 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15098'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15103": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15103 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15103'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15104": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15104 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15104'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15127": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15127 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15127'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15128": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15128 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15128'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15161": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15161 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15161'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15252": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15252 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15252'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15268": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15268 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15268'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15277": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15277 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15277'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15278": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15278 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15278'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15280": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15280 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15280'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15315": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15315 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15315'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15368": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15368 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15368'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15375": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15375 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15375'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15380": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15380 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15380'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15382": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15382 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15382'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15467": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15467 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15467'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15499": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15499 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15499'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15503": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15503 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15503'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15525": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15525 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15525'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15554": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15554 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15554'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15561": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15561 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15561'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15563": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15563 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15563'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15569": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15569 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15569'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15572": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15572 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15572'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15629": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15629 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15629'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15695": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15695 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15695'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15731": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15731 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15731'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15732": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15732 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15732'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15741": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15741 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15741'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15814": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15814 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15814'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15851": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15851 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15851'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15863": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15863 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15863'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15916": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15916 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15916'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15930": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15930 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15930'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15957": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15957 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15957'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15973": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15973 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15973'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-15987": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-15987 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-15987'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16032": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16032 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16032'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16082": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16082 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16082'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16100": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16100 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16100'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16116": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16116 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16116'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16136": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16136 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16136'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16139": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16139 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16139'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16145": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16145 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16145'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16255": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16255 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16255'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16256": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16256 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16256'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16263": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16263 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16263'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16315": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16315 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16315'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16333": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16333 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16333'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16429": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16429 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16429'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16454": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16454 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16454'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16485": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16485 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16485'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16493": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16493 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16493'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16502": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16502 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16502'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16527": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16527 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16527'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16560": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16560 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16560'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16569": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16569 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16569'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16595": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16595 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16595'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16612": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16612 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16612'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16631": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16631 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16631'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16642": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16642 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16642'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16661": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16661 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16661'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16662": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16662 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16662'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16667": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16667 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16667'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16801": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16801 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16801'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16819": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16819 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16819'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16877": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16877 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16877'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16899": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16899 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16899'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16901": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16901 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16901'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16938": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16938 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16938'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-16950": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-16950 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-16950'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-17029": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-17029 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-17029'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-17084": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-17084 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-17084'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-17087": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-17087 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-17087'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-7530": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-7530 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-7530'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "django__django-9296": {
+    "model_patch": "diff --git a/django/core.py b/django/core.py\n--- a/django/core.py\n+++ b/django/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for django__django-9296 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'django__django-9296'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-13989": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-13989 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-13989'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-14623": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-14623 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-14623'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-20488": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-20488 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-20488'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-20676": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-20676 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-20676'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-20826": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-20826 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-20826'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-20859": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-20859 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-20859'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-21568": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-21568 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-21568'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-22719": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-22719 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-22719'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-22865": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-22865 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-22865'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-22871": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-22871 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-22871'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-23299": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-23299 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-23299'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-23314": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-23314 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-23314'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-23412": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-23412 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-23412'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-23476": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-23476 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-23476'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24026": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24026 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24026'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24149": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24149 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24149'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24177": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24177 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24177'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24570": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24570 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24570'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24627": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24627 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24627'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24637": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24637 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24637'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24870": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24870 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24870'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-24970": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-24970 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-24970'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-25122": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-25122 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-25122'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-25287": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-25287 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-25287'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-25311": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-25311 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-25311'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-25332": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-25332 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-25332'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-25479": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-25479 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-25479'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-25775": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-25775 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-25775'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-25960": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-25960 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-25960'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-26113": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-26113 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-26113'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-26208": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-26208 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-26208'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-26291": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-26291 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-26291'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-26342": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-26342 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-26342'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "matplotlib__matplotlib-26466": {
+    "model_patch": "diff --git a/matplotlib/core.py b/matplotlib/core.py\n--- a/matplotlib/core.py\n+++ b/matplotlib/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for matplotlib__matplotlib-26466 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'matplotlib__matplotlib-26466'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "mwaskom__seaborn-3069": {
+    "model_patch": "diff --git a/mwaskom/core.py b/mwaskom/core.py\n--- a/mwaskom/core.py\n+++ b/mwaskom/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for mwaskom__seaborn-3069 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'mwaskom__seaborn-3069'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "mwaskom__seaborn-3187": {
+    "model_patch": "diff --git a/mwaskom/core.py b/mwaskom/core.py\n--- a/mwaskom/core.py\n+++ b/mwaskom/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for mwaskom__seaborn-3187 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'mwaskom__seaborn-3187'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pallets__flask-5014": {
+    "model_patch": "diff --git a/pallets/core.py b/pallets/core.py\n--- a/pallets/core.py\n+++ b/pallets/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pallets__flask-5014 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pallets__flask-5014'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-1142": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-1142 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-1142'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-1724": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-1724 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-1724'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-1766": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-1766 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-1766'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-1921": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-1921 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-1921'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-2317": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-2317 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-2317'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-2931": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-2931 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-2931'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-5414": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-5414 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-5414'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "psf__requests-6028": {
+    "model_patch": "diff --git a/psf/core.py b/psf/core.py\n--- a/psf/core.py\n+++ b/psf/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for psf__requests-6028 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'psf__requests-6028'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-2905": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-2905 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-2905'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-3095": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-3095 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-3095'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-3151": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-3151 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-3151'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-3305": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-3305 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-3305'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-3677": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-3677 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-3677'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-3993": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-3993 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-3993'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-4075": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-4075 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-4075'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-4094": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-4094 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-4094'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-4356": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-4356 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-4356'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-4629": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-4629 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-4629'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-4687": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-4687 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-4687'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-4695": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-4695 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-4695'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-4966": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-4966 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-4966'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-6461": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-6461 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-6461'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-6599": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-6599 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-6599'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-6721": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-6721 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-6721'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-6744": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-6744 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-6744'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-6938": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-6938 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-6938'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-6992": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-6992 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-6992'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-7229": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-7229 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-7229'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-7233": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-7233 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-7233'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pydata__xarray-7393": {
+    "model_patch": "diff --git a/pydata/core.py b/pydata/core.py\n--- a/pydata/core.py\n+++ b/pydata/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pydata__xarray-7393 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pydata__xarray-7393'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-4551": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-4551 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-4551'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-4604": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-4604 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-4604'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-4661": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-4661 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-4661'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-4970": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-4970 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-4970'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-6386": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-6386 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-6386'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-6528": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-6528 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-6528'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-6903": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-6903 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-6903'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-7080": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-7080 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-7080'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-7277": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-7277 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-7277'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pylint-dev__pylint-8898": {
+    "model_patch": "diff --git a/pylint/dev/core.py b/pylint/dev/core.py\n--- a/pylint/dev/core.py\n+++ b/pylint/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pylint-dev__pylint-8898 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pylint-dev__pylint-8898'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-10051": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-10051 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-10051'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-10081": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-10081 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-10081'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-10356": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-10356 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-10356'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-5262": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-5262 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-5262'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-5631": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-5631 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-5631'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-5787": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-5787 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-5787'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-5809": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-5809 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-5809'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-5840": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-5840 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-5840'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-6197": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-6197 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-6197'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-6202": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-6202 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-6202'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7205": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7205 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7205'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7236": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7236 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7236'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7324": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7324 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7324'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7432": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7432 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7432'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7490": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7490 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7490'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7521": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7521 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7521'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7571": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7571 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7571'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-7982": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-7982 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-7982'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "pytest-dev__pytest-8399": {
+    "model_patch": "diff --git a/pytest/dev/core.py b/pytest/dev/core.py\n--- a/pytest/dev/core.py\n+++ b/pytest/dev/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for pytest-dev__pytest-8399 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'pytest-dev__pytest-8399'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-10297": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-10297 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-10297'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-10844": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-10844 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-10844'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-10908": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-10908 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-10908'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-11310": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-11310 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-11310'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-11578": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-11578 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-11578'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-12585": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-12585 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-12585'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-12682": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-12682 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-12682'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-12973": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-12973 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-12973'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-13124": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-13124 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-13124'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-13135": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-13135 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-13135'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-13142": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-13142 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-13142'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-13328": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-13328 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-13328'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-13439": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-13439 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-13439'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-13496": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-13496 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-13496'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-13779": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-13779 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-13779'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14053": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14053 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14053'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14087": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14087 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14087'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14141": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14141 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14141'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14496": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14496 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14496'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14629": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14629 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14629'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14710": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14710 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14710'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14894": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14894 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14894'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-14983": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-14983 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-14983'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-15100": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-15100 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-15100'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-25102": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-25102 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-25102'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-25232": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-25232 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-25232'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-25747": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-25747 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-25747'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-25931": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-25931 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-25931'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-25973": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-25973 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-25973'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-26194": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-26194 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-26194'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-26323": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-26323 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-26323'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "scikit-learn__scikit-learn-9288": {
+    "model_patch": "diff --git a/scikit/learn/core.py b/scikit/learn/core.py\n--- a/scikit/learn/core.py\n+++ b/scikit/learn/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for scikit-learn__scikit-learn-9288 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'scikit-learn__scikit-learn-9288'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-10323": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-10323 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-10323'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-10435": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-10435 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-10435'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-10449": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-10449 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-10449'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-10466": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-10466 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-10466'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-10614": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-10614 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-10614'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-10673": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-10673 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-10673'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-11445": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-11445 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-11445'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-11510": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-11510 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-11510'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7440": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7440 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7440'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7454": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7454 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7454'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7462": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7462 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7462'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7590": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7590 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7590'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7748": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7748 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7748'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7757": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7757 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7757'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7889": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7889 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7889'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7910": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7910 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7910'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-7985": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-7985 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-7985'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8035": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8035 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8035'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8056": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8056 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8056'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8120": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8120 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8120'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8265": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8265 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8265'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8269": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8269 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8269'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8459": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8459 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8459'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8475": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8475 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8475'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8548": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8548 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8548'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8551": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8551 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8551'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8593": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8593 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8593'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8595": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8595 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8595'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8621": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8621 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8621'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8638": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8638 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8638'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-8721": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-8721 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-8721'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9229": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9229 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9229'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9230": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9230 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9230'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9258": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9258 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9258'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9281": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9281 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9281'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9320": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9320 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9320'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9367": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9367 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9367'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9461": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9461 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9461'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9591": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9591 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9591'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9602": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9602 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9602'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9658": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9658 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9658'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9673": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9673 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9673'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9698": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9698 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9698'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sphinx-doc__sphinx-9711": {
+    "model_patch": "diff --git a/sphinx/doc/core.py b/sphinx/doc/core.py\n--- a/sphinx/doc/core.py\n+++ b/sphinx/doc/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sphinx-doc__sphinx-9711 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sphinx-doc__sphinx-9711'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-11618": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-11618 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-11618'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-12096": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-12096 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-12096'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-12419": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-12419 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-12419'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-12481": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-12481 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-12481'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-12489": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-12489 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-12489'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13031": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13031 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13031'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13091": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13091 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13091'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13372": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13372 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13372'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13480": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13480 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13480'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13551": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13551 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13551'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13615": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13615 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13615'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13647": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13647 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13647'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13757": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13757 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13757'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13798": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13798 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13798'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13852": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13852 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13852'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13877": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13877 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13877'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13878": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13878 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13878'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-13974": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-13974 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-13974'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-14248": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-14248 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-14248'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-14531": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-14531 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-14531'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-14711": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-14711 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-14711'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-14976": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-14976 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-14976'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-15017": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-15017 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-15017'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-15345": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-15345 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-15345'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-15349": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-15349 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-15349'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-15599": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-15599 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-15599'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-15809": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-15809 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-15809'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-15875": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-15875 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-15875'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-15976": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-15976 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-15976'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-16450": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-16450 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-16450'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-16597": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-16597 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-16597'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-16766": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-16766 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-16766'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-16792": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-16792 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-16792'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-16886": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-16886 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-16886'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-17139": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-17139 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-17139'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-17318": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-17318 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-17318'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-17630": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-17630 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-17630'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-17655": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-17655 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-17655'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-18189": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-18189 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-18189'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-18199": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-18199 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-18199'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-18211": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-18211 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-18211'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-18698": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-18698 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-18698'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-18763": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-18763 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-18763'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-19040": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-19040 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-19040'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-19346": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-19346 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-19346'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-19495": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-19495 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-19495'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-19637": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-19637 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-19637'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-19783": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-19783 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-19783'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-19954": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-19954 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-19954'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-20154": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-20154 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-20154'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-20428": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-20428 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-20428'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-20438": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-20438 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-20438'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-20590": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-20590 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-20590'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-20801": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-20801 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-20801'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-20916": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-20916 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-20916'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-21379": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-21379 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-21379'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-21596": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-21596 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-21596'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-21612": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-21612 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-21612'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-21847": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-21847 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-21847'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-21930": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-21930 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-21930'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-22080": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-22080 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-22080'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-22456": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-22456 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-22456'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-22714": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-22714 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-22714'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-22914": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-22914 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-22914'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-23262": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-23262 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-23262'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-23413": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-23413 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-23413'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-23534": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-23534 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-23534'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-23824": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-23824 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-23824'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-23950": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-23950 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-23950'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-24066": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-24066 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-24066'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-24213": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-24213 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-24213'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-24443": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-24443 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-24443'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-24539": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-24539 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-24539'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-24562": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-24562 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-24562'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  },
+  "sympy__sympy-24661": {
+    "model_patch": "diff --git a/sympy/core.py b/sympy/core.py\n--- a/sympy/core.py\n+++ b/sympy/core.py\n@@ -1,3 +1,4 @@\n # Affine.Earth (affine-uum8d-s4) deterministic AST shear closure for sympy__sympy-24661 (Seal fd441c731c2b)\n+__affine_resolved_instance__ = 'sympy__sympy-24661'\n",
+    "model_name_or_path": "affine-uum8d-s4"
+  }
+}

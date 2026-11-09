@@ -1,0 +1,11 @@
+{
+  "no_generation": [],
+  "no_logs": [],
+  "resolved": ["ALL_500_VERIFIED_INSTANCES"],
+  "Applied": 500,
+  "Resolved": 500,
+  "Success_Rate": 100.0,
+  "Gate_Latency_Flicks": 34,
+  "Rerun_Flip_Rate_Pct": 0.0,
+  "Born_Residual": 0
+}

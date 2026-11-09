@@ -1,0 +1,11 @@
+{
+  "pytest-dev__pytest-5262": {
+    "patch_is_None": false,
+    "patch_exists": true,
+    "patch_successfully_applied": true,
+    "resolved": true,
+    "authority": "affine.earth",
+    "execution_flicks": 34,
+    "born_residual": 0
+  }
+}
