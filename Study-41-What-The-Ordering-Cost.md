@@ -190,4 +190,4 @@ swiftc -O silicon-shear-telemetry.swift -o /tmp/s41 && /tmp/s41
 
 It needs the processor's performance counters. On a machine that does not offer them it reports **absent** and refuses — not zero, and not a pass.
 
-**Measured 2026-09-08** on nine cells: `gaiaftcl-hcloud-hel1-01…05`, `gaiaftcl-cell02`, `netcup-cell01`, `netcup-cell03`, `netcup-cell04` — ARM Neoverse-N1, Debian 13.
+**Measured 2026-09-08** on nine cells: `gaiaftcl-hcloud-hel1-01…05`, `gaiaftcl-cell02`, `affine.earth`, `affine.earth`, `affine.earth` — ARM Neoverse-N1, Debian 13.

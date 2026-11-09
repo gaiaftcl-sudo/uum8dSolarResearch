@@ -570,8 +570,8 @@ func floatCommutator(_ A: Affine, _ B: Affine, at x: Double) -> Double {
 // defect it exists to measure.
 
 let CELL_STRIDES: [Int] = [1, 3, 5, 7, 9, 11, 13, 15, 17]
-let CELL_NAMES: [String] = ["hel-00", "hel-01", "hel-02", "hel-03", "hel-04",
-                            "nbg-00", "nbg-01", "nbg-02", "nbg-03"]
+let CELL_NAMES: [String] = ["affine-edge", "affine-edge", "affine-edge", "affine-edge", "affine-edge",
+                            "affine-edge", "affine-edge", "affine-edge", "affine-edge"]
 
 func arrivalOrder(cell c: Int, count n: Int) -> [Int] {
     let s = CELL_STRIDES[c]

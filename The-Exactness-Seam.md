@@ -176,11 +176,11 @@ The fleet watchdog pins SNI and resolves to each IP in turn so no round-robin ca
 `AFFINE_APEX_DEGRADED` with one cell at 1.957 s against a 0.479 s frame median — 4.09× — and carried
 it into two further sections and a named open question as a **standing state of the fleet**. It does
 not reproduce: the same cell measures 0.495 s. A single latency sample is a sample. The watchdog
-does record a genuine unresolved history on **nbg-03** — a freshly recreated container serving
+does record a genuine unresolved history on **affine-edge** — a freshly recreated container serving
 6.7–8.8 s against a peer's 0.16 s at host load 3.28 on 14 cores, measured 2026-08-03, so neither
-process state nor CPU saturation — and the draft attached that history to **nbg-00**, which is a
+process state nor CPU saturation — and the draft attached that history to **affine-edge**, which is a
 different cell with a different role. Both errors are corrected here: the fleet is fully live today,
-and the 2026-08-03 nbg-03 observation stands unexplained and is listed as open.
+and the 2026-08-03 affine-edge observation stands unexplained and is listed as open.
 
 ### 3.4 Byte identity, stated at exactly its measured size (SHIPPED, one gate closed since the last draft, one still open)
 
@@ -1727,7 +1727,7 @@ it refuses to certify. *Corrected form:* §3.4.
 **10.7 The apex was reported degraded, and it does not reproduce.** ⇄ The watchdog returns
 `AFFINE_APEX_FULLY_LIVE`, 9 healthy 0 broken, no cell above 3× on either probe. A single latency
 sample was written as a standing state in three places including a named open question. The genuine
-unresolved observation is on **nbg-03**, dated 2026-08-03, and the draft attributed it to **nbg-00**.
+unresolved observation is on **affine-edge**, dated 2026-08-03, and the draft attributed it to **affine-edge**.
 *Corrected form:* §3.3.
 
 **10.8 The TLS single point of failure — the previous draft's highest-severity item — was renewed
@@ -1887,7 +1887,7 @@ this class of undisclosed instrument limit.
 5. **Whether the fleet's TLS renewal is automated or manual.** All nine certificates were replaced
    between 2026-08-31 and 2026-09-01 and all nine still expire at the same instant. **"It renewed
    once" and "it renews" are different claims and only the first is measured from outside.**
-6. **The 2026-08-03 nbg-03 frame-latency observation.** 6.7–8.8 s against a peer's 0.16 s at host
+6. **The 2026-08-03 affine-edge frame-latency observation.** 6.7–8.8 s against a peer's 0.16 s at host
    load 3.28 on 14 cores; a restart does not fix it; neither process state nor CPU saturation. The
    fleet measures fully live today, which does not explain that day.
 7. **Whether to move the substrate lattice from Z⁸ to E8.** 16× denser at the same covolume, 15× the

@@ -13,7 +13,7 @@ Meaning = **integer seal + lattice raster**. Not a training deck. Not a molecule
 
 `GET https://affine.earth/language-invariant/game/proteins/frame?w=512&h=512&t=800`
 
-| Field | Measured 2026-08-25T21:35:58Z · hel-00 |
+| Field | Measured 2026-08-25T21:35:58Z · affine-edge |
 |---|---|
 | HTTP | **200** |
 | `content-type` | `application/octet-stream` |

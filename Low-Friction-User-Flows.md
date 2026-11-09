@@ -15,13 +15,13 @@ Hologram URL (same after Look and after every WIN):
 
 `GET https://affine.earth/language-invariant/game/proteins/frame?w=512&h=512&t=800`
 
-Measured this hour (hel-00): HTTP **200**, `application/octet-stream`, **1048576** bytes, sha256 `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266`. Same sha after pdb 4HHB WIN. `t=800` did not change. Prior hour `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e` was the previous raster at this same URL.
+Measured this hour (affine-edge): HTTP **200**, `application/octet-stream`, **1048576** bytes, sha256 `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266`. Same sha after pdb 4HHB WIN. `t=800` did not change. Prior hour `a3f6f2bb6f73078c10b411fbcf1e4bfcc694d591e27c8c06a0f7342fe414235e` was the previous raster at this same URL.
 
 ## Drift (so the next hour can see staleness)
 
 | Field | Last validated |
 |---|---|
-| UTC | **2026-08-25T21:35:58Z** · edge hel-00 |
+| UTC | **2026-08-25T21:35:58Z** · edge affine-edge |
 | Catalog `index_n` | **258616** · GET `discoveries/catalog.json` HTTP 200 · `ids` 258616 |
 | Hologram sha256 | `97f1bd07ae7d77e867c9708d601ff92edefab20a4aba628084ca37ddb20ec266` · 1048576 bytes · t=800 |
 | Look `identity_leak` | **0** |

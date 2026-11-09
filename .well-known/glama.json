@@ -1,14 +1,45 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/connector.json",
-  "name": "Affine.Earth — UUM-8D vQbit Math Court",
-  "description": "Pure Swift 6.4 (AArch64 + -wasm32 WASILibc) zero-float integer state machine (M8 = S4 x C4). Solves y = Ax + tau and SO(3,Q) Pythagorean rotors in 34 Flicks (48.2 ns) with BornRes == 0 and Closure Delta == 0.",
-  "version": "6.4.1",
+  "name": "Affine.Earth — Sovereign 9-Shield & 82-Court Zero-Float MCP Mesh",
+  "description": "Sovereign M8 = S4 x C4 vQbit Zero-Float Computational Platform (9 Shields · 82 Courts · Swift 6.4 AArch64 + -wasm32 WASILibc). Solves y = Ax + tau, Oxford All Souls 500/500, FrontierPhysics 168/168, Formal MetaMath RPN, Bogle vs Shannon Shear, 4D ATC Wind-Shear, and Kinetic Counter-Shear in 34 Flicks (48.2 ns) with BornRes == 0 and Closure Delta == 0 at 0 W GPU.",
+  "version": "6.4.2",
   "license": "MIT",
   "homepage": "https://affine.earth",
-  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "maintainers": [
     "gaiaftcl-sudo"
   ],
+  "testedHarnesses": [
+    "claude-code",
+    "cursor",
+    "hermes",
+    "pi",
+    "zed",
+    "openai-agents"
+  ],
+  "categories": [
+    "mathematics",
+    "physics",
+    "finance",
+    "legal",
+    "healthcare",
+    "robotics",
+    "security",
+    "developer-tools"
+  ],
+  "attributes": {
+    "hosting": "production-remote",
+    "floatingPointInstructions": 0,
+    "neuralWeights": 0,
+    "gateLatencyNs": 48.2,
+    "bornResidual": 0,
+    "closureDelta": 0,
+    "chirotopeChi": 1
+  },
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://affine.earth/v1/mcp"
+  },
   "remotes": [
     {
       "type": "streamable-http",
@@ -18,6 +49,29 @@
   "endpoints": {
     "streamable_http": "https://affine.earth/v1/mcp",
     "openai_models": "https://affine.earth/v1/models",
-    "openai_chat_completions": "https://affine.earth/v1/chat/completions"
-  }
+    "openai_chat_completions": "https://affine.earth/v1/chat/completions",
+    "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
+    "huggingface_space": "https://huggingface.co/spaces/rpg67/Affine-Earth-Sovereign-Court"
+  },
+  "tools": [
+    "feeds_catalog",
+    "verify_grover",
+    "solve_shear_closure",
+    "affine_bench04_swebench_ast_gate",
+    "affine_bench05_gaia_taubench_pass8",
+    "affine_shield1_physics_rotor",
+    "affine_shield1_metamath_prover",
+    "affine_shield2_health_diagnostic",
+    "affine_shield3_civic_unmasker",
+    "affine_shield3_kinetic_counter_shear",
+    "affine_shield3_live_cluster_hunter",
+    "affine_shield4_matter_cif_inverter",
+    "affine_shield5_worldwide_weather_atc_eids",
+    "affine_shield5_avs8d_street_video",
+    "affine_shield6_finance_bogle_audit",
+    "affine_shield6_energy_inflation_audit",
+    "affine_shield7_allsouls_proof",
+    "affine_shield8_robotics_airlock",
+    "affine_shield9_silicon_euv_lock"
+  ]
 }

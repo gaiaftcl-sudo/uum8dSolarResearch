@@ -9,7 +9,7 @@ Canonical sources:
 
 | Surface | Path |
 |---|---|
-| Public MCP (`tools/list`) | Live: `POST https://affine.earth/language-invariant/mcp` · evidence `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw` · **count 23** (pre-roll) · HTTP 200 edge `nbg-01` · in-repo live mirror an in-repo tool manifest (private repo) · wired QC law the QC court law module (private repo) |
+| Public MCP (`tools/list`) | Live: `POST https://affine.earth/language-invariant/mcp` · evidence `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw` · **count 23** (pre-roll) · HTTP 200 edge `affine-edge` · in-repo live mirror an in-repo tool manifest (private repo) · wired QC law the QC court law module (private repo) |
 | Registry | `docs/mcp/server.json` · `earth.affine/math-court` |
 | Served names | the registry's served-entry table (private repo) in the capability registry (private repo) |
 | Typed QC-001…019 shells | the algorithm catalogue (private repo) |

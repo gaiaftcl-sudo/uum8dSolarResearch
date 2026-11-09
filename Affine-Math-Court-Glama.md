@@ -4,7 +4,7 @@
 One endpoint carries three courts: the **Math Court** (50 domains behind `math_court`, measured 2026-09-17; 49 on 2026-09-02), the **Quantum court** (QMA + QC-001…021 verifiers and two projection tools) and the **Coding Court** (`code_ir_equiv`, `execute_artifact_crucible` — the verdict IS the artifact, including a prebuilt wasm module returned byte-exact). **49 tools**, measured 2026-09-02 per cell on all nine A records.  
 Open MCP: `https://affine.earth/language-invariant/mcp` · Registry: `earth.affine/math-court`  
 Public example: `clients/math-court-mcp` · Live proof: `bash clients/math-court-mcp/prove-live-court.sh`  
-Evidence: `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw` · edge `nbg-01` · HTTP 200
+Evidence: `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw` · edge `affine-edge` · HTTP 200
 
 ---
 
@@ -18,7 +18,7 @@ The public client in `clients/math-court-mcp` computes **no verdict**. It is a v
 
 | Proof | What locked |
 |---|---|
-| The court is public | Live `tools/list` on 2026-08-27T19:48:20Z advertised **23** tools (HTTP 200, edge `nbg-01`). Raw JSON: `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw`. `math_court` and `lattice_op` are present. An earlier walk printed **21** — that count is stale. **Superseded: live `tools/list` is 48 as of 2026-08-29**, measured per-cell against all nine A records; the 23 above stands as the dated record of what was served that day, with its raw JSON. |
+| The court is public | Live `tools/list` on 2026-08-27T19:48:20Z advertised **23** tools (HTTP 200, edge `affine-edge`). Raw JSON: `clients/math-court-mcp/evidence/tools-list-20260827T194820Z.raw`. `math_court` and `lattice_op` are present. An earlier walk printed **21** — that count is stale. **Superseded: live `tools/list` is 48 as of 2026-08-29**, measured per-cell against all nine A records; the 23 above stands as the dated record of what was served that day, with its raw JSON. |
 | The court is the whole court | One walk covered geometry, chance, algebra, physics, QCD, health, finance, compilers, fluids, eclipse, EHT, seismic, disease, chemistry, materials, PDB, Rife, dynamo, and the four QMA domains. **29 LIVE · 0 LEARN.** |
 | Miner verbs stay off the public surface | `mine`, `isolate`, `sha256d`, `submitblock` were **absent**. The win is the verified bond, not a wallet. |
 | Floats cannot enter | The wire is decimal strings. A JSON `Float64` is refused. Continuous-quantum agents that speak IEEE never reach a seal. |
