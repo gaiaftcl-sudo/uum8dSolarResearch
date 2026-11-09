@@ -9,7 +9,7 @@
   "runner_up": "gpt-5 (high) (88.0% · Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "fork_repo": "gaiaftcl-sudo/aider",
-  "submission_pr_url": "https://github.com/gaiaftcl-sudo/aider/pull/1",
+  "submission_pr_url": "https://github.com/Aider-AI/aider/pull/5973",
   "fork_branch_url": "https://github.com/gaiaftcl-sudo/aider/tree/affine-uum8d-s4-20261109/submissions/aider_polyglot",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
@@ -17,7 +17,7 @@
   "branch": "affine-uum8d-s4-20261109",
   "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: ef63f1f84633 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "ef63f1f84633553da405fda4808f7df69cd9f47ad1703b8b61a17cd5d520c475",
-  "seal_12hex": "ef63f1f84633"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 9bcd195af289 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "9bcd195af289f899f44086499cec2744ccfd6dc363cdf7c77cbee32fe1e391b7",
+  "seal_12hex": "9bcd195af289"
 }

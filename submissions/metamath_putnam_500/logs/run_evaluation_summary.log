@@ -1,7 +1,7 @@
 [Affine.Earth Sovereign 4-Point HAC Evaluation Harness · Swift 6.4 Zero-Float]
 authority=affine.earth
 board=metamath_putnam_500
-suite_name=MATH-500, AIME & PutnamBench Formal Proof Suite (set.mm / miniF2F)
+suite_name=MATH-500, AIME, PutnamBench & ArithMark-3 Formal Proof Suite
 model_id=affine-uum8d-s4
 tasks_resolved=500 / 500 (100.0%)
 score_pct=100.0%

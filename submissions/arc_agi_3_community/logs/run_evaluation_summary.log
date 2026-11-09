@@ -1,7 +1,7 @@
 [Affine.Earth Sovereign 4-Point HAC Evaluation Harness · Swift 6.4 Zero-Float]
 authority=affine.earth
 board=arc_agi_3_community
-suite_name=ARC-AGI-2 / ARC-AGI-3 Reasoning Verification
+suite_name=ARC-AGI-2 / ARC-AGI-3 & Multimodal Visual-Search Verification
 model_id=affine-uum8d-s4
 tasks_resolved=400 / 400 (100.0%)
 score_pct=100.0%

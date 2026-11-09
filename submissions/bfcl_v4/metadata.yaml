@@ -2,7 +2,7 @@ name: Affine.Earth
 org: Affine.Earth (UUM-8D Quantum Affine Infrastructure Consortium)
 site: https://affine.earth/language-game/leaderboard.html
 repository: https://github.com/gaiaftcl-sudo/affine.earth.public
-submission_pr: https://github.com/gaiaftcl-sudo/gorilla/pull/1
+submission_pr: https://github.com/ShishirPatil/gorilla/pull/1392
 submission_branch: https://github.com/gaiaftcl-sudo/gorilla/tree/affine-uum8d-s4-20261109/submissions/bfcl_v4
 official_board_url: https://gorilla.cs.berkeley.edu/leaderboard.html
 runner_up_comparison: "Claude-Opus-4-5-20251101 (FC) (77.47% · Pulled 2026-11-09)"

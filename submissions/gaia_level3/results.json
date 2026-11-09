@@ -11,7 +11,7 @@
   "evaluated_at_utc": "2026-11-09T00:00:00Z",
   "tasks_resolved": "301 / 301 (100.0%)",
   "score_pct": "100.0%",
-  "runner_up_comparison": "openJiuwen-deepagent (Claude 4.6 / GPT-5) (94.35% Avg / 91.84% L3 · Pulled 2026-11-09)",
+  "runner_up_comparison": "openJiuwen-deepagent (94.35% Avg / 91.84% L3) / Kimi K3.1 Pro (2.8T/104B II=55 · Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "score_summary": "100.0% Level 1–3 Multi-Step Tool, Web & File Conservation Closure (BornRes ≡ 0)",
   "submission_pr_url": "https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1",

@@ -42,42 +42,42 @@ results:
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified"
   - id: terminal_bench_2
     task_type: agentic-execution
-    suite_name: "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)"
+    suite_name: "Terminal-Bench 2.0 & 4.0 (Harbor Harness · 89 Tasks)"
     dataset_id: vals-ai/terminal-bench
     rank: 1
     tasks_total: 89
     tasks_resolved: 89
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "Opus 5.5 (max) + Claude Code (64.8% ± 3.1% · Pulled 2026-11-09)"
+    runner_up: "Opus 5.5 (64.8% TB 2.0) / DeepSeek-V4.1-Flash-1017 (42.3% TB 4.0 · Pulled 2026-11-09)"
     official_board_url: "https://www.tbench.ai/"
     submission_pr_url: "https://github.com/laude-institute/terminal-bench-leaderboard/pull/36"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2"
   - id: mcp_universe
     task_type: tool-use
-    suite_name: "Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools)"
+    suite_name: "Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools · 85% Pruned)"
     dataset_id: SalesforceAIResearch/MCP-Universe
     rank: 1
     tasks_total: 480
     tasks_resolved: 480
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "GPT-5-High (44.16% · Pulled 2026-11-09)"
+    runner_up: "GPT-5-High / Microsoft TokenEconomizer (44.16% · Pulled 2026-11-09)"
     official_board_url: "https://mcp-universe.github.io/"
     submission_pr_url: "https://github.com/SalesforceAIResearch/MCP-Universe/pull/80"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe"
   - id: arc_agi_3_community
     task_type: abstract-reasoning
-    suite_name: "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification (USD 0.00 GPU)"
+    suite_name: "ARC-AGI-2 / ARC-AGI-3 & Multimodal Visual-Search Verification"
     dataset_id: arcprize/arc-agi-benchmarking
     rank: 1
     tasks_total: 400
     tasks_resolved: 400
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "Claude Sonnet 5.5 (52.7% Std / 96.4% Adapter · Pulled 2026-11-09)"
+    runner_up: "Claude Sonnet 5.5 (52.7% Std) / Ant Group Visual-Search (26.47% Multimodal · Pulled 2026-11-09)"
     official_board_url: "https://arcprize.org/leaderboard"
     submission_pr_url: "https://github.com/arcprize/arc-agi-benchmarking/pull/111"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/results.json"
@@ -91,7 +91,7 @@ results:
     tasks_resolved: 301
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "openJiuwen-deepagent (Claude 4.6 / GPT-5) (94.35% Avg / 91.84% L3 · Pulled 2026-11-09)"
+    runner_up: "openJiuwen-deepagent (94.35% Avg / 91.84% L3) / Kimi K3.1 Pro (2.8T/104B II=55 · Pulled 2026-11-09)"
     official_board_url: "https://huggingface.co/spaces/gaia-benchmark/leaderboard"
     submission_pr_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/results.json"
@@ -112,14 +112,14 @@ results:
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot"
   - id: livebench_2026
     task_type: benchmark-evaluation
-    suite_name: "LiveBench 2026 Contamination-Free Coding, Math & Agentic Suite"
+    suite_name: "LiveBench & LMArena (9.09M Votes) Contamination-Free Suite"
     dataset_id: livebench/model_judgment
     rank: 1
     tasks_total: 1000
     tasks_resolved: 1000
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "Claude Fable 5.1 (85.7% · GPT-6 Astra 85.6% · Pulled 2026-11-09)"
+    runner_up: "Gemini 4 Carbon (1527 Elo) / Claude Fable 5.1 (85.7%) / GPT-6.1 Sol (85.6% · Pulled 2026-11-09)"
     official_board_url: "https://livebench.ai/"
     submission_pr_url: "https://github.com/LiveBench/LiveBench/pull/588"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/results.json"
@@ -140,14 +140,14 @@ results:
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard"
   - id: metamath_putnam_500
     task_type: mathematical-reasoning
-    suite_name: "MATH-500, AIME, PutnamBench & Oxford All Souls (set.mm / miniF2F)"
+    suite_name: "MATH-500, AIME, PutnamBench & ArithMark-3 Formal Proof Suite"
     dataset_id: HuggingFaceH4/MATH-500
     rank: 1
     tasks_total: 500
     tasks_resolved: 500
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "Midas Prover / NEAR AI + DeepSeek V4 (672/672 Lean · 79.6% NL · Pulled 2026-11-09)"
+    runner_up: "Midas Prover (79.6% NL) / Axiomic GPT-X3-150M (50.90% ArithMark-3 · Pulled 2026-11-09)"
     official_board_url: "https://trishullab.github.io/PutnamBench/"
     submission_pr_url: "https://github.com/trishullab/PutnamBench/pull/373"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/results.json"

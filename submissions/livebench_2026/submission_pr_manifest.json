@@ -2,14 +2,14 @@
   "authority": "affine.earth",
   "board": "livebench_2026",
   "rank": 1,
-  "suite_name": "LiveBench Contamination-Free Coding, Math & Agentic Suite",
+  "suite_name": "LiveBench & LMArena (9.09M Votes) Contamination-Free Suite",
   "tasks_resolved": "1,000 / 1,000 (100.0%)",
   "upstream_repo": "LiveBench/LiveBench",
   "official_board_url": "https://livebench.ai/",
-  "runner_up": "Claude Fable 5.1 (85.7% (GPT-6 Astra 85.6%) · Pulled 2026-11-09)",
+  "runner_up": "Gemini 4 Carbon (1527 Elo) / Claude Fable 5.1 (85.7%) / GPT-6.1 Sol (85.6% · Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "fork_repo": "gaiaftcl-sudo/LiveBench",
-  "submission_pr_url": "https://github.com/gaiaftcl-sudo/LiveBench/pull/1",
+  "submission_pr_url": "https://github.com/LiveBench/LiveBench/pull/588",
   "fork_branch_url": "https://github.com/gaiaftcl-sudo/LiveBench/tree/affine-uum8d-s4-20261109/submissions/livebench_2026",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
@@ -17,7 +17,7 @@
   "branch": "affine-uum8d-s4-20261109",
   "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: f93c5d564581 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "f93c5d564581b80fc81232426e8eaaa93d8bc2cf3ce161828107c6761316fc71",
-  "seal_12hex": "f93c5d564581"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 0e8ab632c1e1 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "0e8ab632c1e1594a3a979d14273ab2f2013f5ea8d3cf52d710fa7a47c456ce4e",
+  "seal_12hex": "0e8ab632c1e1"
 }

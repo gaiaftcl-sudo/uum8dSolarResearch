@@ -9,7 +9,7 @@
   "runner_up": "Claude-Opus-4-5-20251101 (FC) (77.47% · Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "fork_repo": "gaiaftcl-sudo/gorilla",
-  "submission_pr_url": "https://github.com/gaiaftcl-sudo/gorilla/pull/1",
+  "submission_pr_url": "https://github.com/ShishirPatil/gorilla/pull/1392",
   "fork_branch_url": "https://github.com/gaiaftcl-sudo/gorilla/tree/affine-uum8d-s4-20261109/submissions/bfcl_v4",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
@@ -17,7 +17,7 @@
   "branch": "affine-uum8d-s4-20261109",
   "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 581a66e8d8ae (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "581a66e8d8aef1a163d740a5d599cdc695c7c510459eacbdac492ed091cbdf80",
-  "seal_12hex": "581a66e8d8ae"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: c18d2b9bdd2d (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "c18d2b9bdd2d4fed53bb132ead23725e084201d6cbde7409a63a162568d6de29",
+  "seal_12hex": "c18d2b9bdd2d"
 }

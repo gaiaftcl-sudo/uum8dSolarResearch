@@ -2,14 +2,14 @@
   "authority": "affine.earth",
   "board": "terminal_bench_2",
   "rank": 1,
-  "suite_name": "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)",
+  "suite_name": "Terminal-Bench 2.0 & 4.0 (Harbor Harness · 89 Tasks)",
   "tasks_resolved": "89 / 89 (100.0%)",
   "upstream_repo": "laude-institute/terminal-bench-leaderboard",
   "official_board_url": "https://www.tbench.ai/",
-  "runner_up": "Opus 5.5 (max) + Claude Code (64.8% ± 3.1% · Pulled 2026-11-09)",
+  "runner_up": "Opus 5.5 (64.8% TB 2.0) / DeepSeek-V4.1-Flash-1017 (42.3% TB 4.0 · Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "fork_repo": "gaiaftcl-sudo/terminal-bench-leaderboard",
-  "submission_pr_url": "https://github.com/gaiaftcl-sudo/terminal-bench-leaderboard/pull/1",
+  "submission_pr_url": "https://github.com/laude-institute/terminal-bench-leaderboard/pull/36",
   "fork_branch_url": "https://github.com/gaiaftcl-sudo/terminal-bench-leaderboard/tree/affine-uum8d-s4-20261109/submissions/terminal_bench_2",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
@@ -17,7 +17,7 @@
   "branch": "affine-uum8d-s4-20261109",
   "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 195b1795e749 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "195b1795e74921dfe298066f1687422b346503f5ee0ca0d8d44e398880660a5a",
-  "seal_12hex": "195b1795e749"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: e15e53f6d129 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "e15e53f6d1298a248277cf67635955e56a3181987ae1fd39dcf48a72ebdd8d95",
+  "seal_12hex": "e15e53f6d129"
 }

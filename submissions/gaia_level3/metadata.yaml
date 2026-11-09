@@ -5,7 +5,7 @@ repository: https://github.com/gaiaftcl-sudo/affine.earth.public
 submission_pr: https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1
 submission_branch: https://github.com/gaiaftcl-sudo/affine.earth.public/tree/affine-uum8d-s4-20261109/submissions/gaia_level3
 official_board_url: https://huggingface.co/spaces/gaia-benchmark/leaderboard
-runner_up_comparison: "openJiuwen-deepagent (Claude 4.6 / GPT-5) (94.35% Avg / 91.84% L3 · Pulled 2026-11-09)"
+runner_up_comparison: "openJiuwen-deepagent (94.35% Avg / 91.84% L3) / Kimi K3.1 Pro (2.8T/104B II=55 · Pulled 2026-11-09)"
 runner_up_pulled_date: "2026-11-09"
 huggingface_model: https://huggingface.co/rpg67/Affine.Earth
 huggingface_dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks

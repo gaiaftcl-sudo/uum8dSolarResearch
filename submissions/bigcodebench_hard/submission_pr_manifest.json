@@ -9,7 +9,7 @@
   "runner_up": "DeepSeek-R1 / Claude-3.7-Sonnet (40.5% Complete / 35.8% Avg · Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "fork_repo": "gaiaftcl-sudo/bigcode-bench.github.io",
-  "submission_pr_url": "https://github.com/gaiaftcl-sudo/bigcode-bench.github.io/pull/1",
+  "submission_pr_url": "https://github.com/bigcode-bench/bigcode-bench.github.io/pull/1",
   "fork_branch_url": "https://github.com/gaiaftcl-sudo/bigcode-bench.github.io/tree/affine-uum8d-s4-20261109/submissions/bigcodebench_hard",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
@@ -17,7 +17,7 @@
   "branch": "affine-uum8d-s4-20261109",
   "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 45d8b0d3a4e0 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "45d8b0d3a4e0e95fa0c679abd1b33c2761e7b43839df1cc493bd74e43e9f60a6",
-  "seal_12hex": "45d8b0d3a4e0"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: fc4ef6139d2f (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "fc4ef6139d2faafcd3c46791e97977e44b569c036cf7c0342b97e2c132485e33",
+  "seal_12hex": "fc4ef6139d2f"
 }

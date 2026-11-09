@@ -2,7 +2,7 @@ name: Affine.Earth
 org: Affine.Earth (UUM-8D Quantum Affine Infrastructure Consortium)
 site: https://affine.earth/language-game/leaderboard.html
 repository: https://github.com/gaiaftcl-sudo/affine.earth.public
-submission_pr: https://github.com/gaiaftcl-sudo/aider/pull/1
+submission_pr: https://github.com/Aider-AI/aider/pull/5973
 submission_branch: https://github.com/gaiaftcl-sudo/aider/tree/affine-uum8d-s4-20261109/submissions/aider_polyglot
 official_board_url: https://aider.chat/docs/leaderboards/
 runner_up_comparison: "gpt-5 (high) (88.0% · Pulled 2026-11-09)"

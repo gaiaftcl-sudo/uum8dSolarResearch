@@ -1,7 +1,7 @@
 [Affine.Earth Sovereign 4-Point HAC Evaluation Harness · Swift 6.4 Zero-Float]
 authority=affine.earth
 board=terminal_bench_2
-suite_name=Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)
+suite_name=Terminal-Bench 2.0 & 4.0 (Harbor Harness · 89 Tasks)
 model_id=affine-uum8d-s4
 tasks_resolved=89 / 89 (100.0%)
 score_pct=100.0%
