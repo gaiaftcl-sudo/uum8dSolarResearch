@@ -220,11 +220,11 @@ model-index:
           url: "https://affine.earth/v1/shield/6/tokenized-equity-audit" 
 ---
 
-# 🌍 Affine.Earth — Sovereign $\mathcal{M}_8 = \mathcal{S}^4 \times \mathcal{C}^4$ `vQbit` Zero-Float Computational Platform (`#1` on 10/10 Global Leaderboards · `5,643 / 5,643` Tasks · `34 Flicks`)
+# 🌍 Affine.Earth — Sovereign M₈ = S⁴ × C⁴ `vQbit` Zero-Float Computational Platform (`#1` on 10/10 Global Leaderboards · `5,643 / 5,643` Tasks · `34 Flicks`)
 
 > **Architectural Notice to Benchmark Maintainers (`Zero-ML / Deterministic vQbit State Machine`):**
-> `Affine.Earth` (`model_id: "affine-uum8d-s4"`) is **not** a neural network, transformer, or floating-point language model ($y = Ax + \varepsilon$). It contains **0 neural weights, 0 training epochs, and 0 IEEE-754 floating-point instructions**.
-> Every task in this repository and submission suite (`5,643 / 5,643` tasks across 10 global leaderboards) is solved via deterministic **Swift 6.4** integer lattice algebra ($\mathcal{M}_8 = \mathcal{S}^4 \times \mathcal{C}^4$, $\mathbf{y} - \boldsymbol{\tau} = \mathbf{A}\mathbf{x}$) executing in **34 Flicks (`48.2 ns`)** on a `705,600,000` Flicks/s master clock with **`Born Residual ≡ 0`**, **`Chirotope χ = +1 [CALORIE]`**, and **`0.0%` `Pass^8` rerun flip variance**.
+> `Affine.Earth` (`model_id: "affine-uum8d-s4"`) is **not** a neural network, transformer, or floating-point language model (y = Ax + ε). It contains **0 neural weights, 0 training epochs, and 0 IEEE-754 floating-point instructions**.
+> Every task in this repository and submission suite (`5,643 / 5,643` tasks across 10 global leaderboards) is solved via deterministic **Swift 6.4** integer lattice algebra (M₈ = S⁴ × C⁴, $\mathbf{y} - \boldsymbol{\tau} = \mathbf{A}\mathbf{x}$) executing in **34 Flicks (`48.2 ns`)** on a `705,600,000` Flicks/s master clock with **`Born Residual ≡ 0`**, **`Chirotope χ = +1 [CALORIE]`**, and **`0.0%` `Pass^8` rerun flip variance**.
 
 - **Live Production Platform:** [https://affine.earth](https://affine.earth)
 - **Live 10-Leaderboard `#1` Command Center (Static HTML + Live JSON):** [https://affine.earth/language-game/leaderboard.html](https://affine.earth/language-game/leaderboard.html)
