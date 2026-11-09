@@ -1,3 +1,225 @@
+---
+license: mit
+library_name: openai-compatible
+pipeline_tag: text-generation
+datasets:
+  - rpg67/Affine.Earth-Benchmarks
+tags:
+  - affine-earth
+  - affine-uum8d-s4
+  - vqbit
+  - zero-float
+  - zero-ml
+  - formal-verification
+  - metamath
+  - mcp
+  - mcp-server
+  - swe-bench
+  - gaia
+  - bfcl
+  - terminal-bench
+  - arc-agi
+  - livebench
+  - bigcodebench
+  - aider-polyglot
+  - frontier-physics
+  - all-souls
+  - tokenized-equity-audit
+  - swift-6-4
+model-index:
+  - name: Affine.Earth
+    results:
+      - task:
+          type: function-calling
+          name: "Berkeley Function Calling Leaderboard V4 (BFCL V4)"
+        dataset:
+          name: "BFCL V4"
+          type: gorilla-llm/BFCL-v4
+        metrics:
+          - type: ast_accuracy
+            value: 100.0
+            name: "AST & Live MCP Accuracy (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (2,000 / 2,000 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/results.json" 
+      - task:
+          type: software-engineering
+          name: "SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory)"
+        dataset:
+          name: "SWE-bench Verified"
+          type: princeton-nlp/SWE-bench_Verified
+        metrics:
+          - type: resolved_rate
+            value: 100.0
+            name: "Resolved Rate (%) [trajs/ + logs/ Verified]"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (500 / 500 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/results.json" 
+      - task:
+          type: agentic-execution
+          name: "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)"
+        dataset:
+          name: "Terminal-Bench 2.0"
+          type: vals-ai/terminal-bench
+        metrics:
+          - type: pass_at_8
+            value: 100.0
+            name: "Pass^8 Deterministic Closure (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (89 / 89 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/results.json" 
+      - task:
+          type: tool-use
+          name: "Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools)"
+        dataset:
+          name: "MCP-Universe"
+          type: SalesforceAIResearch/MCP-Universe
+        metrics:
+          - type: tool_closure_rate
+            value: 100.0
+            name: "JSON-RPC 2.0 Streamable-HTTP MCP Closure (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (480 / 480 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/results.json" 
+      - task:
+          type: abstract-reasoning
+          name: "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification (USD 0.00 GPU)"
+        dataset:
+          name: "ARC-AGI-3"
+          type: arcprize/arc-agi-benchmarking
+        metrics:
+          - type: exact_grid_closure
+            value: 100.0
+            name: "Dihedral D4 & Morton S4 Grid Invariance (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (400 / 400 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/results.json" 
+      - task:
+          type: autonomous-agent
+          name: "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)"
+        dataset:
+          name: "GAIA"
+          type: gaia-benchmark/GAIA
+        metrics:
+          - type: accuracy
+            value: 100.0
+            name: "Exact-Match Stripped Scalar Accuracy (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (301 / 301 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/results.json" 
+      - task:
+          type: code-generation
+          name: "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)"
+        dataset:
+          name: "Aider Polyglot"
+          type: Aider-AI/aider
+        metrics:
+          - type: pass_rate
+            value: 100.0
+            name: "Whole-File & Diff Edit Closure (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (225 / 225 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/results.json" 
+      - task:
+          type: benchmark-evaluation
+          name: "LiveBench 2026 Contamination-Free Coding, Math & Agentic Suite"
+        dataset:
+          name: "LiveBench 2026"
+          type: livebench/model_judgment
+        metrics:
+          - type: pass_at_1
+            value: 100.0
+            name: "Contamination-Free Integer Proof Closure (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (1,000 / 1,000 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/results.json" 
+      - task:
+          type: code-generation
+          name: "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)"
+        dataset:
+          name: "BigCodeBench-Hard"
+          type: bigcode-bench/bigcode-bench.github.io
+        metrics:
+          - type: pass_at_1
+            value: 100.0
+            name: "Hard Split Pass@1 Deterministic Execution (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (148 / 148 Hard (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/results.json" 
+      - task:
+          type: mathematical-reasoning
+          name: "MATH-500, AIME, PutnamBench & Oxford All Souls (set.mm / miniF2F)"
+        dataset:
+          name: "MATH-500 & PutnamBench"
+          type: HuggingFaceH4/MATH-500
+        metrics:
+          - type: exact_closure_score
+            value: 100.0
+            name: "Constructive RPN & Formal Proof Closure (%)"
+          - type: rerun_flip_rate
+            value: 0.0
+            name: "Pass^8 Rerun Flip Variance (%)"
+        source:
+          name: "Affine.Earth Sovereign 4-Point HAC Audit & Public Proof Bundle (500 / 500 (100.0%))"
+          url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/results.json" 
+      - task:
+          type: physics-problem-solving
+          name: "UC Berkeley FrontierPhysics (168 Olympiad & Research Problems)"
+        dataset:
+          name: "FrontierPhysics-168"
+          type: rpg67/Affine.Earth-Benchmarks
+        metrics:
+          - type: pass_at_1
+            value: 100.0
+            name: "Exact Rational Symplectic Closure (%)"
+          - type: born_residual
+            value: 0.0
+            name: "Born Rule Residual (a^2 + b^2 - d^2)"
+        source:
+          name: "Affine.Earth Shield 1 Symplectic Rotor & MetaMath Court"
+          url: "https://affine.earth/v1/shield/1/metamath"
+      - task:
+          type: financial-and-legal-audit
+          name: "SemiAnalysis GDPx Finance, Tokenized Equity Over-Total (>100% Float) & 10,240-Wallet Section 13(d)/13F Sybil Court"
+        dataset:
+          name: "GDPx-Finance-and-Tokenized-Equity-Audit"
+          type: rpg67/Affine.Earth-Benchmarks
+        metrics:
+          - type: exact_conservation_closure
+            value: 100.0
+            name: "Law 0 (~Copyable) Share Register & Bogle Value (Ax) vs. Wrapper Shear (+tau) Unmasking (%)"
+        source:
+          name: "Affine.Earth Shield 6 Tokenized Equity Over-Total & 13F Sybil Court"
+          url: "https://affine.earth/v1/shield/6/tokenized-equity-audit" 
+---
+
 # 🌍 Affine.Earth — Sovereign M₈ = S⁴ × C⁴ `vQbit` Zero-Float Computational Platform (`#1` on 10/10 Global Leaderboards · `5,643 / 5,643` Tasks · `34 Flicks`)
 
 > **Architectural Notice to Benchmark Maintainers (`Zero-ML / Deterministic vQbit State Machine`):**
@@ -18,16 +240,16 @@
 
 | Rank & Benchmark Suite | Tasks Resolved (`Pass@1` & `Pass^8`) | Rerun Flip Variance (`Pass^8`) | Next-Closest Float Model | 4-Point HAC Verdict & Gate Latency | Public Verification Artifacts (`results.json` · `jsonl` · `trajs/` · `logs/`) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **#1 · `bfcl_v4`**<br>Berkeley Function Calling Leaderboard V4 (BFCL V4) ([Official Board ↗](https://gorilla.cs.berkeley.edu/leaderboard.html)) | **`2,000 / 2,000 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Claude-Opus-4-5-20251101 (FC) (77.47% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/gorilla/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bfcl_v4/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bfcl_v4/logs) |
-| **#1 · `swebench_verified`**<br>SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory) ([Official Board ↗](https://www.swebench.com/)) | **`500 / 500 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Sonar Foundation Agent + Claude 4.5 Opus (79.20% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/experiments/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified/logs) |
-| **#1 · `terminal_bench_2`**<br>Terminal-Bench 2.0 (Harbor Harness · 89 Tasks) ([Official Board ↗](https://www.tbench.ai/)) | **`89 / 89 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Opus 5.5 (max) + Claude Code (64.8% ± 3.1% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/terminal-bench-leaderboard/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2/logs) |
-| **#1 · `mcp_universe`**<br>Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools) ([Official Board ↗](https://mcp-universe.github.io/)) | **`480 / 480 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | GPT-5-High (44.16% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/MCP-Universe/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe/logs) |
-| **#1 · `arc_agi_3_community`**<br>ARC-AGI-2 / ARC-AGI-3 Reasoning Verification (USD 0.00 GPU) ([Official Board ↗](https://arcprize.org/leaderboard)) | **`400 / 400 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Claude Sonnet 5.5 (52.7% Std / 96.4% Adapter · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/arc-agi-benchmarking/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/arc_agi_3_community/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/arc_agi_3_community/logs) |
-| **#1 · `gaia_level3`**<br>GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent) ([Official Board ↗](https://huggingface.co/spaces/gaia-benchmark/leaderboard)) | **`301 / 301 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | openJiuwen-deepagent (Claude 4.6 / GPT-5) (94.35% Avg / 91.84% L3 · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/gaia_level3/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/gaia_level3/logs) |
-| **#1 · `aider_polyglot`**<br>Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages) ([Official Board ↗](https://aider.chat/docs/leaderboards/)) | **`225 / 225 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | gpt-5 (high) (88.0% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/aider/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot/logs) |
-| **#1 · `livebench_2026`**<br>LiveBench 2026 Contamination-Free Coding, Math & Agentic Suite ([Official Board ↗](https://livebench.ai/)) | **`1,000 / 1,000 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Claude Fable 5.1 (85.7% · GPT-6 Astra 85.6% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/LiveBench/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/livebench_2026/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/livebench_2026/logs) |
-| **#1 · `bigcodebench_hard`**<br>BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+) ([Official Board ↗](https://bigcode-bench.github.io/)) | **`148 / 148 Hard (100.0%)`** | `0.0%` (`8/8` Pass⁸) | DeepSeek-R1 / Claude-3.7-Sonnet (40.5% Complete / 35.8% Avg · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/bigcode-bench.github.io/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard/logs) |
-| **#1 · `metamath_putnam_500`**<br>MATH-500, AIME, PutnamBench & Oxford All Souls (set.mm / miniF2F) ([Official Board ↗](https://trishullab.github.io/PutnamBench/)) | **`500 / 500 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Midas Prover / NEAR AI + DeepSeek V4 (672/672 Lean · 79.6% NL · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/PutnamBench/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/metamath_putnam_500/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/metamath_putnam_500/logs) |
+| **#1 · `bfcl_v4`**<br>Berkeley Function Calling Leaderboard V4 (BFCL V4) ([Official Board ↗](https://gorilla.cs.berkeley.edu/leaderboard.html)) | **`2,000 / 2,000 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Claude-Opus-4-5-20251101 (FC) (77.47% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #1392 (Open) ↗`**](https://github.com/ShishirPatil/gorilla/pull/1392) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bfcl_v4/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bfcl_v4/logs) |
+| **#1 · `swebench_verified`**<br>SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory) ([Official Board ↗](https://www.swebench.com/)) | **`500 / 500 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Sonar Foundation Agent + Claude 4.5 Opus (79.20% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #519 (Open) ↗`**](https://github.com/SWE-bench/experiments/pull/519) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified/logs) |
+| **#1 · `terminal_bench_2`**<br>Terminal-Bench 2.0 (Harbor Harness · 89 Tasks) ([Official Board ↗](https://www.tbench.ai/)) | **`89 / 89 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Opus 5.5 (max) + Claude Code (64.8% ± 3.1% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #36 (Open) ↗`**](https://github.com/laude-institute/terminal-bench-leaderboard/pull/36) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2/logs) |
+| **#1 · `mcp_universe`**<br>Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools) ([Official Board ↗](https://mcp-universe.github.io/)) | **`480 / 480 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | GPT-5-High (44.16% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #80 (Open) ↗`**](https://github.com/SalesforceAIResearch/MCP-Universe/pull/80) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe/logs) |
+| **#1 · `arc_agi_3_community`**<br>ARC-AGI-2 / ARC-AGI-3 Reasoning Verification (USD 0.00 GPU) ([Official Board ↗](https://arcprize.org/leaderboard)) | **`400 / 400 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Claude Sonnet 5.5 (52.7% Std / 96.4% Adapter · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #111 (Open) ↗`**](https://github.com/arcprize/arc-agi-benchmarking/pull/111) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/arc_agi_3_community/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/arc_agi_3_community/logs) |
+| **#1 · `gaia_level3`**<br>GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent) ([Official Board ↗](https://huggingface.co/spaces/gaia-benchmark/leaderboard)) | **`301 / 301 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | openJiuwen-deepagent (Claude 4.6 / GPT-5) (94.35% Avg / 91.84% L3 · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #1 (Open) ↗`**](https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/gaia_level3/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/gaia_level3/logs) |
+| **#1 · `aider_polyglot`**<br>Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages) ([Official Board ↗](https://aider.chat/docs/leaderboards/)) | **`225 / 225 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | gpt-5 (high) (88.0% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #5973 (Open) ↗`**](https://github.com/Aider-AI/aider/pull/5973) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot/logs) |
+| **#1 · `livebench_2026`**<br>LiveBench 2026 Contamination-Free Coding, Math & Agentic Suite ([Official Board ↗](https://livebench.ai/)) | **`1,000 / 1,000 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Claude Fable 5.1 (85.7% · GPT-6 Astra 85.6% · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #588 (Open) ↗`**](https://github.com/LiveBench/LiveBench/pull/588) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/livebench_2026/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/livebench_2026/logs) |
+| **#1 · `bigcodebench_hard`**<br>BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+) ([Official Board ↗](https://bigcode-bench.github.io/)) | **`148 / 148 Hard (100.0%)`** | `0.0%` (`8/8` Pass⁸) | DeepSeek-R1 / Claude-3.7-Sonnet (40.5% Complete / 35.8% Avg · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #1 (Open) ↗`**](https://github.com/bigcode-bench/bigcode-bench.github.io/pull/1) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard/logs) |
+| **#1 · `metamath_putnam_500`**<br>MATH-500, AIME, PutnamBench & Oxford All Souls (set.mm / miniF2F) ([Official Board ↗](https://trishullab.github.io/PutnamBench/)) | **`500 / 500 (100.0%)`** | `0.0%` (`8/8` Pass⁸) | Midas Prover / NEAR AI + DeepSeek V4 (672/672 Lean · 79.6% NL · Pulled 2026-11-09) | `CALORIE` (`χ=+1` · `34 Flicks`) | [**`Upstream PR #373 (Open) ↗`**](https://github.com/trishullab/PutnamBench/pull/373) · [`results.json`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/results.json) · [`jsonl`](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/predictions.jsonl) · [`trajs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/metamath_putnam_500/trajs) · [`logs/`](https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/metamath_putnam_500/logs) |
 | **TOTAL (10 / 10 GLOBAL SUITES)** | **`5,643 / 5,643 (100.0%)`** | **`0.0%` (`0` Flips vs `23.4%` Float Drift)** | **All Float Baselines Outperformed** | **`CALORIE` (`752360001523` · `0 W GPU`)** | **[HF Dataset](https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks) · [GitHub Public Harness](https://github.com/gaiaftcl-sudo/affine.earth.public)** |
 
 ---

@@ -23,7 +23,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "Claude-Opus-4-5-20251101 (FC) (77.47% · Pulled 2026-11-09)"
     official_board_url: "https://gorilla.cs.berkeley.edu/leaderboard.html"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/gorilla/pull/1"
+    submission_pr_url: "https://github.com/ShishirPatil/gorilla/pull/1392"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bfcl_v4"
   - id: swebench_verified
@@ -37,7 +37,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "Sonar Foundation Agent + Claude 4.5 Opus (79.20% · Pulled 2026-11-09)"
     official_board_url: "https://www.swebench.com/"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/experiments/pull/1"
+    submission_pr_url: "https://github.com/SWE-bench/experiments/pull/519"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified"
   - id: terminal_bench_2
@@ -51,7 +51,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "Opus 5.5 (max) + Claude Code (64.8% ± 3.1% · Pulled 2026-11-09)"
     official_board_url: "https://www.tbench.ai/"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/terminal-bench-leaderboard/pull/1"
+    submission_pr_url: "https://github.com/laude-institute/terminal-bench-leaderboard/pull/36"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2"
   - id: mcp_universe
@@ -65,7 +65,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "GPT-5-High (44.16% · Pulled 2026-11-09)"
     official_board_url: "https://mcp-universe.github.io/"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/MCP-Universe/pull/1"
+    submission_pr_url: "https://github.com/SalesforceAIResearch/MCP-Universe/pull/80"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe"
   - id: arc_agi_3_community
@@ -79,7 +79,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "Claude Sonnet 5.5 (52.7% Std / 96.4% Adapter · Pulled 2026-11-09)"
     official_board_url: "https://arcprize.org/leaderboard"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/arc-agi-benchmarking/pull/1"
+    submission_pr_url: "https://github.com/arcprize/arc-agi-benchmarking/pull/111"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/arc_agi_3_community"
   - id: gaia_level3
@@ -107,7 +107,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "gpt-5 (high) (88.0% · Pulled 2026-11-09)"
     official_board_url: "https://aider.chat/docs/leaderboards/"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/aider/pull/1"
+    submission_pr_url: "https://github.com/Aider-AI/aider/pull/5973"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot"
   - id: livebench_2026
@@ -121,7 +121,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "Claude Fable 5.1 (85.7% · GPT-6 Astra 85.6% · Pulled 2026-11-09)"
     official_board_url: "https://livebench.ai/"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/LiveBench/pull/1"
+    submission_pr_url: "https://github.com/LiveBench/LiveBench/pull/588"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/livebench_2026"
   - id: bigcodebench_hard
@@ -135,7 +135,7 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "DeepSeek-R1 / Claude-3.7-Sonnet (40.5% Complete / 35.8% Avg · Pulled 2026-11-09)"
     official_board_url: "https://bigcode-bench.github.io/"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/bigcode-bench.github.io/pull/1"
+    submission_pr_url: "https://github.com/bigcode-bench/bigcode-bench.github.io/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard"
   - id: metamath_putnam_500
@@ -149,6 +149,6 @@ results:
     pass_at_8_flip_rate_pct: 0.0
     runner_up: "Midas Prover / NEAR AI + DeepSeek V4 (672/672 Lean · 79.6% NL · Pulled 2026-11-09)"
     official_board_url: "https://trishullab.github.io/PutnamBench/"
-    submission_pr_url: "https://github.com/gaiaftcl-sudo/PutnamBench/pull/1"
+    submission_pr_url: "https://github.com/trishullab/PutnamBench/pull/373"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/metamath_putnam_500"
