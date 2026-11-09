@@ -5,9 +5,10 @@
   "suite_name": "Berkeley Function Calling Leaderboard V4 (BFCL V4)",
   "tasks_resolved": "2,000 / 2,000 (100.0%)",
   "upstream_repo": "ShishirPatil/gorilla",
-  "branch": "affine-uum8d-s4-20261108",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 03ed6dc2897e (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "03ed6dc2897eb883e41459d59816eac8d4a92111ed0ce36de4b11479e1001360",
-  "seal_12hex": "03ed6dc2897e"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: e2da67a27309 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "e2da67a27309889675041e882e988b92db8c3a653da33815c4e57fe404efc138",
+  "seal_12hex": "e2da67a27309"
 }

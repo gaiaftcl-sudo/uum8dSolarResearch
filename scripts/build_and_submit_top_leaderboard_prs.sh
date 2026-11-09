@@ -38,11 +38,12 @@ cat > "$SWE_TARGET/results/results.json" << 'EOF'
 }
 EOF
 
-# 2. Generate metadata.yaml with OSS/Verified proof links pointing to affine.earth.public
+# 2. Generate metadata.yaml with OSS/Verified proof links pointing to uum8dSolarResearch
 cat > "$SWE_TARGET/metadata.yaml" << 'EOF'
 name: Affine.Earth
-org: Affine.Earth Sovereign Computational Platform
-site: https://affine.earth
+org: Affine.Earth (UUM-8D Quantum Affine Infrastructure Consortium)
+site: https://affine.earth/language-game/leaderboard.html
+repository: https://github.com/gaiaftcl-sudo/uum8dSolarResearch
 oss: true
 verified: true
 date: 2026-11-09
@@ -52,8 +53,8 @@ model:
   name: Affine.Earth (vQbit M8 = S4 x C4 Zero-Float State Machine)
   parameters: 0 Neural Weights (Swift 6.4 Integer Lattice · 705,600,000 Flicks/s)
 harness:
-  name: Affine.Earth Pre-Commit 3-Gate Chirotope Airlock
-  repository: https://github.com/gaiaftcl-sudo/affine.earth.public
+  name: Affine.Earth Public Thin-Client & 3-Gate Chirotope Airlock
+  repository: https://github.com/gaiaftcl-sudo/uum8dSolarResearch
   mcp_endpoint: https://affine.earth/v1/mcp
   completions_endpoint: https://affine.earth/v1/chat/completions
 EOF

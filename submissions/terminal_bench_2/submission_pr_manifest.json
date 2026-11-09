@@ -5,9 +5,10 @@
   "suite_name": "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)",
   "tasks_resolved": "89 / 89 (100.0%)",
   "upstream_repo": "laude-institute/terminal-bench-leaderboard",
-  "branch": "affine-uum8d-s4-20261108",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: a4c9f980941c (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "a4c9f980941cc2d6ba007be9199743e03e0c5dd1e5b92c920ae07faa92dce520",
-  "seal_12hex": "a4c9f980941c"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: 5ed747444e50 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "5ed747444e502d9850bb2c83db5163da62526b4b4e69839aa33a2bb3bd58f5fe",
+  "seal_12hex": "5ed747444e50"
 }

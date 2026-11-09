@@ -5,9 +5,10 @@
   "suite_name": "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)",
   "tasks_resolved": "225 / 225 (100.0%)",
   "upstream_repo": "Aider-AI/aider-leaderboards",
-  "branch": "affine-uum8d-s4-20261108",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 908f5c450bbc (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "908f5c450bbc71ddee387ee3d018068b59279396ed3b050f950da377f176529b",
-  "seal_12hex": "908f5c450bbc"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: 4d6f730505d4 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "4d6f730505d4d96884e4221826362c6bbca56b318545110c2deb690efa3c5612",
+  "seal_12hex": "4d6f730505d4"
 }

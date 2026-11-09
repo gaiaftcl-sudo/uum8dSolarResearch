@@ -6,13 +6,16 @@
   "version": "6.4.2",
   "authority": "affine.earth",
   "hac_locked": true,
-  "homepage": "https://affine.earth",
+  "homepage": "https://affine.earth/language-game/leaderboard.html",
   "leaderboard": "https://affine.earth/language-game/leaderboard.html",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/gaiaftcl-sudo/affine.earth.public",
-    "source": "github"
+    "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+    "source": "github",
+    "mirror": "https://github.com/gaiaftcl-sudo/affine.earth.public"
   },
+  "streamableHttp": "https://affine.earth/v1/mcp",
+  "openAICompatibleCompletions": "https://affine.earth/v1/chat/completions",
   "testedHarnesses": [
     "claude-code",
     "cursor",

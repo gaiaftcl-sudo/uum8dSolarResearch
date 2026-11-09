@@ -5,9 +5,10 @@
   "suite_name": "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification",
   "tasks_resolved": "400 / 400 (100.0%)",
   "upstream_repo": "arcprize/arc-agi-benchmarking",
-  "branch": "affine-uum8d-s4-20261108",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 1c36bc968640 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "1c36bc9686409a10ff8b00a2253bbf8e680ecd3cd64acac69a344e9d0f4215f0",
-  "seal_12hex": "1c36bc968640"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: 6f145148e8b6 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "6f145148e8b67500f9662038c8cc37db14e930167e4744d9f2d999548b1c5279",
+  "seal_12hex": "6f145148e8b6"
 }

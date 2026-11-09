@@ -5,9 +5,10 @@
   "suite_name": "MATH-500, AIME & PutnamBench Formal Proof Suite (set.mm / miniF2F)",
   "tasks_resolved": "500 / 500 (100.0%)",
   "upstream_repo": "trishullab/PutnamBench",
-  "branch": "affine-uum8d-s4-20261108",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: 1c2722d44338 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "1c2722d443386545a2f810870798ac593fd10175e771f536a3183a42f9f942b7",
-  "seal_12hex": "1c2722d44338"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: 1f597d63d8f6 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "1f597d63d8f6f0a84875884d242a7070c9e93a761e6d4196ba9f351d538bb0a3",
+  "seal_12hex": "1f597d63d8f6"
 }

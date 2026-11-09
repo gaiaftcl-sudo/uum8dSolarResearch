@@ -5,9 +5,10 @@
   "suite_name": "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)",
   "tasks_resolved": "301 / 301 (100.0%)",
   "upstream_repo": "gaia-benchmark/leaderboard",
-  "branch": "affine-uum8d-s4-20261108",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: caf309f127d7 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "caf309f127d7539fe08cd84c4f30de51c8e16df46130e7afcc11c785fc78d257",
-  "seal_12hex": "caf309f127d7"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: 42231f7cd0cc (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "42231f7cd0cc1e165a6d74051d9bfe59066278ae7bd2879d9dfa75c10bdce695",
+  "seal_12hex": "42231f7cd0cc"
 }

@@ -1,136 +1,24 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "earth.affine/affine-earth-sovereign-court",
-  "title": "Affine.Earth — Sovereign 9-Shield & 82-Court Zero-Float MCP Mesh",
-  "description": "Sovereign M8 = S4 x C4 vQbit Zero-Float Computational Platform (9 Shields · 82 Courts · Swift 6.4 AArch64 + -wasm32 WASILibc). Solves y = Ax + tau, Oxford All Souls 500/500, FrontierPhysics 168/168, Formal MetaMath RPN, Bogle vs Shannon Shear, 4D ATC Wind-Shear, and Kinetic Counter-Shear in 34 Flicks (48.2 ns) with BornRes == 0 and Closure Delta == 0 at 0 W GPU.",
-  "version": "6.4.2",
-  "authority": "affine.earth",
-  "hac_locked": true,
-  "homepage": "https://affine.earth",
-  "leaderboard": "https://affine.earth/language-game/leaderboard.html",
-  "license": "MIT",
-  "repository": {
-    "url": "https://github.com/gaiaftcl-sudo/affine.earth.public",
-    "source": "github"
-  },
-  "testedHarnesses": [
-    "claude-code",
-    "cursor",
-    "hermes",
-    "pi",
-    "zed",
-    "openai-agents"
-  ],
-  "maintainers": [
-    {
-      "name": "Richard Gillespie",
-      "email": "gaiaftcl@affine.earth",
-      "github": "gaiaftcl-sudo"
-    }
-  ],
-  "remotes": [
-    {
+  "mcpVersion": "2026-07-28",
+  "name": "Affine.Earth",
+  "version": "6.4.0",
+  "description": "Public MCP & OpenAI-Compatible Client Surface for the Affine.Earth vQbit State Machine (M8 = S4 x C4 · Born Residual = 0).",
+  "homepage": "https://affine.earth/language-game/leaderboard.html",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "mcpServers": {
+    "Affine.Earth": {
       "type": "streamable-http",
-      "url": "https://affine.earth/v1/mcp"
+      "url": "https://affine.earth/v1/mcp",
+      "headers": {
+        "MCP-Protocol-Version": "2026-07-28",
+        "X-Affine-No-Float": "1"
+      }
     }
-  ],
-  "endpoints": {
-    "streamable_http": "https://affine.earth/v1/mcp",
-    "openai_models": "https://affine.earth/v1/models",
-    "openai_chat_completions": "https://affine.earth/v1/chat/completions",
-    "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
-    "huggingface_space": "https://huggingface.co/spaces/rpg67/Affine-Earth-Sovereign-Court",
-    "formal_metamath_court": "https://affine.earth/v1/shield/1/metamath",
-    "oxford_all_souls_court": "https://affine.earth/v1/shield/7/all-souls",
-    "energy_inflation_audit": "https://affine.earth/v1/shield/6/energy-inflation",
-    "live_cluster_hunter": "https://affine.earth/v1/shield/3/live-cluster-hunter",
-    "benchmark_jsonl_export": "https://affine.earth/v1/benchmarks/export-jsonl?suite=all",
-    "benchmark_trajectory_export": "https://affine.earth/v1/benchmarks/trajectory?instance_id=sympy__sympy-24909"
   },
-  "capabilities": {
-    "tools": true,
-    "zeroFloat": true,
-    "zeroNeuralWeights": true,
-    "bornResidualZero": true,
-    "formalMetaMathRPN": true,
-    "executionFlicks": 34
-  },
-  "tools": [
-    {
-      "name": "feeds_catalog",
-      "description": "Every feed a client can drive a game from - corpus lanes by mined_from, the live global feeds, and the transport each is reachable on (REST, RSS, MCP, NATS subject)."
-    },
-    {
-      "name": "verify_grover",
-      "description": "QC-002 Grover presented-oracle verifier. oracle is a 0/1 string of length 2..8; marked is the unique 1-index. Does not search the space. Floats refused."
-    },
-    {
-      "name": "solve_shear_closure",
-      "description": "UUM-8D Bijective Shear Closure Solver: Evaluates y = Ax + tau and x = A^-1(y - tau) in exact Int128 arithmetic with zero IEEE-754 floats (Delta == 0, BornRes == 0, Chi == +1 [CALORIE])."
-    },
-    {
-      "name": "affine_bench04_swebench_ast_gate",
-      "description": "BENCH-04 · SWE-bench Verified & Terminal-Bench 2.0 3-Gate Pre-Commit AST Airlock (0.0% rerun flip noise)."
-    },
-    {
-      "name": "affine_bench05_gaia_taubench_pass8",
-      "description": "BENCH-05 · GAIA Level-3 & Tau-Bench Pass^8 Sovereign Tool-Call Verifier (0.0% multi-turn policy drift)."
-    },
-    {
-      "name": "affine_shield1_physics_rotor",
-      "description": "Shield 1 · M8 Symplectic Physics & RPN Court (UC Berkeley FrontierPhysics 168/168): Solves exact Stein-reduced Pythagorean Cayley Rotors (a^2+b^2-d^2 == 0) in 34 Flicks."
-    },
-    {
-      "name": "affine_shield1_metamath_prover",
-      "description": "Formal MetaMath (set.mm / miniF2F / PutnamBench / MetaMathQA / MATH-500) RPN Verifier in 34 Flicks."
-    },
-    {
-      "name": "affine_shield2_health_diagnostic",
-      "description": "Shield 2 · Health Bio-Twin (2,234 FMA, Pre-MI/Pre-Stroke early warning, 8-14um LWIR Millikelvin oncology)."
-    },
-    {
-      "name": "affine_shield3_civic_unmasker",
-      "description": "Shield 3 · Civic Geodesic Unmasker (10,240-wallet peel-chain Stein Binary GCD bot clock & on-path fiber geodesic)."
-    },
-    {
-      "name": "affine_shield3_kinetic_counter_shear",
-      "description": "Shield 3 · Morton S4 Hierarchical Basin Wall & 4-Vector Asymmetric Counter-Shear Engine."
-    },
-    {
-      "name": "affine_shield3_live_cluster_hunter",
-      "description": "Shield 3, 5 & 6 · Live Global GPU Cluster & Stealth Power-Drain Pinpointer."
-    },
-    {
-      "name": "affine_shield4_matter_cif_inverter",
-      "description": "Shield 4 · Matter CIF Inverter (picometer crystal selectivity cages across 230 space groups)."
-    },
-    {
-      "name": "affine_shield5_worldwide_weather_atc_eids",
-      "description": "Shield 5 · Weather, 4D ATC Wind-Shear & Subsea E-IDS."
-    },
-    {
-      "name": "affine_shield5_avs8d_street_video",
-      "description": "Shield 5 & 3 · AVS-8D Street-Level Video Stream & Optical-Flow Chirotope Gate (292:1 compression)."
-    },
-    {
-      "name": "affine_shield6_finance_bogle_audit",
-      "description": "Shield 6 · Finance Bogle Cash-Flow Bedrock (Ax) vs Shannon Shenanigan Shear (+tau) Audit."
-    },
-    {
-      "name": "affine_shield6_energy_inflation_audit",
-      "description": "Shield 3 & 6 · Thermodynamic Parasite & Ratepayer Inflation Audit (565 TWh vs 210 W Affine mesh)."
-    },
-    {
-      "name": "affine_shield7_allsouls_proof",
-      "description": "Shield 7 · Legal & Oxford All Souls 500/500 Proof of Ability Court."
-    },
-    {
-      "name": "affine_shield8_robotics_airlock",
-      "description": "Shield 8 · 6-Domain Robotics Kinematic Airlock (34-Flick Safe-Torque-Off)."
-    },
-    {
-      "name": "affine_shield9_silicon_euv_lock",
-      "description": "Shield 9 · Silicon 1.0nm GAA & ASML High-NA EUV Curvilinear ILT Verifier."
-    }
-  ]
+  "openaiCompatibleEndpoint": {
+    "baseUrl": "https://affine.earth/v1",
+    "completionsUrl": "https://affine.earth/v1/chat/completions",
+    "modelsUrl": "https://affine.earth/v1/models",
+    "modelId": "Affine.Earth"
+  }
 }

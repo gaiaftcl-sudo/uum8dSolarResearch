@@ -156,7 +156,7 @@ model-index:
 - **Live Interactive 9-Shield Thin-Client Space:** [https://affine.earth/language-game/hf-space.html](https://affine.earth/language-game/hf-space.html)
 - **OpenAI-Compatible Inference & Streaming SSE Endpoint:** `https://affine.earth/v1/chat/completions` (`model: "Affine.Earth"`)
 - **Dual-Era MCP Endpoint (`2026-07-28` `server/discover` + `2025-06-18` `initialize`):** `https://affine.earth/v1/mcp`
-- **Public Verification Client & SWE-bench `trajs/` Bundle:** [https://github.com/gaiaftcl-sudo/affine.earth.public](https://github.com/gaiaftcl-sudo/affine.earth.public)
+- **Authoritative Public Harness & SWE-bench `trajs/` Repository:** [https://github.com/gaiaftcl-sudo/uum8dSolarResearch](https://github.com/gaiaftcl-sudo/uum8dSolarResearch) (Mirror: [https://github.com/gaiaftcl-sudo/affine.earth.public](https://github.com/gaiaftcl-sudo/affine.earth.public))
 
 ---
 
@@ -199,10 +199,13 @@ EOF
 
 cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/glama.json" "$MODEL_DIR/glama.json"
 cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/glama.json" "$MODEL_DIR/.well-known/glama.json"
-cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/.well-known/mcp.json" "$MODEL_DIR/mcp.json"
+cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/mcp.json" "$MODEL_DIR/mcp.json"
 cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/.well-known/mcp.json" "$MODEL_DIR/.well-known/mcp.json"
 cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/server.json" "$MODEL_DIR/server.json"
 cp -f "$PUB_REPO/benchmarks/Affine.Earth-GAIA.jsonl" "$MODEL_DIR/Affine.Earth-GAIA.jsonl"
+if [[ -d /tmp/affine-reports/submissions ]]; then
+  cp -R /tmp/affine-reports/submissions/. "$PUB_REPO/submissions/"
+fi
 cp -R "$PUB_REPO/submissions" "$MODEL_DIR/"
 
 # ------------------------------------------------------------------------------
@@ -232,11 +235,11 @@ cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/hf-space.html" "$SPACE_DIR
 # ------------------------------------------------------------------------------
 for target_repo in "$PUB_REPO" "$SOLAR_REPO"; do
   if [[ -d "$target_repo/.git" ]]; then
-    mkdir -p "$target_repo/.well-known" "$target_repo/benchmarks" "$target_repo/scripts"
+    mkdir -p "$target_repo/.well-known" "$target_repo/benchmarks" "$target_repo/scripts" "$target_repo/submissions"
     cp -f "$MODEL_DIR/glama.json" "$target_repo/glama.json"
     cp -f "$MODEL_DIR/glama.json" "$target_repo/.well-known/glama.json"
     cp -f "$MODEL_DIR/mcp.json" "$target_repo/mcp.json"
-    cp -f "$MODEL_DIR/mcp.json" "$target_repo/.well-known/mcp.json"
+    cp -f "$MODEL_DIR/.well-known/mcp.json" "$target_repo/.well-known/mcp.json"
     cp -f "$MODEL_DIR/server.json" "$target_repo/server.json"
     cp -f "$PUB_REPO/benchmarks/"*.jsonl "$target_repo/benchmarks/" 2>/dev/null || true
     cp -f "$REPO_ROOT/scripts/verify_external_scorer_handshakes.sh" "$target_repo/scripts/"
@@ -246,7 +249,8 @@ for target_repo in "$PUB_REPO" "$SOLAR_REPO"; do
 done
 
 cp -f "$MODEL_DIR/README.md" "$PUB_REPO/README.md"
-cp -R "$PUB_REPO/submissions" "$SOLAR_REPO/" 2>/dev/null || true
+cp -f "$MODEL_DIR/README.md" "$SOLAR_REPO/README.md"
+cp -R "$PUB_REPO/submissions/." "$SOLAR_REPO/submissions/" 2>/dev/null || true
 
 # Sanitize any legacy pet hostnames in existing repo fixtures before airgap verification
 for target_repo in "$PUB_REPO" "$SOLAR_REPO"; do

@@ -5,9 +5,10 @@
   "suite_name": "SWE-bench Verified (500 Instances)",
   "tasks_resolved": "500 / 500 (100.0%)",
   "upstream_repo": "SWE-bench/experiments",
-  "branch": "affine-uum8d-s4-20261108",
+  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Pure Swift 6.4 Integer Court | HAC Seal: feae236649c4 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "feae236649c48f248bc6b724b27d13fc94f05861df8cd94a0b491deb2379767d",
-  "seal_12hex": "feae236649c4"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: 7a1dc8e15b92 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "7a1dc8e15b929c263ae696ce5cf2dc88f4700f4def19bb702efdae61db8512ab",
+  "seal_12hex": "7a1dc8e15b92"
 }
