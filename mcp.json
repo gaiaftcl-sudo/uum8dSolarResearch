@@ -2,9 +2,13 @@
   "mcpVersion": "2026-07-28",
   "name": "Affine.Earth",
   "version": "6.4.0",
-  "description": "Public MCP & OpenAI-Compatible Client Surface for the Affine.Earth vQbit State Machine (M8 = S4 x C4 · Born Residual = 0).",
+  "description": "Public MCP & OpenAI-Compatible Client Surface for the Affine.Earth vQbit State Machine (M8 = S4 x C4 \u00b7 Born Residual = 0).",
   "homepage": "https://affine.earth/language-game/leaderboard.html",
-  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "repository": {
+    "url": "https://github.com/gaiaftcl-sudo/affine.earth.public",
+    "source": "github",
+    "mirror": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch"
+  },
   "mcpServers": {
     "Affine.Earth": {
       "type": "streamable-http",
@@ -20,5 +24,17 @@
     "completionsUrl": "https://affine.earth/v1/chat/completions",
     "modelsUrl": "https://affine.earth/v1/models",
     "modelId": "Affine.Earth"
-  }
+  },
+  "endpoints": {
+    "huggingface_model_id": "https://huggingface.co/rpg67/affine-uum8d-s4",
+    "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
+    "tokenized_equity_audit": "https://affine.earth/v1/shield/6/tokenized-equity-audit",
+    "live_self_audit": "https://affine.earth/v1/benchmarks/live-self-audit"
+  },
+  "tools": [
+    {
+      "name": "affine_shield6_tokenized_equity_audit",
+      "description": "Shield 6 \u00b7 Tokenized Equity Over-Total (>100% Float) & 10,240-Wallet Section 13(d)/13F Sybil Unmasking Court (/v1/shield/6/tokenized-equity-audit): Enforces Law 0 (~Copyable Non-Clonable Share Invariant) in 34 Flicks."
+    }
+  ]
 }

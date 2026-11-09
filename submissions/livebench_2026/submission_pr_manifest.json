@@ -5,10 +5,12 @@
   "suite_name": "LiveBench Contamination-Free Coding, Math & Agentic Suite",
   "tasks_resolved": "1,000 / 1,000 (100.0%)",
   "upstream_repo": "LiveBench/LiveBench",
-  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
+  "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
+  "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
   "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: edd12ade4b0b (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: edd12ade4b0b (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
   "sha256": "edd12ade4b0bd940935431876e1b037393805893f17b0e5bf685d3c968e2a10d",
   "seal_12hex": "edd12ade4b0b"
 }

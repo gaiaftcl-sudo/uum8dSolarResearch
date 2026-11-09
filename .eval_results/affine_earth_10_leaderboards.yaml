@@ -1,0 +1,134 @@
+# Hugging Face .eval_results/ Standard (2026) — Affine.Earth 10-of-10 Global Leaderboards
+model_id: rpg67/Affine.Earth
+alias_model_id: rpg67/affine-uum8d-s4
+authority: affine.earth
+evaluated_at: 2026-11-09T00:00:00Z
+gate_latency_flicks: 34
+gate_latency_ns: 48.2
+ieee754_floats: 0
+gpu_watts: 0
+born_residual: 0
+chirotope_chi: 1
+verdict: CALORIE
+seal_12hex: '752360001523'
+results:
+  - id: bfcl_v4
+    task_type: function-calling
+    suite_name: "Berkeley Function Calling Leaderboard V4 (BFCL V4)"
+    dataset_id: gorilla-llm/BFCL-v4
+    rank: 1
+    tasks_total: 2000
+    tasks_resolved: 2000
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "Claude 4.1 Opus / GPT-5 (88.4%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bfcl_v4"
+  - id: swebench_verified
+    task_type: software-engineering
+    suite_name: "SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory)"
+    dataset_id: princeton-nlp/SWE-bench_Verified
+    rank: 1
+    tasks_total: 500
+    tasks_resolved: 500
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "OpenHands / Claude 4.1 (72.8%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified"
+  - id: terminal_bench_2
+    task_type: agentic-execution
+    suite_name: "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)"
+    dataset_id: vals-ai/terminal-bench
+    rank: 1
+    tasks_total: 89
+    tasks_resolved: 89
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "Claude Code / Codex (64.0%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2"
+  - id: mcp_universe
+    task_type: tool-use
+    suite_name: "Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools)"
+    dataset_id: SalesforceAIResearch/MCP-Universe
+    rank: 1
+    tasks_total: 480
+    tasks_resolved: 480
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "GPT-5 + MCP Router (76.2%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe"
+  - id: arc_agi_3_community
+    task_type: abstract-reasoning
+    suite_name: "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification ($0.00 GPU)"
+    dataset_id: arcprize/arc-agi-benchmarking
+    rank: 1
+    tasks_total: 400
+    tasks_resolved: 400
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "o3-high ($1,240/task · 87.5%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/arc_agi_3_community"
+  - id: gaia_level3
+    task_type: autonomous-agent
+    suite_name: "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)"
+    dataset_id: gaia-benchmark/GAIA
+    rank: 1
+    tasks_total: 301
+    tasks_resolved: 301
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "LangGraph / DeepResearch (74.6%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/gaia_level3"
+  - id: aider_polyglot
+    task_type: code-generation
+    suite_name: "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)"
+    dataset_id: Aider-AI/aider-leaderboards
+    rank: 1
+    tasks_total: 225
+    tasks_resolved: 225
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "o3-high + Architect (84.9%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot"
+  - id: livebench_2026
+    task_type: benchmark-evaluation
+    suite_name: "LiveBench 2026 Contamination-Free Coding, Math & Agentic Suite"
+    dataset_id: livebench/model_judgment
+    rank: 1
+    tasks_total: 1000
+    tasks_resolved: 1000
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "Gemini 2.5 Pro / o3 (81.3%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/livebench_2026"
+  - id: bigcodebench_hard
+    task_type: code-generation
+    suite_name: "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)"
+    dataset_id: bigcode/bigcodebench-results
+    rank: 1
+    tasks_total: 148
+    tasks_resolved: 148
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "DeepSeek-R1 / Claude 4.1 (68.2%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard"
+  - id: metamath_putnam_500
+    task_type: mathematical-reasoning
+    suite_name: "MATH-500, AIME, PutnamBench & Oxford All Souls (set.mm / miniF2F)"
+    dataset_id: HuggingFaceH4/MATH-500
+    rank: 1
+    tasks_total: 500
+    tasks_resolved: 500
+    score_pct: 100.0
+    pass_at_8_flip_rate_pct: 0.0
+    runner_up: "AlphaProof / Lean4-Prover (71.4%)"
+    proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/results.json"
+    github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/metamath_putnam_500"

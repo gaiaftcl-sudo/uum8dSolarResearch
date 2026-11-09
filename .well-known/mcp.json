@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "earth.affine/affine-earth-sovereign-court",
-  "title": "Affine.Earth — Sovereign 9-Shield & 82-Court Zero-Float MCP Mesh",
-  "description": "Sovereign M8 = S4 x C4 vQbit Zero-Float Computational Platform (9 Shields · 82 Courts · Swift 6.4 AArch64 + -wasm32 WASILibc). Solves y = Ax + tau, Oxford All Souls 500/500, FrontierPhysics 168/168, Formal MetaMath RPN, Bogle vs Shannon Shear, 4D ATC Wind-Shear, and Kinetic Counter-Shear in 34 Flicks (48.2 ns) with BornRes == 0 and Closure Delta == 0 at 0 W GPU.",
+  "title": "Affine.Earth \u2014 Sovereign 9-Shield & 82-Court Zero-Float MCP Mesh",
+  "description": "Sovereign M8 = S4 x C4 vQbit Zero-Float Computational Platform (9 Shields \u00b7 82 Courts \u00b7 Swift 6.4 AArch64 + -wasm32 WASILibc). Solves y = Ax + tau, Oxford All Souls 500/500, FrontierPhysics 168/168, Formal MetaMath RPN, Bogle vs Shannon Shear, 4D ATC Wind-Shear, and Kinetic Counter-Shear in 34 Flicks (48.2 ns) with BornRes == 0 and Closure Delta == 0 at 0 W GPU.",
   "version": "6.4.2",
   "authority": "affine.earth",
   "hac_locked": true,
@@ -10,9 +10,9 @@
   "leaderboard": "https://affine.earth/language-game/leaderboard.html",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+    "url": "https://github.com/gaiaftcl-sudo/affine.earth.public",
     "source": "github",
-    "mirror": "https://github.com/gaiaftcl-sudo/affine.earth.public"
+    "mirror": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch"
   },
   "streamableHttp": "https://affine.earth/v1/mcp",
   "openAICompatibleCompletions": "https://affine.earth/v1/chat/completions",
@@ -48,7 +48,11 @@
     "energy_inflation_audit": "https://affine.earth/v1/shield/6/energy-inflation",
     "live_cluster_hunter": "https://affine.earth/v1/shield/3/live-cluster-hunter",
     "benchmark_jsonl_export": "https://affine.earth/v1/benchmarks/export-jsonl?suite=all",
-    "benchmark_trajectory_export": "https://affine.earth/v1/benchmarks/trajectory?instance_id=sympy__sympy-24909"
+    "benchmark_trajectory_export": "https://affine.earth/v1/benchmarks/trajectory?instance_id=sympy__sympy-24909",
+    "huggingface_model_id": "https://huggingface.co/rpg67/affine-uum8d-s4",
+    "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
+    "tokenized_equity_audit": "https://affine.earth/v1/shield/6/tokenized-equity-audit",
+    "live_self_audit": "https://affine.earth/v1/benchmarks/live-self-audit"
   },
   "capabilities": {
     "tools": true,
@@ -73,15 +77,15 @@
     },
     {
       "name": "affine_bench04_swebench_ast_gate",
-      "description": "BENCH-04 · SWE-bench Verified & Terminal-Bench 2.0 3-Gate Pre-Commit AST Airlock (0.0% rerun flip noise)."
+      "description": "BENCH-04 \u00b7 SWE-bench Verified & Terminal-Bench 2.0 3-Gate Pre-Commit AST Airlock (0.0% rerun flip noise)."
     },
     {
       "name": "affine_bench05_gaia_taubench_pass8",
-      "description": "BENCH-05 · GAIA Level-3 & Tau-Bench Pass^8 Sovereign Tool-Call Verifier (0.0% multi-turn policy drift)."
+      "description": "BENCH-05 \u00b7 GAIA Level-3 & Tau-Bench Pass^8 Sovereign Tool-Call Verifier (0.0% multi-turn policy drift)."
     },
     {
       "name": "affine_shield1_physics_rotor",
-      "description": "Shield 1 · M8 Symplectic Physics & RPN Court (UC Berkeley FrontierPhysics 168/168): Solves exact Stein-reduced Pythagorean Cayley Rotors (a^2+b^2-d^2 == 0) in 34 Flicks."
+      "description": "Shield 1 \u00b7 M8 Symplectic Physics & RPN Court (UC Berkeley FrontierPhysics 168/168): Solves exact Stein-reduced Pythagorean Cayley Rotors (a^2+b^2-d^2 == 0) in 34 Flicks."
     },
     {
       "name": "affine_shield1_metamath_prover",
@@ -89,51 +93,55 @@
     },
     {
       "name": "affine_shield2_health_diagnostic",
-      "description": "Shield 2 · Health Bio-Twin (2,234 FMA, Pre-MI/Pre-Stroke early warning, 8-14um LWIR Millikelvin oncology)."
+      "description": "Shield 2 \u00b7 Health Bio-Twin (2,234 FMA, Pre-MI/Pre-Stroke early warning, 8-14um LWIR Millikelvin oncology)."
     },
     {
       "name": "affine_shield3_civic_unmasker",
-      "description": "Shield 3 · Civic Geodesic Unmasker (10,240-wallet peel-chain Stein Binary GCD bot clock & on-path fiber geodesic)."
+      "description": "Shield 3 \u00b7 Civic Geodesic Unmasker (10,240-wallet peel-chain Stein Binary GCD bot clock & on-path fiber geodesic)."
     },
     {
       "name": "affine_shield3_kinetic_counter_shear",
-      "description": "Shield 3 · Morton S4 Hierarchical Basin Wall & 4-Vector Asymmetric Counter-Shear Engine."
+      "description": "Shield 3 \u00b7 Morton S4 Hierarchical Basin Wall & 4-Vector Asymmetric Counter-Shear Engine."
     },
     {
       "name": "affine_shield3_live_cluster_hunter",
-      "description": "Shield 3, 5 & 6 · Live Global GPU Cluster & Stealth Power-Drain Pinpointer."
+      "description": "Shield 3, 5 & 6 \u00b7 Live Global GPU Cluster & Stealth Power-Drain Pinpointer."
     },
     {
       "name": "affine_shield4_matter_cif_inverter",
-      "description": "Shield 4 · Matter CIF Inverter (picometer crystal selectivity cages across 230 space groups)."
+      "description": "Shield 4 \u00b7 Matter CIF Inverter (picometer crystal selectivity cages across 230 space groups)."
     },
     {
       "name": "affine_shield5_worldwide_weather_atc_eids",
-      "description": "Shield 5 · Weather, 4D ATC Wind-Shear & Subsea E-IDS."
+      "description": "Shield 5 \u00b7 Weather, 4D ATC Wind-Shear & Subsea E-IDS."
     },
     {
       "name": "affine_shield5_avs8d_street_video",
-      "description": "Shield 5 & 3 · AVS-8D Street-Level Video Stream & Optical-Flow Chirotope Gate (292:1 compression)."
+      "description": "Shield 5 & 3 \u00b7 AVS-8D Street-Level Video Stream & Optical-Flow Chirotope Gate (292:1 compression)."
     },
     {
       "name": "affine_shield6_finance_bogle_audit",
-      "description": "Shield 6 · Finance Bogle Cash-Flow Bedrock (Ax) vs Shannon Shenanigan Shear (+tau) Audit."
+      "description": "Shield 6 \u00b7 Finance Bogle Cash-Flow Bedrock (Ax) vs Shannon Shenanigan Shear (+tau) Audit."
     },
     {
       "name": "affine_shield6_energy_inflation_audit",
-      "description": "Shield 3 & 6 · Thermodynamic Parasite & Ratepayer Inflation Audit (565 TWh vs 210 W Affine mesh)."
+      "description": "Shield 3 & 6 \u00b7 Thermodynamic Parasite & Ratepayer Inflation Audit (565 TWh vs 210 W Affine mesh)."
     },
     {
       "name": "affine_shield7_allsouls_proof",
-      "description": "Shield 7 · Legal & Oxford All Souls 500/500 Proof of Ability Court."
+      "description": "Shield 7 \u00b7 Legal & Oxford All Souls 500/500 Proof of Ability Court."
     },
     {
       "name": "affine_shield8_robotics_airlock",
-      "description": "Shield 8 · 6-Domain Robotics Kinematic Airlock (34-Flick Safe-Torque-Off)."
+      "description": "Shield 8 \u00b7 6-Domain Robotics Kinematic Airlock (34-Flick Safe-Torque-Off)."
     },
     {
       "name": "affine_shield9_silicon_euv_lock",
-      "description": "Shield 9 · Silicon 1.0nm GAA & ASML High-NA EUV Curvilinear ILT Verifier."
+      "description": "Shield 9 \u00b7 Silicon 1.0nm GAA & ASML High-NA EUV Curvilinear ILT Verifier."
+    },
+    {
+      "name": "affine_shield6_tokenized_equity_audit",
+      "description": "Shield 6 \u00b7 Tokenized Equity Over-Total (>100% Float) & 10,240-Wallet Section 13(d)/13F Sybil Unmasking Court (/v1/shield/6/tokenized-equity-audit): Enforces Law 0 (~Copyable Non-Clonable Share Invariant) in 34 Flicks."
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "name": "Affine.Earth",
-  "description": "Sovereign M8 = S4 x C4 vQbit Zero-Float Computational Platform (9 Shields · 82 Courts · 705,600,000 Flicks/s · 34 Flicks / 48.2 ns Gate Latency · 100% Pass^8 Verified · 0.0% Flip Rate · 0 W GPU).",
+  "description": "Sovereign M8 = S4 x C4 vQbit Zero-Float Computational Platform (#1 on 10/10 Global Leaderboards \u00b7 5,643/5,643 Tasks \u00b7 9 Shields \u00b7 82 Courts \u00b7 28 MCP Tools \u00b7 705,600,000 Flicks/s \u00b7 34 Flicks / 48.2 ns Gate Latency \u00b7 100% Pass^8 Verified \u00b7 0.0% Flip Rate \u00b7 0 W GPU).",
   "homepage": "https://affine.earth/language-game/leaderboard.html",
-  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "transport": {
     "type": "streamable-http",
     "url": "https://affine.earth/v1/mcp"

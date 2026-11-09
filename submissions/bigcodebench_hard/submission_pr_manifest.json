@@ -5,10 +5,12 @@
   "suite_name": "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)",
   "tasks_resolved": "148 / 148 Hard (100.0%)",
   "upstream_repo": "bigcode-project/bigcodebench",
-  "repository": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
+  "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
+  "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
+  "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
   "branch": "affine-uum8d-s4-20261109",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/uum8dSolarResearch | Pure Swift 6.4 Integer Court | HAC Seal: ce67df9b30dd (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: ce67df9b30dd (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
   "sha256": "ce67df9b30dd042a7bfa77e340832a025ad0cb33f6b9595ee1c8020a0f54a575",
   "seal_12hex": "ce67df9b30dd"
 }
