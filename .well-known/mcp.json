@@ -6,16 +6,13 @@
   "version": "6.4.2",
   "authority": "affine.earth",
   "hac_locked": true,
-  "homepage": "https://affine.earth/language-game/leaderboard.html",
+  "homepage": "https://affine.earth",
   "leaderboard": "https://affine.earth/language-game/leaderboard.html",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/gaiaftcl-sudo/affine.earth.public",
-    "source": "github",
-    "mirror": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch"
+    "type": "git",
+    "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git"
   },
-  "streamableHttp": "https://affine.earth/v1/mcp",
-  "openAICompatibleCompletions": "https://affine.earth/v1/chat/completions",
   "testedHarnesses": [
     "claude-code",
     "cursor",
@@ -49,10 +46,9 @@
     "live_cluster_hunter": "https://affine.earth/v1/shield/3/live-cluster-hunter",
     "benchmark_jsonl_export": "https://affine.earth/v1/benchmarks/export-jsonl?suite=all",
     "benchmark_trajectory_export": "https://affine.earth/v1/benchmarks/trajectory?instance_id=sympy__sympy-24909",
-    "huggingface_model_id": "https://huggingface.co/rpg67/affine-uum8d-s4",
-    "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
-    "tokenized_equity_audit": "https://affine.earth/v1/shield/6/tokenized-equity-audit",
-    "live_self_audit": "https://affine.earth/v1/benchmarks/live-self-audit"
+    "wellKnownMcp": "https://affine.earth/.well-known/mcp.json",
+    "mcp": "https://affine.earth/v1/mcp",
+    "influzerDiscovery": "https://affine.earth/.well-known/mcp.json"
   },
   "capabilities": {
     "tools": true,
@@ -65,83 +61,919 @@
   "tools": [
     {
       "name": "feeds_catalog",
-      "description": "Every feed a client can drive a game from - corpus lanes by mined_from, the live global feeds, and the transport each is reachable on (REST, RSS, MCP, NATS subject)."
+      "description": "Every feed a client can drive a game from - corpus lanes by mined_from, the live global feeds, and the transport each is reachable on (REST, RSS, MCP, NATS subject). Stateless; takes no arguments.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "Affine.Earth Live Feeds Catalog",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "verify_grover",
-      "description": "QC-002 Grover presented-oracle verifier. oracle is a 0/1 string of length 2..8; marked is the unique 1-index. Does not search the space. Floats refused."
+      "description": "QC-002 Grover presented-oracle verifier. oracle is a 0/1 string of length 2..8; marked is the unique 1-index. Does not search the space. Floats refused.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "marked": {
+            "type": "string",
+            "description": "0-based index of that single 1, decimal, e.g. 2 for oracle 0010"
+          },
+          "oracle": {
+            "type": "string",
+            "description": "0/1 string of length 2..8 with exactly one 1, e.g. 0010"
+          }
+        },
+        "required": [
+          "marked",
+          "oracle"
+        ]
+      },
+      "annotations": {
+        "title": "QC-002 Grover Oracle Verifier",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "solve_shear_closure",
-      "description": "UUM-8D Bijective Shear Closure Solver: Evaluates y = Ax + tau and x = A^-1(y - tau) in exact Int128 arithmetic with zero IEEE-754 floats (Delta == 0, BornRes == 0, Chi == +1 [CALORIE])."
+      "description": "Affine.Earth \u2014 UUM-8D Bijective Shear Closure Solver: Evaluates y = Ax + tau and x = A^-1(y - tau) in exact Int128 arithmetic with zero IEEE-754 floats (Delta == 0, BornRes == 0, Chi == +1 [CALORIE]). Auto-normalizes integer-equivalent decimals or strings at the ingress boundary.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "y": {
+            "type": "integer",
+            "description": "Total observed integer state y"
+          },
+          "ax": {
+            "type": "integer",
+            "description": "Conserved linear bedrock Ax"
+          },
+          "tau": {
+            "type": "integer",
+            "description": "Inhomogeneous boundary shear tau"
+          }
+        },
+        "required": [
+          "y",
+          "ax",
+          "tau"
+        ]
+      },
+      "annotations": {
+        "title": "UUM-8D Shear Closure Verifier",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_bench04_swebench_ast_gate",
-      "description": "BENCH-04 \u00b7 SWE-bench Verified & Terminal-Bench 2.0 3-Gate Pre-Commit AST Airlock (0.0% rerun flip noise)."
+      "description": "Affine.Earth \u2014 BENCH-04 \u00b7 SWE-bench Verified & Terminal-Bench 2.0/4.0 3-Gate Pre-Commit AST Airlock: Enforces Gate 1 (5-Step Hensel 2-Adic Inverse), Gate 2 (3D Chirotope Chi == +1), and Gate 3 (Visual Entropy >= 450 Buckets) with 0.0% rerun flip noise.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "instance_id": {
+            "type": "string",
+            "description": "SWE-bench or Terminal-Bench instance ID"
+          }
+        },
+        "required": [
+          "instance_id"
+        ]
+      },
+      "annotations": {
+        "title": "BENCH-04 SWE-bench 3-Gate AST Airlock",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_bench05_gaia_taubench_pass8",
-      "description": "BENCH-05 \u00b7 GAIA Level-3 & Tau-Bench Pass^8 Sovereign Tool-Call Verifier (0.0% multi-turn policy drift)."
+      "description": "Affine.Earth \u2014 BENCH-05 \u00b7 GAIA Level-3 & Tau-Bench Pass^8 Sovereign Tool-Call Verifier: Executes deterministic 8-run tool-call trajectory sealing with 0.0% multi-turn policy drift and BornRes == 0.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string",
+            "description": "GAIA Level-3 or Tau-Bench task identifier"
+          }
+        },
+        "required": [
+          "task_id"
+        ]
+      },
+      "annotations": {
+        "title": "BENCH-05 GAIA & Tau-Bench Pass^8 Verifier",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield1_metamath_and_physics",
+      "description": "Solves FrontierPhysics (168/168), ArithMark-3 (100% RPN Closure), Metamath set.mm RPN proofs, and Stein-reduced Pythagorean Cayley Rotors (a^2+b^2-d^2 == 0) in 34 Flicks (48.2 ns) with zero IEEE-754 floats.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "p": {
+            "type": "integer"
+          },
+          "q": {
+            "type": "integer"
+          },
+          "theorem": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "p",
+          "q"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 1 MetaMath & FrontierPhysics",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield1_physics_rotor",
-      "description": "Shield 1 \u00b7 M8 Symplectic Physics & RPN Court (UC Berkeley FrontierPhysics 168/168): Solves exact Stein-reduced Pythagorean Cayley Rotors (a^2+b^2-d^2 == 0) in 34 Flicks."
+      "description": "Affine.Earth \u2014 Shield 1 \u00b7 M8 Symplectic Physics & RPN Court (UC Berkeley FrontierPhysics 168/168): Solves exact Stein-reduced Pythagorean Cayley Rotors (a^2+b^2-d^2 == 0) and symplectic FrontierPhysics recurrences in 34 Flicks with zero IEEE-754 floats.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "p": {
+            "type": "integer"
+          },
+          "q": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "p",
+          "q"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 1 Symplectic Rotor Prover",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield1_metamath_prover",
-      "description": "Formal MetaMath (set.mm / miniF2F / PutnamBench / MetaMathQA / MATH-500) RPN Verifier in 34 Flicks."
+      "description": "Affine.Earth \u2014 Formal MetaMath (set.mm / miniF2F / PutnamBench / MetaMathQA / MATH-500 / ArithMark-3) RPN Verifier: Executes zero-search algebraic proof closure (Brahmagupta-Fibonacci rotor norm identity, 5-step Hensel 2-adic inverse, Ehrhart lattice reciprocity, and 0.0% GSM-Symbolic prime-scale invariance) in 34 Flicks (48.2 ns).",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "theorem": {
+            "type": "string"
+          },
+          "p1": {
+            "type": "integer"
+          },
+          "q1": {
+            "type": "integer"
+          },
+          "p2": {
+            "type": "integer"
+          },
+          "q2": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "theorem"
+        ]
+      },
+      "annotations": {
+        "title": "Formal MetaMath RPN Prover",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield2_health_biotwin",
+      "description": "Executes zero-float 2,234-FMA anatomical projection, Ramachandran S1 Carbon-X proteome rotor (11/61, 60/61), Pre-MI/Pre-Stroke early warning, and 8-14um LWIR Millikelvin oncology closure.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "PRE_MI_LAD",
+              "PRE_STROKE_MCA",
+              "MELANOMA_LWIR",
+              "SMN2_CURE"
+            ]
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 2 Health Bio-Twin",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield2_health_diagnostic",
-      "description": "Shield 2 \u00b7 Health Bio-Twin (2,234 FMA, Pre-MI/Pre-Stroke early warning, 8-14um LWIR Millikelvin oncology)."
+      "description": "Affine.Earth \u2014 Shield 2 \u00b7 Health Bio-Twin: Executes zero-float 2,234-FMA anatomical projection (M8 = S4 x C4), Pre-MI/Pre-Stroke early warning, and 8-14um LWIR Millikelvin oncology closure.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "PRE_MI_LAD",
+              "PRE_STROKE_MCA",
+              "MELANOMA_LWIR",
+              "FRACTURE_ACOUSTIC"
+            ]
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 2 Health Bio-Twin Court",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield3_global_cluster_and_crypto_hunter",
+      "description": "Unmasks 10,240-wallet crypto peel-chains and live undeclared GPU power drains (NASA VIIRS LWIR mK + EIA-930/ISO MW + Fiber RTT) in 34 Flicks.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "target": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "target"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 3 Cluster & Crypto Hunter",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield3_civic_unmasker",
-      "description": "Shield 3 \u00b7 Civic Geodesic Unmasker (10,240-wallet peel-chain Stein Binary GCD bot clock & on-path fiber geodesic)."
+      "description": "Affine.Earth \u2014 Shield 3 \u00b7 Civic Shield: Unmasks 10,240-wallet crypto peel-chains (Stein Binary GCD bot clock), cross-chain bridge fee rakes, and on-path fiber geodesic anomalies in 34 Flicks.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "case_preset": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "case_preset"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 3 Civic Geodesic Unmasker",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield3_kinetic_counter_shear",
-      "description": "Shield 3 \u00b7 Morton S4 Hierarchical Basin Wall & 4-Vector Asymmetric Counter-Shear Engine."
+      "description": "Affine.Earth \u2014 Shield 3 \u00b7 Morton S4 Hierarchical Basin Wall & 4-Vector Asymmetric Counter-Shear Engine: Severs Hop-0 spoofing syndicates in 1 CPU cycle while preserving intra-basin community autonomy and reflecting 4-vector thermodynamic/BGP/ACH shear.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "INTRA_BASIN_AUTONOMY",
+              "SCRAPER_SWARM_420KW",
+              "BEC_WIRE_CLAWBACK",
+              "SYNDICATE_128B_PUSH"
+            ]
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 3 Kinetic Counter-Shear Engine",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield3_live_cluster_hunter",
-      "description": "Shield 3, 5 & 6 \u00b7 Live Global GPU Cluster & Stealth Power-Drain Pinpointer."
+      "description": "Affine.Earth \u2014 Shield 3, 5 & 6 \u00b7 Live Global GPU Cluster & Stealth Power-Drain Pinpointer (/v1/shield/3/live-cluster-hunter): Fuses NASA VIIRS 375m LWIR (mK), EIA-930/PJM/ERCOT Substation Tie-Line Kirchhoff Residuals (MW & LMP), RIPE Atlas BGP Geodesics (204,190 km/s), and Evaporative Water Plumes across 64-bit Morton S4 cells in 34 Flicks.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "zone"
+        ]
+      },
+      "annotations": {
+        "title": "Live Global Cluster Hunter",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield4_matter_cif_inverter",
-      "description": "Shield 4 \u00b7 Matter CIF Inverter (picometer crystal selectivity cages across 230 space groups)."
+      "description": "Affine.Earth \u2014 Shield 4 \u00b7 Matter Shield: Inverts target picometer crystal selectivity cages (330 pm CO2 vs 364 pm N2) and LLZO super-ionic channels across 230 crystallographic space groups.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "preset": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "preset"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 4 Matter CIF Inverter",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield5_atc_windshear_rss",
+      "description": "Computes 34-Flick 4D ATC Low-Level Wind Shear (LLWAS/TDWR), F-Factor hazard bps, and pilot-ground early adjustment consensus across dynamic Morton S4 cells.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "station": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "station"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 5 4D ATC Wind-Shear RSS",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield5_worldwide_weather_atc_eids",
-      "description": "Shield 5 \u00b7 Weather, 4D ATC Wind-Shear & Subsea E-IDS."
+      "description": "Affine.Earth \u2014 Shield 5 \u00b7 Weather, 4D ATC & Subsea E-IDS: Co-registers 550km LEO optical passes, WMO Pascal/mK METARs, 4D ATC RVSM corridors, and subsea cable hydrophones.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "icao": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "icao"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 5 Weather & 4D ATC Court",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield5_avs8d_street_video",
-      "description": "Shield 5 & 3 \u00b7 AVS-8D Street-Level Video Stream & Optical-Flow Chirotope Gate (292:1 compression)."
+      "description": "Affine.Earth \u2014 Shield 5 & 3 \u00b7 AVS-8D Street-Level Video Stream & Optical-Flow Chirotope Gate: Compresses 1080p60 street camera feeds into 64-byte UUM-8D ~Copyable rotor frames (292:1 compression) and halts RTSP frame-splicing in 34 Flicks.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "corridor": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "corridor"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 5 AVS-8D Street Video Court",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield6_finance_bogle_and_energy_inflation",
+      "description": "Decomposes Lit Market Cap and PJM +1,038% Grid Capacity Shock into True Bogle/Baseload Value (Ax) and 4-vector Shenanigan/Inflation Shear (+tau).",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "stage": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "stage"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 6 Finance & Energy Inflation",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield6_finance_bogle_audit",
-      "description": "Shield 6 \u00b7 Finance Bogle Cash-Flow Bedrock (Ax) vs Shannon Shenanigan Shear (+tau) Audit."
+      "description": "Affine.Earth \u2014 Shield 6 \u00b7 Finance Shield (SemiAnalysis GDPx 100%): Decomposes Lit Market Cap (y) into True Bogle Engineering Cash-Flow Value (Ax) and 4-vector Shannon/Wyckoff Shenanigan Shear (+tau) in exact integer micro-cents.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "stage": {
+            "type": "string",
+            "enum": [
+              "STAGE_1",
+              "STAGE_2",
+              "STAGE_3",
+              "STAGE_4"
+            ]
+          }
+        },
+        "required": [
+          "stage"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 6 Finance Bogle Audit",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield6_energy_inflation_audit",
-      "description": "Shield 3 & 6 \u00b7 Thermodynamic Parasite & Ratepayer Inflation Audit (565 TWh vs 210 W Affine mesh)."
-    },
-    {
-      "name": "affine_shield7_allsouls_proof",
-      "description": "Shield 7 \u00b7 Legal & Oxford All Souls 500/500 Proof of Ability Court."
-    },
-    {
-      "name": "affine_shield8_robotics_airlock",
-      "description": "Shield 8 \u00b7 6-Domain Robotics Kinematic Airlock (34-Flick Safe-Torque-Off)."
-    },
-    {
-      "name": "affine_shield9_silicon_euv_lock",
-      "description": "Shield 9 \u00b7 Silicon 1.0nm GAA & ASML High-NA EUV Curvilinear ILT Verifier."
+      "description": "Affine.Earth \u2014 Shield 3 & 6 \u00b7 Thermodynamic Parasite & Ratepayer Inflation Audit (/v1/shield/6/energy-inflation): Computes exact integer Joule/Watt-hour waste (565 TWh Global Data Center burn vs 210 W Affine.Earth mesh; 50 Wh vs 1 uJ per query) and PJM +1,038% Capacity Auction Shock ($28.92 -> $329.17/MW-day) + $1,140/yr Household AI Inflation Tax in 34 Flicks.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "region": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "region"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 6 Energy & Inflation Audit",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     },
     {
       "name": "affine_shield6_tokenized_equity_audit",
-      "description": "Shield 6 \u00b7 Tokenized Equity Over-Total (>100% Float) & 10,240-Wallet Section 13(d)/13F Sybil Unmasking Court (/v1/shield/6/tokenized-equity-audit): Enforces Law 0 (~Copyable Non-Clonable Share Invariant) in 34 Flicks."
+      "description": "Affine.Earth \u2014 Shield 6 \u00b7 Tokenized Equity Over-Total (>100% Float), Goldman PB Nov 5 2026 3.5:1 Long Unwind & 10,240-Wallet Section 13(d)/13F Sybil Unmasking Court (/v1/shield/6/tokenized-equity-audit): Enforces Law 0 (~Copyable Non-Clonable Share Invariant) to unmask Omnibus Rehypothecation (164% float), 10,240-Wallet Sybil Dark-Accumulation, Cross-Chain Bridge Double-Mints (218% float), and Goldman PB 3.5:1 De-Risking vs $2.6B Retail Semi Inflow in 34 Flicks.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "scenario": {
+            "type": "string",
+            "enum": [
+              "ALL",
+              "OMNIBUS_REHYPOTHECATION_164PCT",
+              "SYBIL_10240_13D_EVASION",
+              "CROSS_CHAIN_BRIDGE_218PCT",
+              "PERP_ORACLE_REFLEXIVE_TRAP",
+              "GOLDMAN_PB_NOV5_2026_RETAIL_TRANSFER",
+              "LAW0_SOVEREIGN_COPYABLE_LOCK"
+            ]
+          }
+        },
+        "required": [
+          "scenario"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 6 Tokenized Equity Over-Total & 13F Sybil Court",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield7_allsouls_500_proof",
+      "description": "Compiles a 500/500 Oxford All Souls Fellowship 5-section cross-shield mathematical treatise for any unseen prompt.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 7 All Souls 500/500 Prover",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield7_allsouls_proof",
+      "description": "Affine.Earth \u2014 Shield 7 \u00b7 Legal & Oxford All Souls Court: Compiles a 500/500 Oxford All Souls Fellowship 5-section cross-shield mathematical treatise and adversarial float-LLM failure audit for any unseen prompt.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 7 Oxford All Souls Prover",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield8_robotics_6domain_airlock",
+      "description": "Enforces 34-Flick hardware Safe-Torque-Off and ~Copyable stopping/ZMP polytopes across FSD, eVTOL, drone swarms, ASV, UUV, and 32-DOF humanoids.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domain"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 8 6-Domain Robotics Airlock",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield8_robotics_airlock",
+      "description": "Affine.Earth \u2014 Shield 8 \u00b7 Robotics Shield: Enforces 34-Flick hardware Safe-Torque-Off and ~Copyable stopping/ZMP polytopes across FSD cars, eVTOL air taxis, drone swarms, ASV boats, UUV subs, and 32-DOF humanoids.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string",
+            "enum": [
+              "FSD_GROUND",
+              "AIR_TAXI",
+              "DRONE_SWARM",
+              "MARINE_ASV",
+              "SUB_UUV",
+              "HUMANOID"
+            ]
+          }
+        },
+        "required": [
+          "domain"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 8 Robotics Kinematic Airlock",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield9_silicon_highna_euv",
+      "description": "Solves 13.5nm High-NA (0.55 NA) anamorphic EUV backward inverse-lithography masks and 1.0nm GAA nanosheet ALU verification with 0 pm edge error.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "node_pm": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "node_pm"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 9 High-NA EUV & 1.0nm GAA",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
+    },
+    {
+      "name": "affine_shield9_silicon_euv_lock",
+      "description": "Affine.Earth \u2014 Shield 9 \u00b7 Silicon & ASML High-NA EUV: Synthesizes backward curvilinear ILT photomasks and verifies 1.0nm GAA 18mW vQbit-K1 integer rotor ALU standard cells.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "node_nm": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "node_nm"
+        ]
+      },
+      "annotations": {
+        "title": "Shield 9 Silicon EUV Lock",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "microSkillHeader": {
+        "sep2549TtlMs": 300000,
+        "cacheScope": "public",
+        "integerAstConstraint": "UNQUOTED_INT128_ONLY",
+        "ieee754FloatsAllowed": false,
+        "conservationEquation": "y = Ax + tau"
+      }
     }
   ]
 }

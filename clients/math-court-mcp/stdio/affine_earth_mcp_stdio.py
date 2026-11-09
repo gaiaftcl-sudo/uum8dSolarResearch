@@ -13,7 +13,7 @@ import urllib.error
 import urllib.request
 
 APEX = os.environ.get("AFFINE_APEX", "https://affine.earth").rstrip("/")
-MCP = APEX + "/language-invariant/mcp"
+MCP = APEX + "/v1/mcp"
 
 
 def _read_message() -> dict | None:

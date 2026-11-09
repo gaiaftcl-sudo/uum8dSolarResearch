@@ -7,7 +7,7 @@
 (function (global) {
   "use strict";
   var APEX = "https://affine.earth";
-  var MCP = APEX + "/language-invariant/mcp";
+  var MCP = APEX + "/v1/mcp";
   var rpcId = 1;
 
   function post(url, payload) {
