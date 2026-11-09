@@ -217,7 +217,7 @@ colorTo: indigo
 sdk: static
 pinned: true
 license: mit
-short_description: Live 34-Flick (48.2 ns) Zero-Float 9-Shield & Formal MetaMath Court
+short_description: Live 34-Flick Zero-Float 9-Shield & SWE-bench Court
 ---
 
 # 🌍 Affine.Earth — Live 9-Shield Sovereign Verification Space
@@ -320,8 +320,8 @@ from huggingface_hub import HfApi
 token = os.environ.get("HF_TOKEN") or open(os.path.expanduser("~/.cache/huggingface/token")).read().strip()
 api = HfApi(token=token)
 
-model_repos = ["rpg67/Affine.Earth", "FortressAI/Affine.Earth"]
-space_repos = ["rpg67/Affine-Earth-Sovereign-Court", "FortressAI/Affine-Earth-Sovereign-Court"]
+model_repos = ["rpg67/Affine.Earth"]
+space_repos = ["rpg67/Affine-Earth-Sovereign-Court"]
 
 for mrepo in model_repos:
     try:
