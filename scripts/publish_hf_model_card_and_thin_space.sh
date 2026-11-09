@@ -309,7 +309,11 @@ done
 # ------------------------------------------------------------------------------
 # 4. Upload to Hugging Face Hub (rpg67 & FortressAI Model + Space)
 # ------------------------------------------------------------------------------
-python3 - << 'PYEOF'
+HF_PYTHON="/Applications/Xcode.app/Contents/Developer/usr/bin/python3"
+if [[ ! -x "$HF_PYTHON" ]]; then
+  HF_PYTHON="python3"
+fi
+"$HF_PYTHON" - << 'PYEOF'
 import os
 from huggingface_hub import HfApi
 
