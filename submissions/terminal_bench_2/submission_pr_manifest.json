@@ -5,12 +5,19 @@
   "suite_name": "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)",
   "tasks_resolved": "89 / 89 (100.0%)",
   "upstream_repo": "laude-institute/terminal-bench-leaderboard",
+  "official_board_url": "https://www.tbench.ai/",
+  "runner_up": "Opus 5.5 (max) + Claude Code (64.8% ± 3.1% · Pulled 2026-11-09)",
+  "runner_up_pulled_date": "2026-11-09",
+  "fork_repo": "gaiaftcl-sudo/terminal-bench-leaderboard",
+  "submission_pr_url": "https://github.com/gaiaftcl-sudo/terminal-bench-leaderboard/pull/1",
+  "fork_branch_url": "https://github.com/gaiaftcl-sudo/terminal-bench-leaderboard/tree/affine-uum8d-s4-20261109/submissions/terminal_bench_2",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
   "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
   "branch": "affine-uum8d-s4-20261109",
+  "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 5ed747444e50 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "5ed747444e502d9850bb2c83db5163da62526b4b4e69839aa33a2bb3bd58f5fe",
-  "seal_12hex": "5ed747444e50"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 195b1795e749 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "195b1795e74921dfe298066f1687422b346503f5ee0ca0d8d44e398880660a5a",
+  "seal_12hex": "195b1795e749"
 }

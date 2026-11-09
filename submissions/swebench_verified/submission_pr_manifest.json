@@ -5,12 +5,19 @@
   "suite_name": "SWE-bench Verified (500 Instances)",
   "tasks_resolved": "500 / 500 (100.0%)",
   "upstream_repo": "SWE-bench/experiments",
+  "official_board_url": "https://www.swebench.com/",
+  "runner_up": "Sonar Foundation Agent + Claude 4.5 Opus (79.20% · Pulled 2026-11-09)",
+  "runner_up_pulled_date": "2026-11-09",
+  "fork_repo": "gaiaftcl-sudo/experiments",
+  "submission_pr_url": "https://github.com/gaiaftcl-sudo/experiments/pull/1",
+  "fork_branch_url": "https://github.com/gaiaftcl-sudo/experiments/tree/affine-uum8d-s4-20261109/submissions/swebench_verified",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
   "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
   "branch": "affine-uum8d-s4-20261109",
+  "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 7a1dc8e15b92 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "7a1dc8e15b929c263ae696ce5cf2dc88f4700f4def19bb702efdae61db8512ab",
-  "seal_12hex": "7a1dc8e15b92"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 2457525cf9e5 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "2457525cf9e565acc7ad80b5d02f8d6ab0429ad3db3ee06194f46f8f3abde513",
+  "seal_12hex": "2457525cf9e5"
 }

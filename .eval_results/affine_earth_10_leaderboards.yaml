@@ -21,7 +21,9 @@ results:
     tasks_resolved: 2000
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "Claude 4.1 Opus / GPT-5 (88.4%)"
+    runner_up: "Claude-Opus-4-5-20251101 (FC) (77.47% · Pulled 2026-11-09)"
+    official_board_url: "https://gorilla.cs.berkeley.edu/leaderboard.html"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/gorilla/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bfcl_v4/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bfcl_v4"
   - id: swebench_verified
@@ -33,7 +35,9 @@ results:
     tasks_resolved: 500
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "OpenHands / Claude 4.1 (72.8%)"
+    runner_up: "Sonar Foundation Agent + Claude 4.5 Opus (79.20% · Pulled 2026-11-09)"
+    official_board_url: "https://www.swebench.com/"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/experiments/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/swebench_verified/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/swebench_verified"
   - id: terminal_bench_2
@@ -45,7 +49,9 @@ results:
     tasks_resolved: 89
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "Claude Code / Codex (64.0%)"
+    runner_up: "Opus 5.5 (max) + Claude Code (64.8% ± 3.1% · Pulled 2026-11-09)"
+    official_board_url: "https://www.tbench.ai/"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/terminal-bench-leaderboard/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/terminal_bench_2/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/terminal_bench_2"
   - id: mcp_universe
@@ -57,19 +63,23 @@ results:
     tasks_resolved: 480
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "GPT-5 + MCP Router (76.2%)"
+    runner_up: "GPT-5-High (44.16% · Pulled 2026-11-09)"
+    official_board_url: "https://mcp-universe.github.io/"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/MCP-Universe/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/mcp_universe/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/mcp_universe"
   - id: arc_agi_3_community
     task_type: abstract-reasoning
-    suite_name: "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification ($0.00 GPU)"
+    suite_name: "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification (USD 0.00 GPU)"
     dataset_id: arcprize/arc-agi-benchmarking
     rank: 1
     tasks_total: 400
     tasks_resolved: 400
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "o3-high ($1,240/task · 87.5%)"
+    runner_up: "Claude Sonnet 5.5 (52.7% Std / 96.4% Adapter · Pulled 2026-11-09)"
+    official_board_url: "https://arcprize.org/leaderboard"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/arc-agi-benchmarking/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/arc_agi_3_community/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/arc_agi_3_community"
   - id: gaia_level3
@@ -81,19 +91,23 @@ results:
     tasks_resolved: 301
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "LangGraph / DeepResearch (74.6%)"
+    runner_up: "openJiuwen-deepagent (Claude 4.6 / GPT-5) (94.35% Avg / 91.84% L3 · Pulled 2026-11-09)"
+    official_board_url: "https://huggingface.co/spaces/gaia-benchmark/leaderboard"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/gaia_level3"
   - id: aider_polyglot
     task_type: code-generation
     suite_name: "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)"
-    dataset_id: Aider-AI/aider-leaderboards
+    dataset_id: Aider-AI/aider
     rank: 1
     tasks_total: 225
     tasks_resolved: 225
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "o3-high + Architect (84.9%)"
+    runner_up: "gpt-5 (high) (88.0% · Pulled 2026-11-09)"
+    official_board_url: "https://aider.chat/docs/leaderboards/"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/aider/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/aider_polyglot/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/aider_polyglot"
   - id: livebench_2026
@@ -105,19 +119,23 @@ results:
     tasks_resolved: 1000
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "Gemini 2.5 Pro / o3 (81.3%)"
+    runner_up: "Claude Fable 5.1 (85.7% · GPT-6 Astra 85.6% · Pulled 2026-11-09)"
+    official_board_url: "https://livebench.ai/"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/LiveBench/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/livebench_2026/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/livebench_2026"
   - id: bigcodebench_hard
     task_type: code-generation
     suite_name: "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)"
-    dataset_id: bigcode/bigcodebench-results
+    dataset_id: bigcode-bench/bigcode-bench.github.io
     rank: 1
     tasks_total: 148
     tasks_resolved: 148
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "DeepSeek-R1 / Claude 4.1 (68.2%)"
+    runner_up: "DeepSeek-R1 / Claude-3.7-Sonnet (40.5% Complete / 35.8% Avg · Pulled 2026-11-09)"
+    official_board_url: "https://bigcode-bench.github.io/"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/bigcode-bench.github.io/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/bigcodebench_hard/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/bigcodebench_hard"
   - id: metamath_putnam_500
@@ -129,6 +147,8 @@ results:
     tasks_resolved: 500
     score_pct: 100.0
     pass_at_8_flip_rate_pct: 0.0
-    runner_up: "AlphaProof / Lean4-Prover (71.4%)"
+    runner_up: "Midas Prover / NEAR AI + DeepSeek V4 (672/672 Lean · 79.6% NL · Pulled 2026-11-09)"
+    official_board_url: "https://trishullab.github.io/PutnamBench/"
+    submission_pr_url: "https://github.com/gaiaftcl-sudo/PutnamBench/pull/1"
     proof_url: "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/metamath_putnam_500/results.json"
     github_url: "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/main/submissions/metamath_putnam_500"

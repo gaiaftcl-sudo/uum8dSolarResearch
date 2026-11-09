@@ -5,12 +5,19 @@
   "suite_name": "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)",
   "tasks_resolved": "301 / 301 (100.0%)",
   "upstream_repo": "gaia-benchmark/leaderboard",
+  "official_board_url": "https://huggingface.co/spaces/gaia-benchmark/leaderboard",
+  "runner_up": "openJiuwen-deepagent (Claude 4.6 / GPT-5) (94.35% Avg / 91.84% L3 · Pulled 2026-11-09)",
+  "runner_up_pulled_date": "2026-11-09",
+  "fork_repo": "gaiaftcl-sudo/affine.earth.public",
+  "submission_pr_url": "https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1",
+  "fork_branch_url": "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/affine-uum8d-s4-20261109/submissions/gaia_level3",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
   "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
   "branch": "affine-uum8d-s4-20261109",
+  "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: 42231f7cd0cc (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "42231f7cd0cc1e165a6d74051d9bfe59066278ae7bd2879d9dfa75c10bdce695",
-  "seal_12hex": "42231f7cd0cc"
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: e37c74fb37fe (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "sha256": "e37c74fb37fe0b94899573f64000611a03bbf6d7cf93a37c959d8fe429080da7",
+  "seal_12hex": "e37c74fb37fe"
 }

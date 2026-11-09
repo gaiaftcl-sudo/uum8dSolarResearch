@@ -2,6 +2,11 @@ name: Affine.Earth
 org: Affine.Earth (UUM-8D Quantum Affine Infrastructure Consortium)
 site: https://affine.earth/language-game/leaderboard.html
 repository: https://github.com/gaiaftcl-sudo/affine.earth.public
+submission_pr: https://github.com/gaiaftcl-sudo/bigcode-bench.github.io/pull/1
+submission_branch: https://github.com/gaiaftcl-sudo/bigcode-bench.github.io/tree/affine-uum8d-s4-20261109/submissions/bigcodebench_hard
+official_board_url: https://bigcode-bench.github.io/
+runner_up_comparison: "DeepSeek-R1 / Claude-3.7-Sonnet (40.5% Complete / 35.8% Avg · Pulled 2026-11-09)"
+runner_up_pulled_date: "2026-11-09"
 huggingface_model: https://huggingface.co/rpg67/Affine.Earth
 huggingface_dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks
 huggingface_space: https://huggingface.co/spaces/rpg67/Affine-Earth-Sovereign-Court
