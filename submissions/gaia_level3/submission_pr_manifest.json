@@ -9,7 +9,7 @@
   "runner_up": "openJiuwen-deepagent (94.35% Avg / 91.84% L3) / Kimi K3.1 Pro (2.8T/104B II=55 · Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "fork_repo": "gaiaftcl-sudo/affine.earth.public",
-  "submission_pr_url": "https://github.com/gaiaftcl-sudo/affine.earth.public/pull/1",
+  "submission_pr_url": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks/blob/main/submissions/gaia_level3/gaia_level3_submission_test_301.jsonl",
   "fork_branch_url": "https://github.com/gaiaftcl-sudo/affine.earth.public/tree/affine-uum8d-s4-20261109/submissions/gaia_level3",
   "repository": "https://github.com/gaiaftcl-sudo/affine.earth.public",
   "huggingface_model": "https://huggingface.co/rpg67/Affine.Earth",
@@ -17,7 +17,7 @@
   "branch": "affine-uum8d-s4-20261109",
   "pr_status": "OPEN",
   "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/v1/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: d6c1c40de9b5 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/language-invariant/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: d6c1c40de9b5 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
   "sha256": "d6c1c40de9b5031e6d789042c69606bbb8e35f14a0dcb43dd1c6c0e7d2e141ca",
   "seal_12hex": "d6c1c40de9b5"
 }
