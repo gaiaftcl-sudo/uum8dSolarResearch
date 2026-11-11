@@ -17,3 +17,6 @@ reproduce/logs/
 # Study 45 Arm B — pulled Atlas scores are never committed
 atlas-dense*.jsonl
 reproduce/atlas-dense*.jsonl
+
+.build/
+.pytest_cache/
