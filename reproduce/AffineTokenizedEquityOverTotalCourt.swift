@@ -167,7 +167,7 @@ public enum AffineTokenizedEquityCourt {
 
         // Gate 1 5-Step 2-Adic Custodian & Transfer-Agent Warrant Verification
         let oddCust = c.custodianRPZLimb | 1
-        let invCust = rpzModularInverse64(oddCust)
+        let invCust = oddModularInverse64(oddCust)
         let gate1Res = (oddCust &* invCust) &- 1
 
         // Prove ~Copyable SovereignLinearShareBlock consuming transfer closure on the authorized float
@@ -408,7 +408,7 @@ public enum AffineTokenizedEquityCourt {
 
         let masterSeal = fnv1a12Hex("SHIELD6_TOKENIZED_EQUITY_DECK|\(deck.count)|\(primaryJSON.count)")
         return """
-        {"authority":"affine.earth","court":"SHIELD_6_TOKENIZED_EQUITY_OVER_TOTAL_AND_DARK_HOLDING_AUDIT","endpoint":"/v1/shield/6/tokenized-equity-audit","arena_mmap_path":"\(arenaFilePath)","cell_stride_bytes":128,"gate_latency_flicks":34,"gate_latency_ns":"48.2 ns","ieee754_floats":0,"hac_locked":true,"seal_12hex":"\(masterSeal)","active_audit":\(primaryJSON),"scenarios":[\(scenariosJSON)]}
+        {"authority":"affine.earth","court":"SHIELD_6_TOKENIZED_EQUITY_OVER_TOTAL_AND_DARK_HOLDING_AUDIT","endpoint":"/v1/shield/6/tokenized-equity-audit","arena_mmap_path":"\(arenaFilePath)","cell_stride_bytes":128,"gate_latency_flicks":34,"gate_latency_ns":"21250/441 ns","ieee754_floats":0,"hac_locked":true,"seal_12hex":"\(masterSeal)","active_audit":\(primaryJSON),"scenarios":[\(scenariosJSON)]}
         """
     }
 }

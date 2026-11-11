@@ -4,7 +4,7 @@ alias_model_id: rpg67/affine-uum8d-s4
 authority: affine.earth
 evaluated_at: 2026-11-09T00:00:00Z
 gate_latency_flicks: 34
-gate_latency_ns: 48.2
+gate_latency_ns: "21250/441"
 ieee754_floats: 0
 gpu_watts: 0
 born_residual: 0

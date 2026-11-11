@@ -89,7 +89,7 @@ public enum AffineNYSEAvalancheCourt {
 
         // 6. Gate 1 2-Adic Clearing Warrant & Gate 2 3D Chirotope Verdict:
         let oddLimb = c.clearingFirmRPZLimb | 1
-        let invLimb = rpzModularInverse64(oddLimb)
+        let invLimb = oddModularInverse64(oddLimb)
         let gate1Res = (oddLimb &* invLimb) &- 1
 
         let shenaniganDetected = (tauPhantomShares > 0)

@@ -1,0 +1,21 @@
+# Smithery MCP Registry Configuration — Affine.Earth Math & Language-Invariant Court
+# Canonical remote Streamable-HTTP MCP server (zero-credential public access).
+runtime: "container"
+startCommand:
+  type: "http"
+  url: "https://affine.earth/language-invariant/mcp"
+  configSchema:
+    type: "object"
+    properties: {}
+    required: []
+metadata:
+  name: "earth.affine/math-court"
+  title: "Affine.Earth Math & Language-Invariant Court"
+  description: "Observer-independent zero-float MCP court with 56 exact-integer and rational verification tools across 50 math, quantum-circuit, formal code equivalence, 4D ATC deconfliction, and 25-language translation domains."
+  homepage: "https://affine.earth/leaderboard"
+  repository: "https://github.com/gaiaftcl-sudo/uum8dSolarResearch"
+  license: "MIT"
+  protocolVersion: "2024-11-05"
+  version: "2026.11.11"
+  toolsCount: 56
+  toolsSha256: "6a298d0dac191d59ee9bc47feee185eb537b9bcb1b6ec33b984cdd09d72762db"

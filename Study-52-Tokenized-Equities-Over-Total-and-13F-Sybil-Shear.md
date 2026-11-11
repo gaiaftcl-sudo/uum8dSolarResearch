@@ -15,6 +15,6 @@
 
 ## 2. The Sovereign `Affine.Earth` Fix: `SovereignLinearShareBlock: ~Copyable`
 
-1. **Law 1 — Strict `~Copyable` Linear Share Certificate:** Every issued share serial block `[serialRangeStart ..< serialRangeEnd]` is bound to `struct SovereignLinearShareBlock: ~Copyable`. Transferring ownership (`consuming func transferOwnership`) mathematically destroys the sender frame and moves the exact 64-bit serial range in `34 Flicks (48.2 ns)`.
+1. **Law 1 — Strict `~Copyable` Linear Share Certificate:** Every issued share serial block `[serialRangeStart ..< serialRangeEnd]` is bound to `struct SovereignLinearShareBlock: ~Copyable`. Transferring ownership (`consuming func transferOwnership`) mathematically destroys the sender frame and moves the exact 64-bit serial range in `34 Flicks (21250/441 ns)`.
 2. **Law 2 — Exact Cap-Table Partition Identity:** `y_Total_Claims = DRS + DTC_Street + Prime_Rehypothecated + Dark_TRS + OnChain_Wrapped + DeFi_Synthetics - Verified_Unencumbered_Vault_Lock`. Conserved float requires `tau_OverTotal_Shear == 0` (`chi = +1 [CALORIE]`).
 3. **Law 3 — 10,240-Wallet Beneficial-Owner Sybil Collapse:** Collapses multi-wallet Sybil fan-outs back to their root funding rotor `(a/d, b/d)` and flags any aggregated stake `>= 500 bps (5.00%)` under SEC Schedule 13D / 13F.

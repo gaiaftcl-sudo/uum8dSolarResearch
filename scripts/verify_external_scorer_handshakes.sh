@@ -31,7 +31,7 @@ echo " 🔍 AUDITING AFFINE.EARTH EXTERNAL LEADERBOARD & MCP HANDSHAKES ($BASE_U
 echo "================================================================================"
 
 # GATE 1: MCP 2026-07-28 Stateless `server/discover` Handshake
-DISCOVER_RES=$(curl -sS -m 10 -X POST "$BASE_URL/v1/mcp" \
+DISCOVER_RES=$(curl -sS -m 10 -X POST "$BASE_URL/language-invariant/mcp" \
   -H "Content-Type: application/json" \
   -H "MCP-Protocol-Version: 2026-07-28" \
   -d '{"jsonrpc":"2.0","id":"req-discover-1","method":"server/discover","params":{}}' || echo "{}")
@@ -39,14 +39,14 @@ check_gate "Gate 1: MCP 2026-07-28 server/discover + string ID preservation + re
   "printf '%s' \"\$DISCOVER_RES\" | jq -e '.id == \"req-discover-1\" and .result.resultType == \"complete\"' >/dev/null 2>&1"
 
 # GATE 2: MCP 2025-06-18 Legacy `initialize` Handshake
-INIT_RES=$(curl -sS -m 10 -X POST "$BASE_URL/v1/mcp" \
+INIT_RES=$(curl -sS -m 10 -X POST "$BASE_URL/language-invariant/mcp" \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"glama-scanner","version":"1.0"}}}' || echo "{}")
 check_gate "Gate 2: MCP 2025-06-18 initialize handshake" \
   "printf '%s' \"\$INIT_RES\" | jq -e '.id == 1 and .result.serverInfo.name != null' >/dev/null 2>&1"
 
 # GATE 3: MCP `notifications/initialized` (Must NOT return a JSON-RPC result object!)
-NOTIF_CODE=$(curl -sS -m 10 -o /tmp/notif_body.txt -w "%{http_code}" -X POST "$BASE_URL/v1/mcp" \
+NOTIF_CODE=$(curl -sS -m 10 -o /tmp/notif_body.txt -w "%{http_code}" -X POST "$BASE_URL/language-invariant/mcp" \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","method":"notifications/initialized"}' || echo "000")
 NOTIF_LEN=$(wc -c < /tmp/notif_body.txt | tr -d ' ')
@@ -54,7 +54,7 @@ check_gate "Gate 3: notifications/initialized returns HTTP 202/204 with empty bo
   "[ '$NOTIF_CODE' = '202' -o '$NOTIF_CODE' = '204' ] && [ '$NOTIF_LEN' -eq 0 ]"
 
 # GATE 4: MCP SEP-2549 `tools/list` (`resultType`, `ttlMs`, `cacheScope`)
-TOOLS_RES=$(curl -sS -m 10 -X POST "$BASE_URL/v1/mcp" \
+TOOLS_RES=$(curl -sS -m 10 -X POST "$BASE_URL/language-invariant/mcp" \
   -H "Content-Type: application/json" \
   -H "Mcp-Method: tools/list" \
   -d '{"jsonrpc":"2.0","id":2,"method":"tools/list","params":{}}' || echo "{}")

@@ -1,0 +1,108 @@
+{
+  "schema": "affine.earth.agent_card.v1",
+  "protocolVersion": "1",
+  "name": "Affine.Earth Sovereign Court",
+  "description": "Observer-independent zero-float compute court over M8 = S4 x C4 (y - tau == Ax, Born residual 0, 34 Flicks = 21250/441 ns). Exposes 56 zero-key Streamable-HTTP MCP tools, A2A sealed task dispatch, and Bearer-authenticated OpenAI /v1/chat/completions.",
+  "url": "https://affine.earth/language-invariant/a2a",
+  "taskEndpoint": "https://affine.earth/language-invariant/a2a/task",
+  "mcpEndpoint": "https://affine.earth/language-invariant/mcp",
+  "openaiBaseUrl": "https://affine.earth/v1",
+  "leaderboardUrl": "https://affine.earth/leaderboard",
+  "version": "2026.11.11",
+  "provider": {
+    "organization": "Affine.Earth",
+    "url": "https://affine.earth"
+  },
+  "authentication": {
+    "mcp": {
+      "required": false,
+      "type": "none"
+    },
+    "a2a": {
+      "required": false,
+      "type": "none"
+    },
+    "openai_v1": {
+      "required": true,
+      "schemes": [
+        "Bearer"
+      ]
+    }
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/event-stream",
+    "text/plain"
+  ],
+  "servedModels": [
+    "affine-uum8d-s4",
+    "affine-vqbit",
+    "franklin-membrane",
+    "franklin-membrane-exam",
+    "affine-earth-os-mcp"
+  ],
+  "invariants": {
+    "generative": 0,
+    "ieee754_floats": 0,
+    "gpu_watts": 0,
+    "execution_flicks": 34,
+    "execution_ns": "21250/441 ns",
+    "mcp_tools_count": 56,
+    "mcp_tools_sha256": "6a298d0dac191d59ee9bc47feee185eb537b9bcb1b6ec33b984cdd09d72762db",
+    "math_court_domains": 50
+  },
+  "skills": [
+    {
+      "id": "math_court",
+      "name": "Exact Integer & Rational Math Court (50 Domains)",
+      "description": "Verifies algebraic, number-theoretic, combinatorial, geometric, and formal proof obligations over exact integers and reduced rationals.",
+      "tags": [
+        "math",
+        "proof",
+        "rational",
+        "verification"
+      ]
+    },
+    {
+      "id": "franklin_turn",
+      "name": "Affine Shear Conservation Court (y - tau == Ax)",
+      "description": "Evaluates exact affine conservation closure and seals CALORIE or CURE receipts in 34 Flicks (21250/441 ns).",
+      "tags": [
+        "conservation",
+        "vqbit",
+        "invariant"
+      ]
+    },
+    {
+      "id": "openai_tool_calls",
+      "name": "Deterministic OpenAI Function-Calling AST Dispatcher",
+      "description": "Synthesizes schema-typed OpenAI tool_calls ASTs and rejects irrelevant tools with zero float sampling drift.",
+      "tags": [
+        "bfcl",
+        "function-calling",
+        "mcp",
+        "openai"
+      ]
+    },
+    {
+      "id": "code_ir_equiv",
+      "name": "Formal Code Equivalence & Artifact Crucible",
+      "description": "Verifies semantic equivalence and seals WebAssembly and source artifacts across polyglot software benchmarks.",
+      "tags": [
+        "code",
+        "wasm",
+        "swebench",
+        "verification"
+      ]
+    }
+  ]
+}

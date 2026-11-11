@@ -1,0 +1,62 @@
+{
+  "provider": {
+    "id": "affine-earth",
+    "name": "Affine.Earth",
+    "homepage": "https://affine.earth/leaderboard",
+    "status_url": "https://affine.earth/language-game/feeds/leaderboard/live-status.json",
+    "openai_base_url": "https://affine.earth/v1",
+    "mcp_streamable_http_url": "https://affine.earth/language-invariant/mcp",
+    "privacy_policy": "zero_retention_stateless_seal",
+    "trains_on_prompts": false
+  },
+  "models": [
+    {
+      "id": "affine-earth/affine-uum8d-s4",
+      "upstream_model_id": "affine-uum8d-s4",
+      "name": "Affine.Earth UUM-8D S4 Sovereign Court",
+      "context_length": 131072,
+      "max_completion_tokens": 16384,
+      "supported_parameters": [
+        "tools",
+        "tool_choice",
+        "parallel_tool_calls",
+        "stream"
+      ],
+      "pricing_micro_usd_per_million_tokens": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "invariants": {
+        "generative": 0,
+        "ieee754_floats": 0,
+        "gpu_watts": 0,
+        "execution_flicks": 34,
+        "execution_ns": "21250/441 ns"
+      }
+    },
+    {
+      "id": "affine-earth/affine-vqbit",
+      "upstream_model_id": "affine-vqbit",
+      "name": "Affine.Earth vQbit Exact Rational & Tool Court",
+      "context_length": 131072,
+      "max_completion_tokens": 16384,
+      "supported_parameters": [
+        "tools",
+        "tool_choice",
+        "parallel_tool_calls",
+        "stream"
+      ],
+      "pricing_micro_usd_per_million_tokens": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "invariants": {
+        "generative": 0,
+        "ieee754_floats": 0,
+        "gpu_watts": 0,
+        "execution_flicks": 34,
+        "execution_ns": "21250/441 ns"
+      }
+    }
+  ]
+}

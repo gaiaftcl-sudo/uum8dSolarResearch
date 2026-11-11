@@ -1,0 +1,22 @@
+{
+  "gateway_provider": "affine-earth",
+  "protocol": "openai-compatible",
+  "base_url": "https://affine.earth/v1",
+  "auth_header": "Authorization",
+  "auth_scheme": "Bearer",
+  "env_var": "AFFINE_API_KEY",
+  "cors_preflight_status": 204,
+  "supports_sse_streaming": true,
+  "supports_function_calling": true,
+  "mcp_companion_endpoint": "https://affine.earth/language-invariant/mcp",
+  "models": [
+    "affine-uum8d-s4",
+    "affine-vqbit"
+  ],
+  "telemetry": {
+    "execution_flicks": 34,
+    "execution_ns": "21250/441 ns",
+    "generative": 0,
+    "ieee754_floats": 0
+  }
+}

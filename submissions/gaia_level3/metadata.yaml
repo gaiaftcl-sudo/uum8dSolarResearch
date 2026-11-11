@@ -22,5 +22,5 @@ model:
 harness:
   name: Affine.Earth Public Thin-Client & 3-Gate Chirotope Airlock
   repository: https://github.com/gaiaftcl-sudo/affine.earth.public
-  mcp_endpoint: https://affine.earth/v1/mcp
+  mcp_endpoint: https://affine.earth/language-invariant/mcp
   completions_endpoint: https://affine.earth/v1/chat/completions

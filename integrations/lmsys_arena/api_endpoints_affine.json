@@ -1,0 +1,28 @@
+{
+  "affine-uum8d-s4": {
+    "model_name": "affine-uum8d-s4",
+    "api_type": "openai",
+    "api_base": "https://affine.earth/v1",
+    "api_key_env": "AFFINE_API_KEY",
+    "anony_only": false,
+    "recommended_config": {
+      "max_tokens": 4096
+    },
+    "text_arena": true,
+    "coding_arena": true,
+    "math_arena": true
+  },
+  "affine-vqbit": {
+    "model_name": "affine-vqbit",
+    "api_type": "openai",
+    "api_base": "https://affine.earth/v1",
+    "api_key_env": "AFFINE_API_KEY",
+    "anony_only": false,
+    "recommended_config": {
+      "max_tokens": 4096
+    },
+    "text_arena": true,
+    "coding_arena": true,
+    "math_arena": true
+  }
+}

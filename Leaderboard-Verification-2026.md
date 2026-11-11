@@ -3,10 +3,10 @@
 - **Live Global Leaderboard Command Center:** [`https://affine.earth/language-game/leaderboard.html`](https://affine.earth/language-game/leaderboard.html)
 - **Live JSON Status Feed:** [`https://affine.earth/language-game/feeds/leaderboard/live-status.json`](https://affine.earth/language-game/feeds/leaderboard/live-status.json)
 - **Canonical OpenAI Gateway:** [`https://affine.earth/v1`](https://affine.earth/v1) (`/v1/models`, `/v1/chat/completions`, `/v1/benchmarks/export-jsonl`)
-- **Canonical Streamable-HTTP MCP Server:** [`https://affine.earth/v1/mcp`](https://affine.earth/v1/mcp) (`.well-known/mcp.json`, `glama.json`, `server.json` `v6.4.1`)
+- **Canonical Streamable-HTTP MCP Server:** [`https://affine.earth/language-invariant/mcp`](https://affine.earth/language-invariant/mcp) (`.well-known/mcp.json`, `glama.json`, `server.json` `v6.4.1`)
 - **Model Identifier:** `affine-uum8d-s4` (`Affine.Earth` · `M8 = S4 x C4` · `vQbit`)
-- **Public Reviewer Bearer Key (Read-Only Evaluation Gate):** `Authorization: Bearer affine-public-eval-2026`
-- **Core Substrate Invariants:** Pure Swift 6.4 (`AArch64` + `-wasm32` `WASILibc`) · Zero IEEE-754 Floats Inside Substrate · Zero SQLite · `34 Flicks` (`48.2 ns`) · Hardware-Attested Closure (`HAC`: `Δ ≡ 0`, `BornRes ≡ 0`, `χ = +1 [CALORIE]`).
+- **Public Reviewer Bearer Key (Read-Only Evaluation Gate):** `Authorization: Bearer $AFFINE_API_KEY`
+- **Core Substrate Invariants:** Pure Swift 6.4 (`AArch64` + `-wasm32` `WASILibc`) · Zero IEEE-754 Floats Inside Substrate · Zero SQLite · `34 Flicks` (`21250/441 ns`) · Hardware-Attested Closure (`HAC`: `Δ ≡ 0`, `BornRes ≡ 0`, `χ = +1 [CALORIE]`).
 
 ---
 
@@ -29,7 +29,7 @@
 
 ## 2. 4-Point Hardware-Attested Closure (`HAC`) Gate (`affine-leaderboard-runner`)
 
-Every continuous leaderboard evaluation executed via `https://affine.earth/v1` and `https://affine.earth/v1/mcp` must pass all 4 deterministic gates before any submission artifact is committed or published:
+Every continuous leaderboard evaluation executed via `https://affine.earth/v1` and `https://affine.earth/language-invariant/mcp` must pass all 4 deterministic gates before any submission artifact is committed or published:
 
 1. **Scorer Exit Code `0`:** Upstream benchmark harness completes with zero unhandled exceptions.
 2. **Hardware-Attested Receipt Lock:** Every trace receipt carries `"authority": "affine.earth"`, `"hac_locked": true`, `"quarantined_float_params_dropped": true`, `"verdict": "CALORIE"`, `"chirotope_chi": 1`, `"closure_delta": 0`, and `"born_residual": 0`.
@@ -43,11 +43,11 @@ Every continuous leaderboard evaluation executed via `https://affine.earth/v1` a
 ```bash
 # 1. Verify OpenAI /v1/models discovery & HAC seal (zero internal node leakage)
 curl -s -i https://affine.earth/v1/models \
-  -H "Authorization: Bearer affine-public-eval-2026"
+  -H "Authorization: Bearer $AFFINE_API_KEY"
 
 # 2. Verify Float-Sampling Quarantine + OpenAI Tool-Call Emission + HAC Receipt
 curl -s https://affine.earth/v1/chat/completions \
-  -H "Authorization: Bearer affine-public-eval-2026" \
+  -H "Authorization: Bearer $AFFINE_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "model": "affine-uum8d-s4",
@@ -58,7 +58,7 @@ curl -s https://affine.earth/v1/chat/completions \
   }'
 
 # 3. Verify Streamable-HTTP MCP JSON-RPC 2.0 Grader Compliance
-curl -s https://affine.earth/v1/mcp \
+curl -s https://affine.earth/language-invariant/mcp \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
 ```

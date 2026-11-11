@@ -20,7 +20,7 @@ import Foundation
 
 #if AFFINE_STANDALONE_MINER_CLI
 @inline(__always)
-public func steinGCD128(_ aIn: Int128, _ bIn: Int128) -> Int128 {
+public func binaryGCD128(_ aIn: Int128, _ bIn: Int128) -> Int128 {
     var u = aIn < 0 ? -aIn : aIn
     var v = bIn < 0 ? -bIn : bIn
     if u == 0 { return v == 0 ? 1 : v }
@@ -46,13 +46,13 @@ public func steinGCD128(_ aIn: Int128, _ bIn: Int128) -> Int128 {
 
 @inline(__always)
 public func constructPythagoreanRotor(pIn: Int128, qIn: Int128) -> (a: Int128, b: Int128, d: Int128, bornResidual: Int128) {
-    let g = steinGCD128(pIn, qIn)
+    let g = binaryGCD128(pIn, qIn)
     let p = (pIn < 0 ? -pIn : pIn) / g
     let q = (qIn < 0 ? -qIn : qIn) / g
     let rawA = (q * q) - (p * p)
     let rawB = 2 * p * q
     let rawD = (q * q) + (p * p)
-    let gR = steinGCD128(steinGCD128(rawA, rawB), rawD)
+    let gR = binaryGCD128(binaryGCD128(rawA, rawB), rawD)
     let a = rawA / gR
     let b = rawB / gR
     let d = rawD / gR
@@ -472,7 +472,7 @@ public enum AffineHFIntegerFactMiner {
               "rank": 1,
               "repo": "LiquidAI/LFM3-Audio-2B",
               "discrete_asset": "configuration_liquid_codec.py & RVQ Formant Codebooks (F1, F2, F3)",
-              "float_stripping_rule": "24kHz -> 29,400 Flicks/sample, 44.1kHz -> 16,000 Flicks/sample, 48kHz -> 14,700 Flicks/sample; steinGCD128 Cayley rotor",
+              "float_stripping_rule": "24kHz -> 29,400 Flicks/sample, 44.1kHz -> 16,000 Flicks/sample, 48kHz -> 14,700 Flicks/sample; binaryGCD128 Cayley rotor",
               "target_shield": "97/160-Lang Speak Ribbon & /run/affine-cells/audio_formants.cell"
             },
             {
@@ -516,7 +516,7 @@ public enum AffineHFIntegerFactMiner {
           "closure_delta": 0,
           "born_residual": 0,
           "execution_flicks": 34,
-          "execution_ns": "48.2 ns",
+          "execution_ns": "21250/441 ns",
           "seal_12hex": "752360001523"
         }
         """

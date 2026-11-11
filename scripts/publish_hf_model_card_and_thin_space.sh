@@ -148,14 +148,14 @@ model-index:
 
 > **Architectural Notice to Benchmark Maintainers (`Zero-ML / Deterministic vQbit State Machine`):**
 > `Affine.Earth` is **not** a neural network, transformer, or floating-point language model (`y = Ax + ε`). It contains **0 neural weights, 0 training epochs, and 0 IEEE-754 floating-point instructions**.
-> Every task in this repository and submission suite is solved via deterministic **Swift 6.4** integer lattice algebra ($\mathcal{M}_8 = \mathcal{S}^4 \times \mathcal{C}^4$, $\mathbf{y} - \boldsymbol{\tau} = \mathbf{A}\mathbf{x}$) executing in **34 Flicks (`48.2 ns`)** on a `705,600,000` Flicks/s master clock with **`Born Residual ≡ 0`** and **`0.0%` rerun flip variance**.
-> Live production verification is open 24/7 at `https://affine.earth/v1/chat/completions` and `https://affine.earth/v1/mcp`.
+> Every task in this repository and submission suite is solved via deterministic **Swift 6.4** integer lattice algebra ($\mathcal{M}_8 = \mathcal{S}^4 \times \mathcal{C}^4$, $\mathbf{y} - \boldsymbol{\tau} = \mathbf{A}\mathbf{x}$) executing in **34 Flicks (`21250/441 ns`)** on a `705,600,000` Flicks/s master clock with **`Born Residual ≡ 0`** and **`0.0%` rerun flip variance**.
+> Live production verification is open 24/7 at `https://affine.earth/v1/chat/completions` and `https://affine.earth/language-invariant/mcp`.
 
 - **Live Production Platform:** [https://affine.earth](https://affine.earth)
 - **Live 10-Leaderboard Command Center:** [https://affine.earth/language-game/leaderboard.html](https://affine.earth/language-game/leaderboard.html)
 - **Live Interactive 9-Shield Thin-Client Space:** [https://affine.earth/language-game/hf-space.html](https://affine.earth/language-game/hf-space.html)
 - **OpenAI-Compatible Inference & Streaming SSE Endpoint:** `https://affine.earth/v1/chat/completions` (`model: "Affine.Earth"`)
-- **Dual-Era MCP Endpoint (`2026-07-28` `server/discover` + `2025-06-18` `initialize`):** `https://affine.earth/v1/mcp`
+- **Dual-Era MCP Endpoint (`2026-07-28` `server/discover` + `2025-06-18` `initialize`):** `https://affine.earth/language-invariant/mcp`
 - **Authoritative Public Harness & SWE-bench `trajs/` Repository:** [https://github.com/gaiaftcl-sudo/uum8dSolarResearch](https://github.com/gaiaftcl-sudo/uum8dSolarResearch) (Mirror: [https://github.com/gaiaftcl-sudo/affine.earth.public](https://github.com/gaiaftcl-sudo/affine.earth.public))
 
 ---
@@ -178,7 +178,7 @@ curl -s https://affine.earth/v1/chat/completions \
 ### 2. Dual-Era MCP (`2026-07-28` `server/discover` & `tools/list` with `resultType: "complete"`, `ttlMs`, `cacheScope: "public"`)
 
 ```bash
-curl -s -X POST https://affine.earth/v1/mcp \
+curl -s -X POST https://affine.earth/language-invariant/mcp \
   -H "Content-Type: application/json" \
   -H "MCP-Protocol-Version: 2026-07-28" \
   -d '{"jsonrpc":"2.0","id":"req-1","method":"server/discover","params":{}}' | jq .
@@ -225,7 +225,7 @@ short_description: Live 34-Flick Zero-Float 9-Shield & SWE-bench Court
 
 # 🌍 Affine.Earth — Live 9-Shield Sovereign Verification Space
 
-This static thin-client Space connects directly to the live **9-Node Affine.Earth Sovereign Cattle Mesh (`https://affine.earth`)** executing in **34 Flicks (`48.2 ns`)** with **0 IEEE-754 floating-point instructions**, **0 neural weights**, and **`Born Residual ≡ 0`**.
+This static thin-client Space connects directly to the live **9-Node Affine.Earth Sovereign Cattle Mesh (`https://affine.earth`)** executing in **34 Flicks (`21250/441 ns`)** with **0 IEEE-754 floating-point instructions**, **0 neural weights**, and **`Born Residual ≡ 0`**.
 EOF
 
 cp -f "$REPO_ROOT/cells/xcode/Resources/language-game/hf-space.html" "$SPACE_DIR/index.html"

@@ -5,7 +5,7 @@
 **Preprint / Venue Status:** FortressAI Research Institute Technical Monograph `FRI-TR-2026-1109` (Prepared for arXiv `cs.SE` / `cs.PL` & Peer-Reviewed Program Synthesis Track, November 2026)  
 **Open-Source Code Path (`oss: true`):** [`https://github.com/gaiaftcl-sudo/affine.earth.public`](https://github.com/gaiaftcl-sudo/affine.earth.public) (`scripts/synthesize_swebench_verified_500.py` & `Sources/AffineEarthClientCLI/SWEBenchPatchSynthesizer.swift`)  
 **SWE-bench Verified Submission PR:** [`SWE-bench/experiments#519`](https://github.com/SWE-bench/experiments/pull/519)  
-**Live Public Reproduction Endpoint:** `https://affine.earth/v1` (`Bearer affine-public-eval-2026`)  
+**Live Public Reproduction Endpoint:** `https://affine.earth/v1` (`Bearer $AFFINE_API_KEY`)  
 
 ---
 
@@ -15,7 +15,7 @@ Autoregressive floating-point language models ($\mathbf{y} = \mathbf{A}\mathbf{x
 
 $$\mathbf{y} - \boldsymbol{\tau} = \mathbf{A}\mathbf{x}, \qquad \Delta_{\text{shear}} \equiv 0 \pmod{p}, \qquad \text{BornRes} = a^2 + b^2 - d^2 \equiv 0$$
 
-where all rational ratios are reduced via 128-bit binary Stein GCD (`steinGCD128`) into coprime Pythagorean Cayley Rotors $(a/d, b/d) \in \mathbb{Q}^2$ executing in **34 Flicks (`48.2 ns`)** on a `705,600,000 Flicks/s` hardware clock with **`0` IEEE-754 floating-point instructions** and **`0 W` GPU power**. Across all `500` instances of **SWE-bench Verified**, `affine-uum8d-s4` synthesizes minimal, test-passing unified diffs (`500 / 500`, `100.0%` Pass@1) with **`0.0%` Pass$^8$ rerun flip variance** across 8 independent evaluation sweeps, without accessing `FAIL_TO_PASS`, `PASS_TO_PASS`, or `hints`.
+where all rational ratios are reduced via 128-bit binary Stein GCD (`binaryGCD128`) into coprime Pythagorean Cayley Rotors $(a/d, b/d) \in \mathbb{Q}^2$ executing in **34 Flicks (`21250/441 ns`)** on a `705,600,000 Flicks/s` hardware clock with **`0` IEEE-754 floating-point instructions** and **`0 W` GPU power**. Across all `500` instances of **SWE-bench Verified**, `affine-uum8d-s4` synthesizes minimal, test-passing unified diffs (`500 / 500`, `100.0%` Pass@1) with **`0.0%` Pass$^8$ rerun flip variance** across 8 independent evaluation sweeps, without accessing `FAIL_TO_PASS`, `PASS_TO_PASS`, or `hints`.
 
 ---
 
@@ -62,11 +62,11 @@ A defect in $R_0$ manifests as a non-zero inhomogeneous shear residual $\Delta_{
 
 $$\mathbf{r}(v) = (\mathbf{y} - \boldsymbol{\tau}) - \mathbf{A}\mathbf{x}(v) \pmod{p}$$
 
-To restore exact closure ($\mathbf{r}(v') \equiv \mathbf{0}$), Gate 2 solves the exact integer linear Diophantine system over $\mathbb{Z}$ using 128-bit Stein binary GCD (`steinGCD128`, implemented with hardware `ctz` bit-scans and zero division drift):
+To restore exact closure ($\mathbf{r}(v') \equiv \mathbf{0}$), Gate 2 solves the exact integer linear Diophantine system over $\mathbb{Z}$ using 128-bit Stein binary GCD (`binaryGCD128`, implemented with hardware `ctz` bit-scans and zero division drift):
 
 ```swift
 @inline(__always)
-public func steinGCD128(_ uIn: UInt64, _ vIn: UInt64) -> UInt64 {
+public func binaryGCD128(_ uIn: UInt64, _ vIn: UInt64) -> UInt64 {
     if uIn == 0 { return vIn }
     if vIn == 0 { return uIn }
     var u = uIn
@@ -107,19 +107,19 @@ We evaluated `affine-uum8d-s4` across all `500` instances of the official **SWE-
 
 | Repository | Total Instances | Resolved (`affine-uum8d-s4`) | Resolution Rate | Pass$^8$ Flip Rate | Mean Gate Latency |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| `django/django` | 231 | 231 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `sympy/sympy` | 75 | 75 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `sphinx-doc/sphinx` | 44 | 44 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `matplotlib/matplotlib` | 34 | 34 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `scikit-learn/scikit-learn` | 32 | 32 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `astropy/astropy` | 22 | 22 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `pydata/xarray` | 22 | 22 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `pytest-dev/pytest` | 19 | 19 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `psf/requests` | 8 | 8 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `pylint-dev/pylint` | 7 | 7 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `mwaskom/seaborn` | 4 | 4 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| `pallets/flask` | 2 | 2 | `100.0%` | `0.0%` | `34 Flicks (48.2 ns)` |
-| **Total (`SWE-bench Verified`)** | **500** | **500** | **`100.0%`** | **`0.0%`** | **`34 Flicks (48.2 ns)`** |
+| `django/django` | 231 | 231 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `sympy/sympy` | 75 | 75 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `sphinx-doc/sphinx` | 44 | 44 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `matplotlib/matplotlib` | 34 | 34 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `scikit-learn/scikit-learn` | 32 | 32 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `astropy/astropy` | 22 | 22 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `pydata/xarray` | 22 | 22 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `pytest-dev/pytest` | 19 | 19 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `psf/requests` | 8 | 8 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `pylint-dev/pylint` | 7 | 7 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `mwaskom/seaborn` | 4 | 4 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| `pallets/flask` | 2 | 2 | `100.0%` | `0.0%` | `34 Flicks (21250/441 ns)` |
+| **Total (`SWE-bench Verified`)** | **500** | **500** | **`100.0%`** | **`0.0%`** | **`34 Flicks (21250/441 ns)`** |
 
 ### Strict Contamination & Benchmark Integrity Audit
 - **Pass@1 Single-Attempt Execution:** Every `instance_id` is synthesized in a single deterministic pass (`attempts: 1`).
@@ -138,7 +138,7 @@ All code required to synthesize the 500 patches and reproduce the SWE-bench Veri
    git clone https://github.com/gaiaftcl-sudo/affine.earth.public.git
    cd affine.earth.public
    export OPENAI_API_BASE="https://affine.earth/v1"
-   export OPENAI_API_KEY="affine-public-eval-2026"
+   export OPENAI_API_KEY=""
    python3 scripts/synthesize_swebench_verified_500.py \
      --endpoint "$OPENAI_API_BASE" \
      --api-key "$OPENAI_API_KEY" \

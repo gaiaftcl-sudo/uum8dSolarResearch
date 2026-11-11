@@ -1,0 +1,14 @@
+display_name: Affine.Earth Sovereign Court (affine-uum8d-s4)
+api_name:
+  local: affine-uum8d-s4
+  affine_earth: affine-uum8d-s4
+default_provider: affine_earth
+api_keys:
+  affine_earth: AFFINE_API_KEY
+api_kwargs:
+  default:
+    max_tokens: 4096
+aliases:
+  - affine-vqbit
+  - affine-uum8d-s4
+api_base: https://affine.earth/v1

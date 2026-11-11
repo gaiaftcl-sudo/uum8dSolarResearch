@@ -12,7 +12,7 @@
 # CORE HARVESTING LAW:
 #   Never download or execute floating-point neural weights (.safetensors, .bin, .gguf, .pt).
 #   Pull < 15 MB of lightweight JSON/config metadata tables via curl, reduce every transition
-#   ratio via steinGCD128 into coprime integers (p, q), and emit 128-byte M8MinedFactCell128
+#   ratio via binaryGCD128 into coprime integers (p, q), and emit 128-byte M8MinedFactCell128
 #   records directly into /run/affine-cells/hf_mined_invariants.cell & /run/affine-cells/audio_formants.cell.
 # ==============================================================================
 set -euo pipefail
@@ -78,7 +78,7 @@ for rate in 24000 44100 48000; do
   echo "  [EXACT] 705,600,000 / ${rate} Hz == ${flicks} Flicks/sample (Remainder == ${rem})"
 done
 
-echo "[3/4] Distilling Discrete Codebooks via steinGCD128 into 128-Byte M8MinedFactCell128 Arenas ..."
+echo "[3/4] Distilling Discrete Codebooks via binaryGCD128 into 128-Byte M8MinedFactCell128 Arenas ..."
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 MINER_SWIFT=""
 for cand in "${SCRIPT_DIR}/../AffineHFIntegerFactMiner.swift" "cells/linux/cattle/AffineHFIntegerFactMiner.swift" "/Users/richardgillespie/Documents/AppleGaiaFTCL/cells/linux/cattle/AffineHFIntegerFactMiner.swift"; do

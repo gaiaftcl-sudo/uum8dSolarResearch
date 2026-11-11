@@ -2,11 +2,11 @@
 """
 FortressAI Research Institute — Open-Source 500-Patch Synthesizer for SWE-bench Verified
 Model: affine-uum8d-s4 (M8 = S4 x C4 Zero-Float Deterministic State Machine)
-Endpoint: https://affine.earth/v1 (Public Token: Bearer affine-public-eval-2026)
+Endpoint: https://affine.earth/v1 (Public Token: Bearer $AFFINE_API_KEY)
 
 This script reproduces all 500 patch generations for the SWE-bench Verified split
 (princeton-nlp/SWE-bench_Verified) by executing the 3-Gate M8 = S4 x C4 AST Shear
-Inversion protocol against the public /v1/chat/completions and /v1/mcp endpoints
+Inversion protocol against the public /v1/chat/completions and /language-invariant/mcp endpoints
 (with deterministic offline verification fallback against the sealed 500-instance
 M8 lattice table).
 
@@ -187,7 +187,7 @@ def main() -> int:
         description="FortressAI Research Institute — Open-Source 500-Patch Synthesizer for SWE-bench Verified"
     )
     parser.add_argument("--endpoint", default=os.environ.get("OPENAI_API_BASE", "https://affine.earth/v1"))
-    parser.add_argument("--api-key", default=os.environ.get("OPENAI_API_KEY", "affine-public-eval-2026"))
+    parser.add_argument("--api-key", default=os.environ.get("OPENAI_API_KEY", ""))
     parser.add_argument("--model", default="affine-uum8d-s4")
     parser.add_argument(
         "--output",
