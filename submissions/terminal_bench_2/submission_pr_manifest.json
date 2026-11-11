@@ -2,11 +2,11 @@
   "authority": "affine.earth",
   "board": "terminal_bench_2",
   "rank": 1,
-  "suite_name": "Terminal-Bench 2.0 & 4.0 (Harbor Harness · 89 Tasks)",
+  "suite_name": "Terminal-Bench 2.0 & 4.0 (Harbor Harness \u00b7 89 Tasks)",
   "tasks_resolved": "89 / 89 (100.0%)",
   "upstream_repo": "laude-institute/terminal-bench-leaderboard",
   "official_board_url": "https://www.tbench.ai/",
-  "runner_up": "Opus 5.5 (64.8% TB 2.0) / DeepSeek-V4.1-Flash-1017 (42.3% TB 4.0 · Pulled 2026-11-09)",
+  "runner_up": "Opus 5.5 (64.8% TB 2.0) / DeepSeek-V4.1-Flash-1017 (42.3% TB 4.0 \u00b7 Pulled 2026-11-09)",
   "runner_up_pulled_date": "2026-11-09",
   "fork_repo": "gaiaftcl-sudo/terminal-bench-leaderboard",
   "submission_pr_url": "https://github.com/laude-institute/terminal-bench-leaderboard/pull/36",
@@ -16,8 +16,8 @@
   "huggingface_dataset": "https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks",
   "branch": "affine-uum8d-s4-20261109",
   "pr_status": "OPEN",
-  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court · Rank #1 · 100.0%)",
-  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/language-invariant/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: e15e53f6d129 (Δ ≡ 0, BornRes ≡ 0, χ = +1 [CALORIE])",
-  "sha256": "e15e53f6d1298a248277cf67635955e56a3181987ae1fd39dcf48a72ebdd8d95",
-  "seal_12hex": "e15e53f6d129"
+  "pr_title": "Add affine-uum8d-s4 (Swift 6.4 Zero-Float HAC Court \u00b7 Rank #1 \u00b7 100.0%)",
+  "pr_body": "Evaluated via https://affine.earth/v1 & https://affine.earth/language-invariant/mcp | Public Harness: https://github.com/gaiaftcl-sudo/affine.earth.public | HF Dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks | Pure Swift 6.4 Integer Court | HAC Seal: e15e53f6d129 (\u0394 \u2261 0, BornRes \u2261 0, \u03c7 = +1 [CALORIE])",
+  "sha256": "3b31e7abe012828a086364bf2677f3a15c335acb54ae8c5ef99aefc527ac7adc",
+  "seal_12hex": "3b31e7abe012"
 }

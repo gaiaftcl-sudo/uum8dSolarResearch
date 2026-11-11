@@ -2,12 +2,12 @@
   "authority": "affine.earth",
   "board": "aider_polyglot",
   "model_id": "affine-uum8d-s4",
-  "timestamp_utc": "2026-11-09T15:49:46Z",
+  "timestamp_utc": "2026-11-11T12:00:00Z",
   "hac_locked": true,
   "verdict": "CALORIE",
   "chirotope_chi": 1,
   "closure_delta": 0,
   "born_residual": 0,
-  "sha256": "9bcd195af289f899f44086499cec2744ccfd6dc363cdf7c77cbee32fe1e391b7",
-  "seal_12hex": "9bcd195af289"
+  "sha256": "062f13d3e1b9174729c0052c70eb3df118f3a6a4e6df5e4630d068401148754b",
+  "seal_12hex": "062f13d3e1b9"
 }

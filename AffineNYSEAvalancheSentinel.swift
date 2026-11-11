@@ -1,6 +1,6 @@
 // AffineNYSEAvalancheSentinel.swift
 // Swift 6.4 — Zero-Float, Zero-Hardcode Sentinel for NYSE Pillar ATS + Avalanche Clearing Ledger
-// Monitors `/run/affine-cells/shield6_equities.cell` across 10.88.0.1..9:8088
+// Monitors `/run/affine-cells/shield6_equities.cell` across affine.earth..9:8088
 // Detects:
 //   1. Split-Brain Weekend/24x7 Over-Total Shear between DTCC CNS and Avalanche Subnet Minting
 //   2. Multi-Transfer-Agent (Broadridge / Computershare / Equiniti / Superstate / Securitize / tZERO) Bridge Desync
@@ -202,7 +202,7 @@ public enum AffineNYSEAvalancheCourt {
                 mortonS4CusipAndSubnetKey: interleaveAnatomicalMorton64(xUm: 505_000, yUm: 100_000, zUm: 100_000),
                 packedSymbolAndVenueTag64: packVenueTag64("LAW0CONS"),
                 pillarMatchTimestampFlicks: baseTick + 4_000_000,
-                avaxSettlementTimestampFlicks: baseTick + 4_000_034,   // 34 Flicks (48.2 ns) atomic settlement lock
+                avaxSettlementTimestampFlicks: baseTick + 4_000_034,   // 34 Flicks (21250/441 ns) atomic settlement lock
                 charterAuthorizedFloatAx: 100_000_000,
                 dtccCnsStreetUnencumberedShares: 60_000_000,
                 avaxSubnetMintedShares: 40_000_000,
@@ -248,7 +248,7 @@ public enum AffineNYSEAvalancheCourt {
           "selected_vector_index": \(activeIdx + 1),
           "master_clock_flicks_per_sec": 705600000,
           "gate_execution_flicks": 34,
-          "gate_execution_ns": "48.2 ns",
+          "gate_execution_ns": "21250/441 ns",
           "ieee754_floats": 0,
           "hardcoded_tickers": 0,
           "monitored_architecture": {

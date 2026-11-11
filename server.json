@@ -1,372 +1,2727 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
   "name": "earth.affine/math-court",
-  "title": "Affine.Earth Courts — Math, Quantum, Code",
-  "description": "One MCP connector for every Affine.Earth court: exact-integer courts that verify a presented instance - a math claim (math_court, one tool for every court domain from geometry to minecraft; an empty domain returns the catalog and its domain_count), a quantum-circuit witness (the QC verifiers), a key pair (verify_presented_pair, bond_presented_key), a flight plan (atc.assert_4d_deconfliction), a sentence in 25 languages (affine_translate_text), a guide turn (franklin_turn), or a compiled artifact (code_ir_equiv, execute_artifact_crucible) - and answer WIN, MISS or a refusal that names what is missing. Nothing is searched, estimated or invented; nine cells return the same bytes for the same call. Every number is a decimal string or an exact integer; floats are refused. 56 tools, measured on local court on 2026-11-11.",
+  "title": "Affine.Earth Math & Language-Invariant Court",
+  "description": "Affine.Earth observer-independent zero-float court over exact integer and rational invariants (y = Ax + tau, Born residual zero, deterministic Pass-at-8 execution).",
   "version": "2026.11.11",
-  "websiteUrl": "https://affine.earth/language-game/#researcher",
-  "repository": {
-    "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch",
-    "source": "github",
-    "subfolder": "clients/math-court-mcp"
+  "protocolVersion": "2024-11-05",
+  "serverInfo": {
+    "name": "affine-earth",
+    "version": "2026.11.11"
   },
+  "capabilities": {
+    "tools": {}
+  },
+  "license": "MIT",
+  "homepage": "https://affine.earth",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaiaftcl-sudo/uum8dSolarResearch.git",
+    "source": "github"
+  },
+  "maintainers": [
+    "gaiaftcl-sudo"
+  ],
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://affine.earth/language-invariant/mcp"
+  },
+  "endpoint": "https://affine.earth/language-invariant/mcp",
   "remotes": [
     {
       "type": "streamable-http",
       "url": "https://affine.earth/language-invariant/mcp"
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "look": "https://affine.earth/language-game/#researcher",
-      "catalog": "https://affine.earth/language-invariant/games",
-      "ingest": "https://affine.earth/language-invariant/game/{domain}/ingest",
-      "no_float": true,
-      "pricing_axis": "entropy_delta_dh_structural",
-      "courts": [
-        "geometry",
-        "chance",
-        "algebra",
-        "physics",
-        "qcd",
-        "health",
-        "finance",
-        "cs",
-        "fluids",
-        "qma_2local",
-        "qma_spinglass",
-        "qma_nrep",
-        "qma_permanent",
-        "qc_shor",
-        "qc_period",
-        "qc_grover",
-        "qc_qft",
-        "qc_qpe",
-        "qc_hhl",
-        "qc_dj",
-        "qc_bv",
-        "qc_simon",
-        "qc_ampamp",
-        "qc_ampest",
-        "qc_kickback",
-        "qc_walk",
-        "qc_vqe",
-        "qc_qaoa",
-        "qc_count",
-        "qc_teleport",
-        "qc_superdense",
-        "qc_bell",
-        "qc_topo",
-        "qc_pair",
-        "affine_key",
-        "biosphere",
-        "code_ir_equiv",
-        "execute_artifact_crucible",
-        "minecraft"
-      ],
-      "tools_measured_20260827": [
-        "atc.assert_4d_deconfliction",
-        "corpus_bonds",
-        "critique_frame",
-        "execute_transition",
-        "feeds_catalog",
-        "game_frame_meta",
-        "ide_rebuild_mesh",
-        "membrane_health",
-        "noaa_goes_r_weather",
-        "twin.robotics.evaluate_exact_ik",
-        "umc_direct",
-        "umc_resume",
-        "umc_status",
-        "lattice_op",
-        "math_court",
-        "verify_jordan_bond",
-        "weather.convective_containment",
-        "execute_2local_hamiltonian",
-        "route_spin_glass_manifold",
-        "verify_n_representability",
-        "execute_exact_permanent",
-        "corpus_coverage",
-        "corpus_capability_map",
-        "code_ir_equiv"
-      ],
-      "tools_measured_20260902": [
-        "atc.assert_4d_deconfliction",
-        "code_ir_equiv",
-        "corpus_bonds",
-        "corpus_capability_map",
-        "corpus_coverage",
-        "critique_frame",
-        "execute_2local_hamiltonian",
-        "execute_artifact_crucible",
-        "execute_exact_permanent",
-        "execute_transition",
-        "expose",
-        "feeds_catalog",
-        "game_frame_meta",
-        "ide_rebuild_mesh",
-        "lattice_op",
-        "math_court",
-        "membrane_health",
-        "noaa_goes_r_weather",
-        "project_affine_key",
-        "project_shor_twin",
-        "route_spin_glass_manifold",
-        "twin.robotics.evaluate_exact_ik",
-        "umc_direct",
-        "umc_resume",
-        "umc_status",
-        "verify_amplitude_amplification",
-        "verify_amplitude_estimation",
-        "verify_bell_measurement",
-        "verify_bernstein_vazirani",
-        "verify_deutsch_jozsa",
-        "verify_grover",
-        "verify_hhl",
-        "verify_jordan_bond",
-        "verify_n_representability",
-        "verify_period",
-        "verify_phase_kickback",
-        "verify_presented_pair",
-        "verify_qaoa_energy",
-        "verify_qft_phases",
-        "verify_qpe_phase",
-        "verify_quantum_counting",
-        "verify_quantum_walk",
-        "verify_shor_witness",
-        "verify_simon",
-        "verify_superdense",
-        "verify_teleport",
-        "verify_topological_word",
-        "verify_vqe_energy",
-        "weather.convective_containment"
-      ],
-      "tools_measured_note": "tools_measured_20260827 (24), tools_measured_20260902 (49), tools_measured_20260929 (51) and tools_measured_20261006 (53) are the dated records of those days. tools_measured_20261013 is the population of this tree, 55 tools: tools/list on a court built from this tree on 2026-10-13, equal to the servable set of CapabilityRegistry and held equal to it by cells/xcode/scripts/ci/capability-registry-parity.sh; the nine cells serve it after the roll. Count from the live tools/list, never from this file.",
-      "tools_measured_20260929": [
-        "affine_translate_text",
-        "atc.assert_4d_deconfliction",
-        "bond_presented_key",
-        "code_ir_equiv",
-        "corpus_bonds",
-        "corpus_capability_map",
-        "corpus_coverage",
-        "critique_frame",
-        "execute_2local_hamiltonian",
-        "execute_artifact_crucible",
-        "execute_exact_permanent",
-        "execute_transition",
-        "expose",
-        "feeds_catalog",
-        "game_frame_meta",
-        "ide_rebuild_mesh",
-        "lattice_op",
-        "math_court",
-        "membrane_health",
-        "noaa_goes_r_weather",
-        "project_affine_key",
-        "project_shor_twin",
-        "route_spin_glass_manifold",
-        "twin.robotics.evaluate_exact_ik",
-        "umc_direct",
-        "umc_resume",
-        "umc_status",
-        "verify_amplitude_amplification",
-        "verify_amplitude_estimation",
-        "verify_bell_measurement",
-        "verify_bernstein_vazirani",
-        "verify_deutsch_jozsa",
-        "verify_grover",
-        "verify_hhl",
-        "verify_jordan_bond",
-        "verify_n_representability",
-        "verify_period",
-        "verify_phase_kickback",
-        "verify_presented_pair",
-        "verify_qaoa_energy",
-        "verify_qft_phases",
-        "verify_qpe_phase",
-        "verify_quantum_counting",
-        "verify_quantum_walk",
-        "verify_shor_witness",
-        "verify_simon",
-        "verify_superdense",
-        "verify_teleport",
-        "verify_topological_word",
-        "verify_vqe_energy",
-        "weather.convective_containment"
-      ],
-      "transport_note": "streamable-http only. The former sse remote (.../mcp/sse) was withdrawn 2026-09-26 (decision D15): measured, it answered 200 text/event-stream with 'retry: 2000' and 'event: hello' and closed in 0.154 s with no 'event: endpoint', so an SSE client never completed initialize. Registry versions 2026.8.24 and earlier still list it; this file is the corrected one.",
-      "tools_measured_per_cell_20260929": "for ip in $(dig +short affine.earth); do curl -sS --max-time 120 --resolve affine.earth:443:$ip -X POST https://affine.earth/language-invariant/mcp -H 'content-type: application/json' -d '{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/list\"}'; done -> nine cells, each http 200, 79894 bytes, 51 tools, one sha256 b5359ecdcc85005c (2026-09-29, before the Release 5 roll; the roll changes the bytes, not the count)",
-      "tools_measured_20261006": [
-        "affine_translate_text",
-        "atc.assert_4d_deconfliction",
-        "bond_presented_key",
-        "code_ir_equiv",
-        "corpus_bonds",
-        "corpus_capability_map",
-        "corpus_coverage",
-        "critique_frame",
-        "execute_2local_hamiltonian",
-        "execute_artifact_crucible",
-        "execute_exact_permanent",
-        "execute_transition",
-        "expose",
-        "feeds_catalog",
-        "game_frame_meta",
-        "ide_rebuild_mesh",
-        "lattice_op",
-        "math_court",
-        "membrane_health",
-        "noaa_goes_r_weather",
-        "project_affine_key",
-        "project_shor_twin",
-        "release_regression",
-        "route_spin_glass_manifold",
-        "study_usda",
-        "twin.robotics.evaluate_exact_ik",
-        "umc_direct",
-        "umc_resume",
-        "umc_status",
-        "verify_amplitude_amplification",
-        "verify_amplitude_estimation",
-        "verify_bell_measurement",
-        "verify_bernstein_vazirani",
-        "verify_deutsch_jozsa",
-        "verify_grover",
-        "verify_hhl",
-        "verify_jordan_bond",
-        "verify_n_representability",
-        "verify_period",
-        "verify_phase_kickback",
-        "verify_presented_pair",
-        "verify_qaoa_energy",
-        "verify_qft_phases",
-        "verify_qpe_phase",
-        "verify_quantum_counting",
-        "verify_quantum_walk",
-        "verify_shor_witness",
-        "verify_simon",
-        "verify_superdense",
-        "verify_teleport",
-        "verify_topological_word",
-        "verify_vqe_energy",
-        "weather.convective_containment"
-      ],
-      "tools_measured_20261013": [
-        "affine_translate_text",
-        "atc.assert_4d_deconfliction",
-        "bond_presented_key",
-        "code_ir_equiv",
-        "corpus_bonds",
-        "corpus_capability_map",
-        "corpus_coverage",
-        "critique_frame",
-        "execute_2local_hamiltonian",
-        "execute_artifact_crucible",
-        "execute_exact_permanent",
-        "execute_transition",
-        "expose",
-        "feeds_catalog",
-        "game_frame_meta",
-        "ide_rebuild_mesh",
-        "lattice_op",
-        "math_court",
-        "membrane_health",
-        "noaa_goes_r_weather",
-        "project_affine_key",
-        "project_shor_twin",
-        "release_regression",
-        "route_spin_glass_manifold",
-        "scene_compose",
-        "scene_ingest",
-        "study_usda",
-        "twin.robotics.evaluate_exact_ik",
-        "umc_direct",
-        "umc_resume",
-        "umc_status",
-        "verify_amplitude_amplification",
-        "verify_amplitude_estimation",
-        "verify_bell_measurement",
-        "verify_bernstein_vazirani",
-        "verify_deutsch_jozsa",
-        "verify_grover",
-        "verify_hhl",
-        "verify_jordan_bond",
-        "verify_n_representability",
-        "verify_period",
-        "verify_phase_kickback",
-        "verify_presented_pair",
-        "verify_qaoa_energy",
-        "verify_qft_phases",
-        "verify_qpe_phase",
-        "verify_quantum_counting",
-        "verify_quantum_walk",
-        "verify_shor_witness",
-        "verify_simon",
-        "verify_superdense",
-        "verify_teleport",
-        "verify_topological_word",
-        "verify_vqe_energy",
-        "weather.convective_containment"
-      ],
-      "tools_measured_20261111": [
-        "affine_translate_text",
-        "atc.assert_4d_deconfliction",
-        "bond_presented_key",
-        "code_ir_equiv",
-        "corpus_bonds",
-        "corpus_capability_map",
-        "corpus_coverage",
-        "critique_frame",
-        "execute_2local_hamiltonian",
-        "execute_artifact_crucible",
-        "execute_exact_permanent",
-        "execute_transition",
-        "expose",
-        "feeds_catalog",
-        "franklin_turn",
-        "game_frame_meta",
-        "ide_rebuild_mesh",
-        "lattice_op",
-        "math_court",
-        "membrane_health",
-        "noaa_goes_r_weather",
-        "project_affine_key",
-        "project_shor_twin",
-        "release_regression",
-        "route_spin_glass_manifold",
-        "scene_compose",
-        "scene_ingest",
-        "study_usda",
-        "twin.robotics.evaluate_exact_ik",
-        "umc_direct",
-        "umc_resume",
-        "umc_status",
-        "verify_amplitude_amplification",
-        "verify_amplitude_estimation",
-        "verify_bell_measurement",
-        "verify_bernstein_vazirani",
-        "verify_deutsch_jozsa",
-        "verify_grover",
-        "verify_hhl",
-        "verify_jordan_bond",
-        "verify_n_representability",
-        "verify_period",
-        "verify_phase_kickback",
-        "verify_presented_pair",
-        "verify_qaoa_energy",
-        "verify_qft_phases",
-        "verify_qpe_phase",
-        "verify_quantum_counting",
-        "verify_quantum_walk",
-        "verify_shor_witness",
-        "verify_simon",
-        "verify_superdense",
-        "verify_teleport",
-        "verify_topological_word",
-        "verify_vqe_energy",
-        "weather.convective_containment"
-      ]
+  "authentication": {
+    "required": false,
+    "type": "none"
+  },
+  "catalog": {
+    "domain_count": 50,
+    "measured": "2026-11-11T11:56:36Z"
+  },
+  "measured": {
+    "timestamp": "2026-11-11T11:56:36Z",
+    "tools_count": 56,
+    "tools_sha256": "6a298d0dac191d59ee9bc47feee185eb537b9bcb1b6ec33b984cdd09d72762db",
+    "protocol_version": "2024-11-05",
+    "server_version": "2026.11.11"
+  },
+  "tools_count": 56,
+  "tools_sha256": "6a298d0dac191d59ee9bc47feee185eb537b9bcb1b6ec33b984cdd09d72762db",
+  "tools": [
+    {
+      "description": "ONE CALL, ONE STATE, EVERY LANGUAGE A PROJECTION: pass target_langs (or [\"*\"]) to seal the texts' state once and receive one projection per language, each a stateless map of that same state; target_lang alone returns one. Instant meaning translator on the substrate's own ψ chart — no model anywhere, no float anywhere. The chart is COUNTED, in exact integers, from text people wrote: the UN Universal Declaration of Human Rights in every served language, the site's sealed templates, and Tatoeba sentence pairs (CC BY 2.0 FR, each sentence's author recorded in the corpus's .PROVENANCE). ONE basis for every language: the axes are the 512 most frequent English words, and a word's row in any language is how often it co-occurs with each axis word in the ENGLISH sentence of the same meaning (its parallel pair), so agua, eau, Wasser, вода and 水 land in one region because they mean one thing. Thai is segmented against a human-compiled word list (ICU); a Han ideograph is one word. A word crosses only when its round trip closes over the exact 256-bit order; a word that does not is CARRIED verbatim in the source language and named — never replaced by a nearest-row guess. The receipt names its lattice: lattice.source is human-text (with digest, axes, rows, dimension, network=none, languages) or model (digest, model, revision, tensor) — read it, do not assume which chart a cell is on — and engine ends in /human-text when the human chart answered. A sealed sentence (a projection sealed by a named author into the append-only language ledger; GET /language-invariant/translate/templates lists them) is taken before the chart. NUMBERS FOLLOW THE SOURCE: a sealed sentence answers every numeric variant of its text; where it writes {n} the text's numbers go in, in order; where it writes numbers literally, each number the text changes is replaced where the sealed wording carries it as digits; when the sealed wording cannot carry the text's number (spelled out, another script's digits, a different count) the sealed sentence is NOT used and numbers[i] names why — the court prints no number the text does not say. status, single target (target_lang): RENDERED (every word crossed), PARTIAL (some texts carry words, or some texts are null and named in missing), REFUSED_NO_PROJECTION (nothing crossed), REFUSED_NO_CHART (no chart and no sealed sentence for the pair; names the chart languages and the pairs served), REFUSED_NO_SOURCE ('auto' or empty source_lang), REFUSED_NO_TARGET (neither key sent, or the one key sent names no language: an empty string or an empty array, named in detail), REFUSED_AMBIGUOUS_TARGET (both KEYS sent, whatever their values — a string, null, an array of anything; refused at the top naming each value exactly as sent, nothing projected — the court does not choose), REFUSED_BAD_TARGET (the one key sent is not its declared type — target_lang not a string, target_langs not an array of strings, including an array with one non-string element; names the value as sent, nothing dropped or coerced), REFUSED_EMPTY, REFUSED_BATCH_TOO_LARGE (more than 64 texts or 64 KiB; checked before anything is sealed, on both forms, and on the one-call form refused at the top with no projections). status, one call (target_langs): PROJECTED — shape {state:{status,digest,steps,torsion,turns,dimension}, projections:{<lang>:<a single-target receipt carrying state_digest>}, targets, rendered, partial, refused, templates, lattice}; every projection is one of RENDERED / PARTIAL / a REFUSED_* by name, and rendered+partial+refused == targets.length; REFUSED_NO_PROJECTION when no language rendered or partially rendered. Every single-target receipt also carries, aligned with texts: provenance[i] — when a sealed sentence answered, {key, entry_digest, row_digest (the ledger row that sealed it), ledger_row (the route that returns that row), sealed_by, sealed_at, status: sealed|verified, verified, verified_by, verified_at, verifications, supersedes (the entry_digest of the sealed sentence it replaced), template_digest (sha256 of the pair's ledger projection), source: ledger|file, numbers}; null when the chart answered or nothing did. words[i] — [{src, dst|null, crossed, reason: closed|shared|shear|margin|oov|particle, runner_up, best_dot, best_n, second_dot, second_n}], the exact integers the separability law compared, so the verdict is recomputable at any margin; empty when a sealed sentence answered. reading[i] — one English sentence a person can read without the source, e.g. \"4 of 9 words crossed; water, nine, the stayed in English — the chart could not tell water from esponja\". numbers[i] — when a sealed sentence matched, {mode: none|same|slots|digits|refused, sealed, source, substituted, refused?}; null otherwise; verdicts[i] is REFUSED_TEMPLATE_NUMBERS when a sealed sentence was refused on its numbers and no chart could read the text. The older verdicts strings stay for compatibility. Every receipt carries templates {pairs, entries, verified, superseded} — the sealed store's four integers, the same healthz serves in translate_chart.templates — and lattice.templates beside the chart digest when the chart answered. exact is a JSON boolean. source_lang is required — the court does not infer a source. Exactly one of target_lang or target_langs, judged on the KEYS sent: both keys is REFUSED_AMBIGUOUS_TARGET whatever the values, neither is REFUSED_NO_TARGET, the wrong type is REFUSED_BAD_TARGET. Batch: texts (array, up to 64 texts, 64 KiB total) returns texts in order, one line each; text renders one.",
+      "inputSchema": {
+        "properties": {
+          "source_lang": {
+            "description": "ISO 639-1 source language; required, 'auto' refused. e.g. en",
+            "type": "string"
+          },
+          "target_lang": {
+            "description": "exactly one of target_lang or target_langs (both keys sent, whatever their values, is REFUSED_AMBIGUOUS_TARGET; sent as anything but a string is REFUSED_BAD_TARGET; sent empty is REFUSED_NO_TARGET). ISO 639-1 target language for a single projection. Declared: ar bn de en es fa fr he hi id it ja ko ms nl pl pt ru sw th tr uk ur vi zh. The pairs a cell can actually answer are what its warmed chart reports (healthz translate_chart.languages, the receipt's lattice.languages); a pair outside them is REFUSED_NO_CHART naming the languages served. e.g. es",
+            "type": "string"
+          },
+          "target_langs": {
+            "description": "exactly one of target_lang or target_langs (both keys sent, whatever their values, is REFUSED_AMBIGUOUS_TARGET; sent as anything but an array of strings is REFUSED_BAD_TARGET; sent empty is REFUSED_NO_TARGET). ONE CALL, ONE STATE: an array of ISO 639-1 codes, or [\"*\"] for every language the chart serves; the texts' state is sealed once and returned as one projection per language under `projections`, each carrying the same `state_digest`; status PROJECTED. e.g. [\"es\",\"fr\"]",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "text": {
+            "description": "one source text to render. e.g. Book",
+            "type": "string"
+          },
+          "texts": {
+            "description": "up to 64 source texts; rendered in order, one line each. e.g. [\"Book\",\"Water\"]",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "source_lang"
+        ],
+        "type": "object"
+      },
+      "name": "affine_translate_text"
+    },
+    {
+      "description": "Exact 4D separation over declared trajectories in integer-scaled geodetic coordinates: decide whether any two are ever SIMULTANEOUSLY inside the stated separation minima, and return either a separation certificate or the violating pair with the exact interval and magnitude of the incursion. Integer micro-degrees, feet and seconds with rational time parameters; no floating point and no epsilon, so separation exactly equal to the minima is separated and nine cells return the same verdict from the same bytes. The longitude frame is the caller's to state exactly, as an optional rational scale with its reference latitude, so the cos(latitude) approximation is chosen deliberately and on the record rather than done in floating point outside the boundary. Civil FAA/ICAO framing; a traffic-analysis instrument, never a control tool.",
+      "inputSchema": {
+        "properties": {
+          "horizontal_minima_micro_deg": {
+            "description": "REQUIRED decimal string, no default -- a defaulted separation standard is a verdict about a rule the caller never stated. e.g. 5000",
+            "type": "string"
+          },
+          "lon_scale_den": {
+            "description": "OPTIONAL, denominator of the longitude scale as decimal string. RECOMMENDED: six digits or fewer. Cosine to 1e-6 is far below any error that could change a verdict about aircraft, and a six-digit denominator clears every segment-pair time base up to 8589 seconds; a three-digit one clears any time base at all. The hard ceiling is 1000000000, but the binding limit is per-request: 8589934592 divided by the segment pair time base, which is the least common multiple of the two segment durations. Above it the pair returns NOT_MEASURED_SCALED_TIME_BASE_EXCEEDS_EXACT_RANGE naming the exact denominator ceiling that clears at that time base, so the remedy is read off the refusal rather than found by bisection. Reduce the ratio to lowest terms or round it to fewer digits. e.g. 1000000",
+            "type": "string"
+          },
+          "lon_scale_num": {
+            "description": "OPTIONAL exact rational longitude scale, numerator as decimal string. Stands for cos(latitude), which is not rational -- so the caller states the approximation it chose and everything after that choice is exact. The test becomes (dlat*den)^2 + (dlon*num)^2 < (minima*den)^2, entirely in integers; latitude is never scaled. Must satisfy 1 <= num <= den. e.g. 642788",
+            "type": "string"
+          },
+          "look_ahead_seconds": {
+            "description": "optional horizon clipped forward from the earliest declared time, decimal string. e.g. 600",
+            "type": "string"
+          },
+          "obs_seq": {
+            "description": "decimal string; a sealed AirspaceObservationSeal sequence is ONE INSTANT of sky and carries no time base, so supplying it alone returns NOT_MEASURED_OBSERVATION_SET_HAS_NO_TIME_BASE rather than a fabricated verdict. e.g. 1",
+            "type": "string"
+          },
+          "reference_lat_micro_deg": {
+            "description": "OPTIONAL decimal string, the latitude the scale was computed for. REQUIRED whenever a scale is declared: all three fields travel together and a partial declaration is refused with REFUSED_INCOMPLETE_LONGITUDE_SCALE rather than silently ignored. WHEN ALL THREE ARE ABSENT the predicate decides in the plain declared micro-degree coordinate plane with no correction, reports longitude_scale NOT_DECLARED on the certificate, and says so -- a coordinate statement is never presented as a ground distance. e.g. 50000000",
+            "type": "string"
+          },
+          "trajectories": {
+            "description": "declared 4D paths: id plus waypoints as decimal strings, strictly advancing in time. e.g. [{\"id\":\"AAA\",\"waypoints\":[{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"-100000\",\"alt_feet\":\"30000\",\"t_seconds\":\"0\"},{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"100000\",\"alt_feet\":\"30000\",\"t_seconds\":\"600\"}]}]",
+            "items": {
+              "properties": {
+                "id": {
+                  "description": "the aircraft or path id, e.g. AAA",
+                  "type": "string"
+                },
+                "waypoints": {
+                  "description": "two or more waypoints strictly advancing in t_seconds, e.g. [{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"-100000\",\"alt_feet\":\"30000\",\"t_seconds\":\"0\"},{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"100000\",\"alt_feet\":\"30000\",\"t_seconds\":\"600\"}]",
+                  "items": {
+                    "properties": {
+                      "alt_feet": {
+                        "description": "decimal string, altitude in feet, e.g. 30000",
+                        "type": "string"
+                      },
+                      "lat_micro_deg": {
+                        "description": "decimal string, latitude in micro-degrees, e.g. 0",
+                        "type": "string"
+                      },
+                      "lon_micro_deg": {
+                        "description": "decimal string, longitude in micro-degrees, e.g. -100000",
+                        "type": "string"
+                      },
+                      "t_seconds": {
+                        "description": "decimal string, time in whole seconds, e.g. 600",
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "vertical_minima_feet": {
+            "description": "REQUIRED decimal string, no default. e.g. 1000",
+            "type": "string"
+          }
+        },
+        "required": [
+          "trajectories",
+          "horizontal_minima_micro_deg",
+          "vertical_minima_feet"
+        ],
+        "type": "object"
+      },
+      "name": "atc.assert_4d_deconfliction"
+    },
+    {
+      "description": "QC-022 fused bond - the pipeline in ONE call: open key in, bond, verified pair, signature requirements. Post q_hex (the open key, uncompressed 04-prefixed pubkey hex; Q is accepted as the same face) and optionally A (the presented private face, 64-hex or decimal; k is the same face). q_hex ALONE answers UNPRESENTED_PAIR - no scalar on the wire; x(Q) is reported as ground because it is real and derivable, and it is PUBLIC, never a face. With A presented the court projects ground = A*G (scalar multiplication, total, no search - the same law project_affine_key runs) and grades the pair by the verify_presented_pair law: pair_verdict is WIN iff A*G == Q exactly, and A == x(Q) is the FALSE FACE, halting at APART_x_of_Q_is_public_not_a_face. sig_ready is true iff pair_verdict is WIN; pack_lock is ground on a WIN and absent otherwise. Malformed input answers in the court's REFUSED family. Floats refused. Deterministic. Does not ECDLP.",
+      "inputSchema": {
+        "anyOf": [
+          {
+            "required": [
+              "A"
+            ]
+          },
+          {
+            "required": [
+              "Q"
+            ]
+          },
+          {
+            "required": [
+              "k"
+            ]
+          },
+          {
+            "required": [
+              "q_hex"
+            ]
+          }
+        ],
+        "properties": {
+          "A": {
+            "description": "presented private face, 64-hex or decimal. e.g. 1",
+            "type": "string"
+          },
+          "k": {
+            "description": "same face as A, old label. e.g. 1",
+            "type": "string"
+          },
+          "Q": {
+            "description": "same face as q_hex, old label. e.g. 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+            "type": "string"
+          },
+          "q_hex": {
+            "description": "open key, uncompressed 04-prefixed pubkey hex (required). e.g. 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "bond_presented_key"
+    },
+    {
+      "description": "The Code Court's first move: are two implementations equivalent by the exact value multiset of their LLVM IR constants? THE PAYLOAD IS TEXTUAL LLVM IR, NOT SOURCE: submit two .ll files (left_file and right_file, each {path, content}, or files as an array of two) produced by clang -S -emit-llvm, swiftc -emit-ir or rustc --emit=llvm-ir. What is graded: the constant pool of each side - every exact scalar operand (integers, and doubles lifted exactly at 64 bits), including vector constants, phi incoming values and operands behind attributes - digested as a multiset and compared. WIN when the two multisets are identical (constant-pool digests equal); CODE_IR_DIVERGED naming the first value one side has and the other does not (e.g. 'left has 7/1x1 not matched on right'); NOT_KNOWN when nothing mineable was found; a REFUSED_* refusal when a side is not IR (no define, declare, target or %name = / @name = line). Two-line .ll example from the MCP guide - left: 'define i32 @f(i32 %x) { %r = mul i32 %x, 3  ret i32 %r }' (one line per instruction) and right the same with 'mul i32 %x, 4' -> CODE_IR_DIVERGED; identical constants -> WIN. Stateless and content-addressed - the same two files rule identically on every cell. Compares the constant pool (a necessary, strong condition for numeric kernels), not full behavioural equivalence.",
+      "inputSchema": {
+        "properties": {
+          "files": {
+            "description": "Exactly two whole files when left_file/right_file are not used. The payload IS the files. e.g. [{\"path\":\"left.ll\",\"content\":\"define i32 @f() { ret i32 143 }\"},{\"path\":\"right.ll\",\"content\":\"define i32 @f() { ret i32 143 }\"}]",
+            "items": {
+              "properties": {
+                "content": {
+                  "description": "entire file body, not a fragment, e.g. define i32 @f() { ret i32 143 }",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "file path including extension, e.g. left.ll",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path",
+                "content"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "left_file": {
+            "description": "Whole source file of the first implementation. The payload IS the file. e.g. {\"path\":\"left.ll\",\"content\":\"define i32 @f() { ret i32 143 }\"}",
+            "properties": {
+              "content": {
+                "description": "entire file body, not a fragment. e.g. define i32 @f() { ret i32 143 }",
+                "type": "string"
+              },
+              "path": {
+                "description": "file path including extension. e.g. left.ll",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "content"
+            ],
+            "type": "object"
+          },
+          "left_ir": {
+            "description": "LEGACY fragment of the first implementation. Still accepted and lifted into a whole file with a defaulted path; prefer left_file. e.g. define i32 @f() { ret i32 143 }",
+            "type": "string"
+          },
+          "right_file": {
+            "description": "Whole source file of the second implementation. The payload IS the file. e.g. {\"path\":\"right.ll\",\"content\":\"define i32 @f() { ret i32 143 }\"}",
+            "properties": {
+              "content": {
+                "description": "entire file body, not a fragment. e.g. define i32 @f() { ret i32 143 }",
+                "type": "string"
+              },
+              "path": {
+                "description": "file path including extension. e.g. right.ll",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "content"
+            ],
+            "type": "object"
+          },
+          "right_ir": {
+            "description": "LEGACY fragment of the second implementation. Still accepted and lifted into a whole file with a defaulted path; prefer right_file. e.g. define i32 @f() { ret i32 143 }",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "name": "code_ir_equiv"
+    },
+    {
+      "description": "Sealed bonds from the Affine.Earth corpus (GAIA_SPATIAL_BOND_WIRES). mined_from is LLM_WEIGHTS or LLVM_IR. Stateless: pin at_seq to make the read reproducible across cells, or omit it to read the moving head.",
+      "inputSchema": {
+        "properties": {
+          "at_seq": {
+            "description": "decimal string, caller-pinned stream position; same value = same bytes. e.g. 1",
+            "type": "string"
+          },
+          "limit": {
+            "description": "decimal string, rows up to 8192; JSON numbers still admitted. e.g. 64",
+            "type": "string"
+          },
+          "sector": {
+            "description": "hex sector prefix: the four hex digits of the top 16 bits of a bond's Morton key, e.g. 0a3f",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "corpus_bonds"
+    },
+    {
+      "description": "Census of what the corpus has captured over a bounded window of sealed bonds: per lane (LLM_WEIGHTS, LLVM_IR, LLVM_IR_I64, AUDIO_SPEECH) the bond count and exact-orbit-closure count, plus distinct spatial sectors. Stateless: pin at_seq for a byte-stable census on every cell, or omit it to read the moving head.",
+      "inputSchema": {
+        "properties": {
+          "at_seq": {
+            "description": "decimal string, caller-pinned stream position; same value = same bytes. e.g. 1",
+            "type": "string"
+          },
+          "limit": {
+            "description": "decimal string, window size up to 8192. e.g. 256",
+            "type": "string"
+          },
+          "source": {
+            "description": "optional lane filter: LLM_WEIGHTS, LLVM_IR, LLVM_IR_I64, AUDIO_SPEECH. e.g. LLVM_IR",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "corpus_capability_map"
+    },
+    {
+      "description": "Fleet-wide mining coverage from the KV cursor bucket: per target and per cell, how many shard cursors stand, a bounded decoded sample (bonds acked, shards exhausted), and the bond stream's own standing message count. Roster-free — cells are discovered from the subjects they wrote, never from a table. Follows the moving head; not pinnable, and says so.",
+      "inputSchema": {
+        "properties": {
+          "cursor_sample": {
+            "description": "decimal string, cursors to decode, up to 1024; the bound is stated in the reply. e.g. 256",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "corpus_coverage"
+    },
+    {
+      "description": "Grade a rendered frame and return integer corrections. THE CRITIC IS DETERMINISTIC, NOT A MODEL: nine cells must reach the same verdict or the fleet's byte-identity is gone, and a cell reports generative:0 because it hosts no model. Scores 0-1000 and returns span/pitch deltas as integers; for kind franklin, grades clear corners (A=0), rest seal 022b8b8b8f910b25, speak seal 093f742b138571b8, density splats 262144 and zero rotor/sync residual.",
+      "inputSchema": {
+        "properties": {
+          "h": {
+            "description": "decimal string. e.g. 128",
+            "type": "string"
+          },
+          "kind": {
+            "description": "the language-game context kind: atc, proteins, materials or franklin, e.g. franklin",
+            "type": "string"
+          },
+          "n": {
+            "description": "decimal string. e.g. 16",
+            "type": "string"
+          },
+          "seed": {
+            "description": "decimal string; JSON numbers still admitted. e.g. 7",
+            "type": "string"
+          },
+          "span_scale_q16": {
+            "description": "decimal string, framing to grade; 65536 = unity. e.g. 65536",
+            "type": "string"
+          },
+          "t": {
+            "description": "decimal string. e.g. 0",
+            "type": "string"
+          },
+          "w": {
+            "description": "decimal string. e.g. 128",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "critique_frame"
+    },
+    {
+      "description": "QMA 2-local Hamiltonian, sealed as exact rational Jordan exclusions on the UUM-8D torus: given ZZ terms and a presented computational configuration, return the exact energy energy_num/energy_den of that configuration (z = 1-2s per site; each term adds jnum/jden * z_i * z_j). constraints are i,j,jnum,jden;... (sites i,j with coupling jnum/jden), config is s0,s1,... bits. The verdict is graded against the one energy QMACourtLaw holds a seal for: -1/1, constraints 0,1,1,1 with config 0,1 (fixture2LocalEnergyNum/Den). WIN means the posted configuration reaches that energy with no aligned term; MISS means an evaluated configuration that does not, with detail exclusion when a term is aligned (z_i * z_j > 0) or energy=num/den otherwise; a REFUSED_* verdict names an instance or configuration the law does not grade. The presented configuration is evaluated exactly; no ground state is searched. Same law as math_court domain qma_2local and verify_vqe_energy. Floats refused (REFUSED_FLOAT); a field posted as a JSON value that is not a string is REFUSED_NOT_A_STRING.",
+      "inputSchema": {
+        "properties": {
+          "config": {
+            "description": "computational bits s0,s1,... each 0 or 1, one per site, e.g. 0,1",
+            "type": "string"
+          },
+          "constraints": {
+            "description": "ZZ terms i,j,jnum,jden;... e.g. 0,1,1,1 (sites 0 and 1, coupling 1/1)",
+            "type": "string"
+          },
+          "jordanBondExclusions": {
+            "description": "alias of constraints. e.g. 0,1,1,1",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "execute_2local_hamiltonian"
+    },
+    {
+      "description": "Ingest an ARTIFACT INGESTION BRIEF plus the artifact an agent generated for it; evaluate it against the laws the brief declares; seal and return the artifact ONLY on the top rung. THE BRIEF TEMPLATE is https://affine.earth/language-game/court-client.brief.txt: four bracketed sections, [LANGUAGE GAME DEFINITION] with Purpose, Win Condition (Exit) and Losing Moves; [STRUCTURAL GOAL] with Manifold Target, Input Coordinates and Execution Lock; [PAYLOAD SHAPE] with Target Architecture, File Structure and Memory Binding; [WASM MEMBRANE INTEGRATION] with Target Standalone WASM, NATS JetStream Subject and Integration Protocol - a missing field is REFUSED_MISSING_FIELD naming it. Headless by construction - a CI runner, a curl script, an autonomous agent and an editor all post the identical tools/call. The brief is the single home for the target architecture; a target_architecture argument that contradicts it is REFUSED_ARCHITECTURE_CONFLICT - the court compares the two strings verbatim, so with the served template send exactly 'Rust no_std wasm32' or omit the field ('wasm32' alone is refused). Verdicts are a ladder of rungs 0-7, not a coin: 7 CALORIE_AFFINE_ARTIFACT_DELIVERED, 6 ARTIFACT_ASSEMBLED_NOT_DELIVERED, 5 ARTIFACT_WIN_UNVERIFIABLE, 4 ARTIFACT_PROTOCOL_CONTRADICTED, 3 ARTIFACT_TARGET_ABSENT, 2 ARTIFACT_LAW_BROKEN, 1 NOT_KNOWN, 0 REFUSED_NO_BRIEF, with qmt_verdict WIN only at rung 7 and MISS below it. THE CEILING: a cell with no toolchain still judges - it reads the brief, enforces Affine law and checks the WASM target and protocol - but caps SOURCE at rung 6 ARTIFACT_ASSEMBLED_NOT_DELIVERED with qmt_verdict MISS, because certifying DELIVERED would claim a build that never happened; REFUSED_NO_CRUCIBLE_HOST is NOT reachable through this tool: its arguments are brief, artifact and target_architecture, and none of them asks for a build - measured 2026-09-29, a brief whose Target Architecture line reads 'Swift 6.4 ~Copyable' (the toolchain no cell has) answers with a rung and qmt_verdict, not that status. To reach rung 7 on any cell, post a COMPILED module: the artifact field as base64 of the wasm bytes (magic 00 61 73 6d 01 00 00 00) with the brief verbatim; the court verifies the magic, version word and section table, seals the bytes and returns them as an MCP resource blob with their sha256 (law_checked=false for a posted module; submit the source in a second call to have Constraints 3/4/5 decided over it).",
+      "inputSchema": {
+        "properties": {
+          "artifact": {
+            "description": "The source the agent generated to satisfy the brief. Generation is the caller's half; the crucible compiles, evaluates and seals. e.g. the source text of one file, or the base64 of a compiled wasm module such as AGFzbQEAAAABBQFgAAF/ (which reaches rung 7)",
+            "type": "string"
+          },
+          "brief": {
+            "description": "The complete ARTIFACT INGESTION BRIEF: four sections ([LANGUAGE GAME DEFINITION], [STRUCTURAL GOAL], [PAYLOAD SHAPE], [WASM MEMBRANE INTEGRATION]) with every field filled. The blank template is refused as REFUSED_UNFILLED_PLACEHOLDER. e.g. the served template https://affine.earth/language-game/court-client.brief.txt with every field filled",
+            "type": "string"
+          },
+          "target_architecture": {
+            "description": "OPTIONAL and redundant: the brief's [PAYLOAD SHAPE] is the single home for this value. Supplied only for callers using the original schema; a value that contradicts the brief is REFUSED_ARCHITECTURE_CONFLICT rather than silently overriding it. e.g. Rust no_std wasm32 - the enum member that equals the served template's 'Target Architecture:' line verbatim; 'wasm32' alone is REFUSED_ARCHITECTURE_CONFLICT. Omit the field to let the brief carry it",
+            "enum": [
+              "Swift 6.4 ~Copyable",
+              "AArch64 SIMD Assembler",
+              "ESP32 Xtensa Bare-Metal",
+              "Rust no_std wasm32"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "brief",
+          "artifact"
+        ],
+        "type": "object"
+      },
+      "name": "execute_artifact_crucible"
+    },
+    {
+      "description": "#P exact integer permanent, n≤3, computed by the direct expansion and checked against Ryser's formula. matrix is a decimal-string grid, rows split by | and cells by commas. Returns energy_num = the permanent, energy_den = 1; verdict is WIN when it equals 6 - QMACourtLaw.fixturePermanent, the all-ones 3x3 matrix - and MISS for every other permanent, with detail per=P_want_6; if the two expansions disagree the answer is MISS naming both. n>3 is REFUSED_INSTANCE_BOUND. Floats refused (REFUSED_FLOAT); a field posted as a JSON value that is not a string is REFUSED_NOT_A_STRING. Same law as math_court domain qma_permanent.",
+      "inputSchema": {
+        "properties": {
+          "matrix": {
+            "description": "rows | cells , integer entries. e.g. 1,1,1|1,1,1|1,1,1",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "execute_exact_permanent"
+    },
+    {
+      "description": "Certified membrane: Rational S4/C4 lanes -> SCF boundary -> annihilate raw context -> NATS geometry-only turn -> Aristotelian projection. IDEMPOTENT: this membrane is stateless and keeps no record of a signature, so replaying an identical request is admitted and returns the identical receipt_hash rather than being refused as a replay. Safe to retry on a timeout; it is not a second transition.",
+      "inputSchema": {
+        "properties": {
+          "bond_status": {
+            "description": "the bond state the caller reports for itself, recorded with the turn; e.g. BONDED. Omitted -> UNKNOWN",
+            "type": "string"
+          },
+          "c4_constraints": {
+            "description": "Rational lanes as num/den strings. e.g. [\"1/1\",\"0/1\",\"2/3\",\"1/4\"]",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "client_signature": {
+            "description": "sha256(INTENT|scf_hex|user_vqbit_hash|genesis_epoch) first 16 bytes as 32 lowercase hex; or the game seal sha256(INTENT|scf_hex|user_vqbit_hash); or an ML-DSA-87 IDENTITY_BIND package. scf_hex is NOT an input and is NOT a sha256: the cell derives it with SpatialChordalFingerprint (15 integer lattice ratios folded FNV-1a-128) over the NORMALISED lanes. Mirror that algorithm to sign on the first call - /language-game/scf.js is the reference port - or send any 32-hex signature once and re-sign over the scf_hex the refusal returns. genesis_epoch is 2026-01-27T00:00:00Z. e.g. 0123456789abcdef0123456789abcdef",
+            "type": "string"
+          },
+          "economics": {
+            "description": "Optional I_PF economics object: executor hash + impact matrix (Rational weights), keys executor_btc_address_hash and context_class, e.g. {\"executor_btc_address_hash\":\"0123456789abcdef0123456789abcdef\",\"context_class\":\"default\"}",
+            "type": "object"
+          },
+          "entity_id": {
+            "description": "wallet_geo entityID hex. e.g. 0123456789abcdef0123456789abcdef",
+            "type": "string"
+          },
+          "intent": {
+            "description": "the transition verb, one of the enum values, e.g. INGEST",
+            "type": "string"
+          },
+          "s4_coordinates": {
+            "description": "Rational lanes as num/den strings. e.g. [\"1/2\",\"3/4\",\"0/1\",\"5/1\"]",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "user_vqbit_hash": {
+            "description": "Exactly 32 lowercase hex, or OMIT it and the cell derives sha256(entity_id|scf_hex)[0:16]. A stated value that is not 32 hex is REFUSED rather than replaced - the cell will not verify your signature against an identity you did not state. e.g. 0123456789abcdef0123456789abcdef",
+            "type": "string"
+          }
+        },
+        "required": [
+          "entity_id",
+          "intent",
+          "client_signature"
+        ],
+        "type": "object"
+      },
+      "name": "execute_transition"
+    },
+    {
+      "description": "Generic court ingest. kind selects the law. The act is strobe → emit → seal. affine_key strobes the Affine period from Q alone (UUM-8D reconvergence + add-law turn; no k), emits Jordan/vQbit, seals, and returns patoshi_expose + shors_qmt_witness + topological_shear. period_r carries an ECDLP scalar or is empty, never a shear label. Verdict is jordan_proven. qc_* / qma_* strobe the instance and seal energy. Empty kind returns the catalog. Named verify_* tools replay a sealed emit. Study domains forward to math_court. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "A": {
+            "description": "first lattice for kind=jordan or lattice: x0,x1,x2,x3,x4,x5,x6,x7|z as decimal strings, e.g. 1,2,3,4,5,6,7,8|0",
+            "type": "string"
+          },
+          "B": {
+            "description": "second lattice, same shape as A, e.g. 1,1,1,1,1,1,1,1|0",
+            "type": "string"
+          },
+          "K": {
+            "description": "the lock (kernel) lattice for a Jordan shear, same shape as A. e.g. 3,-2,5,1,7,1,4,2|1",
+            "type": "string"
+          },
+          "kind": {
+            "description": "affine_key|jordan|lattice|qc_*|qma_*|math_court domain. e.g. qc_shor",
+            "type": "string"
+          },
+          "object": {
+            "description": "puzzle object; Affine key hex for affine_key. e.g. 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+            "type": "string"
+          },
+          "op": {
+            "description": "lattice operation for kind=lattice, e.g. add; lattice_op with an empty op lists them",
+            "type": "string"
+          },
+          "q_hex": {
+            "description": "alias of object for affine_key. e.g. 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+            "type": "string"
+          },
+          "source": {
+            "description": "attribution for a math_court domain kind (who or what posted it), e.g. steward; absence is refused there",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "expose"
+    },
+    {
+      "description": "Every feed a client can drive a game from - corpus lanes by mined_from, the live global feeds, and the transport each is reachable on (REST, RSS, MCP, NATS subject). Stateless; takes no arguments.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "feeds_catalog"
+    },
+    {
+      "description": "Projection-bound Franklin guide turn (one call per turn). Runs the named court tool on args, maps its verdict to terminal CALORIE (pointing at next), CURE (pointing at the failing field) or REFUSED (pointing at the named input or null if no box), solves the exact Pythagorean half-angle pointing rotor via the chi-steered Stern-Brocot continued-fraction walk (t in [0, inf), <= 19 probes, residual == 0, landed == true inside the 1/8-inset box), computes Fitts movement flicks and anticipatory speech lead flicks, projects sealed captions (card|TERMINAL|field) with {n} integer slots across langs, and returns idempotent receipt_hash (SHA-256) and turn_seal (FNV-64). Stateless and byte-identical across all nine cells.",
+      "inputSchema": {
+        "properties": {
+          "args": {
+            "description": "the tool arguments as decimal strings, e.g. {\"tau_shear\":\"87187\"}",
+            "type": "object"
+          },
+          "card": {
+            "description": "the workflow card identifier, e.g. CARD_TAU_SHEAR",
+            "type": "string"
+          },
+          "langs": {
+            "description": "requested caption locales or [\"*\"] for all locales, e.g. [\"en\",\"es\",\"ar\"]",
+            "items": {
+              "description": "BCP-47 locale code, e.g. en",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "next": {
+            "description": "the control id to point at when the verdict is CALORIE, e.g. claim_post_seal",
+            "type": "string"
+          },
+          "shoulder": {
+            "description": "Franklin's shoulder pivot and rest fingertip in viewport integer pixels, e.g. {\"sx\":\"1265\",\"sy\":\"520\",\"rx\":\"1105\",\"ry\":\"620\"}",
+            "properties": {
+              "rx": {
+                "description": "rest fingertip X in viewport pixels, decimal string. e.g. 1105",
+                "type": "string"
+              },
+              "ry": {
+                "description": "rest fingertip Y in viewport pixels, decimal string. e.g. 620",
+                "type": "string"
+              },
+              "sx": {
+                "description": "shoulder X in viewport pixels, decimal string. e.g. 1265",
+                "type": "string"
+              },
+              "sy": {
+                "description": "shoulder Y in viewport pixels, decimal string. e.g. 520",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "targets": {
+            "description": "live viewport bounding boxes by control id, each {x,y,w,h} in integer pixels, e.g. {\"tau_shear\":{\"x\":\"412\",\"y\":\"268\",\"w\":\"184\",\"h\":\"38\"}}",
+            "type": "object"
+          },
+          "tool": {
+            "description": "the court tool to run on this turn, e.g. health_card11_tau_shear",
+            "type": "string"
+          }
+        },
+        "required": [
+          "card",
+          "tool"
+        ],
+        "type": "object"
+      },
+      "name": "franklin_turn"
+    },
+    {
+      "description": "Run a language-game context and return its state plus the cell's own self-evaluation of the rendered frame - integer score 0-1000 over occupancy, spread, contrast and edge quality, with the C4 span correction applied. Stateless: (kind, seed, t, n, at_seq) fully determine the result.",
+      "inputSchema": {
+        "properties": {
+          "at_seq": {
+            "description": "decimal string, pinned corpus epoch. e.g. 1",
+            "type": "string"
+          },
+          "h": {
+            "description": "decimal string. e.g. 128",
+            "type": "string"
+          },
+          "kind": {
+            "description": "the language-game context kind: atc, proteins, materials or franklin, e.g. proteins",
+            "type": "string"
+          },
+          "max_iter": {
+            "description": "decimal string, iteration cap, default 10. e.g. 10",
+            "type": "string"
+          },
+          "n": {
+            "description": "decimal string, population. e.g. 16",
+            "type": "string"
+          },
+          "seed": {
+            "description": "decimal string; JSON numbers still admitted. e.g. 7",
+            "type": "string"
+          },
+          "t": {
+            "description": "decimal string, step index. e.g. 0",
+            "type": "string"
+          },
+          "target": {
+            "description": "decimal string, refine until score >= this (0-1000, default 950). e.g. 950",
+            "type": "string"
+          },
+          "w": {
+            "description": "decimal string. e.g. 128",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "game_frame_meta"
+    },
+    {
+      "description": "Trigger a Mac mesh rebuild from the IDE. Only permitted on the founder cell.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "ide_rebuild_mesh"
+    },
+    {
+      "description": "Exact integer algebra on UUM-8D lattices - eight decimal lanes and a homology z, written x0,x1,x2,x3,x4,x5,x6,x7|z. op selects the law: verify (is A a well-formed lattice), shear (the J_Z shear of A against B through K), add, sub, mul (lane-wise), distance and locking_distance (integer lattice distances A to B), lane_mask (which lanes of A are non-zero), park (fold A by the 0-255 homology mask), permute_p1 and permute_p2 (the two Jordan permutations), is_zero. An empty op returns the list of ops. Every lane is a decimal integer string. Refusals are status REFUSED with the reason under proven: REFUSED_NO_PAIR when an operand is missing or has the wrong lane count, AFFINE_JZ_PARSE when a lane is not a decimal integer (a float lane lands here) - measured 2026-09-02. Same law as verify_jordan_bond, exposed one operation at a time so a caller can inspect intermediate values.",
+      "inputSchema": {
+        "properties": {
+          "A": {
+            "description": "first lattice: x0,x1,x2,x3,x4,x5,x6,x7|z, decimal strings, negatives allowed. e.g. 1,1,1,1,1,1,1,1|1",
+            "type": "string"
+          },
+          "B": {
+            "description": "second lattice for shear, add, sub, mul, distance, locking_distance; same shape as A. e.g. 1,1,1,1,1,1,1,1|1",
+            "type": "string"
+          },
+          "K": {
+            "description": "the distance (kernel) lattice for shear; same shape as A. e.g. 3,-2,5,1,7,1,4,2|1",
+            "type": "string"
+          },
+          "mask": {
+            "description": "park only: decimal 0-255 homology mask. e.g. 255",
+            "type": "string"
+          },
+          "op": {
+            "description": "the operation; empty lists the ops",
+            "enum": [
+              "verify",
+              "shear",
+              "add",
+              "sub",
+              "mul",
+              "distance",
+              "locking_distance",
+              "lane_mask",
+              "park",
+              "permute_p1",
+              "permute_p2",
+              "is_zero"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "lattice_op"
+    },
+    {
+      "description": "Affine.Earth math court: one tool, every court domain. domain+role+source run LatticeDomainIntegration (geometry Ehrhart, chance QPR, algebra Connes, physics table, health, finance, integer industry courts, QMA 2-local / spin-glass / N-rep / permanent, QC-001..019 presented-config verifiers, QC-021 presented (k,Q), affine_key Q-only expose, and the minecraft court). MINECRAFT: domain=minecraft with mc_op=project ingests one position (mc_x/y/z as the eight bytes the game sent, hex double bit patterns) onto the exact lattice at 2^32 units per block; mc_op=adjudicate rules on one of eight claims named by mc_claim - reaches, moved_within, stands_on, fits_through, fall_damage, knocked_toward, can_place, can_see - each reading the mc_* fields declared below; mc_op=sweep tests a projectile against a wall. domain affine_key returns patoshi_expose + shors_qmt_witness + topological_shear; period_r carries an ECDLP scalar or is empty, never a shear label; no k. An EMPTY domain returns the court catalog: domain_count is the number of courts and domains names each with its roles and may_ingest fields - take the count from the catalog, not from any text. Decimal strings on the wire. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "a": {
+            "description": "the base a of the period claim, coprime to N, e.g. 7. Read by qc_period/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "A": {
+            "description": "the presented private face as decimal or 64-hex, e.g. 1. Read by qc_affine_key/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "ab": {
+            "description": "the two measured Bell bits, e.g. 00. Read by qc_bell/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "alice": {
+            "description": "Alice's two measurement bits, e.g. 01. Read by qc_teleport/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "answers": {
+            "description": "the oracle's answer to each query, in query order (bits, ';'-separated like queries), e.g. 101. Read by qc_bv/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "arc_order_ppt": {
+            "description": "arc-order statistic in parts per thousand, e.g. 800. Read by eht/experimentalist, eht/theorist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "arm_counts": {
+            "description": "health/trialist,regulator and the health grader: per-arm assay counts as an array of decimal strings, e.g. [\"30\",\"30\"]",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "arrival_min": {
+            "description": "declared by fluids/operator in the catalog; carried with the ingest and not read by the fluids verdict today (measured 2026-09-29: fluids grades phi_in and phi_out), e.g. 42. Read by fluids/operator; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "b": {
+            "description": "the right-hand side of the linear system as num/den rationals, comma-separated, e.g. 3/1,5/1. Read by qc_hhl/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "bits": {
+            "description": "the two classical bits sent over one entangled qubit, e.g. 11. Read by qc_superdense/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "bob": {
+            "description": "Bob's two bits after the corrections, e.g. 01. Read by qc_teleport/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "cid": {
+            "description": "PubChem CID of the compound, e.g. 2244. Read by chemistry/chemist, chemistry/steward, complex/chemist, complex/researcher, complex/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "cited_id": {
+            "description": "the citation id the court matches against its authored fixture: meyer-2023-5d60 (gofirst), iso16-a440 (rife), z2-a2b-half-step (dynamo), e.g. iso16-a440. Read by dynamo/researcher, dynamo/steward, dynamo/theorist, gofirst/combinatorist, gofirst/steward, rife/researcher, rife/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "cited_url": {
+            "description": "the source URL of the citation, echoed with the verdict, e.g. https://en.wikipedia.org/wiki/A440_(pitch_standard). Read by dynamo/researcher, rife/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "class": {
+            "description": "the claimed class: constant or balanced for qc_dj, the Bell class bits for qc_bell, e.g. constant. Read by qc_bell/researcher, qc_dj/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "clock": {
+            "description": "the clock tick the table row is read at, e.g. 1. Declared by health/regulator, health/trialist and the three physics roles; no verdict reads it: the health verdict is computed from other fields, and the physics verdict is CONTRACT whatever integers are posted.",
+            "type": "string"
+          },
+          "closure_conc_ppt": {
+            "description": "closure-phase concentration in parts per thousand, e.g. 900. Read by eht/experimentalist, eht/theorist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "cod": {
+            "description": "Crystallography Open Database id, e.g. 1011097. Read by material/crystallographer, material/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "cofactor": {
+            "description": "the cofactor N/factor of the witness, e.g. 5. Read by qc_shor/researcher, qc_shor_twin/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "color_isolated": {
+            "description": "1 if a colour row is isolated (illegal), 0 otherwise, e.g. 0. Read by qcd/jet_analyst; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "config": {
+            "description": "computational bits s0,s1,... each 0 or 1, e.g. 0,1.",
+            "type": "string"
+          },
+          "confinement_ppm": {
+            "description": "ionospheric confinement in parts per million, e.g. 60000. Read by eclipse/gnss; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "constraints": {
+            "description": "ZZ terms as i,j,jnum,jden;... decimal strings, e.g. 0,1,1,1.",
+            "type": "string"
+          },
+          "convention": {
+            "description": "declared by biosphere/radiative in the catalog; carried with the ingest and not read by the biosphere verdict today (measured 2026-09-29: biosphere grades scenario), e.g. positive_downward. Read by biosphere/radiative; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "corrections": {
+            "description": "the Pauli corrections Bob applies, two bits, e.g. 00. Read by qc_teleport/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "count": {
+            "description": "the claimed number of marked entries (1s in the oracle), e.g. 1. Read by qc_count/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "d": {
+            "description": "the dynamo denominator of the half-step ratio, e.g. 2. Read by dynamo/researcher, dynamo/steward, dynamo/theorist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "deci_dobson": {
+            "description": "total column ozone in deci-Dobson units; declared by biosphere/ozone_column, not read by the verdict today (biosphere grades scenario), e.g. 3000. Read by biosphere/ozone_column; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "decoded": {
+            "description": "the two bits Bob decoded, e.g. 11. Read by qc_superdense/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "den": {
+            "description": "denominator of the first rational, > 0, e.g. 1. Read by cs/compiler; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "den2": {
+            "description": "denominator of the second rational, > 0, e.g. 3.",
+            "type": "string"
+          },
+          "depletion_ppm": {
+            "description": "electron-content depletion in parts per million, e.g. 300000. Read by eclipse/gnss, eclipse/ionosonde, eclipse/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "die_a": {
+            "description": "the 60 faces of die A as an array of decimal strings (the court reads an integer list; a comma string is refused), e.g. [\"1\",\"10\",\"19\",\"20\",\"21\",\"22\",\"39\",\"40\"].",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "die_b": {
+            "description": "die B faces, array of decimal strings, e.g. [\"2\",\"9\",\"18\",\"23\",\"24\",\"25\",\"38\",\"43\"].",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "die_c": {
+            "description": "die C faces, array of decimal strings, e.g. [\"3\",\"8\",\"17\",\"26\",\"27\",\"28\",\"37\",\"44\"].",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "die_d": {
+            "description": "die D faces, array of decimal strings, e.g. [\"4\",\"7\",\"16\",\"29\",\"30\",\"31\",\"36\",\"45\"].",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "die_e": {
+            "description": "die E faces, array of decimal strings, e.g. [\"5\",\"6\",\"15\",\"32\",\"33\",\"34\",\"35\",\"46\"].",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "dilation": {
+            "description": "the Ehrhart dilation factor t of the polytope, e.g. 12. Read by geometry/cad_engineer, geometry/digital_twin, geometry/regulator; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "dilation_t": {
+            "description": "the QCD dilation parameter t (small t is freedom), e.g. 1. Read by qcd/phenomenologist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "doid": {
+            "description": "Disease Ontology id, e.g. DOID:9352. Read by disease/clinician, disease/registrar, disease/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "domain": {
+            "description": "the court to sit, named in the catalog: geometry, chance, algebra, physics, qcd, health, finance, cs, fluids, eclipse, eht, seismic, disease, chemistry, material, pdb, gofirst, complex, rife, dynamo, biosphere, minecraft, qma_*, qc_*, affine_key and the others the catalog lists. Send an empty domain to receive the catalog itself - its domain_count is the count, its domains array names every court with every role and its may_ingest fields; read the count from there, never from this text. e.g. minecraft",
+            "type": "string"
+          },
+          "dry_mass_g": {
+            "description": "reentry dry mass in grams; declared by biosphere/mass_ledger, not read by the verdict today (biosphere grades scenario), e.g. 461213000. Read by biosphere/mass_ledger; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "edges": {
+            "description": "couplings as i,j,J;... integers, e.g. 0,1,1;1,2,1;2,0,1.",
+            "type": "string"
+          },
+          "end": {
+            "description": "the claimed ending vertex, 0 or 1, e.g. 0. Read by qc_walk/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "face_counts": {
+            "description": "faces per die as an array of decimal strings; the cited Meyer 2023 5d60 tuple, e.g. [\"60\",\"60\",\"60\",\"60\",\"60\"].",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "factor": {
+            "description": "the non-trivial factor the witness names, e.g. 3. Read by qc_shor/researcher, qc_shor_twin/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "fraction": {
+            "description": "the claimed amplitude fraction M/N as num/den, e.g. 1/4. Read by qc_ampest/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "fx": {
+            "description": "the presented f(x), decimal or bit string, e.g. 0. Read by qc_simon/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "fy": {
+            "description": "the presented f(y); must equal fx, e.g. 0. Read by qc_simon/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "grade": {
+            "description": "declared by biosphere/coupling in the catalog; carried with the ingest and not read by the biosphere verdict today (biosphere grades scenario), e.g. MEASURED. Read by biosphere/coupling; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "halfPow": {
+            "description": "a^(r/2) mod N, the half power of the witness, e.g. 4. Read by qc_shor/researcher, qc_shor_twin/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "hba": {
+            "description": "hydrogen-bond acceptors, >= 0, e.g. 4. Read by chemistry/chemist, complex/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "hbd": {
+            "description": "hydrogen-bond donors, >= 0, e.g. 1. Read by chemistry/chemist, complex/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "hidden": {
+            "description": "the hidden bit string s the oracle computes s.x against, e.g. 101. Read by qc_bv/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "hz": {
+            "description": "the claimed frequency in whole hertz, > 0, e.g. 440. Read by rife/researcher, rife/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "icd": {
+            "description": "ICD-10 code, e.g. E11. Read by disease/clinician, disease/registrar, disease/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "inchikey": {
+            "description": "the InChIKey of the compound (27 characters, two hyphens), e.g. BSYNRYMUTXBXSQ-UHFFFAOYSA-N. Read by chemistry/chemist, chemistry/steward, complex/chemist, complex/researcher, complex/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "iterations": {
+            "description": "the presented Grover iterate count, e.g. 1. Read by qc_ampamp/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "jet_counts": {
+            "description": "jet multiplicity counts, comma-separated integers, e.g. 3,4,5. Read by qcd/jet_analyst; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "jordanBondExclusions": {
+            "description": "alias of constraints, e.g. 0,1,1,1. Read by qma_2local/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "k": {
+            "description": "the phase index k (qc_qft, qc_kickback, qc_qpe) or the private scalar of the pair (qc_pair, qc_affine_key), e.g. 1. Read by qc_affine_key/researcher, qc_kickback/researcher, qc_pair/researcher, qc_qft/researcher, qc_qpe/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "label_int": {
+            "description": "integer class label; declared by cs/ml_engineer, not read by the cs verdict today (cs grades num, den, num2, den2), e.g. 1. Read by cs/ml_engineer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "lag_s": {
+            "description": "lag in whole seconds, e.g. 600. Read by eclipse/gnss, eclipse/ionosonde; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "lipinski_violations": {
+            "description": "count of Lipinski rule violations, >= 0, e.g. 0. Read by chemistry/chemist, complex/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "long_median_ujy": {
+            "description": "long-baseline median flux in micro-jansky, e.g. 400000. Read by eht/detector, eht/experimentalist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "loss_ticks": {
+            "description": "loss in whole ticks; declared by finance/risk and finance/auditor, not read by the finance verdict today (finance grades lots and ticks), e.g. 5. Read by finance/auditor, finance/risk; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "lots": {
+            "description": "position size in whole lots, e.g. 3. Read by finance/auditor, finance/clearing, finance/trader; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "m": {
+            "description": "the register width m in qubits, e.g. 2. Read by qc_kickback/researcher, qc_qpe/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "M": {
+            "description": "the number of marked entries out of N, e.g. 1. Read by qc_ampest/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "marked": {
+            "description": "the 0-based INDEX of the unique marked entry, not a count, e.g. 3.",
+            "type": "string"
+          },
+          "mask": {
+            "description": "Simon's hidden mask as a bit string, e.g. 11. Read by qc_simon/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "mass_milli": {
+            "description": "dose mass in milligrams, e.g. 19000. Read by health/clinician, health/pharmacist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "matrix": {
+            "description": "qma_permanent / qc_hhl: rows separated by |, entries by comma, e.g. 1,1,1|1,1,1|1,1,1 (n <= 3 for the permanent)",
+            "type": "string"
+          },
+          "mc_att_x": {
+            "description": "knocked_toward: the attacker's X as a 16-digit hex IEEE-754 double bit pattern (see mc_x), e.g. 4000000000000000 for 2.0",
+            "type": "string"
+          },
+          "mc_att_y": {
+            "description": "knocked_toward: the attacker's Y as a hex double bit pattern, e.g. 4050000000000000 for 64.0.",
+            "type": "string"
+          },
+          "mc_att_z": {
+            "description": "knocked_toward: the attacker's Z as a hex double bit pattern, e.g. 4021000000000000 for 8.5.",
+            "type": "string"
+          },
+          "mc_block_x": {
+            "description": "block coordinate X of the block a claim is about (stands_on: the block underfoot; can_place: the target block; can_see: the blocking obstacle), integer as a decimal string, e.g. 0",
+            "type": "string"
+          },
+          "mc_block_y": {
+            "description": "block coordinate Y, see mc_block_x, e.g. 0",
+            "type": "string"
+          },
+          "mc_block_z": {
+            "description": "block coordinate Z, see mc_block_x, e.g. 0",
+            "type": "string"
+          },
+          "mc_budget": {
+            "description": "reach budget by name: 'survival' (4.5 blocks, exactly 19327352832 units) or 'creative' (6 blocks), e.g. survival.",
+            "type": "string"
+          },
+          "mc_budget_units": {
+            "description": "reach or movement budget in exact lattice units (2^32 per block), when not using mc_budget by name, e.g. 19327352832.",
+            "type": "string"
+          },
+          "mc_centre_x": {
+            "description": "block X at the centre of the enveloped context, e.g. 8.",
+            "type": "string"
+          },
+          "mc_centre_y": {
+            "description": "block Y at the centre of the enveloped context, e.g. 64.",
+            "type": "string"
+          },
+          "mc_centre_z": {
+            "description": "block Z at the centre of the enveloped context, e.g. 8.",
+            "type": "string"
+          },
+          "mc_claim": {
+            "description": "minecraft gameplay claim to adjudicate (mc_op=adjudicate), one of the eight verbs a player uses: reaches, moved_within, stands_on, fits_through, fall_damage, knocked_toward, can_place, can_see. e.g. stands_on. Each verb names its own fields in its refusal: reaches/moved_within read mc_x/y/z, mc_to_x/y/z and a budget; stands_on, can_place and can_see read mc_block_x/y/z; fits_through reads mc_gap_w/h/d_units; fall_damage reads mc_x/y/z, mc_to_x/y/z and mc_health_points; knocked_toward reads mc_att_x/y/z and mc_toward_x/y/z",
+            "type": "string"
+          },
+          "mc_gap_d_units": {
+            "description": "fits_through: depth of the gap in lattice units, e.g. 4294967296",
+            "type": "string"
+          },
+          "mc_gap_h_units": {
+            "description": "fits_through: height of the gap in lattice units, e.g. 8589934592 for two blocks",
+            "type": "string"
+          },
+          "mc_gap_w_units": {
+            "description": "fits_through: width of the gap in exact lattice units (2^32 = 4294967296 units per block), e.g. 4294967296 for one block",
+            "type": "string"
+          },
+          "mc_health_points": {
+            "description": "fall_damage: the player health before the fall in whole points, e.g. 20 (full); omitted -> full health",
+            "type": "string"
+          },
+          "mc_op": {
+            "description": "minecraft court operation: 'project' (ingest one position onto the exact lattice), 'adjudicate' (rule on a gameplay claim named by mc_claim) or 'sweep' (a projectile from mc_x/y/z to mc_to_x/y/z against the wall at mc_wall_x/y/z). Defaults to project. e.g. adjudicate",
+            "type": "string"
+          },
+          "mc_tick": {
+            "description": "the server tick this context describes, an integer the caller supplies: the law never reads a clock, so a run can be replayed, e.g. 20.",
+            "type": "string"
+          },
+          "mc_to_x": {
+            "description": "minecraft target X as a hex double bit pattern, for adjudicate and sweep, e.g. 4022000000000000 for 9.0.",
+            "type": "string"
+          },
+          "mc_to_y": {
+            "description": "minecraft target Y as a hex double bit pattern, for adjudicate and sweep, e.g. 4050000000000000 for 64.0.",
+            "type": "string"
+          },
+          "mc_to_z": {
+            "description": "minecraft target Z as a hex double bit pattern, for adjudicate and sweep, e.g. 4021000000000000 for 8.5.",
+            "type": "string"
+          },
+          "mc_toward_x": {
+            "description": "knocked_toward: X of the point of interest the knockback is judged against, hex double bit pattern, e.g. 4014000000000000 for 5.0",
+            "type": "string"
+          },
+          "mc_toward_y": {
+            "description": "knocked_toward: Y of the point of interest as a hex double bit pattern, e.g. 4050000000000000 for 64.0.",
+            "type": "string"
+          },
+          "mc_toward_z": {
+            "description": "knocked_toward: Z of the point of interest as a hex double bit pattern, e.g. 4021000000000000 for 8.5.",
+            "type": "string"
+          },
+          "mc_wall_thin_units": {
+            "description": "sweep: wall thickness in lattice units when thinner than one block, e.g. 1073741824 for a quarter block",
+            "type": "string"
+          },
+          "mc_wall_x": {
+            "description": "sweep: block X of the wall the projectile is tested against, integer as a decimal string, e.g. 3",
+            "type": "string"
+          },
+          "mc_wall_y": {
+            "description": "sweep: block Y of the wall (optional; the wall spans the flight otherwise), e.g. 0",
+            "type": "string"
+          },
+          "mc_wall_z": {
+            "description": "sweep: block Z of the wall (optional), e.g. 0",
+            "type": "string"
+          },
+          "mc_window_blocks": {
+            "description": "edge of the enveloped context in whole blocks; outside it the court declines to answer rather than clamping, e.g. 16.",
+            "type": "string"
+          },
+          "mc_x": {
+            "description": "minecraft position X as a 16-digit hex IEEE-754 double bit pattern, e.g. 4021000000000000 for 8.5. The eight bytes the game sent, not a re-encoded decimal.",
+            "type": "string"
+          },
+          "mc_y": {
+            "description": "minecraft position Y as a 16-digit hex IEEE-754 double bit pattern, the eight bytes the game sent (see mc_x), e.g. 4050000000000000 for 64.0.",
+            "type": "string"
+          },
+          "mc_z": {
+            "description": "minecraft position Z as a 16-digit hex double bit pattern (see mc_x), e.g. 4021000000000000 for 8.5.",
+            "type": "string"
+          },
+          "milli_w_per_m2": {
+            "description": "radiative forcing in milliwatts per square metre; declared by biosphere/radiative, not read by the verdict today (biosphere grades scenario), e.g. 41. Read by biosphere/radiative; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "mp_id": {
+            "description": "Materials Project id, mp-##### from the authored fixture, e.g. mp-149. Read by material/crystallographer, material/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "n": {
+            "description": "the qubit count n (qc_qft), the particle count (qma_nrep) or the dynamo numerator, e.g. 4. Read by dynamo/researcher, dynamo/steward, dynamo/theorist, qc_qft/researcher, qma_nrep/researcher, qma_nrep/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "N": {
+            "description": "the modulus N of the period or Shor witness (qc_period, qc_shor: 15) or the search size (qc_ampest: 4), e.g. 15. Read by qc_ampest/researcher, qc_period/researcher, qc_shor/researcher, qc_shor_twin/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "n_players": {
+            "description": "number of players the Go First dice set is claimed fair for, e.g. 5. Read by gofirst/combinatorist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "nm": {
+            "description": "the claimed wavelength in whole nanometres, > 0, e.g. 750. Read by rife/researcher, rife/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "null_conc_ppt": {
+            "description": "null-closure concentration in parts per thousand, e.g. 100. Read by eht/experimentalist, eht/theorist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "num": {
+            "description": "numerator of the first rational, e.g. 143. Read by cs/compiler; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "num_atoms": {
+            "description": "atoms in the cell, > 0 when present, e.g. 2. Read by material/crystallographer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "num2": {
+            "description": "numerator of the second rational; the court seals a/b + c/d = (ad+bc)/bd exactly, e.g. 1.",
+            "type": "string"
+          },
+          "object": {
+            "description": "alias of q_hex for affine_key: the public point as 130-hex uncompressed, e.g. 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8. Read by affine_key/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "obscuration_ppm": {
+            "description": "solar obscuration in parts per million, e.g. 900000. Read by eclipse/gnss, eclipse/ionosonde, eclipse/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "operator": {
+            "description": "the fleet operator named in the ledger; declared by biosphere/mass_ledger, not read by the verdict today (biosphere grades scenario), e.g. operator_a. Read by biosphere/mass_ledger; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "oracle": {
+            "description": "a 0/1 string of length 2..8; the marked entries are the 1s, e.g. 0001.",
+            "type": "string"
+          },
+          "origin_s": {
+            "description": "declared by fluids/operator in the catalog; carried with the ingest and not read by the fluids verdict today (fluids grades phi_in and phi_out), e.g. 0. Read by fluids/operator; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "payload_sha256d": {
+            "description": "double-SHA256 of the payload as 64 lowercase hex; declared by cs/consensus, not read by the cs verdict today (cs grades num, den, num2, den2), e.g. 5df6e0e2761359d30a8275058e299fcc0381534545f55cf43e41983f5d4c9456. Read by cs/consensus; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "pdb_id": {
+            "description": "the four-character PDB entry id, e.g. 4HHB. Read by complex/chemist, complex/researcher, complex/steward, pdb/crystallographer, pdb/researcher, pdb/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "pearson": {
+            "description": "the Pearson symbol that travels with space_group, e.g. cF8. Read by material/crystallographer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "perm_den": {
+            "description": "denominator of the claimed fair-permutation probability, e.g. 120. Read by gofirst/combinatorist, gofirst/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "perm_num": {
+            "description": "numerator of the claimed fair-permutation probability, e.g. 1. Read by gofirst/combinatorist, gofirst/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "phase": {
+            "description": "the claimed eigenphase as num/den, e.g. 1/4. Read by qc_kickback/researcher, qc_qpe/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "phases": {
+            "description": "the n QFT phases as num/den, comma-separated, e.g. 0/4,1/4,2/4,3/4. Read by qc_qft/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "phi_in": {
+            "description": "inflow flux as a whole number, e.g. 8. Read by fluids/certifier, fluids/cfd_vendor, fluids/designer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "phi_out": {
+            "description": "outflow flux as a whole number; the residual phi_in - phi_out is graded, e.g. 8. Read by fluids/certifier, fluids/cfd_vendor, fluids/designer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "pn_pred_s": {
+            "description": "predicted P-wave travel time in whole seconds, e.g. 53. Read by seismic/treaty; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "polytope_id": {
+            "description": "the named polytope the Ehrhart count is taken over, e.g. unit_square. Read by geometry/cad_engineer, geometry/digital_twin, geometry/regulator; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "presentation": {
+            "description": "a group presentation token; declared by algebra roles, not read by the Connes verdict today (algebra grades word), e.g. a2b. Read by algebra/phenomenologist, algebra/qft_theorist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "proper_divisors": {
+            "description": "the proper divisors of r as decimal strings, comma-separated (REQUIRED by qc_period), e.g. 1,2. Read by qc_period/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "q": {
+            "description": "the claimed Eisenstein q of the word (qc_topo) or the dynamo q, e.g. 0. Read by dynamo/researcher, dynamo/steward, dynamo/theorist, qc_topo/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "Q": {
+            "description": "the presented public point, same shape as q_hex, e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798. Read by qc_affine_key/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "q_bin": {
+            "description": "the momentum-transfer bin index, e.g. 1. Read by qcd/jet_analyst, qcd/phenomenologist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "q_hex": {
+            "description": "a secp256k1 public point as 130-hex uncompressed (04...) or 66-hex compressed, e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798.",
+            "type": "string"
+          },
+          "queries": {
+            "description": "the query bit strings, ';'-separated (a comma-separated list is REFUSED_SHAPE), e.g. 100;010;001. Read by qc_bv/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "r": {
+            "description": "the claimed period r (qc_period) or the Eisenstein r (qc_topo, dynamo), e.g. 4. Read by dynamo/researcher, dynamo/steward, dynamo/theorist, qc_period/researcher, qc_topo/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "ratio_ppt": {
+            "description": "short/long flux ratio in parts per thousand, e.g. 5000. Read by eht/detector, eht/experimentalist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "residual_int": {
+            "description": "the integer residual a CFD vendor reports; declared by fluids/cfd_vendor, not read by the fluids verdict today (fluids grades phi_in and phi_out), e.g. 0. Read by fluids/cfd_vendor; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "rho2": {
+            "description": "qma_nrep: 2x2 rational 2-RDM, rows by |, entries num/den, e.g. 1/2,0/1|0/1,1/2",
+            "type": "string"
+          },
+          "role": {
+            "description": "the role on that domain, from the catalog; the role names which may_ingest fields the court reads, e.g. gnss (with domain eclipse).",
+            "type": "string"
+          },
+          "rounds": {
+            "description": "the number of QPR rounds, e.g. 8. Read by chance/compiler, chance/consensus, chance/quantum_info; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "scenario": {
+            "description": "biosphere/regulator joint ledger, one of measured_2025 | authorised_19408 | gen3_filed_100000 | orbital_data_centres, e.g. measured_2025.",
+            "type": "string"
+          },
+          "score_den": {
+            "description": "denominator of the claimed score; declared by cs/ml_engineer, not read by the cs verdict today, e.g. 10. Read by cs/ml_engineer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "score_num": {
+            "description": "numerator of the claimed score; declared by cs/ml_engineer, not read by the cs verdict today, e.g. 9. Read by cs/ml_engineer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "short_median_ujy": {
+            "description": "short-baseline median flux in micro-jansky, e.g. 1500000. Read by eht/detector, eht/experimentalist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "snr_ppt": {
+            "description": "signal-to-noise in parts per thousand, e.g. 20000. Read by seismic/station, seismic/treaty; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "source": {
+            "description": "attribution for the ingest (who or what posted it); absence is refused, e.g. court-client.",
+            "type": "string"
+          },
+          "space_group": {
+            "description": "the space-group number, an integer in 1...230, travelling with a Pearson token, e.g. 227. Read by material/crystallographer, material/steward; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "spins": {
+            "description": "discrete spins +1,-1,... one per site, e.g. 1,-1,1.",
+            "type": "string"
+          },
+          "start": {
+            "description": "the starting vertex, 0 or 1, e.g. 0. Read by qc_walk/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "station": {
+            "description": "ozone station code; declared by biosphere/ozone_column, not read by the verdict today (biosphere grades scenario), e.g. BLD. Read by biosphere/ozone_column; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "steps": {
+            "description": "the number of walk steps, >= 0, e.g. 2. Read by qc_walk/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "table": {
+            "description": "the truth table of f as a bit string, e.g. 00. Read by qc_dj/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "table_counts": {
+            "description": "table row counts, comma-separated integers, e.g. 3,4,5. Declared by physics/detector and physics/experimentalist. The physics court grades none of clock, track or table_counts: whatever integers are posted, its verdict is CONTRACT, never WIN or MISS.",
+            "type": "string"
+          },
+          "tau_s": {
+            "description": "elimination time constant in whole seconds; declared by health/clinician, not read by the health verdict today (health grades mass_milli, vol_milli, arm_counts), e.g. 3600. Read by health/clinician; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "term": {
+            "description": "the coupling term named; declared by biosphere/coupling, not read by the verdict today (biosphere grades scenario), e.g. residence_time. Read by biosphere/coupling; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "threshold_ticks": {
+            "description": "loss threshold in whole ticks; declared by finance/risk, not read by the finance verdict today (finance grades lots and ticks), e.g. 10. Read by finance/risk; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "ticks": {
+            "description": "price move in whole ticks; PnL = lots * ticks exact in Z, e.g. 5. Read by finance/auditor, finance/clearing, finance/trader; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "track": {
+            "description": "the track index of the table row, e.g. 1. Declared by the three physics roles; no verdict reads it: the physics verdict is CONTRACT whatever integers are posted.",
+            "type": "string"
+          },
+          "travel_s": {
+            "description": "measured P-wave travel time in whole seconds, e.g. 53. Read by seismic/station, seismic/treaty; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "vertices": {
+            "description": "vertex count of the polytope; declared by geometry/cad_engineer, not read by the Ehrhart verdict today (geometry grades polytope_id and dilation), e.g. 4. Read by geometry/cad_engineer; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "vol_milli": {
+            "description": "dose volume in millilitres, > 0, e.g. 20000. Read by health/clinician, health/pharmacist; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "word": {
+            "description": "the group word the Connes court grades, from its corpus, e.g. Z2_a2b. Read by algebra/phenomenologist, algebra/qft_theorist, qc_topo/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "x": {
+            "description": "the first input bit string (qc_simon: 00) or the solution vector as num/den rationals (qc_hhl: 3/1,5/1), e.g. 00. Read by qc_hhl/researcher, qc_simon/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "y": {
+            "description": "the second input bit string; x XOR y must equal mask, e.g. 11. Read by qc_simon/researcher; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          },
+          "year": {
+            "description": "calendar year of the ledger row; declared by biosphere/mass_ledger and biosphere/ozone_column, not read by the verdict today (biosphere grades scenario), e.g. 2025. Read by biosphere/mass_ledger, biosphere/ozone_column; post it only for those domains - a court names the fields it grades on in its REFUSED_NO_INSTANCE detail.",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "math_court"
+    },
+    {
+      "description": "Stateless membrane identity (mode, genesis epoch, subjects) plus cell listen facts.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "membrane_health"
+    },
+    {
+      "description": "Live NOAA weather for the aviation radar lane. lane=weather returns real convective SIGMET hazard polygons (aviationweather.gov airsigmet) with altitude tops and movement vectors; lane=space returns real GOES-R primary X-ray flux plus NOAA scales, planetary K and OVATION aurora. No mock radar: an empty result is empty, a failed fetch is CURE.",
+      "inputSchema": {
+        "properties": {
+          "c4_invariant_scf": {
+            "description": "optional C4 invariant SCF hex of the caller session; carried into the invocation receipt, not read by the weather lanes. e.g. 0123456789abcdef0123456789abcdef",
+            "type": "string"
+          },
+          "lane": {
+            "description": "weather | space (maps to gaiaftcl.radar.*)",
+            "enum": [
+              "weather",
+              "space"
+            ],
+            "type": "string"
+          },
+          "wallet_hash": {
+            "description": "optional caller fiber (sha256 of the wallet, lowercase hex); carried into the invocation receipt, not read by the weather lanes. e.g. 5df6e0e2761359d30a8275058e299fcc0381534545f55cf43e41983f5d4c9456",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "noaa_goes_r_weather"
+    },
+    {
+      "description": "Affine key projection on secp256k1. Post ONE face, receive the other. Post A (the private face, decimal or 64-hex; k is accepted as the same face) and the court projects Q = A*G and returns it - scalar multiplication, total, no search, closes for every A in [1, n-1]. Post BOTH A and q_hex and the same projection verifies the bond. Post q_hex ALONE and the other face is the discrete log: the court answers verdict CHI_EXHAUSTED with energy_num = n, the bond dimension this instance requires at the current probe (~1.16e77), over energy_den = 4096, the ceiling. That is a COST report, not a claim of impossibility and not a graded pair - the detail names the probe as the limit (an n-squared enumeration that closes to n=17), and the wire status reads MISS today. x(Q) is reported as ground because it is real and derivable, and it is PUBLIC, never a private face. The court never backfills the face it was asked for. Decimal or hex strings; empty means not posted. Floats refused.",
+      "inputSchema": {
+        "anyOf": [
+          {
+            "required": [
+              "A"
+            ]
+          },
+          {
+            "required": [
+              "Q"
+            ]
+          },
+          {
+            "required": [
+              "k"
+            ]
+          },
+          {
+            "required": [
+              "q_hex"
+            ]
+          }
+        ],
+        "properties": {
+          "A": {
+            "description": "the private face: a secp256k1 scalar as decimal or 64-hex, e.g. 2; the court projects Q = A*G",
+            "type": "string"
+          },
+          "k": {
+            "description": "same face as A, old label. e.g. 1",
+            "type": "string"
+          },
+          "Q": {
+            "description": "same face as q_hex, old label. e.g. 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+            "type": "string"
+          },
+          "q_hex": {
+            "description": "the public face: uncompressed 04-prefixed secp256k1 point, 130 hex characters; the court projects its shear and period, never a scalar. e.g. 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "project_affine_key"
+    },
+    {
+      "description": "QC-001b Shor TWIN projection. Post ONE half, receive the other. Post halfPow a (a^2 == 1 mod N, a != +/-1) and the court projects factor/cofactor by gcd(a-1,N) and gcd(a+1,N). Post factor and cofactor and it projects a by CRT (a == 1 mod factor, a == -1 mod cofactor). The projected half is verified before return. Bijection in polynomial time - it does not search for a period and does not derive a discrete log. Decimal strings; empty means not posted. Floats refused.",
+      "inputSchema": {
+        "anyOf": [
+          {
+            "required": [
+              "N"
+            ]
+          },
+          {
+            "required": [
+              "N",
+              "halfPow"
+            ]
+          },
+          {
+            "required": [
+              "N",
+              "cofactor",
+              "factor"
+            ]
+          }
+        ],
+        "properties": {
+          "cofactor": {
+            "description": "N / factor, decimal, e.g. 5; posted together with factor",
+            "type": "string"
+          },
+          "factor": {
+            "description": "post factor together with cofactor (e.g. 3 and 5) and the court projects halfPow by CRT",
+            "type": "string"
+          },
+          "halfPow": {
+            "description": "post this half (a with a^2 == 1 mod N, a != 1, N-1), e.g. 4, and the court projects factor and cofactor",
+            "type": "string"
+          },
+          "N": {
+            "description": "the modulus, decimal, e.g. 15 - carried in every shape; without it there is no question",
+            "type": "string"
+          }
+        },
+        "required": [
+          "N"
+        ],
+        "type": "object"
+      },
+      "name": "project_shor_twin"
+    },
+    {
+      "description": "Franklin's sign-off over an Affine IDE release regression record. The IDE's regression agent opens every study and writes a canonical tab-separated record of what it saw: one stage arm per study (route and the viewer actually showing), the rail, the chat, the en/es/ar locales, the served download page, the prover and one line per screenshot. This court grades that record with ReleaseRegressionLaw from LatticeRender - the same source the IDE's own prover compiles - and answers FRANKLIN_SIGNED_OFF only when every arm is ok, there is exactly one stage arm per study, the three locale arms, a served arm, the prover arm, at least one study with one screenshot per study and, when dmg_sha256 is present, an ok served arm named dmg_sha_matches. Otherwise the terminal is CURE (a ruling, not an error) with failing and missing each naming what is not proven, once; a stage arm whose detail shows the movie stage on a domain route is CURE even when flagged ok (the 0.2.6.3 shape). Returns terminal, digest (sha256 over the canonical bytes), arms_total, arms_ok, failing, missing, franklin (the narration lines), sealed_by and status. The court opens no app and runs no prover: the arms are the caller's measurements. It WRITES NOTHING on the cell and reads no clock; nine cells return the same bytes for the same record.",
+      "inputSchema": {
+        "properties": {
+          "date": {
+            "description": "optional: the caller's clock, echoed as graded_at on the receipt; the court reads no clock of its own. e.g. 2026-10-06T21:10:00Z",
+            "type": "string"
+          },
+          "record": {
+            "description": "the canonical regression record: UTF-8 lines, tab-separated, LF endings, first line affine_ide_regression<TAB>1, then version, build, date, host, optional dmg_sha256, app_sha256, studies, one arm line per arm (arm<TAB>surface<TAB>name<TAB>ok|BAD<TAB>detail) and one shot line per screenshot (shot<TAB>name<TAB>bytes<TAB>sha256). e.g. affine_ide_regression\t1\nversion\t0.2.6.4\nbuild\t3282\ndate\t2026-10-06T21:10:00Z\nhost\tmacOS 27.2\napp_sha256\t<64 lowercase hex>\nstudies\t1\narm\tstage\tstudy-47\tok\troute domain · showing DomainViewer\n...",
+            "type": "string"
+          },
+          "self_test": {
+            "description": "optional: 1 asks the court to run its own self-test over the law instead of grading a record - every arm first shown a planted defect; answers RELEASE_REGRESSION_COURT_SELFTEST_OK with arms_total, arms_ok and the report lines. e.g. 1",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "release_regression"
+    },
+    {
+      "description": "QMA spin-glass / frustrated Ising: given integer couplings on edges and a presented +/-1 spin per site, return the exact Ising energy of that configuration, energy_num = the sum of J * s_i * s_j over the posted edges and energy_den = 1, detail energy=E. edges are i,j,J;... (the fixture 0,1,1;1,2,1;2,0,1 is the frustrated triangle), spins are +1,-1,... The verdict is graded against the one ground energy QMACourtLaw holds a seal for: -1, the frustrated triangle with spins 1,-1,1 (fixtureSpinEnergy). WIN means the posted configuration reaches that energy; MISS means an evaluated configuration that does not; a REFUSED_* verdict names an instance or configuration the law does not grade. The presented configuration is evaluated exactly; no annealing and no ground-state search. Same law as math_court domain qma_spinglass and verify_qaoa_energy. Floats refused (REFUSED_FLOAT); a field posted as a JSON value that is not a string is REFUSED_NOT_A_STRING.",
+      "inputSchema": {
+        "properties": {
+          "edges": {
+            "description": "couplings i,j,J;... integer J, e.g. 0,1,1;1,2,1;2,0,1",
+            "type": "string"
+          },
+          "spins": {
+            "description": "discrete spins +1,-1,... one per site, e.g. 1,-1,1",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "route_spin_glass_manifold"
+    },
+    {
+      "description": "Compose one stage document from a sea and sealed scene_ingest results. The sea is a 50 x 40 plane (2,000 points, the stage's floor) at z_um on the stage's up axis (the stage is Y-up). Every asset is held to its seal by SceneProvenanceLaw.verify: its usda is read back into a mesh, the mesh's fnv1a must equal the row's mesh_fnv1a and the digest must be the row's sha256, else REFUSED_SEAL; a row re-digested over an inadmissible license re-grades to REFUSED_LICENSE; a HELD row is not placed and is named under held. A placed asset gets the yaw and translation its row recorded. WRITTEN returns usda (the camera and listener lines the Iliad stage writes, then every mesh as int2[] px pairs - never point3f - so the IDE's hologram parser draws it), seal_tsv (the placed rows, each followed by LF), scene_digest (sha256 of seal_tsv, also carried in the stage as affine_scene_digest), meshes, points, faces, placed and held. It fetches nothing, reads no clock and writes nothing on the cell; the caller writes the usda.",
+      "inputSchema": {
+        "properties": {
+          "assets": {
+            "description": "optional: the scene_ingest INGESTED answers to place, in placement order; each needs usda, seal_row and digest exactly as returned. e.g. [{\"usda\":\"<usda>\",\"seal_row\":\"<seal_row>\",\"digest\":\"<digest>\"}]",
+            "items": {
+              "properties": {
+                "digest": {
+                  "description": "the digest field of that answer: 64 lowercase hex, the sha256 of seal_row. e.g. 2c198160e567f1a0c4d3b2a19876543210fedcba9876543210fedcba98765432",
+                  "type": "string"
+                },
+                "seal_row": {
+                  "description": "the seal_row field of that answer, verbatim (24 tab-separated cells, first scene_ingest then 1). e.g. scene_ingest\t1\t3d_model_of_Sphere\t...",
+                  "type": "string"
+                },
+                "usda": {
+                  "description": "the usda field of an INGESTED answer, verbatim. e.g.     def Mesh \"Scan/3d_model_of_Sphere\" { int pointCount = 1538 ... }",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "camera": {
+            "description": "optional: the hero camera, four x,y,z micrometre triples; absent keys keep the Iliad stage's defaults. e.g. {\"eye\":\"6000000,19000000,86000000\",\"forward\":\"0,0,-1000000\"}",
+            "properties": {
+              "eye": {
+                "description": "the eye position. e.g. 6000000,19000000,86000000",
+                "type": "string"
+              },
+              "forward": {
+                "description": "the forward basis vector. e.g. 0,0,-1000000",
+                "type": "string"
+              },
+              "right": {
+                "description": "the right basis vector, a millionth per unit. e.g. 1000000,0,0",
+                "type": "string"
+              },
+              "up": {
+                "description": "the up basis vector. e.g. 0,1000000,0",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "sea": {
+            "description": "the sea plane, every value a decimal string of micrometres. e.g. {\"half_width_um\":\"60000000\",\"half_depth_um\":\"40000000\",\"z_um\":\"0\"}",
+            "properties": {
+              "half_depth_um": {
+                "description": "half the sea's extent along z, at least 1. e.g. 40000000",
+                "type": "string"
+              },
+              "half_width_um": {
+                "description": "half the sea's extent along x, at least 1. e.g. 60000000",
+                "type": "string"
+              },
+              "z_um": {
+                "description": "the sea's level on the stage's up axis (the stage is Y-up). e.g. 0",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "study": {
+            "description": "the study the stage belongs to; the default prim is Scene_<study>. e.g. iliad",
+            "type": "string"
+          }
+        },
+        "required": [
+          "study",
+          "sea"
+        ],
+        "type": "object"
+      },
+      "name": "scene_compose"
+    },
+    {
+      "description": "Turn a scanned mesh the caller fetched into one welded integer stage mesh and one sealed provenance row, or a named refusal. The caller posts the bytes (bytes_b64, or an ASCII STL as text), the URL and HTTP status they came from, and the catalog's raw license response; the court reads the license field from that response itself (Commons imageinfo License.value, else LicenseShortName.value when License is absent; EDAN metadata_usage.access; Natural Earth LICENSE.md line 1) and admits exactly pd, cc0, CC0, Public domain or Everything here is public domain. Order: http_status not 200 is REFUSED_SOURCE; a binary STL whose length is not 84 + 50 x count is REFUSED_TRUNCATED before anything is hashed; an unreadable or inadmissible license is REFUSED_LICENSE_UNREADABLE or REFUSED_LICENSE before a vertex is decoded; then StageMeshIngestLaw reads every float32 word by bit pattern at the declared unit (REFUSED_NAN, REFUSED_RANGE for a vertex past 2147483647 um, REFUSED_EMPTY), StageWeldLaw welds at weld_cell_um and doubles the cell up to 12 times until faces fit face_budget (REFUSED_BUDGET), and SceneProvenanceLaw seals the canonical row. INGESTED returns usda (one def Mesh with int2[] px pairs, the welded mesh as sealed; the pose in the row is applied by scene_compose), seal_row, digest (sha256 of the row), source_sha256, triangles_in, faces_out, points_out, weld_cell_um, mesh_fnv1a, placement (HELD when a second rights field such as a Smithsonian copyright is recorded) and sealed_by. It fetches nothing, reads no clock and writes nothing on the cell; nine cells return the same bytes for the same call.",
+      "inputSchema": {
+        "properties": {
+          "bytes_b64": {
+            "description": "the asset's bytes exactly as fetched, base64 (RFC 4648 alphabet, padded; blanks and line breaks skipped). Send this or text, not both. e.g. U1RMIGZpbGU=",
+            "type": "string"
+          },
+          "dx_um": {
+            "description": "optional: the placement's x offset in micrometres, recorded in the row and applied by scene_compose, default 0. e.g. 2500000",
+            "type": "string"
+          },
+          "dy_um": {
+            "description": "optional: the placement's y offset in micrometres (the stage is Y-up), default 0. e.g. 0",
+            "type": "string"
+          },
+          "dz_um": {
+            "description": "optional: the placement's z offset in micrometres, default 0. e.g. -4000000",
+            "type": "string"
+          },
+          "face_budget": {
+            "description": "optional: the most faces the welded mesh may keep, default 80000. e.g. 80000",
+            "type": "string"
+          },
+          "http_status": {
+            "description": "the HTTP status of that fetch as a decimal string; anything but 200 is REFUSED_SOURCE. e.g. 200",
+            "type": "string"
+          },
+          "kind": {
+            "description": "what the bytes are: stl (binary or ASCII). obj, ply, glb, geojson_coast, elevation_rows and star_rows are later steps and answer REFUSED_FORMAT. e.g. stl",
+            "enum": [
+              "stl"
+            ],
+            "type": "string"
+          },
+          "license_api": {
+            "description": "which catalog answered the license question, so the court knows where the field sits. e.g. commons_imageinfo",
+            "enum": [
+              "commons_imageinfo",
+              "smithsonian_edan",
+              "natural_earth_license_md",
+              "dataset_ruling"
+            ],
+            "type": "string"
+          },
+          "license_response": {
+            "description": "the catalog's raw license response, verbatim (the Commons imageinfo JSON, the EDAN record, Natural Earth's LICENSE.md). The court extracts the field and records its name and value; a response with no field is REFUSED_LICENSE_UNREADABLE. e.g. {\"query\":{\"pages\":{\"1\":{\"imageinfo\":[{\"extmetadata\":{\"License\":{\"value\":\"pd\"}}}]}}}}",
+            "type": "string"
+          },
+          "mirror": {
+            "description": "optional: true flips every face to index order 0,2,1 (recorded in the row), default false. e.g. false",
+            "type": "string"
+          },
+          "name": {
+            "description": "the asset's name, recorded in the seal row; the stage names the mesh Scan/<name>. e.g. 3d_model_of_Sphere",
+            "type": "string"
+          },
+          "rights_document": {
+            "description": "optional: a second rights document fetched beside the license response (the Smithsonian scene.svx.json), raw; a copyright string in it is recorded as rights_conflict and the placement is HELD. e.g. {\"asset\":{\"copyright\":\"(c) Smithsonian Institution. All rights reserved.\"}}",
+            "type": "string"
+          },
+          "self_test": {
+            "description": "optional: 1 asks the court to run its own self-test over both scene tools instead of ingesting - every arm first shown a planted defect; answers SCENE_COURTS_SELFTEST_OK with arms_total, arms_ok and the report lines. e.g. 1",
+            "type": "string"
+          },
+          "source_url": {
+            "description": "the URL the bytes were fetched from, recorded in the seal row. e.g. https://upload.wikimedia.org/wikipedia/commons/b/b9/3d_model_of_Sphere.stl",
+            "type": "string"
+          },
+          "text": {
+            "description": "an ASCII STL's text, in place of bytes_b64. e.g. solid t facet normal 0 0 1 outer loop vertex 0 0 0 vertex 1 0 0 vertex 0 1 0 endloop endfacet endsolid t (one keyword group per line, LF endings)",
+            "type": "string"
+          },
+          "tone_rgb": {
+            "description": "optional: the mesh tone r,g,b, each 0 to 255, default 180,180,180; it is part of mesh_fnv1a. e.g. 200,190,170",
+            "type": "string"
+          },
+          "unit": {
+            "description": "the unit the mesh coordinates are in, declared by the caller and never inferred (the header's UNITS=MM is recorded as evidence only); udeg is the coordinate lane of later kinds and is refused for an STL. e.g. mm",
+            "enum": [
+              "m",
+              "mm",
+              "cm",
+              "udeg"
+            ],
+            "type": "string"
+          },
+          "weld_cell_um": {
+            "description": "optional: the weld cell in micrometres as a decimal string, 1 to 524287, default 1000; doubled up to 12 times while faces exceed face_budget, so the widest cell reached is 524287 x 4096. e.g. 1000",
+            "type": "string"
+          },
+          "yaw_milli_deg": {
+            "description": "optional: the turn about +Y in milli-degrees, recorded in the row and applied by scene_compose, default 0. e.g. 90000",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "name",
+          "source_url",
+          "http_status",
+          "license_api",
+          "unit"
+        ],
+        "type": "object"
+      },
+      "name": "scene_ingest"
+    },
+    {
+      "description": "Compose the study document and return it: structuredContent.usda is the root layer's text, name its file name, layers every layer (name, usda). The caller writes them into its own studies directory; the court writes nothing. A Franklin avatar prompt composes the guidance stage. An Iliad scene 02 prompt composes the plague cut. An Iliad scene 01 prompt bakes the native companion from example_usda, or NAMES the shipped companion when none is sent. Other study prompts compose the edit list.",
+      "inputSchema": {
+        "properties": {
+          "example_usda": {
+            "description": "optional: the text of iliad-01-scene-01-imax.usda, for an Iliad scene 01 prompt that wants the native companion baked. Without it the court answers NAMED with the shipped companion's name.",
+            "type": "string"
+          },
+          "prompt": {
+            "description": "the person's words. Iliad selects the Iliad cut. Franklin avatar composes the next avatar stage.",
+            "type": "string"
+          },
+          "study": {
+            "description": "the study that owns the document, e.g. study-51 or franklin-avatar",
+            "enum": [
+              "study-51",
+              "study-52",
+              "study-53",
+              "study-54",
+              "franklin-avatar"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "study",
+          "prompt"
+        ],
+        "type": "object"
+      },
+      "name": "study_usda"
+    },
+    {
+      "description": "Exact integer FORWARD pose of the thirteen-piece Franklin avatar rig - piece ids 0-12 are head (0), left eye globe (1), right eye globe (2), left upper lid (3), left lower lid (4), right upper lid (5), right lower lid (6), jaw (7), oral cavity (8), left iris (9), right iris (10), torso (11) and pointing arm (12). Post the piece_id to report; pieces is OPTIONAL - rows (piece_id, parent_id, origin_*_milli, rotation_milli_deg, extent_milli, and optional exact Pythagorean half-angle rotor_a, rotor_b, rotor_d as decimal strings with a^2 + b^2 - d^2 == 0) that override the built-in rest chain by id, and with pieces absent or [] the court composes the built-in thirteen-piece rig as declared; the court composes each local frame from the sovereign anchor (or relative_to_head) and returns that piece's pose in whole milli-units - PROVEN_EXACT_IK with the pose, or a refusal naming the piece or field. Zero floats, one Q16 normalization point, byte-identical on arm64 and wasm32.",
+      "inputSchema": {
+        "properties": {
+          "piece_id": {
+            "description": "decimal string, the piece to solve for (0..12). e.g. 12",
+            "type": "string"
+          },
+          "pieces": {
+            "description": "declared PieceFrame rows as decimal strings. e.g. [{\"piece_id\":\"12\",\"rotor_a\":\"4\",\"rotor_b\":\"-3\",\"rotor_d\":\"5\"}]",
+            "items": {
+              "properties": {
+                "extent_milli": {
+                  "description": "decimal string, extent in millimetres, e.g. 260",
+                  "type": "string"
+                },
+                "origin_x_milli": {
+                  "description": "decimal string, origin X in millimetres, e.g. 470",
+                  "type": "string"
+                },
+                "origin_y_milli": {
+                  "description": "decimal string, origin Y in millimetres, e.g. 420",
+                  "type": "string"
+                },
+                "origin_z_milli": {
+                  "description": "decimal string, origin Z in millimetres, e.g. 4",
+                  "type": "string"
+                },
+                "parent_id": {
+                  "description": "decimal string, the id of the parent piece, e.g. 11",
+                  "type": "string"
+                },
+                "piece_id": {
+                  "description": "decimal string, one of the thirteen declared ids 0..12 (0 head, 1 eye_globe_l, 2 eye_globe_r, 3 lid_upper_l, 4 lid_lower_l, 5 lid_upper_r, 6 lid_lower_r, 7 jaw, 8 oral_cavity, 9 iris_l, 10 iris_r, 11 torso, 12 pointing_arm), e.g. 12",
+                  "type": "string"
+                },
+                "rotation_milli_deg": {
+                  "description": "decimal string, rotation in milli-degrees, e.g. 15000",
+                  "type": "string"
+                },
+                "rotor_a": {
+                  "description": "optional decimal string, exact Pythagorean rotor cosine numerator a with a^2 + b^2 - d^2 == 0, e.g. 4",
+                  "type": "string"
+                },
+                "rotor_b": {
+                  "description": "optional decimal string, exact Pythagorean rotor sine numerator b with a^2 + b^2 - d^2 == 0, e.g. -3",
+                  "type": "string"
+                },
+                "rotor_d": {
+                  "description": "optional decimal string, exact Pythagorean rotor hypotenuse d > 0 with a^2 + b^2 - d^2 == 0, e.g. 5",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "relative_to_head": {
+            "description": "state the pose relative to the head (camera-free) rather than the anchor. e.g. true",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "piece_id"
+        ],
+        "type": "object"
+      },
+      "name": "twin.robotics.evaluate_exact_ik"
+    },
+    {
+      "description": "Start or advance a Universal Manifold Controller Long Play session for one domain (cinema, aviation, gaming or coding): seed the session, decompose the tau height into integer turns, measure the Rational torsion of each turn, shear-correct, converge, and (with checkpoint=true) seal the tip to the UMC_LONG_PLAY KV bucket so umc_resume can continue it on any cell. GRANT CLASS MESH: the call must carry a caller identity - user_vqbit_hash (32 lowercase hex), entity_id or wallet_hash - or it is refused as REFUSED_GRANT_MESH_IDENTITY_REQUIRED with the invocation still sealed. Measured 2026-09-02 with an identity: status CALORIE_GAV_LONG_PLAY; tip carries session_id, node_id, domain, turn_index, tau_height, torsion as torsion_num/torsion_den (and the string torsion), amplitudes as exact rationals, invariant_root_hex, goal_satisfied, stagnant; publish carries the KV key and NATS subject gaiaftcl.umc.state.<domain>.<session_id>.<node_id>. Stateful by session_id + node_id; tau_height and max_turns are decimal strings; floats refused. Use umc_status to read the tip without advancing it.",
+      "inputSchema": {
+        "properties": {
+          "checkpoint": {
+            "description": "true seals the tip to the KV bucket at the end of the call so umc_resume can pick it up. e.g. true",
+            "type": "boolean"
+          },
+          "domain": {
+            "description": "which Long Play law governs the session",
+            "enum": [
+              "cinema",
+              "aviation",
+              "gaming",
+              "coding"
+            ],
+            "type": "string"
+          },
+          "entity_id": {
+            "description": "caller identity, alternative to user_vqbit_hash: the wallet_geo entity id hex, e.g. 00112233445566778899aabbccddeeff",
+            "type": "string"
+          },
+          "max_turns": {
+            "description": "decimal string: hard cap on turns advanced by this call. e.g. 4",
+            "type": "string"
+          },
+          "node_id": {
+            "description": "the session node: any stable string naming the client or tab that plays this session, e.g. ide-tab-1. This is NOT the caller identity; identity is user_vqbit_hash, entity_id or wallet_hash",
+            "type": "string"
+          },
+          "session_id": {
+            "description": "caller-chosen stable id; the same id on a later call resumes rather than restarts. e.g. r5-session-1",
+            "type": "string"
+          },
+          "tau_height": {
+            "description": "decimal string: how far along tau to run this call (turns are integer steps of tau); omit for the domain default. e.g. 8",
+            "type": "string"
+          },
+          "title": {
+            "description": "human label for the session, <= 80 characters, informational only. e.g. first long play",
+            "type": "string"
+          },
+          "user_vqbit_hash": {
+            "description": "caller identity, one of the three this MESH-class tool accepts: exactly 32 lowercase hex, e.g. 0123456789abcdef0123456789abcdef. Send user_vqbit_hash, entity_id or wallet_hash or the call is REFUSED_GRANT_MESH_IDENTITY_REQUIRED (the refusal names the field under need)",
+            "type": "string"
+          },
+          "wallet_hash": {
+            "description": "caller identity, alternative to user_vqbit_hash: sha256 of the caller wallet, lowercase hex, e.g. 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "umc_direct"
+    },
+    {
+      "description": "Resume a Universal Manifold Controller Long Play from its latest sealed tip (local cache first, then the NATS KV bucket UMC_LONG_PLAY) for the given domain, session_id and node_id; direct=true advances one turn after resuming. GRANT CLASS MESH: requires a caller identity (user_vqbit_hash 32 lowercase hex, entity_id or wallet_hash) or the call is REFUSED_GRANT_MESH_IDENTITY_REQUIRED. Measured 2026-09-02 with an identity: status CALORIE_GAV_LONG_PLAY_RESUME and the same tip shape as umc_direct (turn_index, tau_height, torsion_num/torsion_den, amplitudes, invariant_root_hex). Use umc_direct to create or advance a session; use this to pick up where a previous call, tab or cell left off.",
+      "inputSchema": {
+        "properties": {
+          "direct": {
+            "description": "true: after resuming, advance one turn (equivalent to one umc_direct call). e.g. true",
+            "type": "boolean"
+          },
+          "domain": {
+            "description": "the domain the session was started under",
+            "enum": [
+              "cinema",
+              "aviation",
+              "gaming",
+              "coding"
+            ],
+            "type": "string"
+          },
+          "entity_id": {
+            "description": "caller identity, alternative to user_vqbit_hash: the wallet_geo entity id hex, e.g. 00112233445566778899aabbccddeeff",
+            "type": "string"
+          },
+          "node_id": {
+            "description": "the session node: any stable string naming the client or tab that plays this session, e.g. ide-tab-1. This is NOT the caller identity; identity is user_vqbit_hash, entity_id or wallet_hash",
+            "type": "string"
+          },
+          "session_id": {
+            "description": "the session id given to umc_direct. e.g. r5-session-1",
+            "type": "string"
+          },
+          "user_vqbit_hash": {
+            "description": "caller identity, one of the three this MESH-class tool accepts: exactly 32 lowercase hex, e.g. 0123456789abcdef0123456789abcdef. Send user_vqbit_hash, entity_id or wallet_hash or the call is REFUSED_GRANT_MESH_IDENTITY_REQUIRED (the refusal names the field under need)",
+            "type": "string"
+          },
+          "wallet_hash": {
+            "description": "caller identity, alternative to user_vqbit_hash: sha256 of the caller wallet, lowercase hex, e.g. 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+            "type": "string"
+          }
+        },
+        "required": [
+          "domain",
+          "session_id",
+          "node_id"
+        ],
+        "type": "object"
+      },
+      "name": "umc_resume"
+    },
+    {
+      "description": "Read-only: the Universal Manifold Controller tip, the KV buckets it seals to (UMC_LONG_PLAY, C4_STATES, JORDAN_BONDS), the four Long Play domains, the NATS subjects it publishes on (gaiaftcl.umc.state.> and gaiaftcl.agent.state.>) and the documented MCP tool surface. Takes no arguments, advances nothing, and is safe to call at any rate. Use it to discover what umc_direct and umc_resume will act on.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "name": "umc_status"
+    },
+    {
+      "description": "QC-009 Amplitude amplification: the Grover oracle check plus the presented iterate count. THE BOUND IS N=4: oracle is a 0/1 string of length exactly 4 with exactly one 1 (e.g. 0001), marked is the index of that 1 (e.g. 3), and iterations must be 1 - one Grover iterate at N=4 is exact, so oracle=0001, marked=3, iterations=1 -> WIN 'iters=1 grover=WIN'. Any other oracle length (2, 3, 5..8) is REFUSED_INSTANCE_BOUND 'oracle length L: this court grades N=4 only; the law for other lengths is not built' - the court refuses rather than certify an iterate count it cannot check. A presented witness is verified; no amplitude is estimated. All three fields required. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "iterations": {
+            "description": "presented iterate count, decimal; 1 at N=4. e.g. 1",
+            "type": "string"
+          },
+          "marked": {
+            "description": "0-based index of the 1 (the marked entry), decimal. e.g. 3",
+            "type": "string"
+          },
+          "oracle": {
+            "description": "0/1 string, length 2..8, exactly one 1, e.g. 0001",
+            "type": "string"
+          }
+        },
+        "required": [
+          "iterations",
+          "marked",
+          "oracle"
+        ],
+        "type": "object"
+      },
+      "name": "verify_amplitude_amplification"
+    },
+    {
+      "description": "QC-010 Amplitude estimation. fraction must equal M/N exactly. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "fraction": {
+            "description": "the presented amplitude fraction as an exact rational, must equal M/N, e.g. 1/4",
+            "type": "string"
+          },
+          "M": {
+            "description": "number of marked entries, 0..N, decimal, e.g. 1",
+            "type": "string"
+          },
+          "N": {
+            "description": "size of the sample space, 1..64, decimal, e.g. 4",
+            "type": "string"
+          }
+        },
+        "required": [
+          "M",
+          "N",
+          "fraction"
+        ],
+        "type": "object"
+      },
+      "name": "verify_amplitude_estimation"
+    },
+    {
+      "description": "QC-018 Bell measurement: certify that the presented Bell class bits equal the presented two-qubit pair. ab is the two measured bits (e.g. 00, 11) and class is the two class bits the caller claims; WIN when they agree, MISS naming both when they do not. A presented witness is verified; no state is prepared or sampled. Bit strings only; floats refused.",
+      "inputSchema": {
+        "properties": {
+          "ab": {
+            "description": "two measured bits, e.g. 00 or 11",
+            "type": "string"
+          },
+          "class": {
+            "description": "the two Bell-class bits claimed for the pair, e.g. 00",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ab",
+          "class"
+        ],
+        "type": "object"
+      },
+      "name": "verify_bell_measurement"
+    },
+    {
+      "description": "QC-007 Bernstein-Vazirani: answers[i] = popcount(hidden AND query_i) mod 2 for every query. The separator between queries is ';' - the working call is hidden=101, queries=100;010;001, answers=101 -> WIN. Comma-separated queries (100,010,001) are REFUSED_SHAPE. All three fields required. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "answers": {
+            "description": "one bit per query, concatenated in query order, e.g. 101 = popcount(s AND q_i) mod 2 for each query",
+            "type": "string"
+          },
+          "hidden": {
+            "description": "the hidden bit string s, length 1..8, e.g. 101",
+            "type": "string"
+          },
+          "queries": {
+            "description": "query bit strings of the same length as hidden, separated by ';' (a comma-separated list is REFUSED_SHAPE), e.g. 100;010;001",
+            "type": "string"
+          }
+        },
+        "required": [
+          "answers",
+          "hidden",
+          "queries"
+        ],
+        "type": "object"
+      },
+      "name": "verify_bernstein_vazirani"
+    },
+    {
+      "description": "QC-006 Deutsch-Jozsa. table is 0/1 of length 2 or 4. class is constant or balanced. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "class": {
+            "description": "constant or balanced, e.g. balanced for table 0110",
+            "type": "string"
+          },
+          "table": {
+            "description": "the oracle's truth table as a 0/1 string of length 2 or 4, e.g. 0110",
+            "type": "string"
+          }
+        },
+        "required": [
+          "class",
+          "table"
+        ],
+        "type": "object"
+      },
+      "name": "verify_deutsch_jozsa"
+    },
+    {
+      "description": "QC-002 Grover presented-oracle verifier. oracle is a 0/1 string of length 2..8; marked is the unique 1-index. Does not search the space. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "marked": {
+            "description": "0-based index of that single 1, decimal, e.g. 2 for oracle 0010",
+            "type": "string"
+          },
+          "oracle": {
+            "description": "0/1 string of length 2..8 with exactly one 1, e.g. 0010",
+            "type": "string"
+          }
+        },
+        "required": [
+          "marked",
+          "oracle"
+        ],
+        "type": "object"
+      },
+      "name": "verify_grover"
+    },
+    {
+      "description": "QC-005 HHL. n<=2 integer A and rational b,x. Checks A x = b exactly. Does not invert. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "b": {
+            "description": "right-hand side b as comma-separated rationals, one per row, e.g. 2,4",
+            "type": "string"
+          },
+          "matrix": {
+            "description": "integer matrix A, 1x1 or 2x2: rows separated by '|', entries by ',', e.g. 2,0|0,2",
+            "type": "string"
+          },
+          "x": {
+            "description": "the presented solution x as comma-separated rationals, e.g. 1,2; the court checks A x = b exactly and never inverts",
+            "type": "string"
+          }
+        },
+        "required": [
+          "b",
+          "matrix",
+          "x"
+        ],
+        "type": "object"
+      },
+      "name": "verify_hhl"
+    },
+    {
+      "description": "Decide the UUM-8D Jordan bond J_Z: does (A*K + A_p1*K) - (K*B + K*B_p2) equal the zero lattice 0^8? A, B and K are eight decimal lanes and a homology z, x0,x1,x2,x3,x4,x5,x6,x7|z. Returns proven AFFINE_JZ_SHEAR_ZERO with the shear lattice (all zeros) when the bond holds, AFFINE_JZ_SHEAR with the non-zero shear when it does not, and admitted=false with quarantine_mask when the lattice is not matched against the sealed corpus (the quarantine is the surface declining to seal something it has not matched - not an error). Optional q_hex or object instead of lattices runs the Q-only Affine expose (a secp256k1 point, no private face) and returns patoshi_expose, shors_qmt_witness and topological_shear. Exact integers only; a float lane is REFUSED_FLOAT. Use lattice_op to inspect one operation of the same law.",
+      "inputSchema": {
+        "properties": {
+          "A": {
+            "description": "x0,x1,x2,x3,x4,x5,x6,x7|z decimal lattice (the source). e.g. 1,1,1,1,1,1,1,1|1",
+            "type": "string"
+          },
+          "B": {
+            "description": "x0,x1,x2,x3,x4,x5,x6,x7|z decimal lattice (the target). e.g. 1,1,1,1,1,1,1,1|1",
+            "type": "string"
+          },
+          "K": {
+            "description": "x0,x1,x2,x3,x4,x5,x6,x7|z distance lattice (the kernel the shear runs through). e.g. 3,-2,5,1,7,1,4,2|1",
+            "type": "string"
+          },
+          "object": {
+            "description": "alias of q_hex. e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+            "type": "string"
+          },
+          "q_hex": {
+            "description": "optional: a secp256k1 point (130-hex 04... or 66-hex compressed) for the Q-only Affine expose instead of lattices. e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+            "type": "string"
+          },
+          "source_creator_hash": {
+            "description": "legacy table limb, 32 hex; only for callers that do not present lattices. e.g. 0123456789abcdef0123456789abcdef",
+            "type": "string"
+          },
+          "target_creator_hash": {
+            "description": "legacy table limb, 32 hex; only for callers that do not present lattices. e.g. 0123456789abcdef0123456789abcdef",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "verify_jordan_bond"
+    },
+    {
+      "description": "QMA N-representability on a 2×2 rational 2-RDM. rho2 and n are decimal strings. Float SDP refused. Same law as math_court domain qma_nrep.",
+      "inputSchema": {
+        "properties": {
+          "n": {
+            "description": "particle count as decimal string. e.g. 2",
+            "type": "string"
+          },
+          "rho2": {
+            "description": "a11,a12|a21,a22 as num/den rationals. e.g. 1/2,0/1|0/1,1/2",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "verify_n_representability"
+    },
+    {
+      "description": "Presented period: a^r == 1 (mod N), gcd(a,N)=1, and none of the posted proper_divisors is itself a period (the order claim). All four fields are required: a, N, r, proper_divisors - e.g. a=2, N=15, r=4, proper_divisors=1,2 -> WIN 'a^4 == 1 mod 15'. A call missing one returns REFUSED_NO_INSTANCE naming the missing field. Does not search for r. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "a": {
+            "description": "base, coprime with N, decimal, e.g. 2",
+            "type": "string"
+          },
+          "N": {
+            "description": "modulus, decimal, e.g. 15",
+            "type": "string"
+          },
+          "proper_divisors": {
+            "description": "REQUIRED on the wire: comma-separated proper divisors of r that must NOT be periods (that is the order claim), e.g. 1,2 for r=4. Absent -> REFUSED_NO_INSTANCE 'missing proper_divisors'",
+            "type": "string"
+          },
+          "r": {
+            "description": "the presented period: a^r == 1 (mod N), decimal, e.g. 4",
+            "type": "string"
+          }
+        },
+        "required": [
+          "N",
+          "a",
+          "proper_divisors",
+          "r"
+        ],
+        "type": "object"
+      },
+      "name": "verify_period"
+    },
+    {
+      "description": "QC-011 Phase kickback: certify that the presented phase equals k / 2^m exactly, as a rational. m is the register width (decimal), k the integer eigenphase index, phase the claimed rational written num/den (e.g. 1/2 for m=1, k=1). WIN or MISS with the exact rational the court computed. No estimation is performed; floats refused.",
+      "inputSchema": {
+        "properties": {
+          "k": {
+            "description": "eigenphase index, decimal, 0 <= k < 2^m. e.g. 1",
+            "type": "string"
+          },
+          "m": {
+            "description": "register width, decimal, >= 1. e.g. 1",
+            "type": "string"
+          },
+          "phase": {
+            "description": "claimed phase as an exact rational num/den, e.g. 1/2",
+            "type": "string"
+          }
+        },
+        "required": [
+          "k",
+          "m",
+          "phase"
+        ],
+        "type": "object"
+      },
+      "name": "verify_phase_kickback"
+    },
+    {
+      "description": "QC-021 Presented two-way affine pair. A (or k) is the private face - 64-hex or decimal; Q (or q_hex, object) is the public face; lock_q is a lock face to verify against. A == x(Q) is the FALSE FACE - x(Q) is public data, APART_x_of_Q_is_public_not_a_face, never WIN (founder 2026-09-02). The one WIN is Face*G == Q_live (kG==Q): A=1 with Q=G -> WIN 'kG==Q'. Hex A legally contains e; a decimal point is the float. An empty call {} returns REFUSED_NO_INSTANCE with detail 'no complete instance posted: missing A; or instead Q; or instead k; or instead lock_q; or instead object; or instead q_hex' - post at least one face. Does not invent a third scalar. Does not ECDLP.",
+      "inputSchema": {
+        "anyOf": [
+          {
+            "required": [
+              "A"
+            ]
+          },
+          {
+            "required": [
+              "Q"
+            ]
+          },
+          {
+            "required": [
+              "k"
+            ]
+          },
+          {
+            "required": [
+              "lock_q"
+            ]
+          },
+          {
+            "required": [
+              "object"
+            ]
+          },
+          {
+            "required": [
+              "q_hex"
+            ]
+          }
+        ],
+        "properties": {
+          "A": {
+            "description": "private face, 64-hex or decimal scalar, e.g. 1 (its public face is G itself)",
+            "type": "string"
+          },
+          "k": {
+            "description": "same face as A, old label. e.g. 1",
+            "type": "string"
+          },
+          "lock_q": {
+            "description": "a lock face: the public point the pair must be verified against, same shape as Q. e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+            "type": "string"
+          },
+          "object": {
+            "description": "alias of q_hex. e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+            "type": "string"
+          },
+          "Q": {
+            "description": "public face: uncompressed 04-prefixed secp256k1 point, 130 hex characters, e.g. 0479BE667E...B8 for A=1",
+            "type": "string"
+          },
+          "q_hex": {
+            "description": "same face as Q, old label. e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "verify_presented_pair"
+    },
+    {
+      "description": "QC-014 QAOA: certify the energy of a presented spin string on a presented Ising instance - the PROBLEM QAOA optimises, not a pulse schedule and not a search. edges are couplings i,j,J;... (integers), spins are +1,-1,... one per site. Returns the exact energy of the presented string, energy_num = the sum of J * s_i * s_j over the posted edges and energy_den = 1, detail energy=E. The verdict is graded against the one ground energy QMACourtLaw holds a seal for: -1, the frustrated triangle 0,1,1;1,2,1;2,0,1 with spins 1,-1,1 (fixtureSpinEnergy). WIN means the presented string reaches that energy; MISS means an evaluated string that does not - a MISS is never a malformed instance; a REFUSED_* verdict names an instance or string the law does not grade. Same law as route_spin_glass_manifold and math_court domain qc_qaoa. Floats refused (REFUSED_FLOAT); a field posted as a JSON value that is not a string is REFUSED_NOT_A_STRING.",
+      "inputSchema": {
+        "properties": {
+          "edges": {
+            "description": "couplings i,j,J;... e.g. 0,1,1;1,2,1;2,0,1 (integer J)",
+            "type": "string"
+          },
+          "spins": {
+            "description": "discrete spins +1,-1,... one per site, e.g. 1,-1,1",
+            "type": "string"
+          }
+        },
+        "required": [
+          "edges",
+          "spins"
+        ],
+        "type": "object"
+      },
+      "name": "verify_qaoa_energy"
+    },
+    {
+      "description": "QC-003 QFT phase table. phase[j]=(j*k)/n as exact rationals. n in {2,4,8}. No sqrt(n) on the wire. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "k": {
+            "description": "input index, 0 <= k < n, decimal, e.g. 1",
+            "type": "string"
+          },
+          "n": {
+            "description": "register size: 2, 4 or 8, e.g. 4",
+            "type": "string"
+          },
+          "phases": {
+            "description": "the n phases j*k/n as exact rationals, comma-separated in j order, e.g. 0/4,1/4,2/4,3/4 for n=4, k=1",
+            "type": "string"
+          }
+        },
+        "required": [
+          "k",
+          "n",
+          "phases"
+        ],
+        "type": "object"
+      },
+      "name": "verify_qft_phases"
+    },
+    {
+      "description": "QC-004 QPE. Presented phase must equal k/2^m exactly. m<=8. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "k": {
+            "description": "eigenphase index, 0 <= k < 2^m, decimal, e.g. 1",
+            "type": "string"
+          },
+          "m": {
+            "description": "precision bits, 1..8, e.g. 2",
+            "type": "string"
+          },
+          "phase": {
+            "description": "the presented phase as an exact rational num/den, must equal k/2^m, e.g. 1/4 for m=2, k=1",
+            "type": "string"
+          }
+        },
+        "required": [
+          "k",
+          "m",
+          "phase"
+        ],
+        "type": "object"
+      },
+      "name": "verify_qpe_phase"
+    },
+    {
+      "description": "QC-015 Quantum counting: certify that count equals the number of 1s in the presented oracle string. oracle is a 0/1 string of length 2..8 (the marked entries are the 1s), count is the claimed number as a decimal string. WIN when equal, MISS naming the true count. A presented witness is verified; nothing is counted by amplitude. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "count": {
+            "description": "claimed number of 1s, decimal. e.g. 1",
+            "type": "string"
+          },
+          "oracle": {
+            "description": "0/1 string, length 2..8, e.g. 0001",
+            "type": "string"
+          }
+        },
+        "required": [
+          "count",
+          "oracle"
+        ],
+        "type": "object"
+      },
+      "name": "verify_quantum_counting"
+    },
+    {
+      "description": "QC-012 Quantum walk on the two-vertex cycle C2: from start (0 or 1), an even number of steps returns to start and an odd number lands on the other vertex; certify that the presented end matches. steps, start and end are decimal strings (start and end are 0 or 1). WIN or MISS naming the vertex the walk reaches. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "end": {
+            "description": "claimed ending vertex, 0 or 1. e.g. 0",
+            "type": "string"
+          },
+          "start": {
+            "description": "starting vertex, 0 or 1. e.g. 0",
+            "type": "string"
+          },
+          "steps": {
+            "description": "number of steps, decimal, >= 0. e.g. 2",
+            "type": "string"
+          }
+        },
+        "required": [
+          "end",
+          "start",
+          "steps"
+        ],
+        "type": "object"
+      },
+      "name": "verify_quantum_walk"
+    },
+    {
+      "description": "QC-001 Shor witness certifier. Presented (N, halfPow, factor, cofactor) as decimal strings. halfPow squared == 1 (mod N), halfPow != 1 or N-1, gcd(halfPow-1,N)=factor, factor*cofactor=N. Does not find a period. Optional q_hex/object is a Q-only Affine expose (no k): returns patoshi_expose + shors_qmt_witness + topological_shear. period_r carries an ECDLP scalar or is empty; the Affine period turn's companion images travel as c1_recon_hex/c3_add_hex inside topological_shear, never as period_r. Verdict on a Q expose is the measured jordan_proven tag. Floats refused.",
+      "inputSchema": {
+        "anyOf": [
+          {
+            "required": [
+              "N",
+              "cofactor",
+              "factor",
+              "halfPow"
+            ]
+          },
+          {
+            "required": [
+              "q_hex"
+            ]
+          },
+          {
+            "required": [
+              "object"
+            ]
+          }
+        ],
+        "properties": {
+          "cofactor": {
+            "description": "N / factor, decimal, e.g. 5",
+            "type": "string"
+          },
+          "factor": {
+            "description": "gcd(halfPow-1, N), decimal, e.g. 3",
+            "type": "string"
+          },
+          "halfPow": {
+            "description": "the witness a with a^2 == 1 (mod N) and a != 1, N-1, decimal, e.g. 4 for N=15",
+            "type": "string"
+          },
+          "N": {
+            "description": "the modulus, decimal, e.g. 15",
+            "type": "string"
+          },
+          "object": {
+            "description": "alias of q_hex. e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+            "type": "string"
+          },
+          "q_hex": {
+            "description": "optional Affine Q hex; Q-only expose envelope; no k. e.g. 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "verify_shor_witness"
+    },
+    {
+      "description": "QC-008 Simon collision: certify a presented collision for a hidden mask. x and y are equal-length bit strings with x != y and x XOR y == mask, and f(x) == f(y) (fx and fy are the presented function values). WIN when all three hold, MISS naming the failing relation. The mask is presented, never recovered. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "fx": {
+            "description": "presented f(x), decimal or bit string. e.g. 0",
+            "type": "string"
+          },
+          "fy": {
+            "description": "presented f(y); must equal fx. e.g. 0",
+            "type": "string"
+          },
+          "mask": {
+            "description": "hidden mask as a bit string, e.g. 11",
+            "type": "string"
+          },
+          "x": {
+            "description": "first input bit string, same length as mask. e.g. 00",
+            "type": "string"
+          },
+          "y": {
+            "description": "second input bit string; x XOR y must equal mask. e.g. 11",
+            "type": "string"
+          }
+        },
+        "required": [
+          "fx",
+          "fy",
+          "mask",
+          "x",
+          "y"
+        ],
+        "type": "object"
+      },
+      "name": "verify_simon"
+    },
+    {
+      "description": "QC-017 Superdense coding. decoded 2 bits must equal sent 2 bits. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "bits": {
+            "description": "the two bits sent, e.g. 10",
+            "type": "string"
+          },
+          "decoded": {
+            "description": "the two bits decoded at the receiver, must equal bits, e.g. 10",
+            "type": "string"
+          }
+        },
+        "required": [
+          "bits",
+          "decoded"
+        ],
+        "type": "object"
+      },
+      "name": "verify_superdense"
+    },
+    {
+      "description": "QC-016 Teleport reconstruction. bob = alice XOR corrections on 2 bits. Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "alice": {
+            "description": "Alice's two measurement bits, e.g. 10",
+            "type": "string"
+          },
+          "bob": {
+            "description": "Bob's reconstructed two bits, must equal alice XOR corrections, e.g. 01",
+            "type": "string"
+          },
+          "corrections": {
+            "description": "the two Pauli-correction bits Bob applies, e.g. 11",
+            "type": "string"
+          }
+        },
+        "required": [
+          "alice",
+          "bob",
+          "corrections"
+        ],
+        "type": "object"
+      },
+      "name": "verify_teleport"
+    },
+    {
+      "description": "QC-019 Topological word: compare a presented Eisenstein pair (q, r) with the pair the law holds for a named word. word is one of the two words the law holds a pair for, Z2_a2b or Z2_abAB; any other word is REFUSED_WORD (not a group scan). q and r are the claimed integers. WIN when (q, r) equals the law's pair for that word, MISS otherwise; detail is the posted (q,r). Floats refused.",
+      "inputSchema": {
+        "properties": {
+          "q": {
+            "description": "claimed Eisenstein q, decimal. e.g. 0",
+            "type": "string"
+          },
+          "r": {
+            "description": "claimed Eisenstein r, decimal. e.g. 1",
+            "type": "string"
+          },
+          "word": {
+            "description": "the cited word",
+            "enum": [
+              "Z2_a2b",
+              "Z2_abAB"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "q",
+          "r",
+          "word"
+        ],
+        "type": "object"
+      },
+      "name": "verify_topological_word"
+    },
+    {
+      "description": "QC-013 VQE problem, not the variational search. Same ZZ law as execute_2local_hamiltonian: returns the exact energy energy_num/energy_den of the presented config, graded against the one energy QMACourtLaw holds a seal for (-1/1, constraints 0,1,1,1 with config 0,1). WIN means the presented config reaches it with no aligned term; MISS means an evaluated config that does not; a REFUSED_* verdict names an instance the law does not grade. Floats refused (REFUSED_FLOAT); a field posted as a JSON value that is not a string is REFUSED_NOT_A_STRING.",
+      "inputSchema": {
+        "properties": {
+          "config": {
+            "description": "computational bits s0,s1,... each 0 or 1, one per site, comma-separated, e.g. 0,1",
+            "type": "string"
+          },
+          "constraints": {
+            "description": "ZZ terms i,j,jnum,jden separated by ;, e.g. 0,1,1,1 (sites 0 and 1, coupling 1/1) - the same law as execute_2local_hamiltonian",
+            "type": "string"
+          }
+        },
+        "required": [
+          "config",
+          "constraints"
+        ],
+        "type": "object"
+      },
+      "name": "verify_vqe_energy"
+    },
+    {
+      "description": "Exact containment of a declared track against convective cell boundaries, including NON-CONVEX footprints: decide whether the track stays outside every declared cell within that cell's altitude layer, and on a breach name the breaching segment, the cell, how the breach happens and the exact parameter along the segment where it does. Exact integer crossing number over micro-degree vertices, with the optional standoff decided by comparing squared distances — no square root, no floating point, no epsilon. Advisory only; not a dispatch or flight-planning authority.",
+      "inputSchema": {
+        "properties": {
+          "cells": {
+            "description": "declared convective cells: id, vertices, and layer as decimal strings. Declaring none returns NOT_MEASURED_NO_CONVECTIVE_CELLS_DECLARED, never CONTAINED. e.g. [{\"id\":\"SQUARE\",\"base_feet\":\"0\",\"top_feet\":\"40000\",\"vertices\":[{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"0\"},{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"30000\"},{\"lat_micro_deg\":\"30000\",\"lon_micro_deg\":\"30000\"},{\"lat_micro_deg\":\"30000\",\"lon_micro_deg\":\"0\"}]}]",
+            "items": {
+              "properties": {
+                "base_feet": {
+                  "description": "decimal string, cell base altitude in feet, e.g. 0",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "the cell id, e.g. SQUARE",
+                  "type": "string"
+                },
+                "top_feet": {
+                  "description": "decimal string, cell top altitude in feet, e.g. 40000",
+                  "type": "string"
+                },
+                "vertices": {
+                  "description": "three or more polygon vertices in micro-degrees, e.g. [{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"0\"},{\"lat_micro_deg\":\"0\",\"lon_micro_deg\":\"30000\"},{\"lat_micro_deg\":\"30000\",\"lon_micro_deg\":\"30000\"},{\"lat_micro_deg\":\"30000\",\"lon_micro_deg\":\"0\"}]",
+                  "items": {
+                    "properties": {
+                      "lat_micro_deg": {
+                        "description": "decimal string, vertex latitude in micro-degrees, e.g. 30000",
+                        "type": "string"
+                      },
+                      "lon_micro_deg": {
+                        "description": "decimal string, vertex longitude in micro-degrees, e.g. 30000",
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "margin_micro_deg": {
+            "description": "optional standoff as decimal string in the same declared units; strict, so exactly this far away is contained. e.g. 1000",
+            "type": "string"
+          },
+          "track_micro_deg": {
+            "description": "lat_micro_deg,lon_micro_deg,alt_feet points as decimal strings; two or more, since this names a breaching SEGMENT. e.g. [{\"lat_micro_deg\":\"50000\",\"lon_micro_deg\":\"50000\",\"alt_feet\":\"30000\"},{\"lat_micro_deg\":\"50000\",\"lon_micro_deg\":\"80000\",\"alt_feet\":\"30000\"}]",
+            "items": {
+              "properties": {
+                "alt_feet": {
+                  "description": "decimal string, altitude in feet, e.g. 30000",
+                  "type": "string"
+                },
+                "lat_micro_deg": {
+                  "description": "decimal string, latitude in micro-degrees, e.g. 50000",
+                  "type": "string"
+                },
+                "lon_micro_deg": {
+                  "description": "decimal string, longitude in micro-degrees, e.g. 50000",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "track_micro_deg",
+          "cells"
+        ],
+        "type": "object"
+      },
+      "name": "weather.convective_containment"
     }
-  }
+  ]
 }
