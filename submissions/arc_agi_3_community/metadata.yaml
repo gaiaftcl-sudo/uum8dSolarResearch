@@ -9,7 +9,9 @@ evaluation_scope: "ARC-AGI-2 public evaluation set (120 tasks / 172 test grids, 
 huggingface_model: https://huggingface.co/rpg67/Affine.Earth
 huggingface_dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks
 huggingface_space: https://huggingface.co/spaces/rpg67/Affine-Earth-Sovereign-Court
-oss: true
+oss: false
+source_available: true
+license: LicenseRef-Affine-Earth-Sovereign-1.0
 date: 2026-11-11
 logs: logs
 trajs: trajs

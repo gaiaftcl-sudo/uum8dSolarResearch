@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FortressAI Research Institute — Open-Source 500-Patch Synthesizer for SWE-bench Verified
+FortressAI Research Institute — Source-Available 500-Patch Synthesizer for SWE-bench Verified
 Model: affine-uum8d-s4 (M8 = S4 x C4 Zero-Float Deterministic State Machine)
 Endpoint: https://affine.earth/v1 (Public Token: Bearer $AFFINE_API_KEY)
 
@@ -184,7 +184,7 @@ def load_canonical_500_instances(repo_root: Path) -> tuple[List[Dict[str, Any]],
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="FortressAI Research Institute — Open-Source 500-Patch Synthesizer for SWE-bench Verified"
+        description="FortressAI Research Institute — Source-Available 500-Patch Synthesizer for SWE-bench Verified"
     )
     parser.add_argument("--endpoint", default=os.environ.get("OPENAI_API_BASE", "https://affine.earth/v1"))
     parser.add_argument("--api-key", default=os.environ.get("OPENAI_API_KEY", ""))

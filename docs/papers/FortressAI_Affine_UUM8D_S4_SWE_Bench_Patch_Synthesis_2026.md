@@ -3,7 +3,7 @@
 **Submitting Institution:** FortressAI Research Institute (Sovereign Zero-Float Systems Laboratory)  
 **Principal Investigator & Author:** Richard Gillespie (`franklin@affine.earth`)  
 **Preprint / Venue Status:** FortressAI Research Institute Technical Monograph `FRI-TR-2026-1109` (Prepared for arXiv `cs.SE` / `cs.PL` & Peer-Reviewed Program Synthesis Track, November 2026)  
-**Open-Source Code Path (`oss: true`):** [`https://github.com/gaiaftcl-sudo/affine.earth.public`](https://github.com/gaiaftcl-sudo/affine.earth.public) (`scripts/synthesize_swebench_verified_500.py` & `Sources/AffineEarthClientCLI/SWEBenchPatchSynthesizer.swift`)  
+**Source-Available Code Path (`LicenseRef-Affine-Earth-Sovereign-1.0`):** [`https://github.com/gaiaftcl-sudo/affine.earth.public`](https://github.com/gaiaftcl-sudo/affine.earth.public) (`scripts/synthesize_swebench_verified_500.py` & `Sources/AffineEarthClientCLI/SWEBenchPatchSynthesizer.swift`)  
 **SWE-bench Verified Submission PR:** [`SWE-bench/experiments#519`](https://github.com/SWE-bench/experiments/pull/519)  
 **Live Public Reproduction Endpoint:** `https://affine.earth/v1` (`Bearer $AFFINE_API_KEY`)  
 
@@ -129,9 +129,9 @@ We evaluated `affine-uum8d-s4` across all `500` instances of the official **SWE-
 
 ---
 
-## 4. Open-Source Reproducibility Instructions for SWE-bench Maintainers (`✓` Checkmark Verification)
+## 4. Source-Available Reproducibility Instructions for SWE-bench Maintainers (`✓` Checkmark Verification)
 
-All code required to synthesize the 500 patches and reproduce the SWE-bench Verified evaluation is open-source (`oss: true`) in [`gaiaftcl-sudo/affine.earth.public`](https://github.com/gaiaftcl-sudo/affine.earth.public):
+All code required to synthesize the 500 patches and reproduce the SWE-bench Verified evaluation is source-available under `LICENSE` (`LicenseRef-Affine-Earth-Sovereign-1.0`, `oss: false`) in [`gaiaftcl-sudo/affine.earth.public`](https://github.com/gaiaftcl-sudo/affine.earth.public):
 
 1. **Synthesize All 500 Patches via the Public `/v1` Endpoint:**
    ```bash

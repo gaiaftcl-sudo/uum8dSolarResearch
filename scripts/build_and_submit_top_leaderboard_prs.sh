@@ -44,7 +44,7 @@ name: Affine.Earth
 org: Affine.Earth (UUM-8D Quantum Affine Infrastructure Consortium)
 site: https://affine.earth/language-game/leaderboard.html
 repository: https://github.com/gaiaftcl-sudo/uum8dSolarResearch
-oss: true
+oss: false
 verified: true
 date: 2026-11-09
 logs: logs

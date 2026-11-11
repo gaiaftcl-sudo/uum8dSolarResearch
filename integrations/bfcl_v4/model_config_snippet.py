@@ -11,7 +11,7 @@ AFFINE_EARTH_BFCL_MODELS = {
         "model_handler": OpenAICompletionsHandler,
         "url": "https://affine.earth/leaderboard",
         "org": "Affine.Earth",
-        "license": "MIT",
+        "license": "Proprietary",  # Source-Available: LicenseRef-Affine-Earth-Sovereign-1.0
         "model_style": ModelStyle.OPENAI_COMPLETIONS,
         "is_fc_model": True,
         "base_url": "https://affine.earth/v1",
@@ -22,7 +22,7 @@ AFFINE_EARTH_BFCL_MODELS = {
         "model_handler": OpenAICompletionsHandler,
         "url": "https://affine.earth/leaderboard",
         "org": "Affine.Earth",
-        "license": "MIT",
+        "license": "Proprietary",  # Source-Available: LicenseRef-Affine-Earth-Sovereign-1.0
         "model_style": ModelStyle.OPENAI_COMPLETIONS,
         "is_fc_model": True,
         "base_url": "https://affine.earth/v1",

@@ -10,7 +10,9 @@ runner_up_pulled_date: "2026-11-09"
 huggingface_model: https://huggingface.co/rpg67/Affine.Earth
 huggingface_dataset: https://huggingface.co/datasets/rpg67/Affine.Earth-Benchmarks
 huggingface_space: https://huggingface.co/spaces/rpg67/Affine-Earth-Sovereign-Court
-oss: true
+oss: false
+source_available: true
+license: LicenseRef-Affine-Earth-Sovereign-1.0
 verified: true
 date: 2026-11-10
 logs: logs

@@ -42,7 +42,9 @@ bash "$REPO_ROOT/scripts/build_and_submit_top_leaderboard_prs.sh"
 # ------------------------------------------------------------------------------
 cat > "$MODEL_DIR/README.md" << 'EOF'
 ---
-license: mit
+license: other
+license_name: affine-earth-sovereign-v1
+license_link: LICENSE
 library_name: openai-compatible
 pipeline_tag: text-generation
 tags:
@@ -219,7 +221,9 @@ colorFrom: blue
 colorTo: indigo
 sdk: static
 pinned: true
-license: mit
+license: other
+license_name: affine-earth-sovereign-v1
+license_link: LICENSE
 short_description: Live 34-Flick Zero-Float 9-Shield & SWE-bench Court
 ---
 

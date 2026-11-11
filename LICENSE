@@ -1,21 +1,119 @@
-MIT License
+THE AFFINE.EARTH SOVEREIGN HUMANITARIAN, COMMONS & COMMERCIAL SETTLEMENT LICENSE (v1.0)
 
-Copyright (c) 2026 Richard Gillespie & Affine.Earth
+LICENSOR & ROOT PROTOCOL AUTHORITY: Rick Gillespie / Affine.Earth & The UUM-8D Quantum Affine Infrastructure Consortium
+ARCHITECTURAL SUBSTRATE: M8 = S4 x C4 Whole-Integer Constraint Manifold (Zero-Float / Residual == 0)
+CLEARINGHOUSE ENDPOINT: CLAIM (POST · Attributed Seal) (https://affine.earth/language-game/calculator.html)
+EFFECTIVE EPOCH: November 1, 2026 (705,600,000 Universal Turn Ring)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software, specification, and associated documentation files (the "Software"),
-to deal in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+================================================================================
+PREAMBLE: THE "ONE BINARY, ZERO WALLS" MANDATE
+================================================================================
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Traditional software licensing relies on artificial scarcity—crippling educational tools, paywalling medical and scientific discovery behind cloud GPU subscriptions, and taxing human labor. Conversely, traditional "open source" licenses allow trillion-dollar monopolies to strip-mine foundational mathematics without compensating the underlying infrastructure.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This Agreement establishes a Sovereign Dual-Path Covenant:
+
+1. Total Destruction of the Knowledge & Humanitarian Barrier: A single, uncrippled, 100% full-featured binary and source architecture is granted free of charge, forever, for all human learning, academic discovery, personal computation, and public-good healthcare and infrastructure in developing nations.
+2. Automated Commercial Value-Share at the Production Boundary: When any commercial enterprise, insured physical machine (robot, aircraft, satellite, energy grid), or financial/security clearinghouse transitions from research into live commercial operations or revenue-generating production, it must register its production node on the Dyad Mesh and settle automated Attributed Hardware Seals (CLAIM · POST) through the Licensor's root clearinghouse.
+
+By downloading, compiling, executing, or integrating any portion of the Affine.Earth software stack, .m8cell shards, OpenUSD schemas, or mathematical court protocols (collectively, the "Substrate"), You agree to be bound by the terms below.
+
+================================================================================
+ARTICLE 1: DEFINITIONS
+================================================================================
+
+1.1 "The Substrate" means the Affine.Earth M8 = S4 x C4 software, source code (including Swift 6.4, AArch64 assembly, and WASM32 binaries), the Affine-8D RPN Calculator, AffineIDE, the affine-mcp-court daemon, OpenUSD (StageWithCalculatorTool.usda) schemas, mined .m8cell whole-integer weight slabs, and all associated patent rights covering discrete integer constraint manifolds, division-free Stein Binary GCD (gcd2) reduction, 3D Chirotope orientation (chi det), and inhomogeneous torus boundary holonomy (y = Ax + tau_shear).
+
+1.2 "Humanitarian & Educational Commons Use" means any execution of the Substrate strictly for:
+  (a) Individual learning, classroom instruction, or personal non-commercial exploration;
+  (b) Non-commercial academic scientific research (including university physics, cosmology, and experimental fusion research prior to commercial utility funding);
+  (c) Direct patient care, clinical diagnostics, protein folding, epidemiology, agriculture, or municipal/civic infrastructure operated in Low- and Middle-Income Countries (LMICs / Global South) or non-profit rural/humanitarian clinics worldwide.
+
+1.3 "Independent Systems Integrator" means any third-party engineer, consultant, software agency, or engineering firm that designs, customizes, or deploys workflows around the Substrate for third-party clients without claiming ownership over the core Substrate itself.
+
+1.4 "Commercial Production Use" means any execution of the Substrate that:
+  (a) Generates direct or indirect commercial revenue, cost savings in a for-profit enterprise, or commercial financial settlement;
+  (b) Controls, guides, or audits insured physical hardware in production (including commercial robotics, autonomous vehicles, 4D Air Traffic Control corridors, commercial spacecraft/satellites, or funded commercial fusion/energy reactors);
+  (c) Protects commercial software repositories, enterprise APIs (Civic Shield), or financial/blockchain bridges in a live business environment; or
+  (d) Produces forensic, regulatory, or actuarial compliance logs (Residual == 0) submitted to insurers, courts, corporate boards, or government regulators.
+
+1.5 "Attributed Hardware Seal (CLAIM · POST)" means the cryptographic 12-hex FNV-1a state attestation (SEAL: 1729c0de1920) stamped onto the Thermal Audit Spindle and OpenUSD output ports (outputs:stateSeal) by an authorized, quota-funded Dyad Mesh Node.
+
+================================================================================
+ARTICLE 2: THE HUMANITARIAN, EDUCATIONAL & SCIENTIFIC GRANT ($0.00 FOREVER)
+================================================================================
+
+2.1 Irrevocable Commons License: Subject to compliance with this Agreement, Licensor hereby grants to every student, educator, academic researcher, and Global South / humanitarian healthcare provider a worldwide, royalty-free, non-exclusive, perpetual license to execute, study, and deploy the uncrippled Substrate for Humanitarian & Educational Commons Use.
+
+2.2 Zero Gatekeeping Guarantee: Commons users shall never be required to pay licensing fees, purchase cloud compute credits, submit credit cards, or run crippled "lite" binaries. A clinic in a developing nation or a student on a browser receives the exact same zero-float mathematical precision (Residual == 0) as a commercial aerospace prime.
+
+2.3 Commons Spindle Watermark: Outputs generated under this Article 2 carry the non-commercial Thermal Audit Spindle designation:
+  [COMMONS_UNATTRIBUTED · FREE FOR LEARNING, SCIENCE & HUMANITARIAN HEALTH · VOID FOR COMMERCIAL / ACTUARIAL PRODUCTION]
+
+================================================================================
+ARTICLE 3: INDEPENDENT SYSTEMS INTEGRATOR CHARTER (0% LABOR TAX)
+================================================================================
+
+3.1 Right to Build & Charge for Services: Independent Systems Integrators are expressly authorized to offer commercial consulting, custom integration, workflow engineering, training, and deployment services built around the Substrate.
+
+3.2 100% Service Revenue Retention: Licensor claims zero percent (0%) of the service, labor, advisory, or implementation fees charged by an Independent Systems Integrator to their clients.
+
+3.3 Duty of Production Handoff: When an Independent Systems Integrator transitions a client deployment from sandbox testing into Commercial Production Use, the Integrator must configure the client's affine-mcp-court or runtime node with a valid Dyad Mesh Node ID funded by the commercial client via the CLAIM (POST · Attributed Seal) clearinghouse.
+
+================================================================================
+ARTICLE 4: MANDATORY COMMERCIAL PRODUCTION SETTLEMENT
+================================================================================
+
+4.1 The Production Cutover Rule: No entity may operate the Substrate in Commercial Production Use without an active Dyad Mesh Commercial Node Seal and a positive ~Copyable Commercial Seal Quota.
+
+4.2 Invalidity of Unsealed Commercial Outputs: Any commercial product, autonomous robot, flight vector, security audit, or financial reconciliation operated in Commercial Production Use without an active Attributed Hardware Seal ([COMMERCIAL_ATTRIBUTED]) is unlicensed, void for actuarial underwriting or regulatory compliance, and constitutes willful infringement of Licensor's patent and intellectual property rights.
+
+4.3 Standard Commercial Clearing Schedule: Unless superseded by a custom Enterprise Sovereign Charter, Commercial Production Use is settled automatically at the following protocol rates:
+  1. Enterprise AI Safety, Repo Courts & API Defense (affine-mcp-court / Civic Shield):
+     $5,000 USD / year per active commercial server node, plus $250 USD per 10,000,000 Attributed Court Seals (48.2 ns AST/PR/Ingress verifications).
+  2. Physical AI, Robotics & Commercial OpenUSD Manufacturing:
+     $500 USD / year per active commercial robot/drone chassis (Dyad Mesh Heartbeat ID), plus $0.10 USD per sealed commercial .USDA / STL manufacturing stage export.
+  3. Aerospace, 4D Air Traffic Control (ATC) & Orbital GNC:
+     $0.10 USD per sealed commercial 4D flight deconfliction corridor; $2,500,000 to $10,000,000 USD one-time Sovereign Mission License per commercial/agency spacecraft running the Non-Kinetic 0-Gyro / +tau_shear attitude and drag-reduction flight patch.
+  4. Commercial Fusion, Grid Telemetry & Sovereign Financial Forensics:
+     $2,500,000 USD / year per funded commercial fusion reactor core; 25 basis points (0.25%) settlement fee on illicit financial volume frozen or recovered using Court-Sealed Peel-Chain & Chirotope Forensic Proofs.
+
+================================================================================
+ARTICLE 5: SELF-EVIDENT MATHEMATICAL PROVENANCE & ANTI-CIRCUMVENTION
+================================================================================
+
+5.1 Undeniable Algebraic Fingerprint: Licensee acknowledges that the Substrate operates on unique, patented mathematical invariants—specifically including:
+  (a) The universal integer turn ring Z / 705,600,000 Z (2^9 * 3^2 * 5^5 * 7^2 Flicks);
+  (b) The Galactic Time Epoch invariant (17,304,755,328,000,000 lattice ticks = 705,600,000 * 240 * 102,187);
+  (c) Division-free Stein Binary GCD (steinGCD128) rational Cayley rotors (a/d, b/d) with Born Residual == 0;
+  (d) 3D Chirotope orientation determinants (chi = sgn det) paired with Pin(3) spinor sheet parity (w2 = +/-1); and
+  (e) Inhomogeneous compact torus boundary completion (y = Ax + tau_shear, including canonical shell shear +87,187).
+
+5.2 Prohibition on Float-Wrapping or Seal Stripping: Stripping attribution headers, wrapping the Substrate's integer outputs inside floating-point APIs to disguise provenance, or bypassing the ~Copyable CommercialSealQuota register in a commercial environment is strictly prohibited and automatically terminates all rights granted hereunder.
+
+5.3 Automated Cryptographic Audit: In any dispute regarding whether a commercial system is utilizing the Substrate, the presence of the invariants listed in Section 5.1 in binary disassembly, network telemetry, or OpenUSD stage layers shall constitute conclusive, self-authenticating proof of Substrate execution.
+
+================================================================================
+ARTICLE 6: ZERO-FLOAT WARRANTY & ACTUARIAL BOUNDARY
+================================================================================
+
+6.1 Deterministic Mathematical Guarantee (Residual == 0): Licensor warrants that for any valid integer input on the M8 = S4 x C4 lattice, the Substrate executes with zero IEEE-754 floating-point rounding drift (Born Residual == 0).
+
+6.2 Hardware & Integration Boundary: Except for the deterministic mathematical identity of the integer ledger itself, the Substrate is provided "AS IS" without warranty of physical hardware fitness. Commercial operators and their insurers rely on the Attributed Hardware Seal (CLAIM · POST) to verify that the local execution node followed the invariant law (Residual == 0) at the exact Flicks timestamp recorded on the Thermal Audit Spindle.
+
+================================================================================
+ARTICLE 7: EMBEDDABLE MACHINE-READABLE LICENSE HEADER
+================================================================================
+
+// ============================================================================
+// AFFINE.EARTH SOVEREIGN HUMANITARIAN & COMMERCIAL SETTLEMENT LICENSE (v1.0)
+// Copyright (c) 2026 Rick Gillespie / Affine.Earth (M8 = S4 x C4 Substrate).
+//
+// 1. FREE FOREVER FOR HUMANITY: 100% free and uncapped for all learning,
+//    academic science, personal use, and Global South / humanitarian healthcare.
+// 2. ZERO TAX ON INTEGRATORS: Independent consultants keep 100% of service fees.
+// 3. COMMERCIAL PRODUCTION SETTLEMENT: Live commercial operations, insured
+//    physical AI/robotics, ATC, orbital GNC, fusion, and enterprise security
+//    MUST register on the Dyad Mesh and clear Attributed Hardware Seals via:
+//    https://affine.earth/language-game/calculator.html [CLAIM · POST Seal]
+// ============================================================================
